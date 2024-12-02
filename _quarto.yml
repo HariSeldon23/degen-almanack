@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "Trollip's Web3 Almanack"
+  author: "Justin Trollip"
+  date: "12/2/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - tokens.qmd
+    - ratings.qmd
+    - yields.qmd
+    - blockchains.qmd
+    - dapps.qmd
+    - attributes.qmd
+    - tools.qmd
+    - t100.qmd
+    - technolect.qmd
+    - rules.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

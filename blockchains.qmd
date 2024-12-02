@@ -1,0 +1,972 @@
+# Blockchains
+We use term Decentralized Incentive Network instead of blockchain. To read why please read our Controlled Vocabulary. 
+
+The point of blockchains:
+Censorship resistance
+Deterministic State Transition (Mempool creates interesting nuances and complexity here)
+Credible neutrality
+Trustless coordination at scale
+Asset digitization and ownership
+
+Point of DIN's
+Censorship resistance is indeed crucial - it enables truly permissionless systems where no entity can prevent valid transactions. However, there are several other compelling candidates for blockchain's primary purpose:
+One strong contender is deterministic state transition. Think about how traditional databases or financial systems might have ambiguity about the exact sequence or timing of transactions, especially across different locations or institutions. Blockchain provides absolute clarity about state changes - there's no ambiguity about which transaction came first or what the exact state was at any given moment. This property enables complex financial systems and smart contracts to operate with complete predictability.
+Another fundamental purpose could be creating credible neutrality in computational systems. This goes beyond just censorship resistance - it's about creating systems where the rules are explicit, unchangeable without consensus, and apply equally to all participants. Traditional systems often have hidden biases or special privileges for certain users, while blockchain systems enforce their rules uniformly through code.
+We could also argue that the primary purpose is enabling trustless coordination at scale. Before blockchain, coordinating economic activity among untrusting parties required trusted intermediaries like banks or governments. Blockchain enables direct peer-to-peer coordination without these intermediaries, potentially reducing costs and increasing efficiency.
+Asset digitization and ownership might be another contender. Blockchain enables digital scarcity and verifiable ownership in ways that weren't possible before. This property enables everything from cryptocurrencies to NFTs to tokenized real-world assets.
+
+We won't be taking any idealogical approach to the point of blockchains but rather applying scores to DIN's and then comparing that to how the market values them.
+
+For example, asset digitization and ownership are critical to Ethereum, but don't exist on Bitcoin. Whereas censorship resistance can be argued to be greater on Bitcoin due to MEV. There exists an opportunity here to argue that the market values 
+
+A decentralized incentive network with state consensus 
+
+I've tried to simplify our definition as much as possible and even still it's verbose. Read that sentence to 99% of the world and I'll they'll give you a quizzical look and move onto the section about meme coins. There's a lesson there. A lesson the technical luminaries in this space ignore at their peril. Accessibility matters. 
+
+Let's break down each component of our definition.
+
+Decentralized. 
+This is how many Nodes participate. Centralized means 1. Therefore anything more than 1 is decentralized. 
+
+Network. 
+This loosely means the participants computers/machines communicate via a communication method. 
+
+State Consensus.
+The network will record state and all nodes will agree about the state via consensus.
+
+We don't need to worry too much about consensus yet, but you just need to know that the nodes must agree on the state. For example if Bob sends Alice 10 BTC. Everyone on the network must come to an agreement that Bob did indeed send Alice 10 BTC. Another important characteristic is that even if everyone agrees today, in the future that can't be disputed or changed. This is another important category called censorship resistance. We'll get to it. 
+
+Under DIN's we have
+Sovereign Networks
+Dependent Networks
+
+A sovereign chain can be defined as a network that maintains complete independence in its settlement process, requiring no external chain to validate or guarantee its state transitions. This independence is fundamental to the concept of sovereignty in blockchain networks. 
+
+This section should start discussing why the need arose for dependent networks. Specifically Ethereum struggling with scale. Due to the trilemna:
+decentralization
+security
+scalability
+
+Let's talk about scaling strategies
+monolithic
+Bigger blocks
+Faster blocks
+Higher minimum requirements for nodes
+Consensus optimizations
+modular
+Execution - The current crop of L2's
+Data availability - Storing and accessing blockchain data Celestia
+Consensus - Agreeing on the state of the network 
+Settlement - Finalizing transactions and providing security guarantees. Ethereum and Bitcoin in the current Layer craze
+
+## Sovereign Networks
+Pure Value Networks
+Pure value networks stick to the fundamental purpose of moving and storing value, avoiding the additional complexity that comes with being a platform for applications or other services.
+
+What makes these networks "pure value" is what they don't include:
+They don't support complex smart contracts
+They don't host decentralized applications
+They don't provide programmable functionality beyond basic value transfer
+They don't serve as platforms for other tokens or applications
+
+Application Chains
+Application Chains represent networks that go beyond pure value transfer to support various types of applications. They're divided into three main categories: Hubs, Specialized, and Generalized chains.
+
+Hub Application Chains serve as central connection points in the blockchain ecosystem. 
+
+Specialized Application Chains focus on specific use cases or industries. 
+
+Generalized Application Chains aim to support a wide range of applications but differ from hubs in that they're not necessarily trying to be central connection points. 
+
+The key distinction between these categories lies in their approach to applications:
+- Hubs prioritize becoming central platforms that other networks depend on
+- Specialized chains optimize everything for specific use cases
+- Generalized chains provide broad functionality but focus on being self-contained ecosystems
+
+## Application Models
+All DIN's will have an application model. 
+So the Application model looks at the following:
+state management
+parallelization Potential
+Asset Representation
+Composability
+Safety Guarantees
+
+UTXO also includes Cardano's extened UTXO, Kaspa also falls into this
+Account 
+Pure EVM, TRON
+Specialized XRP and Stelalr falls under this with their balance-based model, 
+Sharded account model Near falls into this. 
+Object (Sui)
+Aptos Resource model while different is moving towards an Object model for Coins/Tokens
+Capability (Solana)
+Cell model (TON)
+Actor Based (ICP and CosmWasm
+
+
+Dependent Networks
+So Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling. 
+
+So we need to talk about the theory of Layers in Blockchain
+
+That's why L2's became a major part of the roadmap. How does the scalability limitation affect the network. Congestion and high gas fee's. So people don't interact on the chain and it hits a ceiling. So logically we should start any discussion with transaction fee's, as that's the direct result of the scalability failure and the main reason users use L2's. Besides yield opportunities.
+
+So we should first consider the Fee Markets on Ethereum and Bitcoin which are the two major chains looking to scale with L2's. 
+There is a lot of debate and a lot of misinformation around this topic. 
+
+Dependent networks can really be divided into chains:
+External DIN required to validate state transitions
+External DIN required to guarantee state transitions
+
+We'll define a framework for how we define a Dependent Network. 
+There are few things we look at, in terms of priority:
+censorship resistance. Polygon zkEVM sequencer can censure, but you can go through the contract directly on Ethereum theoretically if censorship occurs. Same thing for Arbitrum. Although this is a very weak guarantee due to the complexity for regular users. For Stacks, it's more censorship resistant that the other two. Also if I were to interact directly with the smart contract on Ethereum, that makes the L2's pointless. Why do I need them if not to deal with congestion and high gas. 
+dispute resolution. I believe all chains need to hard fork. Potentially not Movement due to Move's resource model. None of the chains will automatically hard fork if a dispute is found. 
+settlement. So the base chain must validate and guarantee state transitions on the dependent chain. This is kinda stupid. It's guaranteeing the state transitions but makes no attempt to resolve things like censorship resistance. 
+finality of settlement. Optimistic 7 days, zk 30 minutes, Stacks 16 hours
+economic security model inheritance - this is actually pointless as it just means the state transitions match the rules. Nothing about censorship resistance. 
+
+So my qualification of dependent networks means that they must inherit the censorship resistance of the base chain, settlement must be validated and guaranteed by the base chain, dispute resolution must be automatic and/or decentralized. else the chain can just fork. 
+
+Settlement Types
+In order of strength
+Cryptographically enforced settlement
+Validity proofs
+Fraud proof systems
+Checkpoint systems
+ 
+Core Infrastructure Components 
+Network Security
+Attack Vectors
+Network Level: Eclipse attacks, BGP hijacking, DDoS attacks Protocol Level: Double spending, nothing-at-stake, long-range attacks Application Level: Smart contract vulnerabilities, oracle manipulation
+Defense Mechanisms
+Network Diversity: Geographic distribution, client diversity, network topology Economic Security: Slashing conditions, required stake amounts, timelock mechanisms Operational Security: Key management, upgrade processes, emergency responses
+Monitoring and Detection
+Network Health Monitoring: Peer count, block propagation, chain quality Threat Detection: Fork monitoring, unusual transaction patterns, validator behavior Incident Response: Alert systems, mitigation procedures, recovery processes
+Network Governance
+Governance Models
+On-Chain: Direct token voting, delegated voting, quadratic voting Off-Chain: Foundation-led, core team decisions, community forums Hybrid: Combined on-chain execution with off-chain discussion
+Decision Domains
+Protocol Parameters: Block size, gas limits, fee structures Treasury Management: Fund allocation, grant distribution, development funding Protocol Upgrades: Hard forks, soft forks, emergency changes
+Participation Mechanisms
+Proposal Systems: Submission requirements, discussion periods, voting periods Voting Methods: Token-weighted, identity-based, reputation-based Execution Methods: Automatic execution, timelock delays, manual implementation
+Cross-Chain Communication
+Bridge Types
+Trusted Bridges: Custodial, multi-signature, federated Trustless Bridges: Light clients, zero-knowledge proofs, relay networks Hybrid Bridges: Combined trusted and trustless elements
+Message Passing
+Protocol Standards: IBC (Inter-Blockchain Communication), cross-chain messaging Verification Methods: SPV proofs, merkle proofs, validity proofs Asset Standards: Wrapped tokens, synthetic assets, native bridges
+Security Considerations
+Bridge Security: Validator sets, challenge periods, fraud proofs Asset Security: Lockup mechanisms, minting controls, burning procedures Network Security: Cross-chain replay protection, nonce management
+
+## Network Economics
+Token Models
+Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards
+Incentive Structures
+Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding
+Economic Security
+Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support
+Network Performance Metrics
+Transaction Performance
+Throughput: Transactions per second (TPS), block size limits Latency: Block time, time to finality, confirmation time Costs: Transaction fees, gas costs, execution costs
+Network Performance
+Block Propagation: Time to reach network percentage Network Load: Memory pool size, peer connections, bandwidth usage Chain Quality: Uncle rate, chain reorganizations, block validity
+Resource Utilization
+Computing Resources: CPU usage, memory requirements, storage growth Network Resources: Bandwidth consumption, peer connections Storage Resources: State size, history size, pruning capabilities
+Node Architecture
+Node Types
+Full Nodes: Complete state and history validation Light Nodes: Header-only validation, SPV proofs Archive Nodes: Complete historical state storage Validator Nodes: Block production and validation
+Network Topology
+Peer Discovery: Bootstrap nodes, DHT, static peers Connection Management: Maximum peers, scoring systems, ban lists Data Propagation: Block propagation, transaction propagation
+Resource Management
+State Management: State storage, pruning policies, snapshot systems Network Management: Bandwidth limits, peer limits, prioritization Computing Management: Transaction pools, execution priorities
+Developer Infrastructure
+Development Tools
+SDKs: Language support, library ecosystems, tool chains Testing Tools: Local networks, test frameworks, simulation tools Monitoring Tools: Block explorers, metrics, logging systems
+API Infrastructure
+RPC Endpoints: JSON-RPC, GraphQL, WebSocket Node APIs: Client APIs, wallet interfaces, indexer APIs Data Access: Block data, state data, historical data
+Development Environment
+Local Development: Development networks, docker environments Testing Networks: Test networks, faucets, explorers Production Deployment: Network access, monitoring, maintenance
+
+Common Concepts
+
+State Growth & Pruning Mechanisms Across Networks
+Ethereum
+State Growth
+Unlimited state growth
+Historical state maintained by full nodes
+State size ~130GB and growing
+Uses Merkle Patricia Trie for state storage
+Pruning Mechanisms
+Archive nodes store full history
+Full nodes can prune historical states
+Light clients only store block headers
+No protocol-level state expiry yet (proposed)
+Solana
+State Growth
+Accounts model with rent mechanism
+State stored in memory for fast access
+Accounts can be marked rent-exempt
+Program data separated from account data
+Pruning Mechanisms
+Rent mechanism removes inactive accounts
+Two years of inactivity leads to account cleanup
+Validators can prune historical data
+Replicators store historical data
+Sui
+State Growth
+Object-centric storage model
+Objects can be deleted explicitly
+Storage fund for long-term costs
+Parallel execution reduces state bloat
+Pruning Mechanisms
+Objects can be explicitly deleted
+Storage rebates incentivize cleanup
+Validators can prune transaction history
+Maintains live object set separately
+Aptos
+State Growth
+Account-based model
+Resources stored under accounts
+Explicit resource deletion
+Storage fees for state growth
+Pruning Mechanisms
+Storage fees incentivize cleanup
+Explicit resource deletion
+Validators can prune historical states
+Maintains current state tree
+XRP
+State Growth
+Account-based ledger
+Reserve requirements limit state growth
+Objects can be deleted
+Amendable reserve requirements
+Pruning Mechanisms
+Online deletion for historical data
+Reserve requirements prevent spam
+Ledger header retention policy
+Configurable history retention
+Stellar
+State Growth
+Account-based ledger
+Minimum balance requirements
+Entry lifetime policies
+Base reserve adjustable by voting
+Pruning Mechanisms
+Built-in entry expiration
+Configurable history retention
+Minimum balance requirements
+Explicit deletion of unused entries
+Polkadot
+State Growth
+Trie-based state storage
+Storage rent (proposed)
+Bounded parachain growth
+Shared state across parachains
+Pruning Mechanisms
+State rent mechanism (planned)
+Historical pruning options
+Parachain state management
+Archive nodes for full history
+Layer 2 Solutions
+Optimistic Rollups (Optimism, Arbitrum)
+State growth tied to L1 data availability
+Compression techniques for state updates
+Fraud proof window affects state retention
+Can prune after challenge period
+ZK Rollups (zkSync, StarkNet)
+State updates verified by ZK proofs
+More efficient state representation
+Immediate finality enables pruning
+State diffs published to L1
+Key Patterns
+Growth Control MechanismsStorage fees/rent
+Minimum balances
+Reserve requirements
+Explicit deletion
+Pruning StrategiesHistorical pruning
+State expiry
+Account cleanup
+Resource deletion
+Storage IncentivesRent mechanisms
+Storage rebates
+Deletion incentives
+Reserve requirements
+
+## Consensus Mechanisms
+Consensus Mechanisms
+All DIN's have a consensus mechanism
+we have the consensus mechanisms. These can be divided into the following broad categories:
+Proof based mechanisms. Mainly Proof of Work and Proof of Stake
+Byzantine Fault Tolerance (BFT) Mechanisms. Tendermint
+Voting Based Mechanisms, Ripple and Stellar
+Directed Acrylic Graph based mechanisms
+Hybrid. PoS + BFT is used by Polkadot and Cosmos
+Novel Mechanisms
+
+Need to talk about finality here about probabilistic vs deterministic
+Proof-Based Mechanisms
+Proof of Work (PoW)
+Security Model: Computational work as economic security
+Key Properties: 
+Energy-intensive computational puzzles
+Natural chain selection through longest chain rule
+Strong resistance to Sybil attacks
+High latency to finality
+Finality: Probabilistic finality with increasing certainty over time
+Attack Resistance: 
+51% attack requires majority of network hashpower
+Very high cost of attack for established networks
+Examples: Bitcoin, Ethereum (pre-merge), Litecoin
+Proof of Stake (PoS)
+Security Model: Economic stake as security
+Key Properties: 
+Energy efficient
+Validator selection based on stake
+Slashing conditions for misbehavior
+Lower latency than PoW
+Finality: Can achieve deterministic finality with additional mechanisms
+Attack Resistance: 
+33% or 51% stake required depending on implementation
+Economic penalties for malicious behavior
+Examples: Ethereum 2.0, Cardano, Tezos
+Byzantine Fault Tolerance (BFT) Mechanisms
+Classical BFT
+Security Model: Agreement among known validator set
+Key Properties: 
+High throughput
+Low latency
+Immediate finality
+Limited validator set size
+Finality: Instant finality once consensus reached
+Attack Resistance: 
+Tolerates up to 1/3 Byzantine validators
+Requires 2/3+ honest validators
+Examples: Tendermint (Cosmos), Hyperledger Fabric
+Practical BFT (PBFT)
+Key Properties: 
+Three-phase commit protocol
+View change protocol for leader failures
+Optimized for practical systems
+Performance Characteristics: 
+Higher message complexity
+Better performance in stable conditions
+Examples: NEO, Hyperledger Sawtooth
+Voting-Based Mechanisms
+Federated Byzantine Agreement (FBA)
+Security Model: Trust between validator groups
+Key Properties: 
+Quorum slices
+Flexible trust model
+Open validator set
+Finality: Quick finality within trust boundaries
+Attack Resistance: 
+Based on trust overlap between validator groups
+Resistant to split votes through quorum intersection
+Examples: Stellar, Ripple
+Delegated Proof of Stake (DPoS)
+Security Model: Elected validator set
+Key Properties: 
+Token holder voting
+Limited validator set
+Regular validator rotation
+Finality: Quick finality with selected validators
+Attack Resistance: 
+Governance attacks through voter collusion
+Validator collusion risks
+Examples: EOS, TRON
+Directed Acyclic Graph (DAG) Based
+Pure DAG
+Security Model: Transaction confirmation through subsequent references
+Key Properties: 
+Parallel transaction processing
+No explicit blocks
+Scalable throughput
+Finality: Probabilistic with increasing certainty
+Attack Resistance: 
+Spam resistance through PoW
+Double-spend prevention through transaction ordering
+Examples: IOTA, Hedera Hashgraph
+Block-DAG
+Security Model: Hybrid of blockchain and DAG properties
+Key Properties: 
+Multiple concurrent blocks
+Complex ordering rules
+Higher throughput than linear chains
+Examples: PHANTOM, SPECTRE
+Hybrid Mechanisms
+PoS + BFT
+Security Model: Economic stake with BFT finality
+Key Properties: 
+Stake-based validator selection
+BFT consensus for finality
+Slashing for misbehavior
+Finality: Deterministic through BFT layer
+Attack Resistance: 
+Economic security from stake
+Byzantine resistance from BFT
+Examples: Polkadot, Cosmos
+PoW + BFT
+Security Model: Dual layer security
+Key Properties: 
+PoW for block production
+BFT for finality
+Higher security guarantees
+Examples: Decred
+Novel Mechanisms
+Proof of History (PoH)
+Security Model: Verifiable delay function for time ordering
+Key Properties: 
+Built-in timestamping
+Efficient verification
+High throughput
+Finality: Quick finality with PoS integration
+Examples: Solana
+Avalanche
+Security Model: Metastable consensus through repeated sampling
+Key Properties: 
+Sub-second finality
+High throughput
+Scalable validator set
+Finality: Probabilistic with quick practical finality
+Examples: Avalanche
+Key Considerations for Consensus Selection
+Performance Metrics
+Transaction throughput
+Time to finality
+Network overhead
+Hardware requirements
+Security Properties
+Byzantine fault tolerance
+Sybil resistance
+Double-spend prevention
+Network partition handling
+Decentralization Factors
+Validator set size
+Entry barriers
+Geographic distribution
+Economic concentration
+Network Requirements
+Synchronicity assumptions
+Bandwidth needs
+Storage requirements
+CPU/GPU demands
+Economic Considerations
+Operating costs
+Required stake/investment
+Reward distribution
+Slashing conditions
+
+## Fee Markets
+Transaction Fees 
+Transaction fee's sometimes called Gas is what you pay to interact with the DIN. 
+
+So the attributes for Transactions Fee's are:
+Tips/Bribes
+How Transactoin fees are distributed. Burnt or redirected to Miners
+How fee's are calculated
+Base Fee
+Dynamic Fee (based on something like network congestion)
+
+
+
+
+
+
+Chain
+Tips/Bribes
+Fee Distribution
+Base Fee
+Dynamic Fee
+Ethereum
+Priority fee (optional tip)
+Base fee burnt, priority fee to validators
+Yes - 7 wei minimum
+Yes - Based on block utilization (12.5% adjustment per block)
+Bitcoin
+No explicit tips, fee rate acts as priority
+100% to miners
+No fixed base
+Yes - Based on mempool congestion (sat/vB)
+Solana
+No explicit tips
+50% burnt, 50% to validators
+Yes - fixed per signature
+Yes - Based on recent block compute unit usage
+BSC
+Priority fee (similar to ETH)
+100% to validators
+No
+Yes - Based on network load
+Polygon
+Priority fee (like ETH)
+Base fee burnt, priority fee to validators
+Yes - follows ETH model
+Yes - Based on block utilization (like ETH)
+Aptos
+No explicit tips
+Split between storage fund, burning, and validators
+Yes - fixed per operation type
+Yes - Based on block gas usage
+Sui
+No explicit tips
+Split between validators, treasury, and burning
+Yes - Reference Gas Price (RGP)
+Yes - Based on network conditions and storage state
+Avalanche
+Priority fee (like ETH)
+Base fee burnt, priority fee to validators
+Yes - follows ETH model
+Yes - Based on block utilization
+Cosmos
+No explicit tips
+100% to validators
+Yes - minimum gas price
+Varies by chain (set by validators)
+Near
+No explicit tips
+70% burnt, 30% to validators
+Yes - fixed base cost per action
+Yes - Based on block utilization
+Cardano
+No explicit tips
+100% to stake pool operators
+Yes - minimum fee
+Yes - Based on script complexity and memory usage
+Arbitrum
+Priority fee inherited from ETH
+Most fees go to L1 for settlement
+Yes - includes L1 data fee
+Yes - Based on L1 gas prices + L2 congestion
+Optimism
+Priority fee inherited from ETH
+Most fees go to L1 for settlement
+Yes - includes L1 data fee
+Yes - Based on L1 gas prices + L2 congestion
+
+
+
+
+
+XRP
+No explicit tips
+100% burnt
+Yes - fixed base of 0.00001 XRP
+No - static fees with rare governance changes
+Stellar
+No explicit tips
+100% burnt
+Yes - fixed base of 0.00001 XLM
+Yes - Based on surge pricing mechanism
+Algorand
+No explicit tips
+100% burnt
+Yes - 0.001 ALGO base
+Yes - Based on number of MicroAlgos per byte
+Tezos
+No explicit tips
+100% to bakers
+Yes - minimum fee
+Yes - Based on block saturation
+Polkadot
+No explicit tips
+Split between treasury and validators
+Yes - fixed weight-based
+Yes - Based on block weight
+Flow
+No explicit tips
+100% burnt
+Yes - fixed execution fee
+Yes - Based on execution effort
+Hedera
+No explicit tips
+Split between treasury and nodes
+Yes - fixed per operation
+Yes - Based on resource pricing model
+Tron
+No explicit tips
+100% to validators
+Yes - fixed energy cost
+Yes - Based on bandwidth and energy usage
+ICP
+No explicit tips
+Burnt (cycles consumption)
+Yes - cycles per instruction
+Yes - Based on subnet load
+Base
+Priority fee (like ETH)
+Most fees to L1, some to sequencer
+Yes - includes L1 fee
+Yes - Based on L1 + sequencer fees
+zkSync
+Priority fee mechanism
+Split between L1 fees and protocol
+Yes - includes L1 fee
+Yes - Based on L1 + proving costs
+
+Additional Notes:
+L2s (Arbitrum, Optimism) have more complex fee structures due to L1 settlement costs
+Chains using EIP-1559 style mechanisms (ETH, Polygon) have the most sophisticated congestion pricing
+Some chains (Aptos, Sui) separate storage costs from computation in their fee model
+MEV extraction capabilities vary significantly across chains, affecting real transaction costs
+
+Congestion Measurement Mechanisms
+Layer 1 Networks
+Ethereum
+Measures block gas utilization vs 15M target
+12.5% base fee adjustment per block
+Block size can flex up to 30M gas
+Stellar
+Uses surge pricing mechanism
+Triggers when ledger capacity exceeds 50%
+Fee increases proportionally to network load
+Polkadot
+Uses weight-based system
+Measures block weight against target
+Adjusts fees based on block fullness
+Tezos
+Monitors block saturation
+Adjusts fees based on recent block usage
+Uses gas limits per operation type
+Layer 2 Settlement Fee Breakdown
+Optimistic Rollups (Optimism, Arbitrum)
+L1 Data Fee Cost of publishing data to Ethereum
+Calculated as: L1 gas price × data size
+Compressed calldata reduces costs
+L2 Execution Fee Local computation costs
+Much lower than L1 equivalent
+Based on L2 congestion
+Sequencer Fee Additional fee for transaction ordering
+Varies by implementation
+Can be minimal or substantial
+ZK Rollups (zkSync, StarkNet)
+Proof Generation CostCost of generating ZK proof
+Amortized across transactions
+Varies by proving system
+L1 Settlement CostBatch verification on L1
+Data availability costs
+State updates
+L2 Execution FeeLocal computation
+Generally fixed per operation type
+Some dynamic elements based on load
+State-Channel & Plasma
+Entry/Exit CostsOpening/closing channels
+State transitions to L1
+Challenge period costs
+Operating CostsGenerally minimal or zero
+May include watchtower fees
+Service provider fees in some cases
+Special Considerations
+Cross-rollup TransactionsAdditional bridging fees
+Multiple proof generations
+Higher L1 data costs
+Batch ProcessingReduces per-transaction costs
+Affects settlement timing
+Trade-off between cost and speed
+MEV in L2sSequencer extraction potential
+Cross-L2 arbitrage costs
+Impact on effective transaction costs
+
+## Network Change Management
+## Network Change Management in Decentralized Incentive Networks
+
+## Overview
+Network change management in DINs encompasses the processes, mechanisms, and stakeholders involved in proposing, discussing, approving, and implementing network modifications. This framework covers everything from minor parameter adjustments to major protocol upgrades.
+
+## Change Implementation Models
+
+### 1. Hard Forks
+- **Definition**: Protocol changes that make previously invalid blocks/transactions valid (or vice-versa), requiring all nodes to upgrade
+- **Characteristics**:
+  - Non-backwards compatible
+  - Requires coordinated network upgrade
+  - Creates potential for chain splits if not unanimously adopted
+- **Use Cases**: Major protocol upgrades, fundamental rule changes, bug fixes
+- **Examples**: Ethereum's merge to PoS, Bitcoin's SegWit upgrade
+
+### 2. Soft Forks
+- **Definition**: Backwards-compatible protocol changes that tighten rules without invalidating existing blocks
+- **Characteristics**:
+  - Backwards compatible
+  - Old nodes can still participate (with limitations)
+  - Lower coordination requirements
+- **Use Cases**: Adding new features, incremental improvements
+- **Examples**: Bitcoin's P2SH implementation, taproot upgrade
+
+### 3. Parameter Updates
+- **Definition**: Changes to network variables within predefined bounds
+- **Characteristics**:
+  - No code changes required
+  - Often automated through on-chain governance
+  - Lower risk than protocol changes
+- **Use Cases**: Fee adjustments, block size modifications, staking parameters
+- **Examples**: Tezos' regular parameter updates, Cosmos' governance parameters
+
+## Governance Mechanisms
+
+### 1. Off-Chain Governance
+- **Characteristics**:
+  - Social consensus through discussion forums, social media, conferences
+  - Informal decision-making processes
+  - Relies on node operator coordination
+- **Advantages**:
+  - Flexible and adaptable
+  - Allows for nuanced discussion
+  - Natural resistance to capture
+- **Disadvantages**:
+  - Can be slow and messy
+  - May lack clear resolution mechanisms
+  - Potential for contentious outcomes
+
+### 2. On-Chain Governance
+- **Characteristics**:
+  - Formal voting mechanisms
+  - Smart contract-based execution
+  - Token-weighted or identity-based participation
+- **Advantages**:
+  - Clear process and outcomes
+  - Automated execution
+  - Transparent participation
+- **Disadvantages**:
+  - Potential plutocratic capture
+  - Reduced flexibility
+  - Voter apathy risks
+
+### 3. Hybrid Systems
+- **Characteristics**:
+  - Combines off-chain discussion with on-chain execution
+  - Multiple stages of proposal refinement
+  - Mixed participation models
+- **Advantages**:
+  - Balances flexibility with formality
+  - Combines benefits of both approaches
+  - Can adapt to different types of changes
+- **Examples**: Polkadot's governance system, Cosmos Hub's proposal process
+
+## Improvement Proposal Systems
+
+### 1. Structure
+- **Stages**:
+  - Draft: Initial proposal development
+  - Review: Community feedback and refinement
+  - Last Call: Final period for major objections
+  - Accepted/Final: Ready for implementation
+  - Rejected: Proposal declined
+- **Components**:
+  - Technical specification
+  - Motivation and rationale
+  - Backwards compatibility analysis
+  - Reference implementation (if applicable)
+  - Security considerations
+
+### 2. Common Frameworks
+- **BIP (Bitcoin Improvement Proposals)**:
+  - Focus on consensus changes
+  - Conservative approach
+  - High emphasis on security
+- **EIP (Ethereum Improvement Proposals)**:
+  - Multiple tracks (Core, ERC, Interface)
+  - Regular cadence of updates
+  - Strong emphasis on standardization
+- **Network-Specific Systems**:
+  - Customized to network needs
+  - Varying levels of formality
+  - Different voting thresholds
+
+## Centralization Factors
+
+### 1. Development Centralization
+- **Core Development Teams**:
+  - Control over codebase
+  - Technical expertise concentration
+  - Funding dependencies
+- **Client Implementation**:
+  - Diversity of node software
+  - Implementation independence
+  - Bug discovery and fixes
+
+### 2. Governance Centralization
+- **Voting Power Distribution**:
+  - Token concentration
+  - Delegate systems
+  - Voter participation rates
+- **Proposal Control**:
+  - Who can propose changes
+  - Filtering mechanisms
+  - Discussion venue control
+
+### 3. Infrastructure Centralization
+- **Node Operation**:
+  - Geographic distribution
+  - Hardware requirements
+  - Operating costs
+- **Service Providers**:
+  - API services
+  - Block explorers
+  - Development tools
+
+## Best Practices
+
+### 1. Change Management
+- Clear documentation of changes
+- Adequate testing periods
+- Coordinated upgrade schedules
+- Emergency response procedures
+
+### 2. Community Engagement
+- Regular communication channels
+- Multiple feedback mechanisms
+- Transparent decision-making
+- Educational resources
+
+### 3. Technical Implementation
+- Comprehensive testing frameworks
+- Clear upgrade paths
+- Fallback mechanisms
+- Security audits
+
+## Risk Factors
+
+### 1. Technical Risks
+- Implementation bugs
+- Security vulnerabilities
+- Upgrade coordination failures
+- Network splits
+
+### 2. Governance Risks
+- Capture by special interests
+- Low participation
+- Contentious decisions
+- Unclear processes
+
+### 3. Social Risks
+- Community fragmentation
+- Loss of developer support
+- Reputation damage
+- Market impacts
+
+## Future Considerations
+
+### 1. Emerging Trends
+- Automated governance systems
+- AI-assisted proposal analysis
+- Cross-chain governance
+- Dynamic parameter adjustment
+
+### 2. Challenges
+- Scaling governance participation
+- Balancing security and innovation
+- Managing increasing complexity
+- Maintaining decentralization
+
+### 3. Opportunities
+- Improved governance tools
+- Better simulation capabilities
+- Enhanced coordination mechanisms
+- More sophisticated voting systems
+
+## Dependent Network Ratings
+Polygon zkEVM
+Settlement Guarantees (10/10 weight): 
+Score: 9/10
+The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum's consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.
+
+Dispute Resolution (9/10 weight):
+Score: 10/10
+Ethereum serves as the absolute source of truth for the zkEVM. If there's ever a dispute about the state, the zero-knowledge proofs verified by Ethereum's consensus provide mathematical certainty about what is correct. There's no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.
+
+Economic Security Inheritance (8/10 weight):
+Score: 9/10
+The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can't confirm invalid state transitions, and its assets are secured by Ethereum's consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.
+
+State Finality (7/10 weight):
+Score: 9/10
+Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there's no waiting period for finality beyond Ethereum's own finality period. This is as strong as state finality can get for a settlement-dependent network.
+
+Exit Rights Guarantees (6/10 weight):
+Score: 8/10
+Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum's consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.
+
+State Progression Dependency (5/10 weight):
+Score: 7/10
+While the zkEVM can process transactions independently, it can't finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there's some independence in transaction processing.
+
+Asset Movement (4/10 weight):
+Score: 10/10
+Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they're locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.
+
+Total Score: 62/70 (approximately 89%)
+
+This analysis places Polygon zkEVM firmly in the "Fully Non-Sovereign" category. 
+Arbitrum
+Let me analyze Arbitrum's relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.
+
+Settlement Guarantees (10/10 weight):
+Score: 7/10
+Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it's not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum's consensus layer still makes this a robust settlement mechanism.
+
+Dispute Resolution (9/10 weight):
+Score: 8/10
+Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum's consensus automatically enforces the correct resolution once fraud is proven.
+
+Economic Security Inheritance (8/10 weight):
+Score: 9/10
+Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum's state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.
+
+State Finality (7/10 weight):
+Score: 6/10
+While Arbitrum's state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.
+
+Exit Rights Guarantees (6/10 weight):
+Score: 8/10
+Users can always withdraw their assets to Ethereum, guaranteed by Ethereum's consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum's operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.
+
+State Progression Dependency (5/10 weight):
+Score: 7/10
+Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.
+
+Asset Movement (4/10 weight):
+Score: 10/10
+Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum's consensus. When assets move to Arbitrum, they're locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.
+
+Total Score: 55/70 (approximately 79%)
+
+This analysis places Arbitrum in the "Fully Non-Sovereign" category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs. 
+
+Stacks
+Settlement Guarantees (10/10 weight): Score: 4/10
+Stacks uses Bitcoin for checkpointing and security anchoring
+However, it lacks cryptographic enforcement of settlement by Bitcoin's consensus
+Bitcoin doesn't automatically enforce or validate Stacks' state transitions
+Falls into the "checkpoint systems" category rather than stronger settlement guarantees
+Dispute Resolution (9/10 weight): Score: 3/10
+While Stacks records its state on Bitcoin, Bitcoin's consensus doesn't serve as the ultimate arbiter
+Disputes are primarily resolved within Stacks' own consensus mechanism
+Bitcoin can't automatically correct or resolve issues in Stacks' state
+Economic Security Inheritance (8/10 weight): Score: 6/10
+Miners must commit actual Bitcoin through PoX mechanism
+This creates some economic security dependency on Bitcoin
+However, Stacks maintains its own economic incentives through STX
+State Finality (7/10 weight): Score: 5/10
+Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring
+State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces
+Provides stronger finality than fully independent chains but weaker than true L2s
+Exit Rights Guarantees (6/10 weight): Score: 4/10
+With sBTC, users can move Bitcoin between chains
+However, this relies on Stacks' mechanisms rather than being guaranteed by Bitcoin's consensus
+Exit rights depend on threshold signatures rather than cryptographic guarantees
+State Progression Dependency (5/10 weight): Score: 7/10
+Stacks blocks are linked to Bitcoin blocks through PoX
+State progression is tied to Bitcoin's block progression
+However, Stacks can still process transactions independently within this framework
+Asset Movement (4/10 weight): Score: 5/10
+sBTC enables Bitcoin movement between chains
+But this movement isn't directly enforced by Bitcoin's consensus
+Relies on threshold signatures and Stacks' mechanisms
+Total Score: 34/59 (approximately 58%)
+
+This places Stacks in the "Moderately Dependent" category on our spectrum.
+
+## Application Models
+Add a section here on precompiled contracts
+
+## Bridges

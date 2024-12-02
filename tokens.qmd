@@ -1,0 +1,196 @@
+# Digital Assets
+
+The logical place to start this Almanack is Digital Assets. These include all the financial instruments that exist within the Web3 sphere. For us to represent all Digital Assets within this space, that means we need to include all Web3 financial instruments, both on chain and off chain. 
+
+Another critical distinction we make is on chain versus off chain. Due to numerous reasons, primary amongst them being regulatory uncertainty, a lot of people can't own Digital Assets without going through the traditional financial systems. It's for this important reason we distinguish whether the ownership of the asset is off chain, such as a Bitcoin ETF, where the owner of the ETF holds a Derivative of the BTC, but doesn't actually hold the Bitcoin on chain. Versus someone holding Bitcoin in a wallet, holding the pure digital asset on chain. 
+
+We take inspiration from the Fat Protocol Thesis [@monegro2016fat] to define the major categories of Digital Assets within the Web3 realm.  
+
+* Coins 
+    * Layer 1s (Fat Protocols)
+    * Layer 2s
+        * Ozempic Protocols
+        * Sugar Protocols
+    * Derivatives
+* Token (Thin Protocols)
+    * Fungible
+        * Derivatives
+    * Non Fungible
+    * Baskets
+
+We then deal with Purchasing the Digital Asset as well as Holding the Digital Asset as well as Yield Properties. 
+
+## Coins
+Coins [Blockchain's](./blockchains.qmd) will have the following [Attributes](./attributes.qmd):
+
+* [Network Sovereignty](./blockchains.qmd/#sovereign-networks)
+* [Consensus Mechanism](./blockchains.qmd/#consensus-mechanisms)
+* [Economic Model](./blockchains.qmd/#network-economics)
+* [Network Purpose](./blockchains.qmd/#application-models)
+
+### Layer 1s
+Please see our definition of [Layer 1's](./technolect.qmd/#layer-1).
+
+### Layer 2 
+We informally break these networks into Ozempic or Sugar networks. This reflects our adherance to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value. For Ozempic Networks while some value does return to the Layer 1. The net result is a reducing the value in the host network. As an example, Optimism and Arbitrum both contribute lots of qualitative value back to Ethereum, such as innovation, goodwill and developer activity, however in terms of financial value, they're largely extractive and in our opinion the value extraction is far greater than the value injection. These networks reduce the fatness of the L1 and therefore can be accurately called Ozempic networks. 
+
+We'll base this upon value flows. Defillama doesn't actually display this. So we'll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon. 
+
+#### Ozempic Effect
+Let's build a comprehensive framework for tracking the true "Ozempic effect" of L2s on Ethereum. We'll need several interconnected metrics to understand the complete value flow dynamics.
+
+1. Wallet Migration Analysis
+- Track addresses that first appeared on Ethereum before a certain date (let's call them "Ethereum Native Wallets")
+- Monitor their activity transition to L2s over time
+- Analyze their ETH holdings distribution between L1 and L2s
+- Calculate the ratio of their transaction activity on L2s versus L1
+
+2. L2 Native User Analysis
+- Identify wallets that first appeared on L2s
+- Track what percentage never bridge to Ethereum
+- Measure their total value held
+- Calculate their transaction activity
+
+3. Fee Flow Dynamics
+- Track L2 sequencer fees paid back to Ethereum
+- Calculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)
+- Monitor the ratio of fees paid back to Ethereum versus fees retained by the L2
+
+We could create a composite "Value Migration Score" that looks like:
+
+```python
+def calculate_migration_score(l2_data):
+    # Value Migration
+    eth_native_migration = (
+        eth_native_wallets_on_l2 / total_eth_native_wallets *
+        eth_value_moved_to_l2 / original_eth_holdings
+    )
+    
+    # Activity Migration
+    activity_migration = (
+        l2_transactions_by_eth_wallets / 
+        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)
+    )
+    
+    # L2 Native Growth
+    l2_native_strength = (
+        l2_only_wallets / total_l2_wallets *
+        l2_native_value / total_l2_value
+    )
+    
+    # Fee Economics
+    fee_efficiency = (
+        sequencer_fees_to_ethereum / 
+        theoretical_l1_fees_for_same_transactions
+    )
+    
+    return (
+        eth_native_migration * 0.3 +
+        activity_migration * 0.3 +
+        l2_native_strength * 0.2 +
+        fee_efficiency * 0.2
+    )
+```
+
+This would give us a quantitative measure of how effectively an L2 is:
+1. Attracting value from Ethereum
+2. Generating new value through native users
+3. Maintaining a sustainable fee relationship with Ethereum
+
+A true Ozempic L2 should show:
+- High migration of ETH native wallets
+- Strong L2 native user growth
+- Efficient fee generation that still provides meaningful revenue to Ethereum
+- Sustained or growing activity ratios over time
+
+Would you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?
+
+* Net Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period
+
+
+We break these down into:
+
+* Rollups
+    * Optimistic
+    * ZK 
+* Validiums
+* Plasma
+* Sidechains
+
+### Derivatives
+
+* On chain
+    * Wrapped
+
+
+## Tokens
+
+
+
+* Pure
+    * Cold
+    * Hot
+* Smart
+    * MPC 
+    * Smart Contract Based (Includes Account Abstraction)
+
+
+Fungible is a pretty terrible name, but it roughly means divisable. It's easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It's divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It's Non fungible, or non divisable. There's more nuances which we can deal with in the vocabulary section. But that's the general idea of it. 
+
+Fungible Digital assets can have both Coins and Tokens, while Non Fungibles could theoretically have a Coin that represented the network, we haven't seen this innovation occur yet. So for non Fungibles we'll focus on Tokens. An important distinction needs to be made here in how we define Digital Asset Derivatives. Any Digital Asset that doesn't exist in it's native form will be considered a derivative. Some, non-exhaustive, examples of Derivative categories:
+
+* On Chain Derivatives
+* Off Chain Derivatives
+
+We'll break it down into:
+Network tokens
+Yield Bearing Tokens
+Stable coins
+Governance Tokens
+Utility Tokens
+Wrapped Tokens
+Meme Coins
+Stable Coins
+Issuance:
+Centralized
+Decentralized (Algorithmic)
+Overcollateralized (Ratios 150%)
+Delta Neutral positions (Ethena)
+Blended (USDS)s
+Regulated
+First Digital complies with regulatory compliance in Asia, particularly Hong Kong
+Backing
+US Dollars
+short term US treasury bonds
+Commercial paper, cahs and other investements (USDT)
+
+USDC 
+USDE (Ethena)
+USDS
+DAI
+FDUSD
+USDT
+Non Fungible Tokens
+Has the following attributes
+Art & Collectibles
+Profile Picture (PFP)
+Gaming
+Domain Names and Identity
+Real World Assets (RWA)
+
+The NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection's market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.
+TradFi
+ETF's
+Spot ETFs and Futures ETFs
+
+These are derivatives I believe. 
+
+## Markets
+Where can I buy these Digital Assets?
+
+## Holding
+### Custodial
+
+### Non-Custodial
+
+## Yield Properties

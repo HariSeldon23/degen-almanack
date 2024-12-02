@@ -1,0 +1,38 @@
+# Yields
+Trading
+Arbitrage
+Stable coin arbitrage on Ethena and USDX
+Mining Yield
+Solo Mining
+Pool Mining
+Cloud Mining
+
+Solo Mining
+Generally impractical and not profitable as it requires specialized mining equipment
+
+DeFi yield
+We'll break down Yields into StableCoin, Single tokens, Pool Yield then we'll have a separate category for folding
+
+StableCoins
+Link to Defillama's Yield Page https://defillama.com/yields
+
+
+Single Tokens
+
+Pools
+
+Folding
+
+
+CeDeFi Yield
+Exchange Lending
+Earn Products
+Staking Yield
+Validator Staking
+Delegator Staking
+Liquid Staking
+
+Spot Arbitrage
+
+Peg Arbitrage
+These are unique to stable coins

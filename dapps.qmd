@@ -1,0 +1,35 @@
+# dApps
+
+dApps can be single chain or multichain. However they must exist on a DIN and can't exist independently from a DIN. They don't need to have a token to be included here. If an NFT develops functionality, they they'll be inlcuded here too. They can be
+DeFi
+SocialFi
+GameFi
+CeDeFi
+Concepts
+Concepts
+Flash loans
+DeFi
+Derivatives 
+Basis Trading
+DEX
+Lending
+Utility
+Yield
+Pendle 3k in 
+Basis Trading
+Current dApps
+Ethena
+USDX
+BounceBit
+
+Derivatives
+Liquid staking Derivatives such as Lido, and EtherFi is the primary element here
+Lending
+
+SocialFi
+Meme Coins
+CeDeFi
+Circle fits in here
+GameFi
+
+

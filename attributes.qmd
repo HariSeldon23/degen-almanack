@@ -1,0 +1,391 @@
+# Attributes
+
+## Markets
+
+Markets
+Markets are divided into the following sections:
+Regulated 
+Unregulated/Grey
+Cross-border considerations
+
+Regulated
+United States
+Regulatory Bodies: 
+Securities and Exchange Commission (SEC)
+Commodity Futures Trading Commission (CFTC)
+Financial Crimes Enforcement Network (FinCEN)
+State-level regulators (e.g., NYDFS)
+Trading Venues:
+Regulated Spot Markets: Coinbase, Kraken, Gemini
+Regulated Derivatives: CME Group, Bakkt
+Regulated ETFs: Spot Bitcoin ETFs, Bitcoin Futures ETFs
+Regulated Broker-Dealers: Fidelity Digital Assets, Robinhood Crypto
+Permitted Activities:
+Spot trading of approved cryptocurrencies
+Regulated derivatives trading
+Institutional custody services
+Registered broker-dealer services
+Regulated staking services
+Restricted Activities:
+Unregistered securities offerings
+Unregistered exchange operations
+Certain lending products
+High-leverage trading for retail
+Germany
+Regulatory Bodies: 
+Federal Financial Supervisory Authority (BaFin)
+European Securities and Markets Authority (ESMA)
+Trading Venues:
+Licensed Crypto Custody Providers
+Regulated European Exchanges
+German Bank Crypto Services
+Permitted Activities:
+Cryptocurrency custody
+Regulated trading services
+Investment fund products
+Crypto banking services
+Restricted Activities:
+Unregistered custody services
+Non-compliant AML practices
+
+Japan
+Regulatory Bodies: 
+Financial Services Agency (FSA)
+Japan Virtual Currency Exchange Association (JVCEA)
+Trading Venues:
+Licensed Japanese Exchanges
+Registered Crypto Asset Service Providers
+Permitted Activities:
+Licensed exchange operations
+Regulated custody services
+Approved token listings
+Derivatives trading with restrictions
+Restricted Activities:
+Unlicensed exchange operations
+Privacy coin trading
+High leverage trading
+
+India
+Regulatory Bodies: 
+Reserve Bank of India (RBI)
+Securities and Exchange Board of India (SEBI)
+Trading Venues:
+Registered Indian Exchanges
+Licensed Payment Providers
+Permitted Activities:
+Basic spot trading
+KYC-compliant services
+Payment services integration
+Restricted Activities:
+Peer-to-peer trading restrictions
+Limited banking relationships
+Derivatives trading limitations
+
+China
+Regulatory Bodies: 
+People's Bank of China (PBOC)
+Cyberspace Administration of China (CAC)
+Trading Venues:
+No legally operating crypto exchanges
+Limited blockchain service providers
+Permitted Activities:
+Blockchain technology development
+Digital Yuan (CBDC) related activities
+NFT markets (termed "digital collectibles")
+Restricted Activities:
+Cryptocurrency trading
+Token offerings
+Crypto mining
+Crypto payments
+Australia
+Regulatory Bodies
+Australian Securities and Investments Commission (ASIC)
+Australian Transaction Reports and Analysis Centre (AUSTRAC)
+Australian Taxation Office (ATO)
+Reserve Bank of Australia (RBA) - for policy guidance
+Australian Treasury - for legislative framework
+
+Trading Venues
+Licensed Digital Currency Exchanges
+
+Must be registered with AUSTRAC
+Required to implement robust AML/CTF programs
+Mandatory suspicious transaction reporting
+Regular compliance audits
+
+Regulated Investment Products
+
+Exchange Traded Funds (ETFs)
+Managed Investment Schemes
+Capital Protected Products
+Cryptocurrency-linked investment products
+
+Permitted Activities
+Exchange Services
+
+Spot cryptocurrency trading
+Fiat-to-crypto conversions
+Custody services
+Digital asset management
+Staking services through regulated providers
+
+Investment Services
+
+Cryptocurrency ETFs on ASX
+Self-Managed Super Fund (SMSF) crypto investments
+Regulated crypto investment advice
+Token-based investment schemes
+
+Innovation Support
+
+Enhanced regulatory sandbox for fintech testing
+Government-supported blockchain projects
+Research and development initiatives
+
+Restricted Activities
+Trading Restrictions
+
+Unregistered exchange operations
+Market manipulation
+Insider trading in crypto markets
+Unlicensed financial advice
+
+Product Limitations
+
+Certain complex derivatives
+High-leverage trading products
+Unregistered investment schemes
+Unregulated lending products
+
+Unique Australian Characteristics
+Tax Treatment
+
+Cryptocurrency treated as property for tax purposes
+Capital gains tax applies to crypto trades
+Personal use exemption for small transactions
+Clear guidance on mining and staking income
+
+Consumer Protection
+
+Design and distribution obligations
+Product intervention powers
+Mandatory disclosure requirements
+Dispute resolution mechanisms
+
+Market Innovations
+
+Central Bank Digital Currency research
+Blockchain Australia industry standards
+Government blockchain pilot programs
+Digital asset custody frameworks
+
+Recent Developments
+
+Token mapping initiative to classify digital assets
+Enhanced crypto exchange licensing framework
+Market integrity rules for digital assets
+Custody and storage standards development
+
+Cross-Border Considerations
+International Standards
+FATF Travel Rule compliance
+Global AML/CFT standards
+International sanctions compliance
+
+Regulatory Arbitrage
+Jurisdiction shopping
+VPN usage for market access
+Complex corporate structures
+Offshore entity creation
+
+Market Impact
+Liquidity fragmentation
+Price disparities
+Regional token preferences
+Market access limitations
+Unregulated/Grey 
+Trading Venues
+Offshore Exchanges
+Decentralized Exchanges (DEXs)
+OTC Desks
+Peer-to-Peer Platforms
+Services
+High-leverage trading (up to 100x)
+Complex derivatives products
+Unrestricted token listings
+Anonymous trading services
+Yield products without oversight
+Characteristics
+No KYC requirements
+Limited or no regulatory oversight
+No investor protection mechanisms
+Higher counterparty risks
+Limited recourse in disputes
+Greater product innovation
+Higher trading volumes
+More complex financial products
+
+## Market Participants
+TradFi
+Trading Venues
+Yield Generation
+TradFi
+Exchange Traded Funds Issuers
+Corporate Exposure
+Treasury Holdings
+Proxy Stocks
+Private Investment Funds
+Hedge Funds
+Private Equity
+Trading Venues 
+Centralized Exchanges
+Spot Trading
+Derivatives
+Futures
+Options
+Perpetual Futures
+Margin Trading
+Decentralized Exchanges
+Automated Market Makers
+Order Book DEXs
+Request for Quote
+Options
+Perpetuals
+Structure Products
+Over the Counter
+
+
+Market Participants
+
+Regulated ETFs: Spot Bitcoin ETFs, Bitcoin Futures ETFs
+Regulated Broker-Dealers: Fidelity Digital Assets, Robinhood Crypto
+
+CEX's
+
+
+
+CEX
+Regulated Jurisdictions
+Trading Type
+Coinbase
+USA
+Spot
+Kraken
+USA
+Spot
+Gemini
+USA
+Spot
+Binance
+TradFi
+
+
+
+
+Organisation
+Regulated Jurisdictions
+Trading Type
+Org Type
+CME Group
+USA
+Derivatives
+Regulated Derivatives Venue
+Bakkt
+USA
+Derivatives
+Regulated Derivatives Venue
+BlackRock
+USA
+ETF
+Traditional Asset Management Firms
+Fidelity
+USA
+ETF
+Traditional Asset Management Firms
+Grayscale
+USA
+ETF
+Traditional Asset Management Firms
+Auditors
+Most are crooks
+
+Proxy Stock
+Types of Proxy Stocks
+Bitcoin-Focused Companies
+These are firms directly involved in Bitcoin acquisition, mining, or blockchain technology:
+MicroStrategy (MSTR):
+MicroStrategy is a business intelligence company that holds significant amounts of Bitcoin on its balance sheet.
+As of 2024, it is one of the largest corporate holders of Bitcoin, making its stock highly correlated to Bitcoin's price movements.
+Marathon Digital Holdings (MARA) and Riot Platforms (RIOT):
+These are Bitcoin mining companies. Their revenue and stock prices are heavily influenced by the price of Bitcoin and mining difficulty.
+Hut 8 Mining (HUT):
+Another major Bitcoin mining company with a strong treasury of self-mined Bitcoin.
+Payment Companies with Bitcoin Exposure
+These firms integrate Bitcoin into their payment systems or hold it as part of their investments:
+Block (formerly Square) (SQ):
+Block, founded by Jack Dorsey, integrates Bitcoin into its Cash App and has invested a portion of its treasury into Bitcoin.
+PayPal (PYPL):
+PayPal allows users to buy, sell, and hold Bitcoin. While its exposure to Bitcoin isn't as direct as MicroStrategy's, it still benefits from increased adoption.
+Cryptocurrency Exchanges
+Exchanges generate significant revenue from Bitcoin trading:
+Coinbase (COIN):
+Coinbase is a publicly traded cryptocurrency exchange. Its revenue is linked to trading activity, which tends to rise with Bitcoin’s price.
+ETFs or Trusts Holding Bitcoin
+These are not technically "stocks" but trade like stocks and are backed by Bitcoin:
+Grayscale Bitcoin Trust (GBTC):
+GBTC holds Bitcoin and allows investors to gain exposure without directly buying or storing it. However, it often trades at a premium or discount to its net asset value (NAV).
+ProShares Bitcoin Strategy ETF (BITO):
+This ETF invests in Bitcoin futures rather than Bitcoin itself.
+Broader Technology Companies with Bitcoin Investments
+These firms may invest in Bitcoin as part of their broader innovation strategies:
+Tesla (TSLA):
+Tesla briefly held Bitcoin as part of its treasury management strategy and accepts Bitcoin for some products (though policy has fluctuated).
+NVIDIA (NVDA):
+While not directly holding Bitcoin, NVIDIA benefits from the Bitcoin ecosystem by selling GPUs used in mining operations.
+
+
+## Risks 
+Sub categories of risks include
+smart contract vulns
+regulatory risks
+centralization risks for CeDeFi and CEX's 
+MEV
+network level
+key and wallet compromise
+cross chain exploits
+oracle manipulation 
+Social engineering 
+exploitation of economic models 
+Smart Contract Vulns
+Smart contract vulnerabilities represent one of the most critical risks in Web3, having led to billions in losses. This analysis examines major exploit categories based on historical hacks, their prevalence across different application models, and effective mitigation strategies.
+
+Subcategories are:
+Access Control Flaws
+Logic and Arithmetic Errors
+Oracle Manipulation
+Reentrancy attacks
+Flash Loan Vulnerabilities
+
+Reentrancy attacks
+Mainly on Solidity. Famous example is the DAO hack which resulted in the Ethereum. pre 0.4.0 of Solidity there were no built in protections, so completely vulnerable. 
+
+Pre-0.4.0: No built-in protections, completely vulnerable
+0.4.0-0.4.12: Introduction of the transfer() function with 2300 gas stipend, providing some protection but not comprehensive
+0.4.13-0.7.x: Better compiler warnings about state changes after external calls
+0.8.0+: Enhanced static analysis for potential reentrancy, but still requires explicit protection
+
+OpenZeppelin's ReentrancyGuard became the gold standard for protecting against these attacks. 
+
+Move, used by Sui and Aptos, takes a different approach. It uses a linear type system that treats resources as non-duplicatable assets. This makes traditional reentrancy attacks much harder because resources can't be accessed multiple times in the same transaction. However, parallel execution in Sui could potentially create new forms of reentrancy-like vulnerabilities.
+
+High Risk (without additional protections):
+Solidity (EVM) - Requires explicit guards and careful external call handling
+Medium Risk:
+Cairo (StarkNet) - Possible but harder to accidentally create
+Cadence (Flow) - Resource model helps but inter-contract calls need attention
+Low Risk (by design):
+Move (Sui/Aptos) - Linear type system prevents traditional reentrancy
+Rust (Solana) - Execution model prevents traditional reentrancy
+Vyper (EVM) - Built-in restrictions prevent common reentrancy patterns
+Clarity (Stacks) - Decidability and no recursive calls prevent traditional reentrancy
+

@@ -1,2 +1,3 @@
-# web3-almanack
-Trollip's Web3 Almanack
+# Trollip's Web3 Almanack
+
+`quarto preview`

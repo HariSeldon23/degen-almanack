@@ -1,0 +1,59 @@
+# Technolect
+
+## Layer 1
+Currently there is no universally accepted definition of what comprises a L1 Network. 
+
+We have token these sources in order to come up with our approximation
+[@nakamoto2008bitcoin] for Bitcoin
+[@buterin2013ethereum] for Ethereum
+[@buterin2021rollups] for the rollups guide
+[@charbonneau2023rollups] for the John's excellent guide
+
+Nakamoto's Bitcoin whitepaper, while not explicitly using the term "Layer 1," established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a `self-contained, sovereign blockchain network`.
+
+The Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.
+
+Buterin's rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.
+
+The Delphi Digital report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.
+
+Synthesizing these sources, we can define a Layer 1 blockchain as:
+
+A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.
+
+## Layer 2
+There is no canonical definition of L2's.
+
+We use
+[@gluchowski2021zkrollup]
+[@poon2017plasma]
+[@poon2016lightning]
+[@buterin2021rollups]
+[@charbonneau2023rollups]
+
+To come up with the following Framework
+1. Data Availability
+* On-chain (Rollups)
+* Off-chain (Validiums, Plasma, Sidechains)
+2. Security Model
+* Inherited from L1 (Rollups, Validiums)
+* Independent (Sidechains)
+* Hybrid (Plasma)
+3. State Validation
+* Fraud Proofs (Optimistic Rollups)
+* Validity Proofs (ZK Rollups, Validiums)
+* Independent (Sidechains)
+* Merkle Roots (Plasma)
+4. Settlement Mechanism
+* Direct (Rollups)
+* Challenge Period (Optimistic Rollups)
+* Exit Games (Plasma)
+* Bridge/Peg (Sidechains)
+
+## Decentralization 
+Can be either binary or scale definition
+
+State transition - 
+
+Settlement
+Settlement is the finalization of state changes. Meaning the point at which changes to a system's data becomes permanent and irreversible. 

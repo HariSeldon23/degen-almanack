@@ -1,0 +1,167 @@
+# Ratings
+
+## Core Rating Categories (60% of Total Rating)
+
+### 1. Protocol Value Capture (30%)
+A. Network Effect Metrics
+- Daily Active Users (DAUs)
+- Total Value Locked (TVL)
+- Transaction volume
+- Fee revenue generated
+- Protocol revenue retained
+
+B. Value Accrual Mechanisms
+- Token economics design
+- Fee distribution model
+- Staking mechanisms
+- Burns and supply dynamics
+
+C. Ozempic Network Effects 
+- Value extraction efficiency from L1
+    - Transaction fee capture rate
+    - User migration metrics from L1
+    - TVL migration patterns
+    - Gas savings versus L1
+- L1-L2 Value Dynamics
+    - Sequencer revenue distribution
+    - MEV capture and distribution
+    - Bridge volume and efficiency
+    - Settlement layer costs
+- Sustainable Value Creation
+    - Net new users versus L1 migration
+    - Ecosystem-specific applications
+    - Novel transaction types impossible on L1
+    - Cross-L2 interoperability metrics
+
+### 2. Protocol Security & Risk Assessment (30%)
+A. Smart Contract Security
+- Audit history and quality
+- Bug bounty program effectiveness
+- Historical vulnerability incidents
+- Code complexity metrics
+- Upgrade mechanism security
+- Testing coverage
+
+B. Network Security
+- Consensus mechanism robustness
+- MEV exposure and protection measures
+- Node distribution
+- Network attack resistance
+- Cross-chain bridge security
+- Oracle dependency and security
+
+C. L1 Dependency Risks
+- Settlement layer congestion exposure
+- Bridge security and liquidity depth
+- L1 fee market correlation
+- Sequencer centralization risk
+- Value extraction sustainability
+
+## Risk Categories (40% of Total Rating)
+
+### 1. Technical Risk Assessment (15%)
+A. Smart Contract Vulnerabilities
+- Code audit findings severity
+- Time-tested deployment
+- Complexity of interactions
+- Dependencies on external protocols
+- Historical incident analysis
+
+B. Network Level Risks
+- MEV exposure metrics
+- Network partition resistance
+- Node centralization factors
+- Infrastructure dependencies
+- Cross-chain vulnerability exposure
+
+C. Key Management & Wallet Security
+- Multi-sig implementation
+- Key generation processes
+- Hardware security modules usage
+- Social recovery mechanisms
+- Access control systems
+
+### 2. Economic Risk Assessment (10%)
+A. Market Dynamics
+- Liquidity concentration
+- Price impact resistance
+- Collateral quality
+- Market manipulation resistance
+
+B. Economic Model Vulnerabilities
+- Game theory attack vectors
+- Incentive alignment analysis
+- Economic exploit resistance
+- Stress test scenarios
+- Flash loan attack surface
+
+### 3. Operational Risk Assessment (10%)
+A. CeFi/CeDeFi Risks
+- Centralization points
+- Custody arrangements
+- Third-party dependencies
+- Operational redundancy
+- Emergency procedures
+
+B. Oracle Dependencies
+- Oracle manipulation resistance
+- Price feed reliability
+- Backup oracle systems
+- Historical oracle incidents
+- Data quality metrics
+
+### 4. External Risk Assessment (5%)
+A. Regulatory Risk
+- Jurisdictional exposure
+- Compliance frameworks
+- Regulatory clarity
+- Legal structure
+- Historical regulatory interactions
+
+B. Social Engineering Risk
+- Team security practices
+- Access control policies
+- Social attack history
+- Security awareness training
+- Incident response readiness
+
+## Risk-Adjusted Rating Scale
+
+AAA: Exceptional protocol with comprehensive risk mitigation
+- Multiple independent security audits with no critical findings
+- Proven resistance to all major attack vectors
+- Strong regulatory compliance framework
+- Decentralized operations with minimal points of failure
+- Multiple layers of economic security
+
+AA: Strong protocol with robust risk management
+- Regular security audits with minor findings
+- Documented resistance to common attack vectors
+- Clear regulatory strategy
+- Limited centralization risks
+- Strong economic security measures
+
+## Risk Multipliers
+Each risk category can apply a multiplier to the base rating:
+- Critical Risk: -3 rating notches
+- High Risk: -2 rating notches
+- Medium Risk: -1 rating notch
+- Low Risk: No adjustment
+- Minimal Risk: +1 rating notch
+
+## Continuous Monitoring Triggers
+- Smart contract vulnerability disclosure
+- Network attack detection
+- Regulatory action
+- Economic model stress
+- Oracle deviation events
+- Cross-chain bridge incidents
+- Social engineering attempts
+- MEV activity spikes
+
+## Review Framework
+- Monthly security metric review
+- Quarterly risk assessment update
+- Annual comprehensive review
+- Real-time monitoring of critical indicators
+- Incident-triggered reassessment

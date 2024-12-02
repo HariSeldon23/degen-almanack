@@ -1,0 +1,9 @@
+# Rules
+Decentralization
+We have have two forms of decentralization, a binary representation and scale. When we refer to decentralization without referencing the rung it exists on in the scale, that means we are referring to the binary definition. 
+
+The binary definition means more than one machine as denoted by having more than one unique:
+IP address
+on chain address
+
+It's important to note that this metric is easily manipulated. For example, I can spin up numerous unique on chain addresses for my dapp to showcase my decentralization and since no-one can prove ownership of those addresses, I could own all addresses and therefore be fundamentally centralized. 
