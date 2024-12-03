@@ -1,12 +1,19 @@
-# Technolect
-This chapter deals with the technical language of Web3. Alot of these terms are not formally defined outside of collections of, mostly, blog posts and opinion pieces.
+# Crypto Terms
 
-Where a clash in definitions exists, we'll choose the authority of the author's reputation as the deciding factor. 
+## Basic Terms
+### Web3
 
-## Acronyms
-IBRL - Increase Bandwidth, Reduce Latency
+![Evolution of the Web](./images/web3.svg)
 
-## Layer 1 {#layer-1}
+* Web1 (1990s): static websites, read-only content
+* Web2 (2000s - 2010s): Interactive social platforms, user-generated content
+* Web3 (2020s+): Decentralized networks, blockchain, user-owned data and assets
+
+#### Decentralization 
+![Network Topologies](./images/decentralization.svg)
+
+### Blockchains
+#### Layer 1 {#layer-1}
 Currently there is no universally accepted definition of what comprises a L1 Network. 
 
 We have token these sources in order to come up with our approximation
@@ -27,7 +34,7 @@ Synthesizing these sources, we can define a Layer 1 blockchain as:
 
 A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.
 
-## Layer 2
+#### Layer 2
 There is no canonical definition of L2's.
 
 We use
@@ -56,15 +63,7 @@ To come up with the following Framework
 * Exit Games (Plasma)
 * Bridge/Peg (Sidechains)
 
-## Decentralization 
-Can be either binary or scale definition
-
-State transition - 
-
-Settlement
-Settlement is the finalization of state changes. Meaning the point at which changes to a system's data becomes permanent and irreversible. 
-
-## Degen Slang
+## Colloqualisms
 ### HODL
 HODL originated as a misspelling of "hold" in a 2013 Bitcoin forum post titled "I AM HODLING." The post's author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.
 
@@ -83,3 +82,8 @@ The concept of HODLing has also influenced how blockchain projects design their 
 * Cultural Identity: Unlike traditional finance's negative connotation of "degenerate gambling," the crypto community has reclaimed "degen" as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.
 * Technical Sophistication: Despite the seeming recklessness implied by the term, many "degens" are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They're often early adopters of new protocols and technologies.
 * Community Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.
+
+## Acronyms
+IBRL - Increase Bandwidth, Reduce Latency
+
+

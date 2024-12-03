@@ -12,7 +12,7 @@ book:
     
     - part: "Web3 Essentials"
       chapters:
-        - technolect.qmd
+        - terms.qmd
         - tools.qmd
         - rules.qmd
     
@@ -27,6 +27,7 @@ book:
         - cryptography.qmd
         - blockchains.qmd
         - dapps.qmd
+        - mev.qmd
     
     - references.qmd
 

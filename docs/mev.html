@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Justin Trollip">
-<meta name="dcterms.date" content="2024-12-02">
 
-<title>Trollip’s Degen Almanack</title>
+<title>Trollip’s Degen Almanack - 11&nbsp; MEV</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./references.html" rel="next">
+<link href="./dapps.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -102,7 +81,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cryptography.html">Technical</a></li><li class="breadcrumb-item"><a href="./mev.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MEV</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -129,7 +108,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -226,7 +205,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mev.html" class="sidebar-item-text sidebar-link">
+  <a href="./mev.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MEV</span></span></a>
   </div>
 </li>
@@ -248,40 +227,23 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#why-i-must-write" id="toc-why-i-must-write" class="nav-link" data-scroll-target="#why-i-must-write">Why I must write</a></li>
-  <li><a href="#why-many-others-want-to-help" id="toc-why-many-others-want-to-help" class="nav-link" data-scroll-target="#why-many-others-want-to-help">Why many others want to help</a></li>
-  <li><a href="#how-you-can-contribute" id="toc-how-you-can-contribute" class="nav-link" data-scroll-target="#how-you-can-contribute">How you can contribute</a></li>
-  </ul></li>
+  <li><a href="#proposer-builder-separation-pbs" id="toc-proposer-builder-separation-pbs" class="nav-link active" data-scroll-target="#proposer-builder-separation-pbs"><span class="header-section-number">11.1</span> Proposer Builder Separation (PBS)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cryptography.html">Technical</a></li><li class="breadcrumb-item"><a href="./mev.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MEV</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Trollip’s Degen Almanack</h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">MEV</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Justin Trollip </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">December 2, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -291,35 +253,10 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<blockquote class="blockquote">
-<p>“Arise, you have nothing to lose but your barbed wire fences!” <span class="citation" data-cites="may1988cryptoanarchist">(<a href="references.html#ref-may1988cryptoanarchist" role="doc-biblioref">May 1988</a>)</span></p>
-</blockquote>
-<p>For my two princes. Huxley &amp; Morrissey.</p>
-<p>For my bois, the Lord’s of Slumtown.</p>
-<section id="why-i-must-write" class="level2">
-<h2 class="anchored" data-anchor-id="why-i-must-write">Why I must write</h2>
-<p>So that I can continue to use crypto without dishonor, I have decided to put together a sufficient body of free research so that I will be able to get along without any knowledge that is not free and accessible by anyone.</p>
-</section>
-<section id="why-many-others-want-to-help" class="level2">
-<h2 class="anchored" data-anchor-id="why-many-others-want-to-help">Why many others want to help</h2>
-<p>I have found that many within crypto are unhappy with the exploitation of digital currencies. The influx of grifters, charlatons and scammers. It may enable them to make more money, but it requires them to feel in conflict with humanity rather than feel as comrades.</p>
-<p>The fundamental act of friendship among <a href="./technolect.html#degens">degens</a> is the sharing of knowledge. Knowledge in crypto, due to it’s technical complexity has attracted a special type of exploitation. High pay walls for access to data goes against the very ethos of Web3.</p>
-</section>
-<section id="how-you-can-contribute" class="level2">
-<h2 class="anchored" data-anchor-id="how-you-can-contribute">How you can contribute</h2>
-<p>Currently you can contribute by submitting knowledge in the form of a Pull Request to the <a href="https://github.com/HariSeldon23/degen-almanack">Github repo</a>.</p>
-<p>I’m considering opening up this document onto <a href="https://mirror.xyz/">Mirror</a> so people can donate financially and anonymously through there. I still need to do more research on <a href="http://www.catb.org/~esr/writings/magic-cauldron/">Open Source financial models</a> to ensure this Almanack can operate sustainably as a going concern.</p>
-<p>Stay Tuned!</p>
+<section id="proposer-builder-separation-pbs" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="proposer-builder-separation-pbs"><span class="header-section-number">11.1</span> Proposer Builder Separation (PBS)</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-may1988cryptoanarchist" class="csl-entry" role="listitem">
-May, Timothy C. 1988. <span>“The Crypto Anarchist Manifesto.”</span> <a href="https://www.activism.net/cypherpunk/crypto-anarchy.html">https://www.activism.net/cypherpunk/crypto-anarchy.html</a>.
-</div>
-</div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -712,10 +649,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./dapps.html" class="pagination-link" aria-label="dApps">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">dApps</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

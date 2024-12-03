@@ -784,5 +784,104 @@
     "crumbs": [
       "References"
     ]
+  },
+  {
+    "objectID": "mev.html",
+    "href": "mev.html",
+    "title": "11  MEV",
+    "section": "",
+    "text": "11.1 Proposer Builder Separation (PBS)",
+    "crumbs": [
+      "Technical",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>MEV</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html",
+    "href": "terms.html",
+    "title": "2  Crypto Terms",
+    "section": "",
+    "text": "2.1 Basic Terms",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#layer-1",
+    "href": "terms.html#layer-1",
+    "title": "2  Crypto Terms",
+    "section": "2.2 Layer 1",
+    "text": "2.2 Layer 1\nCurrently there is no universally accepted definition of what comprises a L1 Network.\nWe have token these sources in order to come up with our approximation (Nakamoto 2008) for Bitcoin (Buterin 2013) for Ethereum (Buterin 2021) for the rollups guide (Charbonneau 2023) for the John’s excellent guide\nNakamoto’s Bitcoin whitepaper, while not explicitly using the term “Layer 1,” established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a self-contained, sovereign blockchain network.\nThe Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.\nButerin’s rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.\nThe Delphi Digital report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.\nSynthesizing these sources, we can define a Layer 1 blockchain as:\nA sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#layer-2",
+    "href": "terms.html#layer-2",
+    "title": "2  Crypto Terms",
+    "section": "2.2 Layer 2",
+    "text": "2.2 Layer 2\nThere is no canonical definition of L2’s.\nWe use (Gluchowski 2019) (Poon and Buterin 2017) (Poon and Dryja 2016) (Buterin 2021) (Charbonneau 2023)\nTo come up with the following Framework 1. Data Availability * On-chain (Rollups) * Off-chain (Validiums, Plasma, Sidechains) 2. Security Model * Inherited from L1 (Rollups, Validiums) * Independent (Sidechains) * Hybrid (Plasma) 3. State Validation * Fraud Proofs (Optimistic Rollups) * Validity Proofs (ZK Rollups, Validiums) * Independent (Sidechains) * Merkle Roots (Plasma) 4. Settlement Mechanism * Direct (Rollups) * Challenge Period (Optimistic Rollups) * Exit Games (Plasma) * Bridge/Peg (Sidechains)",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#decentralization",
+    "href": "terms.html#decentralization",
+    "title": "2  Crypto Terms",
+    "section": "2.2 Decentralization",
+    "text": "2.2 Decentralization\nCan be either binary or scale definition\nState transition -\nSettlement Settlement is the finalization of state changes. Meaning the point at which changes to a system’s data becomes permanent and irreversible.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#degen-slang",
+    "href": "terms.html#degen-slang",
+    "title": "2  Crypto Terms",
+    "section": "2.2 Degen Slang",
+    "text": "2.2 Degen Slang\n\n2.2.1 HODL\nHODL originated as a misspelling of “hold” in a 2013 Bitcoin forum post titled “I AM HODLING.” The post’s author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.\nThe term has evolved beyond its humorous origins to represent a long-term investment strategy often summarized as “Hold On for Dear Life.” This reflects the mindset of cryptocurrency investors who maintain their positions despite extreme market volatility, believing in the long-term value proposition of their assets rather than attempting to profit from short-term price movements.\nHODL also represents a rejection of traditional trading wisdom. While conventional financial markets emphasize technical analysis and market timing, HODLing suggests that, particularly in the volatile cryptocurrency space, a simple buy-and-hold strategy might outperform active trading for many investors. This approach acknowledges the difficulty of timing a highly volatile, 24/7 global market.\nThe term has become so influential that it helps identify different types of market participants. “HODLers” are often contrasted with “traders” or “speculators,” with HODLers viewed as providing market stability through their long-term commitment to holding assets. During market downturns, the community often encourages “HODL” as a way to maintain conviction and avoid panic selling.\nThe concept of HODLing has also influenced how blockchain projects design their token economics. Many projects now include staking mechanisms, vesting schedules, and other features that encourage long-term holding, showing how a simple misspelling has evolved into a fundamental aspect of cryptocurrency culture and economics.\n\n\n2.2.2 Degens\n“Degen” (short for “degenerate”) in crypto/Web3 culture refers to aggressive or risk-seeking participants in cryptocurrency markets and DeFi (decentralized finance) protocols. The term originated from gambling culture but has been embraced by the crypto community as a semi-ironic badge of honor.\n\nTrading Behavior: Degens are known for taking high-risk positions, often using significant leverage, and engaging in yield farming, liquidity mining, and other complex DeFi strategies.\nCultural Identity: Unlike traditional finance’s negative connotation of “degenerate gambling,” the crypto community has reclaimed “degen” as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.\nTechnical Sophistication: Despite the seeming recklessness implied by the term, many “degens” are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They’re often early adopters of new protocols and technologies.\nCommunity Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.\n\n\n2.2.2.1 Blockchains\nThis chapter deals with the technical language of Web3. Alot of these terms are not formally defined outside of collections of, mostly, blog posts and opinion pieces.\nWhere a clash in definitions exists, we’ll choose the authority of the author’s reputation as the deciding factor.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#acronyms",
+    "href": "terms.html#acronyms",
+    "title": "2  Crypto Terms",
+    "section": "2.3 Acronyms",
+    "text": "2.3 Acronyms\nIBRL - Increase Bandwidth, Reduce Latency\n\n\n\n\nButerin, Vitalik. 2013. “Ethereum White Paper: A Next Generation Smart Contract & Decentralized Application Platform.” https://ethereum.org/en/whitepaper/.\n\n\n———. 2021. “An Incomplete Guide to Rollups.” https://vitalik.ca/general/2021/01/05/rollup.html.\n\n\nCharbonneau, Jon. 2023. “The Complete Guide to Rollups.” Research Report. Delphi Digital. https://members.delphidigital.io/reports/the-complete-guide-to-rollups.\n\n\nGluchowski, Alex. 2019. “zkRollup Vs. Optimistic Rollup: Technical Comparison.” Matter Labs. https://medium.com/matter-labs/zkrollup-vs-optimistic-rollup-deep-dive-ea141e71e075.\n\n\nNakamoto, Satoshi. 2008. “Bitcoin: A Peer-to-Peer Electronic Cash System.” https://bitcoin.org/bitcoin.pdf.\n\n\nPoon, Joseph, and Vitalik Buterin. 2017. “Plasma: Scalable Autonomous Smart Contracts.” https://plasma.io/plasma-whitepaper.pdf.\n\n\nPoon, Joseph, and Thaddeus Dryja. 2016. “The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments.” https://lightning.network/lightning-network-paper.pdf.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#basic-terms",
+    "href": "terms.html#basic-terms",
+    "title": "2  Crypto Terms",
+    "section": "",
+    "text": "2.1.1 Web3\n\n\n\nEvolution of the Web\n\n\n\nWeb1 (1990s): static websites, read-only content\nWeb2 (2000s - 2010s): Interactive social platforms, user-generated content\nWeb3 (2020s+): Decentralized networks, blockchain, user-owned data and assets\n\n\n2.1.1.1 Decentralization\n\n\n\nNetwork Topologies\n\n\n\n\n\n2.1.2 Blockchains\n\n2.1.2.1 Layer 1\nCurrently there is no universally accepted definition of what comprises a L1 Network.\nWe have token these sources in order to come up with our approximation (Nakamoto 2008) for Bitcoin (Buterin 2013) for Ethereum (Buterin 2021) for the rollups guide (Charbonneau 2023) for the John’s excellent guide\nNakamoto’s Bitcoin whitepaper, while not explicitly using the term “Layer 1,” established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a self-contained, sovereign blockchain network.\nThe Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.\nButerin’s rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.\nThe Delphi Digital report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.\nSynthesizing these sources, we can define a Layer 1 blockchain as:\nA sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.\n\n\n2.1.2.2 Layer 2\nThere is no canonical definition of L2’s.\nWe use (Gluchowski 2019) (Poon and Buterin 2017) (Poon and Dryja 2016) (Buterin 2021) (Charbonneau 2023)\nTo come up with the following Framework 1. Data Availability * On-chain (Rollups) * Off-chain (Validiums, Plasma, Sidechains) 2. Security Model * Inherited from L1 (Rollups, Validiums) * Independent (Sidechains) * Hybrid (Plasma) 3. State Validation * Fraud Proofs (Optimistic Rollups) * Validity Proofs (ZK Rollups, Validiums) * Independent (Sidechains) * Merkle Roots (Plasma) 4. Settlement Mechanism * Direct (Rollups) * Challenge Period (Optimistic Rollups) * Exit Games (Plasma) * Bridge/Peg (Sidechains)",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "terms.html#colloqualisms",
+    "href": "terms.html#colloqualisms",
+    "title": "2  Crypto Terms",
+    "section": "2.2 Colloqualisms",
+    "text": "2.2 Colloqualisms\n\n2.2.1 HODL\nHODL originated as a misspelling of “hold” in a 2013 Bitcoin forum post titled “I AM HODLING.” The post’s author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.\nThe term has evolved beyond its humorous origins to represent a long-term investment strategy often summarized as “Hold On for Dear Life.” This reflects the mindset of cryptocurrency investors who maintain their positions despite extreme market volatility, believing in the long-term value proposition of their assets rather than attempting to profit from short-term price movements.\nHODL also represents a rejection of traditional trading wisdom. While conventional financial markets emphasize technical analysis and market timing, HODLing suggests that, particularly in the volatile cryptocurrency space, a simple buy-and-hold strategy might outperform active trading for many investors. This approach acknowledges the difficulty of timing a highly volatile, 24/7 global market.\nThe term has become so influential that it helps identify different types of market participants. “HODLers” are often contrasted with “traders” or “speculators,” with HODLers viewed as providing market stability through their long-term commitment to holding assets. During market downturns, the community often encourages “HODL” as a way to maintain conviction and avoid panic selling.\nThe concept of HODLing has also influenced how blockchain projects design their token economics. Many projects now include staking mechanisms, vesting schedules, and other features that encourage long-term holding, showing how a simple misspelling has evolved into a fundamental aspect of cryptocurrency culture and economics.\n\n\n2.2.2 Degens\n“Degen” (short for “degenerate”) in crypto/Web3 culture refers to aggressive or risk-seeking participants in cryptocurrency markets and DeFi (decentralized finance) protocols. The term originated from gambling culture but has been embraced by the crypto community as a semi-ironic badge of honor.\n\nTrading Behavior: Degens are known for taking high-risk positions, often using significant leverage, and engaging in yield farming, liquidity mining, and other complex DeFi strategies.\nCultural Identity: Unlike traditional finance’s negative connotation of “degenerate gambling,” the crypto community has reclaimed “degen” as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.\nTechnical Sophistication: Despite the seeming recklessness implied by the term, many “degens” are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They’re often early adopters of new protocols and technologies.\nCommunity Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
   }
 ]
