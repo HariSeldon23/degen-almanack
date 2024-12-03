@@ -16,7 +16,7 @@ We thus break down Digital Assets into the following Categories:
     * Fungibles
     * Non Fungible
 
-After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](./technolect.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
+After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](./terms.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
 
 ## Coins
 This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the [Blockchain](./blockchains.qmd) documentation. 
@@ -30,7 +30,7 @@ Economic Security
 Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support
 
 ### Base Networks
-This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](./blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](./technolect.qmd#layer-1). 
+This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](./blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](./terms.qmd#layer-1). 
 
 We define a Base Network that maintains it's own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network. 
 

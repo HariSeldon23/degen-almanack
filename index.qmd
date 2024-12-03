@@ -12,7 +12,7 @@ So that I can continue to use crypto without dishonor, I have decided to put tog
 ## Why many others want to help
 I have found that many within crypto are unhappy with the exploitation of digital currencies. The influx of grifters, charlatons and scammers. It may enable them to make more money, but it requires them to feel in conflict with humanity rather than feel as comrades. 
 
-The fundamental act of friendship among [degens](./technolect.qmd#degens) is the sharing of knowledge. Knowledge in crypto, due to it's technical complexity has attracted a special type of exploitation. High pay walls for access to data goes against the very ethos of Web3. 
+The fundamental act of friendship among [degens](./terms.qmd#degens) is the sharing of knowledge. Knowledge in crypto, due to it's technical complexity has attracted a special type of exploitation. High pay walls for access to data goes against the very ethos of Web3. 
 
 ## How you can contribute
 Currently you can contribute by submitting knowledge in the form of a Pull Request to the [Github repo](https://github.com/HariSeldon23/degen-almanack).
