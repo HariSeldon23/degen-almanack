@@ -1,6 +1,27 @@
-# Trollip's 100
+# Trollip's Index
+* Bitcoin
+* Solana
+* Monero
+* Optimism
+* Ethereum
+* Filecoin
+* Starknet
+* Lido Staked Ethereum
+* Chainlink
+* Sui
+* Uniswap
+* Celestia
+* XRP
+* Dogecoin
+* Tether USDT
+* Circle USDC
+* Ethena USDe
+* Aptos
+* Arbitrum
+* Stacks
+* DAI
 
-This will include the top 100 tokens (both fungible and non fungible) by Market Cap
+This will include the top 10 tokens (both fungible and non fungible) by Market Cap
 
 Important to note 
 

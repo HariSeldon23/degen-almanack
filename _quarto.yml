@@ -10,12 +10,12 @@ book:
     - intro.qmd
     - tokens.qmd
     - ratings.qmd
-    - yields.qmd
+    - cryptography.qmd
     - blockchains.qmd
     - dapps.qmd
     - attributes.qmd
     - tools.qmd
-    - t100.qmd
+    - trollip_index.qmd
     - technolect.qmd
     - rules.qmd
     - references.qmd

@@ -165,3 +165,77 @@ Each risk category can apply a multiplier to the base rating:
 - Annual comprehensive review
 - Real-time monitoring of critical indicators
 - Incident-triggered reassessment
+
+## Ozempic Effect
+We'll base this upon value flows. Defillama doesn't actually display this. So we'll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon. 
+
+Let's build a comprehensive framework for tracking the true "Ozempic effect" of L2s on Ethereum. We'll need several interconnected metrics to understand the complete value flow dynamics.
+
+1. Wallet Migration Analysis
+- Track addresses that first appeared on Ethereum before a certain date (let's call them "Ethereum Native Wallets")
+- Monitor their activity transition to L2s over time
+- Analyze their ETH holdings distribution between L1 and L2s
+- Calculate the ratio of their transaction activity on L2s versus L1
+
+2. L2 Native User Analysis
+- Identify wallets that first appeared on L2s
+- Track what percentage never bridge to Ethereum
+- Measure their total value held
+- Calculate their transaction activity
+
+3. Fee Flow Dynamics
+- Track L2 sequencer fees paid back to Ethereum
+- Calculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)
+- Monitor the ratio of fees paid back to Ethereum versus fees retained by the L2
+
+We could create a composite "Value Migration Score" that looks like:
+
+```python
+def calculate_migration_score(l2_data):
+    # Value Migration
+    eth_native_migration = (
+        eth_native_wallets_on_l2 / total_eth_native_wallets *
+        eth_value_moved_to_l2 / original_eth_holdings
+    )
+    
+    # Activity Migration
+    activity_migration = (
+        l2_transactions_by_eth_wallets / 
+        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)
+    )
+    
+    # L2 Native Growth
+    l2_native_strength = (
+        l2_only_wallets / total_l2_wallets *
+        l2_native_value / total_l2_value
+    )
+    
+    # Fee Economics
+    fee_efficiency = (
+        sequencer_fees_to_ethereum / 
+        theoretical_l1_fees_for_same_transactions
+    )
+    
+    return (
+        eth_native_migration * 0.3 +
+        activity_migration * 0.3 +
+        l2_native_strength * 0.2 +
+        fee_efficiency * 0.2
+    )
+```
+
+This would give us a quantitative measure of how effectively an L2 is:
+1. Attracting value from Ethereum
+2. Generating new value through native users
+3. Maintaining a sustainable fee relationship with Ethereum
+
+A true Ozempic L2 should show:
+- High migration of ETH native wallets
+- Strong L2 native user growth
+- Efficient fee generation that still provides meaningful revenue to Ethereum
+- Sustained or growing activity ratios over time
+
+Would you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?
+
+* Net Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period
+

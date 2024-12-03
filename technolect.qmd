@@ -1,6 +1,12 @@
 # Technolect
+This chapter deals with the technical language of Web3. Alot of these terms are not formally defined outside of collections of, mostly, blog posts and opinion pieces.
 
-## Layer 1
+Where a clash in definitions exists, we'll choose the authority of the author's reputation as the deciding factor. 
+
+## Acronyms
+IBRL - Increase Bandwidth, Reduce Latency
+
+## Layer 1 {#layer-1}
 Currently there is no universally accepted definition of what comprises a L1 Network. 
 
 We have token these sources in order to come up with our approximation
@@ -57,3 +63,23 @@ State transition -
 
 Settlement
 Settlement is the finalization of state changes. Meaning the point at which changes to a system's data becomes permanent and irreversible. 
+
+## Degen Slang
+### HODL
+HODL originated as a misspelling of "hold" in a 2013 Bitcoin forum post titled "I AM HODLING." The post's author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.
+
+The term has evolved beyond its humorous origins to represent a long-term investment strategy often summarized as "Hold On for Dear Life." This reflects the mindset of cryptocurrency investors who maintain their positions despite extreme market volatility, believing in the long-term value proposition of their assets rather than attempting to profit from short-term price movements.
+
+HODL also represents a rejection of traditional trading wisdom. While conventional financial markets emphasize technical analysis and market timing, HODLing suggests that, particularly in the volatile cryptocurrency space, a simple buy-and-hold strategy might outperform active trading for many investors. This approach acknowledges the difficulty of timing a highly volatile, 24/7 global market.
+
+The term has become so influential that it helps identify different types of market participants. "HODLers" are often contrasted with "traders" or "speculators," with HODLers viewed as providing market stability through their long-term commitment to holding assets. During market downturns, the community often encourages "HODL" as a way to maintain conviction and avoid panic selling.
+
+The concept of HODLing has also influenced how blockchain projects design their token economics. Many projects now include staking mechanisms, vesting schedules, and other features that encourage long-term holding, showing how a simple misspelling has evolved into a fundamental aspect of cryptocurrency culture and economics.
+
+### Degens
+"Degen" (short for "degenerate") in crypto/Web3 culture refers to aggressive or risk-seeking participants in cryptocurrency markets and DeFi (decentralized finance) protocols. The term originated from gambling culture but has been embraced by the crypto community as a semi-ironic badge of honor.
+
+* Trading Behavior: Degens are known for taking high-risk positions, often using significant leverage, and engaging in yield farming, liquidity mining, and other complex DeFi strategies.
+* Cultural Identity: Unlike traditional finance's negative connotation of "degenerate gambling," the crypto community has reclaimed "degen" as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.
+* Technical Sophistication: Despite the seeming recklessness implied by the term, many "degens" are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They're often early adopters of new protocols and technologies.
+* Community Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.

@@ -37,7 +37,7 @@ The network will record state and all nodes will agree about the state via conse
 We don't need to worry too much about consensus yet, but you just need to know that the nodes must agree on the state. For example if Bob sends Alice 10 BTC. Everyone on the network must come to an agreement that Bob did indeed send Alice 10 BTC. Another important characteristic is that even if everyone agrees today, in the future that can't be disputed or changed. This is another important category called censorship resistance. We'll get to it. 
 
 Under DIN's we have
-Sovereign Networks
+## Sovereign Networks
 Dependent Networks
 
 A sovereign chain can be defined as a network that maintains complete independence in its settlement process, requiring no external chain to validate or guarantee its state transitions. This independence is fundamental to the concept of sovereignty in blockchain networks. 
@@ -104,7 +104,16 @@ Cell model (TON)
 Actor Based (ICP and CosmWasm
 
 
-Dependent Networks
+## Layer 2's
+We break these down into:
+
+* Rollups
+    * Optimistic
+    * ZK 
+* Validiums
+* Plasma
+* Sidechains
+
 So Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling. 
 
 So we need to talk about the theory of Layers in Blockchain
@@ -303,7 +312,7 @@ Directed Acrylic Graph based mechanisms
 Hybrid. PoS + BFT is used by Polkadot and Cosmos
 Novel Mechanisms
 
-Need to talk about finality here about probabilistic vs deterministic
+Need to talk about finality here about probabilistic vs deterministic. Also focus on Single Slot Finality
 Proof-Based Mechanisms
 Proof of Work (PoW)
 Security Model: Computational work as economic security
@@ -970,3 +979,15 @@ This places Stacks in the "Moderately Dependent" category on our spectrum.
 Add a section here on precompiled contracts
 
 ## Bridges
+Classification of Bridges. Need to include Lazy Bridges here
+https://blog.celestia.org/lazybridging/ 
+
+* Trusted
+  * Custodial
+  * Multi Signature
+  * Federated
+* Trustless Bridges
+  * Light Client
+  * ZK
+    * Lazy Bridge
+  * Relay 

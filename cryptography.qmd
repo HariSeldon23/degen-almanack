@@ -1,0 +1,21 @@
+# Cryptography
+
+## Symmetric Cryptography
+Shared Keys. AES. But vulnerability is in sharing the Key between parties.
+
+## Asymetric Cryptography
+Public Key Cryptography
+
+RSA and elliptic curve cryptography. Slow than symetric cryptography. Enables secure communication over insecure channels
+
+## Hash functions
+These are like digital fingerprints
+
+## Zero-Knowledge Proofs
+They solve a unique problem: how can you prove you know something without revealing what you know? Imagine proving you're over 21 without showing your actual birthdate. 
+
+## Homomorphic Encryption
+It allows computations to be performed on encrypted data without decrypting it first. Think of it like being able to ask someone to bake a cake following your secret recipe, but without ever revealing the recipe to them. While still computationally intensive, this technology could revolutionize cloud computing and data privacy.
+
+## Post-Quantum Cryptography
+cryptographic systems that can resist attacks from quantum computers. This forward-looking field is essential because many current cryptographic systems (especially asymmetric ones) could be broken by powerful quantum computers.
