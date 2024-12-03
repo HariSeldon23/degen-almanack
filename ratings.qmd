@@ -239,3 +239,191 @@ Would you like me to elaborate on how we could implement the data collection for
 
 * Net Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period
 
+## Risk Factors
+
+### 1. Technical Risks
+- Implementation bugs
+- Security vulnerabilities
+- Upgrade coordination failures
+- Network splits
+
+### 2. Governance Risks
+- Capture by special interests
+- Low participation
+- Contentious decisions
+- Unclear processes
+
+### 3. Social Risks
+- Community fragmentation
+- Loss of developer support
+- Reputation damage
+- Market impacts
+
+## Future Considerations
+
+### 1. Emerging Trends
+- Automated governance systems
+- AI-assisted proposal analysis
+- Cross-chain governance
+- Dynamic parameter adjustment
+
+### 2. Challenges
+- Scaling governance participation
+- Balancing security and innovation
+- Managing increasing complexity
+- Maintaining decentralization
+
+### 3. Opportunities
+- Improved governance tools
+- Better simulation capabilities
+- Enhanced coordination mechanisms
+- More sophisticated voting systems
+
+
+## Dependent Network Ratings
+Polygon zkEVM
+Settlement Guarantees (10/10 weight): 
+Score: 9/10
+The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum's consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.
+
+Dispute Resolution (9/10 weight):
+Score: 10/10
+Ethereum serves as the absolute source of truth for the zkEVM. If there's ever a dispute about the state, the zero-knowledge proofs verified by Ethereum's consensus provide mathematical certainty about what is correct. There's no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.
+
+Economic Security Inheritance (8/10 weight):
+Score: 9/10
+The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can't confirm invalid state transitions, and its assets are secured by Ethereum's consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.
+
+State Finality (7/10 weight):
+Score: 9/10
+Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there's no waiting period for finality beyond Ethereum's own finality period. This is as strong as state finality can get for a settlement-dependent network.
+
+Exit Rights Guarantees (6/10 weight):
+Score: 8/10
+Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum's consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.
+
+State Progression Dependency (5/10 weight):
+Score: 7/10
+While the zkEVM can process transactions independently, it can't finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there's some independence in transaction processing.
+
+Asset Movement (4/10 weight):
+Score: 10/10
+Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they're locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.
+
+Total Score: 62/70 (approximately 89%)
+
+This analysis places Polygon zkEVM firmly in the "Fully Non-Sovereign" category. 
+Arbitrum
+Let me analyze Arbitrum's relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.
+
+Settlement Guarantees (10/10 weight):
+Score: 7/10
+Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it's not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum's consensus layer still makes this a robust settlement mechanism.
+
+Dispute Resolution (9/10 weight):
+Score: 8/10
+Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum's consensus automatically enforces the correct resolution once fraud is proven.
+
+Economic Security Inheritance (8/10 weight):
+Score: 9/10
+Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum's state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.
+
+State Finality (7/10 weight):
+Score: 6/10
+While Arbitrum's state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.
+
+Exit Rights Guarantees (6/10 weight):
+Score: 8/10
+Users can always withdraw their assets to Ethereum, guaranteed by Ethereum's consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum's operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.
+
+State Progression Dependency (5/10 weight):
+Score: 7/10
+Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.
+
+Asset Movement (4/10 weight):
+Score: 10/10
+Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum's consensus. When assets move to Arbitrum, they're locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.
+
+Total Score: 55/70 (approximately 79%)
+
+This analysis places Arbitrum in the "Fully Non-Sovereign" category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs. 
+
+Stacks
+Settlement Guarantees (10/10 weight): Score: 4/10
+Stacks uses Bitcoin for checkpointing and security anchoring
+However, it lacks cryptographic enforcement of settlement by Bitcoin's consensus
+Bitcoin doesn't automatically enforce or validate Stacks' state transitions
+Falls into the "checkpoint systems" category rather than stronger settlement guarantees
+Dispute Resolution (9/10 weight): Score: 3/10
+While Stacks records its state on Bitcoin, Bitcoin's consensus doesn't serve as the ultimate arbiter
+Disputes are primarily resolved within Stacks' own consensus mechanism
+Bitcoin can't automatically correct or resolve issues in Stacks' state
+Economic Security Inheritance (8/10 weight): Score: 6/10
+Miners must commit actual Bitcoin through PoX mechanism
+This creates some economic security dependency on Bitcoin
+However, Stacks maintains its own economic incentives through STX
+State Finality (7/10 weight): Score: 5/10
+Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring
+State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces
+Provides stronger finality than fully independent chains but weaker than true L2s
+Exit Rights Guarantees (6/10 weight): Score: 4/10
+With sBTC, users can move Bitcoin between chains
+However, this relies on Stacks' mechanisms rather than being guaranteed by Bitcoin's consensus
+Exit rights depend on threshold signatures rather than cryptographic guarantees
+State Progression Dependency (5/10 weight): Score: 7/10
+Stacks blocks are linked to Bitcoin blocks through PoX
+State progression is tied to Bitcoin's block progression
+However, Stacks can still process transactions independently within this framework
+Asset Movement (4/10 weight): Score: 5/10
+sBTC enables Bitcoin movement between chains
+But this movement isn't directly enforced by Bitcoin's consensus
+Relies on threshold signatures and Stacks' mechanisms
+Total Score: 34/59 (approximately 58%)
+
+This places Stacks in the "Moderately Dependent" category on our spectrum.
+
+## Risks 
+Sub categories of risks include
+smart contract vulns
+regulatory risks
+centralization risks for CeDeFi and CEX's 
+MEV
+network level
+key and wallet compromise
+cross chain exploits
+oracle manipulation 
+Social engineering 
+exploitation of economic models 
+Smart Contract Vulns
+Smart contract vulnerabilities represent one of the most critical risks in Web3, having led to billions in losses. This analysis examines major exploit categories based on historical hacks, their prevalence across different application models, and effective mitigation strategies.
+
+Subcategories are:
+Access Control Flaws
+Logic and Arithmetic Errors
+Oracle Manipulation
+Reentrancy attacks
+Flash Loan Vulnerabilities
+
+Reentrancy attacks
+Mainly on Solidity. Famous example is the DAO hack which resulted in the Ethereum. pre 0.4.0 of Solidity there were no built in protections, so completely vulnerable. 
+
+Pre-0.4.0: No built-in protections, completely vulnerable
+0.4.0-0.4.12: Introduction of the transfer() function with 2300 gas stipend, providing some protection but not comprehensive
+0.4.13-0.7.x: Better compiler warnings about state changes after external calls
+0.8.0+: Enhanced static analysis for potential reentrancy, but still requires explicit protection
+
+OpenZeppelin's ReentrancyGuard became the gold standard for protecting against these attacks. 
+
+Move, used by Sui and Aptos, takes a different approach. It uses a linear type system that treats resources as non-duplicatable assets. This makes traditional reentrancy attacks much harder because resources can't be accessed multiple times in the same transaction. However, parallel execution in Sui could potentially create new forms of reentrancy-like vulnerabilities.
+
+High Risk (without additional protections):
+Solidity (EVM) - Requires explicit guards and careful external call handling
+Medium Risk:
+Cairo (StarkNet) - Possible but harder to accidentally create
+Cadence (Flow) - Resource model helps but inter-contract calls need attention
+Low Risk (by design):
+Move (Sui/Aptos) - Linear type system prevents traditional reentrancy
+Rust (Solana) - Execution model prevents traditional reentrancy
+Vyper (EVM) - Built-in restrictions prevent common reentrancy patterns
+Clarity (Stacks) - Decidability and no recursive calls prevent traditional reentrancy
+

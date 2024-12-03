@@ -8,16 +8,25 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - tokens.qmd
-    - ratings.qmd
-    - cryptography.qmd
-    - blockchains.qmd
-    - dapps.qmd
-    - attributes.qmd
-    - tools.qmd
-    - trollip_index.qmd
-    - technolect.qmd
-    - rules.qmd
+    
+    - part: "Web3 Essentials"
+      chapters:
+        - technolect.qmd
+        - tools.qmd
+        - rules.qmd
+    
+    - part: "Financial"
+      chapters:
+        - tokens.qmd
+        - ratings.qmd
+        - trollip_index.qmd
+    
+    - part: "Technical"
+      chapters:
+        - cryptography.qmd
+        - blockchains.qmd
+        - dapps.qmd
+    
     - references.qmd
 
 bibliography: references.bib
@@ -27,6 +36,3 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
-
-

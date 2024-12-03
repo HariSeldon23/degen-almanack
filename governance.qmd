@@ -1,0 +1,161 @@
+# Governance
+
+This section will compare how Blockchains implement the three tiers of traditional governance. Namely:
+
+* Legistlative - Who makes the rules and how they created
+* Executive - Who executes the rules
+* Judicial - Referee between them
+
+So in Bitcoin BIP's cover the Legislative aspect, Executive is Node operators for Networks then for dapps it gets more complex. Judicial is where it gets challenging. This is pretty much the entire community. People interpret rules by economic activity and nodes. Look at Bitcoin Cash. No money. So everyone agreed with the block size of Bitcoin. 
+
+There is also the concept of Canvassing or Lobbying can also occur. Let's look at Ethereum. If I wanted to increase the gas limit from 30 million to 31 million. I'd need to canvas all the nodes to come along with me. Currently there is 5,333 nodes. So I'd need to convince ~3k node operators to increase the gas limit.
+
+#### 1. Hard Forks
+- **Definition**: Protocol changes that make previously invalid blocks/transactions valid (or vice-versa), requiring all nodes to upgrade
+- **Characteristics**:
+  - Non-backwards compatible
+  - Requires coordinated network upgrade
+  - Creates potential for chain splits if not unanimously adopted
+- **Use Cases**: Major protocol upgrades, fundamental rule changes, bug fixes
+- **Examples**: Ethereum's merge to PoS, Bitcoin's SegWit upgrade
+
+#### 2. Soft Forks
+- **Definition**: Backwards-compatible protocol changes that tighten rules without invalidating existing blocks
+- **Characteristics**:
+  - Backwards compatible
+  - Old nodes can still participate (with limitations)
+  - Lower coordination requirements
+- **Use Cases**: Adding new features, incremental improvements
+- **Examples**: Bitcoin's P2SH implementation, taproot upgrade
+
+#### 3. Parameter Updates
+- **Definition**: Changes to network variables within predefined bounds
+- **Characteristics**:
+  - No code changes required
+  - Often automated through on-chain governance
+  - Lower risk than protocol changes
+- **Use Cases**: Fee adjustments, block size modifications, staking parameters
+- **Examples**: Tezos' regular parameter updates, Cosmos' governance parameters
+
+### Governance Mechanisms
+
+#### 1. Off-Chain Governance
+- **Characteristics**:
+  - Social consensus through discussion forums, social media, conferences
+  - Informal decision-making processes
+  - Relies on node operator coordination
+- **Advantages**:
+  - Flexible and adaptable
+  - Allows for nuanced discussion
+  - Natural resistance to capture
+- **Disadvantages**:
+  - Can be slow and messy
+  - May lack clear resolution mechanisms
+  - Potential for contentious outcomes
+
+#### 2. On-Chain Governance
+- **Characteristics**:
+  - Formal voting mechanisms
+  - Smart contract-based execution
+  - Token-weighted or identity-based participation
+- **Advantages**:
+  - Clear process and outcomes
+  - Automated execution
+  - Transparent participation
+- **Disadvantages**:
+  - Potential plutocratic capture
+  - Reduced flexibility
+  - Voter apathy risks
+
+#### 3. Hybrid Systems
+- **Characteristics**:
+  - Combines off-chain discussion with on-chain execution
+  - Multiple stages of proposal refinement
+  - Mixed participation models
+- **Advantages**:
+  - Balances flexibility with formality
+  - Combines benefits of both approaches
+  - Can adapt to different types of changes
+- **Examples**: Polkadot's governance system, Cosmos Hub's proposal process
+
+### Improvement Proposal Systems
+
+#### 1. Structure
+- **Stages**:
+  - Draft: Initial proposal development
+  - Review: Community feedback and refinement
+  - Last Call: Final period for major objections
+  - Accepted/Final: Ready for implementation
+  - Rejected: Proposal declined
+- **Components**:
+  - Technical specification
+  - Motivation and rationale
+  - Backwards compatibility analysis
+  - Reference implementation (if applicable)
+  - Security considerations
+
+#### 2. Common Frameworks
+- **BIP (Bitcoin Improvement Proposals)**:
+  - Focus on consensus changes
+  - Conservative approach
+  - High emphasis on security
+- **EIP (Ethereum Improvement Proposals)**:
+  - Multiple tracks (Core, ERC, Interface)
+  - Regular cadence of updates
+  - Strong emphasis on standardization
+- **Network-Specific Systems**:
+  - Customized to network needs
+  - Varying levels of formality
+  - Different voting thresholds
+
+### Centralization Factors
+
+#### 1. Development Centralization
+- **Core Development Teams**:
+  - Control over codebase
+  - Technical expertise concentration
+  - Funding dependencies
+- **Client Implementation**:
+  - Diversity of node software
+  - Implementation independence
+  - Bug discovery and fixes
+
+#### 2. Governance Centralization
+- **Voting Power Distribution**:
+  - Token concentration
+  - Delegate systems
+  - Voter participation rates
+- **Proposal Control**:
+  - Who can propose changes
+  - Filtering mechanisms
+  - Discussion venue control
+
+#### 3. Infrastructure Centralization
+- **Node Operation**:
+  - Geographic distribution
+  - Hardware requirements
+  - Operating costs
+- **Service Providers**:
+  - API services
+  - Block explorers
+  - Development tools
+
+### Best Practices
+
+#### 1. Change Management
+- Clear documentation of changes
+- Adequate testing periods
+- Coordinated upgrade schedules
+- Emergency response procedures
+
+#### 2. Community Engagement
+- Regular communication channels
+- Multiple feedback mechanisms
+- Transparent decision-making
+- Educational resources
+
+#### 3. Technical Implementation
+- Comprehensive testing frameworks
+- Clear upgrade paths
+- Fallback mechanisms
+- Security audits

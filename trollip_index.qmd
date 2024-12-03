@@ -1,113 +1,23 @@
 # Trollip's Index
-* Bitcoin
-* Solana
-* Monero
-* Optimism
-* Ethereum
-* Filecoin
-* Starknet
-* Lido Staked Ethereum
-* Chainlink
-* Sui
-* Uniswap
-* Celestia
-* XRP
-* Dogecoin
-* Tether USDT
-* Circle USDC
-* Ethena USDe
-* Aptos
-* Arbitrum
-* Stacks
-* DAI
-
-This will include the top 10 tokens (both fungible and non fungible) by Market Cap
-
-Important to note 
-
-Bitcoin
-Hierarchy:
-Web3 → Decentralized Incentive Network (DIN) → Sovereign Network → Pure Value Network → Bitcoin 
-Categories:
-consensus ➝ proof based ➝ proof of work
-incentive mechanisms ➝ fixed supply 21 million tokens
-supply schedule ➝ every 4 years halving
-application ➝ monolithic
-application model - UTXO
-programming language - Bitcoin Script
-original and not fork
-
-
-DIN
-Sovereign
-Pure Value Networks
-Bitcoin
-Dogecoin
-Bitcoin Cash
-Litecoin
-XRP
-Kaspa
-Application Chains
-Hubs
-Ethereum
-Avalanche
-Polkadot
-NEAR
-Cosmos
-Specialized
-Fetch.ai (AAII)
-Bittensor (AI)
-Chainlink (Off Chain Data)
-Celestia (Data availability)
-Filecoin (Storage)
-VeChain (Supply Chain))
-Mantra (RWA)
-Generalized
-Cardano
-BNB
-TRON
-Stellar (After the introduction of Soroban)
-Solana
-TON
-Sui
-Aptos
-Hedera
-Internet Computer
-Ethereum Classic
-Cronos (this is it's own sovereign chain, since Cosmos doesn't enforce any dependencies outside of a framework)
-Polygon PoS (While it submits checkpoints to Ethereum, it doesn't settle to Ethereum, we only consider level 3 and up in the settlement guarantees spectrum)
-OKB
-Settlement-Dependent Networks
-Fully non-sovereign
-Polygon zkEVM
-Arbitrum
-Moderately Dependent
-Stacks
-dApps
-Stable coins
-Custodial
-Tether
-Circle USDC
-Non Custodial
-USDS 
-DAI
-Ethena USDe
-DeFi
-Derivatives
-Lido Staked ETH
-Wrapped Bitcoin WBTC
-Wrapped ETH
-Ether.fi staked ETH
-DEXs
-Uniswap
-Utility
-Render (I beleive they're building a Layer 2, but they don't have a consensus mechanism and token is purely for services)
-SocialFi
-Meme Coins
-Bonk
-Shiba Inu (please note Shib is not used for incentives on the Shibarium, hence why this is a meme coin. BONE would fall under a SDN. Originally forked from Doge)
-Pepe
-CeDeFi
-CEX
-LEO
-WhiteBIT
+## Bitcoin
+## Solana
+## Monero
+## Optimism
+## Ethereum
+## Filecoin
+## Starknet
+## Lido Staked Ethereum
+## Chainlink
+## Sui
+## Uniswap
+## Celestia
+## XRP
+## Dogecoin
+## Tether USDT
+## Circle USDC
+## Ethena USDe
+## Aptos
+## Arbitrum
+## Stacks
+## DAI
+## Cosmos Hub

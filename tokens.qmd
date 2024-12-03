@@ -21,11 +21,18 @@ After describing the various categories and classes of Digital Assets we'll then
 ## Coins
 This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the [Blockchain](./blockchains.qmd) documentation. 
 
+### Network Economics
+Token Models
+Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards
+Incentive Structures
+Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding
+Economic Security
+Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support
+
 ### Base Networks
 This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](./blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](./technolect.qmd#layer-1). 
 
 We define a Base Network that maintains it's own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network. 
-
 
 ### Secondary Networks
 These are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the [Blockchain chapter](./blockchains.qmd). We'll encompass the full breadth of L2's including, but not limited to Plasma, Sidechains, Rollups etc. 
@@ -61,6 +68,20 @@ We have the following types:
     * Governance 
     * Meme
 * Utility
+
+Then we have numerous standards. We'll add only the most popular and relevant ones here.
+
+Namely:
+* ERC20
+* ERC777
+* ERC1363
+* BRC20
+* Runes
+* Solana's SPL Token Standard
+* ICS20
+
+#### ICS20
+The Inter-Chain Standard 20 is a [Cosmos](./trollip_index.qmd#cosmos-hub) based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)
 
 ### Non Fungible
 Has the following attributes:
@@ -99,18 +120,46 @@ Wallets
 Major categories are:
 
 * Network Yield
-    * Mining Yield
-        * Solo Mining
-        * Pool Mining
-        * Cloud Mining
-    * Validating Yield
-        * Staking
-    * Derivatives
-        * Liquid Stakinga
 * Trading Yield
-    * Pricing appreciation
-    * Arbitrage Yield
-        * Spot Arbitrage
-        * Peg Arbitrage - These are unique to stable coins
-* Farming
-    * Shit coins
+* Protocol Yield
+
+
+### Trading Yield
+* Pricing appreciation
+* Arbitrage Yield
+    * Spot Arbitrage
+    * Peg Arbitrage - These are unique to stable coins
+* Options and Derivatives Premiums
+* Futures funding rates
+
+### Network Yield
+* Mining Yield
+    * Solo Mining
+    * Pool Mining
+    * Cloud Mining
+* Validating Yield
+    * Staking
+* Network Fee Yield
+    * Gas
+* MEV
+    * Toxic
+    * Non Toxic
+* Derivatives
+    * Liquid Staking
+
+### dApp Yield
+* Staking
+* Liquidity Provision
+* Governance Participation
+* NFT Rental Income
+
+#### Liquidity Provision
+We break this down into the following Categories
+
+* AMM Pool fees
+* Concentrated liquidity positions
+* Order book market making
+* Lending and Borrowing markets
+
+##### Concentrated Liquidity Provision
+Here we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046
