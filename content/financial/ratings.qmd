@@ -394,36 +394,3 @@ cross chain exploits
 oracle manipulation 
 Social engineering 
 exploitation of economic models 
-Smart Contract Vulns
-Smart contract vulnerabilities represent one of the most critical risks in Web3, having led to billions in losses. This analysis examines major exploit categories based on historical hacks, their prevalence across different application models, and effective mitigation strategies.
-
-Subcategories are:
-Access Control Flaws
-Logic and Arithmetic Errors
-Oracle Manipulation
-Reentrancy attacks
-Flash Loan Vulnerabilities
-
-Reentrancy attacks
-Mainly on Solidity. Famous example is the DAO hack which resulted in the Ethereum. pre 0.4.0 of Solidity there were no built in protections, so completely vulnerable. 
-
-Pre-0.4.0: No built-in protections, completely vulnerable
-0.4.0-0.4.12: Introduction of the transfer() function with 2300 gas stipend, providing some protection but not comprehensive
-0.4.13-0.7.x: Better compiler warnings about state changes after external calls
-0.8.0+: Enhanced static analysis for potential reentrancy, but still requires explicit protection
-
-OpenZeppelin's ReentrancyGuard became the gold standard for protecting against these attacks. 
-
-Move, used by Sui and Aptos, takes a different approach. It uses a linear type system that treats resources as non-duplicatable assets. This makes traditional reentrancy attacks much harder because resources can't be accessed multiple times in the same transaction. However, parallel execution in Sui could potentially create new forms of reentrancy-like vulnerabilities.
-
-High Risk (without additional protections):
-Solidity (EVM) - Requires explicit guards and careful external call handling
-Medium Risk:
-Cairo (StarkNet) - Possible but harder to accidentally create
-Cadence (Flow) - Resource model helps but inter-contract calls need attention
-Low Risk (by design):
-Move (Sui/Aptos) - Linear type system prevents traditional reentrancy
-Rust (Solana) - Execution model prevents traditional reentrancy
-Vyper (EVM) - Built-in restrictions prevent common reentrancy patterns
-Clarity (Stacks) - Decidability and no recursive calls prevent traditional reentrancy
-

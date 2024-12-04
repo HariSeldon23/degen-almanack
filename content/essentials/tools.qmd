@@ -9,22 +9,41 @@ Wallets have the following major attributes:
 * Platform - Mobile, Browser, Desktop or Hybrid
 * [Application Model](../technical/blockchains.qmd#application-models) - Type of blockchains it supports. Can support multiple models. 
 
-| Wallet Name | Type | Platform | Application Models Supported | Notes |
-|-------------|------|-----------|----------------------------|--------|
-| Ledger | Hardware | Desktop (via Ledger Live), Mobile (via Ledger Live) | Account (EVM), UTXO, Specialized Account, Resource, Actor | - Secure element chip protection<br>- Supports 5000+ tokens<br>- Multi-currency support through apps |
-| Trezor | Hardware | Desktop (via Trezor Suite), Browser | Account (EVM), UTXO, Specialized Account | - Open source hardware<br>- Built-in crypto exchange<br>- Password manager integration |
-| MetaMask | Software | Browser Extension, Mobile | Account (EVM) | - Industry standard for EVM chains<br>- Built-in swap functionality<br>- Extensive dApp integration |
-| Phantom | Software | Browser Extension, Mobile | Capability (Solana), Account (EVM) | - Native Solana integration<br>- Recently added EVM support<br>- NFT management focused |
-| Safe | Software | Browser (Web App) | Account (EVM) | - Multi-signature focused<br>- Modular architecture<br>- DAO treasury management<br>- Programmable accounts |
-| TrustWallet | Software | Mobile | Account (EVM), UTXO, Specialized Account | - Multi-chain support<br>- Built-in DeFi browser<br>- Binance integration |
-| Rainbow | Software | Mobile | Account (EVM) | - iOS/Android focused<br>- Enhanced NFT support<br>- Optimized for DeFi interactions |
+| Wallet Name | Type | Platform | Application Models Supported |
+|-------------|------|-----------|----------------------------|
+| [Ledger](https://www.ledger.com/) | Hardware | Desktop, Mobile | Account (EVM), UTXO, Specialized Account, Resource, Actor |
+| [Trezor](https://trezor.io/) | Hardware | Desktop, Browser | Account (EVM), UTXO, Specialized Account |
+| [MetaMask](https://metamask.io/) | Software | Browser Extension, Mobile | Account (EVM) |
+| [Phantom](https://phantom.app/) | Software | Browser Extension, Mobile | Capability (Solana), Account (EVM) |
+| [Safe](https://app.safe.global/welcome) | Software | Browser (Web App) | Account (EVM) |
+| [TrustWallet](https://trustwallet.com/) | Software | Mobile | Account (EVM), UTXO, Specialized Account |
+| [Rainbow](https://rainbow.me/en/) | Software | Mobile | Account (EVM) |
+
+: Wallets {.striped .hover}
 
 ## Analysis Tools
-### Explorers
-Showcase here how you can view versions of Soliidty. This is especially importnat for people trying to protect themselves from smart contract vulns. Also need to showcase how people can find the libraries. Specifically the OpenZeppelin ReentrancyGuard and then also the one that protects from overflow and underflow.
+### API
+We'll start off by using [Ortege](https://ortege.ai). For full transparency I own and founded Ortege. This Almanack can and will use data from any trusted source. But in the early days while we require data specifically tailored to our requirements, we will be using Ortege. Anyone contributing however can integrate with any other reputable data sources. 
 
-Forks. Soft and Hard forks for DIN
-Forks for dApps
+We break down API's into the following categories:
+
+* RPC Nodes. These are the API's provided by the [Blockchain clients](../technical/blockchains.qmd#clients). Each [Application Model](../technical/blockchains.qmd#application-models) will have a different API structure. The most famous example being the [Bitcon RPC standard](https://developer.bitcoin.org/reference/rpc/) and the [EVM RPC standard](https://eips.ethereum.org/EIPS/eip-1474)
+* SQL based. These API's allow you to write SQL against their Datasets. Examples include [Dune](https://dune.com/) and [Flipside](https://flipsidecrypto.xyz/home/). Much like the RPC based API's, these will all have a different API structure. 
+* Semantic Layer. Ortege is the first, that I'm aware of, API that aims to abstract away the blockchains implementation away from the developer and provide a uniform API that is consistent across blockchains.
+
+#### Ortege
+Coming Soon. 
+
+
+### Explorers
+#### Pure EVM 
+Etherscan is the most widely used and has versions on all the major EVM Chains. 
+
+**Exploring Solidity**
+
+* Viewing the Solidity version
+* Viewing the "standard" libraries the code inherits
+
 ### Defillama
 
 ## Security Tools

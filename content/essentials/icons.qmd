@@ -1,0 +1,10 @@
+# Icons
+
+## Satoshi Nakamoto
+
+![Satoshi artwork in Lugano, Switzerland](../../images/satoshi.png)
+
+Satoshi is the most publicly known creator of our industry. He was preceded by the Cypherpunks but has engulfed the public's imagination due to the fact no-one categorically knows who he/she/they were. 
+
+## People who protect us
+[Coffeezilla](https://www.youtube.com/@Coffeezilla)

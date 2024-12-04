@@ -28,8 +28,10 @@ book:
     - ./content/essentials/terms.qmd
     - ./content/essentials/tools.qmd
     - ./content/essentials/memes.qmd
+    - ./content/essentials/icons.qmd
   - part: Become a Degen
     chapters:
+    - ./content/degen/scam.qmd
     - ./content/degen/starter.qmd
     - ./content/degen/giga.qmd
   - part: Financial

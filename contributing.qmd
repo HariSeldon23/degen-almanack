@@ -9,3 +9,17 @@ I'll also use it as a dumping ground where I can keep track of things I need to 
 
 * https://bitcoinrollups.org/
 * https://tr3y.io/articles/crypto/bitcoin-zk-rollups.html
+
+## Current requirements
+### Translations
+Be good to focus on the most widely spoken languages first. So 
+
+* Mandarin
+* Hindi
+* Spanish
+* French
+* Arabic
+* Bengali
+* Russian
+* Portuguese
+* Indonesian

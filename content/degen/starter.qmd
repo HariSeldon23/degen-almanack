@@ -1,7 +1,12 @@
-# Early stage Degen
+# Make some money
 
 ## Purchasing your first Crypto
 While as much as possible I'd like to respect and adhere to the ethos of the early Cypherpunks, there's also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we'll take a pragmatic approach and introduce those concepts in incremental levels of difficulty. 
+
+Important things to note:
+* You'll need about 10 US Dollars
+* We'll be using CEX's to purchase, while understanding the risks and implications
+* We'll use a Mobile wallet, Phantom, that has social recovery
 
 So the first thing anyone entering Web3 needs to do is to purcahse some Crypto. In this Chapter we'll walk you through the process, with the important caveats below:
 
@@ -63,3 +68,5 @@ We'll only talk about purchasing here, as solo mining is not profitable, althoug
     * DeFi on ramps
 
 For complete privacy, the place where you purchase
+
+## Airdrop Farming
