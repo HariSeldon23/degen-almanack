@@ -8,19 +8,15 @@ on:
 jobs:
   version-and-deploy:
     runs-on: ubuntu-latest
+    
+    # Define the permissions needed for this workflow
     permissions:
-      # Define explicit permissions for the workflow
       contents: write
-      actions: read
       
     steps:
-      # The checkout action needs the token directly in its configuration
+      # For the initial checkout, we'll use the default GITHUB_TOKEN
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.degen_almanack_version_publish }}
-          # We don't need to specify other default parameters
-          
+        
       - name: Setup Python
         uses: actions/setup-python@v3
         with:
@@ -68,16 +64,25 @@ jobs:
             exit 1
           fi
           
-      - name: Commit and push changes
+      # Separate authentication step for clarity
+      - name: Prepare git credentials
+        env:
+          GITHUB_TOKEN: ${{ secrets.degen_almanack_version_publish }}
         run: |
-          # Configure git with the bot identity
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          echo "https://$GITHUB_TOKEN@github.com" > ~/.git-credentials
+          git config --global credential.helper store
           
-          # Instead of modifying the remote URL, we'll use the token directly in the push command
-          # This is more secure and reliable with fine-grained PATs
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.degen_almanack_version_publish }}
+        run: |
+          # Add all changes including new PDFs
           git add version.txt _quarto.yml docs/
+          
+          # Create commit
           git commit -m "Auto version bump and build [skip ci]"
           
-          # Use the token directly in the push command
-          git push "https://x-access-token:${{ secrets.degen_almanack_version_publish }}@github.com/${{ github.repository }}.git" HEAD:main
+          # Push using the stored credentials
+          git push origin HEAD:main
