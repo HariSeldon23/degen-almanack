@@ -8,16 +8,18 @@ on:
 jobs:
   version-and-deploy:
     runs-on: ubuntu-latest
-    # First, we need to ensure the job has access to the token
-    env:
-      GH_TOKEN: ${{ secrets.degen_almanack_version_publish }}
-    
+    permissions:
+      # Define explicit permissions for the workflow
+      contents: write
+      actions: read
+      
     steps:
+      # The checkout action needs the token directly in its configuration
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          # We use the token here for initial checkout
           token: ${{ secrets.degen_almanack_version_publish }}
+          # We don't need to specify other default parameters
           
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -66,33 +68,16 @@ jobs:
             exit 1
           fi
           
-      - name: Configure Git
+      - name: Commit and push changes
         run: |
+          # Configure git with the bot identity
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           
-      - name: Commit and push changes
-        # Using a separate step for debugging purposes
-        run: |
-          # Debug: Print git remote (without exposing token)
-          echo "Current remote:"
-          git remote -v | sed 's/https:\/\/.*@/https:\/\/***@/'
-          
-          # Set the remote with the token
-          git remote set-url origin "https://${{ secrets.degen_almanack_version_publish }}@github.com/${{ github.repository }}.git"
-          
-          # Debug: Verify remote was set (without exposing token)
-          echo "New remote:"
-          git remote -v | sed 's/https:\/\/.*@/https:\/\/***@/'
-          
-          # Add and commit changes
+          # Instead of modifying the remote URL, we'll use the token directly in the push command
+          # This is more secure and reliable with fine-grained PATs
           git add version.txt _quarto.yml docs/
           git commit -m "Auto version bump and build [skip ci]"
           
-          # Push with debug output
-          echo "Attempting to push..."
-          git push origin HEAD:main || {
-            echo "Push failed. Checking git status:"
-            git status
-            exit 1
-          }
+          # Use the token directly in the push command
+          git push "https://x-access-token:${{ secrets.degen_almanack_version_publish }}@github.com/${{ github.repository }}.git" HEAD:main
