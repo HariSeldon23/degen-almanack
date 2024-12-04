@@ -4,16 +4,19 @@ on:
   push:
     branches:
       - main
-  
+
+permissions:
+  contents: read # This sets the base permissions for the GITHUB_TOKEN
+
 jobs:
   version-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # The checkout step now uses our specifically named token
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          token: ${{ secrets.degen-almanack-version-publish }}
+          # For fine-grained PATs, we don't specify the token in the checkout action
+          # This allows it to use the default GITHUB_TOKEN for reading
           
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -63,11 +66,15 @@ jobs:
           fi
           
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.degen_almanack_version_publish }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          # Using our specifically named token in the git remote URL
-          git remote set-url origin https://x-access-token:${{ secrets.degen-almanack-version-publish }}@github.com/${{ github.repository }}
+          
+          # For fine-grained PATs, we need to set up the remote differently
+          git remote set-url origin "https://$GITHUB_TOKEN@github.com/${{ github.repository }}.git"
+          
           git add version.txt _quarto.yml docs/
           git commit -m "Auto version bump and build [skip ci]"
           git push
