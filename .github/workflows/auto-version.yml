@@ -9,10 +9,11 @@ jobs:
   version-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # The checkout step now uses our specifically named token
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.degen-almanack-version-publish }}
           
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -50,32 +51,23 @@ jobs:
       - name: Render Book
         run: |
           quarto render
-          echo "Listing docs directory:"
-          ls -la docs/
           
       - name: Handle PDF
         run: |
-          echo "Looking for PDF in docs directory:"
           if [ -f "docs/Trollip-s-Degen-Almanack.pdf" ]; then
-            echo "Found PDF with hyphen"
             cp "docs/Trollip-s-Degen-Almanack.pdf" "docs/Trollip-s-Degen-Almanack-v${NEW_VERSION}.pdf"
           else
-            echo "PDF not found with hyphen, checking underscore version"
-            if [ -f "docs/Trollip_s_Degen_Almanack.pdf" ]; then
-              echo "Found PDF with underscore"
-              cp "docs/Trollip_s_Degen_Almanack.pdf" "docs/Trollip_s_Degen_Almanack-v${NEW_VERSION}.pdf"
-            else
-              echo "PDF files in docs:"
-              find docs -name "*.pdf"
-              exit 1
-            fi
+            echo "PDF files in docs:"
+            find docs -name "*.pdf"
+            exit 1
           fi
           
       - name: Commit and push changes
-        if: success()
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # Using our specifically named token in the git remote URL
+          git remote set-url origin https://x-access-token:${{ secrets.degen-almanack-version-publish }}@github.com/${{ github.repository }}
           git add version.txt _quarto.yml docs/
           git commit -m "Auto version bump and build [skip ci]"
           git push
