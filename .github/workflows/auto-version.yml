@@ -1,4 +1,3 @@
-# .github/workflows/auto-version.yml
 name: Auto Version and Deploy
 on:
   push:
@@ -9,62 +8,97 @@ jobs:
   version-and-deploy:
     runs-on: ubuntu-latest
     
-    # Define the permissions needed for this workflow
+    # GitHub Actions needs explicit permission to write back to the repository
     permissions:
       contents: write
       
     steps:
-      # For the initial checkout, we'll use the default GITHUB_TOKEN
+      # Check out the repository code. Using v3 for stability and features
       - uses: actions/checkout@v3
         
+      # Set up Python environment - we need this for version management and YAML handling
       - name: Setup Python
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
           
+      # Install Python packages needed for version management and YAML processing
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pyyaml semver
           
+      # Install system packages required for PDF generation and SVG handling
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-extra-utils
           
+      # Verify SVG conversion tool is properly installed and working
       - name: Verify SVG conversion tool
         run: |
           which rsvg-convert || echo "rsvg-convert not found"
           rsvg-convert --version || echo "rsvg-convert not working"
           
+      # Increment version number and store it for later use
       - name: Bump version
         id: bump-version
         run: |
           python .github/scripts/bump_version.py minor
           echo "NEW_VERSION=$(cat version.txt)" >> $GITHUB_ENV
           
+      # Set up the current date and update _quarto.yml
+      - name: Set date and version
+        id: set-variables
+        run: |
+          # Get current date in desired format
+          CURRENT_DATE=$(date +"%Y-%m-%d")
+          echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
+          
+          # Update _quarto.yml with correct date
+          python -c '
+          import yaml
+          with open("_quarto.yml", "r") as f:
+              config = yaml.safe_load(f)
+          config["date"] = "'$CURRENT_DATE'"
+          with open("_quarto.yml", "w") as f:
+              yaml.dump(config, f)
+          '
+          
+      # Install Quarto publishing system
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         
+      # Install TinyTeX for PDF generation
       - name: Install TinyTeX
         run: |
           quarto install tinytex
           
+      # Generate the book using Quarto
       - name: Render Book
         run: |
           quarto render
           
+      # Handle PDF file management - versioning and storage
       - name: Handle PDF
         run: |
+          # Create pdfs directory if it doesn't exist
+          mkdir -p docs/pdfs
+          
+          # Move the newly generated PDF to versioned location
           if [ -f "docs/Trollip-s-Degen-Almanack.pdf" ]; then
-            cp "docs/Trollip-s-Degen-Almanack.pdf" "docs/Trollip-s-Degen-Almanack-v${NEW_VERSION}.pdf"
+            # Copy to versioned filename
+            cp "docs/Trollip-s-Degen-Almanack.pdf" "docs/pdfs/Trollip-s-Degen-Almanack-v${NEW_VERSION}.pdf"
+            
+            # Create/update symbolic link for latest version
+            ln -sf "pdfs/Trollip-s-Degen-Almanack-v${NEW_VERSION}.pdf" "docs/Trollip-s-Degen-Almanack-latest.pdf"
           else
             echo "PDF files in docs:"
             find docs -name "*.pdf"
             exit 1
           fi
           
-      # Separate authentication step for clarity
+      # Set up git configuration for committing changes
       - name: Prepare git credentials
         env:
           GITHUB_TOKEN: ${{ secrets.degen_almanack_version_publish }}
@@ -74,15 +108,16 @@ jobs:
           echo "https://$GITHUB_TOKEN@github.com" > ~/.git-credentials
           git config --global credential.helper store
           
+      # Commit and push all changes back to the repository
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.degen_almanack_version_publish }}
         run: |
-          # Add all changes including new PDFs
+          # Add all changes including new PDFs and version updates
           git add version.txt _quarto.yml docs/
           
-          # Create commit
+          # Create commit with [skip ci] to prevent infinite loops
           git commit -m "Auto version bump and build [skip ci]"
           
-          # Push using the stored credentials
+          # Push changes back to main branch
           git push origin HEAD:main
