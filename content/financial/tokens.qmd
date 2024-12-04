@@ -39,7 +39,7 @@ These are networks that market themselves as settling the transactions on anothe
 
 We then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value. 
 
-Please see [Ozempic Effect](../financial/ratings.qmd/#ozempic-effect) to see how we determine if a network in a net ozempic or sugar network. 
+Please see [Ozempic Effect](./ratings.qmd#ozempic-effect) to see how we determine if a network in a net ozempic or sugar network. 
 
 ### Derivatives
 

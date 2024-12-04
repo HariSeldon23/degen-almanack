@@ -6,14 +6,14 @@ Within this Almanack we use the term Web3 rather than Crypto. While our industry
 
 Below you can see how the web has evolved into Web3. 
 
-![Evolution of the Web](./images/web3.svg)
+![Evolution of the Web](../../images/web3.svg)
 
 * Web1 (1990s): static websites, read-only content
 * Web2 (2000s - 2010s): Interactive social platforms, user-generated content
 * Web3 (2020s+): Decentralized networks, blockchain, user-owned data and assets
 
 #### Decentralization 
-![Network Topologies](./images/decentralization.svg)
+![Network Topologies](../../images/decentralization.svg)
 
 ### Blockchains
 #### Layer 1 {#layer-1}

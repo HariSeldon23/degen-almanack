@@ -1,0 +1,25 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8f9fa"/>
+  
+  <!-- Timeline -->
+  <line x1="100" y1="150" x2="700" y2="150" stroke="#333" stroke-width="4"/>
+  
+  <!-- Web1 -->
+  <circle cx="200" cy="150" r="20" fill="#ff6b6b"/>
+  <text x="200" y="100" text-anchor="middle" font-size="24" fill="#333">Web 1.0</text>
+  <text x="200" y="120" text-anchor="middle" font-size="14" fill="#666">Read-Only</text>
+  <text x="200" y="200" text-anchor="middle" font-size="12" fill="#666">1990s</text>
+  
+  <!-- Web2 -->
+  <circle cx="400" cy="150" r="20" fill="#4ecdc4"/>
+  <text x="400" y="100" text-anchor="middle" font-size="24" fill="#333">Web 2.0</text>
+  <text x="400" y="120" text-anchor="middle" font-size="14" fill="#666">Read-Write</text>
+  <text x="400" y="200" text-anchor="middle" font-size="12" fill="#666">2000s-2010s</text>
+  
+  <!-- Web3 -->
+  <circle cx="600" cy="150" r="20" fill="#45b7d1"/>
+  <text x="600" y="100" text-anchor="middle" font-size="24" fill="#333">Web 3.0</text>
+  <text x="600" y="120" text-anchor="middle" font-size="14" fill="#666">Read-Write-Own</text>
+  <text x="600" y="200" text-anchor="middle" font-size="12" fill="#666">2020s+</text>
+</svg>
