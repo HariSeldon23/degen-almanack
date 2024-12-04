@@ -1,73 +1,74 @@
-project:
-  type: book
-  output-dir: docs
-  preview:
-    port: 4200
-    browser: true
-    watch-inputs: true
-    navigate: true
-  render:
-  - '*.qmd'
-  - '!temp/'
+bibliography: references.bib
 book:
-  title: Trollip's Degen Almanack
   author: Justin Trollip
-  date: v0.4.0
-  page-navigation: true
-  search: true
-  repo-url: https://github.com/HariSeldon23/degen-almanack
-  sharing:
-  - twitter
-  - linkedin
-  - facebook
   chapters:
   - index.qmd
   - intro.qmd
-  - part: Web3 Essentials
-    chapters:
+  - chapters:
     - ./content/essentials/terms.qmd
     - ./content/essentials/tools.qmd
     - ./content/essentials/memes.qmd
     - ./content/essentials/icons.qmd
-  - part: Become a Degen
-    chapters:
+    part: Web3 Essentials
+  - chapters:
     - ./content/degen/scam.qmd
     - ./content/degen/starter.qmd
     - ./content/degen/giga.qmd
-  - part: Financial
-    chapters:
+    part: Become a Degen
+  - chapters:
     - ./content/financial/tokens.qmd
     - ./content/financial/ratings.qmd
     - ./content/financial/trollip_index.qmd
-  - part: Technical
-    chapters:
+    part: Financial
+  - chapters:
     - ./content/technical/cryptography.qmd
     - ./content/technical/blockchains.qmd
     - ./content/technical/dapps.qmd
     - ./content/technical/mev.qmd
-  - part: Social
-    chapters:
+    part: Technical
+  - chapters:
     - ./content/social/governance.qmd
+    part: Social
   - contributing.qmd
   - references.qmd
-bibliography: references.bib
+  date: v0.5.0
+  page-navigation: true
+  repo-url: https://github.com/HariSeldon23/degen-almanack
+  search: true
+  sharing:
+  - twitter
+  - linkedin
+  - facebook
+  title: Trollip's Degen Almanack
+date: '2024-12-04'
 format:
   html:
-    theme: cosmo
-    toc: true
-    toc-depth: 3
-    number-sections: true
     code-fold: true
     highlight-style: github
     include-in-header:
       text: '<script async src="https://platform.twitter.com/widgets.js"></script>
 
         '
+    number-sections: true
+    theme: cosmo
+    toc: true
+    toc-depth: 3
   pdf:
+    colorlinks: true
     documentclass: scrreprt
     keep-tex: false
-    toc: true
-    number-sections: true
-    colorlinks: true
-    lot: false
     lof: false
+    lot: false
+    number-sections: true
+    toc: true
+project:
+  output-dir: docs
+  preview:
+    browser: true
+    navigate: true
+    port: 4200
+    watch-inputs: true
+  render:
+  - '*.qmd'
+  - '!temp/'
+  type: book
