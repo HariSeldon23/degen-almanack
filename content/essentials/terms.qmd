@@ -24,7 +24,7 @@ We have taken these sources in order to come up with our definition:
 * [@nakamoto2008bitcoin] for Bitcoin
 * [@buterin2013ethereum] for Ethereum
 * [@buterin2021rollups] for the rollups guide
-* [@charbonneau2023rollups] for the John's excellent guide
+* [@charbonneau2023rollups] for John's excellent guide to rollups
 
 Nakamoto's Bitcoin whitepaper, while not explicitly using the term "Layer 1," established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a `self-contained, sovereign blockchain network`.
 
@@ -36,10 +36,20 @@ Charbonneau's report further refines our understanding by examining how Layer 1 
 
 Synthesizing these sources, we can define a Layer 1 blockchain as:
 
-A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.
+A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: 
+
+1. consensus - the ability to agree on the state of the network 
+2. data availability - ensuring all transaction data is publicly accessible and verifiable
+3. execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.
 
 ##### Settlement Layer
-https://x.com/jon_charb/status/1849868823119397041
+
+::: {.callout-note}
+<blockquote class="twitter-tweet">
+<a href="https://twitter.com/jon_charb/status/1849868823119397041"></a>
+</blockquote>
+:::
+
 
 #### Layer 2
 There is no canonical definition of L2's.
@@ -74,13 +84,13 @@ To come up with the following Framework
 
 ## Accounts
 ### Externally Owned Accounts {#eoa}
-The formal definition of an EOA comes from Ethereum's Yellow Paper. 
+The formal definition of an EOA comes from Ethereum's Yellow Paper. [@wood2014ethereum] 
 
 There it is defined as:
 
 * A nonce (counter for transactions sent)
 * A balance (in the native currency)
-* No associated 
+* No associated contract code
 * No data storage
 
 However we live in a multi-chain world so we'll define our own interpretation as:
@@ -143,8 +153,19 @@ The "smol brain" to "gigabrain" progression in crypto represents the journey of 
 * Can explain complex concepts simply
 * Recognizes that they can't predict short-term movements
 
-### Chad
-A true Crypto Chad is the absolute WAGMI (We're All Gonna Make It) incarnate. They've got those legendary diamond hands, having held through multiple 80% drawdowns without breaking a sweat. When the market is bleeding and normies are crying "this is the end of crypto," Chad's just sitting there accumulating sats, completely unfazed.
+![Crypto characters](../../images/memes/characters.png)
+
+* Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It's often paired with the "feels guy" emotion variations, particularly during market crashes.
+* Soyjak:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
+* Coomer:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
+* FUD (Fear, Uncertainty, Doubt): While not strictly a meme, it's become memefied in crypto culture. Any negative news or criticism is often dismissed as "FUD" by cryptocurrency enthusiasts, sometimes ironically.
+* "When Lambo?": This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It's both used seriously by newcomers and ironically by veterans.
+* Diamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. "Diamond hands" refers to holders who don't sell despite market pressure, while "paper hands" sell at the first sign of trouble.
+* "This is good for Bitcoin": Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin's adoption or price.
+* Bogdanoff Twins ("Dump It"): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.
+* "Funds are SAFU": From a Binance CEO video where he mispronounced "safe," this became a way to reassure (often ironically) about exchange security.
+The "Have Fun Staying Poor" (HFSP): Used by crypto enthusiasts towards skeptics, though it's increasingly used ironically, especially during bear markets.
+The DCA (Dollar Cost Average) Wojak: A calmer, more zen version of Wojak who simply buys regularly regardless of price, representing a more measured appr
 
 ## Acronyms
 IBRL - Increase Bandwidth, Reduce Latency

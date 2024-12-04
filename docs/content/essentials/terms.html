@@ -88,9 +88,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://platform.twitter.com/widgets.js"></script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -333,7 +333,6 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#degens" id="toc-degens" class="nav-link" data-scroll-target="#degens">Degens</a></li>
   <li><a href="#intelligence" id="toc-intelligence" class="nav-link" data-scroll-target="#intelligence">Intelligence</a></li>
-  <li><a href="#chad" id="toc-chad" class="nav-link" data-scroll-target="#chad">Chad</a></li>
   </ul></li>
   <li><a href="#acronyms" id="toc-acronyms" class="nav-link" data-scroll-target="#acronyms">Acronyms</a></li>
   </ul>
@@ -398,17 +397,36 @@ div.csl-indent {
 <li><span class="citation" data-cites="nakamoto2008bitcoin">(<a href="#ref-nakamoto2008bitcoin" role="doc-biblioref">Nakamoto 2008</a>)</span> for Bitcoin</li>
 <li><span class="citation" data-cites="buterin2013ethereum">(<a href="#ref-buterin2013ethereum" role="doc-biblioref">Buterin 2013</a>)</span> for Ethereum</li>
 <li><span class="citation" data-cites="buterin2021rollups">(<a href="#ref-buterin2021rollups" role="doc-biblioref">Buterin 2021</a>)</span> for the rollups guide</li>
-<li><span class="citation" data-cites="charbonneau2023rollups">(<a href="#ref-charbonneau2023rollups" role="doc-biblioref">Charbonneau 2023</a>)</span> for the John’s excellent guide</li>
+<li><span class="citation" data-cites="charbonneau2023rollups">(<a href="#ref-charbonneau2023rollups" role="doc-biblioref">Charbonneau 2023</a>)</span> for John’s excellent guide to rollups</li>
 </ul>
 <p>Nakamoto’s Bitcoin whitepaper, while not explicitly using the term “Layer 1,” established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a <code>self-contained, sovereign blockchain network</code>.</p>
 <p>The Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.</p>
 <p>Buterin’s rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.</p>
 <p>Charbonneau’s report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.</p>
 <p>Synthesizing these sources, we can define a Layer 1 blockchain as:</p>
-<p>A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.</p>
+<p>A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system:</p>
+<ol type="1">
+<li>consensus - the ability to agree on the state of the network</li>
+<li>data availability - ensuring all transaction data is publicly accessible and verifiable</li>
+<li>execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.</li>
+</ol>
 <section id="settlement-layer" class="level5">
 <h5 class="anchored" data-anchor-id="settlement-layer">Settlement Layer</h5>
-<p>https://x.com/jon_charb/status/1849868823119397041</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="twitter-tweet blockquote">
+<a href="https://twitter.com/jon_charb/status/1849868823119397041"></a>
+</blockquote>
+</div>
+</div>
 </section>
 </section>
 <section id="layer-2" class="level4">
@@ -463,12 +481,12 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="accounts">Accounts</h2>
 <section id="eoa" class="level3">
 <h3 class="anchored" data-anchor-id="eoa">Externally Owned Accounts</h3>
-<p>The formal definition of an EOA comes from Ethereum’s Yellow Paper.</p>
+<p>The formal definition of an EOA comes from Ethereum’s Yellow Paper. <span class="citation" data-cites="wood2014ethereum">(<a href="#ref-wood2014ethereum" role="doc-biblioref">Wood 2014</a>)</span></p>
 <p>There it is defined as:</p>
 <ul>
 <li>A nonce (counter for transactions sent)</li>
 <li>A balance (in the native currency)</li>
-<li>No associated</li>
+<li>No associated contract code</li>
 <li>No data storage</li>
 </ul>
 <p>However we live in a multi-chain world so we’ll define our own interpretation as:</p>
@@ -543,11 +561,24 @@ div.csl-indent {
 <li>Can explain complex concepts simply</li>
 <li>Recognizes that they can’t predict short-term movements</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/memes/characters.png" class="img-fluid figure-img"></p>
+<figcaption>Crypto characters</figcaption>
+</figure>
+</div>
+<ul>
+<li>Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It’s often paired with the “feels guy” emotion variations, particularly during market crashes.</li>
+<li>Soyjak: a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines “soy” (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with “Wojak.”</li>
+<li>Coomer: a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines “soy” (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with “Wojak.”</li>
+<li>FUD (Fear, Uncertainty, Doubt): While not strictly a meme, it’s become memefied in crypto culture. Any negative news or criticism is often dismissed as “FUD” by cryptocurrency enthusiasts, sometimes ironically.</li>
+<li>“When Lambo?”: This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It’s both used seriously by newcomers and ironically by veterans.</li>
+<li>Diamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. “Diamond hands” refers to holders who don’t sell despite market pressure, while “paper hands” sell at the first sign of trouble.</li>
+<li>“This is good for Bitcoin”: Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin’s adoption or price.</li>
+<li>Bogdanoff Twins (“Dump It”): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.</li>
+<li>“Funds are SAFU”: From a Binance CEO video where he mispronounced “safe,” this became a way to reassure (often ironically) about exchange security. The “Have Fun Staying Poor” (HFSP): Used by crypto enthusiasts towards skeptics, though it’s increasingly used ironically, especially during bear markets. The DCA (Dollar Cost Average) Wojak: A calmer, more zen version of Wojak who simply buys regularly regardless of price, representing a more measured appr</li>
+</ul>
 </section>
-</section>
-<section id="chad" class="level3">
-<h3 class="anchored" data-anchor-id="chad">Chad</h3>
-<p>A true Crypto Chad is the absolute WAGMI (We’re All Gonna Make It) incarnate. They’ve got those legendary diamond hands, having held through multiple 80% drawdowns without breaking a sweat. When the market is bleeding and normies are crying “this is the end of crypto,” Chad’s just sitting there accumulating sats, completely unfazed.</p>
 </section>
 </section>
 <section id="acronyms" class="level2">
@@ -576,6 +607,9 @@ Poon, Joseph, and Vitalik Buterin. 2017. <span>“Plasma: Scalable Autonomous Sm
 </div>
 <div id="ref-poon2016lightning" class="csl-entry" role="listitem">
 Poon, Joseph, and Thaddeus Dryja. 2016. <span>“The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments.”</span> <a href="https://lightning.network/lightning-network-paper.pdf">https://lightning.network/lightning-network-paper.pdf</a>.
+</div>
+<div id="ref-wood2014ethereum" class="csl-entry" role="listitem">
+Wood, Gavin. 2014. <span>“Ethereum: A Secure Decentralised Generalised Transaction Ledger.”</span> Ethereum Foundation. <a href="https://ethereum.github.io/yellowpaper/paper.pdf">https://ethereum.github.io/yellowpaper/paper.pdf</a>.
 </div>
 </div>
 </section>

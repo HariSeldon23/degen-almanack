@@ -1,6 +1,11 @@
 project:
   type: book
   output-dir: docs
+  preview:
+    port: 4200
+    browser: true
+    watch-inputs: true
+    navigate: true
   render:
     - "*.qmd"
     - "!temp/"  
@@ -53,12 +58,14 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-    css: styles.css  
     toc: true
     toc-depth: 3
     number-sections: true
     code-fold: true
     highlight-style: github
+    include-in-header:
+      text: |
+        <script async src="https://platform.twitter.com/widgets.js"></script>
   
   pdf:
     documentclass: scrreprt

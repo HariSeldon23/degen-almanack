@@ -21,18 +21,12 @@ The meme uses a bell curve (IQ distribution curve) with three characters:
 
 ![BTC Bell Curve meme](../../images/memes/bellcurve.jpg)
 
-## Chad
-
-![Chad](../../images/memes/chad.png)
-
 ## General 
-* Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It's often paired with the "feels guy" emotion variations, particularly during market crashes.
-* FUD (Fear, Uncertainty, Doubt): While not strictly a meme, it's become memefied in crypto culture. Any negative news or criticism is often dismissed as "FUD" by cryptocurrency enthusiasts, sometimes ironically.
-* "When Lambo?": This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It's both used seriously by newcomers and ironically by veterans.
-* Diamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. "Diamond hands" refers to holders who don't sell despite market pressure, while "paper hands" sell at the first sign of trouble.
-* "This is good for Bitcoin": Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin's adoption or price.
-* Bogdanoff Twins ("Dump It"): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.
-* "Funds are SAFU": From a Binance CEO video where he mispronounced "safe," this became a way to reassure (often ironically) about exchange security.
-The "Have Fun Staying Poor" (HFSP): Used by crypto enthusiasts towards skeptics, though it's increasingly used ironically, especially during bear markets.
-The DCA (Dollar Cost Average) Wojak: A calmer, more zen version of Wojak who simply buys regularly regardless of price, representing a more measured approach to investing.
+
 * "Sir, this is a Wendy's": Used when crypto discussions become overly technical or philosophical, reminding people not to take themselves too seriously.
+
+::: {.callout-note}
+<blockquote class="twitter-tweet">
+<a href="https://x.com/Wendys/status/1526211577891921922"></a>
+</blockquote>
+:::
