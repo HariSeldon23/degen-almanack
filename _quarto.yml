@@ -7,54 +7,48 @@ project:
     watch-inputs: true
     navigate: true
   render:
-    - "*.qmd"
-    - "!temp/"  
-
+  - '*.qmd'
+  - '!temp/'
 book:
-  title: "Trollip's Degen Almanack"
-  author: "Justin Trollip"
-  date: "12/2/2024"
+  title: Trollip's Degen Almanack
+  author: Justin Trollip
+  date: v0.2.0
   page-navigation: true
   search: true
   repo-url: https://github.com/HariSeldon23/degen-almanack
-  sharing: [twitter, linkedin, facebook]
+  sharing:
+  - twitter
+  - linkedin
+  - facebook
   chapters:
-    - index.qmd
-    - intro.qmd
-    
-    - part: "Web3 Essentials"
-      chapters:
-        - ./content/essentials/terms.qmd
-        - ./content/essentials/tools.qmd
-        - ./content/essentials/memes.qmd
-    
-    - part: "Become a Degen"
-      chapters: 
-        - ./content/degen/starter.qmd
-        - ./content/degen/giga.qmd
-
-    - part: "Financial"
-      chapters:
-        - ./content/financial/tokens.qmd
-        - ./content/financial/ratings.qmd
-        - ./content/financial/trollip_index.qmd
-
-    - part: "Technical"
-      chapters:
-        - ./content/technical/cryptography.qmd
-        - ./content/technical/blockchains.qmd
-        - ./content/technical/dapps.qmd
-        - ./content/technical/mev.qmd
-
-    - part: "Social"
-      chapters:
-        - ./content/social/governance.qmd
-
-    - contributing.qmd
-    - references.qmd
-
+  - index.qmd
+  - intro.qmd
+  - part: Web3 Essentials
+    chapters:
+    - ./content/essentials/terms.qmd
+    - ./content/essentials/tools.qmd
+    - ./content/essentials/memes.qmd
+  - part: Become a Degen
+    chapters:
+    - ./content/degen/starter.qmd
+    - ./content/degen/giga.qmd
+  - part: Financial
+    chapters:
+    - ./content/financial/tokens.qmd
+    - ./content/financial/ratings.qmd
+    - ./content/financial/trollip_index.qmd
+  - part: Technical
+    chapters:
+    - ./content/technical/cryptography.qmd
+    - ./content/technical/blockchains.qmd
+    - ./content/technical/dapps.qmd
+    - ./content/technical/mev.qmd
+  - part: Social
+    chapters:
+    - ./content/social/governance.qmd
+  - contributing.qmd
+  - references.qmd
 bibliography: references.bib
-
 format:
   html:
     theme: cosmo
@@ -64,14 +58,14 @@ format:
     code-fold: true
     highlight-style: github
     include-in-header:
-      text: |
-        <script async src="https://platform.twitter.com/widgets.js"></script>
-  
+      text: '<script async src="https://platform.twitter.com/widgets.js"></script>
+
+        '
   pdf:
     documentclass: scrreprt
-    keep-tex: false  # Don't keep intermediate LaTeX files
+    keep-tex: false
     toc: true
     number-sections: true
     colorlinks: true
-    lot: false  # List of tables
-    lof: false  # List of figures
+    lot: false
+    lof: false
