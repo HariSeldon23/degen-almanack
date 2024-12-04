@@ -5,18 +5,19 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read # This sets the base permissions for the GITHUB_TOKEN
-
 jobs:
   version-and-deploy:
     runs-on: ubuntu-latest
+    # First, we need to ensure the job has access to the token
+    env:
+      GH_TOKEN: ${{ secrets.degen_almanack_version_publish }}
+    
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          # For fine-grained PATs, we don't specify the token in the checkout action
-          # This allows it to use the default GITHUB_TOKEN for reading
+          # We use the token here for initial checkout
+          token: ${{ secrets.degen_almanack_version_publish }}
           
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -65,16 +66,33 @@ jobs:
             exit 1
           fi
           
-      - name: Commit and push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.degen_almanack_version_publish }}
+      - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           
-          # For fine-grained PATs, we need to set up the remote differently
-          git remote set-url origin "https://$GITHUB_TOKEN@github.com/${{ github.repository }}.git"
+      - name: Commit and push changes
+        # Using a separate step for debugging purposes
+        run: |
+          # Debug: Print git remote (without exposing token)
+          echo "Current remote:"
+          git remote -v | sed 's/https:\/\/.*@/https:\/\/***@/'
           
+          # Set the remote with the token
+          git remote set-url origin "https://${{ secrets.degen_almanack_version_publish }}@github.com/${{ github.repository }}.git"
+          
+          # Debug: Verify remote was set (without exposing token)
+          echo "New remote:"
+          git remote -v | sed 's/https:\/\/.*@/https:\/\/***@/'
+          
+          # Add and commit changes
           git add version.txt _quarto.yml docs/
           git commit -m "Auto version bump and build [skip ci]"
-          git push
+          
+          # Push with debug output
+          echo "Attempting to push..."
+          git push origin HEAD:main || {
+            echo "Push failed. Checking git status:"
+            git status
+            exit 1
+          }
