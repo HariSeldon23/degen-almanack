@@ -56,16 +56,19 @@ jobs:
       - name: Handle PDF
         run: |
           echo "Looking for PDF in docs directory:"
-          find docs -name "*.pdf"
-          
-          if [ -f "docs/Trollip_s-Degen-Almanack.pdf" ]; then
-            echo "Found PDF, creating versioned copy"
-            cp "docs/Trollip_s-Degen-Almanack.pdf" "docs/Trollip_s-Degen-Almanack-v${NEW_VERSION}.pdf"
+          if [ -f "docs/Trollip-s-Degen-Almanack.pdf" ]; then
+            echo "Found PDF with hyphen"
+            cp "docs/Trollip-s-Degen-Almanack.pdf" "docs/Trollip-s-Degen-Almanack-v${NEW_VERSION}.pdf"
           else
-            echo "PDF not found in expected location"
-            echo "Checking other possible locations:"
-            find . -name "*.pdf"
-            exit 1
+            echo "PDF not found with hyphen, checking underscore version"
+            if [ -f "docs/Trollip_s_Degen_Almanack.pdf" ]; then
+              echo "Found PDF with underscore"
+              cp "docs/Trollip_s_Degen_Almanack.pdf" "docs/Trollip_s_Degen_Almanack-v${NEW_VERSION}.pdf"
+            else
+              echo "PDF files in docs:"
+              find docs -name "*.pdf"
+              exit 1
+            fi
           fi
           
       - name: Commit and push changes
