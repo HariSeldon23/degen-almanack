@@ -437,25 +437,113 @@ Reward distribution
 Slashing conditions
 
 ## Application Models
-Add a section here on precompiled contracts
-All DIN's will have an application model. 
-So the Application model looks at the following:
-state management
-parallelization Potential
-Asset Representation
-Composability
-Safety Guarantees
+Each application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.
 
-UTXO also includes Cardano's extened UTXO, Kaspa also falls into this
-Account 
-Pure EVM, TRON
-Specialized XRP and Stelalr falls under this with their balance-based model, 
-Sharded account model Near falls into this. 
-Object (Sui)
-Aptos Resource model while different is moving towards an Object model for Coins/Tokens
-Capability (Solana)
-Cell model (TON)
-Actor Based (ICP and CosmWasm
+We classify Application Models as:
+
+* UTXO also includes Cardano's extened UTXO, Kaspa also falls into this
+* Account 
+    * Pure EVM Ethereum, Polygon, Avalanche, TRON et al
+    * Specialized XRP and Stellar 
+* Sharded account model Near falls into this. 
+* Object Sui
+* Resource model Aptos and Movement
+* Capability Solana
+* Cell model TON
+* Actor Based (ICP and CosmWasm
+
+
+### UTXO
+The UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.
+
+**Key Characteristics:**
+
+* State Management: Stateless, transaction-oriented
+* Parallelization: Natural parallel validation
+* Asset Representation: Native representation of tokens
+* Composability: Limited without extensions
+* Safety Guarantees: High through explicit ownership
+
+### Account Model
+Accounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA's, they only maintain state of the network token and not ERC20's. 
+
+**Key Characteristics:**
+
+* State Management: Stateful, account-oriented
+* Parallelization: Challenging due to state dependencies
+* Asset Representation: Contract-based tokens
+* Composability: High through contract interactions
+* Safety Guarantees: Varies by implementation
+
+### Object Model
+Objects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.
+
+**Key Characteristics:**
+
+* State Management: Object-oriented
+* Parallelization: Natural through object independence
+* Asset Representation: Native objects
+* Composability: Through object references
+* Safety Guarantees: Object-level ownership
+
+### Resource Model
+
+Resources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.
+
+**Key Characteristics:**
+
+* State Management: Resource-oriented
+* Parallelization: Possible through resource independence
+* Asset Representation: Native resources
+* Composability: Through resource combination
+* Safety Guarantees: Very high through linear types
+
+### Capability Model
+Capability Model
+Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.
+
+**Key Characteristics:**
+
+* State Management: Capability-based
+* Parallelization: High through capability isolation
+* Asset Representation: Capability-protected resources
+* Composability: Through capability delegation
+* Safety Guarantees: High through access control
+
+### Cell Model
+State is organized into cells that can be independently accessed and modified, enabling high parallelization.
+
+**Key Characteristics:**
+
+* State Management: Cell-based
+* Parallelization: High through cell independence
+* Asset Representation: Cell-based
+* Composability: Through cell references
+* Safety Guarantees: Cell-level isolation
+
+### Actor Model
+Computation is organized around actors that can independently process messages, enabling natural parallelization.
+
+**Key Characteristics:**
+
+* State Management: Actor-local state
+* Parallelization: Natural through actor independence
+* Asset Representation: Actor-managed
+* Composability: Through message passing
+* Safety Guarantees: Actor isolation
+
+| Application Model | Blockchains | Key Features |
+|------------------|-------------|--------------|
+| UTXO | Bitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM | - Natural parallelism<br>- Simple state model<br>- High security |
+| Account (Pure EVM) | Ethereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare | - Rich programmability<br>- High composability<br>- Standard tooling |
+| Account (Specialized) | XRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent | - Custom account models<br>- Specific use-case optimization<br>- Modified state management |
+| Sharded Account | NEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony | - Parallel execution<br>- Cross-shard composition<br>- Scalable state |
+| Object | Sui | - Object-centric<br>- Natural parallelism<br>- Rich ownership model |
+| Resource | Aptos, Movement, Flow, Virtual Protocol | - Linear types<br>- Strong safety<br>- Asset-oriented |
+| Capability | Solana, Injective, SEI, Theta Network | - Fine-grained access<br>- High parallelism<br>- Explicit permissions |
+| Cell | TON, Everscale | - Cell-based storage<br>- High parallelism<br>- Flexible structure |
+| Actor | Internet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA | - Message-passing<br>- Natural isolation<br>- Independent processing |
+| Unknown | Filecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin | Still researching these |
 
 ## Communication Protocols
 We have

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.7.2">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-823ada2c64a85bd70d66c02353c14ab3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ecba56d4e9f607defad91b04bf549305.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d0d28e68b2311299fec6095e89651c71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -300,20 +300,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#wallets" id="toc-wallets" class="nav-link active" data-scroll-target="#wallets">Wallets</a>
-  <ul class="collapse">
-  <li><a href="#single-model-wallets" id="toc-single-model-wallets" class="nav-link" data-scroll-target="#single-model-wallets">Single-Model Wallets</a></li>
-  </ul></li>
-  <li><a href="#understanding-multi-model-wallets" id="toc-understanding-multi-model-wallets" class="nav-link" data-scroll-target="#understanding-multi-model-wallets">Understanding Multi-Model Wallets</a>
-  <ul class="collapse">
-  <li><a href="#notable-multi-model-wallets" id="toc-notable-multi-model-wallets" class="nav-link" data-scroll-target="#notable-multi-model-wallets">Notable Multi-Model Wallets</a></li>
-  </ul></li>
-  <li><a href="#technical-implications-of-model-support" id="toc-technical-implications-of-model-support" class="nav-link" data-scroll-target="#technical-implications-of-model-support">Technical Implications of Model Support</a>
-  <ul class="collapse">
-  <li><a href="#single-model-advantages" id="toc-single-model-advantages" class="nav-link" data-scroll-target="#single-model-advantages">Single-Model Advantages</a></li>
-  <li><a href="#multi-model-challenges" id="toc-multi-model-challenges" class="nav-link" data-scroll-target="#multi-model-challenges">Multi-Model Challenges</a></li>
-  </ul></li>
-  <li><a href="#future-considerations" id="toc-future-considerations" class="nav-link" data-scroll-target="#future-considerations">Future Considerations</a></li>
+  <li><a href="#wallets" id="toc-wallets" class="nav-link active" data-scroll-target="#wallets">Wallets</a></li>
   <li><a href="#analysis-tools" id="toc-analysis-tools" class="nav-link" data-scroll-target="#analysis-tools">Analysis Tools</a>
   <ul class="collapse">
   <li><a href="#explorers" id="toc-explorers" class="nav-link" data-scroll-target="#explorers">Explorers</a></li>
@@ -355,105 +342,82 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="wallets" class="level2">
 <h2 class="anchored" data-anchor-id="wallets">Wallets</h2>
-<p>Wallets can focus on a singular <a href="../../content/technical/blockchains.html#application-models">application model</a> or they can serve numerous.</p>
-<p>Single-model wallets are those that only support one type of blockchain application model, regardless of how many networks they support within that model. This is a crucial distinction because supporting multiple networks using the same model is fundamentally different from supporting multiple models. It’s generally a tradeoff between features and multi-model support. A wallet focusing on multi-model support generally needs to sacrifice resources that would be devoted to adding features. It’s a good rule of thumb, that a single model wallet will provide a better UX that a multi-model wallet. However as a degen, as you get more acquianted with DeFi you’ll be interacting with numerous chains with different models.</p>
-<section id="single-model-wallets" class="level3">
-<h3 class="anchored" data-anchor-id="single-model-wallets">Single-Model Wallets</h3>
-<ol type="1">
-<li><p>MetaMask</p>
+<p>A wallet is the primary way you interact with a <a href="../../content/technical/blockchains.html">Blockchain</a>.</p>
+<p>Wallets have the following major attributes:</p>
 <ul>
-<li>Supports only the Account-based EVM model</li>
-<li>While it works with many networks (Ethereum, BSC, Polygon, etc.), they all use the same underlying EVM account model</li>
-<li>Transaction handling, address format, and key management are consistent across all supported networks</li>
-<li>Cannot natively interact with non-EVM models like UTXO or Capability-based systems</li>
-</ul></li>
-<li><p>Keplr and Leap</p>
-<ul>
-<li>Specialized for the Actor-based model used in the Cosmos ecosystem</li>
-<li>While it supports multiple Cosmos chains, they all share the same fundamental actor-based model</li>
-<li>Optimized for CosmWasm smart contract interactions</li>
-</ul></li>
-<li><p>Sui Wallet</p></li>
-<li><p>Petra Wallet</p></li>
-<li><p>Argent X</p></li>
-<li><p>Backpack</p></li>
-<li><p>Polkadot wallet</p></li>
-<li><p>Avalanche’s wallet</p></li>
-</ol>
-</section>
-</section>
-<section id="understanding-multi-model-wallets" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-multi-model-wallets">Understanding Multi-Model Wallets</h2>
-<p>Multi-model wallets handle fundamentally different blockchain application models, requiring separate implementations for transaction construction, signing, and state management for each model type.</p>
-<section id="notable-multi-model-wallets" class="level3">
-<h3 class="anchored" data-anchor-id="notable-multi-model-wallets">Notable Multi-Model Wallets</h3>
-<ol type="1">
-<li>Phantom
-<ul>
-<li>Supports both Capability-based (Solana) and Account-based (EVM) models</li>
-<li>Requires distinct handling for:
-<ul>
-<li>Solana’s capability-based programs and account structure</li>
-<li>EVM’s account-based smart contracts and state management</li>
-</ul></li>
-<li>Different address derivation and transaction construction for each model</li>
-</ul></li>
-<li>OKX Wallet
-<ul>
-<li>Supports multiple distinct models:
-<ul>
-<li>EVM account model</li>
-<li>Solana capability model</li>
-<li>Aptos resource model</li>
-<li>NEAR sharded account model</li>
-</ul></li>
-<li>Must implement separate state management and transaction handling for each model</li>
-<li>Unified interface masking underlying complexity</li>
-</ul></li>
-<li>Trust Wallet
-<ul>
-<li>Handles multiple models:
-<ul>
-<li>UTXO (Bitcoin, Litecoin)</li>
-<li>Account-based (EVM chains)</li>
-<li>Specialized models (XRP, Stellar)</li>
-</ul></li>
-<li>Each model requires its own implementation stack</li>
-</ul></li>
-<li>Leather</li>
-</ol>
-</section>
-</section>
-<section id="technical-implications-of-model-support" class="level2">
-<h2 class="anchored" data-anchor-id="technical-implications-of-model-support">Technical Implications of Model Support</h2>
-<section id="single-model-advantages" class="level3">
-<h3 class="anchored" data-anchor-id="single-model-advantages">Single-Model Advantages</h3>
-<ul>
-<li>Consistent security model across all supported networks</li>
-<li>Simplified transaction handling</li>
-<li>More straightforward key management</li>
-<li>Focused development and maintenance</li>
-<li>Better optimization for model-specific features</li>
-<li>Smaller attack surface</li>
+<li>Type - Hardware or Software wallets</li>
+<li>Platform - Mobile, Browser, Desktop or Hybrid</li>
+<li><a href="../../content/technical/blockchains.html#application-models">Application Model</a> - Type of blockchains it supports. Can support multiple models.</li>
 </ul>
-</section>
-<section id="multi-model-challenges" class="level3">
-<h3 class="anchored" data-anchor-id="multi-model-challenges">Multi-Model Challenges</h3>
-<ul>
-<li>Complex security considerations for each model</li>
-<li>Different transaction construction methods</li>
-<li>Multiple address derivation paths</li>
-<li>Increased code complexity</li>
-<li>Larger attack surface</li>
-<li>Need for model-specific security audits</li>
-</ul>
-</section>
-</section>
-<section id="future-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="future-considerations">Future Considerations</h2>
-<p>The trend in wallet development shows increasing support for multiple models, driven by: - Growing cross-chain interaction needs - Rise of new blockchain models - User demand for unified interfaces - Development of cross-model standards</p>
-<p>However, this creates significant technical challenges in: - Security implementation - User experience design - Transaction management - Key handling - State synchronization</p>
-<p>The distinction between single-model and multi-model wallets will become increasingly important as new blockchain models emerge and cross-chain interaction becomes more common.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 9%">
+<col style="width: 16%">
+<col style="width: 42%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Wallet Name</th>
+<th>Type</th>
+<th>Platform</th>
+<th>Application Models Supported</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ledger</td>
+<td>Hardware</td>
+<td>Desktop (via Ledger Live), Mobile (via Ledger Live)</td>
+<td>Account (EVM), UTXO, Specialized Account, Resource, Actor</td>
+<td>- Secure element chip protection<br>- Supports 5000+ tokens<br>- Multi-currency support through apps</td>
+</tr>
+<tr class="even">
+<td>Trezor</td>
+<td>Hardware</td>
+<td>Desktop (via Trezor Suite), Browser</td>
+<td>Account (EVM), UTXO, Specialized Account</td>
+<td>- Open source hardware<br>- Built-in crypto exchange<br>- Password manager integration</td>
+</tr>
+<tr class="odd">
+<td>MetaMask</td>
+<td>Software</td>
+<td>Browser Extension, Mobile</td>
+<td>Account (EVM)</td>
+<td>- Industry standard for EVM chains<br>- Built-in swap functionality<br>- Extensive dApp integration</td>
+</tr>
+<tr class="even">
+<td>Phantom</td>
+<td>Software</td>
+<td>Browser Extension, Mobile</td>
+<td>Capability (Solana), Account (EVM)</td>
+<td>- Native Solana integration<br>- Recently added EVM support<br>- NFT management focused</td>
+</tr>
+<tr class="odd">
+<td>Safe</td>
+<td>Software</td>
+<td>Browser (Web App)</td>
+<td>Account (EVM)</td>
+<td>- Multi-signature focused<br>- Modular architecture<br>- DAO treasury management<br>- Programmable accounts</td>
+</tr>
+<tr class="even">
+<td>TrustWallet</td>
+<td>Software</td>
+<td>Mobile</td>
+<td>Account (EVM), UTXO, Specialized Account</td>
+<td>- Multi-chain support<br>- Built-in DeFi browser<br>- Binance integration</td>
+</tr>
+<tr class="odd">
+<td>Rainbow</td>
+<td>Software</td>
+<td>Mobile</td>
+<td>Account (EVM)</td>
+<td>- iOS/Android focused<br>- Enhanced NFT support<br>- Optimized for DeFi interactions</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="analysis-tools" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-tools">Analysis Tools</h2>

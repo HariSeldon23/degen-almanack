@@ -3,9 +3,9 @@ This document I believe will be updated most frequently. Terms are constantly ch
 
 Please treat it as a living document. The Almanack uses version control, so it will be possilbe to see how terms change over time by going back to previous versions. 
 
-## Basic Terms
+## Core Concepts
 ### Web3
-Within this Almanack we use the term Web3 rather than Crypto. While our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.
+While our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.
 
 Below you can see how the web has evolved into Web3. 
 
@@ -15,7 +15,7 @@ Below you can see how the web has evolved into Web3.
 * Web2 (2000s - 2010s): Interactive social platforms, user-generated content
 * Web3 (2020s+): Decentralized networks, blockchain, user-owned data and assets
 
-#### Decentralization 
+### Decentralization 
 ![Network Topologies](../../images/decentralization.svg)
 
 ### Blockchains
@@ -111,64 +111,24 @@ However we live in a multi-chain world so we'll define our own interpretation as
 * Technical Sophistication: Despite the seeming recklessness implied by the term, many "degens" are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They're often early adopters of new protocols and technologies.
 * Community Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.
 
-### Intelligence
-The "smol brain" to "gigabrain" progression in crypto represents the journey of understanding that many people go through in their crypto experience. 
-
-#### Smol Brain
-
-* Buys only the top trending coins on social media
-* "Number go up" mentality
-* Panic sells during dips
-* Falls for obvious scams and rugpulls
-* Believes every "to the moon" prediction
-* Uses 100x leverage without understanding the risks
-* Thinks technical analysis is just drawing random lines
-
-#### Medium Brain 
-
-* Learns about market cycles
-* Starts understanding blockchain basics
-* Discovers DeFi and yield farming
-* Gets into complex trading strategies
-* Over-analyzes every chart pattern
-* Tries to time the market perfectly
-* Thinks they can outsmart the whales
-
-#### Big Brain
-
-* Understands tokenomics
-* Reads whitepapers before investing
-* Uses risk management strategies
-* Recognizes market manipulation tactics
-* Develops a long-term investment thesis
-* Learns from past market cycles
-* Studies blockchain technology deeply
-
-#### Gigabrain
-
-* Returns to simple but effective strategies
-* "Time in the market beats timing the market"
-* Focuses on fundamentals over hype
-* Uses basic DCA (Dollar Cost Averaging) strategy
-* Understands that simplicity often wins
-* Doesn't chase every new trend
-* Has learned emotional control
-* Can explain complex concepts simply
-* Recognizes that they can't predict short-term movements
-
-![Crypto characters](../../images/memes/characters.png)
-
-* Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It's often paired with the "feels guy" emotion variations, particularly during market crashes.
-* Soyjak:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
-* Coomer:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
+## General Terms
+* Smol Brain
+* Big Brain
+* Gigabrain
 * FUD (Fear, Uncertainty, Doubt): While not strictly a meme, it's become memefied in crypto culture. Any negative news or criticism is often dismissed as "FUD" by cryptocurrency enthusiasts, sometimes ironically.
 * "When Lambo?": This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It's both used seriously by newcomers and ironically by veterans.
 * Diamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. "Diamond hands" refers to holders who don't sell despite market pressure, while "paper hands" sell at the first sign of trouble.
 * "This is good for Bitcoin": Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin's adoption or price.
 * Bogdanoff Twins ("Dump It"): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.
 * "Funds are SAFU": From a Binance CEO video where he mispronounced "safe," this became a way to reassure (often ironically) about exchange security.
-The "Have Fun Staying Poor" (HFSP): Used by crypto enthusiasts towards skeptics, though it's increasingly used ironically, especially during bear markets.
-The DCA (Dollar Cost Average) Wojak: A calmer, more zen version of Wojak who simply buys regularly regardless of price, representing a more measured appr
+
+### Common Characters
+![Crypto characters](../../images/memes/characters.png)
+
+* Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It's often paired with the "feels guy" emotion variations, particularly during market crashes.
+* Soyjak:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
+* Coomer:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
+
 
 ## Acronyms
 IBRL - Increase Bandwidth, Reduce Latency

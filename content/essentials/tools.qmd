@@ -1,101 +1,23 @@
 # Tools 
 
 ## Wallets
-Wallets can focus on a singular [application model](../technical/blockchains.qmd#application-models) or they can serve numerous. 
+A wallet is the primary way you interact with a [Blockchain](../technical/blockchains.qmd). 
 
-Single-model wallets are those that only support one type of blockchain application model, regardless of how many networks they support within that model. This is a crucial distinction because supporting multiple networks using the same model is fundamentally different from supporting multiple models. It's generally a tradeoff between features and multi-model support. A wallet focusing on multi-model support generally needs to sacrifice resources that would be devoted to adding features. It's a good rule of thumb, that a single model wallet will provide a better UX that a multi-model wallet. However as a degen, as you get more acquianted with DeFi you'll be interacting with numerous chains with different models.
+Wallets have the following major attributes:
 
-### Single-Model Wallets
+* Type - Hardware or Software wallets
+* Platform - Mobile, Browser, Desktop or Hybrid
+* [Application Model](../technical/blockchains.qmd#application-models) - Type of blockchains it supports. Can support multiple models. 
 
-1. MetaMask
-   - Supports only the Account-based EVM model
-   - While it works with many networks (Ethereum, BSC, Polygon, etc.), they all use the same underlying EVM account model
-   - Transaction handling, address format, and key management are consistent across all supported networks
-   - Cannot natively interact with non-EVM models like UTXO or Capability-based systems
-
-2. Keplr and Leap
-   - Specialized for the Actor-based model used in the Cosmos ecosystem
-   - While it supports multiple Cosmos chains, they all share the same fundamental actor-based model
-   - Optimized for CosmWasm smart contract interactions
-   
-3. Sui Wallet
-
-4. Petra Wallet
-
-5. Argent X
-
-6. Backpack
-
-7. Polkadot wallet
-
-8. Avalanche's wallet
-
-## Understanding Multi-Model Wallets
-
-Multi-model wallets handle fundamentally different blockchain application models, requiring separate implementations for transaction construction, signing, and state management for each model type.
-
-### Notable Multi-Model Wallets
-
-1. Phantom
-   - Supports both Capability-based (Solana) and Account-based (EVM) models
-   - Requires distinct handling for:
-     - Solana's capability-based programs and account structure
-     - EVM's account-based smart contracts and state management
-   - Different address derivation and transaction construction for each model
-
-2. OKX Wallet
-   - Supports multiple distinct models:
-     - EVM account model
-     - Solana capability model
-     - Aptos resource model
-     - NEAR sharded account model
-   - Must implement separate state management and transaction handling for each model
-   - Unified interface masking underlying complexity
-
-3. Trust Wallet
-   - Handles multiple models:
-     - UTXO (Bitcoin, Litecoin)
-     - Account-based (EVM chains)
-     - Specialized models (XRP, Stellar)
-   - Each model requires its own implementation stack
-
-4. Leather
-
-## Technical Implications of Model Support
-
-### Single-Model Advantages
-- Consistent security model across all supported networks
-- Simplified transaction handling
-- More straightforward key management
-- Focused development and maintenance
-- Better optimization for model-specific features
-- Smaller attack surface
-
-### Multi-Model Challenges
-- Complex security considerations for each model
-- Different transaction construction methods
-- Multiple address derivation paths
-- Increased code complexity
-- Larger attack surface
-- Need for model-specific security audits
-
-## Future Considerations
-
-The trend in wallet development shows increasing support for multiple models, driven by:
-- Growing cross-chain interaction needs
-- Rise of new blockchain models
-- User demand for unified interfaces
-- Development of cross-model standards
-
-However, this creates significant technical challenges in:
-- Security implementation
-- User experience design
-- Transaction management
-- Key handling
-- State synchronization
-
-The distinction between single-model and multi-model wallets will become increasingly important as new blockchain models emerge and cross-chain interaction becomes more common.
-
+| Wallet Name | Type | Platform | Application Models Supported | Notes |
+|-------------|------|-----------|----------------------------|--------|
+| Ledger | Hardware | Desktop (via Ledger Live), Mobile (via Ledger Live) | Account (EVM), UTXO, Specialized Account, Resource, Actor | - Secure element chip protection<br>- Supports 5000+ tokens<br>- Multi-currency support through apps |
+| Trezor | Hardware | Desktop (via Trezor Suite), Browser | Account (EVM), UTXO, Specialized Account | - Open source hardware<br>- Built-in crypto exchange<br>- Password manager integration |
+| MetaMask | Software | Browser Extension, Mobile | Account (EVM) | - Industry standard for EVM chains<br>- Built-in swap functionality<br>- Extensive dApp integration |
+| Phantom | Software | Browser Extension, Mobile | Capability (Solana), Account (EVM) | - Native Solana integration<br>- Recently added EVM support<br>- NFT management focused |
+| Safe | Software | Browser (Web App) | Account (EVM) | - Multi-signature focused<br>- Modular architecture<br>- DAO treasury management<br>- Programmable accounts |
+| TrustWallet | Software | Mobile | Account (EVM), UTXO, Specialized Account | - Multi-chain support<br>- Built-in DeFi browser<br>- Binance integration |
+| Rainbow | Software | Mobile | Account (EVM) | - iOS/Android focused<br>- Enhanced NFT support<br>- Optimized for DeFi interactions |
 
 ## Analysis Tools
 ### Explorers

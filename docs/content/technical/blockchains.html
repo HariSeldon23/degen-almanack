@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.7.2">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-823ada2c64a85bd70d66c02353c14ab3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ecba56d4e9f607defad91b04bf549305.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d0d28e68b2311299fec6095e89651c71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -303,7 +303,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sovereign-networks" id="toc-sovereign-networks" class="nav-link active" data-scroll-target="#sovereign-networks">Sovereign Networks</a></li>
   <li><a href="#layer-2s" id="toc-layer-2s" class="nav-link" data-scroll-target="#layer-2s">Layer 2’s</a></li>
   <li><a href="#consensus-mechanisms" id="toc-consensus-mechanisms" class="nav-link" data-scroll-target="#consensus-mechanisms">Consensus Mechanisms</a></li>
-  <li><a href="#application-models" id="toc-application-models" class="nav-link" data-scroll-target="#application-models">Application Models</a></li>
+  <li><a href="#application-models" id="toc-application-models" class="nav-link" data-scroll-target="#application-models">Application Models</a>
+  <ul class="collapse">
+  <li><a href="#utxo" id="toc-utxo" class="nav-link" data-scroll-target="#utxo">UTXO</a></li>
+  <li><a href="#account-model" id="toc-account-model" class="nav-link" data-scroll-target="#account-model">Account Model</a></li>
+  <li><a href="#object-model" id="toc-object-model" class="nav-link" data-scroll-target="#object-model">Object Model</a></li>
+  <li><a href="#resource-model" id="toc-resource-model" class="nav-link" data-scroll-target="#resource-model">Resource Model</a></li>
+  <li><a href="#capability-model" id="toc-capability-model" class="nav-link" data-scroll-target="#capability-model">Capability Model</a></li>
+  <li><a href="#cell-model" id="toc-cell-model" class="nav-link" data-scroll-target="#cell-model">Cell Model</a></li>
+  <li><a href="#actor-model" id="toc-actor-model" class="nav-link" data-scroll-target="#actor-model">Actor Model</a></li>
+  </ul></li>
   <li><a href="#communication-protocols" id="toc-communication-protocols" class="nav-link" data-scroll-target="#communication-protocols">Communication Protocols</a></li>
   <li><a href="#fee-markets" id="toc-fee-markets" class="nav-link" data-scroll-target="#fee-markets">Fee Markets</a>
   <ul class="collapse">
@@ -408,8 +417,172 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application-models" class="level2">
 <h2 class="anchored" data-anchor-id="application-models">Application Models</h2>
-<p>Add a section here on precompiled contracts All DIN’s will have an application model. So the Application model looks at the following: state management parallelization Potential Asset Representation Composability Safety Guarantees</p>
-<p>UTXO also includes Cardano’s extened UTXO, Kaspa also falls into this Account Pure EVM, TRON Specialized XRP and Stelalr falls under this with their balance-based model, Sharded account model Near falls into this. Object (Sui) Aptos Resource model while different is moving towards an Object model for Coins/Tokens Capability (Solana) Cell model (TON) Actor Based (ICP and CosmWasm</p>
+<p>Each application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.</p>
+<p>We classify Application Models as:</p>
+<ul>
+<li>UTXO also includes Cardano’s extened UTXO, Kaspa also falls into this</li>
+<li>Account
+<ul>
+<li>Pure EVM Ethereum, Polygon, Avalanche, TRON et al</li>
+<li>Specialized XRP and Stellar</li>
+</ul></li>
+<li>Sharded account model Near falls into this.</li>
+<li>Object Sui</li>
+<li>Resource model Aptos and Movement</li>
+<li>Capability Solana</li>
+<li>Cell model TON</li>
+<li>Actor Based (ICP and CosmWasm</li>
+</ul>
+<section id="utxo" class="level3">
+<h3 class="anchored" data-anchor-id="utxo">UTXO</h3>
+<p>The UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Stateless, transaction-oriented</li>
+<li>Parallelization: Natural parallel validation</li>
+<li>Asset Representation: Native representation of tokens</li>
+<li>Composability: Limited without extensions</li>
+<li>Safety Guarantees: High through explicit ownership</li>
+</ul>
+</section>
+<section id="account-model" class="level3">
+<h3 class="anchored" data-anchor-id="account-model">Account Model</h3>
+<p>Accounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA’s, they only maintain state of the network token and not ERC20’s.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Stateful, account-oriented</li>
+<li>Parallelization: Challenging due to state dependencies</li>
+<li>Asset Representation: Contract-based tokens</li>
+<li>Composability: High through contract interactions</li>
+<li>Safety Guarantees: Varies by implementation</li>
+</ul>
+</section>
+<section id="object-model" class="level3">
+<h3 class="anchored" data-anchor-id="object-model">Object Model</h3>
+<p>Objects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Object-oriented</li>
+<li>Parallelization: Natural through object independence</li>
+<li>Asset Representation: Native objects</li>
+<li>Composability: Through object references</li>
+<li>Safety Guarantees: Object-level ownership</li>
+</ul>
+</section>
+<section id="resource-model" class="level3">
+<h3 class="anchored" data-anchor-id="resource-model">Resource Model</h3>
+<p>Resources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Resource-oriented</li>
+<li>Parallelization: Possible through resource independence</li>
+<li>Asset Representation: Native resources</li>
+<li>Composability: Through resource combination</li>
+<li>Safety Guarantees: Very high through linear types</li>
+</ul>
+</section>
+<section id="capability-model" class="level3">
+<h3 class="anchored" data-anchor-id="capability-model">Capability Model</h3>
+<p>Capability Model Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Capability-based</li>
+<li>Parallelization: High through capability isolation</li>
+<li>Asset Representation: Capability-protected resources</li>
+<li>Composability: Through capability delegation</li>
+<li>Safety Guarantees: High through access control</li>
+</ul>
+</section>
+<section id="cell-model" class="level3">
+<h3 class="anchored" data-anchor-id="cell-model">Cell Model</h3>
+<p>State is organized into cells that can be independently accessed and modified, enabling high parallelization.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Cell-based</li>
+<li>Parallelization: High through cell independence</li>
+<li>Asset Representation: Cell-based</li>
+<li>Composability: Through cell references</li>
+<li>Safety Guarantees: Cell-level isolation</li>
+</ul>
+</section>
+<section id="actor-model" class="level3">
+<h3 class="anchored" data-anchor-id="actor-model">Actor Model</h3>
+<p>Computation is organized around actors that can independently process messages, enabling natural parallelization.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Actor-local state</li>
+<li>Parallelization: Natural through actor independence</li>
+<li>Asset Representation: Actor-managed</li>
+<li>Composability: Through message passing</li>
+<li>Safety Guarantees: Actor isolation</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 28%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Application Model</th>
+<th>Blockchains</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>UTXO</td>
+<td>Bitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM</td>
+<td>- Natural parallelism<br>- Simple state model<br>- High security</td>
+</tr>
+<tr class="even">
+<td>Account (Pure EVM)</td>
+<td>Ethereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare</td>
+<td>- Rich programmability<br>- High composability<br>- Standard tooling</td>
+</tr>
+<tr class="odd">
+<td>Account (Specialized)</td>
+<td>XRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent</td>
+<td>- Custom account models<br>- Specific use-case optimization<br>- Modified state management</td>
+</tr>
+<tr class="even">
+<td>Sharded Account</td>
+<td>NEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony</td>
+<td>- Parallel execution<br>- Cross-shard composition<br>- Scalable state</td>
+</tr>
+<tr class="odd">
+<td>Object</td>
+<td>Sui</td>
+<td>- Object-centric<br>- Natural parallelism<br>- Rich ownership model</td>
+</tr>
+<tr class="even">
+<td>Resource</td>
+<td>Aptos, Movement, Flow, Virtual Protocol</td>
+<td>- Linear types<br>- Strong safety<br>- Asset-oriented</td>
+</tr>
+<tr class="odd">
+<td>Capability</td>
+<td>Solana, Injective, SEI, Theta Network</td>
+<td>- Fine-grained access<br>- High parallelism<br>- Explicit permissions</td>
+</tr>
+<tr class="even">
+<td>Cell</td>
+<td>TON, Everscale</td>
+<td>- Cell-based storage<br>- High parallelism<br>- Flexible structure</td>
+</tr>
+<tr class="odd">
+<td>Actor</td>
+<td>Internet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA</td>
+<td>- Message-passing<br>- Natural isolation<br>- Independent processing</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+<td>Filecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin</td>
+<td>Still researching these</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="communication-protocols" class="level2">
 <h2 class="anchored" data-anchor-id="communication-protocols">Communication Protocols</h2>
