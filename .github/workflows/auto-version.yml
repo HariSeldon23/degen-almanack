@@ -29,10 +29,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-extra-utils
           
+      - name: Verify SVG conversion tool
+        run: |
+          which rsvg-convert || echo "rsvg-convert not found"
+          rsvg-convert --version || echo "rsvg-convert not working"
+          
       - name: Bump version
         id: bump-version
         run: |
           python .github/scripts/bump_version.py minor
+          echo "NEW_VERSION=$(cat version.txt)" >> $GITHUB_ENV
           
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -44,100 +50,29 @@ jobs:
       - name: Render Book
         run: |
           quarto render
+          echo "Listing docs directory:"
+          ls -la docs/
           
-      - name: Generate PDF with version
+      - name: Handle PDF
         run: |
-          VERSION=$(cat version.txt)
-          cp docs/Trollip_s-Degen-Almanack.pdf "docs/Trollip_s-Degen-Almanack-v${VERSION}.pdf"
+          echo "Looking for PDF in docs directory:"
+          find docs -name "*.pdf"
+          
+          if [ -f "docs/Trollip_s-Degen-Almanack.pdf" ]; then
+            echo "Found PDF, creating versioned copy"
+            cp "docs/Trollip_s-Degen-Almanack.pdf" "docs/Trollip_s-Degen-Almanack-v${NEW_VERSION}.pdf"
+          else
+            echo "PDF not found in expected location"
+            echo "Checking other possible locations:"
+            find . -name "*.pdf"
+            exit 1
+          fi
           
       - name: Commit and push changes
+        if: success()
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
           git add version.txt _quarto.yml docs/
           git commit -m "Auto version bump and build [skip ci]"
-          git push
-
-# .github/workflows/major-release.yml
-name: Major Version Release
-on:
-  workflow_dispatch:
-    inputs:
-      release_notes:
-        description: 'Release notes'
-        required: true
-
-jobs:
-  major-release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Setup Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.x'
-          
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml semver
-          
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y librsvg2-bin texlive-xetex texlive-fonts-recommended texlive-extra-utils
-          
-      - name: Bump major version
-        id: bump-version
-        run: |
-          python .github/scripts/bump_version.py major
-          
-      - name: Setup Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        
-      - name: Install TinyTeX
-        run: |
-          quarto install tinytex
-          
-      - name: Render Book
-        run: |
-          quarto render
-          
-      - name: Generate PDF with version
-        run: |
-          VERSION=$(cat version.txt)
-          cp docs/Trollip_s-Degen-Almanack.pdf "docs/Trollip_s-Degen-Almanack-v${VERSION}.pdf"
-          
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v$(cat version.txt)
-          release_name: Version $(cat version.txt)
-          body: ${{ github.event.inputs.release_notes }}
-          draft: false
-          prerelease: false
-          
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: docs/Trollip_s-Degen-Almanack-v$(cat version.txt).pdf
-          asset_name: Trollip_s-Degen-Almanack-v$(cat version.txt).pdf
-          asset_content_type: application/pdf
-          
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add version.txt _quarto.yml docs/
-          git commit -m "Major version release [skip ci]"
           git push

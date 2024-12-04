@@ -70,7 +70,6 @@ format:
   pdf:
     documentclass: scrreprt
     keep-tex: false  # Don't keep intermediate LaTeX files
-    output-dir: _temp  # Store temporary files separately
     toc: true
     number-sections: true
     colorlinks: true
