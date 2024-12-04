@@ -12,7 +12,7 @@ project:
 book:
   title: Trollip's Degen Almanack
   author: Justin Trollip
-  date: v0.2.0
+  date: v0.3.0
   page-navigation: true
   search: true
   repo-url: https://github.com/HariSeldon23/degen-almanack
