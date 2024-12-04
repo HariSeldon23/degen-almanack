@@ -1,0 +1,38 @@
+# Memes
+There will be a lot of references to meme's in your journey to become a [Gigabrain](./terms.qmd#gigabrain) Degen. It's important to understand them. Culture is a massive part of Web3 and will help you immensely in your journey. 
+
+## HODL
+HODL originated as a misspelling of "hold" in a 2013 Bitcoin forum post titled ["I AM HODLING."](https://bitcointalk.org/index.php?topic=375643.0) The post's author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.
+
+The term has evolved beyond its humorous origins to represent a long-term investment strategy often summarized as "Hold On for Dear Life." This reflects the mindset of cryptocurrency investors who maintain their positions despite extreme market volatility, believing in the long-term value proposition of their assets rather than attempting to profit from short-term price movements.
+
+HODL also represents a rejection of traditional trading wisdom. While conventional financial markets emphasize technical analysis and market timing, HODLing suggests that, particularly in the volatile cryptocurrency space, a simple buy-and-hold strategy might outperform active trading for many investors. This approach acknowledges the difficulty of timing a highly volatile, 24/7 global market.
+
+The term has become so influential that it helps identify different types of market participants. "HODLers" are often contrasted with "traders" or "speculators," with HODLers viewed as providing market stability through their long-term commitment to holding assets. During market downturns, the community often encourages "HODL" as a way to maintain conviction and avoid panic selling.
+
+The concept of HODLing has also influenced how blockchain projects design their token economics. Many projects now include staking mechanisms, vesting schedules, and other features that encourage long-term holding, showing how a simple misspelling has evolved into a fundamental aspect of cryptocurrency culture and economics.
+
+## Midwit (Bell Curve) Meme
+The meme uses a bell curve (IQ distribution curve) with three characters:
+
+* Left side (low IQ): A simple, happy figure who does something basic but effective. Often called [Smol brain](./terms.qmd#smol-brain)
+* Middle of the curve (average IQ): A pseudo-intellectual character with overcomplicated strategies/thoughts, often wearing glasses and trying to sound smart
+* Right side (high IQ): Returns to the simple approach but with deep understanding of why it works
+
+![BTC Bell Curve meme](../../images/memes/bellcurve.jpg)
+
+## Chad
+
+![Chad](../../images/memes/chad.png)
+
+## General 
+* Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It's often paired with the "feels guy" emotion variations, particularly during market crashes.
+* FUD (Fear, Uncertainty, Doubt): While not strictly a meme, it's become memefied in crypto culture. Any negative news or criticism is often dismissed as "FUD" by cryptocurrency enthusiasts, sometimes ironically.
+* "When Lambo?": This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It's both used seriously by newcomers and ironically by veterans.
+* Diamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. "Diamond hands" refers to holders who don't sell despite market pressure, while "paper hands" sell at the first sign of trouble.
+* "This is good for Bitcoin": Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin's adoption or price.
+* Bogdanoff Twins ("Dump It"): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.
+* "Funds are SAFU": From a Binance CEO video where he mispronounced "safe," this became a way to reassure (often ironically) about exchange security.
+The "Have Fun Staying Poor" (HFSP): Used by crypto enthusiasts towards skeptics, though it's increasingly used ironically, especially during bear markets.
+The DCA (Dollar Cost Average) Wojak: A calmer, more zen version of Wojak who simply buys regularly regardless of price, representing a more measured approach to investing.
+* "Sir, this is a Wendy's": Used when crypto discussions become overly technical or philosophical, reminding people not to take themselves too seriously.

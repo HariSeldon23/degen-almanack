@@ -1,0 +1,65 @@
+# Early stage Degen
+
+## Purchasing your first Crypto
+While as much as possible I'd like to respect and adhere to the ethos of the early Cypherpunks, there's also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we'll take a pragmatic approach and introduce those concepts in incremental levels of difficulty. 
+
+So the first thing anyone entering Web3 needs to do is to purcahse some Crypto. In this Chapter we'll walk you through the process, with the important caveats below:
+
+* You'll need at least 6 US shit coins. Or in normie speak, $5 US Dollars.
+
+We will use Coinbase as the CEX for this section. You're more than welcome to use your local CEX. For users in countries that don't have access to CEX's, we'll detail how they can purchase their first crypto with [Bisq](https://bisq.network).
+
+Due to me wanting anyone to be able to get into crypto, I'm pretty adamanant that it shouldn't cost more than $5 for people to learn. This is why I'd like to tailor this to start off with people purchasing ETH
+
+https://bisq.network/downloads/
+
+I'm using the Bisq 2 version, although at the time of writing, it's still in beta. There is a minimum requirement of 6 USD. The median income is approximately $7 per day. 
+
+* The poorest 10% of the world live on less than $2 a day
+* About 50% live on less thatn $7 a day
+
+On Bisq the minimum amount I could find someone willing to trade with me is 10 USD. Also it's sold at a huge premium. Further disenfranchizing the world's poor. As such if anyone wants to purchase Bitcoin for $10 please reach out to me Bisq kinda sucks. Hodl Hodl looks like a much better solution 
+
+Get them to create an account at a CEX. Explain KYC/AML
+
+Talk about why you never hold funds on a CEX. Go through FTX, Mount Gox and other failures. Then talk about wallets. 
+
+We're going with Phantom as it supports:
+* Bitcoin
+* Ethereum
+* Solana 
+* Base 
+* Polygon
+
+As of writing, TVL across Ethereum has 54%, Solana 7%, Base and Bitcoin both ~3%. So while I'd love a wallet that supports Stacks, Move and Cosmos. That just doesn't exist today. So as a first time Web3 user, Phantom just makes the most sense. I also really wanted users first wallet to have social recovery. But no wallet currently supprots this. Argent used to, but they're now only on Starknet and Soul wallet has no downloadable version I could find. 
+
+Need to talk about storing of private key
+
+* Physical storage. These have a shit user experience, but are relatively safe. Hardware 
+* Digital storage. Password manager, social recovery will come at some point
+
+So we'll purchase ETH, transfer it to our Phantom wallet, and then stake it on Lido
+
+## Accounts
+Here we'll go through Standard Accounts (EOA's) versus Smart Accounts. Which blockchains support the different paradigms. 
+
+Issue with social recovery is that you leave a fingerprint to your on chain activity depending on how the wallet handles the storing of your data
+
+The first place you're going to have to start is actually converting fiat into crypto. 
+
+You can do this via:
+
+* mining
+* purchasing
+
+We'll only talk about purchasing here, as solo mining is not profitable, although if you're not running at a loss, then it can still be considered away of converting fiat into crypto. 
+
+* Privacy respecting ways
+    * Peer to Peer (P2P) Marketplaces
+    * Bitcoin ATMs
+* Non Privacy respecting ways
+    * CEX's
+    * OTC
+    * DeFi on ramps
+
+For complete privacy, the place where you purchase

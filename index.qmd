@@ -4,7 +4,7 @@
 
 For my two princes. Huxley & Morrissey.
 
-For my bois, the Lord's of Slumtown.
+For the bois, the Lord's of Slumtown.
 
 ## Why I must write 
 So that I can continue to use crypto without dishonor, I have decided to put together a sufficient body of free research so that I will be able to get along without any knowledge that is not free and accessible by anyone. 
@@ -17,6 +17,6 @@ The fundamental act of friendship among [degens](./terms.qmd#degens) is the shar
 ## How you can contribute
 Currently you can contribute by submitting knowledge in the form of a Pull Request to the [Github repo](https://github.com/HariSeldon23/degen-almanack).
 
-I'm considering opening up this document onto [Mirror](https://mirror.xyz/) so people can donate financially and anonymously through there. I still need to do more research on [Open Source financial models](http://www.catb.org/~esr/writings/magic-cauldron/) to ensure this Almanack can operate sustainably as a going concern. 
+I'm considering opening up this Almanack onto [Mirror](https://mirror.xyz/) so people can donate financially and anonymously through there. I still need to do more research on [Open Source financial models](http://www.catb.org/~esr/writings/magic-cauldron/) to ensure this Almanack can operate sustainably as a going concern. 
 
 Stay Tuned!

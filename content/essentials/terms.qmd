@@ -2,6 +2,9 @@
 
 ## Basic Terms
 ### Web3
+Within this Almanack we use the term Web3 rather than Crypto. While our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.
+
+Below you can see how the web has evolved into Web3. 
 
 ![Evolution of the Web](./images/web3.svg)
 
@@ -14,13 +17,14 @@
 
 ### Blockchains
 #### Layer 1 {#layer-1}
-Currently there is no universally accepted definition of what comprises a L1 Network. 
+Currently there is no formally and universally accepted definition of what comprises a L1 Network. 
 
-We have token these sources in order to come up with our approximation
-[@nakamoto2008bitcoin] for Bitcoin
-[@buterin2013ethereum] for Ethereum
-[@buterin2021rollups] for the rollups guide
-[@charbonneau2023rollups] for the John's excellent guide
+We have taken these sources in order to come up with our definition:
+
+* [@nakamoto2008bitcoin] for Bitcoin
+* [@buterin2013ethereum] for Ethereum
+* [@buterin2021rollups] for the rollups guide
+* [@charbonneau2023rollups] for the John's excellent guide
 
 Nakamoto's Bitcoin whitepaper, while not explicitly using the term "Layer 1," established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a `self-contained, sovereign blockchain network`.
 
@@ -28,23 +32,28 @@ The Ethereum whitepaper expanded this foundation by introducing programmability 
 
 Buterin's rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.
 
-The Delphi Digital report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.
+Charbonneau's report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.
 
 Synthesizing these sources, we can define a Layer 1 blockchain as:
 
 A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: (1) consensus - the ability to agree on the state of the network, (2) data availability - ensuring all transaction data is publicly accessible and verifiable, and (3) execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.
 
+##### Settlement Layer
+https://x.com/jon_charb/status/1849868823119397041
+
 #### Layer 2
 There is no canonical definition of L2's.
 
-We use
-[@gluchowski2021zkrollup]
-[@poon2017plasma]
-[@poon2016lightning]
-[@buterin2021rollups]
-[@charbonneau2023rollups]
+We use:
+
+* [@gluchowski2021zkrollup]
+* [@poon2017plasma]
+* [@poon2016lightning]
+* [@buterin2021rollups]
+* [@charbonneau2023rollups]
 
 To come up with the following Framework
+
 1. Data Availability
 * On-chain (Rollups)
 * Off-chain (Validiums, Plasma, Sidechains)
@@ -63,18 +72,24 @@ To come up with the following Framework
 * Exit Games (Plasma)
 * Bridge/Peg (Sidechains)
 
+## Accounts
+### Externally Owned Accounts {#eoa}
+The formal definition of an EOA comes from Ethereum's Yellow Paper. 
+
+There it is defined as:
+
+* A nonce (counter for transactions sent)
+* A balance (in the native currency)
+* No associated 
+* No data storage
+
+However we live in a multi-chain world so we'll define our own interpretation as:
+
+* Direct control through a public-private key pair
+* No additional programmable logic at the account level
+* Transactions must be directly signed by the controlling private key
+
 ## Colloqualisms
-### HODL
-HODL originated as a misspelling of "hold" in a 2013 Bitcoin forum post titled "I AM HODLING." The post's author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.
-
-The term has evolved beyond its humorous origins to represent a long-term investment strategy often summarized as "Hold On for Dear Life." This reflects the mindset of cryptocurrency investors who maintain their positions despite extreme market volatility, believing in the long-term value proposition of their assets rather than attempting to profit from short-term price movements.
-
-HODL also represents a rejection of traditional trading wisdom. While conventional financial markets emphasize technical analysis and market timing, HODLing suggests that, particularly in the volatile cryptocurrency space, a simple buy-and-hold strategy might outperform active trading for many investors. This approach acknowledges the difficulty of timing a highly volatile, 24/7 global market.
-
-The term has become so influential that it helps identify different types of market participants. "HODLers" are often contrasted with "traders" or "speculators," with HODLers viewed as providing market stability through their long-term commitment to holding assets. During market downturns, the community often encourages "HODL" as a way to maintain conviction and avoid panic selling.
-
-The concept of HODLing has also influenced how blockchain projects design their token economics. Many projects now include staking mechanisms, vesting schedules, and other features that encourage long-term holding, showing how a simple misspelling has evolved into a fundamental aspect of cryptocurrency culture and economics.
-
 ### Degens
 "Degen" (short for "degenerate") in crypto/Web3 culture refers to aggressive or risk-seeking participants in cryptocurrency markets and DeFi (decentralized finance) protocols. The term originated from gambling culture but has been embraced by the crypto community as a semi-ironic badge of honor.
 
@@ -82,6 +97,54 @@ The concept of HODLing has also influenced how blockchain projects design their 
 * Cultural Identity: Unlike traditional finance's negative connotation of "degenerate gambling," the crypto community has reclaimed "degen" as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.
 * Technical Sophistication: Despite the seeming recklessness implied by the term, many "degens" are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They're often early adopters of new protocols and technologies.
 * Community Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.
+
+### Intelligence
+The "smol brain" to "gigabrain" progression in crypto represents the journey of understanding that many people go through in their crypto experience. 
+
+#### Smol Brain
+
+* Buys only the top trending coins on social media
+* "Number go up" mentality
+* Panic sells during dips
+* Falls for obvious scams and rugpulls
+* Believes every "to the moon" prediction
+* Uses 100x leverage without understanding the risks
+* Thinks technical analysis is just drawing random lines
+
+#### Medium Brain 
+
+* Learns about market cycles
+* Starts understanding blockchain basics
+* Discovers DeFi and yield farming
+* Gets into complex trading strategies
+* Over-analyzes every chart pattern
+* Tries to time the market perfectly
+* Thinks they can outsmart the whales
+
+#### Big Brain
+
+* Understands tokenomics
+* Reads whitepapers before investing
+* Uses risk management strategies
+* Recognizes market manipulation tactics
+* Develops a long-term investment thesis
+* Learns from past market cycles
+* Studies blockchain technology deeply
+
+#### Gigabrain
+
+* Returns to simple but effective strategies
+* "Time in the market beats timing the market"
+* Focuses on fundamentals over hype
+* Uses basic DCA (Dollar Cost Averaging) strategy
+* Understands that simplicity often wins
+* Doesn't chase every new trend
+* Has learned emotional control
+* Can explain complex concepts simply
+* Recognizes that they can't predict short-term movements
+
+### Chad
+A true Crypto Chad is the absolute WAGMI (We're All Gonna Make It) incarnate. They've got those legendary diamond hands, having held through multiple 80% drawdowns without breaking a sweat. When the market is bleeding and normies are crying "this is the end of crypto," Chad's just sitting there accumulating sats, completely unfazed.
 
 ## Acronyms
 IBRL - Increase Bandwidth, Reduce Latency

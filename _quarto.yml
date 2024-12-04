@@ -1,34 +1,51 @@
 project:
   type: book
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!temp/"  
 
 book:
   title: "Trollip's Degen Almanack"
   author: "Justin Trollip"
   date: "12/2/2024"
+  page-navigation: true
+  search: true
+  repo-url: https://github.com/HariSeldon23/degen-almanack
+  sharing: [twitter, linkedin, facebook]
   chapters:
     - index.qmd
     - intro.qmd
     
     - part: "Web3 Essentials"
       chapters:
-        - terms.qmd
-        - tools.qmd
-        - rules.qmd
+        - ./content/essentials/terms.qmd
+        - ./content/essentials/tools.qmd
+        - ./content/essentials/memes.qmd
     
+    - part: "Become a Degen"
+      chapters: 
+        - ./content/degen/starter.qmd
+        - ./content/degen/giga.qmd
+
     - part: "Financial"
       chapters:
-        - tokens.qmd
-        - ratings.qmd
-        - trollip_index.qmd
-    
+        - ./content/financial/tokens.qmd
+        - ./content/financial/ratings.qmd
+        - ./content/financial/trollip_index.qmd
+
     - part: "Technical"
       chapters:
-        - cryptography.qmd
-        - blockchains.qmd
-        - dapps.qmd
-        - mev.qmd
-    
+        - ./content/technical/cryptography.qmd
+        - ./content/technical/blockchains.qmd
+        - ./content/technical/dapps.qmd
+        - ./content/technical/mev.qmd
+
+    - part: "Social"
+      chapters:
+        - ./content/social/governance.qmd
+
+    - contributing.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -36,5 +53,19 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    css: styles.css  
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    highlight-style: github
+  
   pdf:
     documentclass: scrreprt
+    keep-tex: false  # Don't keep intermediate LaTeX files
+    output-dir: _temp  # Store temporary files separately
+    toc: true
+    number-sections: true
+    colorlinks: true
+    lot: false  # List of tables
+    lof: false  # List of figures

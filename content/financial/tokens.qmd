@@ -16,10 +16,10 @@ We thus break down Digital Assets into the following Categories:
     * Fungibles
     * Non Fungible
 
-After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](./terms.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
+After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](../essentials/terms.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
 
 ## Coins
-This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the [Blockchain](./blockchains.qmd) documentation. 
+This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the [Blockchain](../technical/blockchains.qmd) documentation. 
 
 ### Network Economics
 Token Models
@@ -30,16 +30,16 @@ Economic Security
 Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support
 
 ### Base Networks
-This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](./blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](./terms.qmd#layer-1). 
+This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](../technical/blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](../essentials/terms.qmd#layer-1). 
 
 We define a Base Network that maintains it's own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network. 
 
 ### Secondary Networks
-These are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the [Blockchain chapter](./blockchains.qmd). We'll encompass the full breadth of L2's including, but not limited to Plasma, Sidechains, Rollups etc. 
+These are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the [Blockchain chapter](../technical/blockchains.qmd). We'll encompass the full breadth of L2's including, but not limited to Plasma, Sidechains, Rollups etc. 
 
 We then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value. 
 
-Please see [Ozempic Effect](./ratings.qmd/#ozempic-effect) to see how we determine if a network in a net ozempic or sugar network. 
+Please see [Ozempic Effect](../financial/ratings.qmd/#ozempic-effect) to see how we determine if a network in a net ozempic or sugar network. 
 
 ### Derivatives
 
@@ -81,7 +81,7 @@ Namely:
 * ICS20
 
 #### ICS20
-The Inter-Chain Standard 20 is a [Cosmos](./trollip_index.qmd#cosmos-hub) based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)
+The Inter-Chain Standard 20 is a [Cosmos](../financial/trollip_index.qmd#cosmos-hub) based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)
 
 ### Non Fungible
 Has the following attributes:

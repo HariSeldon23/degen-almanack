@@ -1,0 +1,34 @@
+# Tools 
+
+## Wallets
+The major features of a Web3 wallet are:
+
+1. **Social Recovery**: Ability to recover wallet access through designated guardians
+2. **Account Abstraction**: Implementation of ERC-4337 or similar standards for smart contract wallet functionality
+3. **Gas Abstraction**: Ability to pay transaction fees in tokens other than the native chain token
+4. **Guardian Types**: Different types of recovery mechanisms supported
+5. **Development Activity**: Based on GitHub commits and updates over the last 6 months
+6. **Custom Network Support**: Ability to add new EVM-compatible networks
+7. **Transaction Batching**: Ability to combine multiple transactions into a single operation
+
+
+## Analysis Tools
+### Explorers
+Showcase here how you can view versions of Soliidty. This is especially importnat for people trying to protect themselves from smart contract vulns. Also need to showcase how people can find the libraries. Specifically the OpenZeppelin ReentrancyGuard and then also the one that protects from overflow and underflow.
+
+Forks. Soft and Hard forks for DIN
+Forks for dApps
+### Defillama
+
+## Security Tools
+### OpenZeppelin 
+
+## Privacy Tools
+
+### DuckDuckGo
+
+### VPN
+
+The most commercially popular VPN's are ExpressVPN, NordVPN and CyberGhost. I'm not an expert here, but I use Mullvad VPN as it accepts BTC as payment and seems most resitant to state attacks. 
+
+### TOR
