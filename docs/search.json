@@ -65,7 +65,7 @@
     "href": "content/essentials/terms.html#core-concepts",
     "title": "Crypto Terms",
     "section": "",
-    "text": "Web3\nWhile our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.\nBelow you can see how the web has evolved into Web3.\n\n\n\nEvolution of the Web\n\n\n\nWeb1 (1990s): static websites, read-only content\nWeb2 (2000s - 2010s): Interactive social platforms, user-generated content\nWeb3 (2020s+): Decentralized networks, blockchain, user-owned data and assets\n\n\n\nDecentralization\n\n\n\nNetwork Topologies\n\n\n\n\nBlockchains\n\nLayer 1\nCurrently there is no formally and universally accepted definition of what comprises a L1 Network.\nWe have taken these sources in order to come up with our definition:\n\n(Nakamoto 2008) for Bitcoin\n(Buterin 2013) for Ethereum\n(Buterin 2021) for the rollups guide\n(Charbonneau 2023) for John’s excellent guide to rollups\n\nNakamoto’s Bitcoin whitepaper, while not explicitly using the term “Layer 1,” established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a self-contained, sovereign blockchain network.\nThe Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.\nButerin’s rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.\nCharbonneau’s report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.\nSynthesizing these sources, we can define a Layer 1 blockchain as:\nA sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system:\n\nconsensus - the ability to agree on the state of the network\ndata availability - ensuring all transaction data is publicly accessible and verifiable\nexecution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.\n\n\nSettlement Layer\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\nLayer 2\nThere is no canonical definition of L2’s.\nWe use:\n\n(Gluchowski 2019)\n(Poon and Buterin 2017)\n(Poon and Dryja 2016)\n(Buterin 2021)\n(Charbonneau 2023)\n\nTo come up with the following Framework\n\nData Availability\n\n\nOn-chain (Rollups)\nOff-chain (Validiums, Plasma, Sidechains)\n\n\nSecurity Model\n\n\nInherited from L1 (Rollups, Validiums)\nIndependent (Sidechains)\nHybrid (Plasma)\n\n\nState Validation\n\n\nFraud Proofs (Optimistic Rollups)\nValidity Proofs (ZK Rollups, Validiums)\nIndependent (Sidechains)\nMerkle Roots (Plasma)\n\n\nSettlement Mechanism\n\n\nDirect (Rollups)\nChallenge Period (Optimistic Rollups)\nExit Games (Plasma)\nBridge/Peg (Sidechains)",
+    "text": "Web3\nWhile our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.\nBelow you can see how the web has evolved into Web3.\n\n\n\nEvolution of the Web\n\n\n\nWeb1 (1990s): static websites, read-only content\nWeb2 (2000s - 2010s): Interactive social platforms, user-generated content\nWeb3 (2020s+): Decentralized networks, blockchain, user-owned data and assets\n\n\n\nDecentralization\n\n\n\nNetwork Topologies\n\n\n\n\nBlockchains\n\nLayer 1\nCurrently there is no formally and universally accepted definition of what comprises a L1 Network.\nWe have taken these sources in order to come up with our definition:\n\n(Nakamoto 2008) for Bitcoin\n(Buterin 2013) for Ethereum\n(Buterin 2021) for the rollups guide\n(Charbonneau 2023) for John’s excellent guide to rollups\n\nNakamoto’s Bitcoin whitepaper, while not explicitly using the term “Layer 1,” established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a self-contained, sovereign blockchain network.\nThe Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.\nButerin’s rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.\nCharbonneau’s report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.\nSynthesizing these sources, we can define a Layer 1 blockchain as:\nA sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system:\n\nconsensus - the ability to agree on the state of the network\ndata availability - ensuring all transaction data is publicly accessible and verifiable\nexecution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.\n\n\nSettlement Layer\nThis is kinda a meme at this point and no formal definition exists. Although lots of opinions, as is generally the case in crypto.\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\nLayer 2\nThere is no canonical definition of L2’s.\nWe use:\n\n(Gluchowski 2019)\n(Poon and Buterin 2017)\n(Poon and Dryja 2016)\n(Buterin 2021)\n(Charbonneau 2023)\n\nTo come up with the following Framework\n\nData Availability\n\n\nOn-chain (Rollups)\nOff-chain (Validiums, Plasma, Sidechains)\n\n\nSecurity Model\n\n\nInherited from L1 (Rollups, Validiums)\nIndependent (Sidechains)\nHybrid (Plasma)\n\n\nState Validation\n\n\nFraud Proofs (Optimistic Rollups)\nValidity Proofs (ZK Rollups, Validiums)\nIndependent (Sidechains)\nMerkle Roots (Plasma)\n\n\nSettlement Mechanism\n\n\nDirect (Rollups)\nChallenge Period (Optimistic Rollups)\nExit Games (Plasma)\nBridge/Peg (Sidechains)",
     "crumbs": [
       "Web3 Essentials",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
@@ -76,7 +76,7 @@
     "href": "content/essentials/terms.html#accounts",
     "title": "Crypto Terms",
     "section": "Accounts",
-    "text": "Accounts\n\nExternally Owned Accounts\nThe formal definition of an EOA comes from Ethereum’s Yellow Paper. (Wood 2014)\nThere it is defined as:\n\nA nonce (counter for transactions sent)\nA balance (in the native currency)\nNo associated contract code\nNo data storage\n\nHowever we live in a multi-chain world so we’ll define our own interpretation as:\n\nDirect control through a public-private key pair\nNo additional programmable logic at the account level\nTransactions must be directly signed by the controlling private key",
+    "text": "Accounts\nWhile technically different blockchains will have their own nuances and their own technically correct terms for the concept of an “account”, we will refer to them all as accounts for ease of reference.\n\nSeed phrases\nIn order to create an Account on a blockchain, it needs to be secured by a public-private key pair. The most common way to do is via a Seed phrase generated by the wallet.\nSince your private key is the singular point of security for your interaction on that blockchain, it needs to be incredibly secure. This means that your private key is a very large random number. Due to the difficulty of working with these large random numbers, Seed phrases were created to improve the user experience. Historically humans have used “code words” to obfuscate and hide meaning. Seed phrases are just a way to generate a private key in a more human relatable way.\n\n\nExternally Owned Accounts\nThe formal definition of an EOA comes from Ethereum’s Yellow Paper. (Wood 2014)\nThere it is defined as:\n\nA nonce (counter for transactions sent)\nA balance (in the native currency)\nNo associated contract code\nNo data storage\n\nHowever we live in a multi-chain world so we’ll define our own interpretation as:\n\nDirect control through a public-private key pair\nNo additional programmable logic at the account level\nTransactions must be directly signed by the controlling private key\n\n\n\nDeFi - Dentralized Finance\n\nSlippage",
     "crumbs": [
       "Web3 Essentials",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
@@ -131,7 +131,7 @@
     "href": "content/essentials/tools.html#wallets",
     "title": "Tools",
     "section": "",
-    "text": "Type - Hardware or Software wallets\nPlatform - Mobile, Browser, Desktop or Hybrid\nApplication Model - Type of blockchains it supports. Can support multiple models.\n\n\n\n\n\n\n\n\n\n\n\nWallet Name\nType\nPlatform\nApplication Models Supported\nNotes\n\n\n\n\nLedger\nHardware\nDesktop (via Ledger Live), Mobile (via Ledger Live)\nAccount (EVM), UTXO, Specialized Account, Resource, Actor\n- Secure element chip protection- Supports 5000+ tokens- Multi-currency support through apps\n\n\nTrezor\nHardware\nDesktop (via Trezor Suite), Browser\nAccount (EVM), UTXO, Specialized Account\n- Open source hardware- Built-in crypto exchange- Password manager integration\n\n\nMetaMask\nSoftware\nBrowser Extension, Mobile\nAccount (EVM)\n- Industry standard for EVM chains- Built-in swap functionality- Extensive dApp integration\n\n\nPhantom\nSoftware\nBrowser Extension, Mobile\nCapability (Solana), Account (EVM)\n- Native Solana integration- Recently added EVM support- NFT management focused\n\n\nSafe\nSoftware\nBrowser (Web App)\nAccount (EVM)\n- Multi-signature focused- Modular architecture- DAO treasury management- Programmable accounts\n\n\nTrustWallet\nSoftware\nMobile\nAccount (EVM), UTXO, Specialized Account\n- Multi-chain support- Built-in DeFi browser- Binance integration\n\n\nRainbow\nSoftware\nMobile\nAccount (EVM)\n- iOS/Android focused- Enhanced NFT support- Optimized for DeFi interactions",
+    "text": "Type - Hardware or Software wallets\nPlatform - Mobile, Browser, Desktop or Hybrid\nApplication Model - Type of blockchains it supports. Can support multiple models.\n\n\nWallets\n\n\nWallet Name\nType\nPlatform\nApplication Models Supported\n\n\n\n\nLedger\nHardware\nDesktop, Mobile\nAccount (EVM), UTXO, Specialized Account, Resource, Actor\n\n\nTrezor\nHardware\nDesktop, Browser\nAccount (EVM), UTXO, Specialized Account\n\n\nMetaMask\nSoftware\nBrowser Extension, Mobile\nAccount (EVM)\n\n\nPhantom\nSoftware\nBrowser Extension, Mobile\nCapability (Solana), Account (EVM)\n\n\nSafe\nSoftware\nBrowser (Web App)\nAccount (EVM)\n\n\nTrustWallet\nSoftware\nMobile\nAccount (EVM), UTXO, Specialized Account\n\n\nRainbow\nSoftware\nMobile\nAccount (EVM)",
     "crumbs": [
       "Web3 Essentials",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
@@ -142,7 +142,7 @@
     "href": "content/essentials/tools.html#analysis-tools",
     "title": "Tools",
     "section": "Analysis Tools",
-    "text": "Analysis Tools\n\nExplorers\nShowcase here how you can view versions of Soliidty. This is especially importnat for people trying to protect themselves from smart contract vulns. Also need to showcase how people can find the libraries. Specifically the OpenZeppelin ReentrancyGuard and then also the one that protects from overflow and underflow.\nForks. Soft and Hard forks for DIN Forks for dApps ### Defillama",
+    "text": "Analysis Tools\n\nAPI\nWe’ll start off by using Ortege. For full transparency I own and founded Ortege. This Almanack can and will use data from any trusted source. But in the early days while we require data specifically tailored to our requirements, we will be using Ortege. Anyone contributing however can integrate with any other reputable data sources.\nWe break down API’s into the following categories:\n\nRPC Nodes. These are the API’s provided by the Blockchain clients. Each Application Model will have a different API structure. The most famous example being the Bitcon RPC standard and the EVM RPC standard\nSQL based. These API’s allow you to write SQL against their Datasets. Examples include Dune and Flipside. Much like the RPC based API’s, these will all have a different API structure.\nSemantic Layer. Ortege is the first, that I’m aware of, API that aims to abstract away the blockchains implementation away from the developer and provide a uniform API that is consistent across blockchains.\n\n\nOrtege\nComing Soon.\n\n\n\nExplorers\n\nPure EVM\nEtherscan is the most widely used and has versions on all the major EVM Chains.\nExploring Solidity\n\nViewing the Solidity version\nViewing the “standard” libraries the code inherits\n\n\n\n\nDefillama",
     "crumbs": [
       "Web3 Essentials",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
@@ -204,36 +204,135 @@
     ]
   },
   {
-    "objectID": "content/degen/starter.html",
-    "href": "content/degen/starter.html",
-    "title": "Early stage Degen",
+    "objectID": "content/essentials/icons.html",
+    "href": "content/essentials/icons.html",
+    "title": "Icons",
     "section": "",
-    "text": "Purchasing your first Crypto\nWhile as much as possible I’d like to respect and adhere to the ethos of the early Cypherpunks, there’s also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we’ll take a pragmatic approach and introduce those concepts in incremental levels of difficulty.\nSo the first thing anyone entering Web3 needs to do is to purcahse some Crypto. In this Chapter we’ll walk you through the process, with the important caveats below:\nWe will use Coinbase as the CEX for this section. You’re more than welcome to use your local CEX. For users in countries that don’t have access to CEX’s, we’ll detail how they can purchase their first crypto with Bisq.\nDue to me wanting anyone to be able to get into crypto, I’m pretty adamanant that it shouldn’t cost more than $5 for people to learn. This is why I’d like to tailor this to start off with people purchasing ETH\nhttps://bisq.network/downloads/\nI’m using the Bisq 2 version, although at the time of writing, it’s still in beta. There is a minimum requirement of 6 USD. The median income is approximately $7 per day.\nOn Bisq the minimum amount I could find someone willing to trade with me is 10 USD. Also it’s sold at a huge premium. Further disenfranchizing the world’s poor. As such if anyone wants to purchase Bitcoin for $10 please reach out to me Bisq kinda sucks. Hodl Hodl looks like a much better solution\nGet them to create an account at a CEX. Explain KYC/AML\nTalk about why you never hold funds on a CEX. Go through FTX, Mount Gox and other failures. Then talk about wallets.\nWe’re going with Phantom as it supports: * Bitcoin * Ethereum * Solana * Base * Polygon\nAs of writing, TVL across Ethereum has 54%, Solana 7%, Base and Bitcoin both ~3%. So while I’d love a wallet that supports Stacks, Move and Cosmos. That just doesn’t exist today. So as a first time Web3 user, Phantom just makes the most sense. I also really wanted users first wallet to have social recovery. But no wallet currently supprots this. Argent used to, but they’re now only on Starknet and Soul wallet has no downloadable version I could find.\nNeed to talk about storing of private key\nSo we’ll purchase ETH, transfer it to our Phantom wallet, and then stake it on Lido",
+    "text": "Satoshi Nakamoto\nSatoshi is the most publicly known creator of our industry. He was preceded by the Cypherpunks but has engulfed the public’s imagination due to the fact no-one categorically knows who he/she/they were.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Icons</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/icons.html#satoshi-nakamoto",
+    "href": "content/essentials/icons.html#satoshi-nakamoto",
+    "title": "Icons",
+    "section": "",
+    "text": "Satoshi artwork in Lugano, Switzerland",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Icons</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/icons.html#people-who-protect-us",
+    "href": "content/essentials/icons.html#people-who-protect-us",
+    "title": "Icons",
+    "section": "People who protect us",
+    "text": "People who protect us\nCoffeezilla",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Icons</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/scam.html",
+    "href": "content/degen/scam.html",
+    "title": "Don’t lose your money",
+    "section": "",
+    "text": "Private Key Management\nI’ll be the first to admit that Web3 is full of sharks looking at newcomers like the chum you are. Before you even begin to tip your toes into this industry you need to be aware of the common pitfalls. Even after years of being in the industry, experienced degens can lose money to scams. If you want to make money and keep it, you need to be ever vigilant.\nWe break down the ways people can lose their money into the following categories:\nA large part of the early vision of crypto was to create a currency with the absence of a central authority (read Government). Indeed the first Bitcoin block, mined by Satoshi contained a message admonishing the central banks.\nIn order to have a currency not controlled by a central authority, you need to be able to exchange value with others while not relying on the authority of governments. If I give you 10 digital dollars, what’s to prevent you from saying you never received it? Who proves the exchange occured? This is where Cryptography comes into it. We won’t go into the technical details here, it’s just important to note some general overview.\nYour account/wallet on a blockchain is secured by a public-private key pair. You can think of the public key as akin to an email address and the private key as your password. Whenever you create a wallet and a seed phrase is generated, what’s essentially happening is a public-private key is being generated.\nNow whenever you interact with a blockchain, for example by sending someone some digital coins, you need to sign that transaction. What you’re doing is essentially using your private key to sign that you do want to perform that transaction.\nThis is why keeping your private key safe is the most important thing you can do in Web3. Since we have no trusted authority, we can only rely on ourselves in this decentralized environment. If someone got access to your private key, they would be able to do anything with the assets that are owned by your account.",
     "crumbs": [
       "Become a Degen",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Early stage Degen</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/scam.html#private-key-management",
+    "href": "content/degen/scam.html#private-key-management",
+    "title": "Don’t lose your money",
+    "section": "",
+    "text": "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks\n\n\n\n\n\n\nCold Storage\nPaper and Metal Storage\nMultiple Physical Locations\nMultisignature Wallets\nGlacier Protocol",
+    "crumbs": [
+      "Become a Degen",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/scam.html#technical-errors",
+    "href": "content/degen/scam.html#technical-errors",
+    "title": "Don’t lose your money",
+    "section": "Technical Errors",
+    "text": "Technical Errors\n\nNetwork selection error. If you send money to someone on a different network there is no guarantee the address will be the same\nGas Fee misunderstandings\nToken Approval Dangers - never set max limits. Would be good to break down these risks by Application Model.\nSmart Contract Interaction Errors - Some UI’s may not be linked to the actual smart contract you’re looking for\nImpermanent Loss\nWallet Address Verification\nSlippage and Frontrunning\nSniping - new token launchs\n\n\nGas Fee misunderstandings\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nImpermanent Loss\nSpoiler alert It’s probably permanent\n\n\n\nChart showing Impermanent Loss\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nWallet Address Verification\nThis is one of the reasons Name Services have gained popularity. Although they do remove a further layer of anonymity if you’re not careful.",
+    "crumbs": [
+      "Become a Degen",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/scam.html#social-engineering-scams",
+    "href": "content/degen/scam.html#social-engineering-scams",
+    "title": "Don’t lose your money",
+    "section": "Social Engineering Scams",
+    "text": "Social Engineering Scams\n\nOneCoin. Ruja Ignatova (the “CryptoQueen”) got away with $4 billion.\n\nCommon threads of social engineering scams * Authority Exploitation * Emotional Manipulation * Technical Obscurity * Community Building * Urgency Creation\nAuthority Exploitation While no mean authoritive, these are some of the biggest dodgy celebrities: * Kim Kardashian * Floyd Mayweather * DJ Khaled * Ben Phillips * Lindsay Lohan * Steven Seagal * Paul Pierce * Logan and Jake Paul\n\nNetwork addresses\nScammers put in fake networks. Use Chainlist",
+    "crumbs": [
+      "Become a Degen",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/scam.html#smart-contract-vulnerabilities-and-hacks",
+    "href": "content/degen/scam.html#smart-contract-vulnerabilities-and-hacks",
+    "title": "Don’t lose your money",
+    "section": "Smart Contract Vulnerabilities and Hacks",
+    "text": "Smart Contract Vulnerabilities and Hacks\nSmart contract vulnerabilities represent one of the most critical risks in Web3, having led to billions in losses. This analysis examines major exploit categories based on historical hacks, their prevalence across different application models, and effective mitigation strategies.\n\nAccess Control Flaws\nLogic and Arithmetic Errors\nOracle Manipulation\nReentrancy attacks\nFlash Loan Vulnerabilities\nReentrancy attacks",
+    "crumbs": [
+      "Become a Degen",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/starter.html",
+    "href": "content/degen/starter.html",
+    "title": "Make some money",
+    "section": "",
+    "text": "Purchasing your first Crypto\nWhile as much as possible I’d like to respect and adhere to the ethos of the early Cypherpunks, there’s also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we’ll take a pragmatic approach and introduce those concepts in incremental levels of difficulty.\nImportant things to note: * You’ll need about 10 US Dollars * We’ll be using CEX’s to purchase, while understanding the risks and implications * We’ll use a Mobile wallet, Phantom, that has social recovery\nSo the first thing anyone entering Web3 needs to do is to purcahse some Crypto. In this Chapter we’ll walk you through the process, with the important caveats below:\nWe will use Coinbase as the CEX for this section. You’re more than welcome to use your local CEX. For users in countries that don’t have access to CEX’s, we’ll detail how they can purchase their first crypto with Bisq.\nDue to me wanting anyone to be able to get into crypto, I’m pretty adamanant that it shouldn’t cost more than $5 for people to learn. This is why I’d like to tailor this to start off with people purchasing ETH\nhttps://bisq.network/downloads/\nI’m using the Bisq 2 version, although at the time of writing, it’s still in beta. There is a minimum requirement of 6 USD. The median income is approximately $7 per day.\nOn Bisq the minimum amount I could find someone willing to trade with me is 10 USD. Also it’s sold at a huge premium. Further disenfranchizing the world’s poor. As such if anyone wants to purchase Bitcoin for $10 please reach out to me Bisq kinda sucks. Hodl Hodl looks like a much better solution\nGet them to create an account at a CEX. Explain KYC/AML\nTalk about why you never hold funds on a CEX. Go through FTX, Mount Gox and other failures. Then talk about wallets.\nWe’re going with Phantom as it supports: * Bitcoin * Ethereum * Solana * Base * Polygon\nAs of writing, TVL across Ethereum has 54%, Solana 7%, Base and Bitcoin both ~3%. So while I’d love a wallet that supports Stacks, Move and Cosmos. That just doesn’t exist today. So as a first time Web3 user, Phantom just makes the most sense. I also really wanted users first wallet to have social recovery. But no wallet currently supprots this. Argent used to, but they’re now only on Starknet and Soul wallet has no downloadable version I could find.\nNeed to talk about storing of private key\nSo we’ll purchase ETH, transfer it to our Phantom wallet, and then stake it on Lido",
+    "crumbs": [
+      "Become a Degen",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
     ]
   },
   {
     "objectID": "content/degen/starter.html#purchasing-your-first-crypto",
     "href": "content/degen/starter.html#purchasing-your-first-crypto",
-    "title": "Early stage Degen",
+    "title": "Make some money",
     "section": "",
     "text": "You’ll need at least 6 US shit coins. Or in normie speak, $5 US Dollars.\n\n\n\n\n\n\nThe poorest 10% of the world live on less than $2 a day\nAbout 50% live on less thatn $7 a day\n\n\n\n\n\n\n\n\nPhysical storage. These have a shit user experience, but are relatively safe. Hardware\nDigital storage. Password manager, social recovery will come at some point",
     "crumbs": [
       "Become a Degen",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Early stage Degen</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
     ]
   },
   {
     "objectID": "content/degen/starter.html#accounts",
     "href": "content/degen/starter.html#accounts",
-    "title": "Early stage Degen",
+    "title": "Make some money",
     "section": "Accounts",
     "text": "Accounts\nHere we’ll go through Standard Accounts (EOA’s) versus Smart Accounts. Which blockchains support the different paradigms.\nIssue with social recovery is that you leave a fingerprint to your on chain activity depending on how the wallet handles the storing of your data\nThe first place you’re going to have to start is actually converting fiat into crypto.\nYou can do this via:\n\nmining\npurchasing\n\nWe’ll only talk about purchasing here, as solo mining is not profitable, although if you’re not running at a loss, then it can still be considered away of converting fiat into crypto.\n\nPrivacy respecting ways\n\nPeer to Peer (P2P) Marketplaces\nBitcoin ATMs\n\nNon Privacy respecting ways\n\nCEX’s\nOTC\nDeFi on ramps\n\n\nFor complete privacy, the place where you purchase",
     "crumbs": [
       "Become a Degen",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Early stage Degen</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
+    ]
+  },
+  {
+    "objectID": "content/degen/starter.html#airdrop-farming",
+    "href": "content/degen/starter.html#airdrop-farming",
+    "title": "Make some money",
+    "section": "Airdrop Farming",
+    "text": "Airdrop Farming",
+    "crumbs": [
+      "Become a Degen",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
     ]
   },
   {
@@ -244,7 +343,7 @@
     "text": "Converting FIAT into a Cryptocurrency\nThis may be the hardest part of being a Degen. A Degen values privacy. Important to distinguish there is a difference between privacy and secrecy. I’d like my cryptocurrency to display the same characteristics as cash. A means of exchange that has been working just fine for centuries. Cash is private by default and people have seemed pretty happy with that arrangement for over 3 centuries.\nCurrently the best way to do this is via:",
     "crumbs": [
       "Become a Degen",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gigabrain Degen</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gigabrain Degen</span>"
     ]
   },
   {
@@ -255,7 +354,7 @@
     "text": "Bisq\nHODL HODL",
     "crumbs": [
       "Become a Degen",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Gigabrain Degen</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gigabrain Degen</span>"
     ]
   },
   {
@@ -266,7 +365,7 @@
     "text": "Coins\nThe logical place to start this Almanack is Digital Assets. These include all the financial instruments that exist within the Web3 sphere. For us to represent all Digital Assets within this space, it means we need to include all Web3 financial instruments, both on chain and off chain.\nWe take inspiration from the Fat Protocol Thesis(Monegro 2016) to define the major categories of Digital Assets within the Web3 realm. We also adhere to the naming convention that stipulates Coins are digital assets relating to the running and operation of a Blockchain, whereas Tokens are digital assets that are issued on a Blockchain.\nWe thus break down Digital Assets into the following Categories:\nAfter describing the various categories and classes of Digital Assets we’ll then delve into the Markets existing for these Digital Assets, as well as how an entity hodls the Digital Asset and the yield properties of the various types of Digital Assets.\nThis section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the Blockchain documentation.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -277,7 +376,7 @@
     "text": "Network Economics\nToken Models Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards Incentive Structures Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding Economic Security Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support\n\n\nBase Networks\nThis Almanack distinguishes between the financial properties of Coins versus the technical properties of a Blockchain. As such we don’t refer to networks here by Layer 1 or Layer 2. That’s a classification and distinction you can explore here.\nWe define a Base Network that maintains it’s own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network.\n\n\nSecondary Networks\nThese are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the Blockchain chapter. We’ll encompass the full breadth of L2’s including, but not limited to Plasma, Sidechains, Rollups etc.\nWe then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value.\nPlease see Ozempic Effect to see how we determine if a network in a net ozempic or sugar network.\n\n\nDerivatives\n\nOn chain\n\nWrapped\n\nPure\nBridged\n\n\nOff Chain\n\nSpot ETF’s\n\n\n\nOn Chain Derivatives\n\n\nOff Chain Derivatives",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -288,7 +387,7 @@
     "text": "Tokens\n\nFungible\nFungible is a pretty terrible name, but it roughly means divisable. It’s easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It’s divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It’s Non fungible, or non divisable. There’s more nuances which we can deal with in the vocabulary section. But that’s the general idea of it.\nWe have the following types: * Stable Coins * Fiat backed * Crypto backed * Delta Neutral backed * Shit Coins * Governance * Meme * Utility\nThen we have numerous standards. We’ll add only the most popular and relevant ones here.\nNamely: * ERC20 * ERC777 * ERC1363 * BRC20 * Runes * Solana’s SPL Token Standard * ICS20\n\nICS20\nThe Inter-Chain Standard 20 is a Cosmos based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)\n\n\n\nNon Fungible\nHas the following attributes:\n\nArt & Collectibles\nProfile Picture (PFP)\nGaming\nDomain Names and Identity\nReal World Assets (RWA)\n\nThe NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection’s market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -299,7 +398,7 @@
     "text": "Markets\nWhere can I buy these Digital Assets? The major markets are regulated and unregulated.\nThese are then divided into spot vs derivatives.\nFor regulated it’s interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It’s probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -310,7 +409,7 @@
     "text": "Hodling\nWallets\n\nCustodial\n\n\nNon-Custodial\n\nPure\n\nCold\nHot\n\nSmart\n\nMPC\nSmart Contract Based (Includes Account Abstraction)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -321,7 +420,7 @@
     "text": "Yield Properties\nMajor categories are:\n\nNetwork Yield\nTrading Yield\nProtocol Yield\n\n\nTrading Yield\n\nPricing appreciation\nArbitrage Yield\n\nSpot Arbitrage\nPeg Arbitrage - These are unique to stable coins\n\nOptions and Derivatives Premiums\nFutures funding rates\n\n\n\nNetwork Yield\n\nMining Yield\n\nSolo Mining\nPool Mining\nCloud Mining\n\nValidating Yield\n\nStaking\n\nNetwork Fee Yield\n\nGas\n\nMEV\n\nToxic\nNon Toxic\n\nDerivatives\n\nLiquid Staking\n\n\n\n\ndApp Yield\n\nStaking\nLiquidity Provision\nGovernance Participation\nNFT Rental Income\n\n\nLiquidity Provision\nWe break this down into the following Categories\n\nAMM Pool fees\nConcentrated liquidity positions\nOrder book market making\nLending and Borrowing markets\n\n\nConcentrated Liquidity Provision\nHere we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046\n\n\n\n\nMonegro, Joel. 2016. “Fat Protocols.” Union Square Ventures. https://www.usv.com/writing/2016/08/fat-protocols/.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -332,7 +431,7 @@
     "text": "Core Rating Categories (60% of Total Rating)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -343,7 +442,7 @@
     "text": "1. Protocol Value Capture (30%)\nA. Network Effect Metrics - Daily Active Users (DAUs) - Total Value Locked (TVL) - Transaction volume - Fee revenue generated - Protocol revenue retained\nB. Value Accrual Mechanisms - Token economics design - Fee distribution model - Staking mechanisms - Burns and supply dynamics\nC. Ozempic Network Effects - Value extraction efficiency from L1 - Transaction fee capture rate - User migration metrics from L1 - TVL migration patterns - Gas savings versus L1 - L1-L2 Value Dynamics - Sequencer revenue distribution - MEV capture and distribution - Bridge volume and efficiency - Settlement layer costs - Sustainable Value Creation - Net new users versus L1 migration - Ecosystem-specific applications - Novel transaction types impossible on L1 - Cross-L2 interoperability metrics\n\n\n2. Protocol Security & Risk Assessment (30%)\nA. Smart Contract Security - Audit history and quality - Bug bounty program effectiveness - Historical vulnerability incidents - Code complexity metrics - Upgrade mechanism security - Testing coverage\nB. Network Security - Consensus mechanism robustness - MEV exposure and protection measures - Node distribution - Network attack resistance - Cross-chain bridge security - Oracle dependency and security\nC. L1 Dependency Risks - Settlement layer congestion exposure - Bridge security and liquidity depth - L1 fee market correlation - Sequencer centralization risk - Value extraction sustainability",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -354,7 +453,7 @@
     "text": "Risk Categories (40% of Total Rating)\n\n1. Technical Risk Assessment (15%)\nA. Smart Contract Vulnerabilities - Code audit findings severity - Time-tested deployment - Complexity of interactions - Dependencies on external protocols - Historical incident analysis\nB. Network Level Risks - MEV exposure metrics - Network partition resistance - Node centralization factors - Infrastructure dependencies - Cross-chain vulnerability exposure\nC. Key Management & Wallet Security - Multi-sig implementation - Key generation processes - Hardware security modules usage - Social recovery mechanisms - Access control systems\n\n\n2. Economic Risk Assessment (10%)\nA. Market Dynamics - Liquidity concentration - Price impact resistance - Collateral quality - Market manipulation resistance\nB. Economic Model Vulnerabilities - Game theory attack vectors - Incentive alignment analysis - Economic exploit resistance - Stress test scenarios - Flash loan attack surface\n\n\n3. Operational Risk Assessment (10%)\nA. CeFi/CeDeFi Risks - Centralization points - Custody arrangements - Third-party dependencies - Operational redundancy - Emergency procedures\nB. Oracle Dependencies - Oracle manipulation resistance - Price feed reliability - Backup oracle systems - Historical oracle incidents - Data quality metrics\n\n\n4. External Risk Assessment (5%)\nA. Regulatory Risk - Jurisdictional exposure - Compliance frameworks - Regulatory clarity - Legal structure - Historical regulatory interactions\nB. Social Engineering Risk - Team security practices - Access control policies - Social attack history - Security awareness training - Incident response readiness",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -365,7 +464,7 @@
     "text": "Risk-Adjusted Rating Scale\nAAA: Exceptional protocol with comprehensive risk mitigation - Multiple independent security audits with no critical findings - Proven resistance to all major attack vectors - Strong regulatory compliance framework - Decentralized operations with minimal points of failure - Multiple layers of economic security\nAA: Strong protocol with robust risk management - Regular security audits with minor findings - Documented resistance to common attack vectors - Clear regulatory strategy - Limited centralization risks - Strong economic security measures",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -376,7 +475,7 @@
     "text": "Risk Multipliers\nEach risk category can apply a multiplier to the base rating: - Critical Risk: -3 rating notches - High Risk: -2 rating notches - Medium Risk: -1 rating notch - Low Risk: No adjustment - Minimal Risk: +1 rating notch",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -387,7 +486,7 @@
     "text": "Continuous Monitoring Triggers\n\nSmart contract vulnerability disclosure\nNetwork attack detection\nRegulatory action\nEconomic model stress\nOracle deviation events\nCross-chain bridge incidents\nSocial engineering attempts\nMEV activity spikes",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -398,7 +497,7 @@
     "text": "Review Framework\n\nMonthly security metric review\nQuarterly risk assessment update\nAnnual comprehensive review\nReal-time monitoring of critical indicators\nIncident-triggered reassessment",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -409,7 +508,7 @@
     "text": "Ozempic Effect\nWe’ll base this upon value flows. Defillama doesn’t actually display this. So we’ll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon.\nLet’s build a comprehensive framework for tracking the true “Ozempic effect” of L2s on Ethereum. We’ll need several interconnected metrics to understand the complete value flow dynamics.\n\nWallet Migration Analysis\n\n\nTrack addresses that first appeared on Ethereum before a certain date (let’s call them “Ethereum Native Wallets”)\nMonitor their activity transition to L2s over time\nAnalyze their ETH holdings distribution between L1 and L2s\nCalculate the ratio of their transaction activity on L2s versus L1\n\n\nL2 Native User Analysis\n\n\nIdentify wallets that first appeared on L2s\nTrack what percentage never bridge to Ethereum\nMeasure their total value held\nCalculate their transaction activity\n\n\nFee Flow Dynamics\n\n\nTrack L2 sequencer fees paid back to Ethereum\nCalculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)\nMonitor the ratio of fees paid back to Ethereum versus fees retained by the L2\n\nWe could create a composite “Value Migration Score” that looks like:\ndef calculate_migration_score(l2_data):\n    # Value Migration\n    eth_native_migration = (\n        eth_native_wallets_on_l2 / total_eth_native_wallets *\n        eth_value_moved_to_l2 / original_eth_holdings\n    )\n    \n    # Activity Migration\n    activity_migration = (\n        l2_transactions_by_eth_wallets / \n        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)\n    )\n    \n    # L2 Native Growth\n    l2_native_strength = (\n        l2_only_wallets / total_l2_wallets *\n        l2_native_value / total_l2_value\n    )\n    \n    # Fee Economics\n    fee_efficiency = (\n        sequencer_fees_to_ethereum / \n        theoretical_l1_fees_for_same_transactions\n    )\n    \n    return (\n        eth_native_migration * 0.3 +\n        activity_migration * 0.3 +\n        l2_native_strength * 0.2 +\n        fee_efficiency * 0.2\n    )\nThis would give us a quantitative measure of how effectively an L2 is: 1. Attracting value from Ethereum 2. Generating new value through native users 3. Maintaining a sustainable fee relationship with Ethereum\nA true Ozempic L2 should show: - High migration of ETH native wallets - Strong L2 native user growth - Efficient fee generation that still provides meaningful revenue to Ethereum - Sustained or growing activity ratios over time\nWould you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?\n\nNet Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -420,7 +519,7 @@
     "text": "Risk Factors\n\n1. Technical Risks\n\nImplementation bugs\nSecurity vulnerabilities\nUpgrade coordination failures\nNetwork splits\n\n\n\n2. Governance Risks\n\nCapture by special interests\nLow participation\nContentious decisions\nUnclear processes\n\n\n\n3. Social Risks\n\nCommunity fragmentation\nLoss of developer support\nReputation damage\nMarket impacts",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -431,7 +530,7 @@
     "text": "Future Considerations\n\n1. Emerging Trends\n\nAutomated governance systems\nAI-assisted proposal analysis\nCross-chain governance\nDynamic parameter adjustment\n\n\n\n2. Challenges\n\nScaling governance participation\nBalancing security and innovation\nManaging increasing complexity\nMaintaining decentralization\n\n\n\n3. Opportunities\n\nImproved governance tools\nBetter simulation capabilities\nEnhanced coordination mechanisms\nMore sophisticated voting systems",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -442,7 +541,7 @@
     "text": "Dependent Network Ratings\nPolygon zkEVM Settlement Guarantees (10/10 weight): Score: 9/10 The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum’s consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.\nDispute Resolution (9/10 weight): Score: 10/10 Ethereum serves as the absolute source of truth for the zkEVM. If there’s ever a dispute about the state, the zero-knowledge proofs verified by Ethereum’s consensus provide mathematical certainty about what is correct. There’s no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can’t confirm invalid state transitions, and its assets are secured by Ethereum’s consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.\nState Finality (7/10 weight): Score: 9/10 Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there’s no waiting period for finality beyond Ethereum’s own finality period. This is as strong as state finality can get for a settlement-dependent network.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum’s consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.\nState Progression Dependency (5/10 weight): Score: 7/10 While the zkEVM can process transactions independently, it can’t finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there’s some independence in transaction processing.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they’re locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.\nTotal Score: 62/70 (approximately 89%)\nThis analysis places Polygon zkEVM firmly in the “Fully Non-Sovereign” category. Arbitrum Let me analyze Arbitrum’s relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.\nSettlement Guarantees (10/10 weight): Score: 7/10 Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it’s not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum’s consensus layer still makes this a robust settlement mechanism.\nDispute Resolution (9/10 weight): Score: 8/10 Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum’s consensus automatically enforces the correct resolution once fraud is proven.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum’s state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.\nState Finality (7/10 weight): Score: 6/10 While Arbitrum’s state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets to Ethereum, guaranteed by Ethereum’s consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum’s operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.\nState Progression Dependency (5/10 weight): Score: 7/10 Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum’s consensus. When assets move to Arbitrum, they’re locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.\nTotal Score: 55/70 (approximately 79%)\nThis analysis places Arbitrum in the “Fully Non-Sovereign” category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs.\nStacks Settlement Guarantees (10/10 weight): Score: 4/10 Stacks uses Bitcoin for checkpointing and security anchoring However, it lacks cryptographic enforcement of settlement by Bitcoin’s consensus Bitcoin doesn’t automatically enforce or validate Stacks’ state transitions Falls into the “checkpoint systems” category rather than stronger settlement guarantees Dispute Resolution (9/10 weight): Score: 3/10 While Stacks records its state on Bitcoin, Bitcoin’s consensus doesn’t serve as the ultimate arbiter Disputes are primarily resolved within Stacks’ own consensus mechanism Bitcoin can’t automatically correct or resolve issues in Stacks’ state Economic Security Inheritance (8/10 weight): Score: 6/10 Miners must commit actual Bitcoin through PoX mechanism This creates some economic security dependency on Bitcoin However, Stacks maintains its own economic incentives through STX State Finality (7/10 weight): Score: 5/10 Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces Provides stronger finality than fully independent chains but weaker than true L2s Exit Rights Guarantees (6/10 weight): Score: 4/10 With sBTC, users can move Bitcoin between chains However, this relies on Stacks’ mechanisms rather than being guaranteed by Bitcoin’s consensus Exit rights depend on threshold signatures rather than cryptographic guarantees State Progression Dependency (5/10 weight): Score: 7/10 Stacks blocks are linked to Bitcoin blocks through PoX State progression is tied to Bitcoin’s block progression However, Stacks can still process transactions independently within this framework Asset Movement (4/10 weight): Score: 5/10 sBTC enables Bitcoin movement between chains But this movement isn’t directly enforced by Bitcoin’s consensus Relies on threshold signatures and Stacks’ mechanisms Total Score: 34/59 (approximately 58%)\nThis places Stacks in the “Moderately Dependent” category on our spectrum.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -450,10 +549,10 @@
     "href": "content/financial/ratings.html#risks",
     "title": "Ratings",
     "section": "Risks",
-    "text": "Risks\nSub categories of risks include smart contract vulns regulatory risks centralization risks for CeDeFi and CEX’s MEV network level key and wallet compromise cross chain exploits oracle manipulation Social engineering exploitation of economic models Smart Contract Vulns Smart contract vulnerabilities represent one of the most critical risks in Web3, having led to billions in losses. This analysis examines major exploit categories based on historical hacks, their prevalence across different application models, and effective mitigation strategies.\nSubcategories are: Access Control Flaws Logic and Arithmetic Errors Oracle Manipulation Reentrancy attacks Flash Loan Vulnerabilities\nReentrancy attacks Mainly on Solidity. Famous example is the DAO hack which resulted in the Ethereum. pre 0.4.0 of Solidity there were no built in protections, so completely vulnerable.\nPre-0.4.0: No built-in protections, completely vulnerable 0.4.0-0.4.12: Introduction of the transfer() function with 2300 gas stipend, providing some protection but not comprehensive 0.4.13-0.7.x: Better compiler warnings about state changes after external calls 0.8.0+: Enhanced static analysis for potential reentrancy, but still requires explicit protection\nOpenZeppelin’s ReentrancyGuard became the gold standard for protecting against these attacks.\nMove, used by Sui and Aptos, takes a different approach. It uses a linear type system that treats resources as non-duplicatable assets. This makes traditional reentrancy attacks much harder because resources can’t be accessed multiple times in the same transaction. However, parallel execution in Sui could potentially create new forms of reentrancy-like vulnerabilities.\nHigh Risk (without additional protections): Solidity (EVM) - Requires explicit guards and careful external call handling Medium Risk: Cairo (StarkNet) - Possible but harder to accidentally create Cadence (Flow) - Resource model helps but inter-contract calls need attention Low Risk (by design): Move (Sui/Aptos) - Linear type system prevents traditional reentrancy Rust (Solana) - Execution model prevents traditional reentrancy Vyper (EVM) - Built-in restrictions prevent common reentrancy patterns Clarity (Stacks) - Decidability and no recursive calls prevent traditional reentrancy",
+    "text": "Risks\nSub categories of risks include smart contract vulns regulatory risks centralization risks for CeDeFi and CEX’s MEV network level key and wallet compromise cross chain exploits oracle manipulation Social engineering exploitation of economic models",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -464,7 +563,7 @@
     "text": "Bitcoin",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -475,7 +574,7 @@
     "text": "Solana",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -486,7 +585,7 @@
     "text": "Monero",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -497,7 +596,7 @@
     "text": "Optimism",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -508,7 +607,7 @@
     "text": "Ethereum",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -519,7 +618,7 @@
     "text": "Filecoin",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -530,7 +629,7 @@
     "text": "Starknet",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -541,7 +640,7 @@
     "text": "Lido Staked Ethereum",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -552,7 +651,7 @@
     "text": "Chainlink",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -563,7 +662,7 @@
     "text": "Sui",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -574,7 +673,7 @@
     "text": "Uniswap",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -585,7 +684,7 @@
     "text": "Celestia",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -596,7 +695,7 @@
     "text": "XRP",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -607,7 +706,7 @@
     "text": "Dogecoin",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -618,7 +717,7 @@
     "text": "Tether USDT",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -629,7 +728,7 @@
     "text": "Circle USDC",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -640,7 +739,7 @@
     "text": "Ethena USDe",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -651,7 +750,7 @@
     "text": "Aptos",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -662,7 +761,7 @@
     "text": "Arbitrum",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -673,7 +772,7 @@
     "text": "Stacks",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -684,7 +783,7 @@
     "text": "DAI",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -695,7 +794,7 @@
     "text": "Cosmos Hub",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -706,7 +805,7 @@
     "text": "Symmetric Cryptography\nShared Keys. AES. But vulnerability is in sharing the Key between parties.",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
@@ -717,7 +816,7 @@
     "text": "Asymetric Cryptography\nPublic Key Cryptography\nRSA and elliptic curve cryptography. Slow than symetric cryptography. Enables secure communication over insecure channels",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
@@ -728,7 +827,7 @@
     "text": "Hash functions\nThese are like digital fingerprints",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
@@ -739,7 +838,7 @@
     "text": "Zero-Knowledge Proofs\nThey solve a unique problem: how can you prove you know something without revealing what you know? Imagine proving you’re over 21 without showing your actual birthdate.",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
@@ -750,7 +849,7 @@
     "text": "Homomorphic Encryption\nIt allows computations to be performed on encrypted data without decrypting it first. Think of it like being able to ask someone to bake a cake following your secret recipe, but without ever revealing the recipe to them. While still computationally intensive, this technology could revolutionize cloud computing and data privacy.",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
@@ -761,7 +860,7 @@
     "text": "Post-Quantum Cryptography\ncryptographic systems that can resist attacks from quantum computers. This forward-looking field is essential because many current cryptographic systems (especially asymmetric ones) could be broken by powerful quantum computers.",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
@@ -772,7 +871,7 @@
     "text": "Sovereign Networks\nWe would prefer to use the term Decentralized Incentive Network instead of blockchain. But we also want to align on common nomenclature within the industry, so we’ll stick with Blockchain for now.\nThe point of blockchains:\nCensorship resistance is indeed crucial - it enables truly permissionless systems where no entity can prevent valid transactions. However, there are several other compelling candidates for blockchain’s primary purpose: One strong contender is deterministic state transition. Think about how traditional databases or financial systems might have ambiguity about the exact sequence or timing of transactions, especially across different locations or institutions. Blockchain provides absolute clarity about state changes - there’s no ambiguity about which transaction came first or what the exact state was at any given moment. This property enables complex financial systems and smart contracts to operate with complete predictability. Another fundamental purpose could be creating credible neutrality in computational systems. This goes beyond just censorship resistance - it’s about creating systems where the rules are explicit, unchangeable without consensus, and apply equally to all participants. Traditional systems often have hidden biases or special privileges for certain users, while blockchain systems enforce their rules uniformly through code. We could also argue that the primary purpose is enabling trustless coordination at scale. Before blockchain, coordinating economic activity among untrusting parties required trusted intermediaries like banks or governments. Blockchain enables direct peer-to-peer coordination without these intermediaries, potentially reducing costs and increasing efficiency. Asset digitization and ownership might be another contender. Blockchain enables digital scarcity and verifiable ownership in ways that weren’t possible before. This property enables everything from cryptocurrencies to NFTs to tokenized real-world assets.\nWe won’t be taking any idealogical approach to the point of blockchains but rather applying scores to DIN’s and then comparing that to how the market values them.\nA decentralized incentive network with state consensus\nI’ve tried to simplify our definition as much as possible and even still it’s verbose. Read that sentence to 99% of the world and I’ll they’ll give you a quizzical look and move onto the section about meme coins. There’s a lesson there. A lesson the technical luminaries in this space ignore at their peril. Accessibility matters.\nLet’s break down each component of our definition.\nDecentralized. This is how many Nodes participate. Centralized means 1. Therefore anything more than 1 is decentralized.\nNetwork. This loosely means the participants computers/machines communicate via a communication method.\nState Consensus. The network will record state and all nodes will agree about the state via consensus.\nWe don’t need to worry too much about consensus yet, but you just need to know that the nodes must agree on the state. For example if Bob sends Alice 10 BTC. Everyone on the network must come to an agreement that Bob did indeed send Alice 10 BTC. Another important characteristic is that even if everyone agrees today, in the future that can’t be disputed or changed. This is another important category called censorship resistance. We’ll get to it.\nDependent Networks\nA sovereign chain can be defined as a network that maintains complete independence in its settlement process, requiring no external chain to validate or guarantee its state transitions. This independence is fundamental to the concept of sovereignty in blockchain networks.\nThis section should start discussing why the need arose for dependent networks. Specifically Ethereum struggling with scale. Due to the trilemna: decentralization security scalability\nLet’s talk about scaling strategies monolithic Bigger blocks Faster blocks Higher minimum requirements for nodes Consensus optimizations modular Execution - The current crop of L2’s Data availability - Storing and accessing blockchain data Celestia Consensus - Agreeing on the state of the network Settlement - Finalizing transactions and providing security guarantees. Ethereum and Bitcoin in the current Layer craze\nPure Value Networks Pure value networks stick to the fundamental purpose of moving and storing value, avoiding the additional complexity that comes with being a platform for applications or other services.\nWhat makes these networks “pure value” is what they don’t include: They don’t support complex smart contracts They don’t host decentralized applications They don’t provide programmable functionality beyond basic value transfer They don’t serve as platforms for other tokens or applications\nApplication Chains Application Chains represent networks that go beyond pure value transfer to support various types of applications. They’re divided into three main categories: Hubs, Specialized, and Generalized chains.\nHub Application Chains serve as central connection points in the blockchain ecosystem.\nSpecialized Application Chains focus on specific use cases or industries.\nGeneralized Application Chains aim to support a wide range of applications but differ from hubs in that they’re not necessarily trying to be central connection points.\nThe key distinction between these categories lies in their approach to applications: - Hubs prioritize becoming central platforms that other networks depend on - Specialized chains optimize everything for specific use cases - Generalized chains provide broad functionality but focus on being self-contained ecosystems",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -783,7 +882,7 @@
     "text": "Layer 2’s\nWe break these down into:\n\nRollups\n\nOptimistic\nZK\n\nValidiums\nPlasma\nSidechains\n\nSo Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling.\nSo we need to talk about the theory of Layers in Blockchain\nThat’s why L2’s became a major part of the roadmap. How does the scalability limitation affect the network. Congestion and high gas fee’s. So people don’t interact on the chain and it hits a ceiling. So logically we should start any discussion with transaction fee’s, as that’s the direct result of the scalability failure and the main reason users use L2’s. Besides yield opportunities.\nSo we should first consider the Fee Markets on Ethereum and Bitcoin which are the two major chains looking to scale with L2’s. There is a lot of debate and a lot of misinformation around this topic.\nDependent networks can really be divided into chains: External DIN required to validate state transitions External DIN required to guarantee state transitions\nWe’ll define a framework for how we define a Dependent Network. There are few things we look at, in terms of priority: censorship resistance. Polygon zkEVM sequencer can censure, but you can go through the contract directly on Ethereum theoretically if censorship occurs. Same thing for Arbitrum. Although this is a very weak guarantee due to the complexity for regular users. For Stacks, it’s more censorship resistant that the other two. Also if I were to interact directly with the smart contract on Ethereum, that makes the L2’s pointless. Why do I need them if not to deal with congestion and high gas. dispute resolution. I believe all chains need to hard fork. Potentially not Movement due to Move’s resource model. None of the chains will automatically hard fork if a dispute is found. settlement. So the base chain must validate and guarantee state transitions on the dependent chain. This is kinda stupid. It’s guaranteeing the state transitions but makes no attempt to resolve things like censorship resistance. finality of settlement. Optimistic 7 days, zk 30 minutes, Stacks 16 hours economic security model inheritance - this is actually pointless as it just means the state transitions match the rules. Nothing about censorship resistance.\nSo my qualification of dependent networks means that they must inherit the censorship resistance of the base chain, settlement must be validated and guaranteed by the base chain, dispute resolution must be automatic and/or decentralized. else the chain can just fork.\nSettlement Types In order of strength Cryptographically enforced settlement Validity proofs Fraud proof systems Checkpoint systems\nCore Infrastructure Components Network Security Attack Vectors Network Level: Eclipse attacks, BGP hijacking, DDoS attacks Protocol Level: Double spending, nothing-at-stake, long-range attacks Application Level: Smart contract vulnerabilities, oracle manipulation Defense Mechanisms Network Diversity: Geographic distribution, client diversity, network topology Economic Security: Slashing conditions, required stake amounts, timelock mechanisms Operational Security: Key management, upgrade processes, emergency responses Monitoring and Detection Network Health Monitoring: Peer count, block propagation, chain quality Threat Detection: Fork monitoring, unusual transaction patterns, validator behavior Incident Response: Alert systems, mitigation procedures, recovery processes Network Governance Governance Models On-Chain: Direct token voting, delegated voting, quadratic voting Off-Chain: Foundation-led, core team decisions, community forums Hybrid: Combined on-chain execution with off-chain discussion Decision Domains Protocol Parameters: Block size, gas limits, fee structures Treasury Management: Fund allocation, grant distribution, development funding Protocol Upgrades: Hard forks, soft forks, emergency changes Participation Mechanisms Proposal Systems: Submission requirements, discussion periods, voting periods Voting Methods: Token-weighted, identity-based, reputation-based Execution Methods: Automatic execution, timelock delays, manual implementation Cross-Chain Communication Bridge Types Trusted Bridges: Custodial, multi-signature, federated Trustless Bridges: Light clients, zero-knowledge proofs, relay networks Hybrid Bridges: Combined trusted and trustless elements Message Passing Protocol Standards: IBC (Inter-Blockchain Communication), cross-chain messaging Verification Methods: SPV proofs, merkle proofs, validity proofs Asset Standards: Wrapped tokens, synthetic assets, native bridges Security Considerations Bridge Security: Validator sets, challenge periods, fraud proofs Asset Security: Lockup mechanisms, minting controls, burning procedures Network Security: Cross-chain replay protection, nonce management\nNetwork Performance Metrics Transaction Performance Throughput: Transactions per second (TPS), block size limits Latency: Block time, time to finality, confirmation time Costs: Transaction fees, gas costs, execution costs Network Performance Block Propagation: Time to reach network percentage Network Load: Memory pool size, peer connections, bandwidth usage Chain Quality: Uncle rate, chain reorganizations, block validity Resource Utilization Computing Resources: CPU usage, memory requirements, storage growth Network Resources: Bandwidth consumption, peer connections Storage Resources: State size, history size, pruning capabilities Node Architecture Node Types Full Nodes: Complete state and history validation Light Nodes: Header-only validation, SPV proofs Archive Nodes: Complete historical state storage Validator Nodes: Block production and validation Network Topology Peer Discovery: Bootstrap nodes, DHT, static peers Connection Management: Maximum peers, scoring systems, ban lists Data Propagation: Block propagation, transaction propagation Resource Management State Management: State storage, pruning policies, snapshot systems Network Management: Bandwidth limits, peer limits, prioritization Computing Management: Transaction pools, execution priorities Developer Infrastructure Development Tools SDKs: Language support, library ecosystems, tool chains Testing Tools: Local networks, test frameworks, simulation tools Monitoring Tools: Block explorers, metrics, logging systems API Infrastructure RPC Endpoints: JSON-RPC, GraphQL, WebSocket Node APIs: Client APIs, wallet interfaces, indexer APIs Data Access: Block data, state data, historical data Development Environment Local Development: Development networks, docker environments Testing Networks: Test networks, faucets, explorers Production Deployment: Network access, monitoring, maintenance\nCommon Concepts\nState Growth & Pruning Mechanisms Across Networks Ethereum State Growth Unlimited state growth Historical state maintained by full nodes State size ~130GB and growing Uses Merkle Patricia Trie for state storage Pruning Mechanisms Archive nodes store full history Full nodes can prune historical states Light clients only store block headers No protocol-level state expiry yet (proposed) Solana State Growth Accounts model with rent mechanism State stored in memory for fast access Accounts can be marked rent-exempt Program data separated from account data Pruning Mechanisms Rent mechanism removes inactive accounts Two years of inactivity leads to account cleanup Validators can prune historical data Replicators store historical data Sui State Growth Object-centric storage model Objects can be deleted explicitly Storage fund for long-term costs Parallel execution reduces state bloat Pruning Mechanisms Objects can be explicitly deleted Storage rebates incentivize cleanup Validators can prune transaction history Maintains live object set separately Aptos State Growth Account-based model Resources stored under accounts Explicit resource deletion Storage fees for state growth Pruning Mechanisms Storage fees incentivize cleanup Explicit resource deletion Validators can prune historical states Maintains current state tree XRP State Growth Account-based ledger Reserve requirements limit state growth Objects can be deleted Amendable reserve requirements Pruning Mechanisms Online deletion for historical data Reserve requirements prevent spam Ledger header retention policy Configurable history retention Stellar State Growth Account-based ledger Minimum balance requirements Entry lifetime policies Base reserve adjustable by voting Pruning Mechanisms Built-in entry expiration Configurable history retention Minimum balance requirements Explicit deletion of unused entries Polkadot State Growth Trie-based state storage Storage rent (proposed) Bounded parachain growth Shared state across parachains Pruning Mechanisms State rent mechanism (planned) Historical pruning options Parachain state management Archive nodes for full history Layer 2 Solutions Optimistic Rollups (Optimism, Arbitrum) State growth tied to L1 data availability Compression techniques for state updates Fraud proof window affects state retention Can prune after challenge period ZK Rollups (zkSync, StarkNet) State updates verified by ZK proofs More efficient state representation Immediate finality enables pruning State diffs published to L1 Key Patterns Growth Control MechanismsStorage fees/rent Minimum balances Reserve requirements Explicit deletion Pruning StrategiesHistorical pruning State expiry Account cleanup Resource deletion Storage IncentivesRent mechanisms Storage rebates Deletion incentives Reserve requirements",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -794,7 +893,7 @@
     "text": "Consensus Mechanisms\nConsensus Mechanisms All DIN’s have a consensus mechanism we have the consensus mechanisms. These can be divided into the following broad categories: Proof based mechanisms. Mainly Proof of Work and Proof of Stake Byzantine Fault Tolerance (BFT) Mechanisms. Tendermint Voting Based Mechanisms, Ripple and Stellar Directed Acrylic Graph based mechanisms Hybrid. PoS + BFT is used by Polkadot and Cosmos Novel Mechanisms\nNeed to talk about finality here about probabilistic vs deterministic. Also focus on Single Slot Finality Proof-Based Mechanisms Proof of Work (PoW) Security Model: Computational work as economic security Key Properties: Energy-intensive computational puzzles Natural chain selection through longest chain rule Strong resistance to Sybil attacks High latency to finality Finality: Probabilistic finality with increasing certainty over time Attack Resistance: 51% attack requires majority of network hashpower Very high cost of attack for established networks Examples: Bitcoin, Ethereum (pre-merge), Litecoin Proof of Stake (PoS) Security Model: Economic stake as security Key Properties: Energy efficient Validator selection based on stake Slashing conditions for misbehavior Lower latency than PoW Finality: Can achieve deterministic finality with additional mechanisms Attack Resistance: 33% or 51% stake required depending on implementation Economic penalties for malicious behavior Examples: Ethereum 2.0, Cardano, Tezos Byzantine Fault Tolerance (BFT) Mechanisms Classical BFT Security Model: Agreement among known validator set Key Properties: High throughput Low latency Immediate finality Limited validator set size Finality: Instant finality once consensus reached Attack Resistance: Tolerates up to 1/3 Byzantine validators Requires 2/3+ honest validators Examples: Tendermint (Cosmos), Hyperledger Fabric Practical BFT (PBFT) Key Properties: Three-phase commit protocol View change protocol for leader failures Optimized for practical systems Performance Characteristics: Higher message complexity Better performance in stable conditions Examples: NEO, Hyperledger Sawtooth Voting-Based Mechanisms Federated Byzantine Agreement (FBA) Security Model: Trust between validator groups Key Properties: Quorum slices Flexible trust model Open validator set Finality: Quick finality within trust boundaries Attack Resistance: Based on trust overlap between validator groups Resistant to split votes through quorum intersection Examples: Stellar, Ripple Delegated Proof of Stake (DPoS) Security Model: Elected validator set Key Properties: Token holder voting Limited validator set Regular validator rotation Finality: Quick finality with selected validators Attack Resistance: Governance attacks through voter collusion Validator collusion risks Examples: EOS, TRON Directed Acyclic Graph (DAG) Based Pure DAG Security Model: Transaction confirmation through subsequent references Key Properties: Parallel transaction processing No explicit blocks Scalable throughput Finality: Probabilistic with increasing certainty Attack Resistance: Spam resistance through PoW Double-spend prevention through transaction ordering Examples: IOTA, Hedera Hashgraph Block-DAG Security Model: Hybrid of blockchain and DAG properties Key Properties: Multiple concurrent blocks Complex ordering rules Higher throughput than linear chains Examples: PHANTOM, SPECTRE Hybrid Mechanisms PoS + BFT Security Model: Economic stake with BFT finality Key Properties: Stake-based validator selection BFT consensus for finality Slashing for misbehavior Finality: Deterministic through BFT layer Attack Resistance: Economic security from stake Byzantine resistance from BFT Examples: Polkadot, Cosmos PoW + BFT Security Model: Dual layer security Key Properties: PoW for block production BFT for finality Higher security guarantees Examples: Decred Novel Mechanisms Proof of History (PoH) Security Model: Verifiable delay function for time ordering Key Properties: Built-in timestamping Efficient verification High throughput Finality: Quick finality with PoS integration Examples: Solana Avalanche Security Model: Metastable consensus through repeated sampling Key Properties: Sub-second finality High throughput Scalable validator set Finality: Probabilistic with quick practical finality Examples: Avalanche Key Considerations for Consensus Selection Performance Metrics Transaction throughput Time to finality Network overhead Hardware requirements Security Properties Byzantine fault tolerance Sybil resistance Double-spend prevention Network partition handling Decentralization Factors Validator set size Entry barriers Geographic distribution Economic concentration Network Requirements Synchronicity assumptions Bandwidth needs Storage requirements CPU/GPU demands Economic Considerations Operating costs Required stake/investment Reward distribution Slashing conditions",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -805,7 +904,7 @@
     "text": "Application Models\nEach application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.\nWe classify Application Models as:\n\nUTXO also includes Cardano’s extened UTXO, Kaspa also falls into this\nAccount\n\nPure EVM Ethereum, Polygon, Avalanche, TRON et al\nSpecialized XRP and Stellar\n\nSharded account model Near falls into this.\nObject Sui\nResource model Aptos and Movement\nCapability Solana\nCell model TON\nActor Based (ICP and CosmWasm\n\n\nUTXO\nThe UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.\nKey Characteristics:\n\nState Management: Stateless, transaction-oriented\nParallelization: Natural parallel validation\nAsset Representation: Native representation of tokens\nComposability: Limited without extensions\nSafety Guarantees: High through explicit ownership\n\n\n\nAccount Model\nAccounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA’s, they only maintain state of the network token and not ERC20’s.\nKey Characteristics:\n\nState Management: Stateful, account-oriented\nParallelization: Challenging due to state dependencies\nAsset Representation: Contract-based tokens\nComposability: High through contract interactions\nSafety Guarantees: Varies by implementation\n\n\n\nObject Model\nObjects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.\nKey Characteristics:\n\nState Management: Object-oriented\nParallelization: Natural through object independence\nAsset Representation: Native objects\nComposability: Through object references\nSafety Guarantees: Object-level ownership\n\n\n\nResource Model\nResources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.\nKey Characteristics:\n\nState Management: Resource-oriented\nParallelization: Possible through resource independence\nAsset Representation: Native resources\nComposability: Through resource combination\nSafety Guarantees: Very high through linear types\n\n\n\nCapability Model\nCapability Model Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.\nKey Characteristics:\n\nState Management: Capability-based\nParallelization: High through capability isolation\nAsset Representation: Capability-protected resources\nComposability: Through capability delegation\nSafety Guarantees: High through access control\n\n\n\nCell Model\nState is organized into cells that can be independently accessed and modified, enabling high parallelization.\nKey Characteristics:\n\nState Management: Cell-based\nParallelization: High through cell independence\nAsset Representation: Cell-based\nComposability: Through cell references\nSafety Guarantees: Cell-level isolation\n\n\n\nActor Model\nComputation is organized around actors that can independently process messages, enabling natural parallelization.\nKey Characteristics:\n\nState Management: Actor-local state\nParallelization: Natural through actor independence\nAsset Representation: Actor-managed\nComposability: Through message passing\nSafety Guarantees: Actor isolation\n\n\n\n\n\n\n\n\n\nApplication Model\nBlockchains\nKey Features\n\n\n\n\nUTXO\nBitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM\n- Natural parallelism- Simple state model- High security\n\n\nAccount (Pure EVM)\nEthereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare\n- Rich programmability- High composability- Standard tooling\n\n\nAccount (Specialized)\nXRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent\n- Custom account models- Specific use-case optimization- Modified state management\n\n\nSharded Account\nNEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony\n- Parallel execution- Cross-shard composition- Scalable state\n\n\nObject\nSui\n- Object-centric- Natural parallelism- Rich ownership model\n\n\nResource\nAptos, Movement, Flow, Virtual Protocol\n- Linear types- Strong safety- Asset-oriented\n\n\nCapability\nSolana, Injective, SEI, Theta Network\n- Fine-grained access- High parallelism- Explicit permissions\n\n\nCell\nTON, Everscale\n- Cell-based storage- High parallelism- Flexible structure\n\n\nActor\nInternet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA\n- Message-passing- Natural isolation- Independent processing\n\n\nUnknown\nFilecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin\nStill researching these",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -816,7 +915,7 @@
     "text": "Communication Protocols\nWe have\n\nIBC (Inter-Blockchain Communication) - Cosmos\nXCMP (Cross-Chain Message Passing) - Polkadot\nCCTP (Cross-Chain Transfer Protocol) by Circl\nCCIP (Cross-Chain Interoperability) by Chainlink\nWarp Messaging for Avalanche\nIMP (Interchain Messaging Protocol)\n\nWe can then further classify these standard by the following properties: * Security Model * Centralized vs Decentralized * Message Scope (General (IBC,CCIP, Hyperlane) vs Specialized (Circle’s CCTP and Warp)) * Open vs Close networks * Message Verification Method",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -827,7 +926,7 @@
     "text": "Fee Markets\nWe break down fee markets into:\n\nBlock Space Markets\nResources Markets\n\n\nBlock Space Markets\nThese are the most fundamental type. Users are paying for space in the next block, regardless of what they’re doing with that space. It only considers the price of inclusion while respecting the limits of the network.\n\n\nResource Markets\nThese evolved with the advent of Ethereum as blockchains became more complex. We break these down into:\n\nCompute\nData Availability\nStorage\nHybrid\n\n\nCompute Markets\nTransaction fee’s sometimes called Gas is what you pay to execute a smart contract on a blockchain. On some networks, like Ethereum, there is an execution limit on how much computational work can be done in a block. This parameter directly impacts the computational resources required to run a node.\nNodes can propose a gas limit\nSo the attributes for Transactions Fee’s are: Tips/Bribes How Transactoin fees are distributed. Burnt or redirected to Miners How fee’s are calculated Base Fee Dynamic Fee (based on something like network congestion)\n\n\n\nData Availability\nWe will compare the mechanisms of the following major DA layers:\n\nEthereum\nCelestia\nEignlayer DA\nAvail\n\nEthereum uses dynamic blob fees based upon a target amount of blob space per block.\nCelestia charges by size. Celestia is designed to scale to handle increase demand with adding more validators\nAvail also charges by size but also the type.\nEigenDA creates a marketplace for data availability providers\n\nStorage\n\n\nHybrid\n\n\nCongestion Measurement Mechanisms\nEthereum\n\nMeasures block gas utilization vs 15M target\n12.5% base fee adjustment per block\nBlock size can flex up to 30M gas\n\nStellar\n\nUses surge pricing mechanism\nTriggers when ledger capacity exceeds 50%\nFee increases proportionally to network load\n\nPolkadot\n\nUses weight-based system\nMeasures block weight against target\nAdjusts fees based on block fullness\n\nTezos\n\nMonitors block saturation\nAdjusts fees based on recent block usage\nUses gas limits per operation type\n\n\n\n\nData Availability market\nEthereum uses blobs, which are special containers for Layer 2 rollups to post their transaction data. They also disappear after a time.\nBlob fee is calculated based on the target blob gas per block.",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -838,7 +937,7 @@
     "text": "Network Change Management\n\nOverview\nNetwork change management in DINs encompasses the processes, mechanisms, and stakeholders involved in proposing, discussing, approving, and implementing network modifications. This framework covers everything from minor parameter adjustments to major protocol upgrades.\nTODO Design something that can simulate",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -849,7 +948,7 @@
     "text": "Clients",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -860,7 +959,7 @@
     "text": "Bridges\nClassification of Bridges. Need to include Lazy Bridges here https://blog.celestia.org/lazybridging/\n\nTrusted\n\nCustodial\nMulti Signature\nFederated\n\nTrustless Bridges\n\nLight Client\nZK\n\nLazy Bridge\n\nRelay",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -868,10 +967,21 @@
     "href": "content/technical/dapps.html",
     "title": "dApps",
     "section": "",
-    "text": "dApps can be single chain or multichain. However they must exist on a DIN and can’t exist independently from a DIN. They don’t need to have a token to be included here. If an NFT develops functionality, they they’ll be inlcuded here too. They can be DeFi SocialFi GameFi CeDeFi Concepts Concepts Flash loans DeFi Derivatives Basis Trading DEX Lending Utility Yield Pendle 3k in Basis Trading Current dApps Ethena USDX BounceBit\nDerivatives Liquid staking Derivatives such as Lido, and EtherFi is the primary element here Lending\nSocialFi Meme Coins CeDeFi Circle fits in here GameFi",
+    "text": "DEX’s\ndApps can be single chain or multichain. However they must exist on a DIN and can’t exist independently from a DIN. They don’t need to have a token to be included here. If an NFT develops functionality, they they’ll be inlcuded here too. They can be DeFi SocialFi GameFi CeDeFi Concepts Concepts Flash loans DeFi Derivatives Basis Trading DEX Lending Utility Yield Pendle 3k in Basis Trading Current dApps Ethena USDX BounceBit\nDerivatives Liquid staking Derivatives such as Lido, and EtherFi is the primary element here Lending\nSocialFi Meme Coins CeDeFi Circle fits in here GameFi",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>dApps</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>dApps</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/dapps.html#name-services",
+    "href": "content/technical/dapps.html#name-services",
+    "title": "dApps",
+    "section": "Name Services",
+    "text": "Name Services",
+    "crumbs": [
+      "Technical",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>dApps</span>"
     ]
   },
   {
@@ -882,7 +992,7 @@
     "text": "Proposer Builder Separation (PBS)",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>MEV</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>MEV</span>"
     ]
   },
   {
@@ -893,7 +1003,7 @@
     "text": "Multiple Concurrent Leaders\nhttps://x.com/aeyakovenko/status/1810222589991583922",
     "crumbs": [
       "Technical",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>MEV</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>MEV</span>"
     ]
   },
   {
@@ -904,17 +1014,27 @@
     "text": "This section will compare how Blockchains implement the three tiers of traditional governance. Namely:\n\nLegistlative - Who makes the rules and how they created\nExecutive - Who executes the rules\nJudicial - Referee between them\n\nSo in Bitcoin BIP’s cover the Legislative aspect, Executive is Node operators for Networks then for dapps it gets more complex. Judicial is where it gets challenging. This is pretty much the entire community. People interpret rules by economic activity and nodes. Look at Bitcoin Cash. No money. So everyone agreed with the block size of Bitcoin.\nThere is also the concept of Canvassing or Lobbying can also occur. Let’s look at Ethereum. If I wanted to increase the gas limit from 30 million to 31 million. I’d need to canvas all the nodes to come along with me. Currently there is 5,333 nodes. So I’d need to convince ~3k node operators to increase the gas limit.\n\n1. Hard Forks\n\nDefinition: Protocol changes that make previously invalid blocks/transactions valid (or vice-versa), requiring all nodes to upgrade\nCharacteristics:\n\nNon-backwards compatible\nRequires coordinated network upgrade\nCreates potential for chain splits if not unanimously adopted\n\nUse Cases: Major protocol upgrades, fundamental rule changes, bug fixes\nExamples: Ethereum’s merge to PoS, Bitcoin’s SegWit upgrade\n\n\n\n2. Soft Forks\n\nDefinition: Backwards-compatible protocol changes that tighten rules without invalidating existing blocks\nCharacteristics:\n\nBackwards compatible\nOld nodes can still participate (with limitations)\nLower coordination requirements\n\nUse Cases: Adding new features, incremental improvements\nExamples: Bitcoin’s P2SH implementation, taproot upgrade\n\n\n\n3. Parameter Updates\n\nDefinition: Changes to network variables within predefined bounds\nCharacteristics:\n\nNo code changes required\nOften automated through on-chain governance\nLower risk than protocol changes\n\nUse Cases: Fee adjustments, block size modifications, staking parameters\nExamples: Tezos’ regular parameter updates, Cosmos’ governance parameters\n\n\n\nGovernance Mechanisms\n\n1. Off-Chain Governance\n\nCharacteristics:\n\nSocial consensus through discussion forums, social media, conferences\nInformal decision-making processes\nRelies on node operator coordination\n\nAdvantages:\n\nFlexible and adaptable\nAllows for nuanced discussion\nNatural resistance to capture\n\nDisadvantages:\n\nCan be slow and messy\nMay lack clear resolution mechanisms\nPotential for contentious outcomes\n\n\n\n\n2. On-Chain Governance\n\nCharacteristics:\n\nFormal voting mechanisms\nSmart contract-based execution\nToken-weighted or identity-based participation\n\nAdvantages:\n\nClear process and outcomes\nAutomated execution\nTransparent participation\n\nDisadvantages:\n\nPotential plutocratic capture\nReduced flexibility\nVoter apathy risks\n\n\n\n\n3. Hybrid Systems\n\nCharacteristics:\n\nCombines off-chain discussion with on-chain execution\nMultiple stages of proposal refinement\nMixed participation models\n\nAdvantages:\n\nBalances flexibility with formality\nCombines benefits of both approaches\nCan adapt to different types of changes\n\nExamples: Polkadot’s governance system, Cosmos Hub’s proposal process\n\n\n\n\nImprovement Proposal Systems\n\n1. Structure\n\nStages:\n\nDraft: Initial proposal development\nReview: Community feedback and refinement\nLast Call: Final period for major objections\nAccepted/Final: Ready for implementation\nRejected: Proposal declined\n\nComponents:\n\nTechnical specification\nMotivation and rationale\nBackwards compatibility analysis\nReference implementation (if applicable)\nSecurity considerations\n\n\n\n\n2. Common Frameworks\n\nBIP (Bitcoin Improvement Proposals):\n\nFocus on consensus changes\nConservative approach\nHigh emphasis on security\n\nEIP (Ethereum Improvement Proposals):\n\nMultiple tracks (Core, ERC, Interface)\nRegular cadence of updates\nStrong emphasis on standardization\n\nNetwork-Specific Systems:\n\nCustomized to network needs\nVarying levels of formality\nDifferent voting thresholds\n\n\n\n\n\nCentralization Factors\n\n1. Development Centralization\n\nCore Development Teams:\n\nControl over codebase\nTechnical expertise concentration\nFunding dependencies\n\nClient Implementation:\n\nDiversity of node software\nImplementation independence\nBug discovery and fixes\n\n\n\n\n2. Governance Centralization\n\nVoting Power Distribution:\n\nToken concentration\nDelegate systems\nVoter participation rates\n\nProposal Control:\n\nWho can propose changes\nFiltering mechanisms\nDiscussion venue control\n\n\n\n\n3. Infrastructure Centralization\n\nNode Operation:\n\nGeographic distribution\nHardware requirements\nOperating costs\n\nService Providers:\n\nAPI services\nBlock explorers\nDevelopment tools\n\n\n\n\n\nBest Practices\n\n1. Change Management\n\nClear documentation of changes\nAdequate testing periods\nCoordinated upgrade schedules\nEmergency response procedures\n\n\n\n2. Community Engagement\n\nRegular communication channels\nMultiple feedback mechanisms\nTransparent decision-making\nEducational resources\n\n\n\n3. Technical Implementation\n\nComprehensive testing frameworks\nClear upgrade paths\nFallback mechanisms\nSecurity audits",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Governance</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Governance</span>"
     ]
   },
   {
     "objectID": "contributing.html",
     "href": "contributing.html",
-    "title": "15  Contributing",
+    "title": "17  Contributing",
     "section": "",
-    "text": "This Almanack will change often and get things wrong. It’s only by being intellectually honest that it can ever hope to be the canonical guide to crypto and Web3. We follow Sophocles as our North Star\n\n“All men make mistakes, but a good man yields when he knows his course is wrong, and repairs the evil. The only crime is pride.” Here we’ll list all the outstanding contributions we’re looking for.\n\nI’ll also use it as a dumping ground where I can keep track of things I need to read to include:\n\nhttps://bitcoinrollups.org/\nhttps://tr3y.io/articles/crypto/bitcoin-zk-rollups.html",
+    "text": "17.1 Current requirements\nThis Almanack will change often and get things wrong. It’s only by being intellectually honest that it can ever hope to be the canonical guide to crypto and Web3. We follow Sophocles as our North Star\nI’ll also use it as a dumping ground where I can keep track of things I need to read to include:",
     "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Contributing</span>"
+    ]
+  },
+  {
+    "objectID": "contributing.html#current-requirements",
+    "href": "contributing.html#current-requirements",
+    "title": "17  Contributing",
+    "section": "",
+    "text": "17.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian",
+    "crumbs": [
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Contributing</span>"
     ]
   },
   {
