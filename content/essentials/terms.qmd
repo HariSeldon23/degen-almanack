@@ -1,4 +1,7 @@
 # Crypto Terms
+This document I believe will be updated most frequently. Terms are constantly changing, definitions being debated on the public square and evolving at a quicksilver pace. 
+
+Please treat it as a living document. The Almanack uses version control, so it will be possilbe to see how terms change over time by going back to previous versions. 
 
 ## Basic Terms
 ### Web3

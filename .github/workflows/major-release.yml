@@ -1,0 +1,78 @@
+# .github/workflows/major-release.yml
+name: Major Version Release
+on:
+  workflow_dispatch:
+    inputs:
+      release_notes:
+        description: 'Release notes'
+        required: true
+
+jobs:
+  major-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml semver
+          
+      - name: Bump major version
+        id: bump-version
+        run: |
+          python .github/scripts/bump_version.py major
+          
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        
+      - name: Install TinyTeX
+        run: |
+          quarto install tinytex
+          
+      - name: Render Book
+        run: |
+          quarto render
+          
+      - name: Generate PDF with version
+        run: |
+          VERSION=$(cat version.txt)
+          cp docs/Trollip_s-Degen-Almanack.pdf "docs/Trollip_s-Degen-Almanack-v${VERSION}.pdf"
+          
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v$(cat version.txt)
+          release_name: Version $(cat version.txt)
+          body: ${{ github.event.inputs.release_notes }}
+          draft: false
+          prerelease: false
+          
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: docs/Trollip_s-Degen-Almanack-v$(cat version.txt).pdf
+          asset_name: Trollip_s-Degen-Almanack-v$(cat version.txt).pdf
+          asset_content_type: application/pdf
+          
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add version.txt _quarto.yml docs/
+          git commit -m "Major version release [skip ci]"
+          git push

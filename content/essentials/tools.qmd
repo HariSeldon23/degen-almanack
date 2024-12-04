@@ -13,7 +13,7 @@ Single-model wallets are those that only support one type of blockchain applicat
    - Transaction handling, address format, and key management are consistent across all supported networks
    - Cannot natively interact with non-EVM models like UTXO or Capability-based systems
 
-2. Keplr
+2. Keplr and Leap
    - Specialized for the Actor-based model used in the Cosmos ecosystem
    - While it supports multiple Cosmos chains, they all share the same fundamental actor-based model
    - Optimized for CosmWasm smart contract interactions

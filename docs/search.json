@@ -1,0 +1,195 @@
+[
+  {
+    "objectID": "content/essentials/tools.html",
+    "href": "content/essentials/tools.html",
+    "title": "Tools",
+    "section": "",
+    "text": "Wallets\nWallets can focus on a singular application model or they can serve numerous.\nSingle-model wallets are those that only support one type of blockchain application model, regardless of how many networks they support within that model. This is a crucial distinction because supporting multiple networks using the same model is fundamentally different from supporting multiple models. It’s generally a tradeoff between features and multi-model support. A wallet focusing on multi-model support generally needs to sacrifice resources that would be devoted to adding features. It’s a good rule of thumb, that a single model wallet will provide a better UX that a multi-model wallet. However as a degen, as you get more acquianted with DeFi you’ll be interacting with numerous chains with different models.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#wallets",
+    "href": "content/essentials/tools.html#wallets",
+    "title": "Tools",
+    "section": "",
+    "text": "Single-Model Wallets\n\nMetaMask\n\nSupports only the Account-based EVM model\nWhile it works with many networks (Ethereum, BSC, Polygon, etc.), they all use the same underlying EVM account model\nTransaction handling, address format, and key management are consistent across all supported networks\nCannot natively interact with non-EVM models like UTXO or Capability-based systems\n\nKeplr and Leap\n\nSpecialized for the Actor-based model used in the Cosmos ecosystem\nWhile it supports multiple Cosmos chains, they all share the same fundamental actor-based model\nOptimized for CosmWasm smart contract interactions\n\nSui Wallet\nPetra Wallet\nArgent X\nBackpack\nPolkadot wallet\nAvalanche’s wallet",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#understanding-multi-model-wallets",
+    "href": "content/essentials/tools.html#understanding-multi-model-wallets",
+    "title": "Tools",
+    "section": "Understanding Multi-Model Wallets",
+    "text": "Understanding Multi-Model Wallets\nMulti-model wallets handle fundamentally different blockchain application models, requiring separate implementations for transaction construction, signing, and state management for each model type.\n\nNotable Multi-Model Wallets\n\nPhantom\n\nSupports both Capability-based (Solana) and Account-based (EVM) models\nRequires distinct handling for:\n\nSolana’s capability-based programs and account structure\nEVM’s account-based smart contracts and state management\n\nDifferent address derivation and transaction construction for each model\n\nOKX Wallet\n\nSupports multiple distinct models:\n\nEVM account model\nSolana capability model\nAptos resource model\nNEAR sharded account model\n\nMust implement separate state management and transaction handling for each model\nUnified interface masking underlying complexity\n\nTrust Wallet\n\nHandles multiple models:\n\nUTXO (Bitcoin, Litecoin)\nAccount-based (EVM chains)\nSpecialized models (XRP, Stellar)\n\nEach model requires its own implementation stack\n\nLeather",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#technical-implications-of-model-support",
+    "href": "content/essentials/tools.html#technical-implications-of-model-support",
+    "title": "Tools",
+    "section": "Technical Implications of Model Support",
+    "text": "Technical Implications of Model Support\n\nSingle-Model Advantages\n\nConsistent security model across all supported networks\nSimplified transaction handling\nMore straightforward key management\nFocused development and maintenance\nBetter optimization for model-specific features\nSmaller attack surface\n\n\n\nMulti-Model Challenges\n\nComplex security considerations for each model\nDifferent transaction construction methods\nMultiple address derivation paths\nIncreased code complexity\nLarger attack surface\nNeed for model-specific security audits",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#future-considerations",
+    "href": "content/essentials/tools.html#future-considerations",
+    "title": "Tools",
+    "section": "Future Considerations",
+    "text": "Future Considerations\nThe trend in wallet development shows increasing support for multiple models, driven by: - Growing cross-chain interaction needs - Rise of new blockchain models - User demand for unified interfaces - Development of cross-model standards\nHowever, this creates significant technical challenges in: - Security implementation - User experience design - Transaction management - Key handling - State synchronization\nThe distinction between single-model and multi-model wallets will become increasingly important as new blockchain models emerge and cross-chain interaction becomes more common.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#analysis-tools",
+    "href": "content/essentials/tools.html#analysis-tools",
+    "title": "Tools",
+    "section": "Analysis Tools",
+    "text": "Analysis Tools\n\nExplorers\nShowcase here how you can view versions of Soliidty. This is especially importnat for people trying to protect themselves from smart contract vulns. Also need to showcase how people can find the libraries. Specifically the OpenZeppelin ReentrancyGuard and then also the one that protects from overflow and underflow.\nForks. Soft and Hard forks for DIN Forks for dApps ### Defillama",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#security-tools",
+    "href": "content/essentials/tools.html#security-tools",
+    "title": "Tools",
+    "section": "Security Tools",
+    "text": "Security Tools\n\nOpenZeppelin",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/tools.html#privacy-tools",
+    "href": "content/essentials/tools.html#privacy-tools",
+    "title": "Tools",
+    "section": "Privacy Tools",
+    "text": "Privacy Tools\n\nDuckDuckGo\n\n\nVPN\nThe most commercially popular VPN’s are ExpressVPN, NordVPN and CyberGhost. I’m not an expert here, but I use Mullvad VPN as it accepts BTC as payment and seems most resitant to state attacks.\n\n\nTOR",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Trollip’s Degen Almanack",
+    "section": "",
+    "text": "Preface\nFor my two princes. Huxley & Morrissey.\nFor the bois, the Lord’s of Slumtown.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#why-i-must-write",
+    "href": "index.html#why-i-must-write",
+    "title": "Trollip’s Degen Almanack",
+    "section": "Why I must write",
+    "text": "Why I must write\nSo that I can continue to use crypto without dishonor, I have decided to put together a sufficient body of free research so that I will be able to get along without any knowledge that is not free and accessible by anyone.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#why-many-others-want-to-help",
+    "href": "index.html#why-many-others-want-to-help",
+    "title": "Trollip’s Degen Almanack",
+    "section": "Why many others want to help",
+    "text": "Why many others want to help\nI have found that many within crypto are unhappy with the exploitation of digital currencies. The influx of grifters, charlatons and scammers. It may enable them to make more money, but it requires them to feel in conflict with humanity rather than feel as comrades.\nThe fundamental act of friendship among degens is the sharing of knowledge. Knowledge in crypto, due to it’s technical complexity has attracted a special type of exploitation. High pay walls for access to data goes against the very ethos of Web3.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-you-can-contribute",
+    "href": "index.html#how-you-can-contribute",
+    "title": "Trollip’s Degen Almanack",
+    "section": "How you can contribute",
+    "text": "How you can contribute\nCurrently you can contribute by submitting knowledge in the form of a Pull Request to the Github repo.\nI’m considering opening up this Almanack onto Mirror so people can donate financially and anonymously through there. I still need to do more research on Open Source financial models to ensure this Almanack can operate sustainably as a going concern.\nStay Tuned!\n\n\n\n\nMay, Timothy C. 1988. “The Crypto Anarchist Manifesto.” https://www.activism.net/cypherpunk/crypto-anarchy.html.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "The genesis of this book was reading a technical argument on Twitter that was steeped in ideology. I agreed with both parties on certain points, yet the two combatants resorted to ad hominen attacks, both lacking a standardized framework in which to couch their arguments. This led me to rekindle an idea I’d had years before, to create a blockchain taxonomy. Something that would be easily accessible and would be able to be used to quickly dispel bad faith arguments.\nAfter building out the initial taxonomy, the breadth of the task started to dawn on me. The potential of it could be expanded to provide value not just to the technical community but to all parties interested in blockchain technology. I kept recalling the numerous conversations with family and friends asking for crypto investment advice. This wonderful patchwork of humanity I’ve had the fortune of spending my life with and how I could never give them an answer that spanned the breadth of this fascinating industry I love. Even sadder, I had no way of giving them advice concise enough for them to follow, that matched their investment goals.\nWhat then if there was a book, an Almanack for lack of a better word, that I could give to these people. A book that would educate, illuminate and help them make well informed investing decisions. While still straddling a fine line of being technically honest on how to safely navigate these waters.\nTaking a cue from history, following in the footsteps of Henry Vanrum Poor when he recognized the need for reliable information about the booming railroad companies. This takes inspiration from that venture with a modern twist. In line with the cypherpunk manifesto (Hughes 1993) and the open source communities(DiBona, Ockman, and Stone 1999) which I admire so much, this Almanack will be open source and community contributed. As a core tenet of the Cypherpunk manifesto, contributors identity will be less important than their reputation. The knowledge will be curated and go through an approval process via Github Pull Requests. The other innovation is that as the Alamack evolves over time it will integrate with real time data sources in order to provide a dynamic document that plugs into the market as it evolves.\nA brief note on the naming of the book. Initially I wanted to call it blockchain taxonomy, reflecting it’s early design goals. However as I worked more and more and it evolved into something much broader than a Taxonomy, Almanack made a lot more sense. Initially I liked Trollip’s Web3 Almanack. But all the broader terms for this industry have severe limitations. I consider myself a degen. And while it’s a loaded term, it’s being a degen that has armed me with the knowledge to attempt this ambitious venture. Hence Trollip’s Degen Almanack.\n\n\n\n\nDiBona, Chris, Sam Ockman, and Mark Stone. 1999. Open Sources: Voices from the Open Source Revolution. Sebastopol, CA: O’Reilly Media.\n\n\nHughes, Eric. 1993. “A Cypherpunk’s Manifesto,” March. https://www.activism.net/cypherpunk/manifesto.html.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/terms.html",
+    "href": "content/essentials/terms.html",
+    "title": "Crypto Terms",
+    "section": "",
+    "text": "Basic Terms",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/terms.html#basic-terms",
+    "href": "content/essentials/terms.html#basic-terms",
+    "title": "Crypto Terms",
+    "section": "",
+    "text": "Web3\nWithin this Almanack we use the term Web3 rather than Crypto. While our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.\nBelow you can see how the web has evolved into Web3.\n\n\n\nEvolution of the Web\n\n\n\nWeb1 (1990s): static websites, read-only content\nWeb2 (2000s - 2010s): Interactive social platforms, user-generated content\nWeb3 (2020s+): Decentralized networks, blockchain, user-owned data and assets\n\n\nDecentralization\n\n\n\nNetwork Topologies\n\n\n\n\n\nBlockchains\n\nLayer 1\nCurrently there is no formally and universally accepted definition of what comprises a L1 Network.\nWe have taken these sources in order to come up with our definition:\n\n(Nakamoto 2008) for Bitcoin\n(Buterin 2013) for Ethereum\n(Buterin 2021) for the rollups guide\n(Charbonneau 2023) for John’s excellent guide to rollups\n\nNakamoto’s Bitcoin whitepaper, while not explicitly using the term “Layer 1,” established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a self-contained, sovereign blockchain network.\nThe Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.\nButerin’s rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.\nCharbonneau’s report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.\nSynthesizing these sources, we can define a Layer 1 blockchain as:\nA sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system:\n\nconsensus - the ability to agree on the state of the network\ndata availability - ensuring all transaction data is publicly accessible and verifiable\nexecution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.\n\n\nSettlement Layer\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\nLayer 2\nThere is no canonical definition of L2’s.\nWe use:\n\n(Gluchowski 2019)\n(Poon and Buterin 2017)\n(Poon and Dryja 2016)\n(Buterin 2021)\n(Charbonneau 2023)\n\nTo come up with the following Framework\n\nData Availability\n\n\nOn-chain (Rollups)\nOff-chain (Validiums, Plasma, Sidechains)\n\n\nSecurity Model\n\n\nInherited from L1 (Rollups, Validiums)\nIndependent (Sidechains)\nHybrid (Plasma)\n\n\nState Validation\n\n\nFraud Proofs (Optimistic Rollups)\nValidity Proofs (ZK Rollups, Validiums)\nIndependent (Sidechains)\nMerkle Roots (Plasma)\n\n\nSettlement Mechanism\n\n\nDirect (Rollups)\nChallenge Period (Optimistic Rollups)\nExit Games (Plasma)\nBridge/Peg (Sidechains)",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/terms.html#accounts",
+    "href": "content/essentials/terms.html#accounts",
+    "title": "Crypto Terms",
+    "section": "Accounts",
+    "text": "Accounts\n\nExternally Owned Accounts\nThe formal definition of an EOA comes from Ethereum’s Yellow Paper. (Wood 2014)\nThere it is defined as:\n\nA nonce (counter for transactions sent)\nA balance (in the native currency)\nNo associated contract code\nNo data storage\n\nHowever we live in a multi-chain world so we’ll define our own interpretation as:\n\nDirect control through a public-private key pair\nNo additional programmable logic at the account level\nTransactions must be directly signed by the controlling private key",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/terms.html#colloqualisms",
+    "href": "content/essentials/terms.html#colloqualisms",
+    "title": "Crypto Terms",
+    "section": "Colloqualisms",
+    "text": "Colloqualisms\n\nDegens\n“Degen” (short for “degenerate”) in crypto/Web3 culture refers to aggressive or risk-seeking participants in cryptocurrency markets and DeFi (decentralized finance) protocols. The term originated from gambling culture but has been embraced by the crypto community as a semi-ironic badge of honor.\n\nTrading Behavior: Degens are known for taking high-risk positions, often using significant leverage, and engaging in yield farming, liquidity mining, and other complex DeFi strategies.\nCultural Identity: Unlike traditional finance’s negative connotation of “degenerate gambling,” the crypto community has reclaimed “degen” as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.\nTechnical Sophistication: Despite the seeming recklessness implied by the term, many “degens” are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They’re often early adopters of new protocols and technologies.\nCommunity Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.\n\n\n\nIntelligence\nThe “smol brain” to “gigabrain” progression in crypto represents the journey of understanding that many people go through in their crypto experience.\n\nSmol Brain\n\nBuys only the top trending coins on social media\n“Number go up” mentality\nPanic sells during dips\nFalls for obvious scams and rugpulls\nBelieves every “to the moon” prediction\nUses 100x leverage without understanding the risks\nThinks technical analysis is just drawing random lines\n\n\n\nMedium Brain\n\nLearns about market cycles\nStarts understanding blockchain basics\nDiscovers DeFi and yield farming\nGets into complex trading strategies\nOver-analyzes every chart pattern\nTries to time the market perfectly\nThinks they can outsmart the whales\n\n\n\nBig Brain\n\nUnderstands tokenomics\nReads whitepapers before investing\nUses risk management strategies\nRecognizes market manipulation tactics\nDevelops a long-term investment thesis\nLearns from past market cycles\nStudies blockchain technology deeply\n\n\n\nGigabrain\n\nReturns to simple but effective strategies\n“Time in the market beats timing the market”\nFocuses on fundamentals over hype\nUses basic DCA (Dollar Cost Averaging) strategy\nUnderstands that simplicity often wins\nDoesn’t chase every new trend\nHas learned emotional control\nCan explain complex concepts simply\nRecognizes that they can’t predict short-term movements\n\n\n\n\nCrypto characters\n\n\n\nWojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It’s often paired with the “feels guy” emotion variations, particularly during market crashes.\nSoyjak: a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines “soy” (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with “Wojak.”\nCoomer: a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines “soy” (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with “Wojak.”\nFUD (Fear, Uncertainty, Doubt): While not strictly a meme, it’s become memefied in crypto culture. Any negative news or criticism is often dismissed as “FUD” by cryptocurrency enthusiasts, sometimes ironically.\n“When Lambo?”: This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It’s both used seriously by newcomers and ironically by veterans.\nDiamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. “Diamond hands” refers to holders who don’t sell despite market pressure, while “paper hands” sell at the first sign of trouble.\n“This is good for Bitcoin”: Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin’s adoption or price.\nBogdanoff Twins (“Dump It”): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.\n“Funds are SAFU”: From a Binance CEO video where he mispronounced “safe,” this became a way to reassure (often ironically) about exchange security. The “Have Fun Staying Poor” (HFSP): Used by crypto enthusiasts towards skeptics, though it’s increasingly used ironically, especially during bear markets. The DCA (Dollar Cost Average) Wojak: A calmer, more zen version of Wojak who simply buys regularly regardless of price, representing a more measured appr",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  },
+  {
+    "objectID": "content/essentials/terms.html#acronyms",
+    "href": "content/essentials/terms.html#acronyms",
+    "title": "Crypto Terms",
+    "section": "Acronyms",
+    "text": "Acronyms\nIBRL - Increase Bandwidth, Reduce Latency\n\n\n\n\nButerin, Vitalik. 2013. “Ethereum White Paper: A Next Generation Smart Contract & Decentralized Application Platform.” https://ethereum.org/en/whitepaper/.\n\n\n———. 2021. “An Incomplete Guide to Rollups.” https://vitalik.ca/general/2021/01/05/rollup.html.\n\n\nCharbonneau, Jon. 2023. “The Complete Guide to Rollups.” Research Report. Delphi Digital. https://members.delphidigital.io/reports/the-complete-guide-to-rollups.\n\n\nGluchowski, Alex. 2019. “zkRollup Vs. Optimistic Rollup: Technical Comparison.” Matter Labs. https://medium.com/matter-labs/zkrollup-vs-optimistic-rollup-deep-dive-ea141e71e075.\n\n\nNakamoto, Satoshi. 2008. “Bitcoin: A Peer-to-Peer Electronic Cash System.” https://bitcoin.org/bitcoin.pdf.\n\n\nPoon, Joseph, and Vitalik Buterin. 2017. “Plasma: Scalable Autonomous Smart Contracts.” https://plasma.io/plasma-whitepaper.pdf.\n\n\nPoon, Joseph, and Thaddeus Dryja. 2016. “The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments.” https://lightning.network/lightning-network-paper.pdf.\n\n\nWood, Gavin. 2014. “Ethereum: A Secure Decentralised Generalised Transaction Ledger.” Ethereum Foundation. https://ethereum.github.io/yellowpaper/paper.pdf.",
+    "crumbs": [
+      "Web3 Essentials",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Crypto Terms</span>"
+    ]
+  }
+]
