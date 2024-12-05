@@ -23,3 +23,6 @@ Be good to focus on the most widely spoken languages first. So
 * Russian
 * Portuguese
 * Indonesian
+
+### Data Dynamism 
+I'd like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price. 

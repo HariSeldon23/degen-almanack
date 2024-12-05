@@ -14,7 +14,7 @@ Wallets have the following major attributes:
 | [Ledger](https://www.ledger.com/) | Hardware | Desktop, Mobile | Account (EVM), UTXO, Specialized Account, Resource, Actor |
 | [Trezor](https://trezor.io/) | Hardware | Desktop, Browser | Account (EVM), UTXO, Specialized Account |
 | [MetaMask](https://metamask.io/) | Software | Browser Extension, Mobile | Account (EVM) |
-| [Phantom](https://phantom.app/) | Software | Browser Extension, Mobile | Capability (Solana), Account (EVM) |
+| [Phantom](https://phantom.app/) | Software | Browser Extension, Mobile | Capability (Solana), Account (EVM), UTXO (Bitcoin) |
 | [Safe](https://app.safe.global/welcome) | Software | Browser (Web App) | Account (EVM) |
 | [TrustWallet](https://trustwallet.com/) | Software | Mobile | Account (EVM), UTXO, Specialized Account |
 | [Rainbow](https://rainbow.me/en/) | Software | Mobile | Account (EVM) |
@@ -22,7 +22,113 @@ Wallets have the following major attributes:
 : Wallets {.striped .hover}
 
 ## Analysis Tools
-### API
+There are numerous ways to analyze blockchains. 
+
+* On chain analysis
+* Data Professional Tools
+    * Dashboards and Charting
+    * SQL Playgrounds
+    * API
+
+On chain analysis tools allow you to analyze data on chain through a User Interface
+
+### On Chain Analysis
+#### Portfolio Trackers
+We break down Portfolio Trackers into manual versus automated.
+
+Manual are recommended for newcomers, but they quickly fall down. They only handle Coins and Tokens and not your DeFi positions, such as Liquidity Pools, Money Market positions etc. They have a place and are valuable but Automated Portfolio Trackers are far superior and only getting better.
+
+For Manual there are:
+
+* [CoinGecko](https://www.coingecko.com/)
+* [CoinMarketCap](https://coinmarketcap.com/)
+
+For Automated, we need to break it down into single vs multiple [Application Model](../technical/blockchains.qmd#application-models) support.
+
+| Portfolio Tracker | Supported Models | Key Features | Main Chains | Notable Aspects |
+|------------------|------------------|--------------|-------------|-----------------|
+| [DeBank](https://debank.com/) | Account (EVM) | - DeFi protocol tracking<br>- Wallet analytics<br>- Cross-chain support | Ethereum, BSC, Polygon, Avalanche | Strong focus on DeFi positions and yields |
+| [Zapper](https://zapper.xyz/) | Account (EVM) | - NFT tracking<br>- DeFi dashboard<br>- Portfolio history | Ethereum, Optimism, Arbitrum, Polygon | Excellent UI/UX and bridging features |
+| [Nansen Portfolio](https://app.nansen.ai/) | Account (EVM) | - Yield farming focus<br>- TVL tracking<br>- ROI calculator | All major EVM chains | Specializes in yield optimization |
+| [DappRadar](https://dappradar.com/hub/wallet/) | Multiple Models | - NFT tracking<br>- DApp analytics<br>- Cross-chain support | Most major blockchains | Comprehensive ecosystem analytics |
+| [Step Finance](https://app.step.finance/) | Capability Model | - Solana ecosystem<br>- Yield tracking<br>- NFT support | Solana | Native Solana portfolio manager |
+| [Pulsar Finance](https://app.pulsar.finance/portfolio) | Account (EVM), UTXO, Capability Model, Cosmos | Support for the most chains. But values are often wrong |
+
+: Portfolio-Tracker {.striped .hover}
+
+I recommend newcomers to use Pulsar. As you learn about DeFi, you'll be chasing yield on numerous chains and will need something with the comprehensive coverage that only Pulsar provides. If you're only on EVM, then I recommend using Debank.
+
+#### Explorers
+Explorers allow you to explore transactions and on chain activity. 
+
+##### Pure EVM 
+Etherscan is the most widely used Explorer and has versions on all the major EVM Chains. We'll only focus on their Explorers for EVM chains in perpetuity or until something better comes along. 
+
+I recommend using [Blockscan](https://blockscan.com/) which is from the same company and consolidates all their supported chains into a consolidated UI. It makes sense to use Blockscan for surface level analysis. But as soon as you want to delve into the code, you'll need to use one of their Explorers specializing on that particular chain. 
+
+They are:
+
+* Etherscan - Ethereum
+* ApeScan - Ape
+* Arbiscan - Arbitrum One
+* Arbitrum Nov
+* BaseScan - Base
+* BlastScan - Blast Chain
+* BscScan - BNB 
+* BttcScan - BTTC
+* CeloScan - Celo
+* CronoScan - Cronos
+* FraxScan - Frax
+* FTMScan - Fantom
+* GnosisScan - Gnosis
+* LineaScan - Linea
+* MantleScan - Mantle
+* Moonbeam - Moonbeam
+* Moonriver - Moonriver
+* opBNB - opBNB
+* Optimism 
+* Polygon zkEVM
+* PolygonScan
+* ScrollScan
+* SnowScan - Avalanche C Chain
+* SophScan - Sophon
+* TakioScan - Taiko
+* WemixScan - Wemix
+* World - WorldCoin
+* XaiScan 
+* XdcScan
+* zkSync
+
+###### Exploring Solidity
+
+We'll use [Etherscan](https://etherscan.io/) to explore the EVM
+
+We'll delve into how to use Etherscan to analyze:
+
+* Addresses 
+* Contract
+
+For Addresses we'll explore [Vitalik's Account](https://etherscan.io/address/0xab5801a7d398351b8be11c439e05c5b3259aec9b)
+
+::: {.callout-note}
+<blockquote class="twitter-tweet">
+<a href="https://twitter.com/VitalikButerin/status/1050126908589887488"></a> 
+</blockquote>
+:::
+
+Then for the Contract we'll explore [Tether's USDT](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7)
+
+The first thing you need to know is that Solidity is a compiled language and as such for us to view the code in the Explorer, we need the developer to upload their code and have it verified against the bytecode. Don't sweat too much about the details, what you really want is to ensure that in the Etherscan explorer is the contract is verified. 
+
+* Viewing the Solidity version
+* Viewing the "standard" libraries the code inherits
+
+#### Defillama
+Defillama will become one of the most important tools you'll use in your degen journey. Give the team some love. 
+
+### Data Professional Tools
+
+#### API
 We'll start off by using [Ortege](https://ortege.ai). For full transparency I own and founded Ortege. This Almanack can and will use data from any trusted source. But in the early days while we require data specifically tailored to our requirements, we will be using Ortege. Anyone contributing however can integrate with any other reputable data sources. 
 
 We break down API's into the following categories:
@@ -31,20 +137,8 @@ We break down API's into the following categories:
 * SQL based. These API's allow you to write SQL against their Datasets. Examples include [Dune](https://dune.com/) and [Flipside](https://flipsidecrypto.xyz/home/). Much like the RPC based API's, these will all have a different API structure. 
 * Semantic Layer. Ortege is the first, that I'm aware of, API that aims to abstract away the blockchains implementation away from the developer and provide a uniform API that is consistent across blockchains.
 
-#### Ortege
+##### Ortege
 Coming Soon. 
-
-
-### Explorers
-#### Pure EVM 
-Etherscan is the most widely used and has versions on all the major EVM Chains. 
-
-**Exploring Solidity**
-
-* Viewing the Solidity version
-* Viewing the "standard" libraries the code inherits
-
-### Defillama
 
 ## Security Tools
 ### OpenZeppelin 

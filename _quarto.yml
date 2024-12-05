@@ -25,6 +25,7 @@ book:
     - ./content/technical/blockchains.qmd
     - ./content/technical/dapps.qmd
     - ./content/technical/mev.qmd
+    - ./content/technical/languages.qmd
     part: Technical
   - chapters:
     - ./content/social/governance.qmd
