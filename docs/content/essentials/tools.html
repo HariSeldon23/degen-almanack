@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-12-04">
+<meta name="dcterms.date" content="2024-12-05">
 
 <title>Tools – Trollip’s Degen Almanack</title>
 <style>
@@ -272,6 +272,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">MEV</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/languages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Languages</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -286,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/social/governance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Governance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Governance</span></span></a>
   </div>
 </li>
       </ul>
@@ -294,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../contributing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -316,9 +322,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#wallets" id="toc-wallets" class="nav-link active" data-scroll-target="#wallets">Wallets</a></li>
   <li><a href="#analysis-tools" id="toc-analysis-tools" class="nav-link" data-scroll-target="#analysis-tools">Analysis Tools</a>
   <ul class="collapse">
-  <li><a href="#api" id="toc-api" class="nav-link" data-scroll-target="#api">API</a></li>
-  <li><a href="#explorers" id="toc-explorers" class="nav-link" data-scroll-target="#explorers">Explorers</a></li>
-  <li><a href="#defillama" id="toc-defillama" class="nav-link" data-scroll-target="#defillama">Defillama</a></li>
+  <li><a href="#on-chain-analysis" id="toc-on-chain-analysis" class="nav-link" data-scroll-target="#on-chain-analysis">On Chain Analysis</a></li>
+  <li><a href="#data-professional-tools" id="toc-data-professional-tools" class="nav-link" data-scroll-target="#data-professional-tools">Data Professional Tools</a></li>
   </ul></li>
   <li><a href="#security-tools" id="toc-security-tools" class="nav-link" data-scroll-target="#security-tools">Security Tools</a>
   <ul class="collapse">
@@ -349,7 +354,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 4, 2024</p>
+      <p class="date">December 5, 2024</p>
     </div>
   </div>
   
@@ -403,7 +408,7 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="https://phantom.app/">Phantom</a></td>
 <td>Software</td>
 <td>Browser Extension, Mobile</td>
-<td>Capability (Solana), Account (EVM)</td>
+<td>Capability (Solana), Account (EVM), UTXO (Bitcoin)</td>
 </tr>
 <tr class="odd">
 <td><a href="https://app.safe.global/welcome">Safe</a></td>
@@ -428,8 +433,169 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="analysis-tools" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-tools">Analysis Tools</h2>
-<section id="api" class="level3">
-<h3 class="anchored" data-anchor-id="api">API</h3>
+<p>There are numerous ways to analyze blockchains.</p>
+<ul>
+<li>On chain analysis</li>
+<li>Data Professional Tools
+<ul>
+<li>Dashboards and Charting</li>
+<li>SQL Playgrounds</li>
+<li>API</li>
+</ul></li>
+</ul>
+<p>On chain analysis tools allow you to analyze data on chain through a User Interface</p>
+<section id="on-chain-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="on-chain-analysis">On Chain Analysis</h3>
+<section id="portfolio-trackers" class="level4">
+<h4 class="anchored" data-anchor-id="portfolio-trackers">Portfolio Trackers</h4>
+<p>We break down Portfolio Trackers into manual versus automated.</p>
+<p>Manual are recommended for newcomers, but they quickly fall down. They only handle Coins and Tokens and not your DeFi positions, such as Liquidity Pools, Money Market positions etc. They have a place and are valuable but Automated Portfolio Trackers are far superior and only getting better.</p>
+<p>For Manual there are:</p>
+<ul>
+<li><a href="https://www.coingecko.com/">CoinGecko</a></li>
+<li><a href="https://coinmarketcap.com/">CoinMarketCap</a></li>
+</ul>
+<p>For Automated, we need to break it down into single vs multiple <a href="../../content/technical/blockchains.html#application-models">Application Model</a> support.</p>
+<table class="table-striped table-hover caption-top table">
+<caption>Portfolio-Tracker</caption>
+<thead>
+<tr class="header">
+<th>Portfolio Tracker</th>
+<th>Supported Models</th>
+<th>Key Features</th>
+<th>Main Chains</th>
+<th>Notable Aspects</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://debank.com/">DeBank</a></td>
+<td>Account (EVM)</td>
+<td>- DeFi protocol tracking<br>- Wallet analytics<br>- Cross-chain support</td>
+<td>Ethereum, BSC, Polygon, Avalanche</td>
+<td>Strong focus on DeFi positions and yields</td>
+</tr>
+<tr class="even">
+<td><a href="https://zapper.xyz/">Zapper</a></td>
+<td>Account (EVM)</td>
+<td>- NFT tracking<br>- DeFi dashboard<br>- Portfolio history</td>
+<td>Ethereum, Optimism, Arbitrum, Polygon</td>
+<td>Excellent UI/UX and bridging features</td>
+</tr>
+<tr class="odd">
+<td><a href="https://app.nansen.ai/">Nansen Portfolio</a></td>
+<td>Account (EVM)</td>
+<td>- Yield farming focus<br>- TVL tracking<br>- ROI calculator</td>
+<td>All major EVM chains</td>
+<td>Specializes in yield optimization</td>
+</tr>
+<tr class="even">
+<td><a href="https://dappradar.com/hub/wallet/">DappRadar</a></td>
+<td>Multiple Models</td>
+<td>- NFT tracking<br>- DApp analytics<br>- Cross-chain support</td>
+<td>Most major blockchains</td>
+<td>Comprehensive ecosystem analytics</td>
+</tr>
+<tr class="odd">
+<td><a href="https://app.step.finance/">Step Finance</a></td>
+<td>Capability Model</td>
+<td>- Solana ecosystem<br>- Yield tracking<br>- NFT support</td>
+<td>Solana</td>
+<td>Native Solana portfolio manager</td>
+</tr>
+<tr class="even">
+<td><a href="https://app.pulsar.finance/portfolio">Pulsar Finance</a></td>
+<td>Account (EVM), UTXO, Capability Model, Cosmos</td>
+<td>Support for the most chains. But values are often wrong</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>I recommend newcomers to use Pulsar. As you learn about DeFi, you’ll be chasing yield on numerous chains and will need something with the comprehensive coverage that only Pulsar provides. If you’re only on EVM, then I recommend using Debank.</p>
+</section>
+<section id="explorers" class="level4">
+<h4 class="anchored" data-anchor-id="explorers">Explorers</h4>
+<p>Explorers allow you to explore transactions and on chain activity.</p>
+<section id="pure-evm" class="level5">
+<h5 class="anchored" data-anchor-id="pure-evm">Pure EVM</h5>
+<p>Etherscan is the most widely used Explorer and has versions on all the major EVM Chains. We’ll only focus on their Explorers for EVM chains in perpetuity or until something better comes along.</p>
+<p>I recommend using <a href="https://blockscan.com/">Blockscan</a> which is from the same company and consolidates all their supported chains into a consolidated UI. It makes sense to use Blockscan for surface level analysis. But as soon as you want to delve into the code, you’ll need to use one of their Explorers specializing on that particular chain.</p>
+<p>They are:</p>
+<ul>
+<li>Etherscan - Ethereum</li>
+<li>ApeScan - Ape</li>
+<li>Arbiscan - Arbitrum One</li>
+<li>Arbitrum Nov</li>
+<li>BaseScan - Base</li>
+<li>BlastScan - Blast Chain</li>
+<li>BscScan - BNB</li>
+<li>BttcScan - BTTC</li>
+<li>CeloScan - Celo</li>
+<li>CronoScan - Cronos</li>
+<li>FraxScan - Frax</li>
+<li>FTMScan - Fantom</li>
+<li>GnosisScan - Gnosis</li>
+<li>LineaScan - Linea</li>
+<li>MantleScan - Mantle</li>
+<li>Moonbeam - Moonbeam</li>
+<li>Moonriver - Moonriver</li>
+<li>opBNB - opBNB</li>
+<li>Optimism</li>
+<li>Polygon zkEVM</li>
+<li>PolygonScan</li>
+<li>ScrollScan</li>
+<li>SnowScan - Avalanche C Chain</li>
+<li>SophScan - Sophon</li>
+<li>TakioScan - Taiko</li>
+<li>WemixScan - Wemix</li>
+<li>World - WorldCoin</li>
+<li>XaiScan</li>
+<li>XdcScan</li>
+<li>zkSync</li>
+</ul>
+<section id="exploring-solidity" class="level6">
+<h6 class="anchored" data-anchor-id="exploring-solidity">Exploring Solidity</h6>
+<p>We’ll use <a href="https://etherscan.io/">Etherscan</a> to explore the EVM</p>
+<p>We’ll delve into how to use Etherscan to analyze:</p>
+<ul>
+<li>Addresses</li>
+<li>Contract</li>
+</ul>
+<p>For Addresses we’ll explore <a href="https://etherscan.io/address/0xab5801a7d398351b8be11c439e05c5b3259aec9b">Vitalik’s Account</a></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="twitter-tweet blockquote">
+<a href="https://twitter.com/VitalikButerin/status/1050126908589887488"></a>
+</blockquote>
+</div>
+</div>
+<p>Then for the Contract we’ll explore <a href="https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7">Tether’s USDT</a></p>
+<p>The first thing you need to know is that Solidity is a compiled language and as such for us to view the code in the Explorer, we need the developer to upload their code and have it verified against the bytecode. Don’t sweat too much about the details, what you really want is to ensure that in the Etherscan explorer is the contract is verified.</p>
+<ul>
+<li>Viewing the Solidity version</li>
+<li>Viewing the “standard” libraries the code inherits</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="defillama" class="level4">
+<h4 class="anchored" data-anchor-id="defillama">Defillama</h4>
+<p>Defillama will become one of the most important tools you’ll use in your degen journey. Give the team some love.</p>
+</section>
+</section>
+<section id="data-professional-tools" class="level3">
+<h3 class="anchored" data-anchor-id="data-professional-tools">Data Professional Tools</h3>
+<section id="api" class="level4">
+<h4 class="anchored" data-anchor-id="api">API</h4>
 <p>We’ll start off by using <a href="https://ortege.ai">Ortege</a>. For full transparency I own and founded Ortege. This Almanack can and will use data from any trusted source. But in the early days while we require data specifically tailored to our requirements, we will be using Ortege. Anyone contributing however can integrate with any other reputable data sources.</p>
 <p>We break down API’s into the following categories:</p>
 <ul>
@@ -437,25 +603,11 @@ ul.task-list li input[type="checkbox"] {
 <li>SQL based. These API’s allow you to write SQL against their Datasets. Examples include <a href="https://dune.com/">Dune</a> and <a href="https://flipsidecrypto.xyz/home/">Flipside</a>. Much like the RPC based API’s, these will all have a different API structure.</li>
 <li>Semantic Layer. Ortege is the first, that I’m aware of, API that aims to abstract away the blockchains implementation away from the developer and provide a uniform API that is consistent across blockchains.</li>
 </ul>
-<section id="ortege" class="level4">
-<h4 class="anchored" data-anchor-id="ortege">Ortege</h4>
+<section id="ortege" class="level5">
+<h5 class="anchored" data-anchor-id="ortege">Ortege</h5>
 <p>Coming Soon.</p>
 </section>
 </section>
-<section id="explorers" class="level3">
-<h3 class="anchored" data-anchor-id="explorers">Explorers</h3>
-<section id="pure-evm" class="level4">
-<h4 class="anchored" data-anchor-id="pure-evm">Pure EVM</h4>
-<p>Etherscan is the most widely used and has versions on all the major EVM Chains.</p>
-<p><strong>Exploring Solidity</strong></p>
-<ul>
-<li>Viewing the Solidity version</li>
-<li>Viewing the “standard” libraries the code inherits</li>
-</ul>
-</section>
-</section>
-<section id="defillama" class="level3">
-<h3 class="anchored" data-anchor-id="defillama">Defillama</h3>
 </section>
 </section>
 <section id="security-tools" class="level2">
