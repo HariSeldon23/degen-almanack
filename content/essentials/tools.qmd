@@ -1,4 +1,5 @@
 # Tools 
+*Last updated: December 6, 2024*
 
 ## Wallets
 A wallet is the primary way you interact with a [Blockchain](../technical/blockchains.qmd). 
