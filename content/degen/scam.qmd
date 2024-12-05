@@ -44,6 +44,9 @@ This is why keeping your private key safe is the most important thing you can do
 
 
 ### Gas Fee misunderstandings
+To be truly proficient with Gas you should understand deeply [Fee Markets](../technical/blockchains.qmd#fee-markets)
+
+Else this could be you...
 
 ::: {.callout-note}
 <blockquote class="twitter-tweet">
@@ -57,11 +60,6 @@ This is why keeping your private key safe is the most important thing you can do
 </blockquote>
 :::
 
-::: {.callout-note}
-<blockquote class="twitter-tweet">
-<a href="https://twitter.com/DreadBong0/status/1364171390866358272"></a>
-</blockquote>
-:::
 
 ### Impermanent Loss {#IL}
 **Spoiler alert** It's probably permanent
@@ -82,6 +80,7 @@ This is one of the reasons [Name Services](../technical/dapps.qmd#name-services)
 * OneCoin. Ruja Ignatova (the "CryptoQueen") got away with $4 billion. 
 
 Common threads of social engineering scams
+
 * Authority Exploitation
 * Emotional Manipulation
 * Technical Obscurity
@@ -90,6 +89,7 @@ Common threads of social engineering scams
 
 **Authority Exploitation**
 While no mean authoritive, these are some of the biggest dodgy celebrities:
+
 * Kim Kardashian
 * Floyd Mayweather
 * DJ Khaled

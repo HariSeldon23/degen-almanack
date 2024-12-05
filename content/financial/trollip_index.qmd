@@ -1,5 +1,11 @@
 # Trollip's Index
 ## Bitcoin
+
+### cbBTC
+Coinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase's custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase's reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.
+
+The technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase's layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase's custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base's growing DeFi ecosystem while maintaining exposure to Bitcoin's value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC's key differentiator is its direct integration with Coinbase's established infrastructure and its focus on institutional-grade security and compliance measures.
+
 ## Solana
 ## Monero
 ## Optimism

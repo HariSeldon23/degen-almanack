@@ -8,3 +8,13 @@ Currently the best way to do this is via:
 
 * [Bisq](https://bisq.network/)
 * [HODL HODL](https://hodlhodl.com/)
+
+Bisq has terrible rates, so I recommend Hodl Hodl. Else another alternative that will work just as well is:
+
+* Create two new accounts on an Ethereum Layer 2. 1 that you'll throw away and one that will be secure
+* Purchase USDC or USDT from a CEX
+* Transfer the stable coins to the throwaway account
+* Download [Railgun Client](https://www.railway.xyz/#download)
+* Create a Shielded Address
+* Transfer it in common increments similar to how Tornado Cash to the clean wallet at random intervals
+
