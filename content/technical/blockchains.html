@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-12-05">
+
+<title>Blockchains – Trollip’s Degen Almanack</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../content/technical/dapps.html" rel="next">
+<link href="../../content/technical/cryptography.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-ecba56d4e9f607defad91b04bf549305.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://platform.twitter.com/widgets.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/cryptography.html">Technical</a></li><li class="breadcrumb-item"><a href="../../content/technical/blockchains.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Blockchains</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Trollip’s Degen Almanack</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/HariSeldon23/degen-almanack" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Web3 Essentials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/essentials/terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Crypto Terms</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/essentials/tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/essentials/memes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Memes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/essentials/icons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Icons</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Become a Degen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/degen/scam.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Don’t lose your money</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/degen/starter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Make some money</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/degen/giga.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Gigabrain Degen</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Financial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/tokens.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Digital Assets</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/ratings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ratings</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/trollip_index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Trollip’s Index</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Technical</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/cryptography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cryptography</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/blockchains.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Blockchains</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/dapps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">dApps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/mev.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">MEV</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/languages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Languages</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Social</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/social/governance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Governance</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../contributing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sovereign-networks" id="toc-sovereign-networks" class="nav-link active" data-scroll-target="#sovereign-networks">Sovereign Networks</a></li>
+  <li><a href="#layer-2s" id="toc-layer-2s" class="nav-link" data-scroll-target="#layer-2s">Layer 2’s</a></li>
+  <li><a href="#consensus-mechanisms" id="toc-consensus-mechanisms" class="nav-link" data-scroll-target="#consensus-mechanisms">Consensus Mechanisms</a></li>
+  <li><a href="#application-models" id="toc-application-models" class="nav-link" data-scroll-target="#application-models">Application Models</a>
+  <ul class="collapse">
+  <li><a href="#utxo" id="toc-utxo" class="nav-link" data-scroll-target="#utxo">UTXO</a></li>
+  <li><a href="#account-model" id="toc-account-model" class="nav-link" data-scroll-target="#account-model">Account Model</a></li>
+  <li><a href="#object-model" id="toc-object-model" class="nav-link" data-scroll-target="#object-model">Object Model</a></li>
+  <li><a href="#resource-model" id="toc-resource-model" class="nav-link" data-scroll-target="#resource-model">Resource Model</a></li>
+  <li><a href="#capability-model" id="toc-capability-model" class="nav-link" data-scroll-target="#capability-model">Capability Model</a></li>
+  <li><a href="#cell-model" id="toc-cell-model" class="nav-link" data-scroll-target="#cell-model">Cell Model</a></li>
+  <li><a href="#actor-model" id="toc-actor-model" class="nav-link" data-scroll-target="#actor-model">Actor Model</a></li>
+  </ul></li>
+  <li><a href="#communication-protocols" id="toc-communication-protocols" class="nav-link" data-scroll-target="#communication-protocols">Communication Protocols</a></li>
+  <li><a href="#fee-markets" id="toc-fee-markets" class="nav-link" data-scroll-target="#fee-markets">Fee Markets</a>
+  <ul class="collapse">
+  <li><a href="#block-space-markets" id="toc-block-space-markets" class="nav-link" data-scroll-target="#block-space-markets">Block Space Markets</a></li>
+  <li><a href="#resource-markets" id="toc-resource-markets" class="nav-link" data-scroll-target="#resource-markets">Resource Markets</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data Availability</a></li>
+  <li><a href="#data-availability-market" id="toc-data-availability-market" class="nav-link" data-scroll-target="#data-availability-market">Data Availability market</a></li>
+  </ul></li>
+  <li><a href="#network-change-management" id="toc-network-change-management" class="nav-link" data-scroll-target="#network-change-management">Network Change Management</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  </ul></li>
+  <li><a href="#clients" id="toc-clients" class="nav-link" data-scroll-target="#clients">Clients</a></li>
+  <li><a href="#bridges" id="toc-bridges" class="nav-link" data-scroll-target="#bridges">Bridges</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/cryptography.html">Technical</a></li><li class="breadcrumb-item"><a href="../../content/technical/blockchains.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Blockchains</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Blockchains</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 5, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>We would prefer to use the term Decentralized Incentive Network instead of blockchain. But we also want to align on common nomenclature within the industry, so we’ll stick with Blockchain for now.</p>
+<p>The point of blockchains:</p>
+<ul>
+<li>Censorship resistance</li>
+<li>Deterministic State Transition (Mempool creates interesting nuances and complexity here)</li>
+<li>Credible neutrality</li>
+<li>Trustless coordination at scale</li>
+<li>Asset digitization and ownership</li>
+</ul>
+<p>Censorship resistance is indeed crucial - it enables truly permissionless systems where no entity can prevent valid transactions. However, there are several other compelling candidates for blockchain’s primary purpose: One strong contender is deterministic state transition. Think about how traditional databases or financial systems might have ambiguity about the exact sequence or timing of transactions, especially across different locations or institutions. Blockchain provides absolute clarity about state changes - there’s no ambiguity about which transaction came first or what the exact state was at any given moment. This property enables complex financial systems and smart contracts to operate with complete predictability. Another fundamental purpose could be creating credible neutrality in computational systems. This goes beyond just censorship resistance - it’s about creating systems where the rules are explicit, unchangeable without consensus, and apply equally to all participants. Traditional systems often have hidden biases or special privileges for certain users, while blockchain systems enforce their rules uniformly through code. We could also argue that the primary purpose is enabling trustless coordination at scale. Before blockchain, coordinating economic activity among untrusting parties required trusted intermediaries like banks or governments. Blockchain enables direct peer-to-peer coordination without these intermediaries, potentially reducing costs and increasing efficiency. Asset digitization and ownership might be another contender. Blockchain enables digital scarcity and verifiable ownership in ways that weren’t possible before. This property enables everything from cryptocurrencies to NFTs to tokenized real-world assets.</p>
+<p>We won’t be taking any idealogical approach to the point of blockchains but rather applying scores to DIN’s and then comparing that to how the market values them.</p>
+<p>A decentralized incentive network with state consensus</p>
+<p>I’ve tried to simplify our definition as much as possible and even still it’s verbose. Read that sentence to 99% of the world and I’ll they’ll give you a quizzical look and move onto the section about meme coins. There’s a lesson there. A lesson the technical luminaries in this space ignore at their peril. Accessibility matters.</p>
+<p>Let’s break down each component of our definition.</p>
+<p>Decentralized. This is how many Nodes participate. Centralized means 1. Therefore anything more than 1 is decentralized.</p>
+<p>Network. This loosely means the participants computers/machines communicate via a communication method.</p>
+<p>State Consensus. The network will record state and all nodes will agree about the state via consensus.</p>
+<p>We don’t need to worry too much about consensus yet, but you just need to know that the nodes must agree on the state. For example if Bob sends Alice 10 BTC. Everyone on the network must come to an agreement that Bob did indeed send Alice 10 BTC. Another important characteristic is that even if everyone agrees today, in the future that can’t be disputed or changed. This is another important category called censorship resistance. We’ll get to it.</p>
+<p>Dependent Networks</p>
+<p>A sovereign chain can be defined as a network that maintains complete independence in its settlement process, requiring no external chain to validate or guarantee its state transitions. This independence is fundamental to the concept of sovereignty in blockchain networks.</p>
+<p>This section should start discussing why the need arose for dependent networks. Specifically Ethereum struggling with scale. Due to the trilemna: decentralization security scalability</p>
+<p>Let’s talk about scaling strategies monolithic Bigger blocks Faster blocks Higher minimum requirements for nodes Consensus optimizations modular Execution - The current crop of L2’s Data availability - Storing and accessing blockchain data Celestia Consensus - Agreeing on the state of the network Settlement - Finalizing transactions and providing security guarantees. Ethereum and Bitcoin in the current Layer craze</p>
+<section id="sovereign-networks" class="level2">
+<h2 class="anchored" data-anchor-id="sovereign-networks">Sovereign Networks</h2>
+<p>Pure Value Networks Pure value networks stick to the fundamental purpose of moving and storing value, avoiding the additional complexity that comes with being a platform for applications or other services.</p>
+<p>What makes these networks “pure value” is what they don’t include: They don’t support complex smart contracts They don’t host decentralized applications They don’t provide programmable functionality beyond basic value transfer They don’t serve as platforms for other tokens or applications</p>
+<p>Application Chains Application Chains represent networks that go beyond pure value transfer to support various types of applications. They’re divided into three main categories: Hubs, Specialized, and Generalized chains.</p>
+<p>Hub Application Chains serve as central connection points in the blockchain ecosystem.</p>
+<p>Specialized Application Chains focus on specific use cases or industries.</p>
+<p>Generalized Application Chains aim to support a wide range of applications but differ from hubs in that they’re not necessarily trying to be central connection points.</p>
+<p>The key distinction between these categories lies in their approach to applications: - Hubs prioritize becoming central platforms that other networks depend on - Specialized chains optimize everything for specific use cases - Generalized chains provide broad functionality but focus on being self-contained ecosystems</p>
+</section>
+<section id="layer-2s" class="level2">
+<h2 class="anchored" data-anchor-id="layer-2s">Layer 2’s</h2>
+<p>We break these down into:</p>
+<ul>
+<li>Rollups
+<ul>
+<li>Optimistic</li>
+<li>ZK</li>
+</ul></li>
+<li>Validiums</li>
+<li>Plasma</li>
+<li>Sidechains</li>
+</ul>
+<p>So Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling.</p>
+<p>So we need to talk about the theory of Layers in Blockchain</p>
+<p>That’s why L2’s became a major part of the roadmap. How does the scalability limitation affect the network. Congestion and high gas fee’s. So people don’t interact on the chain and it hits a ceiling. So logically we should start any discussion with transaction fee’s, as that’s the direct result of the scalability failure and the main reason users use L2’s. Besides yield opportunities.</p>
+<p>So we should first consider the Fee Markets on Ethereum and Bitcoin which are the two major chains looking to scale with L2’s. There is a lot of debate and a lot of misinformation around this topic.</p>
+<p>Dependent networks can really be divided into chains: External DIN required to validate state transitions External DIN required to guarantee state transitions</p>
+<p>We’ll define a framework for how we define a Dependent Network. There are few things we look at, in terms of priority: censorship resistance. Polygon zkEVM sequencer can censure, but you can go through the contract directly on Ethereum theoretically if censorship occurs. Same thing for Arbitrum. Although this is a very weak guarantee due to the complexity for regular users. For Stacks, it’s more censorship resistant that the other two. Also if I were to interact directly with the smart contract on Ethereum, that makes the L2’s pointless. Why do I need them if not to deal with congestion and high gas. dispute resolution. I believe all chains need to hard fork. Potentially not Movement due to Move’s resource model. None of the chains will automatically hard fork if a dispute is found. settlement. So the base chain must validate and guarantee state transitions on the dependent chain. This is kinda stupid. It’s guaranteeing the state transitions but makes no attempt to resolve things like censorship resistance. finality of settlement. Optimistic 7 days, zk 30 minutes, Stacks 16 hours economic security model inheritance - this is actually pointless as it just means the state transitions match the rules. Nothing about censorship resistance.</p>
+<p>So my qualification of dependent networks means that they must inherit the censorship resistance of the base chain, settlement must be validated and guaranteed by the base chain, dispute resolution must be automatic and/or decentralized. else the chain can just fork.</p>
+<p>Settlement Types In order of strength Cryptographically enforced settlement Validity proofs Fraud proof systems Checkpoint systems</p>
+<p>Core Infrastructure Components Network Security Attack Vectors Network Level: Eclipse attacks, BGP hijacking, DDoS attacks Protocol Level: Double spending, nothing-at-stake, long-range attacks Application Level: Smart contract vulnerabilities, oracle manipulation Defense Mechanisms Network Diversity: Geographic distribution, client diversity, network topology Economic Security: Slashing conditions, required stake amounts, timelock mechanisms Operational Security: Key management, upgrade processes, emergency responses Monitoring and Detection Network Health Monitoring: Peer count, block propagation, chain quality Threat Detection: Fork monitoring, unusual transaction patterns, validator behavior Incident Response: Alert systems, mitigation procedures, recovery processes Network Governance Governance Models On-Chain: Direct token voting, delegated voting, quadratic voting Off-Chain: Foundation-led, core team decisions, community forums Hybrid: Combined on-chain execution with off-chain discussion Decision Domains Protocol Parameters: Block size, gas limits, fee structures Treasury Management: Fund allocation, grant distribution, development funding Protocol Upgrades: Hard forks, soft forks, emergency changes Participation Mechanisms Proposal Systems: Submission requirements, discussion periods, voting periods Voting Methods: Token-weighted, identity-based, reputation-based Execution Methods: Automatic execution, timelock delays, manual implementation Cross-Chain Communication Bridge Types Trusted Bridges: Custodial, multi-signature, federated Trustless Bridges: Light clients, zero-knowledge proofs, relay networks Hybrid Bridges: Combined trusted and trustless elements Message Passing Protocol Standards: IBC (Inter-Blockchain Communication), cross-chain messaging Verification Methods: SPV proofs, merkle proofs, validity proofs Asset Standards: Wrapped tokens, synthetic assets, native bridges Security Considerations Bridge Security: Validator sets, challenge periods, fraud proofs Asset Security: Lockup mechanisms, minting controls, burning procedures Network Security: Cross-chain replay protection, nonce management</p>
+<p>Network Performance Metrics Transaction Performance Throughput: Transactions per second (TPS), block size limits Latency: Block time, time to finality, confirmation time Costs: Transaction fees, gas costs, execution costs Network Performance Block Propagation: Time to reach network percentage Network Load: Memory pool size, peer connections, bandwidth usage Chain Quality: Uncle rate, chain reorganizations, block validity Resource Utilization Computing Resources: CPU usage, memory requirements, storage growth Network Resources: Bandwidth consumption, peer connections Storage Resources: State size, history size, pruning capabilities Node Architecture Node Types Full Nodes: Complete state and history validation Light Nodes: Header-only validation, SPV proofs Archive Nodes: Complete historical state storage Validator Nodes: Block production and validation Network Topology Peer Discovery: Bootstrap nodes, DHT, static peers Connection Management: Maximum peers, scoring systems, ban lists Data Propagation: Block propagation, transaction propagation Resource Management State Management: State storage, pruning policies, snapshot systems Network Management: Bandwidth limits, peer limits, prioritization Computing Management: Transaction pools, execution priorities Developer Infrastructure Development Tools SDKs: Language support, library ecosystems, tool chains Testing Tools: Local networks, test frameworks, simulation tools Monitoring Tools: Block explorers, metrics, logging systems API Infrastructure RPC Endpoints: JSON-RPC, GraphQL, WebSocket Node APIs: Client APIs, wallet interfaces, indexer APIs Data Access: Block data, state data, historical data Development Environment Local Development: Development networks, docker environments Testing Networks: Test networks, faucets, explorers Production Deployment: Network access, monitoring, maintenance</p>
+<p>Common Concepts</p>
+<p>State Growth &amp; Pruning Mechanisms Across Networks Ethereum State Growth Unlimited state growth Historical state maintained by full nodes State size ~130GB and growing Uses Merkle Patricia Trie for state storage Pruning Mechanisms Archive nodes store full history Full nodes can prune historical states Light clients only store block headers No protocol-level state expiry yet (proposed) Solana State Growth Accounts model with rent mechanism State stored in memory for fast access Accounts can be marked rent-exempt Program data separated from account data Pruning Mechanisms Rent mechanism removes inactive accounts Two years of inactivity leads to account cleanup Validators can prune historical data Replicators store historical data Sui State Growth Object-centric storage model Objects can be deleted explicitly Storage fund for long-term costs Parallel execution reduces state bloat Pruning Mechanisms Objects can be explicitly deleted Storage rebates incentivize cleanup Validators can prune transaction history Maintains live object set separately Aptos State Growth Account-based model Resources stored under accounts Explicit resource deletion Storage fees for state growth Pruning Mechanisms Storage fees incentivize cleanup Explicit resource deletion Validators can prune historical states Maintains current state tree XRP State Growth Account-based ledger Reserve requirements limit state growth Objects can be deleted Amendable reserve requirements Pruning Mechanisms Online deletion for historical data Reserve requirements prevent spam Ledger header retention policy Configurable history retention Stellar State Growth Account-based ledger Minimum balance requirements Entry lifetime policies Base reserve adjustable by voting Pruning Mechanisms Built-in entry expiration Configurable history retention Minimum balance requirements Explicit deletion of unused entries Polkadot State Growth Trie-based state storage Storage rent (proposed) Bounded parachain growth Shared state across parachains Pruning Mechanisms State rent mechanism (planned) Historical pruning options Parachain state management Archive nodes for full history Layer 2 Solutions Optimistic Rollups (Optimism, Arbitrum) State growth tied to L1 data availability Compression techniques for state updates Fraud proof window affects state retention Can prune after challenge period ZK Rollups (zkSync, StarkNet) State updates verified by ZK proofs More efficient state representation Immediate finality enables pruning State diffs published to L1 Key Patterns Growth Control MechanismsStorage fees/rent Minimum balances Reserve requirements Explicit deletion Pruning StrategiesHistorical pruning State expiry Account cleanup Resource deletion Storage IncentivesRent mechanisms Storage rebates Deletion incentives Reserve requirements</p>
+</section>
+<section id="consensus-mechanisms" class="level2">
+<h2 class="anchored" data-anchor-id="consensus-mechanisms">Consensus Mechanisms</h2>
+<p>Consensus Mechanisms All DIN’s have a consensus mechanism we have the consensus mechanisms. These can be divided into the following broad categories: Proof based mechanisms. Mainly Proof of Work and Proof of Stake Byzantine Fault Tolerance (BFT) Mechanisms. Tendermint Voting Based Mechanisms, Ripple and Stellar Directed Acrylic Graph based mechanisms Hybrid. PoS + BFT is used by Polkadot and Cosmos Novel Mechanisms</p>
+<p>Need to talk about finality here about probabilistic vs deterministic. Also focus on Single Slot Finality Proof-Based Mechanisms Proof of Work (PoW) Security Model: Computational work as economic security Key Properties: Energy-intensive computational puzzles Natural chain selection through longest chain rule Strong resistance to Sybil attacks High latency to finality Finality: Probabilistic finality with increasing certainty over time Attack Resistance: 51% attack requires majority of network hashpower Very high cost of attack for established networks Examples: Bitcoin, Ethereum (pre-merge), Litecoin Proof of Stake (PoS) Security Model: Economic stake as security Key Properties: Energy efficient Validator selection based on stake Slashing conditions for misbehavior Lower latency than PoW Finality: Can achieve deterministic finality with additional mechanisms Attack Resistance: 33% or 51% stake required depending on implementation Economic penalties for malicious behavior Examples: Ethereum 2.0, Cardano, Tezos Byzantine Fault Tolerance (BFT) Mechanisms Classical BFT Security Model: Agreement among known validator set Key Properties: High throughput Low latency Immediate finality Limited validator set size Finality: Instant finality once consensus reached Attack Resistance: Tolerates up to 1/3 Byzantine validators Requires 2/3+ honest validators Examples: Tendermint (Cosmos), Hyperledger Fabric Practical BFT (PBFT) Key Properties: Three-phase commit protocol View change protocol for leader failures Optimized for practical systems Performance Characteristics: Higher message complexity Better performance in stable conditions Examples: NEO, Hyperledger Sawtooth Voting-Based Mechanisms Federated Byzantine Agreement (FBA) Security Model: Trust between validator groups Key Properties: Quorum slices Flexible trust model Open validator set Finality: Quick finality within trust boundaries Attack Resistance: Based on trust overlap between validator groups Resistant to split votes through quorum intersection Examples: Stellar, Ripple Delegated Proof of Stake (DPoS) Security Model: Elected validator set Key Properties: Token holder voting Limited validator set Regular validator rotation Finality: Quick finality with selected validators Attack Resistance: Governance attacks through voter collusion Validator collusion risks Examples: EOS, TRON Directed Acyclic Graph (DAG) Based Pure DAG Security Model: Transaction confirmation through subsequent references Key Properties: Parallel transaction processing No explicit blocks Scalable throughput Finality: Probabilistic with increasing certainty Attack Resistance: Spam resistance through PoW Double-spend prevention through transaction ordering Examples: IOTA, Hedera Hashgraph Block-DAG Security Model: Hybrid of blockchain and DAG properties Key Properties: Multiple concurrent blocks Complex ordering rules Higher throughput than linear chains Examples: PHANTOM, SPECTRE Hybrid Mechanisms PoS + BFT Security Model: Economic stake with BFT finality Key Properties: Stake-based validator selection BFT consensus for finality Slashing for misbehavior Finality: Deterministic through BFT layer Attack Resistance: Economic security from stake Byzantine resistance from BFT Examples: Polkadot, Cosmos PoW + BFT Security Model: Dual layer security Key Properties: PoW for block production BFT for finality Higher security guarantees Examples: Decred Novel Mechanisms Proof of History (PoH) Security Model: Verifiable delay function for time ordering Key Properties: Built-in timestamping Efficient verification High throughput Finality: Quick finality with PoS integration Examples: Solana Avalanche Security Model: Metastable consensus through repeated sampling Key Properties: Sub-second finality High throughput Scalable validator set Finality: Probabilistic with quick practical finality Examples: Avalanche Key Considerations for Consensus Selection Performance Metrics Transaction throughput Time to finality Network overhead Hardware requirements Security Properties Byzantine fault tolerance Sybil resistance Double-spend prevention Network partition handling Decentralization Factors Validator set size Entry barriers Geographic distribution Economic concentration Network Requirements Synchronicity assumptions Bandwidth needs Storage requirements CPU/GPU demands Economic Considerations Operating costs Required stake/investment Reward distribution Slashing conditions</p>
+</section>
+<section id="application-models" class="level2">
+<h2 class="anchored" data-anchor-id="application-models">Application Models</h2>
+<p>Each application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.</p>
+<p>We classify Application Models as:</p>
+<ul>
+<li>UTXO also includes Cardano’s extened UTXO, Kaspa also falls into this</li>
+<li>Account
+<ul>
+<li>Pure EVM Ethereum, Polygon, Avalanche, TRON et al</li>
+<li>Specialized XRP and Stellar</li>
+</ul></li>
+<li>Sharded account model Near falls into this.</li>
+<li>Object Sui</li>
+<li>Resource model Aptos and Movement</li>
+<li>Capability Solana</li>
+<li>Cell model TON</li>
+<li>Actor Based (ICP and CosmWasm</li>
+</ul>
+<section id="utxo" class="level3">
+<h3 class="anchored" data-anchor-id="utxo">UTXO</h3>
+<p>The UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Stateless, transaction-oriented</li>
+<li>Parallelization: Natural parallel validation</li>
+<li>Asset Representation: Native representation of tokens</li>
+<li>Composability: Limited without extensions</li>
+<li>Safety Guarantees: High through explicit ownership</li>
+</ul>
+</section>
+<section id="account-model" class="level3">
+<h3 class="anchored" data-anchor-id="account-model">Account Model</h3>
+<p>Accounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA’s, they only maintain state of the network token and not ERC20’s.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Stateful, account-oriented</li>
+<li>Parallelization: Challenging due to state dependencies</li>
+<li>Asset Representation: Contract-based tokens</li>
+<li>Composability: High through contract interactions</li>
+<li>Safety Guarantees: Varies by implementation</li>
+</ul>
+</section>
+<section id="object-model" class="level3">
+<h3 class="anchored" data-anchor-id="object-model">Object Model</h3>
+<p>Objects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Object-oriented</li>
+<li>Parallelization: Natural through object independence</li>
+<li>Asset Representation: Native objects</li>
+<li>Composability: Through object references</li>
+<li>Safety Guarantees: Object-level ownership</li>
+</ul>
+</section>
+<section id="resource-model" class="level3">
+<h3 class="anchored" data-anchor-id="resource-model">Resource Model</h3>
+<p>Resources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Resource-oriented</li>
+<li>Parallelization: Possible through resource independence</li>
+<li>Asset Representation: Native resources</li>
+<li>Composability: Through resource combination</li>
+<li>Safety Guarantees: Very high through linear types</li>
+</ul>
+</section>
+<section id="capability-model" class="level3">
+<h3 class="anchored" data-anchor-id="capability-model">Capability Model</h3>
+<p>Capability Model Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Capability-based</li>
+<li>Parallelization: High through capability isolation</li>
+<li>Asset Representation: Capability-protected resources</li>
+<li>Composability: Through capability delegation</li>
+<li>Safety Guarantees: High through access control</li>
+</ul>
+</section>
+<section id="cell-model" class="level3">
+<h3 class="anchored" data-anchor-id="cell-model">Cell Model</h3>
+<p>State is organized into cells that can be independently accessed and modified, enabling high parallelization.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Cell-based</li>
+<li>Parallelization: High through cell independence</li>
+<li>Asset Representation: Cell-based</li>
+<li>Composability: Through cell references</li>
+<li>Safety Guarantees: Cell-level isolation</li>
+</ul>
+</section>
+<section id="actor-model" class="level3">
+<h3 class="anchored" data-anchor-id="actor-model">Actor Model</h3>
+<p>Computation is organized around actors that can independently process messages, enabling natural parallelization.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>State Management: Actor-local state</li>
+<li>Parallelization: Natural through actor independence</li>
+<li>Asset Representation: Actor-managed</li>
+<li>Composability: Through message passing</li>
+<li>Safety Guarantees: Actor isolation</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 28%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Application Model</th>
+<th>Blockchains</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>UTXO</td>
+<td>Bitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM</td>
+<td>- Natural parallelism<br>- Simple state model<br>- High security</td>
+</tr>
+<tr class="even">
+<td>Account (Pure EVM)</td>
+<td>Ethereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare</td>
+<td>- Rich programmability<br>- High composability<br>- Standard tooling</td>
+</tr>
+<tr class="odd">
+<td>Account (Specialized)</td>
+<td>XRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent</td>
+<td>- Custom account models<br>- Specific use-case optimization<br>- Modified state management</td>
+</tr>
+<tr class="even">
+<td>Sharded Account</td>
+<td>NEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony</td>
+<td>- Parallel execution<br>- Cross-shard composition<br>- Scalable state</td>
+</tr>
+<tr class="odd">
+<td>Object</td>
+<td>Sui</td>
+<td>- Object-centric<br>- Natural parallelism<br>- Rich ownership model</td>
+</tr>
+<tr class="even">
+<td>Resource</td>
+<td>Aptos, Movement, Flow, Virtual Protocol</td>
+<td>- Linear types<br>- Strong safety<br>- Asset-oriented</td>
+</tr>
+<tr class="odd">
+<td>Capability</td>
+<td>Solana, Injective, SEI, Theta Network</td>
+<td>- Fine-grained access<br>- High parallelism<br>- Explicit permissions</td>
+</tr>
+<tr class="even">
+<td>Cell</td>
+<td>TON, Everscale</td>
+<td>- Cell-based storage<br>- High parallelism<br>- Flexible structure</td>
+</tr>
+<tr class="odd">
+<td>Actor</td>
+<td>Internet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA</td>
+<td>- Message-passing<br>- Natural isolation<br>- Independent processing</td>
+</tr>
+<tr class="even">
+<td>Unknown</td>
+<td>Filecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin</td>
+<td>Still researching these</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="communication-protocols" class="level2">
+<h2 class="anchored" data-anchor-id="communication-protocols">Communication Protocols</h2>
+<p>We have</p>
+<ul>
+<li>IBC (Inter-Blockchain Communication) - Cosmos</li>
+<li>XCMP (Cross-Chain Message Passing) - Polkadot</li>
+<li>CCTP (Cross-Chain Transfer Protocol) by Circl</li>
+<li>CCIP (Cross-Chain Interoperability) by Chainlink</li>
+<li>Warp Messaging for Avalanche</li>
+<li>IMP (Interchain Messaging Protocol)</li>
+</ul>
+<p>We can then further classify these standard by the following properties: * Security Model * Centralized vs Decentralized * Message Scope (General (IBC,CCIP, Hyperlane) vs Specialized (Circle’s CCTP and Warp)) * Open vs Close networks * Message Verification Method</p>
+</section>
+<section id="fee-markets" class="level2">
+<h2 class="anchored" data-anchor-id="fee-markets">Fee Markets</h2>
+<p>We break down fee markets into:</p>
+<ul>
+<li>Block Space Markets</li>
+<li>Resources Markets</li>
+</ul>
+<section id="block-space-markets" class="level3">
+<h3 class="anchored" data-anchor-id="block-space-markets">Block Space Markets</h3>
+<p>These are the most fundamental type. Users are paying for space in the next block, regardless of what they’re doing with that space. It only considers the price of inclusion while respecting the limits of the network.</p>
+</section>
+<section id="resource-markets" class="level3">
+<h3 class="anchored" data-anchor-id="resource-markets">Resource Markets</h3>
+<p>These evolved with the advent of Ethereum as blockchains became more complex. We break these down into:</p>
+<ul>
+<li>Compute</li>
+<li>Data Availability</li>
+<li>Storage</li>
+<li>Hybrid</li>
+</ul>
+<section id="compute-markets" class="level4">
+<h4 class="anchored" data-anchor-id="compute-markets">Compute Markets</h4>
+<p>Transaction fee’s sometimes called Gas is what you pay to execute a smart contract on a blockchain. On some networks, like Ethereum, there is an execution limit on how much computational work can be done in a block. This parameter directly impacts the computational resources required to run a node.</p>
+<p>Nodes can propose a gas limit</p>
+<p>So the attributes for Transactions Fee’s are: Tips/Bribes How Transactoin fees are distributed. Burnt or redirected to Miners How fee’s are calculated Base Fee Dynamic Fee (based on something like network congestion)</p>
+</section>
+</section>
+<section id="data-availability" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability">Data Availability</h3>
+<p>We will compare the mechanisms of the following major DA layers:</p>
+<ul>
+<li>Ethereum</li>
+<li>Celestia</li>
+<li>Eignlayer DA</li>
+<li>Avail</li>
+</ul>
+<p>Ethereum uses dynamic blob fees based upon a target amount of blob space per block.</p>
+<p>Celestia charges by size. Celestia is designed to scale to handle increase demand with adding more validators</p>
+<p>Avail also charges by size but also the type.</p>
+<p>EigenDA creates a marketplace for data availability providers</p>
+<section id="storage" class="level4">
+<h4 class="anchored" data-anchor-id="storage">Storage</h4>
+</section>
+<section id="hybrid" class="level4">
+<h4 class="anchored" data-anchor-id="hybrid">Hybrid</h4>
+</section>
+<section id="congestion-measurement-mechanisms" class="level4">
+<h4 class="anchored" data-anchor-id="congestion-measurement-mechanisms">Congestion Measurement Mechanisms</h4>
+<p><strong>Ethereum</strong></p>
+<ul>
+<li>Measures block gas utilization vs 15M target</li>
+<li>12.5% base fee adjustment per block</li>
+<li>Block size can flex up to 30M gas</li>
+</ul>
+<p><strong>Stellar</strong></p>
+<ul>
+<li>Uses surge pricing mechanism</li>
+<li>Triggers when ledger capacity exceeds 50%</li>
+<li>Fee increases proportionally to network load</li>
+</ul>
+<p><strong>Polkadot</strong></p>
+<ul>
+<li>Uses weight-based system</li>
+<li>Measures block weight against target</li>
+<li>Adjusts fees based on block fullness</li>
+</ul>
+<p><strong>Tezos</strong></p>
+<ul>
+<li>Monitors block saturation</li>
+<li>Adjusts fees based on recent block usage</li>
+<li>Uses gas limits per operation type</li>
+</ul>
+</section>
+</section>
+<section id="data-availability-market" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability-market">Data Availability market</h3>
+<p>Ethereum uses blobs, which are special containers for Layer 2 rollups to post their transaction data. They also disappear after a time.</p>
+<p>Blob fee is calculated based on the target blob gas per block.</p>
+</section>
+</section>
+<section id="network-change-management" class="level2">
+<h2 class="anchored" data-anchor-id="network-change-management">Network Change Management</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Network change management in DINs encompasses the processes, mechanisms, and stakeholders involved in proposing, discussing, approving, and implementing network modifications. This framework covers everything from minor parameter adjustments to major protocol upgrades.</p>
+<p><strong>TODO</strong> Design something that can simulate</p>
+</section>
+</section>
+<section id="clients" class="level2">
+<h2 class="anchored" data-anchor-id="clients">Clients</h2>
+</section>
+<section id="bridges" class="level2">
+<h2 class="anchored" data-anchor-id="bridges">Bridges</h2>
+<p>Classification of Bridges. Need to include Lazy Bridges here https://blog.celestia.org/lazybridging/</p>
+<ul>
+<li>Trusted
+<ul>
+<li>Custodial</li>
+<li>Multi Signature</li>
+<li>Federated</li>
+</ul></li>
+<li>Trustless Bridges
+<ul>
+<li>Light Client</li>
+<li>ZK
+<ul>
+<li>Lazy Bridge</li>
+</ul></li>
+<li>Relay</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../content/technical/cryptography.html" class="pagination-link" aria-label="Cryptography">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Cryptography</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../content/technical/dapps.html" class="pagination-link" aria-label="dApps">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">dApps</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
