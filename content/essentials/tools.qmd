@@ -1,5 +1,5 @@
 # Tools 
-*Last updated: December 6, 2024*
+*Testing GH branch worfklow*
 
 ## Wallets
 A wallet is the primary way you interact with a [Blockchain](../technical/blockchains.qmd). 
