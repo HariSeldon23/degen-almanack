@@ -319,7 +319,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#bitcoin" id="toc-bitcoin" class="nav-link active" data-scroll-target="#bitcoin">Bitcoin</a></li>
+  <li><a href="#bitcoin" id="toc-bitcoin" class="nav-link active" data-scroll-target="#bitcoin">Bitcoin</a>
+  <ul class="collapse">
+  <li><a href="#cbbtc" id="toc-cbbtc" class="nav-link" data-scroll-target="#cbbtc">cbBTC</a></li>
+  </ul></li>
   <li><a href="#solana" id="toc-solana" class="nav-link" data-scroll-target="#solana">Solana</a></li>
   <li><a href="#monero" id="toc-monero" class="nav-link" data-scroll-target="#monero">Monero</a></li>
   <li><a href="#optimism" id="toc-optimism" class="nav-link" data-scroll-target="#optimism">Optimism</a></li>
@@ -374,6 +377,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="bitcoin" class="level2">
 <h2 class="anchored" data-anchor-id="bitcoin">Bitcoin</h2>
+<section id="cbbtc" class="level3">
+<h3 class="anchored" data-anchor-id="cbbtc">cbBTC</h3>
+<p>Coinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase’s custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase’s reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.</p>
+<p>The technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase’s layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase’s custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base’s growing DeFi ecosystem while maintaining exposure to Bitcoin’s value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC’s key differentiator is its direct integration with Coinbase’s established infrastructure and its focus on institutional-grade security and compliance measures.</p>
+</section>
 </section>
 <section id="solana" class="level2">
 <h2 class="anchored" data-anchor-id="solana">Solana</h2>

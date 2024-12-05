@@ -274,7 +274,7 @@
     "href": "content/degen/scam.html#technical-errors",
     "title": "Don’t lose your money",
     "section": "Technical Errors",
-    "text": "Technical Errors\n\nNetwork selection error. If you send money to someone on a different network there is no guarantee the address will be the same\nGas Fee misunderstandings\nToken Approval Dangers - never set max limits. Would be good to break down these risks by Application Model.\nSmart Contract Interaction Errors - Some UI’s may not be linked to the actual smart contract you’re looking for\nImpermanent Loss\nWallet Address Verification\nSlippage and Frontrunning\nSniping - new token launchs\n\n\nGas Fee misunderstandings\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nImpermanent Loss\nSpoiler alert It’s probably permanent\n\n\n\nChart showing Impermanent Loss\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nWallet Address Verification\nThis is one of the reasons Name Services have gained popularity. Although they do remove a further layer of anonymity if you’re not careful.",
+    "text": "Technical Errors\n\nNetwork selection error. If you send money to someone on a different network there is no guarantee the address will be the same\nGas Fee misunderstandings\nToken Approval Dangers - never set max limits. Would be good to break down these risks by Application Model.\nSmart Contract Interaction Errors - Some UI’s may not be linked to the actual smart contract you’re looking for\nImpermanent Loss\nWallet Address Verification\nSlippage and Frontrunning\nSniping - new token launchs\n\n\nGas Fee misunderstandings\nTo be truly proficient with Gas you should understand deeply Fee Markets\nElse this could be you…\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nImpermanent Loss\nSpoiler alert It’s probably permanent\n\n\n\nChart showing Impermanent Loss\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nWallet Address Verification\nThis is one of the reasons Name Services have gained popularity. Although they do remove a further layer of anonymity if you’re not careful.",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
@@ -285,7 +285,7 @@
     "href": "content/degen/scam.html#social-engineering-scams",
     "title": "Don’t lose your money",
     "section": "Social Engineering Scams",
-    "text": "Social Engineering Scams\n\nOneCoin. Ruja Ignatova (the “CryptoQueen”) got away with $4 billion.\n\nCommon threads of social engineering scams * Authority Exploitation * Emotional Manipulation * Technical Obscurity * Community Building * Urgency Creation\nAuthority Exploitation While no mean authoritive, these are some of the biggest dodgy celebrities: * Kim Kardashian * Floyd Mayweather * DJ Khaled * Ben Phillips * Lindsay Lohan * Steven Seagal * Paul Pierce * Logan and Jake Paul\n\nNetwork addresses\nScammers put in fake networks. Use Chainlist",
+    "text": "Social Engineering Scams\n\nOneCoin. Ruja Ignatova (the “CryptoQueen”) got away with $4 billion.\n\nCommon threads of social engineering scams\n\nAuthority Exploitation\nEmotional Manipulation\nTechnical Obscurity\nCommunity Building\nUrgency Creation\n\nAuthority Exploitation While no mean authoritive, these are some of the biggest dodgy celebrities:\n\nKim Kardashian\nFloyd Mayweather\nDJ Khaled\nBen Phillips\nLindsay Lohan\nSteven Seagal\nPaul Pierce\nLogan and Jake Paul\n\n\nNetwork addresses\nScammers put in fake networks. Use Chainlist",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Don't lose your money</span>"
@@ -307,7 +307,7 @@
     "href": "content/degen/starter.html",
     "title": "Make some money",
     "section": "",
-    "text": "Purchasing your first Crypto\nWhile as much as possible I’d like to respect and adhere to the ethos of the early Cypherpunks, there’s also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we’ll take a pragmatic approach and introduce those concepts in incremental levels of difficulty.\nImportant things to note: * You’ll need about 10 US Dollars * We’ll be using CEX’s to purchase, while understanding the risks and implications * We’ll use a Mobile wallet, Phantom, that has social recovery\nSo the first thing anyone entering Web3 needs to do is to purcahse some Crypto. In this Chapter we’ll walk you through the process, with the important caveats below:\nWe will use Coinbase as the CEX for this section. You’re more than welcome to use your local CEX. For users in countries that don’t have access to CEX’s, we’ll detail how they can purchase their first crypto with Bisq.\nDue to me wanting anyone to be able to get into crypto, I’m pretty adamanant that it shouldn’t cost more than $5 for people to learn. This is why I’d like to tailor this to start off with people purchasing ETH\nhttps://bisq.network/downloads/\nI’m using the Bisq 2 version, although at the time of writing, it’s still in beta. There is a minimum requirement of 6 USD. The median income is approximately $7 per day.\nOn Bisq the minimum amount I could find someone willing to trade with me is 10 USD. Also it’s sold at a huge premium. Further disenfranchizing the world’s poor. As such if anyone wants to purchase Bitcoin for $10 please reach out to me Bisq kinda sucks. Hodl Hodl looks like a much better solution\nGet them to create an account at a CEX. Explain KYC/AML\nTalk about why you never hold funds on a CEX. Go through FTX, Mount Gox and other failures. Then talk about wallets.\nWe’re going with Phantom as it supports: * Bitcoin * Ethereum * Solana * Base * Polygon\nAs of writing, TVL across Ethereum has 54%, Solana 7%, Base and Bitcoin both ~3%. So while I’d love a wallet that supports Stacks, Move and Cosmos. That just doesn’t exist today. So as a first time Web3 user, Phantom just makes the most sense. I also really wanted users first wallet to have social recovery. But no wallet currently supprots this. Argent used to, but they’re now only on Starknet and Soul wallet has no downloadable version I could find.\nNeed to talk about storing of private key\nSo we’ll purchase ETH, transfer it to our Phantom wallet, and then stake it on Lido",
+    "text": "Purchasing your first Crypto\nWhile as much as possible I’d like to respect and adhere to the ethos of the early Cypherpunks, there’s also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we’ll take a pragmatic approach and introduce those concepts in incremental levels of difficulty.\nImportant things to note:\nSo the first thing anyone entering Web3 needs to do is to purchase some Crypto.\nWe will use Coinbase as the CEX for this section. You’re more than welcome to use your local CEX. If you would like anonymity for your Crypto purchases, please see this section on Converting fiat into cryptocurrency\nThe reason I went with $10 is so that this will work for as many people as possible. Such heart breaking facts:",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
@@ -318,29 +318,18 @@
     "href": "content/degen/starter.html#purchasing-your-first-crypto",
     "title": "Make some money",
     "section": "",
-    "text": "You’ll need at least 6 US shit coins. Or in normie speak, $5 US Dollars.\n\n\n\n\n\n\nThe poorest 10% of the world live on less than $2 a day\nAbout 50% live on less thatn $7 a day\n\n\n\n\n\n\n\n\nPhysical storage. These have a shit user experience, but are relatively safe. Hardware\nDigital storage. Password manager, social recovery will come at some point",
+    "text": "You’ll need about 10 US Dollars\nWe’ll be using CEX’s to purchase, while understanding the risks and implications\nWe’ll use a Mobile wallet, Metamask\nWe’ll use Base, as it’s the cheapest L2 with the most activity https://l2beat.com/scaling/costs about $0.003. That means we can do loads of transactions.\n\n\n\n\n\nThe poorest 10% of the world live on less than $2 a day\nAbout 50% live on less thatn $7 a day",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
     ]
   },
   {
-    "objectID": "content/degen/starter.html#accounts",
-    "href": "content/degen/starter.html#accounts",
+    "objectID": "content/degen/starter.html#your-first-degen-strategies",
+    "href": "content/degen/starter.html#your-first-degen-strategies",
     "title": "Make some money",
-    "section": "Accounts",
-    "text": "Accounts\nHere we’ll go through Standard Accounts (EOA’s) versus Smart Accounts. Which blockchains support the different paradigms.\nIssue with social recovery is that you leave a fingerprint to your on chain activity depending on how the wallet handles the storing of your data\nThe first place you’re going to have to start is actually converting fiat into crypto.\nYou can do this via:\n\nmining\npurchasing\n\nWe’ll only talk about purchasing here, as solo mining is not profitable, although if you’re not running at a loss, then it can still be considered away of converting fiat into crypto.\n\nPrivacy respecting ways\n\nPeer to Peer (P2P) Marketplaces\nBitcoin ATMs\n\nNon Privacy respecting ways\n\nCEX’s\nOTC\nDeFi on ramps\n\n\nFor complete privacy, the place where you purchase",
-    "crumbs": [
-      "Become a Degen",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
-    ]
-  },
-  {
-    "objectID": "content/degen/starter.html#airdrop-farming",
-    "href": "content/degen/starter.html#airdrop-farming",
-    "title": "Make some money",
-    "section": "Airdrop Farming",
-    "text": "Airdrop Farming",
+    "section": "Your first Degen Strategies",
+    "text": "Your first Degen Strategies\nWe’ll now follow two concurrent strategies.\n\nHODL\nDouble my money in 3 years\n\nThe goals of the HODL is to hold the safest, most valuable Coin for as long as possible. That’s Bitcoin.\nThe Full Degen part of our strategy is to be super risky. We should almost assume we’ll lose this money, the goal is to make outrageous returns.\nWith HODL, we will do the following:\n\nSign up for a CEX\nPurchase $10 worth of ETH\nCreate an Account on Metamask\nTransfer the $10 to our Metamask account on Base\nPurchase $5 of cbBTC https://defillama.com/yields?token=CBBTC\nSupply it to Aave. Although Spark may be of interest to qualify for the airdrop. The APR between the two is neglible. We’ll go with Aave as it’s safer for now. $5 bucks of an Airdrop isn’t worth the extra risk.\nIn order to double our money in 3 years, which is very good, you need to get 24% APR. Makes sense to just use USDX on Arbitrum",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Make some money</span>"
@@ -351,7 +340,7 @@
     "href": "content/degen/giga.html",
     "title": "Gigabrain Degen",
     "section": "",
-    "text": "Converting FIAT into a Cryptocurrency\nThis may be the hardest part of being a Degen. A Degen values privacy. Important to distinguish there is a difference between privacy and secrecy. I’d like my cryptocurrency to display the same characteristics as cash. A means of exchange that has been working just fine for centuries. Cash is private by default and people have seemed pretty happy with that arrangement for over 3 centuries.\nCurrently the best way to do this is via:",
+    "text": "Converting FIAT into a Cryptocurrency\nThis may be the hardest part of being a Degen. A Degen values privacy. Important to distinguish there is a difference between privacy and secrecy. I’d like my cryptocurrency to display the same characteristics as cash. A means of exchange that has been working just fine for centuries. Cash is private by default and people have seemed pretty happy with that arrangement for over 3 centuries.\nCurrently the best way to do this is via:\nBisq has terrible rates, so I recommend Hodl Hodl. Else another alternative that will work just as well is:",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gigabrain Degen</span>"
@@ -362,7 +351,7 @@
     "href": "content/degen/giga.html#converting-fiat-into-a-cryptocurrency",
     "title": "Gigabrain Degen",
     "section": "",
-    "text": "Bisq\nHODL HODL",
+    "text": "Bisq\nHODL HODL\n\n\n\nCreate two new accounts on an Ethereum Layer 2. 1 that you’ll throw away and one that will be secure\nPurchase USDC or USDT from a CEX\nTransfer the stable coins to the throwaway account\nDownload Railgun Client\nCreate a Shielded Address\nTransfer it in common increments similar to how Tornado Cash to the clean wallet at random intervals",
     "crumbs": [
       "Become a Degen",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Gigabrain Degen</span>"
@@ -572,6 +561,17 @@
     "title": "Trollip’s Index",
     "section": "",
     "text": "Bitcoin",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#bitcoin",
+    "href": "content/financial/trollip_index.html#bitcoin",
+    "title": "Trollip’s Index",
+    "section": "",
+    "text": "cbBTC\nCoinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase’s custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase’s reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.\nThe technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase’s layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase’s custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base’s growing DeFi ecosystem while maintaining exposure to Bitcoin’s value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC’s key differentiator is its direct integration with Coinbase’s established infrastructure and its focus on institutional-grade security and compliance measures.",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Trollip's Index</span>"
