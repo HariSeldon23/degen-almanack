@@ -61,43 +61,69 @@ I recommend newcomers to use Pulsar. As you learn about DeFi, you'll be chasing 
 #### Explorers
 Explorers allow you to explore transactions and on chain activity. 
 
+I'll revise the table to be more focused and clear, removing the alternative explorers column.
+
+| Blockchain | Primary Explorer | URL |
+|------------|-----------------|-----|
+| Ethereum | Etherscan | https://etherscan.io |
+| ApeCoin | ApeScan | https://apescan.org |
+| Arbitrum One | Arbiscan | https://arbiscan.io |
+| Arbitrum Nova | Nova Explorer | https://nova.arbiscan.io |
+| Base | BaseScan | https://basescan.org |
+| Blast Chain | BlastScan | https://blastscan.io |
+| BNB Chain | BscScan | https://bscscan.com |
+| BTTC | BttcScan | https://bttcscan.com |
+| Celo | CeloScan | https://celoscan.io |
+| Cronos | CronoScan | https://cronoscan.com |
+| Frax | FraxScan | https://fraxscan.io |
+| Fantom | FTMScan | https://ftmscan.com |
+| Gnosis | GnosisScan | https://gnosisscan.io |
+| Linea | LineaScan | https://lineascan.build |
+| Mantle | MantleScan | https://mantlescan.io |
+| Moonbeam | Moonscan | https://moonbeam.moonscan.io |
+| Moonriver | Moonscan | https://moonriver.moonscan.io |
+| opBNB | opBNB Explorer | https://opbnbscan.com |
+| Optimism | Optimistic Etherscan | https://optimistic.etherscan.io |
+| Polygon zkEVM | Polygon zkEVM Explorer | https://zkevm.polygonscan.com |
+| Polygon | PolygonScan | https://polygonscan.com |
+| Scroll | ScrollScan | https://scrollscan.com |
+| Avalanche | SnowTrace | https://snowtrace.io |
+| Sophon | SophScan | https://sophonscan.com |
+| Taiko | TakioScan | https://taikoscan.com |
+| Wemix | WemixScan | https://wemixscan.com |
+| Worldcoin | WorldScan | https://worldcoin.org/explorer |
+| Xai | XaiScan | https://xaiscan.com |
+| XDC | XdcScan | https://xdcscan.io |
+| zkSync | zkSync Explorer | https://explorer.zksync.io |
+| XRP | XRP Ledger Explorer | https://livenet.xrpl.org |
+| Solana | Solana Explorer | https://explorer.solana.com |
+| Dogecoin | DogeChain | https://dogechain.info |
+| Cardano | Cardanoscan | https://cardanoscan.io |
+| Tron | Tronscan | https://tronscan.org |
+| TON | TON Explorer | https://tonscan.org |
+| Polkadot | Polkascan | https://polkascan.io |
+| Chainlink | Chainlink Explorer | https://explorer.chain.link |
+| Stellar | Stellar Expert | https://stellar.expert |
+| Bitcoin Cash | Blockchair | https://blockchair.com/bitcoin-cash |
+| Sui | Sui Explorer | https://suiexplorer.com |
+| NEAR | NEAR Explorer | https://explorer.near.org |
+| Aptos | Aptos Explorer | https://explorer.aptoslabs.com |
+| Hedera | HashScan | https://hashscan.io |
+| Litecoin | Litecoin Explorer | https://litecoinblockexplorer.net |
+| Internet Computer | IC Scan | https://icscan.io |
+| VeChain | VeChain Stats | https://vechainstats.com |
+| Filecoin | Filfox | https://filfox.info |
+| Stacks | Stacks Explorer | https://explorer.stacks.co |
+| Hyperliquid | Hyperliquid Explorer | https://hyperliquid.xyz/info |
+| Kaspa | Kaspa Explorer | https://explorer.kaspa.org |
+| Algorand | AlgoExplorer | https://algoexplorer.io |
+| Cosmos | Mintscan | https://www.mintscan.io |
+| Mantra | Mantra Scan | https://mantrascan.org |
+
 ##### Pure EVM 
 Etherscan is the most widely used Explorer and has versions on all the major EVM Chains. We'll only focus on their Explorers for EVM chains in perpetuity or until something better comes along. 
 
 I recommend using [Blockscan](https://blockscan.com/) which is from the same company and consolidates all their supported chains into a consolidated UI. It makes sense to use Blockscan for surface level analysis. But as soon as you want to delve into the code, you'll need to use one of their Explorers specializing on that particular chain. 
-
-They are:
-
-* Etherscan - Ethereum
-* ApeScan - Ape
-* Arbiscan - Arbitrum One
-* Arbitrum Nov
-* BaseScan - Base
-* BlastScan - Blast Chain
-* BscScan - BNB 
-* BttcScan - BTTC
-* CeloScan - Celo
-* CronoScan - Cronos
-* FraxScan - Frax
-* FTMScan - Fantom
-* GnosisScan - Gnosis
-* LineaScan - Linea
-* MantleScan - Mantle
-* Moonbeam - Moonbeam
-* Moonriver - Moonriver
-* opBNB - opBNB
-* Optimism 
-* Polygon zkEVM
-* PolygonScan
-* ScrollScan
-* SnowScan - Avalanche C Chain
-* SophScan - Sophon
-* TakioScan - Taiko
-* WemixScan - Wemix
-* World - WorldCoin
-* XaiScan 
-* XdcScan
-* zkSync
 
 ###### Exploring Solidity
 
