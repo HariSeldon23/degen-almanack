@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy HTML
 
 on:
   push:
@@ -15,24 +15,17 @@ jobs:
       contents: write
     
     steps:
-      # Get the latest code
       - uses: actions/checkout@v3
       
-      # Set up Quarto - this is the main tool we need for building the book
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
       
-      # Install TinyTeX for PDF support - needed for some Quarto features
-      - name: Install TinyTeX
-        run: |
-          quarto install tinytex
-      
-      # Build the book with Quarto
+      # Build the book with Quarto - HTML only
       - name: Build Book
         run: |
-          quarto render
+          quarto render --to html
       
-      # Only deploy if this is a push to main (not a PR)
+      # Deploy to GitHub Pages if this is a push to main
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push'
         uses: JamesIves/github-pages-deploy-action@v4
