@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/essentials/terms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Crypto Terms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Terms</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -210,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/degen/giga.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Gigabrain Degen</span></span></a>
+  <a href="../../content/degen/big.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Big brain</span></span></a>
   </div>
 </li>
       </ul>
@@ -381,14 +381,15 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <section id="private-key-management" class="level2">
 <h2 class="anchored" data-anchor-id="private-key-management">Private Key Management</h2>
-<p>A large part of the early vision of crypto was to create a currency with the absence of a central authority (read Government). Indeed the first Bitcoin block, mined by <a href="../../content/essentials/icons.html#satoshi-nakamoto">Satoshi</a> contained a message admonishing the central banks.</p>
+<p>A large part of the early vision of crypto was to create a currency with the absence of a central authority (read Government). Indeed the first Bitcoin block, mined by <a href="../../content/essentials/icons.html#satoshi-nakamoto">Satoshi</a> contained a message admonishing the banks.</p>
 <blockquote class="blockquote">
 <p>The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</p>
 </blockquote>
 <p>In order to have a currency not controlled by a central authority, you need to be able to exchange value with others while not relying on the authority of governments. If I give you 10 digital dollars, what’s to prevent you from saying you never received it? Who proves the exchange occured? This is where <a href="../../content/technical/cryptography.html">Cryptography</a> comes into it. We won’t go into the technical details here, it’s just important to note some general overview.</p>
-<p>Your account/wallet on a blockchain is secured by a public-private key pair. You can think of the public key as akin to an email address and the private key as your password. Whenever you create a wallet and a seed phrase is generated, what’s essentially happening is a public-private key is being generated.</p>
+<p>Your account/wallet on a blockchain is secured by a public-private key pair. You can think of the public key as akin to an email address and the private key as your password. Whenever you create a wallet and a <a href="../../content/essentials/terms.html#seed-phrases">seed phrase</a> is generated, what’s essentially happening is a public-private key is being generated.</p>
 <p>Now whenever you interact with a blockchain, for example by sending someone some digital coins, you need to sign that transaction. What you’re doing is essentially using your private key to sign that you do want to perform that transaction.</p>
 <p>This is why keeping your private key safe is the most important thing you can do in Web3. Since we have no trusted authority, we can only rely on ourselves in this decentralized environment. If someone got access to your private key, they would be able to do anything with the assets that are owned by your account.</p>
+<p>The below are the ways you can store your private key or seed phrases:</p>
 <ul>
 <li>Cold Storage</li>
 <li>Paper and Metal Storage</li>
@@ -396,6 +397,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Multisignature Wallets</li>
 <li>Glacier Protocol</li>
 </ul>
+<p>For newcomers, we recommend cold storage via using a Hardware wallet. However this is impractical for a few reasons:</p>
+<ul>
+<li>Costs can be prohibitive</li>
+<li>UX when interacting on chain is cumbersome</li>
+</ul>
+<p>For this reason we recommend using <a href="../../content/technical/cryptography.html#passkeys">Passkeys</a>. Please see <a href="../../content/degen/starter.html#creating-your-first-crypto-wallet">creating your first crypto wallet</a>.</p>
 </section>
 <section id="technical-errors" class="level2">
 <h2 class="anchored" data-anchor-id="technical-errors">Technical Errors</h2>
@@ -411,7 +418,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <section id="gas-fee-misunderstandings" class="level3">
 <h3 class="anchored" data-anchor-id="gas-fee-misunderstandings">Gas Fee misunderstandings</h3>
-<p>To be truly proficient with Gas you should understand deeply <a href="../../content/technical/blockchains.html#fee-markets">Fee Markets</a></p>
+<p>To be truly proficient with Gas you should understand deeply how <a href="../../content/technical/blockchains.html#fee-markets">Fee Markets</a> work.</p>
 <p>Else this could be you…</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">

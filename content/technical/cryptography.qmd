@@ -8,6 +8,37 @@ Public Key Cryptography
 
 RSA and elliptic curve cryptography. Slow than symetric cryptography. Enables secure communication over insecure channels
 
+### Passkeys
+Think of passkeys as a modern, more secure replacement for passwords. Instead of remembering complex strings of characters, your device creates and stores a pair of mathematically linked keys - one public and one private. This system is built on public key cryptography, which has been proven secure over decades of use.
+Here's how the process works, step by step:
+When you first set up a passkey with a website or app:
+
+1. Your device generates two mathematical keys: a private key that stays securely stored on your device, and a public key that gets sent to the service you're signing up with. The private key never leaves your device - this is crucial for security.
+2. The service stores your public key along with your account information. Think of the public key as a special lock that can only be opened by your private key.
+
+When you later want to sign in:
+
+1. The service sends your device a random mathematical challenge - imagine it as a complex puzzle.
+2. Your device uses your private key to solve this puzzle in a way that proves you have the correct private key, without actually revealing the key itself.
+3. The service verifies the solution using your stored public key. If it matches, you're granted access.
+
+What makes this particularly clever is the biometric integration. Your device typically requires your fingerprint, face scan, or PIN before it will use the private key. This adds an extra layer of security - even if someone stole your device, they couldn't use your passkeys without your biometric data.
+The system also handles synchronization elegantly. If you're using an ecosystem like Apple or Google, your encrypted passkeys can sync across your devices. When you want to log in on a new device, your phone can help authenticate you by displaying a QR code that creates a secure connection between devices.
+To make this more concrete, imagine you're signing into a banking app:
+
+You open the app and enter your username
+Instead of asking for a password, the app sends a challenge to your phone
+Your phone asks you to verify with your fingerprint
+Once verified, your phone uses your private key to respond to the challenge
+The bank verifies this response and logs you in
+
+All of this happens in seconds, and it's much more secure than traditional passwords because:
+
+The private key never travels across the internet
+Each login uses a different challenge, so responses can't be reused by attackers
+Biometric verification adds an extra security layer
+The cryptographic math behind it is extremely difficult to break
+
 ## Hash functions
 These are like digital fingerprints
 

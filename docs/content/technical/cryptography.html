@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/essentials/terms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Crypto Terms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Terms</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -210,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/degen/giga.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Gigabrain Degen</span></span></a>
+  <a href="../../content/degen/big.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Big brain</span></span></a>
   </div>
 </li>
       </ul>
@@ -326,7 +326,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#symmetric-cryptography" id="toc-symmetric-cryptography" class="nav-link active" data-scroll-target="#symmetric-cryptography">Symmetric Cryptography</a></li>
-  <li><a href="#asymetric-cryptography" id="toc-asymetric-cryptography" class="nav-link" data-scroll-target="#asymetric-cryptography">Asymetric Cryptography</a></li>
+  <li><a href="#asymetric-cryptography" id="toc-asymetric-cryptography" class="nav-link" data-scroll-target="#asymetric-cryptography">Asymetric Cryptography</a>
+  <ul class="collapse">
+  <li><a href="#passkeys" id="toc-passkeys" class="nav-link" data-scroll-target="#passkeys">Passkeys</a></li>
+  </ul></li>
   <li><a href="#hash-functions" id="toc-hash-functions" class="nav-link" data-scroll-target="#hash-functions">Hash functions</a></li>
   <li><a href="#zero-knowledge-proofs" id="toc-zero-knowledge-proofs" class="nav-link" data-scroll-target="#zero-knowledge-proofs">Zero-Knowledge Proofs</a></li>
   <li><a href="#homomorphic-encryption" id="toc-homomorphic-encryption" class="nav-link" data-scroll-target="#homomorphic-encryption">Homomorphic Encryption</a></li>
@@ -370,6 +373,24 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="asymetric-cryptography">Asymetric Cryptography</h2>
 <p>Public Key Cryptography</p>
 <p>RSA and elliptic curve cryptography. Slow than symetric cryptography. Enables secure communication over insecure channels</p>
+<section id="passkeys" class="level3">
+<h3 class="anchored" data-anchor-id="passkeys">Passkeys</h3>
+<p>Think of passkeys as a modern, more secure replacement for passwords. Instead of remembering complex strings of characters, your device creates and stores a pair of mathematically linked keys - one public and one private. This system is built on public key cryptography, which has been proven secure over decades of use. Here’s how the process works, step by step: When you first set up a passkey with a website or app:</p>
+<ol type="1">
+<li>Your device generates two mathematical keys: a private key that stays securely stored on your device, and a public key that gets sent to the service you’re signing up with. The private key never leaves your device - this is crucial for security.</li>
+<li>The service stores your public key along with your account information. Think of the public key as a special lock that can only be opened by your private key.</li>
+</ol>
+<p>When you later want to sign in:</p>
+<ol type="1">
+<li>The service sends your device a random mathematical challenge - imagine it as a complex puzzle.</li>
+<li>Your device uses your private key to solve this puzzle in a way that proves you have the correct private key, without actually revealing the key itself.</li>
+<li>The service verifies the solution using your stored public key. If it matches, you’re granted access.</li>
+</ol>
+<p>What makes this particularly clever is the biometric integration. Your device typically requires your fingerprint, face scan, or PIN before it will use the private key. This adds an extra layer of security - even if someone stole your device, they couldn’t use your passkeys without your biometric data. The system also handles synchronization elegantly. If you’re using an ecosystem like Apple or Google, your encrypted passkeys can sync across your devices. When you want to log in on a new device, your phone can help authenticate you by displaying a QR code that creates a secure connection between devices. To make this more concrete, imagine you’re signing into a banking app:</p>
+<p>You open the app and enter your username Instead of asking for a password, the app sends a challenge to your phone Your phone asks you to verify with your fingerprint Once verified, your phone uses your private key to respond to the challenge The bank verifies this response and logs you in</p>
+<p>All of this happens in seconds, and it’s much more secure than traditional passwords because:</p>
+<p>The private key never travels across the internet Each login uses a different challenge, so responses can’t be reused by attackers Biometric verification adds an extra security layer The cryptographic math behind it is extremely difficult to break</p>
+</section>
 </section>
 <section id="hash-functions" class="level2">
 <h2 class="anchored" data-anchor-id="hash-functions">Hash functions</h2>

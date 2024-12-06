@@ -1,6 +1,17 @@
 # Memes
 There will be a lot of references to meme's in your journey to become a [Gigabrain](./terms.qmd#gigabrain) Degen. It's important to understand them. Culture is a massive part of Web3 and will help you immensely in your journey. 
 
+## Not your keys, not your Coins
+![Not your keys](../../images/memes/not-your-keys.jpg)
+"Not your keys, not your coins" is one of the most fundamental principles in cryptocurrency, emerging from the early days of Bitcoin and becoming even more relevant after several high-profile exchange failures. This phrase encapsulates a core tenet of cryptocurrency's original vision: true financial self-custody.
+
+The principle is simple but profound: if you don't control the private keys to your cryptocurrency wallet, you don't truly own your cryptocurrency. When you keep your crypto on an exchange or any centralized platform, you're essentially trusting that entity with your assets. The exchange provides you with an IOU - a promise that they're holding your coins safely - rather than giving you direct control over them. This arrangement mirrors traditional banking, where your money is actually a liability on the bank's balance sheet rather than physical cash in your possession.
+
+The significance of this principle has been repeatedly demonstrated through catastrophic exchange failures like Mt. Gox, FTX, and others, where users lost billions because they trusted centralized entities with their crypto assets. Each of these events reinforced the wisdom of the original crypto ethos: the only way to truly own your cryptocurrency is to hold your private keys in a wallet you control. This might mean using a hardware wallet, a properly secured software wallet, or even a paper wallet, but the key factor is that you - and only you - have access to the private keys that control the funds.
+
+This phrase has evolved from a simple security recommendation into a battle cry for cryptocurrency self-sovereignty, encouraging users to take direct responsibility for their assets rather than defaulting to the familiar but potentially risky comfort of centralized custody. It represents not just a practical security measure, but a philosophical alignment with the decentralized, trustless principles that cryptocurrency was built upon.
+
+
 ## HODL
 HODL originated as a misspelling of "hold" in a 2013 Bitcoin forum post titled ["I AM HODLING."](https://bitcointalk.org/index.php?topic=375643.0) The post's author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.
 

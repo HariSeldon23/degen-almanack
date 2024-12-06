@@ -14,7 +14,7 @@ book:
     - ./content/degen/scam.qmd
     - ./content/degen/starter.qmd
     - ./content/degen/mid.qmd
-    - ./content/degen/giga.qmd
+    - ./content/degen/big.qmd
     part: Become a Degen
   - chapters:
     - ./content/financial/tokens.qmd

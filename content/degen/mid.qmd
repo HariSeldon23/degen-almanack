@@ -1,9 +1,44 @@
 # Mid Brain
 
-![You are currently the guy in the middle](../../images/memes/bellcurve-apr.png)
+![You are currently the guy in the middle](../../images/memes/bellcurve.jpg)
 
 While this section will probably be the most fun to write, it will result in unbounded destruction. 
 
 Let the fun begin!
 
 These strategies will aim to get you to retire in a year. They'll generally leave you broke as shit, but at least we have a goal. 
+
+-   We'll use Arbitrum, as while it's not the [cheapest L2](https://l2beat.com/scaling/costs), it's still reasonable and has an important Stable Coin we'll need to use in our early strategies.
+
+That's why we're recommending using Passkeys as they're emerging as the industry standard in Web2 and my prediction is they'll become the industry standard across Web2 and Web3
+
+* Apple IPhone and Mac users need to setup a Passkey using iCloud Keychain
+* Android and Chrome users can use Google Password Manager
+* Windows and Edge Users can use Windows Hello
+
+Currently I recommend using Trust Wallet, however I can see that changing over time with Magic and Privy building Passkeys support from the ground up. Special mention also to Payy Network. Trust Wallet doesn't have an ability to add Passkeys on Chrome.
+
+Also reason I didn't choose Metamask. The UX is terrible. And the decision to go with Modular and Snaps will only make that UX shittier over time. 
+
+Coinbase doesn't support Passkeys yet. Fuck me. Metamask for now, even though I hate it. Here's the Passkeys Snap https://snaps.metamask.io/snap/npm/usecapsule/account-snap I'm not comfortable having a third party control my Private Keys. So just won't use Passkeys for now and people can just back up their seed phrase on a piece of paper and then have it laminated and then hide it somewhere. 
+
+
+### DeFi
+We want to get 20% returns, but we don't want to do Pools unless they're stable pools. Else we're going to get rekt with IL. 
+
+I also personally don't want to be rebalancing every day. So I'll only consider the following:
+* Single token yield
+* Stablecoin Pool
+* Coin and StakedCoin Pool for BlueChips
+
+The reason we've chosen Arbitrum is mainly because it has a Delta Neutral Stablecoin. While Ethena is the biggest one by MarketCap it's only on Ethereum and transaction fee's are too high to justify using it. 
+
+[USDX](https://usdx.money/) is currently offering 37% on their Delta Neutral Stablecoin. We'll use them for now, but important to understand the [risks](https://docs.ethena.fi/solution-overview/risks) of delta neutral stablecoins.
+
+We also need to have an exit strategy if there is even a hint of a death spiral. 
+
+We want to be smart with alerts and not have to be online constantly. Remember financial independence means digital independence too.
+
+So we need a good notification system. We can use:
+* Tenderly Web3 Actions
+* OpenZeppelin Defender Sentinels

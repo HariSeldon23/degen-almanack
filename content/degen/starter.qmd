@@ -1,41 +1,46 @@
-# Make some money
+---
+title: "Make some money"
+format:
+  html:
+    code-fold: true
+    theme: cosmo
+    grid: 
+      margin-width: 350px
+    include-in-header:
+      text: |
+        <script src="https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js"></script>
+execute:
+  echo: false
+---
 
 ## Purchasing your first Crypto
 
 I'd like to respect and adhere to the ethos of the early Cypherpunks. This means that I'd like everyone that follows along to maintain privacy. However the current solutions are overly technical for newcomers. [Tornado Cash](../technical/dapps.qmd#tornado-cash) and [Railgun](../technical//dapps.qmd#railgun) have a high barrier to entry and [Payy Network](https://payy.network/) doesn't support moving funds onto other wallets yet.
 
-So please be aware that all your transactions that you perform following along will be non private and easy for someone to trace.
+So please be aware that all your transactions that you perform following along will be non private and easy for someone to trace. If you're an advanced user, then please see how to [convert fiat to crypto anonymously](./giga.qmd#converting-fiat-into-a-cryptocurrency-anonymously).
 
 Important things to note:
 
 -   You'll need about 10 US Dollars
--   We'll be using CEX's to purchase crypto
--   We'll use a Mobile wallet, Metamask
--   We'll use Arbitrum, as while it's not the [cheapest L2](https://l2beat.com/scaling/costs), it's still reasonable and has an important Stable Coin we'll need to use in our early strategies.
+-   We'll be using a [CEX](../essentials/tools.qmd#cexs) to purchase crypto
+-   We'll use a Mobile wallet, Phantom
 
 First thing anyone entering Web3 needs to do is to convert Fiat into a [Digital Asset](../financial/tokens.qmd)
 
-We will use Coinbase as the CEX for this section. You're more than welcome to use your local CEX. If you would like anonymity for your Crypto purchases, please see this section on [Converting fiat into cryptocurrency](../degen/giga.qmd#converting-fiat-into-a-cryptocurrency)
+We will use Coinbase as the CEX for this section. You're more than welcome to use your local CEX. 
 
-The reason I went with \$10 is so that this will work for as many people as possible. Such as these heart breaking facts:
+The reason I went with $10 is so that this will work for as many people as possible. See these heart breaking facts:
 
--   The poorest 10% of the world live on less than \$2 a day
--   About 50% live on less than \$7 a day
+-   The poorest 10% of the world live on less than $2 a day
+-   About 50% live on less than $7 a day
 
-We'll purchase \$10 worth of [ETH](../financial/trollip_index.qmd#eth).
+We'll purchase $10 worth of [BTC](../financial/trollip_index.qmd#btc).
 
-## Your first Degen Strategies
+## Creating your first Crypto wallet
 
-We'll now learn the following strategies:
+We'll follow the mantra of ["Not your keys, not your Coins"](../essentials/memes.qmd#not-your-keys-not-your-coins) and as such we need to get our assets off a CEX as soon as is practical. Bitcoin fee's are a bit expensive, so we'll keep them on a CEX until we have enough built up to justify the transaction fee to get them into our own wallet. 
 
-1. Financial Independence
-2. DCA
-3. [HODL](../essentials/memes.qmd#hodl)
-4. DeFi
-
-
-
-### Financial Independence
+## Financial Independence
 This Almanack is opinionated, because I'm opinionated. [I write what I like](https://en.wikipedia.org/wiki/I_Write_What_I_Like).
 
 The North Star of this Almanack is financial independence. All strategies will be tailored to help you achieve this. 
@@ -70,71 +75,182 @@ Where:
 * r = Interest rate (as a decimal)
 * n = Number of time periods
 
-So we're start with:
+**Interactive Financial Independence Calculator**
 
-* Initial amount (PV) = $10
-* Monthly contribution (PMT) = $10
-* Annual interest rate (r) = 20% = 0.20
-* Monthly interest rate = 0.20/12 = 0.0167
-* Target future value (FV) = $63,875
+Use the calculator below to experiment with different scenarios and see how they affect your path to financial independence. The chart shows your projected growth over time, with the red dashed line indicating your target amount.
 
-$63,875 = 10 × (1 + 0.0167)^n + 10 × [((1 + 0.0167)^n - 1) / 0.0167]
+```{ojs}
+// Create input elements with improved formatting
+viewof target = Inputs.range(
+  [1000, 10000000],
+  {value: 63875, step: 100, label: "Target Amount ($)"}
+)
 
- It would take approximately 96 months, or 8 years.
+viewof initial = Inputs.range(
+  [0, 10000],
+  {value: 10, step: 1, label: "Initial Investment ($)"}
+)
 
- This means someone living in the third world starting to invest at 10 years of age, would be financially independent by the time they reached adulthood at 18. Fuck yeah. 
+viewof monthly = Inputs.range(
+  [0, 1000],
+  {value: 10, step: 1, label: "Monthly Contribution ($)"}
+)
 
- So 20% is our aim. 
+viewof rate = Inputs.range(
+  [0, 1000],
+  {value: 77, step: 0.1, label: "Annual Return Rate (%)"}
+)
 
- Some important notes:
+// Enhanced number formatting function
+function formatCurrency(value) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  }).format(value);
+}
 
- * Once you've gotten to your capital goal, you'd tend to leave it in lower risk instruments. Hence the difference between 20% and 4%
- * I haven't taken into account capital gains tax or indeed any taxes. That's on you.
+// Display current input values with proper formatting
+currentValues = md`
+Current Values:
+- Target Amount: ${formatCurrency(target)}
+- Initial Investment: ${formatCurrency(initial)}
+- Monthly Contribution: ${formatCurrency(monthly)}
+- Annual Return Rate: ${rate.toFixed(1)}%
+`
 
-### DCA
-An important point in the above section was that we have to have a monthly contribution. This means that every month you'll need to find $10 in Fiat and convert it into Digital Assets. The makeup of what you purchase will be determined by your strategy. The smol brain and gigabrain strategy will be largely the same. The gigabrain though will have more advanced tools at their disposal to protect their privacy and engage in markets generally reserved for mature market participants. The mid brain strategies will generally leave you broke and destitute and giving up on Crypto. 
+// Calculation function
+function calculateGrowth(initial, monthly, rate, target) {
+  const monthlyRate = rate / 100 / 12;
+  let amount = initial;
+  let data = [{month: 0, amount: amount}];
+  let month = 0;
+  
+  while (amount < target && month < 1200) {
+    amount = amount * (1 + monthlyRate) + monthly;
+    month++;
+    data.push({month, amount});
+  }
+  
+  return {
+    months: month,
+    finalAmount: amount,
+    years: Math.floor(month / 12),
+    remainingMonths: month % 12,
+    isAchievable: month < 1200,
+    growthData: data
+  };
+}
 
-The current Smol brain strategy will be based upon where we are in the Cycle. Currently we are in the midst of a bull market. So that's why we've chosen this approach. 
-* 50% BTC (HODL)
-* 50% in DeFi earning above 20%
+// Calculate results based on inputs
+results = calculateGrowth(initial, monthly, rate, target)
 
-### HODL
-The ultimate HODL Coin is [BTC](../financial/trollip_index.qmd#btc). Considering we're planning for 8 years, we have a perfect timeline for HODLing. I'm not suggesting you only HODL as most people get board and a Degen wants the rush. But I recommend 50% of your capital outlay being in BTC or it's derivatives. And then never sell that shit. Historically if we look at people that bought BTC and held for at least 8 years the results are fucken astounding:
+// Display formatted results
+md`### Results
+Time to reach goal: ${results.years} years and ${results.remainingMonths} months
+
+Final amount: ${formatCurrency(results.finalAmount)}
+
+${results.isAchievable ? '' : '⚠️ Goal may not be achievable with current parameters'}`
+
+// Create the growth visualization
+{
+  const svg = d3.create("svg")
+    .attr("viewBox", [0, 0, 800, 400])
+    .attr("style", "max-width: 100%; height: auto;");
+    
+  const x = d3.scaleLinear()
+    .domain([0, results.months])
+    .range([50, 750]);
+    
+  const y = d3.scaleLinear()
+    .domain([0, Math.max(target, results.finalAmount)])
+    .range([350, 50]);
+    
+  // Improved axis formatting for large numbers
+  const formatAmount = (value) => {
+    if (value >= 1e6) return `$${(value/1e6).toFixed(1)}M`;
+    if (value >= 1e3) return `$${(value/1e3).toFixed(1)}K`;
+    return `$${value}`;
+  };
+    
+  svg.append("g")
+    .attr("transform", `translate(0,350)`)
+    .call(d3.axisBottom(x)
+      .ticks(10)
+      .tickFormat(d => d + " months"));
+      
+  svg.append("g")
+    .attr("transform", "translate(50,0)")
+    .call(d3.axisLeft(y)
+      .ticks(10)
+      .tickFormat(formatAmount));
+      
+  // Grid lines
+  svg.append("g")
+    .attr("class", "grid")
+    .attr("transform", `translate(0,350)`)
+    .call(d3.axisBottom(x)
+      .ticks(10)
+      .tickSize(-300)
+      .tickFormat(""))
+    .style("stroke-opacity", 0.1);
+    
+  const line = d3.line()
+    .x(d => x(d.month))
+    .y(d => y(d.amount));
+    
+  svg.append("path")
+    .datum(results.growthData)
+    .attr("fill", "none")
+    .attr("stroke", "steelblue")
+    .attr("stroke-width", 2)
+    .attr("d", line);
+    
+  svg.append("line")
+    .attr("x1", 50)
+    .attr("x2", 750)
+    .attr("y1", y(target))
+    .attr("y2", y(target))
+    .attr("stroke", "red")
+    .attr("stroke-dasharray", "5,5");
+    
+  svg.append("text")
+    .attr("x", 400)
+    .attr("y", 390)
+    .attr("text-anchor", "middle")
+    .text("Time (months)");
+    
+  svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -200)
+    .attr("y", 15)
+    .attr("text-anchor", "middle")
+    .text("Amount ($)");
+    
+  return svg.node();
+}
+```
+
+Important to note that holding BTC for 8 years:
 
 * Starting 2013 (to 2021): ~4,000% return
 * Starting 2014 (to 2022): ~2,900% return
 * Starting 2015 (to 2023): ~8,500% return
+* Starting 2016 (to 2024): ~17,500% return
 
-Holding BTC can be pretty expensive. At the time of writing, the medium priority fee is $1.22. Considering we only have $10 to play with, it doesn't make sense to waste it on Network fees. So our goal here is to hold a Derivative version of BTC with minimal risk. I've chosen [cbBTC](../financial/trollip_index.qmd#cbbtc) for a variety of reasons I don't have time to go into. 
+This clearly means holding BTC is the only logical thing you should do. Everything else is bullshit unless you're [mid brain](./mid.qmd).
 
-We will also stick to one Blockchain for now, as Bridging fees are also pretty expensive. We've chosen Arbitrum, as Layer 2 it has a good amount of DeFi activity and fee's are pretty cheap.
+## Your first Degen Strategies
 
-So now you'll need to perform the following actions: 
+We'll now learn the following strategies:
 
-* Setup a Metamask wallet 
-* Store your Private Key somewhere safe 
-* Transfer your $10 worth of ETH to your Metamask address 
-* Swap $5 to cbBTC on Uniswap
+1. DCA
+2. [HODL](../essentials/memes.qmd#hodl)
 
-The most important thing about this BTC is ensuring that Coinbase don't fuck it up and that you protect your private keys. Then just forget about it. We're not going to put it into DeFi to try earn yield or perform advanced strategies. If you want to do that, go the [mid brain](./mid.qmd) chapter. 
+### DCA
+An important point in the above section was that we have to have a monthly contribution. This means that every month you'll need to find $10 in Fiat and convert it into BTC. 
 
-### DeFi
-We want to get 20% returns, but we don't want to do Pools unless they're stable pools. Else we're going to get rekt with IL. 
-
-I also personally don't want to be rebalancing every day. So I'll only consider the following:
-* Single token yield
-* Stablecoin Pool
-* Coin and StakedCoin Pool for BlueChips
-
-
-The reason we've chosen Arbitrum is mainly because it has a Delta Neutral Stablecoin. While Ethena is the biggest one by MarketCap it's only on Ethereum and transaction fee's are too high to justify using it. 
-
-[USDX](https://usdx.money/) is currently offering 37% on their Delta Neutral Stablecoin. We'll use them for now, but important to understand the [risks](https://docs.ethena.fi/solution-overview/risks) of delta neutral stablecoins.
-
-We also need to have an exit strategy if there is even a hint of a death spiral. 
-
-We want to be smart with alerts and not have to be online constantly. Remember financial independence means digital independence too.
-
-So we need a good notification system. We can use:
-* Tenderly Web3 Actions
-* OpenZeppelin Defender Sentinels
+### HODL
+The ultimate HODL Coin is [BTC](../financial/trollip_index.qmd#btc). Considering we're planning for 8 years, we have a perfect timeline for HODLing. 

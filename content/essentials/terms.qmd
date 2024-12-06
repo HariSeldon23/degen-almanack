@@ -1,4 +1,4 @@
-# Crypto Terms
+# Terms
 This Chapter will be updated most frequently. Terms are constantly changing, definitions being debated in the public square and evolving at a quicksilver pace. 
 
 Please treat it as a living document. The Almanack uses version control, so it will be possible to see how terms change over time by going back to [previous versions](https://github.com/HariSeldon23/degen-almanack/tree/main/docs/pdfs). 
