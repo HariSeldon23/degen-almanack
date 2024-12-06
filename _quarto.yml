@@ -13,6 +13,7 @@ book:
   - chapters:
     - ./content/degen/scam.qmd
     - ./content/degen/starter.qmd
+    - ./content/degen/mid.qmd
     - ./content/degen/giga.qmd
     part: Become a Degen
   - chapters:
