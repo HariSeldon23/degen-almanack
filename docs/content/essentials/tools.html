@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.7.2">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0626ff4d7a71b55c8707dcae1d04a9b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-823ada2c64a85bd70d66c02353c14ab3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ecba56d4e9f607defad91b04bf549305.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d0d28e68b2311299fec6095e89651c71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -331,7 +331,6 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#privacy-tools" id="toc-privacy-tools" class="nav-link" data-scroll-target="#privacy-tools">Privacy Tools</a>
   <ul class="collapse">
-  <li><a href="#duckduckgo" id="toc-duckduckgo" class="nav-link" data-scroll-target="#duckduckgo">DuckDuckGo</a></li>
   <li><a href="#vpn" id="toc-vpn" class="nav-link" data-scroll-target="#vpn">VPN</a></li>
   <li><a href="#tor" id="toc-tor" class="nav-link" data-scroll-target="#tor">TOR</a></li>
   </ul></li>
@@ -372,6 +371,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Wallets have the following major attributes:</p>
 <ul>
 <li>Type - Hardware or Software wallets</li>
+<li>Private</li>
 <li>Platform - Mobile, Browser, Desktop or Hybrid</li>
 <li><a href="../../content/technical/blockchains.html#application-models">Application Model</a> - Type of blockchains it supports. Can support multiple models.</li>
 </ul>
@@ -517,43 +517,298 @@ ul.task-list li input[type="checkbox"] {
 <section id="explorers" class="level4">
 <h4 class="anchored" data-anchor-id="explorers">Explorers</h4>
 <p>Explorers allow you to explore transactions and on chain activity.</p>
+<p>I’ll revise the table to be more focused and clear, removing the alternative explorers column.</p>
+<table class="table-striped table-hover caption-top table">
+<caption>Explorers</caption>
+<colgroup>
+<col style="width: 35%">
+<col style="width: 50%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Blockchain</th>
+<th>Primary Explorer</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ethereum</td>
+<td>Etherscan</td>
+<td>https://etherscan.io</td>
+</tr>
+<tr class="even">
+<td>ApeCoin</td>
+<td>ApeScan</td>
+<td>https://apescan.org</td>
+</tr>
+<tr class="odd">
+<td>Arbitrum One</td>
+<td>Arbiscan</td>
+<td>https://arbiscan.io</td>
+</tr>
+<tr class="even">
+<td>Arbitrum Nova</td>
+<td>Nova Explorer</td>
+<td>https://nova.arbiscan.io</td>
+</tr>
+<tr class="odd">
+<td>Base</td>
+<td>BaseScan</td>
+<td>https://basescan.org</td>
+</tr>
+<tr class="even">
+<td>Blast Chain</td>
+<td>BlastScan</td>
+<td>https://blastscan.io</td>
+</tr>
+<tr class="odd">
+<td>BNB Chain</td>
+<td>BscScan</td>
+<td>https://bscscan.com</td>
+</tr>
+<tr class="even">
+<td>BTTC</td>
+<td>BttcScan</td>
+<td>https://bttcscan.com</td>
+</tr>
+<tr class="odd">
+<td>Celo</td>
+<td>CeloScan</td>
+<td>https://celoscan.io</td>
+</tr>
+<tr class="even">
+<td>Cronos</td>
+<td>CronoScan</td>
+<td>https://cronoscan.com</td>
+</tr>
+<tr class="odd">
+<td>Frax</td>
+<td>FraxScan</td>
+<td>https://fraxscan.io</td>
+</tr>
+<tr class="even">
+<td>Fantom</td>
+<td>FTMScan</td>
+<td>https://ftmscan.com</td>
+</tr>
+<tr class="odd">
+<td>Gnosis</td>
+<td>GnosisScan</td>
+<td>https://gnosisscan.io</td>
+</tr>
+<tr class="even">
+<td>Linea</td>
+<td>LineaScan</td>
+<td>https://lineascan.build</td>
+</tr>
+<tr class="odd">
+<td>Mantle</td>
+<td>MantleScan</td>
+<td>https://mantlescan.io</td>
+</tr>
+<tr class="even">
+<td>Moonbeam</td>
+<td>Moonscan</td>
+<td>https://moonbeam.moonscan.io</td>
+</tr>
+<tr class="odd">
+<td>Moonriver</td>
+<td>Moonscan</td>
+<td>https://moonriver.moonscan.io</td>
+</tr>
+<tr class="even">
+<td>opBNB</td>
+<td>opBNB Explorer</td>
+<td>https://opbnbscan.com</td>
+</tr>
+<tr class="odd">
+<td>Optimism</td>
+<td>Optimistic Etherscan</td>
+<td>https://optimistic.etherscan.io</td>
+</tr>
+<tr class="even">
+<td>Polygon zkEVM</td>
+<td>Polygon zkEVM Explorer</td>
+<td>https://zkevm.polygonscan.com</td>
+</tr>
+<tr class="odd">
+<td>Polygon</td>
+<td>PolygonScan</td>
+<td>https://polygonscan.com</td>
+</tr>
+<tr class="even">
+<td>Scroll</td>
+<td>ScrollScan</td>
+<td>https://scrollscan.com</td>
+</tr>
+<tr class="odd">
+<td>Avalanche</td>
+<td>SnowTrace</td>
+<td>https://snowtrace.io</td>
+</tr>
+<tr class="even">
+<td>Sophon</td>
+<td>SophScan</td>
+<td>https://sophonscan.com</td>
+</tr>
+<tr class="odd">
+<td>Taiko</td>
+<td>TakioScan</td>
+<td>https://taikoscan.com</td>
+</tr>
+<tr class="even">
+<td>Wemix</td>
+<td>WemixScan</td>
+<td>https://wemixscan.com</td>
+</tr>
+<tr class="odd">
+<td>Worldcoin</td>
+<td>WorldScan</td>
+<td>https://worldcoin.org/explorer</td>
+</tr>
+<tr class="even">
+<td>Xai</td>
+<td>XaiScan</td>
+<td>https://xaiscan.com</td>
+</tr>
+<tr class="odd">
+<td>XDC</td>
+<td>XdcScan</td>
+<td>https://xdcscan.io</td>
+</tr>
+<tr class="even">
+<td>zkSync</td>
+<td>zkSync Explorer</td>
+<td>https://explorer.zksync.io</td>
+</tr>
+<tr class="odd">
+<td>XRP</td>
+<td>XRP Ledger Explorer</td>
+<td>https://livenet.xrpl.org</td>
+</tr>
+<tr class="even">
+<td>Solana</td>
+<td>Solana Explorer</td>
+<td>https://explorer.solana.com</td>
+</tr>
+<tr class="odd">
+<td>Dogecoin</td>
+<td>DogeChain</td>
+<td>https://dogechain.info</td>
+</tr>
+<tr class="even">
+<td>Cardano</td>
+<td>Cardanoscan</td>
+<td>https://cardanoscan.io</td>
+</tr>
+<tr class="odd">
+<td>Tron</td>
+<td>Tronscan</td>
+<td>https://tronscan.org</td>
+</tr>
+<tr class="even">
+<td>TON</td>
+<td>TON Explorer</td>
+<td>https://tonscan.org</td>
+</tr>
+<tr class="odd">
+<td>Polkadot</td>
+<td>Polkascan</td>
+<td>https://polkascan.io</td>
+</tr>
+<tr class="even">
+<td>Chainlink</td>
+<td>Chainlink Explorer</td>
+<td>https://explorer.chain.link</td>
+</tr>
+<tr class="odd">
+<td>Stellar</td>
+<td>Stellar Expert</td>
+<td>https://stellar.expert</td>
+</tr>
+<tr class="even">
+<td>Bitcoin Cash</td>
+<td>Blockchair</td>
+<td>https://blockchair.com/bitcoin-cash</td>
+</tr>
+<tr class="odd">
+<td>Sui</td>
+<td>Sui Explorer</td>
+<td>https://suiexplorer.com</td>
+</tr>
+<tr class="even">
+<td>NEAR</td>
+<td>NEAR Explorer</td>
+<td>https://explorer.near.org</td>
+</tr>
+<tr class="odd">
+<td>Aptos</td>
+<td>Aptos Explorer</td>
+<td>https://explorer.aptoslabs.com</td>
+</tr>
+<tr class="even">
+<td>Hedera</td>
+<td>HashScan</td>
+<td>https://hashscan.io</td>
+</tr>
+<tr class="odd">
+<td>Litecoin</td>
+<td>Litecoin Explorer</td>
+<td>https://litecoinblockexplorer.net</td>
+</tr>
+<tr class="even">
+<td>Internet Computer</td>
+<td>IC Scan</td>
+<td>https://icscan.io</td>
+</tr>
+<tr class="odd">
+<td>VeChain</td>
+<td>VeChain Stats</td>
+<td>https://vechainstats.com</td>
+</tr>
+<tr class="even">
+<td>Filecoin</td>
+<td>Filfox</td>
+<td>https://filfox.info</td>
+</tr>
+<tr class="odd">
+<td>Stacks</td>
+<td>Stacks Explorer</td>
+<td>https://explorer.stacks.co</td>
+</tr>
+<tr class="even">
+<td>Hyperliquid</td>
+<td>Hyperliquid Explorer</td>
+<td>https://hyperliquid.xyz/info</td>
+</tr>
+<tr class="odd">
+<td>Kaspa</td>
+<td>Kaspa Explorer</td>
+<td>https://explorer.kaspa.org</td>
+</tr>
+<tr class="even">
+<td>Algorand</td>
+<td>AlgoExplorer</td>
+<td>https://algoexplorer.io</td>
+</tr>
+<tr class="odd">
+<td>Cosmos</td>
+<td>Mintscan</td>
+<td>https://www.mintscan.io</td>
+</tr>
+<tr class="even">
+<td>Mantra</td>
+<td>Mantra Scan</td>
+<td>https://mantrascan.org</td>
+</tr>
+</tbody>
+</table>
 <section id="pure-evm" class="level5">
 <h5 class="anchored" data-anchor-id="pure-evm">Pure EVM</h5>
 <p>Etherscan is the most widely used Explorer and has versions on all the major EVM Chains. We’ll only focus on their Explorers for EVM chains in perpetuity or until something better comes along.</p>
 <p>I recommend using <a href="https://blockscan.com/">Blockscan</a> which is from the same company and consolidates all their supported chains into a consolidated UI. It makes sense to use Blockscan for surface level analysis. But as soon as you want to delve into the code, you’ll need to use one of their Explorers specializing on that particular chain.</p>
-<p>They are:</p>
-<ul>
-<li>Etherscan - Ethereum</li>
-<li>ApeScan - Ape</li>
-<li>Arbiscan - Arbitrum One</li>
-<li>Arbitrum Nov</li>
-<li>BaseScan - Base</li>
-<li>BlastScan - Blast Chain</li>
-<li>BscScan - BNB</li>
-<li>BttcScan - BTTC</li>
-<li>CeloScan - Celo</li>
-<li>CronoScan - Cronos</li>
-<li>FraxScan - Frax</li>
-<li>FTMScan - Fantom</li>
-<li>GnosisScan - Gnosis</li>
-<li>LineaScan - Linea</li>
-<li>MantleScan - Mantle</li>
-<li>Moonbeam - Moonbeam</li>
-<li>Moonriver - Moonriver</li>
-<li>opBNB - opBNB</li>
-<li>Optimism</li>
-<li>Polygon zkEVM</li>
-<li>PolygonScan</li>
-<li>ScrollScan</li>
-<li>SnowScan - Avalanche C Chain</li>
-<li>SophScan - Sophon</li>
-<li>TakioScan - Taiko</li>
-<li>WemixScan - Wemix</li>
-<li>World - WorldCoin</li>
-<li>XaiScan</li>
-<li>XdcScan</li>
-<li>zkSync</li>
-</ul>
 <section id="exploring-solidity" class="level6">
 <h6 class="anchored" data-anchor-id="exploring-solidity">Exploring Solidity</h6>
 <p>We’ll use <a href="https://etherscan.io/">Etherscan</a> to explore the EVM</p>
@@ -618,9 +873,6 @@ Note
 </section>
 <section id="privacy-tools" class="level2">
 <h2 class="anchored" data-anchor-id="privacy-tools">Privacy Tools</h2>
-<section id="duckduckgo" class="level3">
-<h3 class="anchored" data-anchor-id="duckduckgo">DuckDuckGo</h3>
-</section>
 <section id="vpn" class="level3">
 <h3 class="anchored" data-anchor-id="vpn">VPN</h3>
 <p>The most commercially popular VPN’s are ExpressVPN, NordVPN and CyberGhost. I’m not an expert here, but I use Mullvad VPN as it accepts BTC as payment and seems most resitant to state attacks.</p>

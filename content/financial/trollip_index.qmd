@@ -1,29 +1,34 @@
 # Trollip's Index
-## Bitcoin
+Trollip's index, taking a cue from the S&P 500, will aim to classify 500 [Digital Assets](../financial/tokens.qmd).
 
-### cbBTC
+The general approach would be to classify the top 500 via marketcap. However, a good characteristic of a degen is to not follow conventional wisdom and groupthink. So as the Almanack grows and more strategies are added to the the Degen Chapters, we'll add the assets as we discuss strategies around them. This means that it will contain some absolute shit coins. This will also help us to refine our [Risk models](./ratings.qmd#risks)
+
+## BTC
+Bitcoin has emerged as the world's first successful digital store of value, creating a new paradigm for wealth preservation in the digital age. Much like gold served ancient civilizations through to modern times as a reliable store of wealth, Bitcoin provides similar characteristics but with distinct advantages native to the digital realm.
+
+At its foundation, Bitcoin's value proposition rests on its absolute scarcity - there will never be more than 21 million bitcoins. This hard cap, combined with a transparent and immutable issuance schedule through mining "halvings" every four years, creates a predictability that even gold, with its uncertain mining output, cannot match. When new gold deposits are discovered or mining technology improves, supply can increase unexpectedly. Bitcoin's supply schedule, in contrast, is mathematically certain.
+
+Bitcoin's digital nature offers significant advantages over traditional stores of value. Unlike gold, it can be transferred instantly across borders, divided into microscopic units, stored without physical vault costs, and verified for authenticity without specialized equipment. Its self-custody properties allow individuals to maintain direct control over their wealth without relying on third-party custodians or financial institutions.
+
+The network's security model, backed by massive computational power through proof-of-work mining, has proven remarkably resilient over more than a decade. This track record has gradually built confidence among institutional investors, who increasingly view Bitcoin as a legitimate asset class for portfolio diversification and inflation hedging. Major financial institutions now offer Bitcoin investment products, while some corporations have adopted it as a treasury reserve asset.
+
+While Bitcoin began as a peer-to-peer electronic cash system, its evolution into a store of value mirrors how gold transformed from a medium of exchange into a wealth preservation tool. The emergence of Layer 2 solutions like the Lightning Network now handles Bitcoin's payments functionality, allowing the base layer to focus on its primary role as digital gold - the foundational layer of monetary security in the cryptocurrency ecosystem.
+
+### Derivatives
+#### cbBTC
 Coinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase's custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase's reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.
 
 The technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase's layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase's custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base's growing DeFi ecosystem while maintaining exposure to Bitcoin's value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC's key differentiator is its direct integration with Coinbase's established infrastructure and its focus on institutional-grade security and compliance measures.
 
-## Solana
-## Monero
-## Optimism
-## Ethereum
-## Filecoin
-## Starknet
-## Lido Staked Ethereum
-## Chainlink
-## Sui
-## Uniswap
-## Celestia
-## XRP
-## Dogecoin
-## Tether USDT
-## Circle USDC
-## Ethena USDe
-## Aptos
-## Arbitrum
-## Stacks
-## DAI
-## Cosmos Hub
+## ETH
+Ethereum represents a revolutionary leap in computing - it's humanity's first attempt at creating a global, decentralized computer that's always running and accessible to everyone. Like how the internet connected computers worldwide for information sharing, Ethereum connects computers globally to create a single, unified computational platform that no one controls but everyone can use.
+
+Think of Ethereum as a massive, worldwide computer with some unique properties: it never shuts down, can't be censored, and maintains perfect records of everything it processes. Instead of storing photos or documents like a regular computer, this world computer specializes in running smart contracts - pieces of code that automatically execute agreements and handle digital assets without needing intermediaries.
+
+ETH, the network's native asset, serves as the essential "fuel" that powers this world computer. Every computation, whether it's processing a DeFi trade or minting an NFT, requires ETH to run. After Ethereum's transition to Proof of Stake through The Merge, ETH also gained a new role - network validators must stake ETH to participate in securing the network, similar to how a computer needs electricity to function and stay secure.
+
+What makes Ethereum truly revolutionary is its programmability. Just as early personal computers transformed from specialized calculators into general-purpose machines that could run any software, Ethereum evolved blockchain technology from a simple transaction ledger into a platform that can run any programmable application. This has spawned entire new industries: decentralized finance (DeFi) protocols that operate 24/7 without human intervention, NFT marketplaces that enable digital ownership and royalties, and DAOs that coordinate human activity through code rather than hierarchies.
+
+The platform continues to evolve through ambitious technical upgrades. Layer 2 scaling solutions like rollups act as specialized processors that handle heavy computations off the main chain, while the planned implementation of sharding will divide the network into parallel processing units - similar to how modern computers use multiple cores to increase performance. These improvements aim to make the world computer more efficient and accessible while maintaining its core properties of decentralization and security.
+
+As this world computer grows in capability and adoption, ETH's value proposition strengthens - it's not just a digital asset, but the essential resource needed to access and use what might become the foundation of our digital future.

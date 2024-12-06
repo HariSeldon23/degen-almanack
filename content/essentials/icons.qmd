@@ -6,5 +6,47 @@
 
 Satoshi is the most publicly known creator of our industry. He was preceded by the Cypherpunks but has engulfed the public's imagination due to the fact no-one categorically knows who he/she/they were. 
 
+## Vitalik Buterin
+Vitalik Buterin stands as one of the most influential figures in cryptocurrency history, having conceived and co-founded Ethereum at just 19 years old. His journey began as a curious teenager writing for Bitcoin Magazine, where he first explored the limitations of Bitcoin's scripting language. This exploration led him to envision a more programmable blockchain platform that could serve as a global computer.
+
+In 2013, Buterin published the Ethereum whitepaper, introducing the revolutionary concept of a blockchain platform that could execute arbitrary code through "smart contracts." This innovation transformed blockchain technology from a purely financial tool into a general-purpose computing platform, enabling everything from decentralized applications (dApps) to non-fungible tokens (NFTs).
+
+Known for his profound technical insights and philosophical writings, Buterin continues to shape Ethereum's development through research into scaling solutions like sharding and rollups. His advocacy for "crypto for social good" has influenced numerous humanitarian blockchain projects, while his vocal support for proof-of-stake helped drive Ethereum's successful transition from proof-of-work in The Merge.
+
+Despite his prominence, Buterin maintains a reputation for intellectual humility and openness to criticism. He regularly publishes detailed technical analyses on his blog, addressing everything from blockchain scalability to social coordination problems. His commitment to open discourse and technical excellence has earned him respect even from competing blockchain communities.
+
+## Hal Finney
+
+Hal Finney was a pioneering cryptographer and one of Bitcoin's earliest adopters. He was the first person to receive a Bitcoin transaction from Satoshi Nakamoto and helped refine the Bitcoin software in its early days. His work on reusable proof of work systems (RPoW) laid crucial groundwork for Bitcoin's consensus mechanism. Tragically, Finney passed away in 2014 after battling ALS, but his contributions to cryptocurrency remain foundational to the industry.
+
+## Anatoly Yakovenko
+
+Anatoly Yakovenko is the co-founder of Solana, a high-performance blockchain platform known for its remarkable transaction speed and low costs. His background at Qualcomm and Dropbox influenced Solana's innovative proof-of-history consensus mechanism, which timestamps transactions to improve network efficiency. Under his leadership, Solana has become one of the fastest-growing blockchain ecosystems.
+
+## Gavin Wood
+
+Dr. Gavin Wood served as Ethereum's first Chief Technology Officer and authored the Ethereum Yellow Paper, which provided the first formal specification of any blockchain protocol. He later founded Polkadot, a protocol that enables cross-blockchain transfers of any data type, not just tokens. Wood also created the Web3 Foundation to facilitate a decentralized internet and coined the term "Web3."
+
+## Charles Hoskinson
+
+Charles Hoskinson was one of Ethereum's original co-founders before departing to create Cardano. His approach to blockchain development emphasizes academic rigor and peer-reviewed research. Through IOHK (Input Output Hong Kong), he's led the development of Cardano, implementing a proof-of-stake protocol that aims to be more energy-efficient and scalable than earlier blockchain systems.
+
+## Justin Sun
+
+Justin Sun founded TRON, a blockchain platform focused on content sharing and entertainment. Known for his marketing prowess and controversial public persona, Sun has expanded TRON's ecosystem significantly through various acquisitions, including BitTorrent. His aggressive growth strategies have made TRON one of the most actively used blockchains.
+
+## Emin Gün Sirer
+
+Dr. Emin Gün Sirer is the founder of Avalanche, a blockchain platform known for its unique consensus mechanism that combines the benefits of classical and Nakamoto consensus. As a professor at Cornell University, he has contributed significantly to blockchain research and identified potential vulnerabilities in early cryptocurrency systems. His academic background brings technical depth to Avalanche's innovative approach.
+
+## Pavel Durov
+
+Pavel Durov, often called the "Russian Mark Zuckerberg," is the founder of Telegram and the TON blockchain. After creating VKontakte (Russia's Facebook equivalent), he developed Telegram into one of the world's most popular messaging apps. Although TON was initially developed by Telegram, it has since evolved into an independent blockchain platform focused on scalability and user accessibility.
+
+## Sergey Nazarov
+
+Sergey Nazarov is the co-founder of Chainlink, a decentralized oracle network that enables smart contracts to securely access off-chain data feeds and traditional bank payments. His work on the "oracle problem" has been crucial for expanding blockchain applications beyond cryptocurrency transactions. Through Chainlink, he's created the standard for bringing real-world data onto blockchain networks.
+
+
 ## People who protect us
 [Coffeezilla](https://www.youtube.com/@Coffeezilla)

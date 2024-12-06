@@ -1,5 +1,4 @@
 # Tools 
-*Testing GH branch worfklow*
 
 ## Wallets
 A wallet is the primary way you interact with a [Blockchain](../technical/blockchains.qmd). 
@@ -7,6 +6,7 @@ A wallet is the primary way you interact with a [Blockchain](../technical/blockc
 Wallets have the following major attributes:
 
 * Type - Hardware or Software wallets
+* Private
 * Platform - Mobile, Browser, Desktop or Hybrid
 * [Application Model](../technical/blockchains.qmd#application-models) - Type of blockchains it supports. Can support multiple models. 
 
@@ -121,6 +121,8 @@ I'll revise the table to be more focused and clear, removing the alternative exp
 | Cosmos | Mintscan | https://www.mintscan.io |
 | Mantra | Mantra Scan | https://mantrascan.org |
 
+: Explorers {.striped .hover}
+
 ##### Pure EVM 
 Etherscan is the most widely used Explorer and has versions on all the major EVM Chains. We'll only focus on their Explorers for EVM chains in perpetuity or until something better comes along. 
 
@@ -168,14 +170,12 @@ We break down API's into the following categories:
 Coming Soon. 
 
 ## Security Tools
+
 ### OpenZeppelin 
 
 ## Privacy Tools
 
-### DuckDuckGo
-
 ### VPN
-
 The most commercially popular VPN's are ExpressVPN, NordVPN and CyberGhost. I'm not an expert here, but I use Mullvad VPN as it accepts BTC as payment and seems most resitant to state attacks. 
 
 ### TOR

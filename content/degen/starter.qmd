@@ -1,41 +1,140 @@
 # Make some money
 
 ## Purchasing your first Crypto
-While as much as possible I'd like to respect and adhere to the ethos of the early Cypherpunks, there's also the practicality of expecting newcomers to be able to perform some of the advanced requirements that are needed. So we'll take a pragmatic approach and introduce those concepts in incremental levels of difficulty. 
+
+I'd like to respect and adhere to the ethos of the early Cypherpunks. This means that I'd like everyone that follows along to maintain privacy. However the current solutions are overly technical for newcomers. [Tornado Cash](../technical/dapps.qmd#tornado-cash) and [Railgun](../technical//dapps.qmd#railgun) have a high barrier to entry and [Payy Network](https://payy.network/) doesn't support moving funds onto other wallets yet.
+
+So please be aware that all your transactions that you perform following along will be non private and easy for someone to trace.
 
 Important things to note:
 
-* You'll need about 10 US Dollars
-* We'll be using CEX's to purchase, while understanding the risks and implications
-* We'll use a Mobile wallet, Metamask
-* We'll use Base, as it's the cheapest L2 with the most activity https://l2beat.com/scaling/costs about $0.003. That means we can do loads of transactions. 
+-   You'll need about 10 US Dollars
+-   We'll be using CEX's to purchase crypto
+-   We'll use a Mobile wallet, Metamask
+-   We'll use Arbitrum, as while it's not the [cheapest L2](https://l2beat.com/scaling/costs), it's still reasonable and has an important Stable Coin we'll need to use in our early strategies.
 
-So the first thing anyone entering Web3 needs to do is to purchase some Crypto.
+First thing anyone entering Web3 needs to do is to convert Fiat into a [Digital Asset](../financial/tokens.qmd)
 
 We will use Coinbase as the CEX for this section. You're more than welcome to use your local CEX. If you would like anonymity for your Crypto purchases, please see this section on [Converting fiat into cryptocurrency](../degen/giga.qmd#converting-fiat-into-a-cryptocurrency)
 
-The reason I went with $10 is so that this will work for as many people as possible. Such heart breaking facts:
+The reason I went with \$10 is so that this will work for as many people as possible. Such as these heart breaking facts:
 
-* The poorest 10% of the world live on less than $2 a day
-* About 50% live on less thatn $7 a day
+-   The poorest 10% of the world live on less than \$2 a day
+-   About 50% live on less than \$7 a day
+
+We'll purchase \$10 worth of [ETH](../financial/trollip_index.qmd#eth).
 
 ## Your first Degen Strategies
 
-We'll now follow two concurrent strategies.
+We'll now learn the following strategies:
 
-1. [HODL](../essentials/memes.qmd#hodl)
-2. Double my money in 3 years
+1. Financial Independence
+2. DCA
+3. [HODL](../essentials/memes.qmd#hodl)
+4. DeFi
 
-The goals of the HODL is to hold the safest, most valuable Coin for as long as possible. That's Bitcoin.
 
-The Full Degen part of our strategy is to be super risky. We should almost assume we'll lose this money, the goal is to make outrageous returns.
 
-With HODL, we will do the following:
+### Financial Independence
+This Almanack is opinionated, because I'm opinionated. [I write what I like](https://en.wikipedia.org/wiki/I_Write_What_I_Like).
 
-* Sign up for a CEX
-* Purchase $10 worth of ETH
-* Create an Account on Metamask
-* Transfer the $10 to our Metamask account on Base
-* Purchase $5 of [cbBTC](../financial/trollip_index.qmd#cbbtc) https://defillama.com/yields?token=CBBTC
-* Supply it to Aave. Although Spark may be of interest to qualify for the airdrop. The APR between the two is neglible. We'll go with Aave as it's safer for now. $5 bucks of an Airdrop isn't worth the extra risk.
-* In order to double our money in 3 years, which is very good, you need to get 24% APR. Makes sense to just use USDX on Arbitrum
+The North Star of this Almanack is financial independence. All strategies will be tailored to help you achieve this. 
+
+I'm a firm believer in Compound Interest. While as we progress up the degeneracy scale we'll be trading shit coins like a drunken Goth invading Italy, for now we want to learn some fundamentals, which we can then ignore later at our peril. 
+
+> "Compound Interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it" - Often misattributed, but unknown Author
+
+This isn't a TardFi textbook, so I'm not going too deeply into Compound Interest. I much prefer the Future Value of Money.
+
+> "If you don't know where you are going, you'll end up someplace else." - Yogi Berra
+
+So where are we going? Financial Independence from a Central Authority. That's what I want, and I'm pretty sure if you're reading this, you want it too. 
+
+So this book will be tailored to the people living in the third world. So if you live in the first world, just add an extra zero to all the figures and follow along. But for someone living in the third world where they need to live on $7 a day to survive. In order to get financial freedom from a central authority, they'd need to earn enough interest on their money yearly to afford their daily survival. So that's approximately $2,555 US dollars they'd need to earn in interest yearly. This would need to be a relatively stable yield without crazy degen high risks. So something like a US Bond. We'll get into that later. 
+
+But let's say we can get 4% yearly. That means we need a principal of $63,875 in order to escape reliance on any authority. 
+
+So now we know where we're going.
+
+How do we get there?
+
+In this example, we're going to ignore things like inflation for the time being. Even though inflation is one of the major driving forces behind crypto adoption. 
+
+The formula for future value with periodic payments is:
+FV = PV × (1 + r)^n + PMT × [((1 + r)^n - 1) / r]
+Where:
+
+* FV = Future Value
+* PV = Present Value (initial investment)
+* PMT = Payment (the regular contribution amount)
+* r = Interest rate (as a decimal)
+* n = Number of time periods
+
+So we're start with:
+
+* Initial amount (PV) = $10
+* Monthly contribution (PMT) = $10
+* Annual interest rate (r) = 20% = 0.20
+* Monthly interest rate = 0.20/12 = 0.0167
+* Target future value (FV) = $63,875
+
+$63,875 = 10 × (1 + 0.0167)^n + 10 × [((1 + 0.0167)^n - 1) / 0.0167]
+
+ It would take approximately 96 months, or 8 years.
+
+ This means someone living in the third world starting to invest at 10 years of age, would be financially independent by the time they reached adulthood at 18. Fuck yeah. 
+
+ So 20% is our aim. 
+
+ Some important notes:
+
+ * Once you've gotten to your capital goal, you'd tend to leave it in lower risk instruments. Hence the difference between 20% and 4%
+ * I haven't taken into account capital gains tax or indeed any taxes. That's on you.
+
+### DCA
+An important point in the above section was that we have to have a monthly contribution. This means that every month you'll need to find $10 in Fiat and convert it into Digital Assets. The makeup of what you purchase will be determined by your strategy. The smol brain and gigabrain strategy will be largely the same. The gigabrain though will have more advanced tools at their disposal to protect their privacy and engage in markets generally reserved for mature market participants. The mid brain strategies will generally leave you broke and destitute and giving up on Crypto. 
+
+The current Smol brain strategy will be based upon where we are in the Cycle. Currently we are in the midst of a bull market. So that's why we've chosen this approach. 
+* 50% BTC (HODL)
+* 50% in DeFi earning above 20%
+
+### HODL
+The ultimate HODL Coin is [BTC](../financial/trollip_index.qmd#btc). Considering we're planning for 8 years, we have a perfect timeline for HODLing. I'm not suggesting you only HODL as most people get board and a Degen wants the rush. But I recommend 50% of your capital outlay being in BTC or it's derivatives. And then never sell that shit. Historically if we look at people that bought BTC and held for at least 8 years the results are fucken astounding:
+
+* Starting 2013 (to 2021): ~4,000% return
+* Starting 2014 (to 2022): ~2,900% return
+* Starting 2015 (to 2023): ~8,500% return
+
+Holding BTC can be pretty expensive. At the time of writing, the medium priority fee is $1.22. Considering we only have $10 to play with, it doesn't make sense to waste it on Network fees. So our goal here is to hold a Derivative version of BTC with minimal risk. I've chosen [cbBTC](../financial/trollip_index.qmd#cbbtc) for a variety of reasons I don't have time to go into. 
+
+We will also stick to one Blockchain for now, as Bridging fees are also pretty expensive. We've chosen Arbitrum, as Layer 2 it has a good amount of DeFi activity and fee's are pretty cheap.
+
+So now you'll need to perform the following actions: 
+
+* Setup a Metamask wallet 
+* Store your Private Key somewhere safe 
+* Transfer your $10 worth of ETH to your Metamask address 
+* Swap $5 to cbBTC on Uniswap
+
+The most important thing about this BTC is ensuring that Coinbase don't fuck it up and that you protect your private keys. Then just forget about it. We're not going to put it into DeFi to try earn yield or perform advanced strategies. If you want to do that, go the [mid brain](./mid.qmd) chapter. 
+
+### DeFi
+We want to get 20% returns, but we don't want to do Pools unless they're stable pools. Else we're going to get rekt with IL. 
+
+I also personally don't want to be rebalancing every day. So I'll only consider the following:
+* Single token yield
+* Stablecoin Pool
+* Coin and StakedCoin Pool for BlueChips
+
+
+The reason we've chosen Arbitrum is mainly because it has a Delta Neutral Stablecoin. While Ethena is the biggest one by MarketCap it's only on Ethereum and transaction fee's are too high to justify using it. 
+
+[USDX](https://usdx.money/) is currently offering 37% on their Delta Neutral Stablecoin. We'll use them for now, but important to understand the [risks](https://docs.ethena.fi/solution-overview/risks) of delta neutral stablecoins.
+
+We also need to have an exit strategy if there is even a hint of a death spiral. 
+
+We want to be smart with alerts and not have to be online constantly. Remember financial independence means digital independence too.
+
+So we need a good notification system. We can use:
+* Tenderly Web3 Actions
+* OpenZeppelin Defender Sentinels
