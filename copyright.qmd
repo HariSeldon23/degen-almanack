@@ -1,0 +1,60 @@
+# Copyright Notice {.unnumbered}
+
+## Motivation
+
+Knowledge critical to achieving financial sovereignty should never be locked behind paywalls or restrictions. The crypto industry already suffers from enough artificial barriers - gated Discord servers, exclusive research groups, and insider knowledge networks that perpetuate inequality.
+
+This Almanack exists to break down these barriers. Just as Bitcoin enables permissionless financial transactions, this work aims to enable permissionless learning. However, we must also prevent others from creating new barriers around this knowledge.
+
+This is why we've chosen the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). This copyleft license ensures that:
+
+1. Anyone can freely access, share, and build upon this work
+2. Any derivative works must maintain the same freedoms
+3. Commercial use is permitted, but cannot restrict access
+4. Attribution protects the community's contributions
+5. The viral nature of ShareAlike prevents future enclosure
+
+Think of it like a smart contract for knowledge: immutable rules that protect freedom while enabling innovation.
+
+## Legal Text
+
+© 2025 Justin Trollip
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+### You are free to:
+
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose, even commercially
+
+### Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+### Notices:
+
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
+## Version Control
+
+This work is version controlled through Git. Each version represents a distinct iteration of the Almanack, identified by commit hashes and release tags. While the content may evolve, this license remains constant across all versions.
+
+You can find the complete version history and contribute to future versions at: [Repository URL]
+
+## Attribution Example
+
+When sharing or building upon this work, please provide attribution in the following format:
+
+"This work is based on Trollip's Degen Almanack © 2024 Justin Trollip, used under CC BY-SA 4.0. [Your modifications, if any]"
+
+## Contact
+
+For questions about usage or licensing, contact: jtrollip@protonmail.com
+
+---
+
+The above represents the formal terms under which this Almanack is shared. In the spirit of transparency and accessibility that cryptocurrency enables, we've chosen these terms to ensure this knowledge remains as free as the protocols it describes.

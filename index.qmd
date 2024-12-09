@@ -1,22 +1,39 @@
-# Preface {.unnumbered}
+# Welcome {.unnumbered}
 
-> "Arise, you have nothing to lose but your barbed wire fences!" [@may1988cryptoanarchist]
+This Almanack represents an attempt to document cryptocurrency and Web3 knowledge without the conflicts of interest that plague our industry. Just as Henry Varnum Poor created his Manual of Railroads to bring transparency to America's railroad boom, this Almanack aims to bring clarity to the cryptocurrency revolution.
 
-For my two skebangas. Huxley & Morrissey.
+## Why This Almanack Exists
 
-For the bois, the Lord's of Slumtown.
+The cryptocurrency industry suffers from a unique problem: those with the deepest knowledge often have the strongest financial incentives to mislead others. Protocol developers promote their own chains, influencers pump their own holdings, and "researchers" serve those who pay them. Meanwhile, crucial information remains locked behind paywalls and exclusive groups.
 
-## Why I must write 
-So that I can continue to use crypto without dishonor, I have decided to put together a sufficient body of free research so that I will be able to get along without any knowledge that is not free and accessible by anyone. 
+This Almanack breaks that pattern by providing:
 
-## Why many others want to help
-I have found that many within crypto are unhappy with the exploitation of digital currencies. The influx of grifters, charlatans and scammers. It may enable them to make more money, but it requires them to feel in conflict with humanity rather than feel as comrades. 
+- Comprehensive knowledge from basic concepts to advanced strategies
+- Independent analysis free from token-holder influence
+- Technical depth that doesn't sacrifice accessibility
+- Practical guidance for both users and developers
 
-The fundamental act of friendship among [degens](./content/essentials/terms.qmd#degens) is the sharing of knowledge. Knowledge in crypto, due to it's technical complexity has attracted a special type of exploitation. High pay walls for access to data goes against the very ethos of Web3. 
+## How to Use This Almanack
 
-## How you can contribute
-Currently you can contribute by submitting knowledge in the form of a Pull Request to the [Github repo](https://github.com/HariSeldon23/degen-almanack).
+Whether you're seeking financial sovereignty or building the future, this Almanack offers multiple paths:
 
-I'm considering opening up this Almanack onto [Mirror](https://mirror.xyz/) so people can donate financially and anonymously through there. I still need to do more research on [Open Source financial models](http://www.catb.org/~esr/writings/magic-cauldron/) to ensure this Almanack can operate sustainably as a going concern. 
+**For Those Seeking Independence**  
+Start with ["Regular Person's Path to Independence"](./content/independence/independence.qmd) to understand how to safely participate in the cryptocurrency ecosystem without falling prey to scams or losing your funds.
 
-Stay Tuned!
+**For Technical Minds**  
+The "Technical" section provides deep dives into cryptography, blockchain architecture, and protocol design patterns. Consider starting with "Web3 Essentials" to establish a common vocabulary.
+
+**For Market Participants**  
+The "Financial" section offers frameworks for analyzing digital assets, understanding market structures, and evaluating protocols.
+
+## Living Document
+
+This Almanack is version controlled through Git and continuously updated by community contributions. Every technical claim is justified, every strategy explained, and every risk clearly stated. You're reading an early draft, dated December 2024.
+
+## Contributing
+
+Knowledge critical to digital independence should be freely accessible. This work is licensed under Creative Commons Attribution-ShareAlike 4.0, ensuring it remains open while preventing commercial exploitation. Learn more in our "Contributing" section.
+
+---
+
+Begin your journey with the topics listed in the navigation menu, or proceed systematically through each section. Welcome to your guide to digital independence.

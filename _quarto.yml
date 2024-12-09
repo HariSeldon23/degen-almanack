@@ -2,8 +2,23 @@ bibliography: references.bib
 book:
   author: Justin Trollip
   chapters:
-  - index.qmd
-  - intro.qmd
+  - chapters:
+    - index.qmd
+    - copyright.qmd
+    - dedication.qmd
+    - epigraph.qmd
+    - preface.qmd
+    - intro.qmd
+    part: Introduction
+  - chapters:
+    - ./content/foundations/foundations.qmd
+    part: Foundations
+  - chapters: 
+    - ./content/independence/independence.qmd
+    part: Path to Independence
+  - chapters: 
+    - ./content/technical/overview.qmd
+    part: Technologist's Path
   - chapters:
     - ./content/essentials/terms.qmd
     - ./content/essentials/tools.qmd

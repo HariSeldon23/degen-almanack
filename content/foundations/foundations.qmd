@@ -1,0 +1,37 @@
+# Digital Independence
+
+The story of digital independence begins not with blockchains or cryptocurrencies, but with a profound recognition: the tools that brought unprecedented convenience to our lives have also created unprecedented control over them.
+
+Consider your daily financial life. Your morning coffee purchase creates a data point. Your salary arrives through systems you don't control. Your savings exist primarily as numbers in someone else's database. This convenience comes with hidden costs - your transactions can be blocked, your accounts frozen, your privacy compromised. Each small sacrifice of control seemed reasonable in isolation, but together they've created golden handcuffs of financial dependence.
+
+This isn't accidental. The post-industrial financial system runs on centralization because it's efficient. Banks can process thousands of transactions per second. Credit cards work seamlessly across borders. Mobile payments happen with a fingerprint. But this efficiency masks a fundamental truth - you're asking permission to use your own money.
+
+The early cypherpunks understood this tradeoff. In 1993, Eric Hughes wrote in the Cypherpunk Manifesto:
+
+"Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world."
+
+They saw that digital privacy would become inseparable from freedom. Without privacy in our transactions and communications, true independence would be impossible. But they also understood that simply criticizing the system wasn't enough - they needed to build alternatives.
+
+This brings us to public key cryptography, the foundation of digital independence. Imagine having a special lock that anyone can use to send you messages or money, but only you can open. No permission needed, no middlemen required, no central authority to approve or deny. This isn't just technical theory - it's a practical tool for independence.
+
+Bitcoin emerged from this foundation, but it would be a mistake to see it as just digital money. It proved that we could create systems where trust comes from mathematics and consensus rather than institutions. Where rules are enforced by code rather than policy. Where participation is permissionless rather than granted.
+
+The path to digital independence isn't about rejecting modern convenience - it's about reclaiming control while preserving it. We'll learn to:
+
+- Hold assets that can't be frozen or seized
+- Communicate without surveillance
+- Trade without gatekeepers
+- Build systems that resist control
+
+But this power comes with responsibility. In traditional systems, mistakes can often be reversed. Passwords can be reset. Transactions can be disputed. In truly independent systems, you alone are responsible for your security. Your privacy. Your choices.
+
+This Almanack exists because that responsibility requires knowledge. Not just technical knowledge, though that's important, but practical wisdom. Understanding not just how these systems work, but why they matter. Learning not just to use tools, but to think independently about digital freedom.
+
+The journey of digital independence is both personal and collective. Each person who takes control of their digital life strengthens the network for everyone. Each developer who builds privacy-preserving tools expands what's possible. We're not just users of a new system - we're participants in its evolution.
+
+In the coming chapters, we'll explore both the philosophical foundations and practical tools of digital independence. Whether you're a developer looking to build these systems or someone seeking to use them, understanding these foundations is essential. Because digital independence isn't given - it's learned, practiced, and ultimately, earned.
+
+* Start with the philosophical and historical context - from cypherpunks to present
+* Explain why both regular people and technologists seek alternatives to centralized systems
+* Cover the core principles: self-sovereignty, censorship resistance, trustless systems
+* This section unifies both audiences with common ground before diverging into specialized paths

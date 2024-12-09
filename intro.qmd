@@ -9,3 +9,19 @@ What then if there was a book, an Almanack for lack of a better word, that I cou
 Taking a cue from history, following in the footsteps of [Henry Vanrum Poor](https://en.wikipedia.org/wiki/Henry_Varnum_Poor) when he recognized the need for reliable information about the booming railroad companies. This takes inspiration from that venture with a modern twist. In line with the cypherpunk manifesto[@hughes1993cypherpunk] and the open source communities [@raymond1999cathedral] which I admire so much, this Almanack will be open source and community contributed. As a core tenet of the Cypherpunk manifesto, contributors identity will be less important than their reputation. The knowledge will be curated and go through an approval process via [Github Pull Requests](https://github.com/HariSeldon23/degen-almanack/pulls). The other innovation is that as the Alamack evolves over time it will integrate with real time data sources in order to provide a dynamic document that plugs into the market as it evolves. 
 
 A brief note on the naming of the book. Initially I wanted to call it blockchain taxonomy, reflecting it's early design goals. However as I worked more and more and it evolved into something much broader than a Taxonomy, Almanack made a lot more sense. Initially I liked Trollip's Web3 Almanack. But all the broader terms for this industry have severe limitations. I consider myself a degen. And while it's a loaded term, it's being a degen that has armed me with the knowledge to attempt this ambitious venture. Hence Trollip's Degen Almanack.
+
+## Core mission 
+This Almanack aims to solve the Agency problem in Web3. In simple terms, most of the information currently being published to users are from people with huge conflicts of interests. For all of TradFi's many faults, we do have regulatory frameworks and structures that help manage conflicts of interests. Even though they largely fail, in crypto these guardrails don't really exist. Even educational content in crypto generally comes from platforms that are funded by exchanges or protocols. These educational pieces promote certain technology because the authors are financially invested in their adoption. 
+
+This creates several problems I hope the Almanack can solve:
+
+1. Information Asymmetry - we can reduce the knowledge gap between insiders and regular users
+2. Principal Agent Misalignment - The Almanack's success isn't tied to promoting particular assets or protocols and if I ever took any money, it would be disclosed
+3. Moral Hazard - By being open source, community reviewed resource, we create accountability through transparency
+4. Selection Bias 
+
+## Intended Audience
+Our audience is primarily aimed at:
+
+* People wanting to escape the reliance on centralized post industrial systems
+* Technologists

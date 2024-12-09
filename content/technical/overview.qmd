@@ -1,0 +1,5 @@
+* Deep technical fundamentals (cryptography, consensus, networking)
+* Protocol design patterns and tradeoffs
+* Development frameworks and tools
+* Security considerations for builders
+* Advanced privacy techniques
