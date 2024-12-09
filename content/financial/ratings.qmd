@@ -1,9 +1,11 @@
 # Ratings
+This section will describe our ratings model for Digital Assets. 
 
 ## Core Rating Categories (60% of Total Rating)
 
 ### 1. Protocol Value Capture (30%)
 A. Network Effect Metrics
+
 - Daily Active Users (DAUs)
 - Total Value Locked (TVL)
 - Transaction volume
@@ -11,30 +13,33 @@ A. Network Effect Metrics
 - Protocol revenue retained
 
 B. Value Accrual Mechanisms
+
 - Token economics design
 - Fee distribution model
 - Staking mechanisms
 - Burns and supply dynamics
 
 C. Ozempic Network Effects 
+
 - Value extraction efficiency from L1
-    - Transaction fee capture rate
-    - User migration metrics from L1
-    - TVL migration patterns
-    - Gas savings versus L1
+- Transaction fee capture rate
+- User migration metrics from L1
+- TVL migration patterns
+- Gas savings versus L1
 - L1-L2 Value Dynamics
-    - Sequencer revenue distribution
-    - MEV capture and distribution
-    - Bridge volume and efficiency
-    - Settlement layer costs
+- Sequencer revenue distribution
+- MEV capture and distribution
+- Bridge volume and efficiency
+- Settlement layer costs
 - Sustainable Value Creation
-    - Net new users versus L1 migration
-    - Ecosystem-specific applications
-    - Novel transaction types impossible on L1
-    - Cross-L2 interoperability metrics
+- Net new users versus L1 migration
+- Ecosystem-specific applications
+- Novel transaction types impossible on L1
+- Cross-L2 interoperability metrics
 
 ### 2. Protocol Security & Risk Assessment (30%)
 A. Smart Contract Security
+
 - Audit history and quality
 - Bug bounty program effectiveness
 - Historical vulnerability incidents
@@ -43,6 +48,7 @@ A. Smart Contract Security
 - Testing coverage
 
 B. Network Security
+
 - Consensus mechanism robustness
 - MEV exposure and protection measures
 - Node distribution
@@ -51,6 +57,7 @@ B. Network Security
 - Oracle dependency and security
 
 C. L1 Dependency Risks
+
 - Settlement layer congestion exposure
 - Bridge security and liquidity depth
 - L1 fee market correlation
@@ -60,6 +67,7 @@ C. L1 Dependency Risks
 ## Risk Categories (40% of Total Rating)
 
 ### 1. Technical Risk Assessment (15%)
+
 A. Smart Contract Vulnerabilities
 - Code audit findings severity
 - Time-tested deployment
@@ -68,6 +76,7 @@ A. Smart Contract Vulnerabilities
 - Historical incident analysis
 
 B. Network Level Risks
+
 - MEV exposure metrics
 - Network partition resistance
 - Node centralization factors
@@ -75,6 +84,7 @@ B. Network Level Risks
 - Cross-chain vulnerability exposure
 
 C. Key Management & Wallet Security
+
 - Multi-sig implementation
 - Key generation processes
 - Hardware security modules usage
@@ -83,12 +93,14 @@ C. Key Management & Wallet Security
 
 ### 2. Economic Risk Assessment (10%)
 A. Market Dynamics
+
 - Liquidity concentration
 - Price impact resistance
 - Collateral quality
 - Market manipulation resistance
 
 B. Economic Model Vulnerabilities
+
 - Game theory attack vectors
 - Incentive alignment analysis
 - Economic exploit resistance
@@ -97,6 +109,7 @@ B. Economic Model Vulnerabilities
 
 ### 3. Operational Risk Assessment (10%)
 A. CeFi/CeDeFi Risks
+
 - Centralization points
 - Custody arrangements
 - Third-party dependencies
@@ -104,6 +117,7 @@ A. CeFi/CeDeFi Risks
 - Emergency procedures
 
 B. Oracle Dependencies
+
 - Oracle manipulation resistance
 - Price feed reliability
 - Backup oracle systems
@@ -112,6 +126,7 @@ B. Oracle Dependencies
 
 ### 4. External Risk Assessment (5%)
 A. Regulatory Risk
+
 - Jurisdictional exposure
 - Compliance frameworks
 - Regulatory clarity
@@ -119,6 +134,7 @@ A. Regulatory Risk
 - Historical regulatory interactions
 
 B. Social Engineering Risk
+
 - Team security practices
 - Access control policies
 - Social attack history
@@ -128,6 +144,7 @@ B. Social Engineering Risk
 ## Risk-Adjusted Rating Scale
 
 AAA: Exceptional protocol with comprehensive risk mitigation
+
 - Multiple independent security audits with no critical findings
 - Proven resistance to all major attack vectors
 - Strong regulatory compliance framework
@@ -135,6 +152,7 @@ AAA: Exceptional protocol with comprehensive risk mitigation
 - Multiple layers of economic security
 
 AA: Strong protocol with robust risk management
+
 - Regular security audits with minor findings
 - Documented resistance to common attack vectors
 - Clear regulatory strategy
@@ -143,6 +161,7 @@ AA: Strong protocol with robust risk management
 
 ## Risk Multipliers
 Each risk category can apply a multiplier to the base rating:
+
 - Critical Risk: -3 rating notches
 - High Risk: -2 rating notches
 - Medium Risk: -1 rating notch
@@ -150,6 +169,7 @@ Each risk category can apply a multiplier to the base rating:
 - Minimal Risk: +1 rating notch
 
 ## Continuous Monitoring Triggers
+
 - Smart contract vulnerability disclosure
 - Network attack detection
 - Regulatory action
@@ -160,6 +180,7 @@ Each risk category can apply a multiplier to the base rating:
 - MEV activity spikes
 
 ## Review Framework
+
 - Monthly security metric review
 - Quarterly risk assessment update
 - Annual comprehensive review
@@ -172,18 +193,21 @@ We'll base this upon value flows. Defillama doesn't actually display this. So we
 Let's build a comprehensive framework for tracking the true "Ozempic effect" of L2s on Ethereum. We'll need several interconnected metrics to understand the complete value flow dynamics.
 
 1. Wallet Migration Analysis
+
 - Track addresses that first appeared on Ethereum before a certain date (let's call them "Ethereum Native Wallets")
 - Monitor their activity transition to L2s over time
 - Analyze their ETH holdings distribution between L1 and L2s
 - Calculate the ratio of their transaction activity on L2s versus L1
 
 2. L2 Native User Analysis
+
 - Identify wallets that first appeared on L2s
 - Track what percentage never bridge to Ethereum
 - Measure their total value held
 - Calculate their transaction activity
 
 3. Fee Flow Dynamics
+
 - Track L2 sequencer fees paid back to Ethereum
 - Calculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)
 - Monitor the ratio of fees paid back to Ethereum versus fees retained by the L2
@@ -225,11 +249,13 @@ def calculate_migration_score(l2_data):
 ```
 
 This would give us a quantitative measure of how effectively an L2 is:
+
 1. Attracting value from Ethereum
 2. Generating new value through native users
 3. Maintaining a sustainable fee relationship with Ethereum
 
 A true Ozempic L2 should show:
+
 - High migration of ETH native wallets
 - Strong L2 native user growth
 - Efficient fee generation that still provides meaningful revenue to Ethereum
@@ -242,18 +268,21 @@ Would you like me to elaborate on how we could implement the data collection for
 ## Risk Factors
 
 ### 1. Technical Risks
+
 - Implementation bugs
 - Security vulnerabilities
 - Upgrade coordination failures
 - Network splits
 
 ### 2. Governance Risks
+
 - Capture by special interests
 - Low participation
 - Contentious decisions
 - Unclear processes
 
 ### 3. Social Risks
+
 - Community fragmentation
 - Loss of developer support
 - Reputation damage
@@ -262,18 +291,21 @@ Would you like me to elaborate on how we could implement the data collection for
 ## Future Considerations
 
 ### 1. Emerging Trends
+
 - Automated governance systems
 - AI-assisted proposal analysis
 - Cross-chain governance
 - Dynamic parameter adjustment
 
 ### 2. Challenges
+
 - Scaling governance participation
 - Balancing security and innovation
 - Managing increasing complexity
 - Maintaining decentralization
 
 ### 3. Opportunities
+
 - Improved governance tools
 - Better simulation capabilities
 - Enhanced coordination mechanisms
@@ -281,6 +313,7 @@ Would you like me to elaborate on how we could implement the data collection for
 
 
 ## Dependent Network Ratings
+
 Polygon zkEVM
 Settlement Guarantees (10/10 weight): 
 Score: 9/10

@@ -360,14 +360,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="converting-fiat-into-a-cryptocurrency-anonymously" class="level2">
 <h2 class="anchored" data-anchor-id="converting-fiat-into-a-cryptocurrency-anonymously">Converting FIAT into a Cryptocurrency anonymously</h2>
 <p>This may be the hardest part of being a Degen. A Degen values privacy. Important to distinguish there is a difference between privacy and secrecy. I’d like my cryptocurrency to display the same characteristics as cash. A means of exchange that has been working just fine for centuries. Cash is private by default and people have seemed pretty happy with that arrangement for over 3 centuries.</p>
-<p>Currently the best way to do this is via:</p>
+<p>The hardest part of ensuring privacy is making sure that when you create a new wallet there is no trace back to your off chain identity.</p>
+<p>The two biggest footprints you can leave are:</p>
+<ol type="1">
+<li>Funding your wallet to pay for Gas</li>
+<li>Receiving funds in your wallet from a compromised account</li>
+</ol>
+<p>When funding your on chain wallet from a CEX, it becomes very easy to trace your identity. Almost all CEX’s require you to KYC. So when you transfer $10 of ETH into your Metamask wallet, anyone will be able to find out that the funding of the wallet came from a CEX and via the CEX will be able to link your identity to your wallet.</p>
+<p>So currently the best way to do this is:</p>
 <ul>
-<li><a href="https://bisq.network/">Bisq</a></li>
-<li><a href="https://hodlhodl.com/">HODL HODL</a></li>
+<li>Create two wallets. Compromised and Clean</li>
+<li>Save the Private Keys</li>
+<li>Connect to your VPN</li>
+<li>TOR doesn’t support add ons, so we can’t install a wallet, but rather need to run a script in order to shield our funds</li>
 </ul>
-<p>Bisq has terrible rates, so I recommend Hodl Hodl. Else another alternative that will work just as well is:</p>
+<p>We can also try Railgun. I’ll run through both Tornado and Railgun and eventually Payy wallet and then based upon the results of all those experiments I’ll make a recommendation about the best approach to obtain a private by default wallet.</p>
 <ul>
-<li>Create two new accounts on an Ethereum Layer 2. 1 that you’ll throw away and one that will be secure</li>
 <li>Purchase USDC or USDT from a CEX</li>
 <li>Transfer the stable coins to the throwaway account</li>
 <li>Download <a href="https://www.railway.xyz/#download">Railgun Client</a></li>

@@ -53,7 +53,7 @@ So we need a good notification system. We can use:
 
 We'll use Tenderly's Web3 actions as they're more flexible and powerful. Since we'll be using Ethena's USDe quite alot through this strategies it's important that if it shits the bed, we can get out quickly before losing everything. As an example UST on May 10th 2022 from holding it's dollar peg to losing half it's value in about 38 hours. So if USDe loses more than 10%, we must assume a death spiral and get our money out. 
 
-[UST depeg](../../images/defi/ust-depeg.png)
+[!UST depeg](../../images/defi/ust-depeg.png)
 
 So what we want to do is to go to CoinGecko and find the biggest amount of on chain liquidity for USDe. So find USDe and then go to Markets to find the on DEX with the biggest depth. Currently that's Uniswap V3 with a USDE/USDT pool on Ethereum. https://app.uniswap.org/explore/pools/ethereum/0x435664008F38B0650fBC1C9fc971D0A3Bc2f1e47
 
