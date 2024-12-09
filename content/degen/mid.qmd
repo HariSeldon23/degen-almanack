@@ -6,39 +6,48 @@ While this section will probably be the most fun to write, it will result in unb
 
 Let the fun begin!
 
-These strategies will aim to get you to retire in a year. They'll generally leave you broke as shit, but at least we have a goal. 
+## Shit Coins
+DeFi truly started on Ethereum in [DeFi Summer 2020](https://medium.com/@lily_trangpham/the-formation-of-defi-summer-2020-conditions-for-a-new-defi-summer-a419d53d0d31). 
 
--   We'll use Arbitrum, as while it's not the [cheapest L2](https://l2beat.com/scaling/costs), it's still reasonable and has an important Stable Coin we'll need to use in our early strategies.
+Some pedants will argue it started in 2016, with the launch of EtherDelta and the 2017 ICO boom where it handled about 10% of all Ethereum token trading volume. But degen DeFi started in 2020 with the most degen of crazes. Food tokens and farming. 
 
-That's why we're recommending using Passkeys as they're emerging as the industry standard in Web2 and my prediction is they'll become the industry standard across Web2 and Web3
+Meme coins had started in 2013 with Doge. However in the early days even the worst shit coins had to have a network. So even the scammers needed to have enough technical proficiency to create a network to issue a token to scam you. That changed with the advent of the ERC20 token standard on Ethereum in late 2015. Now scammers and purveyors of shit coins could just copy and paste some code and voila, shit coin!
 
-* Apple IPhone and Mac users need to setup a Passkey using iCloud Keychain
-* Android and Chrome users can use Google Password Manager
-* Windows and Edge Users can use Windows Hello
+Scammers everywhere rejoiced. 
 
-Currently I recommend using Trust Wallet, however I can see that changing over time with Magic and Privy building Passkeys support from the ground up. Special mention also to Payy Network. Trust Wallet doesn't have an ability to add Passkeys on Chrome.
+In 2020 when DeFi Summer started kicking off, we got a flood of that special brand of shit coin, the Governance token. We can probably blame MakerDAO for this atrocity, with the introduction of "Liquidity Mining" or "Yield Farming". You see, shit coin creators crave liquidity above all else. Without liquidity, they cannot dump on the market. Without liquidity, you cannot manipulate the market to think your shit coin is worth billions. Traditionally shit coin creators had to go to CEX's to get liquidity. The problem is CEX's are just as, if not more, crooked than shit coin creators. CEX's charge astronomical prices to list. And then they dump on the market before the shit coin creator can. For a great case study see how $GALA shat the bed after getting listed on that dodgiest of the dodge, FTX. 
 
-Also reason I didn't choose Metamask. The UX is terrible. And the decision to go with Modular and Snaps will only make that UX shittier over time. 
+So Yield Farming allowed shit coin creators a new way to gain liquidity and if anything better PsyOps for dumping on mid brains. What you do is, you create your shit coin, with a massive supply, think billions. Then you allocate 10% of this token supply for Yield Farming. Now liquidity on CEX's are provided by mature market makers. Retail is excluded as they're not mature enough or have the resources to provide market making services. So since Uniswap provided an easy way for retail (read marks) to provide liquidity, you could offer these gullible people rewards for providing liquidity. So let's say you put in $10 of liquidity, you'd offer these users $10 a month in Yield Farming rewards for that liquidity. Easy money for the mark. Except that $10 a month is in the shit coin. Shit coin creator gets liquidity so they can dump their allocation into Stables or a blue chip Coin. Farming Yields go to shit. **YOU** get rekt. Unlucky. 
 
-Coinbase doesn't support Passkeys yet. Fuck me. Metamask for now, even though I hate it. Here's the Passkeys Snap https://snaps.metamask.io/snap/npm/usecapsule/account-snap I'm not comfortable having a third party control my Private Keys. So just won't use Passkeys for now and people can just back up their seed phrase on a piece of paper and then have it laminated and then hide it somewhere. 
+![Governance Tokens Tokenomics](../../images/defi/tokenomics.svg)
 
+So now we have all the ingredients for a Yield Farming.
 
-### DeFi
-We want to get 20% returns, but we don't want to do Pools unless they're stable pools. Else we're going to get rekt with IL. 
+* A plethora of shit coins, masquerading as Governance tokens
+* A mature trading environment facilitated by Uniswap's innovation in the AMM space
+* An unsuspecting market of victims easily lured by promises of huge profits
 
-I also personally don't want to be rebalancing every day. So I'll only consider the following:
-* Single token yield
-* Stablecoin Pool
-* Coin and StakedCoin Pool for BlueChips
+Welcome to DeFi Summer 2020. 
 
-The reason we've chosen Arbitrum is mainly because it has a Delta Neutral Stablecoin. While Ethena is the biggest one by MarketCap it's only on Ethereum and transaction fee's are too high to justify using it. 
+There were also some cool examples of Vampire Attacks. Or more broadly, a protocol ripping off the source code of a naive project, wrapping a token around their stolen work and trying to unfairly profit. How very James Taggart of them. 
 
-[USDX](https://usdx.money/) is currently offering 37% on their Delta Neutral Stablecoin. We'll use them for now, but important to understand the [risks](https://docs.ethena.fi/solution-overview/risks) of delta neutral stablecoins.
+So first lesson, we don't deal with shit coins. Or if we're forced to, it's because there's enough zealots around it that the market is being stupendously foolish and we can profit from their idiocy. 
 
-We also need to have an exit strategy if there is even a hint of a death spiral. 
+> Be fearful when others are greedy, and greedy when others are fearful - Warren Buffet
 
-We want to be smart with alerts and not have to be online constantly. Remember financial independence means digital independence too.
+I really should try categorize shit coins. This is tough to do.
+
+> "I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description [of pornography]; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that." - Supreme Court Justice Potter Steward's ruling on Porn
+
+Just like old mate Potter, I don't think I can define a shit coin, but I know it when I see it. The only way you'll be able to get that level of maturity is time in the market. Your battle scars will be your wisdom in years to come. 
+
+## Notification System
+Since we're going to be playing with the sharks, we're going to need protection. This is where alerts come into it. 
+
+Being good at DeFi is being able to remain emotionless. Being online 24/7 during bull markets is going to make you stupid, strung out and will ensure your strategies are riddled with mistakes. Being a balanced person will make you way more money than some sleep deprived, Twitter obsessed doos. Let the machines work for you. 
 
 So we need a good notification system. We can use:
-* Tenderly Web3 Actions
+* Tenderly Web3 Actions, or
 * OpenZeppelin Defender Sentinels
+
+We'll use Tenderly's Web3 actions as they're more flexible and powerful.

@@ -40,14 +40,21 @@ We'll purchase $10 worth of [BTC](../financial/trollip_index.qmd#btc).
 
 We'll follow the mantra of ["Not your keys, not your Coins"](../essentials/memes.qmd#not-your-keys-not-your-coins) and as such we need to get our assets off a CEX as soon as is practical. Bitcoin fee's are a bit expensive, so we'll keep them on a CEX until we have enough built up to justify the transaction fee to get them into our own wallet. 
 
+Please download or install [Phantom](https://phantom.app/). Once you open the wallet it will walk you through creating the wallet and will ask you to store your Seed 
+phrase. For first time users, we recommend storing this on a piece of paper that you laminate and keep somewhere safe. At a later stage, we'll expand this section with a much more comprehensive handling of the pros and cons of various methods to store your seed phrase.
+
+There are countless ways to store your seed phrase...
+
+{{< video https://youtu.be/kWp6hZ-5ndc?si=yk6_iFfjv3lw0UQ5&t=70 >}}
+
 ## Financial Independence
-This Almanack is opinionated, because I'm opinionated. [I write what I like](https://en.wikipedia.org/wiki/I_Write_What_I_Like).
+This Almanack is opinionated, because I'm opinionated. It will be wrong on occasion, but it also won't be cowed by crowds into taking safe calls. Where a position is required, we'll take one. 
 
 The North Star of this Almanack is financial independence. All strategies will be tailored to help you achieve this. 
 
 I'm a firm believer in Compound Interest. While as we progress up the degeneracy scale we'll be trading shit coins like a drunken Goth invading Italy, for now we want to learn some fundamentals, which we can then ignore later at our peril. 
 
-> "Compound Interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it" - Often misattributed, but unknown Author
+> "Compound Interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it" - Often misattributed, but Author unknown
 
 This isn't a TardFi textbook, so I'm not going too deeply into Compound Interest. I much prefer the Future Value of Money.
 
@@ -55,7 +62,7 @@ This isn't a TardFi textbook, so I'm not going too deeply into Compound Interest
 
 So where are we going? Financial Independence from a Central Authority. That's what I want, and I'm pretty sure if you're reading this, you want it too. 
 
-So this book will be tailored to the people living in the third world. So if you live in the first world, just add an extra zero to all the figures and follow along. But for someone living in the third world where they need to live on $7 a day to survive. In order to get financial freedom from a central authority, they'd need to earn enough interest on their money yearly to afford their daily survival. So that's approximately $2,555 US dollars they'd need to earn in interest yearly. This would need to be a relatively stable yield without crazy degen high risks. So something like a US Bond. We'll get into that later. 
+So this book will be tailored to the people living in the third world. So if you live in the first world, just add an extra zero to all the figures and follow along. But for someone living in the third world where they need to live on $7 a day to survive, in order to get financial freedom from a central authority, they'd need to earn enough interest on their money yearly to afford their daily survival. So that's approximately $2,555 US dollars they'd need to earn in interest yearly. This would need to be a relatively stable yield without crazy degen high risks. So something like a US Bond. We'll get into that later. 
 
 But let's say we can get 4% yearly. That means we need a principal of $63,875 in order to escape reliance on any authority. 
 
@@ -242,6 +249,8 @@ Important to note that holding BTC for 8 years:
 
 This clearly means holding BTC is the only logical thing you should do. Everything else is bullshit unless you're [mid brain](./mid.qmd).
 
+The Future Value of Money though assumes that the periodical payments are in a fixed currency like the US Dollar. This is not true though for our approach. We'll revise this in future to take into account the different costs of purchasing BTC throughout the 8 years to make the figures more realistic. 
+
 ## Your first Degen Strategies
 
 We'll now learn the following strategies:
@@ -250,7 +259,7 @@ We'll now learn the following strategies:
 2. [HODL](../essentials/memes.qmd#hodl)
 
 ### DCA
-An important point in the above section was that we have to have a monthly contribution. This means that every month you'll need to find $10 in Fiat and convert it into BTC. 
+An important point in the above section was that we have to have a monthly contribution. This means that every month you'll need to find $10 in Fiat and convert it into BTC. This is what is meant by DCA, or Dollar Cost Averaging. You are averaging the price of the BTC you purchase over 8 years. The beauty of this strategy is that sometimes you'll buy high and sometimes you'll buy low, but by consistently buying every month you'll average it out. 
 
 ### HODL
 The ultimate HODL Coin is [BTC](../financial/trollip_index.qmd#btc). Considering we're planning for 8 years, we have a perfect timeline for HODLing. 

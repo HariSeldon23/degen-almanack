@@ -38,7 +38,7 @@ For newcomers, we recommend cold storage via using a Hardware wallet. However th
 * Costs can be prohibitive 
 * UX when interacting on chain is cumbersome
 
-For this reason we recommend using [Passkeys](../technical/cryptography.qmd#passkeys). Please see [creating your first crypto wallet](../degen/starter.qmd#creating-your-first-crypto-wallet).
+For this reason we recommend using [Passkeys](../technical/cryptography.qmd#passkeys) however this is only beginning to see adoption in Web3 and is not quite ready for mass adoption at this stage. Please see [creating your first crypto wallet](../degen/starter.qmd#creating-your-first-crypto-wallet) for the latest recommendation.
 
 ## Technical Errors
 

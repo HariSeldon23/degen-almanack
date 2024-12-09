@@ -1,7 +1,7 @@
 # Tools 
 
 ## CEX's
-Centralized Exchanges are a necessary evil in Web3. They can be used for trading and generally offer better rates and lower fee's than their decentralized counterparts. However they're generally not to be trusted as seen by some notable CEX failures in the not too distance past:
+Centralized Exchanges are a necessary evil in Web3. They can be used for trading and generally offer better rates and lower fee's than their decentralized counterparts. However they're generally not to be trusted as seen by some notable CEX failures in the not too distant past:
 
 * Mt Gox (2014) - 850k BTC. $450 million in 2014 prices
 * Bitfinex (2016) - 120k BTC. $72 million in 2016 prices
@@ -48,7 +48,7 @@ On chain analysis tools allow you to analyze data on chain through a User Interf
 
 ### On Chain Analysis
 #### Portfolio Trackers
-We break down Portfolio Trackers into manual versus automated.
+We break down Portfolio Trackers into manual versus automated. Manual is whereby the user has to manually input their Tokens and how many they bought for how much USD.
 
 Manual are recommended for newcomers, but they quickly fall down. They only handle Coins and Tokens and not your DeFi positions, such as Liquidity Pools, Money Market positions etc. They have a place and are valuable but Automated Portfolio Trackers are far superior and only getting better.
 
@@ -62,11 +62,12 @@ For Automated, we need to break it down into single vs multiple [Application Mod
 | Portfolio Tracker | Supported Models | Key Features | Main Chains | Notable Aspects |
 |------------------|------------------|--------------|-------------|-----------------|
 | [DeBank](https://debank.com/) | Account (EVM) | - DeFi protocol tracking<br>- Wallet analytics<br>- Cross-chain support | Ethereum, BSC, Polygon, Avalanche | Strong focus on DeFi positions and yields |
+| [Pulsar Finance](https://app.pulsar.finance/portfolio) | Account (EVM), UTXO, Capability Model, Cosmos | Support for the most chains. But values are often wrong |
 | [Zapper](https://zapper.xyz/) | Account (EVM) | - NFT tracking<br>- DeFi dashboard<br>- Portfolio history | Ethereum, Optimism, Arbitrum, Polygon | Excellent UI/UX and bridging features |
 | [Nansen Portfolio](https://app.nansen.ai/) | Account (EVM) | - Yield farming focus<br>- TVL tracking<br>- ROI calculator | All major EVM chains | Specializes in yield optimization |
 | [DappRadar](https://dappradar.com/hub/wallet/) | Multiple Models | - NFT tracking<br>- DApp analytics<br>- Cross-chain support | Most major blockchains | Comprehensive ecosystem analytics |
 | [Step Finance](https://app.step.finance/) | Capability Model | - Solana ecosystem<br>- Yield tracking<br>- NFT support | Solana | Native Solana portfolio manager |
-| [Pulsar Finance](https://app.pulsar.finance/portfolio) | Account (EVM), UTXO, Capability Model, Cosmos | Support for the most chains. But values are often wrong |
+
 
 : Portfolio-Tracker {.striped .hover}
 
