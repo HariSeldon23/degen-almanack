@@ -58,3 +58,17 @@ We'll use Tenderly's Web3 actions as they're more flexible and powerful. Since w
 So what we want to do is to go to CoinGecko and find the biggest amount of on chain liquidity for USDe. So find USDe and then go to Markets to find the on DEX with the biggest depth. Currently that's Uniswap V3 with a USDE/USDT pool on Ethereum. https://app.uniswap.org/explore/pools/ethereum/0x435664008F38B0650fBC1C9fc971D0A3Bc2f1e47
 
 So we can set a notification for event emitted in Tenderly through the UI. However this doesn't give us the exchange rate. So it's good enough for now, but we'll eventually revise this to have common notifications that will apply across all our strategies.
+
+## Getting in early
+In crypto, if you're not a VC, one of the ways to get the highest multiples on shit coins is by getting in early. Currently the easiest way to see where the most meme coin activity is occuring is by looking at [DEX Screener's](https://dexscreener.com/new-pairs) new pairs. At the time of writing, you can clearly see this is Solana. 
+
+Let's analyse the criteria to determine what they all mean
+
+* Price - How much in USD to get 1 of the tokens
+* Age - Determines how long the token has been trading. However we actually care about contract deployment date too
+* Buys & Sells - Large amount of numbers doesn't necessarily mean much due to the prevalence of bots. 
+* Volume - Important to see if there is wash trading here. $1 million volume with $100k liquidity may indicate manipulation
+* Makers - Some DEX's can act as CLOB's where Makers as a term originate. Makers are trades with a limit order waiting to be filled
+* Liquidity - How much liquidity there exists for the token. We can also check to see if the liquidity was burnt
+* MarketCap 
+* Holders - How many wallets hold this token. 

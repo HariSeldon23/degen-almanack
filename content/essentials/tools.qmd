@@ -1,7 +1,7 @@
 # Tools 
 
 ## CEX's
-Centralized Exchanges are a necessary evil in Web3. They can be used for trading and generally offer better rates and lower fee's than their decentralized counterparts. However they're generally not to be trusted as seen by some notable CEX failures in the not too distant past:
+Centralized Exchanges are a necessary evil in Web3. They can be used for trading and purchasing Digital Assets and generally offer better rates and lower fee's than their decentralized counterparts. However they're generally not to be trusted as seen by some notable CEX failures in the not too distant past:
 
 * Mt Gox (2014) - 850k BTC. $450 million in 2014 prices
 * Bitfinex (2016) - 120k BTC. $72 million in 2016 prices
@@ -11,7 +11,9 @@ Centralized Exchanges are a necessary evil in Web3. They can be used for trading
 * BlockFi (2022) - $1-10 billion in 2022 prices
 * Voyager Digital (2022) - $1.3 billion in 2022 prices
 
-Notice how in 2022, contagion became pretty prevalent. 
+Notice how in 2022, contagion became pretty prevalent. This is why the [not your keys, not your coins](../essentials/memes.qmd#not-your-keys-not-your-coins) meme is so popular. 
+
+You can view and evaluate CEX's on [CoinGecko](https://www.coingecko.com/en/exchanges). Take careful note of the Trust Score. A lot of CEX's engage in [wash trading](../essentials/terms.qmd#wash-trading) and that's why it's important to have someone independently verify their stated trading volumes.
 
 ## Wallets
 A wallet is the primary way you interact with a [Blockchain](../technical/blockchains.qmd). 
@@ -62,7 +64,7 @@ For Automated, we need to break it down into single vs multiple [Application Mod
 | Portfolio Tracker | Supported Models | Key Features | Main Chains | Notable Aspects |
 |------------------|------------------|--------------|-------------|-----------------|
 | [DeBank](https://debank.com/) | Account (EVM) | - DeFi protocol tracking<br>- Wallet analytics<br>- Cross-chain support | Ethereum, BSC, Polygon, Avalanche | Strong focus on DeFi positions and yields |
-| [Pulsar Finance](https://app.pulsar.finance/portfolio) | Account (EVM), UTXO, Capability Model, Cosmos | Support for the most chains. But values are often wrong |
+| [Pulsar Finance](https://app.pulsar.finance/portfolio) | Account (EVM), UTXO, Capability Model, Cosmos | Support for the most chains. But values can be wrong | Ethereum, Base, Cosmos, Solana, Bitcoin, Sui, Aptos, Near, Cardano | Widest coverage in the market |
 | [Zapper](https://zapper.xyz/) | Account (EVM) | - NFT tracking<br>- DeFi dashboard<br>- Portfolio history | Ethereum, Optimism, Arbitrum, Polygon | Excellent UI/UX and bridging features |
 | [Nansen Portfolio](https://app.nansen.ai/) | Account (EVM) | - Yield farming focus<br>- TVL tracking<br>- ROI calculator | All major EVM chains | Specializes in yield optimization |
 | [DappRadar](https://dappradar.com/hub/wallet/) | Multiple Models | - NFT tracking<br>- DApp analytics<br>- Cross-chain support | Most major blockchains | Comprehensive ecosystem analytics |

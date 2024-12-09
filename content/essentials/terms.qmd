@@ -92,6 +92,10 @@ To come up with the following Framework
 * Bridge/Peg (Sidechains)
 
 
+## Trading
+### Wash trading
+Wash trading is the practice of manipulating the trading volume of an exchange. It's when trading occurs between related parties used to inflate the real volume occuring. An example, would be a CEX holds two accounts and constantly trade between themselves. 
+
 ## Accounts
 While technically different blockchains will have their own nuances and their own technically correct terms for the concept of an "account", we will refer to them all as accounts for ease of reference. We define an Account as a user owned blockchain public-private key pair. The account can be a simple account that can only send Coins or execute smart contracts, or the Account can be a smart account, whereby it's behaviour and attributes can be controlled by code. 
 

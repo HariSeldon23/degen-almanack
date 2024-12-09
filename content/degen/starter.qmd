@@ -17,7 +17,7 @@ execute:
 
 I'd like to respect and adhere to the ethos of the early Cypherpunks. This means that I'd like everyone that follows along to maintain privacy. However the current solutions are overly technical for newcomers. [Tornado Cash](../technical/dapps.qmd#tornado-cash) and [Railgun](../technical//dapps.qmd#railgun) have a high barrier to entry and [Payy Network](https://payy.network/) doesn't support moving funds onto other wallets yet.
 
-So please be aware that all your transactions that you perform following along will be non private and easy for someone to trace. If you're an advanced user, then please see how to [convert fiat to crypto anonymously](./giga.qmd#converting-fiat-into-a-cryptocurrency-anonymously).
+So please be aware that all your transactions that you perform following along will be non private and easy for someone to trace. If you're an advanced user, then please see how to [convert fiat to crypto anonymously](./big.qmd#converting-fiat-into-a-cryptocurrency-anonymously).
 
 Important things to note:
 

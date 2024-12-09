@@ -18,6 +18,7 @@ book:
     part: Become a Degen
   - chapters:
     - ./content/financial/tokens.qmd
+    - ./content/financial/market_structure.qmd
     - ./content/financial/ratings.qmd
     - ./content/financial/trollip_index.qmd
     part: Financial
@@ -33,7 +34,7 @@ book:
     part: Social
   - contributing.qmd
   - references.qmd
-  date: '2024-12-05'
+  date: '2024-12-09'
   page-navigation: true
   repo-url: https://github.com/HariSeldon23/degen-almanack
   search: true
@@ -42,7 +43,7 @@ book:
   - linkedin
   - facebook
   title: Trollip's Degen Almanack
-date: '2024-12-05'
+date: '2024-12-09'
 format:
   html:
     code-fold: true

@@ -102,7 +102,6 @@ These are then divided into spot vs derivatives.
 
 For regulated it's interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It's probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant. 
 
-
 ## Hodling
 Wallets
 
