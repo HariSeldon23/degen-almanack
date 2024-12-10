@@ -17,22 +17,19 @@ book:
     part: Foundations
   - chapters: 
     - ./content/independence/independence.qmd
-    part: Path to Independence
-  - chapters: 
-    - ./content/technical/overview.qmd
-    part: Technologist's Path
-  - chapters:
-    - ./content/essentials/terms.qmd
-    - ./content/essentials/tools.qmd
-    - ./content/essentials/memes.qmd
-    - ./content/essentials/icons.qmd
-    part: Web3 Essentials
-  - chapters:
     - ./content/degen/scam.qmd
     - ./content/degen/starter.qmd
     - ./content/degen/mid.qmd
     - ./content/degen/big.qmd
-    part: Become a Degen
+    part: Path to Independence
+  - chapters:
+    - ./content/essentials/terms.qmd
+    - ./content/essentials/tools.qmd
+    - ./content/essentials/memes.qmd
+    part: Web3 Essentials
+  - chapters: 
+    - ./content/technical/overview.qmd
+    part: Technologist's Path
   - chapters:
     - ./content/financial/tokens.qmd
     - ./content/financial/market_structure.qmd

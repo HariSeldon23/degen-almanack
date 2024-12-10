@@ -1,198 +1,237 @@
-# Tools 
+# Tools
 
-## CEX's
-Centralized Exchanges are a necessary evil in Web3. They can be used for trading and purchasing Digital Assets and generally offer better rates and lower fee's than their decentralized counterparts. However they're generally not to be trusted as seen by some notable CEX failures in the not too distant past:
+## Introduction
 
-* Mt Gox (2014) - 850k BTC. $450 million in 2014 prices
-* Bitfinex (2016) - 120k BTC. $72 million in 2016 prices
-* Quadriga (2019) - $190 million in 2019 prices
-* FTX (2022) - $8-10 billion in 2022 prices
-* Celsius Network (2022) - $4.7 billion in 2022 prices
-* BlockFi (2022) - $1-10 billion in 2022 prices
-* Voyager Digital (2022) - $1.3 billion in 2022 prices
-
-Notice how in 2022, contagion became pretty prevalent. This is why the [not your keys, not your coins](../essentials/memes.qmd#not-your-keys-not-your-coins) meme is so popular. 
-
-You can view and evaluate CEX's on [CoinGecko](https://www.coingecko.com/en/exchanges). Take careful note of the Trust Score. A lot of CEX's engage in [wash trading](../essentials/terms.qmd#wash-trading) and that's why it's important to have someone independently verify their stated trading volumes.
+The Web3 ecosystem requires specialized tools for interacting with blockchains, managing digital assets, and analyzing on-chain data. This guide provides a detailed overview of essential tools across different categories, helping users understand when and how to use each one effectively.
 
 ## Wallets
-A wallet is the primary way you interact with a [Blockchain](../technical/blockchains.qmd). 
 
-Wallets have the following major attributes:
+Wallets serve as your primary interface with blockchain networks. Understanding the different types and their security implications is crucial for safely participating in Web3.
 
-* Type - Hardware or Software wallets
-* Private
-* Platform - Mobile, Browser, Desktop or Hybrid
-* [Application Model](../technical/blockchains.qmd#application-models) - Type of blockchains it supports. Can support multiple models. 
+### Hardware Wallets
 
-| Wallet Name | Type | Platform | Application Models Supported |
-|-------------|------|-----------|----------------------------|
-| [Ledger](https://www.ledger.com/) | Hardware | Desktop, Mobile | Account (EVM), UTXO, Specialized Account, Resource, Actor |
-| [Trezor](https://trezor.io/) | Hardware | Desktop, Browser | Account (EVM), UTXO, Specialized Account |
-| [MetaMask](https://metamask.io/) | Software | Browser Extension, Mobile | Account (EVM) |
-| [Phantom](https://phantom.app/) | Software | Browser Extension, Mobile | Capability (Solana), Account (EVM), UTXO (Bitcoin) |
-| [Safe](https://app.safe.global/welcome) | Software | Browser (Web App) | Account (EVM) |
-| [TrustWallet](https://trustwallet.com/) | Software | Mobile | Account (EVM), UTXO, Specialized Account |
-| [Rainbow](https://rainbow.me/en/) | Software | Mobile | Account (EVM) |
+Hardware wallets store private keys in secure hardware devices, providing the highest level of security for long-term storage.
 
-: Wallets {.striped .hover}
+#### Ledger
+
+- Supports multiple application models (Account, UTXO, Resource, Actor)
+- Available on desktop and mobile
+- Proprietary secure element chip
+- Regular firmware updates
+- Supports 5000+ cryptocurrencies
+
+Key features:
+
+- Clear signing screen for transaction verification
+- Secure element certification
+- Desktop and mobile companion apps
+- DApp integration capabilities
+
+#### Trezor
+
+- Open-source hardware and firmware
+- Supports Account (EVM) and UTXO models
+- Browser-based interface
+- Shamir backup feature
+- Focuses on Bitcoin and EVM chains
+
+### Software Wallets
+
+Software wallets offer greater convenience but with increased security risks compared to hardware solutions.
+
+#### MetaMask
+
+- Primary gateway to EVM networks
+- Browser extension and mobile app
+- Built-in token swap feature
+- Custom network support
+- Extensive DApp integration
+
+Best practices:
+
+- Never share seed phrase
+- Use with hardware wallet for large amounts
+- Regularly check token approvals
+- Keep browser extension updated
+
+#### Phantom
+
+- Multi-chain support (Solana, EVM, Bitcoin)
+- Mobile and browser extension
+- Built-in NFT support
+- SOL staking integration
+- Token swap functionality
+
+#### Safe (formerly Gnosis Safe)
+
+- Multi-signature wallet platform
+- Advanced security features
+- Treasury management tools
+- Transaction batching
+- Custom access controls
+
+## Centralized Exchanges (CEXs)
+
+While centralized exchanges present counterparty risks, they remain crucial infrastructure for entering and exiting the crypto ecosystem.
+
+### Key Considerations for CEX Selection
+
+1. Security Track Record
+
+- Historical hacks or breaches
+- Insurance coverage
+- Cold storage policies
+- Security certifications
+
+2. Liquidity Depth
+
+- Trading volume verification
+- Order book depth
+- Market maker relationships
+- Wash trading detection
+
+3. Regulatory Compliance
+
+- Licensing status
+- Jurisdictional restrictions
+- KYC/AML procedures
+- Asset segregation
+
+4. Feature Set
+
+- Supported cryptocurrencies
+- Trading pair availability
+- Fiat on/off ramps
+- Advanced trading features
+
+### Notable Exchange Failures and Lessons
+
+1. Mt. Gox (2014)
+
+- Loss: 850,000 BTC
+- Lesson: Importance of proof of reserves
+
+2. FTX (2022)
+
+- Loss: $8-10 billion
+- Lesson: Dangers of commingled funds
+
+3. Celsius Network (2022)
+
+- Loss: $4.7 billion
+- Lesson: Risks of CeFi lending platforms
 
 ## Analysis Tools
-There are numerous ways to analyze blockchains. 
 
-* On chain analysis
-* Data Professional Tools
-    * Dashboards and Charting
-    * SQL Playgrounds
-    * API
+### On-Chain Analysis Platforms
 
-On chain analysis tools allow you to analyze data on chain through a User Interface
+#### Block Explorers
 
-### On Chain Analysis
+Block explorers provide detailed information about transactions, addresses, and smart contracts on specific networks.
+
+1. Etherscan (Ethereum)
+
+- Transaction tracking
+- Contract verification
+- Gas tracker
+- Token approvals
+- API access
+
+2. Solana Explorer
+
+- Program interaction tracking
+- Account management
+- Stake delegation monitoring
+- Vote account tracking
+
 #### Portfolio Trackers
-We break down Portfolio Trackers into manual versus automated. Manual is whereby the user has to manually input their Tokens and how many they bought for how much USD.
 
-Manual are recommended for newcomers, but they quickly fall down. They only handle Coins and Tokens and not your DeFi positions, such as Liquidity Pools, Money Market positions etc. They have a place and are valuable but Automated Portfolio Trackers are far superior and only getting better.
+##### DeBank
+- Comprehensive DeFi position tracking
+- Cross-chain support
+- Real-time updates
+- Historical performance
+- Risk monitoring
 
-For Manual there are:
+Best for:
+- Active DeFi users
+- Multi-chain portfolios
+- Yield farming tracking
 
-* [CoinGecko](https://www.coingecko.com/)
-* [CoinMarketCap](https://coinmarketcap.com/)
+##### Zapper
 
-For Automated, we need to break it down into single vs multiple [Application Model](../technical/blockchains.qmd#application-models) support.
+- NFT integration
+- Bridge tracking
+- Portfolio history
+- DeFi dashboard
+- Cross-chain support
 
-| Portfolio Tracker | Supported Models | Key Features | Main Chains | Notable Aspects |
-|------------------|------------------|--------------|-------------|-----------------|
-| [DeBank](https://debank.com/) | Account (EVM) | - DeFi protocol tracking<br>- Wallet analytics<br>- Cross-chain support | Ethereum, BSC, Polygon, Avalanche | Strong focus on DeFi positions and yields |
-| [Pulsar Finance](https://app.pulsar.finance/portfolio) | Account (EVM), UTXO, Capability Model, Cosmos | Support for the most chains. But values can be wrong | Ethereum, Base, Cosmos, Solana, Bitcoin, Sui, Aptos, Near, Cardano | Widest coverage in the market |
-| [Zapper](https://zapper.xyz/) | Account (EVM) | - NFT tracking<br>- DeFi dashboard<br>- Portfolio history | Ethereum, Optimism, Arbitrum, Polygon | Excellent UI/UX and bridging features |
-| [Nansen Portfolio](https://app.nansen.ai/) | Account (EVM) | - Yield farming focus<br>- TVL tracking<br>- ROI calculator | All major EVM chains | Specializes in yield optimization |
-| [DappRadar](https://dappradar.com/hub/wallet/) | Multiple Models | - NFT tracking<br>- DApp analytics<br>- Cross-chain support | Most major blockchains | Comprehensive ecosystem analytics |
-| [Step Finance](https://app.step.finance/) | Capability Model | - Solana ecosystem<br>- Yield tracking<br>- NFT support | Solana | Native Solana portfolio manager |
+Ideal for:
 
+- NFT collectors
+- DeFi participants
+- Multi-chain users
 
-: Portfolio-Tracker {.striped .hover}
+### Professional Analysis Tools
 
-I recommend newcomers to use Pulsar. As you learn about DeFi, you'll be chasing yield on numerous chains and will need something with the comprehensive coverage that only Pulsar provides. If you're only on EVM, then I recommend using Debank.
+#### Data Query Platforms
 
-#### Explorers
-Explorers allow you to explore transactions and on chain activity. 
+1. Dune Analytics
 
-I'll revise the table to be more focused and clear, removing the alternative explorers column.
+- SQL-based queries
+- Custom dashboard creation
+- Community-driven insights
+- Historical data access
+- Real-time analytics
 
-| Blockchain | Primary Explorer | URL |
-|------------|-----------------|-----|
-| Bitcoin | Mempool Space | https://mempool.space/ |
-| Ethereum | Etherscan | https://etherscan.io |
-| ApeCoin | ApeScan | https://apescan.org |
-| Arbitrum One | Arbiscan | https://arbiscan.io |
-| Arbitrum Nova | Nova Explorer | https://nova.arbiscan.io |
-| Base | BaseScan | https://basescan.org |
-| Blast Chain | BlastScan | https://blastscan.io |
-| BNB Chain | BscScan | https://bscscan.com |
-| BTTC | BttcScan | https://bttcscan.com |
-| Celo | CeloScan | https://celoscan.io |
-| Cronos | CronoScan | https://cronoscan.com |
-| Frax | FraxScan | https://fraxscan.io |
-| Fantom | FTMScan | https://ftmscan.com |
-| Gnosis | GnosisScan | https://gnosisscan.io |
-| Linea | LineaScan | https://lineascan.build |
-| Mantle | MantleScan | https://mantlescan.io |
-| Moonbeam | Moonscan | https://moonbeam.moonscan.io |
-| Moonriver | Moonscan | https://moonriver.moonscan.io |
-| opBNB | opBNB Explorer | https://opbnbscan.com |
-| Optimism | Optimistic Etherscan | https://optimistic.etherscan.io |
-| Polygon zkEVM | Polygon zkEVM Explorer | https://zkevm.polygonscan.com |
-| Polygon | PolygonScan | https://polygonscan.com |
-| Scroll | ScrollScan | https://scrollscan.com |
-| Avalanche | SnowTrace | https://snowtrace.io |
-| Sophon | SophScan | https://sophonscan.com |
-| Taiko | TakioScan | https://taikoscan.com |
-| Wemix | WemixScan | https://wemixscan.com |
-| Worldcoin | WorldScan | https://worldcoin.org/explorer |
-| Xai | XaiScan | https://xaiscan.com |
-| XDC | XdcScan | https://xdcscan.io |
-| zkSync | zkSync Explorer | https://explorer.zksync.io |
-| XRP | XRP Ledger Explorer | https://livenet.xrpl.org |
-| Solana | Solana Explorer | https://explorer.solana.com |
-| Dogecoin | DogeChain | https://dogechain.info |
-| Cardano | Cardanoscan | https://cardanoscan.io |
-| Tron | Tronscan | https://tronscan.org |
-| TON | TON Explorer | https://tonscan.org |
-| Polkadot | Polkascan | https://polkascan.io |
-| Chainlink | Chainlink Explorer | https://explorer.chain.link |
-| Stellar | Stellar Expert | https://stellar.expert |
-| Bitcoin Cash | Blockchair | https://blockchair.com/bitcoin-cash |
-| Sui | Sui Explorer | https://suiexplorer.com |
-| NEAR | NEAR Explorer | https://explorer.near.org |
-| Aptos | Aptos Explorer | https://explorer.aptoslabs.com |
-| Hedera | HashScan | https://hashscan.io |
-| Litecoin | Litecoin Explorer | https://litecoinblockexplorer.net |
-| Internet Computer | IC Scan | https://icscan.io |
-| VeChain | VeChain Stats | https://vechainstats.com |
-| Filecoin | Filfox | https://filfox.info |
-| Stacks | Stacks Explorer | https://explorer.stacks.co |
-| Hyperliquid | Hyperliquid Explorer | https://hyperliquid.xyz/info |
-| Kaspa | Kaspa Explorer | https://explorer.kaspa.org |
-| Algorand | AlgoExplorer | https://algoexplorer.io |
-| Cosmos | Mintscan | https://www.mintscan.io |
-| Mantra | Mantra Scan | https://mantrascan.org |
+2. Nansen
 
-: Explorers {.striped .hover}
-
-##### Pure EVM 
-Etherscan is the most widely used Explorer and has versions on all the major EVM Chains. We'll only focus on their Explorers for EVM chains in perpetuity or until something better comes along. 
-
-I recommend using [Blockscan](https://blockscan.com/) which is from the same company and consolidates all their supported chains into a consolidated UI. It makes sense to use Blockscan for surface level analysis. But as soon as you want to delve into the code, you'll need to use one of their Explorers specializing on that particular chain. 
-
-###### Exploring Solidity
-
-We'll use [Etherscan](https://etherscan.io/) to explore the EVM
-
-We'll delve into how to use Etherscan to analyze:
-
-* Addresses 
-* Contract
-
-For Addresses we'll explore [Vitalik's Account](https://etherscan.io/address/0xab5801a7d398351b8be11c439e05c5b3259aec9b)
-
-::: {.callout-note}
-<blockquote class="twitter-tweet">
-<a href="https://twitter.com/VitalikButerin/status/1050126908589887488"></a> 
-</blockquote>
-:::
-
-Then for the Contract we'll explore [Tether's USDT](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7)
-
-The first thing you need to know is that Solidity is a compiled language and as such for us to view the code in the Explorer, we need the developer to upload their code and have it verified against the bytecode. Don't sweat too much about the details, what you really want is to ensure that in the Etherscan explorer is the contract is verified. 
-
-* Viewing the Solidity version
-* Viewing the "standard" libraries the code inherits
-
-#### Defillama
-Defillama will become one of the most important tools you'll use in your degen journey. Give the team some love. 
-
-### Data Professional Tools
-
-#### API
-We'll start off by using [Ortege](https://ortege.ai). For full transparency I own and founded Ortege. This Almanack can and will use data from any trusted source. But in the early days while we require data specifically tailored to our requirements, we will be using Ortege. Anyone contributing however can integrate with any other reputable data sources. 
-
-We break down API's into the following categories:
-
-* RPC Nodes. These are the API's provided by the [Blockchain clients](../technical/blockchains.qmd#clients). Each [Application Model](../technical/blockchains.qmd#application-models) will have a different API structure. The most famous example being the [Bitcon RPC standard](https://developer.bitcoin.org/reference/rpc/) and the [EVM RPC standard](https://eips.ethereum.org/EIPS/eip-1474)
-* SQL based. These API's allow you to write SQL against their Datasets. Examples include [Dune](https://dune.com/) and [Flipside](https://flipsidecrypto.xyz/home/). Much like the RPC based API's, these will all have a different API structure. 
-* Semantic Layer. Ortege is the first, that I'm aware of, API that aims to abstract away the blockchains implementation away from the developer and provide a uniform API that is consistent across blockchains.
-
-##### Ortege
-Coming Soon. 
+- Wallet labeling
+- Smart money tracking
+- Token flow analysis
+- NFT market insights
+- Investment signals
 
 ## Security Tools
 
-### OpenZeppelin 
+### Smart Contract Analysis
+
+#### OpenZeppelin
+
+- Security auditing tools
+- Contract templates
+- Upgrade management
+- Access control
+- Gas optimization
+
+Best practices:
+
+- Regular security reviews
+- Automated testing
+- Upgrade planning
+- Access control management
 
 ## Privacy Tools
 
-### VPN
-The most commercially popular VPN's are ExpressVPN, NordVPN and CyberGhost. I'm not an expert here, but I use Mullvad VPN as it accepts BTC as payment and seems most resitant to state attacks. 
+Privacy tools help protect user identity and transaction privacy while interacting with Web3 platforms.
 
-### TOR
+### VPN Services
+
+When selecting a VPN for Web3:
+- Look for no-log policies
+- Check jurisdiction
+- Verify cryptocurrency payment support
+- Test connection stability
+- Evaluate server locations
+
+Recommended Services:
+
+- Mullvad VPN (accepts Bitcoin, focused on privacy)
+- ProtonVPN (cryptocurrency support, Swiss jurisdiction)
+
+### TOR Network
+
+- Provides network-level privacy
+- Multiple relay encryption
+- Bridge support for censorship resistance
+- Integration with privacy-focused tools

@@ -1,178 +1,147 @@
-# Terms
-This Chapter will be updated most frequently. Terms are constantly changing, definitions being debated in the public square and evolving at a quicksilver pace. 
+# Web3 Terminology
 
-Please treat it as a living document. The Almanack uses version control, so it will be possible to see how terms change over time by going back to [previous versions](https://github.com/HariSeldon23/degen-almanack/tree/main/docs/pdfs). 
+## Introduction
+
+Understanding Web3 requires familiarity with a unique vocabulary that spans multiple disciplines: cryptography, economics, computer science, and social coordination. This guide organizes these terms into logical categories and provides clear explanations with relevant examples.
+
+## Evolution of the Web
+
+### Web 1.0 (1990-2004)
+The first iteration of the worldwide web consisted primarily of static websites that users could only read. Information flowed in one direction - from website owners to visitors. Think of early news websites or company homepages that rarely changed and offered no interaction.
+
+### Web 2.0 (2004-2020)
+The social web emerged, characterized by user-generated content, social networks, and interactive platforms. Users could both read and write content, but platforms owned and controlled the data. Facebook, Twitter, and YouTube exemplify Web 2.0 platforms where users create content but don't truly own or control it.
+
+### Web3 (2020-Present)
+The ownership web represents a fundamental shift where users can read, write, and own their digital assets and data. Instead of trusting platforms to manage our digital lives, Web3 uses cryptographic protocols and economic incentives to enable direct ownership and peer-to-peer interactions.
 
 ## Core Concepts
-### Web3
-While our industry is built on the back bone of cryptography, it encompasses not only a branch of mathematics, but economic, social, technological and political aspects. Web3 more closely aligns with the breadth of our industry.
 
-Below you can see how the web has evolved into Web3. 
+### Decentralization
+Decentralization refers to the distribution of power, control, and decision-making across a network rather than concentration in a single entity. It exists on a spectrum:
 
-![Evolution of the Web](../../images/web3.svg)
+1. **Architectural Decentralization**: How many physical computers comprise the system?
+2. **Political Decentralization**: How many individuals or organizations control those computers?
+3. **Logical Decentralization**: Does the interface and data structures appear more like a single monolithic object, or an amorphous swarm?
 
-* Web1 (1990s): static websites, read-only content
-* Web2 (2000s - 2010s): Interactive social platforms, user-generated content
-* Web3 (2020s+): Decentralized networks, blockchain, user-owned data and assets
+Examples help illustrate these distinctions:
+- Bitcoin is architecturally and politically decentralized but logically centralized (one shared ledger)
+- Email is architecturally decentralized but politically centralized (few major providers) and logically centralized (standardized protocol)
+- Language is decentralized across all three dimensions
 
-### Decentralization 
-![Network Topologies](../../images/decentralization.svg)
+### Blockchain
+A blockchain is a distributed database that maintains a continuously growing list of records (blocks) that are cryptographically linked to previous records. Key characteristics include:
 
-### Blockchains
-#### Layer 1 {#layer-1}
-Currently there is no formally and universally accepted definition of what comprises a L1 Network. 
+1. **Immutability**: Once data is recorded, it cannot be altered without changing all subsequent blocks
+2. **Transparency**: All transactions are public and verifiable
+3. **Consensus**: Network participants agree on the state of the system without trusting each other
 
-We have taken these sources in order to come up with our definition:
+The term "blockchain" has become somewhat limiting - many modern systems use different data structures while maintaining similar properties. This is why some prefer broader terms like "distributed ledger technology" or "decentralized incentive networks."
 
-* [@nakamoto2008bitcoin] for Bitcoin
-* [@buterin2013ethereum] for Ethereum
-* [@buterin2021rollups] for the rollups guide
-* [@charbonneau2023rollups] for John's excellent guide to rollups
+## Account Types
 
-Nakamoto's Bitcoin whitepaper, while not explicitly using the term "Layer 1," established the core principles of what we now recognize as Layer 1 characteristics: a base protocol that handles consensus, security, and data availability without relying on any other blockchain system. This introduced the concept of a `self-contained, sovereign blockchain network`.
+### Simple Accounts
+Simple accounts represent the most basic way to interact with blockchain networks. They have:
+- A public key (like an email address)
+- A private key (like a password)
+- The ability to hold and transfer native network tokens
+- No additional programmable logic
 
-The Ethereum whitepaper expanded this foundation by introducing programmability and demonstrating that a Layer 1 could be more than just a payment system. It showed that a Layer 1 blockchain serves as a foundation for broader computational capabilities while maintaining the core properties of decentralization and security.
+### Smart Accounts
+Smart accounts extend simple accounts with programmable functionality:
+- Custom validation logic
+- Multi-signature requirements
+- Automated actions
+- Integration with smart contracts
 
-Buterin's rollup guide helps define Layer 1 by contrast - it clarifies what makes a base layer distinct from scaling solutions built on top of it. This work emphasizes that a Layer 1 blockchain must handle three critical functions: data availability, consensus, and execution, all while maintaining decentralization.
+For example, a smart account might require two out of three designated signatures to approve transactions or automatically split incoming payments between multiple recipients.
 
-Charbonneau's report further refines our understanding by examining how Layer 1 blockchains interact with scaling solutions, highlighting their role as the security and settlement layer of the blockchain ecosystem.
+## Digital Assets
 
-Synthesizing these sources, we can define a Layer 1 blockchain as:
+### Native Coins
+Native coins (sometimes called protocol tokens) are the primary digital assets of blockchain networks. They serve several purposes:
+- Pay for transaction fees (gas)
+- Secure the network through staking or mining
+- Participate in governance
+- Transfer value
 
-A sovereign blockchain network that provides three fundamental guarantees without relying on any other blockchain system: 
+Examples include:
+- Bitcoin (BTC) on the Bitcoin network
+- Ether (ETH) on Ethereum
+- SOL on Solana
 
-1. consensus - the ability to agree on the state of the network 
-2. data availability - ensuring all transaction data is publicly accessible and verifiable
-3. execution - the processing of transactions and state changes. It must do this while maintaining decentralization in its security model and serving as the ultimate settlement layer where the final state of all transactions is recorded.
+### Tokens
+Tokens are digital assets created on top of blockchain platforms. They differ from native coins because they don't secure the underlying network. Major categories include:
 
-##### Settlement Layer
-This is kinda a meme at this point and no formal definition exists. Although lots of opinions, as is generally the case in crypto.
+#### Fungible Tokens
+Interchangeable tokens where each unit is identical to every other unit. Think of them like traditional currency - any dollar bill can be exchanged for any other dollar bill. Categories include:
+- Stablecoins (USDC, DAI)
+- Governance tokens (UNI, AAVE)
+- Security tokens
+- Utility tokens
 
-::: {.callout-note}
-<blockquote class="twitter-tweet">
-<a href="https://twitter.com/_prestwich/status/1572183792550576131"></a>
-</blockquote>
-:::
+#### Non-Fungible Tokens (NFTs)
+Unique digital assets where each token has distinct properties. Common uses include:
+- Digital art and collectibles
+- Gaming items
+- Domain names
+- Membership passes
+- Real estate titles
 
-::: {.callout-note}
-<blockquote class="twitter-tweet">
-<a href="https://twitter.com/jon_charb/status/1849868823119397041"></a>
-</blockquote>
-:::
+## Financial Concepts
 
-#### Layer 2
-There is no canonical definition of L2's.
+### Decentralized Finance (DeFi)
+Financial services built on blockchain networks that operate without traditional intermediaries. Key components include:
 
-We use:
+#### Automated Market Makers (AMMs)
+Smart contracts that create liquidity pools allowing users to trade tokens without traditional order books. Instead of matching buyers with sellers, users trade against a pool of tokens with prices determined by mathematical formulas.
 
-* zkRollup vs Optimistic Rollup [@gluchowski2021zkrollup]
-* Plasma [@poon2017plasma]
-* The Bitcoin Lightning Network [@poon2016lightning]
-* Incomplete Guide to Rollups [@buterin2021rollups]
-* The Complete Guide to Rollups [@charbonneau2023rollups]
+#### Yield Farming
+The practice of providing liquidity or assets to DeFi protocols in exchange for rewards, typically in the form of governance tokens or trading fees.
 
-To come up with the following Framework
+#### Impermanent Loss
+A unique risk in liquidity provision where the value of assets deposited in an AMM pool can decrease relative to simply holding those assets, due to price movements and the AMM's constant product formula.
 
-1. Data Availability
-* On-chain (Rollups)
-* Off-chain (Validiums, Plasma, Sidechains)
-2. Security Model
-* Inherited from L1 (Rollups, Validiums)
-* Independent (Sidechains)
-* Hybrid (Plasma)
-3. State Validation
-* Fraud Proofs (Optimistic Rollups)
-* Validity Proofs (ZK Rollups, Validiums)
-* Independent (Sidechains)
-* Merkle Roots (Plasma)
-4. Settlement Mechanism
-* Direct (Rollups)
-* Challenge Period (Optimistic Rollups)
-* Exit Games (Plasma)
-* Bridge/Peg (Sidechains)
+## Cultural Terms
 
+### HODL
+Originally a misspelling of "hold" that became crypto slang for maintaining long-term positions regardless of market conditions. The term evolved to mean "Hold On for Dear Life" and represents a conviction-based investment strategy.
 
-## Trading
-### Wash trading
-Wash trading is the practice of manipulating the trading volume of an exchange. It's when trading occurs between related parties used to inflate the real volume occuring. An example, would be a CEX holds two accounts and constantly trade between themselves. 
+### Degen
+Short for "degenerate," this term began as criticism of high-risk trading behavior but has been reclaimed by the community to describe sophisticated traders who:
+- Take calculated risks
+- Deeply understand protocol mechanics
+- Stay ahead of market trends
+- Actively participate in new protocols
 
-## Accounts
-While technically different blockchains will have their own nuances and their own technically correct terms for the concept of an "account", we will refer to them all as accounts for ease of reference. We define an Account as a user owned blockchain public-private key pair. The account can be a simple account that can only send Coins or execute smart contracts, or the Account can be a smart account, whereby it's behaviour and attributes can be controlled by code. 
+### Gas
+Transaction fees paid to network validators, typically priced in the network's native token. Gas prices fluctuate based on network demand, with higher prices during periods of congestion.
 
-**Please note**  a user can be either a human, bot, or AI agent.
+### Gwei
+A denomination of ETH, specifically 10^-9 ETH. Commonly used to express gas prices on Ethereum and EVM-compatible networks.
 
-### Seed phrases
-In order to create an Account on a blockchain, it needs to be secured by a [public-private key pair](../technical/cryptography.qmd#asymetric-cryptography). The most common way to do is via a Seed phrase generated by the [wallet](../essentials/tools.qmd#wallets).
+## Security Concepts
 
-Since your private key is the singular point of security for your interaction on that blockchain, it needs to be incredibly secure. This means that your private key is a very large random number. Due to the difficulty of working with these large random numbers, Seed phrases were created to improve the user experience. Historically humans have used "code words" to obfuscate and hide meaning. Seed phrases are just a way to generate a private key in a more human relatable way. 
+### Seed Phrase
+A sequence of 12-24 words that serves as a backup for private keys. Also called a mnemonic phrase or recovery phrase. The words are selected from a standardized list of 2048 words and must be stored securely, as anyone with access to the seed phrase can control the associated accounts.
 
-### Simple Account {#eoa}
-In the early days of blockchain, while only Proof of Work blockchains existed, an account was simply a public-private key pair that could transfer [Coins](../financial/tokens.qmd#coins) or execute a very simple script. 
+### Smart Contract
+Self-executing programs stored on a blockchain that automatically enforce and execute agreements between parties. Key characteristics:
+- Immutable once deployed
+- Transparent and verifiable
+- Execute exactly as programmed
+- No downtime or censorship
 
-With the advent of Ethereum, Accounts and Blockchains became more powerful. In Ethereum's Yellow Paper [@wood2014ethereum] Gavin Wood introduced the concept of an Externally Owned Account, or EOA for short.
+## Best Practices for Using This Guide
 
-There it is defined as:
+1. **Start with Core Concepts**: Understanding decentralization and blockchain fundamentals provides context for more specific terms.
 
-* Having a nonce (counter for transactions sent)
-* Having a balance (in the native currency)
-* No associated contract code
-* No data storage
+2. **Learn by Category**: Focus on one section at a time rather than trying to memorize everything at once.
 
-Now that we have the rise of different [Application models](../technical/blockchains.qmd#application-models) we need to further refine what a Simple Account is:
+3. **Connect Related Terms**: Many concepts are interconnected - understanding these relationships helps build a complete mental model.
 
-* Direct control through a public-private key pair
-* No additional programmable logic at the account level
-* Transactions must be directly signed by the controlling private key
+4. **Stay Updated**: Web3 terminology evolves rapidly. Check for updates to this guide as new terms and concepts emerge.
 
+## Conclusion
 
-## DeFi - Dentralized Finance {#defi}
-
-### Slippage
-Slippage is the price difference between the advertised price and what you actually pay. Let's say you want to purchase ETH at $3,500, I then confirm the transaction, but in between the time I got the quote and the time I confirmed my transaction, the price has changed to $3,550. One of two things can happen:
-
-1. The transaction fails due to me not setting my slippage high enough
-2. The transaction succeeds as it's within the bounds of my slippage setting
-
-In that example above, for my transaction to have succeeded, I would had to have my slippage set at above 1.42%.
-
-![Uniswap UI](../../images/defi/uniswap.png)
-
-There are few reasons to manually increase the slippage:
-
-* Trading shit coins with low liquidity
-* Trading large amounts. Although it probably makes more sense to break these trades up over a few days rather
-* Networks with slower block times
-* Times of high market volatility
-
-## Colloquialisms
-### Degens
-"Degen" (short for "degenerate") in crypto/Web3 culture refers to aggressive or risk-seeking participants in cryptocurrency markets and DeFi (decentralized finance) protocols. The term originated from gambling culture but has been embraced by the crypto community as a semi-ironic badge of honor.
-
-* Trading Behavior: Degens are known for taking high-risk positions, often using significant leverage, and engaging in yield farming, liquidity mining, and other complex DeFi strategies.
-* Cultural Identity: Unlike traditional finance's negative connotation of "degenerate gambling," the crypto community has reclaimed "degen" as a positive or playful identifier. It represents a willingness to experiment with new protocols and take calculated risks.
-* Technical Sophistication: Despite the seeming recklessness implied by the term, many "degens" are highly knowledgeable about blockchain technology, smart contracts, and DeFi mechanics. They're often early adopters of new protocols and technologies.
-* Community Role: Degens play an important role in crypto ecosystems by providing early liquidity to new protocols, testing experimental features, and contributing to the rapid evolution of DeFi products.
-
-## General Terms
-* Smol Brain
-* Big Brain
-* Gigabrain
-* FUD (Fear, Uncertainty, Doubt): While not strictly a meme, it's become memefied in crypto culture. Any negative news or criticism is often dismissed as "FUD" by cryptocurrency enthusiasts, sometimes ironically.
-* "When Lambo?": This phrase emerged during the 2017 bull run, representing the dream of getting rich enough from crypto to buy a Lamborghini. It's both used seriously by newcomers and ironically by veterans.
-* Diamond Hands / Paper Hands: Popularized during the GameStop saga but heavily adopted in crypto. "Diamond hands" refers to holders who don't sell despite market pressure, while "paper hands" sell at the first sign of trouble.
-* "This is good for Bitcoin": Originally used seriously, it became ironic as people would claim any news, even negative, was somehow positive for Bitcoin's adoption or price.
-* Bogdanoff Twins ("Dump It"): These memes feature the late Bogdanoff twins supposedly controlling the crypto markets, ordering price dumps right after someone buys or pumps after they sell.
-* "Funds are SAFU": From a Binance CEO video where he mispronounced "safe," this became a way to reassure (often ironically) about exchange security.
-
-### Common Characters
-![Crypto characters](../../images/memes/characters.png)
-
-* Wojak/NPC: Originally from 4chan, this simple face drawing represents the average retail trader who buys high and sells low. It's often paired with the "feels guy" emotion variations, particularly during market crashes.
-* Soyjak:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
-* Coomer:  a derogatory variation of Wojak used to mock people perceived as overly enthusiastic, naive, or conformist. The term combines "soy" (from the controversial and scientifically unsupported claim that soy consumption reduces masculinity) with "Wojak."
-
-
-## Acronyms
-IBRL - Increase Bandwidth, Reduce Latency
-
-
+This guide serves as a living document of Web3 terminology. As the technology and culture evolve, new terms will emerge and existing ones may take on new meanings. Regular updates will reflect these changes and maintain this guide's utility as a comprehensive reference.

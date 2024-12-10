@@ -1,44 +1,134 @@
-# Memes
-There will be a lot of references to meme's in your journey to become a [Gigabrain](./terms.qmd#gigabrain) Degen. It's important to understand them. Culture is a massive part of Web3 and will help you immensely in your journey. 
+# Meme Culture
 
-## Not your keys, not your Coins
-![Not your keys](../../images/memes/not-your-keys.jpg)
+## Introduction
 
-"Not your keys, not your coins" is one of the most fundamental principles in cryptocurrency, emerging from the early days of Bitcoin and becoming even more relevant after several high-profile exchange failures. This phrase encapsulates a core tenet of cryptocurrency's original vision: true financial self-custody.
+Memes serve as a unique form of cultural communication in the Web3 space, combining humor with important lessons and shared experiences. They often capture complex ideas in accessible formats and help create a sense of community among participants. This guide explores the most significant memes in Web3, their origins, and their deeper meanings.
 
-The principle is simple but profound: if you don't control the private keys to your cryptocurrency wallet, you don't truly own your cryptocurrency. When you keep your crypto on an exchange or any centralized platform, you're essentially trusting that entity with your assets. The exchange provides you with an IOU - a promise that they're holding your coins safely - rather than giving you direct control over them. This arrangement mirrors traditional banking, where your money is actually a liability on the bank's balance sheet rather than physical cash in your possession.
+## Foundational Memes
 
-The significance of this principle has been repeatedly demonstrated through catastrophic exchange failures like Mt. Gox, FTX, and others, where users lost billions because they trusted centralized entities with their crypto assets. Each of these events reinforced the wisdom of the original crypto ethos: the only way to truly own your cryptocurrency is to hold your private keys in a wallet you control. This might mean using a hardware wallet, a properly secured software wallet, or even a paper wallet, but the key factor is that you - and only you - have access to the private keys that control the funds.
+### "Not Your Keys, Not Your Coins"
 
-This phrase has evolved from a simple security recommendation into a battle cry for cryptocurrency self-sovereignty, encouraging users to take direct responsibility for their assets rather than defaulting to the familiar but potentially risky comfort of centralized custody. It represents not just a practical security measure, but a philosophical alignment with the decentralized, trustless principles that cryptocurrency was built upon.
+This fundamental meme emerged from the early Bitcoin community and gained renewed significance after several high-profile exchange collapses. It encapsulates one of the core principles of cryptocurrency: self-custody.
 
+Origin: The phrase likely originated on Bitcoin forums around 2011-2012 but gained prominence after the Mt. Gox collapse in 2014.
 
-## HODL
-HODL originated as a misspelling of "hold" in a 2013 Bitcoin forum post titled ["I AM HODLING."](https://bitcointalk.org/index.php?topic=375643.0) The post's author, frustrated by their poor trading performance during a Bitcoin price crash, declared they would simply hold onto their Bitcoin rather than try to time the market. The typographical error caught on as both a meme and an investment philosophy in the cryptocurrency community.
+Cultural Impact:
+- Serves as a constant reminder of cryptocurrency's original purpose: financial self-sovereignty
+- Often shared after exchange hacks or failures
+- Has evolved into a teaching tool for newcomers
+- Frequently referenced in discussions about centralized exchanges and custody solutions
 
-The term has evolved beyond its humorous origins to represent a long-term investment strategy often summarized as "Hold On for Dear Life." This reflects the mindset of cryptocurrency investors who maintain their positions despite extreme market volatility, believing in the long-term value proposition of their assets rather than attempting to profit from short-term price movements.
+Real-world examples that reinforced this meme:
+- Mt. Gox (2014): 850,000 BTC lost
+- QuadrigaCX (2019): $190 million lost
+- FTX (2022): Billions in customer funds lost
 
-HODL also represents a rejection of traditional trading wisdom. While conventional financial markets emphasize technical analysis and market timing, HODLing suggests that, particularly in the volatile cryptocurrency space, a simple buy-and-hold strategy might outperform active trading for many investors. This approach acknowledges the difficulty of timing a highly volatile, 24/7 global market.
+### HODL
 
-The term has become so influential that it helps identify different types of market participants. "HODLers" are often contrasted with "traders" or "speculators," with HODLers viewed as providing market stability through their long-term commitment to holding assets. During market downturns, the community often encourages "HODL" as a way to maintain conviction and avoid panic selling.
+Perhaps the most famous cryptocurrency meme, "HODL" originated from a typo that became a battle cry for long-term investors.
 
-The concept of HODLing has also influenced how blockchain projects design their token economics. Many projects now include staking mechanisms, vesting schedules, and other features that encourage long-term holding, showing how a simple misspelling has evolved into a fundamental aspect of cryptocurrency culture and economics.
+Origin: December 18, 2013, when GameKyuubi posted "I AM HODLING" on the BitcoinTalk forum during a market crash. The poster, admittedly drunk, wrote a passionate defense of holding Bitcoin despite price volatility.
 
-## Midwit (Bell Curve) Meme
-The meme uses a bell curve (IQ distribution curve) with three characters:
+Evolution:
+1. Initial phase: Simple misspelling joke
+2. Secondary meaning: "Hold On for Dear Life"
+3. Modern usage: Philosophical approach to cryptocurrency investment
 
-* Left side (low IQ): A simple, happy figure who does something basic but effective. Often called [Smol brain](./terms.qmd#smol-brain)
-* Middle of the curve (average IQ): A pseudo-intellectual character with overcomplicated strategies/thoughts, often wearing glasses and trying to sound smart
-* Right side (high IQ): Returns to the simple approach but with deep understanding of why it works
+Cultural significance:
+- Represents conviction in long-term value over short-term trading
+- Creates solidarity among investors during market downturns
+- Differentiates investment approaches (HODLers vs. traders)
+- Has spawned related terms like "diamond hands"
 
-![BTC Bell Curve meme](../../images/memes/bellcurve.jpg)
+## Character-Based Memes
 
-## General 
+### Wojak Variations
 
-* "Sir, this is a Wendy's": Used when crypto discussions become overly technical or philosophical, reminding people not to take themselves too seriously.
+Wojak (also known as "feels guy") has become the protagonist of countless crypto trading stories, with several important variations:
 
-::: {.callout-note}
-<blockquote class="twitter-tweet">
-<a href="https://twitter.com/Wendys/status/1526211577891921922"></a>
-</blockquote>
-:::
+#### The Crypto Wojak Timeline:
+1. Basic Wojak: Represents the average retail trader
+2. NPC Wojak: Symbolizes those who follow the crowd without thinking
+3. Brainlet: Depicts poor trading decisions
+4. Cozy Wojak: Represents comfortable HODLers during market turbulence
+
+### The Bogdanoff Twins
+
+A complex meme centered around the late Bogdanoff twins, imagining them as all-powerful market manipulators.
+
+Key elements:
+- "Dump it": Order given after someone buys
+- "Pump it": Command issued after someone sells
+- "He sold?": The setup for market manipulation
+
+Cultural impact:
+- Reflects the feeling of powerlessness many traders experience
+- Personifies the seemingly manipulated nature of crypto markets
+- Creates humor from shared experiences of poor timing
+
+## Educational Memes
+
+### The Bell Curve (Midwit) Meme
+
+This meme format illustrates the concept of sophisticated simplicity in cryptocurrency:
+
+Left (Low IQ): Simple but effective approach
+Middle (Average IQ): Overcomplicated strategies
+Right (High IQ): Return to simplicity with deep understanding
+
+Examples:
+- Bitcoin storage: Hardware wallet → Complex multi-sig setup → Hardware wallet with proper backup
+- Trading: HODL → Complex trading strategies → HODL with occasional rebalancing
+- Security: Write down seed phrase → Use elaborate encryption → Write down seed phrase and store in safe
+
+## Market Condition Memes
+
+### "This is Fine" Dog
+
+A cartoon dog sitting in a burning room, often used during market crashes. The meme represents:
+- Forced calm during market turbulence
+- Coping with significant losses
+- The crypto community's resilience
+
+### "When Lambo?"
+
+Origin: 2017 bull run
+Meaning: Represents the dream of crypto wealth
+Evolution:
+1. Sincere question from newcomers
+2. Ironic joke about unrealistic expectations
+3. Critique of get-rich-quick mentality
+
+## Community-Specific Memes
+
+### Ethereum Memes
+- "Vitalik clapping": Celebrating network achievements
+- "Ultra sound money": ETH's post-merger monetary policy
+- "Merge delayed": Historical references to Ethereum's upgrade timeline
+
+### Bitcoin Memes
+- "Number go up": Bitcoin's long-term price appreciation
+- "Stack sats": Encouraging regular small purchases
+- "PayPal of crypto": Mocking misunderstandings of Bitcoin's purpose
+
+## Best Practices for Meme Literacy
+
+Understanding crypto memes helps participants:
+1. Navigate community sentiment
+2. Identify market cycles
+3. Learn from shared experiences
+4. Connect with the broader culture
+
+## Modern Usage Guidelines
+
+When engaging with crypto memes:
+- Understand their historical context
+- Recognize their educational value
+- Use them appropriately in discussions
+- Appreciate their role in community building
+
+## Conclusion
+
+Memes in Web3 are more than just humor - they're a sophisticated form of cultural communication that encodes important lessons, shared experiences, and community values. Understanding these memes helps participants better navigate both the technical and social aspects of the cryptocurrency ecosystem.
+
+As the space evolves, new memes emerge while old ones gain additional layers of meaning. This living document will be updated to reflect these changes and maintain its relevance as a cultural guide to Web3.

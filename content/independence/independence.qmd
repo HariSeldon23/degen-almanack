@@ -5,7 +5,8 @@
 Before touching any money or creating accounts, let's build your foundation of knowledge. Think of this like learning to recognize road signs before driving a car.
 
 ### Essential Terms
-Start by familiarizing yourself with the fundamental vocabulary in Chapter 5: "Terms". Key concepts you need to understand first include:
+Start by familiarizing yourself with the fundamental vocabulary in Chapter 6: ["Terms"](../essentials/terms.qmd). Key concepts you need to understand first include:
+
 - Web3 and decentralization
 - Blockchain basics
 - Public and private keys
@@ -13,14 +14,16 @@ Start by familiarizing yourself with the fundamental vocabulary in Chapter 5: "T
 - Smart contracts
 
 ### Cultural Context
-The Web3 community has its own culture, largely expressed through memes. Review Chapter 7: "Memes" to understand:
+The Web3 community has its own culture, largely expressed through memes. Review Chapter 8: ["Memes"](../essentials/memes.qmd) to understand:
+
 - "Not your keys, not your coins" - why self-custody matters
 - "HODL" - the philosophy of long-term holding
 - The evolution of different crypto communities
 - Common scam warnings and red flags
 
 ### Required Tools
-You'll need specific tools to interact with Web3. Reference Chapter 6: "Tools" for details on:
+You'll need specific tools to interact with Web3. Reference Chapter 7: ["Tools"](../essentials/tools.qmd) for details on:
+
 - Wallets (MetaMask, hardware wallets)
 - Block explorers
 - Portfolio trackers
@@ -32,19 +35,23 @@ Before handling any real money, we need to establish secure practices. Security 
 
 ### Protecting Your Assets
 From Chapter 9: "Don't Lose Your Money":
+
 1. Private Key Management
+
    - Never share your seed phrase
    - Secure storage methods
    - Backup procedures
    - Emergency access plans
 
 2. Creating Safe Wallets
+
    - Setting up MetaMask securely
    - Creating a "burner" wallet for testing
    - Understanding hardware wallet benefits
    - Using multiple wallets for different purposes
 
 3. Privacy Considerations
+
    - The Tornado Cash situation
    - Legal implications of privacy tools
    - Alternative privacy methods
@@ -56,13 +63,16 @@ Now that you understand the basics and security fundamentals, it's time to enter
 
 ### Your First Crypto Purchase
 Following Chapter 10: "Make Some Money":
+
 1. Start Small
+
    - Buy your first $10 of Bitcoin
    - Understand exchange basics
    - Learn about order types
    - Practice secure withdrawals
 
 2. Understanding Fees
+
    - Different fee markets (overview with links to Technical section)
    - How gas prices work
    - Choosing the right time to transact
@@ -70,12 +80,14 @@ Following Chapter 10: "Make Some Money":
 
 ### Creating Your Web3 Identity
 1. Setting Up MetaMask
+
    - Proper installation and security
    - Network configuration
    - Backup procedures
    - Test transactions
 
 2. Creating Clean Wallets
+
    - Understanding wallet separation
    - Privacy tool options
    - Legal considerations
@@ -87,12 +99,14 @@ Now you're ready to start using Web3 services while maintaining security.
 
 ### Essential Skills
 1. Using DEXes (Decentralized Exchanges)
+
    - Trading on Uniswap
    - Understanding liquidity pools
    - Managing slippage
    - Avoiding common pitfalls
 
 2. Bridging Between Networks
+
    - Understanding bridge risks
    - Choosing reliable bridges
    - Managing cross-chain assets
@@ -100,12 +114,14 @@ Now you're ready to start using Web3 services while maintaining security.
 
 ### DeFi Fundamentals
 1. Lending Markets
+
    - How lending protocols work
    - Borrowing against your Bitcoin
    - Managing collateral ratios
    - Understanding liquidation risks
 
 2. Yield Strategies
+
    - Basic yield farming
    - Risk assessment
    - Sustainable practices
@@ -117,39 +133,15 @@ Once comfortable with basics, you can explore more sophisticated strategies.
 
 ### Sustainable Practices
 1. Cash Flow Management
+
    - Using lending markets effectively
    - Managing borrowed positions
    - Creating sustainable yield
    - Emergency procedures
 
 2. Off-ramping Strategies
+
    - Converting crypto to fiat
    - Tax compliance
    - Banking relationships
    - Local regulations
-
-## Continuing Education
-
-Your Web3 journey never really ends. Stay informed through:
-- Regular security updates
-- Protocol documentation
-- Community discussions
-- Technical developments
-
-## Warning Signs
-
-Throughout your journey, watch for:
-- Unrealistic promises
-- Pressure to act quickly
-- Requests for private information
-- Unauthorized wallet connections
-
-## Next Steps
-
-After completing this guide, explore:
-- More advanced DeFi strategies
-- Governance participation
-- Technical understanding
-- Community contribution
-
-Remember: move slowly, test everything with small amounts first, and never risk more than you can afford to lose. Your journey to Web3 proficiency is a marathon, not a sprint.

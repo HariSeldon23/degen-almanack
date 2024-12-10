@@ -43,7 +43,7 @@ No warranties are given. The license may not give you all of the permissions nec
 
 This work is version controlled through Git. Each version represents a distinct iteration of the Almanack, identified by commit hashes and release tags. While the content may evolve, this license remains constant across all versions.
 
-You can find the complete version history and contribute to future versions at: [Repository URL]
+You can find the complete version history and contribute to future versions at: https://github.com/HariSeldon23/degen-almanack
 
 ## Attribution Example
 
