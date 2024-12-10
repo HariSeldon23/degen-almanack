@@ -22,7 +22,7 @@ So please be aware that all your transactions that you perform following along w
 Important things to note:
 
 -   You'll need about 10 US Dollars
--   We'll be using a [CEX](../essentials/tools.qmd#cexs) to purchase crypto
+-   We'll be using a [CEX](../foundations/tools.qmd#cexs) to purchase crypto
 -   We'll use a Mobile wallet, Phantom
 
 First thing anyone entering Web3 needs to do is to convert Fiat into a [Digital Asset](../financial/tokens.qmd)

@@ -22,7 +22,7 @@ The Web3 community has its own culture, largely expressed through memes. Review 
 - Common scam warnings and red flags
 
 ### Required Tools
-You'll need specific tools to interact with Web3. Reference Chapter 7: ["Tools"](../essentials/tools.qmd) for details on:
+You'll need specific tools to interact with Web3. Reference Chapter 7: ["Tools"](../foundations/tools.qmd) for details on:
 
 - Wallets (MetaMask, hardware wallets)
 - Block explorers

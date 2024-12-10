@@ -9,26 +9,32 @@ book:
     - epigraph.qmd
     - preface.qmd
     - intro.qmd
+    - ./content/intro/use.qmd
+    - ./content/intro/terms.qmd
     part: Introduction
   - chapters:
     - ./content/foundations/foundations.qmd
     - ./content/foundations/path.qmd
     - ./content/foundations/alternatives.qmd
+    - ./content/foundations/tools.qmd
+    - ./content/foundations/basic_security.qmd
     part: Foundations
   - chapters: 
     - ./content/independence/independence.qmd
-    - ./content/degen/scam.qmd
-    - ./content/degen/starter.qmd
+    - ./content/independence/starter.qmd
     - ./content/degen/mid.qmd
     - ./content/degen/big.qmd
     part: Path to Independence
   - chapters:
-    - ./content/essentials/terms.qmd
-    - ./content/essentials/tools.qmd
     - ./content/essentials/memes.qmd
     part: Web3 Essentials
   - chapters: 
     - ./content/technical/overview.qmd
+    - ./content/technical/cryptography.qmd
+    - ./content/technical/blockchains.qmd
+    - ./content/technical/dapps.qmd
+    - ./content/technical/mev.qmd
+    - ./content/technical/languages.qmd
     part: Technologist's Path
   - chapters:
     - ./content/financial/tokens.qmd
@@ -36,13 +42,6 @@ book:
     - ./content/financial/ratings.qmd
     - ./content/financial/trollip_index.qmd
     part: Financial
-  - chapters:
-    - ./content/technical/cryptography.qmd
-    - ./content/technical/blockchains.qmd
-    - ./content/technical/dapps.qmd
-    - ./content/technical/mev.qmd
-    - ./content/technical/languages.qmd
-    part: Technical
   - chapters:
     - ./content/social/governance.qmd
     part: Social

@@ -25,6 +25,7 @@ Decentralization refers to the distribution of power, control, and decision-maki
 3. **Logical Decentralization**: Does the interface and data structures appear more like a single monolithic object, or an amorphous swarm?
 
 Examples help illustrate these distinctions:
+
 - Bitcoin is architecturally and politically decentralized but logically centralized (one shared ledger)
 - Email is architecturally decentralized but politically centralized (few major providers) and logically centralized (standardized protocol)
 - Language is decentralized across all three dimensions
@@ -42,6 +43,7 @@ The term "blockchain" has become somewhat limiting - many modern systems use dif
 
 ### Simple Accounts
 Simple accounts represent the most basic way to interact with blockchain networks. They have:
+
 - A public key (like an email address)
 - A private key (like a password)
 - The ability to hold and transfer native network tokens
@@ -49,6 +51,7 @@ Simple accounts represent the most basic way to interact with blockchain network
 
 ### Smart Accounts
 Smart accounts extend simple accounts with programmable functionality:
+
 - Custom validation logic
 - Multi-signature requirements
 - Automated actions
@@ -60,12 +63,14 @@ For example, a smart account might require two out of three designated signature
 
 ### Native Coins
 Native coins (sometimes called protocol tokens) are the primary digital assets of blockchain networks. They serve several purposes:
+
 - Pay for transaction fees (gas)
 - Secure the network through staking or mining
 - Participate in governance
 - Transfer value
 
 Examples include:
+
 - Bitcoin (BTC) on the Bitcoin network
 - Ether (ETH) on Ethereum
 - SOL on Solana
@@ -75,6 +80,7 @@ Tokens are digital assets created on top of blockchain platforms. They differ fr
 
 #### Fungible Tokens
 Interchangeable tokens where each unit is identical to every other unit. Think of them like traditional currency - any dollar bill can be exchanged for any other dollar bill. Categories include:
+
 - Stablecoins (USDC, DAI)
 - Governance tokens (UNI, AAVE)
 - Security tokens
@@ -82,6 +88,7 @@ Interchangeable tokens where each unit is identical to every other unit. Think o
 
 #### Non-Fungible Tokens (NFTs)
 Unique digital assets where each token has distinct properties. Common uses include:
+
 - Digital art and collectibles
 - Gaming items
 - Domain names
@@ -109,6 +116,7 @@ Originally a misspelling of "hold" that became crypto slang for maintaining long
 
 ### Degen
 Short for "degenerate," this term began as criticism of high-risk trading behavior but has been reclaimed by the community to describe sophisticated traders who:
+
 - Take calculated risks
 - Deeply understand protocol mechanics
 - Stay ahead of market trends
@@ -127,21 +135,8 @@ A sequence of 12-24 words that serves as a backup for private keys. Also called 
 
 ### Smart Contract
 Self-executing programs stored on a blockchain that automatically enforce and execute agreements between parties. Key characteristics:
+
 - Immutable once deployed
 - Transparent and verifiable
 - Execute exactly as programmed
 - No downtime or censorship
-
-## Best Practices for Using This Guide
-
-1. **Start with Core Concepts**: Understanding decentralization and blockchain fundamentals provides context for more specific terms.
-
-2. **Learn by Category**: Focus on one section at a time rather than trying to memorize everything at once.
-
-3. **Connect Related Terms**: Many concepts are interconnected - understanding these relationships helps build a complete mental model.
-
-4. **Stay Updated**: Web3 terminology evolves rapidly. Check for updates to this guide as new terms and concepts emerge.
-
-## Conclusion
-
-This guide serves as a living document of Web3 terminology. As the technology and culture evolve, new terms will emerge and existing ones may take on new meanings. Regular updates will reflect these changes and maintain this guide's utility as a comprehensive reference.

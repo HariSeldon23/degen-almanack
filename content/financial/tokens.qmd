@@ -16,7 +16,7 @@ We thus break down Digital Assets into the following Categories:
     * Fungibles
     * Non Fungible
 
-After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](../essentials/terms.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
+After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](../foundations/terms.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
 
 ## Coins
 This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the [Blockchain](../technical/blockchains.qmd) documentation. 
