@@ -12,6 +12,8 @@ book:
     part: Introduction
   - chapters:
     - ./content/foundations/foundations.qmd
+    - ./content/foundations/path.qmd
+    - ./content/foundations/alternatives.qmd
     part: Foundations
   - chapters: 
     - ./content/independence/independence.qmd

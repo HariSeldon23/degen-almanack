@@ -1,16 +1,17 @@
 # Preface {.unnumbered}
 
-## Why I must write 
-So that I can continue to use crypto without dishonor, I have decided to put together a sufficient body of free research so that I will be able to get along without any knowledge that is not free and accessible by anyone. 
+The cryptocurrency revolution has created unprecedented opportunities for financial independence, but it has also spawned an industry rife with exploitation. As someone deeply embedded in this world, I face a moral dilemma: I can either participate in a system that profits from obscuring knowledge, or I can work to make that knowledge freely accessible to all.
 
-## Why many others want to help
-I have found that many within crypto are unhappy with the exploitation of digital currencies. The influx of grifters, charlatans and scammers. It may enable them to make more money, but it requires them to feel in conflict with humanity rather than feel as comrades. 
+This Almanack represents my choice of the latter path. Just as the cypherpunks believed privacy and freedom of information could coexist, I believe we can build a more equitable crypto ecosystem without compromising its innovative potential. The fundamental act of friendship among cryptocurrency enthusiasts – what I call "degens" – should be the sharing of knowledge, not the hoarding of it.
 
-The fundamental act of friendship among [degens](./content/essentials/terms.qmd#degens) is the sharing of knowledge. Knowledge in crypto, due to it's technical complexity has attracted a special type of exploitation. High pay walls for access to data goes against the very ethos of Web3. 
+The technical complexity of cryptocurrency has created a particularly insidious form of gatekeeping. Essential market data and analysis hide behind expensive paywalls. Crucial insights remain locked in exclusive chat groups and private networks. This artificial scarcity of knowledge directly contradicts the core ethos of Web3: permissionless access and decentralized power.
 
-## How you can contribute
-Currently you can contribute by submitting knowledge in the form of a Pull Request to the [Github repo](https://github.com/HariSeldon23/degen-almanack).
+This Almanack aims to break down these barriers. It will serve as a comprehensive, freely accessible resource covering everything from basic concepts to advanced trading strategies. More importantly, it will evolve through community contributions, ensuring it stays relevant and accurate as the industry develops.
 
-I'm considering opening up this Almanack onto [Mirror](https://mirror.xyz/) so people can donate financially and anonymously through there. I still need to do more research on [Open Source financial models](http://www.catb.org/~esr/writings/magic-cauldron/) to ensure this Almanack can operate sustainably as a going concern. 
+Some might question why I would freely share knowledge that others sell at a premium. My answer is simple: the long-term health of our ecosystem depends on educated participants making informed decisions. When knowledge is concentrated in the hands of a few, it creates the very centralization of power that cryptocurrency was meant to disrupt.
 
-Stay Tuned!
+Looking ahead, I envision this Almanack becoming a living document that adapts to the rapid changes in our industry. I'm exploring sustainable open-source funding models, potentially through platforms like Mirror that allow for anonymous contributions. This would ensure the Almanack can continue growing while maintaining its independence from traditional financial incentives.
+
+This is just the beginning. The path to truly democratized crypto knowledge will require continuous effort and collaboration. If you share this vision, I invite you to contribute your expertise, suggest improvements, or simply help spread the word. Together, we can build something that honors the original promise of cryptocurrency: financial sovereignty for all.
+
+The work begins now.
