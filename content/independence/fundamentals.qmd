@@ -151,8 +151,6 @@ Aave uses an overcollateralized lending model:
    - Keep some ETH for emergency transactions
    - Know how to repay loans quickly
 
-[Continue with Yield Strategies, Portfolio Building, Emergency Procedures sections as before...]
-
 ## Monitoring Your DeFi Activity
 
 Stay informed about your DeFi positions:

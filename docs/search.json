@@ -763,7 +763,7 @@
     "href": "content/independence/fundamentals.html#lending-markets-with-aave-on-base",
     "title": "DeFi Fundamentals",
     "section": "Lending Markets with Aave on Base",
-    "text": "Lending Markets with Aave on Base\nNow that you’re comfortable with basic transactions and trading, let’s explore lending markets. Aave is one of DeFi’s most battle-tested lending protocols and has deployed on Base.\n\nHow Aave Works\nThink of Aave like a decentralized bank where you can both lend and borrow crypto assets:\n\nLending Assets When you lend on Aave:\n\nYou receive aTokens representing your deposit\nInterest accrues automatically in your wallet\nYou can withdraw anytime (subject to liquidity)\nYour deposit can serve as collateral for borrowing\n\nUnderstanding Collateral and Borrowing Aave uses an overcollateralized lending model:\n\nYou must maintain a minimum health factor\nDifferent assets have varying collateral factors\nMonitor your position’s health regularly\nUnderstand liquidation risks\n\nSafety First\n\nAlways maintain a health factor above 1.5\nSet up notifications for position health\nKeep some ETH for emergency transactions\nKnow how to repay loans quickly\n\n\n[Continue with Yield Strategies, Portfolio Building, Emergency Procedures sections as before…]",
+    "text": "Lending Markets with Aave on Base\nNow that you’re comfortable with basic transactions and trading, let’s explore lending markets. Aave is one of DeFi’s most battle-tested lending protocols and has deployed on Base.\n\nHow Aave Works\nThink of Aave like a decentralized bank where you can both lend and borrow crypto assets:\n\nLending Assets When you lend on Aave:\n\nYou receive aTokens representing your deposit\nInterest accrues automatically in your wallet\nYou can withdraw anytime (subject to liquidity)\nYour deposit can serve as collateral for borrowing\n\nUnderstanding Collateral and Borrowing Aave uses an overcollateralized lending model:\n\nYou must maintain a minimum health factor\nDifferent assets have varying collateral factors\nMonitor your position’s health regularly\nUnderstand liquidation risks\n\nSafety First\n\nAlways maintain a health factor above 1.5\nSet up notifications for position health\nKeep some ETH for emergency transactions\nKnow how to repay loans quickly",
     "crumbs": [
       "Path to Independence",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
@@ -781,245 +781,201 @@
     ]
   },
   {
-    "objectID": "content/independence/basic_defi.html",
-    "href": "content/independence/basic_defi.html",
-    "title": "DeFi Fundamentals",
+    "objectID": "content/independence/invest.html",
+    "href": "content/independence/invest.html",
+    "title": "What Should I Invest In?",
     "section": "",
-    "text": "Introduction\nWhile Ethereum created DeFi and remains its foundational layer, starting your DeFi journey directly on Ethereum can be expensive due to high transaction fees (sometimes $50+ per transaction). Fortunately, Base, a layer 2 network built on top of Ethereum, offers the same fundamental DeFi capabilities but with dramatically lower fees (often less than $1 per transaction). This makes it an ideal starting point for learning DeFi.",
+    "text": "Understanding the Bitcoin Investment Thesis\nWhen examining historical cryptocurrency returns, Bitcoin has demonstrated remarkable consistency over 8-year holding periods:\nThese returns suggest that patient accumulation of Bitcoin over long periods has been the most reliable path to wealth building in cryptocurrency. However, it’s important to understand why simply calculating future value using traditional compound interest formulas doesn’t tell the whole story.",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
     ]
   },
   {
-    "objectID": "content/independence/basic_defi.html#getting-your-first-eth-on-base",
-    "href": "content/independence/basic_defi.html#getting-your-first-eth-on-base",
-    "title": "DeFi Fundamentals",
-    "section": "Getting Your First ETH on Base",
-    "text": "Getting Your First ETH on Base\nNow that you have Bitcoin in your Phantom wallet, let’s get some ETH on Base to start exploring DeFi. We’ll use Coinbase for this process since they built Base and offer direct deposits.\n\nDirect Purchase Method\nThe most straightforward approach is:\n\nOn Coinbase Exchange:\n\nPurchase $50-100 worth of ETH\nSelect “Withdraw”\nChoose “Send to Base”\nSend to your Phantom wallet’s Base address\n\n\nThis method is optimal because:\n\nCoinbase handles the bridge transaction for you\nYou avoid paying Ethereum mainnet gas fees\nThe process is simpler than manual bridging\nBase transaction fees are much lower\n\n\n\nUnderstanding Base vs Ethereum\nBase maintains a special relationship with Ethereum:\n\nIt inherits Ethereum’s security\nUses the same wallet addresses\nRuns the same smart contracts\nCosts much less to use\n\nThink of Base like a express lane on a highway - it’s faster and cheaper while still getting you to the same destination safely.",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#your-first-defi-steps-on-base",
-    "href": "content/independence/basic_defi.html#your-first-defi-steps-on-base",
-    "title": "DeFi Fundamentals",
-    "section": "Your First DeFi Steps on Base",
-    "text": "Your First DeFi Steps on Base\nLet’s verify everything is working before diving deeper:\n\nCheck Your Setup\n\nConfirm ETH appears in your Phantom wallet on Base\nMake sure you’ve selected Base network\nHave your Phantom wallet connected to Base\nKeep transaction records for taxes\n\nTest Transaction\n\nSend a tiny amount of ETH (like $1 worth) between your own addresses\nNotice how the gas fees are much lower than Ethereum\nGet comfortable with Base network mechanics\nUnderstand transaction confirmation times",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#essential-dex-skills-on-base",
-    "href": "content/independence/basic_defi.html#essential-dex-skills-on-base",
-    "title": "DeFi Fundamentals",
-    "section": "Essential DEX Skills on Base",
-    "text": "Essential DEX Skills on Base\nBase hosts many of the same DeFi protocols as Ethereum. Let’s start with decentralized exchanges, using Base’s version of Uniswap.\n\nYour First Swap on Base\nLet’s walk through a simple ETH to USDC swap:\n\nPreparation\n\nConnect your Phantom wallet to Base’s Uniswap interface\nEnsure you have enough ETH for both the swap and gas (much less than Ethereum!)\nVerify you’re on the official Uniswap site\nCheck current Base gas prices (typically cents, not dollars)\n\nMaking the Swap\n\nSelect ETH as your “from” token\nChoose USDC as your “to” token\nEnter a small test amount ($10 worth)\nReview the quoted price and gas fees\nNotice how Base’s low gas makes small trades viable\n\n\n\n\nUnderstanding Gas on Base\nWhile Base uses the same gas system as Ethereum, the costs are much lower:\n\nTypical Base Costs:\n\nSimple transfers: $0.01-0.05\nToken swaps: $0.10-0.30\nComplex DeFi operations: $0.20-0.50 Compare this to Ethereum’s fees which can be 50-100x higher!\n\nGas Reserve Planning\n\nKeep $5-10 worth of ETH for gas on Base\nMonitor Base network conditions\nUnderstand peak usage times\nPlan non-urgent transactions",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#base-defi-lending-and-yield-strategies",
-    "href": "content/independence/basic_defi.html#base-defi-lending-and-yield-strategies",
-    "title": "DeFi Fundamentals",
-    "section": "Base DeFi: Lending and Yield Strategies",
-    "text": "Base DeFi: Lending and Yield Strategies\n\nUnderstanding Lending Markets on Base\nBase has attracted several major lending protocols, each offering unique features and risk profiles. Let’s explore how to use them safely and effectively.\n\n\nMoonwell: Base’s Native Lending Protocol\nMoonwell represents one of Base’s core lending protocols. Think of it like a decentralized bank where you can both lend and borrow crypto assets. Here’s how to use it effectively:\n\nLending Assets When you lend on Moonwell, you receive mToken (like mUSDC or mETH) representing your deposit. For example:\n\n\nDeposit 100 USDC, receive 100 mUSDC\nYour mUSDC continuously accrues interest\nInterest rates typically range from 2-5% APY for stablecoins\nETH lending rates usually range from 1-3% APY\n\n\nBorrowing Basics Moonwell uses an overcollateralized lending model:\n\n\nYou must maintain at least 125% collateral ratio\nDifferent assets have different collateral factors\nETH typically has 80% collateral factor\nStablecoins often have 90% collateral factor\n\n\nRisk Management on Moonwell\n\n\nMonitor your health factor constantly\nSet up alerts for approaching liquidation\nMaintain at least 150% collateral ratio for safety\nUnderstand emergency exit procedures\n\n\n\nCompound on Base\nCompound has deployed their latest version on Base, offering some unique features:\n\nKey Differences from Moonwell\n\n\nDifferent interest rate curves\nUsually lower collateral requirements\nMore conservative risk parameters\nEstablished security track record\n\n\nStrategic Usage\n\n\nCompare rates between protocols\nConsider gas costs when switching\nUnderstand unique features of each\nMaintain positions across both for diversification",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#yield-strategies-tailored-for-base",
-    "href": "content/independence/basic_defi.html#yield-strategies-tailored-for-base",
-    "title": "DeFi Fundamentals",
-    "section": "Yield Strategies Tailored for Base",
-    "text": "Yield Strategies Tailored for Base\nBase offers several unique opportunities for generating yield. Let’s explore them from lowest to highest risk.\n\nStrategy 1: Stablecoin Lending\nThe foundation of any yield strategy should start with stable, reliable returns:\n\nUSDC Lending Path\n\n\nLend USDC on Moonwell or Compound\nCurrent base yields: 2-4% APY\nAdditional protocol rewards possible\nMinimal impermanent loss risk\n\n\nRisk Mitigation\n\n\nSplit funds between protocols\nMonitor protocol health\nKeep detailed records\nUnderstand withdrawal processes\n\n\n\nStrategy 2: ETH-Based Yields\nBase offers several ways to earn yield on ETH holdings:\n\nLiquid Staking\n\n\nDeposit ETH via cbETH\nEarn staking rewards\nMaintain liquidity\nCurrent yields: 3-4% APY\n\n\nLending Markets\n\n\nProvide ETH as collateral\nBorrow stablecoins at low ratios\nEarn lending yields\nManage liquidation risks\n\n\n\nStrategy 3: Liquidity Provision on Base\nBase hosts several DEXs where you can provide liquidity:\n\nStable Pair Liquidity (Lowest Risk)\n\n\nUSDC-USDbC pools\nTypical yields: 3-8% APY\nMinimal impermanent loss\nRegular fee income\n\n\nETH Pair Liquidity (Medium Risk)\n\n\nETH-USDC pools\nYields vary widely: 5-20% APY\nHigher impermanent loss risk\nBetter for long-term holders\n\n\n\nStrategy 4: Yield Aggregation on Base\nSeveral yield aggregators have launched on Base:\n\nYearn-style Vaults\n\n\nAutomated yield farming\nProtocol reward optimization\nComplex strategies simplified\nHigher gas efficiency\n\n\nRisk Considerations\n\n\nSmart contract risk exposure\nStrategy complexity risk\nReward token price risk\nExit liquidity risk",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#building-a-balanced-base-portfolio",
-    "href": "content/independence/basic_defi.html#building-a-balanced-base-portfolio",
-    "title": "DeFi Fundamentals",
-    "section": "Building a Balanced Base Portfolio",
-    "text": "Building a Balanced Base Portfolio\nLet’s create a sample portfolio strategy for $1000 on Base:\n\nConservative Allocation (40%)\n\n\n$300 USDC split between lending protocols\n$100 in stable-stable LP positions\nExpected yield: 3-5% APY\nFocus on capital preservation\n\n\nModerate Risk (40%)\n\n\n$200 ETH in lending markets\n$200 in ETH-USDC liquidity pools\nExpected yield: 5-10% APY\nBalance growth with stability\n\n\nHigher Risk (20%)\n\n\n$200 in yield aggregators\nFocus on newer protocols with incentives\nExpected yield: 10-20% APY\nHigher risk for higher returns",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#tax-and-record-keeping",
-    "href": "content/independence/basic_defi.html#tax-and-record-keeping",
-    "title": "DeFi Fundamentals",
-    "section": "Tax and Record Keeping",
-    "text": "Tax and Record Keeping\nBase transactions require careful tracking:\n\nEssential Records\n\n\nAll deposits and withdrawals\nInterest earned\nTrading fees collected\nProtocol rewards received\n\n\nTransaction Management\n\n\nUse portfolio tracking tools\nKeep detailed spreadsheets\nDocument all wallet addresses\nSave all transaction hashes",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#emergency-procedures",
-    "href": "content/independence/basic_defi.html#emergency-procedures",
-    "title": "DeFi Fundamentals",
-    "section": "Emergency Procedures",
-    "text": "Emergency Procedures\nAlways maintain emergency plans:\n\nQuick Exit Strategy\n\n\nKeep enough ETH for exit transactions\nKnow fastest withdrawal paths\nMaintain exchange accounts for off-ramps\nUnderstand bridge withdrawal times\n\n\nRisk Monitoring\n\n\nTrack protocol TVL\nMonitor social channels\nSet up alerts\nKeep emergency contacts\n\nRemember: Base’s lower transaction costs make it easier to actively manage positions and adjust strategies, but never sacrifice security for yield. Start small, learn the mechanics, and scale up gradually as you gain confidence in the protocols and your own abilities.",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#bridge-safety-and-ethereum-relationship",
-    "href": "content/independence/basic_defi.html#bridge-safety-and-ethereum-relationship",
-    "title": "DeFi Fundamentals",
-    "section": "Bridge Safety and Ethereum Relationship",
-    "text": "Bridge Safety and Ethereum Relationship\nWhile we’re starting on Base for cost efficiency, it’s important to understand the relationship with Ethereum:\n\nSecurity Model\n\nBase derives security from Ethereum\nTransactions eventually settle on Ethereum\nAssets can always be bridged back to Ethereum\nSeven-day withdrawal period for security\n\nBridge Considerations\n\nOfficial Coinbase bridge is safest\nUnderstand withdrawal timeframes\nKeep records of bridge transactions\nMonitor bridge status",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/basic_defi.html#moving-beyond-base",
-    "href": "content/independence/basic_defi.html#moving-beyond-base",
-    "title": "DeFi Fundamentals",
-    "section": "Moving Beyond Base",
-    "text": "Moving Beyond Base\nAs your DeFi experience grows and your transaction sizes increase, the higher security of Ethereum mainnet may justify its higher fees. Consider graduating to Ethereum when:\n\nYour portfolio grows significantly\nYou need specific Ethereum-only protocols\nYou’re doing large trades where fees matter less\nYou want maximum security for long-term holdings",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>DeFi Fundamentals</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/starter.html",
-    "href": "content/independence/starter.html",
-    "title": "Make some money",
+    "objectID": "content/independence/invest.html#understanding-the-bitcoin-investment-thesis",
+    "href": "content/independence/invest.html#understanding-the-bitcoin-investment-thesis",
+    "title": "What Should I Invest In?",
     "section": "",
-    "text": "Purchasing your first Crypto\nI’d like to respect and adhere to the ethos of the early Cypherpunks. This means that I’d like everyone that follows along to maintain privacy. However the current solutions are overly technical for newcomers. Tornado Cash and Railgun have a high barrier to entry and Payy Network doesn’t support moving funds onto other wallets yet.\nSo please be aware that all your transactions that you perform following along will be non private and easy for someone to trace. If you’re an advanced user, then please see how to convert fiat to crypto anonymously.\nImportant things to note:\nFirst thing anyone entering Web3 needs to do is to convert Fiat into a Digital Asset\nWe will use Coinbase as the CEX for this section. You’re more than welcome to use your local CEX.\nThe reason I went with $10 is so that this will work for as many people as possible. See these heart breaking facts:\nWe’ll purchase $10 worth of BTC.",
+    "text": "2013-2021: ~4,000% return\n2014-2022: ~2,900% return\n2015-2023: ~8,500% return\n2016-2024: ~17,500% return",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Make some money</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
     ]
   },
   {
-    "objectID": "content/independence/starter.html#purchasing-your-first-crypto",
-    "href": "content/independence/starter.html#purchasing-your-first-crypto",
-    "title": "Make some money",
+    "objectID": "content/independence/invest.html#why-traditional-investment-calculations-fall-short",
+    "href": "content/independence/invest.html#why-traditional-investment-calculations-fall-short",
+    "title": "What Should I Invest In?",
+    "section": "Why Traditional Investment Calculations Fall Short",
+    "text": "Why Traditional Investment Calculations Fall Short\nTraditional future value calculations assume consistent periodic investments of equal purchasing power. With Bitcoin, this assumption doesn’t hold true because:\n\nThe dollar amount you invest monthly buys different amounts of Bitcoin as the price changes\nMarket cycles create varying entry points that significantly impact returns\nThe deflationary nature of Bitcoin means later purchases may acquire less BTC than earlier ones\n\nDespite these mathematical complexities, the historical data presents a compelling case: consistent Bitcoin accumulation over 8+ year periods has outperformed virtually every other asset class.",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/invest.html#the-simple-truth-about-crypto-investment",
+    "href": "content/independence/invest.html#the-simple-truth-about-crypto-investment",
+    "title": "What Should I Invest In?",
+    "section": "The Simple Truth About Crypto Investment",
+    "text": "The Simple Truth About Crypto Investment\nAfter analyzing countless strategies, tokens, and approaches, we’ve reached a straightforward conclusion: for most people, the optimal cryptocurrency investment strategy is:\n\nSave what you can afford monthly (even if it’s just $10)\nConvert it to Bitcoin\nHold for at least 8 years\nRepeat\n\nThis advice might seem overly simple, but it’s based on several key observations:\n\nBitcoin’s network effect and first-mover advantage continue to strengthen\nAlternative cryptocurrencies (altcoins) have historically underperformed BTC over long periods\nComplex trading strategies typically underperform simple accumulation\nThe 8-year holding period has captured full market cycles historically",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/invest.html#for-those-seeking-more-detail",
+    "href": "content/independence/invest.html#for-those-seeking-more-detail",
+    "title": "What Should I Invest In?",
+    "section": "For Those Seeking More Detail",
+    "text": "For Those Seeking More Detail\nWhile we maintain that simple Bitcoin accumulation is optimal for most investors, we understand some readers may want to explore additional options. For those interested in evaluating other cryptocurrencies or investment strategies:\n\nReview our comprehensive ratings system in the Ratings section\nUnderstand the risk factors we’ve identified for different asset types\nStudy the technical fundamentals behind various protocols\nConsider your own risk tolerance and investment timeline\n\nHowever, we strongly caution that additional complexity rarely leads to better returns for most investors.",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/invest.html#a-note-on-financial-independence",
+    "href": "content/independence/invest.html#a-note-on-financial-independence",
+    "title": "What Should I Invest In?",
+    "section": "A Note on Financial Independence",
+    "text": "A Note on Financial Independence\nThe goal of this investment approach is to achieve financial independence - having enough passive income to cover living expenses without relying on central authorities. While the exact amount needed varies by location and lifestyle, consistently accumulating Bitcoin has historically provided a path toward this goal.\nThe beauty of this approach is its accessibility - whether you can save $10 or $10,000 monthly, the strategy remains the same: consistent accumulation and patient holding of Bitcoin.",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/invest.html#conclusion",
+    "href": "content/independence/invest.html#conclusion",
+    "title": "What Should I Invest In?",
+    "section": "Conclusion",
+    "text": "Conclusion\nWhile cryptocurrency offers many investment opportunities, our analysis suggests that simple is better. Regular Bitcoin accumulation over long time periods has proven the most reliable path to wealth building in this space. Rather than seeking complex strategies or alternative assets, focus on:\n\nEstablishing a consistent savings habit\nConverting savings to Bitcoin regularly\nSecuring your Bitcoin properly\nMaintaining conviction through market cycles\n\nFor most people, this straightforward approach will likely outperform more complex strategies while requiring less time, stress, and expertise.",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What Should I Invest In?</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/stables.html",
+    "href": "content/independence/stables.html",
+    "title": "The Evolution of Stablecoins",
     "section": "",
-    "text": "You’ll need about 10 US Dollars\nWe’ll be using a CEX to purchase crypto\nWe’ll use a Mobile wallet, Phantom\n\n\n\n\n\nThe poorest 10% of the world live on less than $2 a day\nAbout 50% live on less than $7 a day",
+    "text": "The Great Unstablecoin: Understanding UST’s Collapse\nThe collapse of Terra’s UST stablecoin in May 2022 stands as a watershed moment in cryptocurrency history. To understand why it failed and what it teaches us, we need to examine its mechanism and the events that led to its downfall.",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Make some money</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>The Evolution of Stablecoins</span>"
     ]
   },
   {
-    "objectID": "content/independence/starter.html#creating-your-first-crypto-wallet",
-    "href": "content/independence/starter.html#creating-your-first-crypto-wallet",
-    "title": "Make some money",
-    "section": "Creating your first Crypto wallet",
-    "text": "Creating your first Crypto wallet\nWe’ll follow the mantra of “Not your keys, not your Coins” and as such we need to get our assets off a CEX as soon as is practical. Bitcoin fee’s are a bit expensive, so we’ll keep them on a CEX until we have enough built up to justify the transaction fee to get them into our own wallet.\nPlease download or install Phantom. Once you open the wallet it will walk you through creating the wallet and will ask you to store your Seed phrase. For first time users, we recommend storing this on a piece of paper that you laminate and keep somewhere safe. At a later stage, we’ll expand this section with a much more comprehensive handling of the pros and cons of various methods to store your seed phrase.\nThere are countless ways to store your seed phrase…",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Make some money</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/starter.html#financial-independence",
-    "href": "content/independence/starter.html#financial-independence",
-    "title": "Make some money",
-    "section": "Financial Independence",
-    "text": "Financial Independence\nThis Almanack is opinionated, because I’m opinionated. It will be wrong on occasion, but it also won’t be cowed by crowds into taking safe calls. Where a position is required, we’ll take one.\nThe North Star of this Almanack is financial independence. All strategies will be tailored to help you achieve this.\nI’m a firm believer in Compound Interest. While as we progress up the degeneracy scale we’ll be trading shit coins like a drunken Goth invading Italy, for now we want to learn some fundamentals, which we can then ignore later at our peril.\n\n“Compound Interest is the eighth wonder of the world. He who understands it, earns it; he who doesn’t, pays it” - Often misattributed, but Author unknown\n\nThis isn’t a TardFi textbook, so I’m not going too deeply into Compound Interest. I much prefer the Future Value of Money.\n\n“If you don’t know where you are going, you’ll end up someplace else.” - Yogi Berra\n\nSo where are we going? Financial Independence from a Central Authority. That’s what I want, and I’m pretty sure if you’re reading this, you want it too.\nSo this book will be tailored to the people living in the third world. So if you live in the first world, just add an extra zero to all the figures and follow along. But for someone living in the third world where they need to live on $7 a day to survive, in order to get financial freedom from a central authority, they’d need to earn enough interest on their money yearly to afford their daily survival. So that’s approximately $2,555 US dollars they’d need to earn in interest yearly. This would need to be a relatively stable yield without crazy degen high risks. So something like a US Bond. We’ll get into that later.\nBut let’s say we can get 4% yearly. That means we need a principal of $63,875 in order to escape reliance on any authority.\nSo now we know where we’re going.\nHow do we get there?\nIn this example, we’re going to ignore things like inflation for the time being. Even though inflation is one of the major driving forces behind crypto adoption.\nThe formula for future value with periodic payments is: FV = PV × (1 + r)^n + PMT × [((1 + r)^n - 1) / r] Where:\n\nFV = Future Value\nPV = Present Value (initial investment)\nPMT = Payment (the regular contribution amount)\nr = Interest rate (as a decimal)\nn = Number of time periods\n\nInteractive Financial Independence Calculator\nUse the calculator below to experiment with different scenarios and see how they affect your path to financial independence. The chart shows your projected growth over time, with the red dashed line indicating your target amount.\n\n\nCode\nviewof target = Inputs.range(\n  [1000, 10000000],\n  {value: 63875, step: 100, label: \"Target Amount ($)\"}\n)\n\nviewof initial = Inputs.range(\n  [0, 10000],\n  {value: 10, step: 1, label: \"Initial Investment ($)\"}\n)\n\nviewof monthly = Inputs.range(\n  [0, 1000],\n  {value: 10, step: 1, label: \"Monthly Contribution ($)\"}\n)\n\nviewof rate = Inputs.range(\n  [0, 1000],\n  {value: 77, step: 0.1, label: \"Annual Return Rate (%)\"}\n)\n\n// Enhanced number formatting function\nfunction formatCurrency(value) {\n  return new Intl.NumberFormat('en-US', {\n    style: 'currency',\n    currency: 'USD',\n    minimumFractionDigits: 0,\n    maximumFractionDigits: 0\n  }).format(value);\n}\n\n// Display current input values with proper formatting\ncurrentValues = md`\nCurrent Values:\n- Target Amount: ${formatCurrency(target)}\n- Initial Investment: ${formatCurrency(initial)}\n- Monthly Contribution: ${formatCurrency(monthly)}\n- Annual Return Rate: ${rate.toFixed(1)}%\n`\n\n// Calculation function\nfunction calculateGrowth(initial, monthly, rate, target) {\n  const monthlyRate = rate / 100 / 12;\n  let amount = initial;\n  let data = [{month: 0, amount: amount}];\n  let month = 0;\n  \n  while (amount &lt; target && month &lt; 1200) {\n    amount = amount * (1 + monthlyRate) + monthly;\n    month++;\n    data.push({month, amount});\n  }\n  \n  return {\n    months: month,\n    finalAmount: amount,\n    years: Math.floor(month / 12),\n    remainingMonths: month % 12,\n    isAchievable: month &lt; 1200,\n    growthData: data\n  };\n}\n\n// Calculate results based on inputs\nresults = calculateGrowth(initial, monthly, rate, target)\n\n// Display formatted results\nmd`### Results\nTime to reach goal: ${results.years} years and ${results.remainingMonths} months\n\nFinal amount: ${formatCurrency(results.finalAmount)}\n\n${results.isAchievable ? '' : '⚠️ Goal may not be achievable with current parameters'}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n{\n  const svg = d3.create(\"svg\")\n    .attr(\"viewBox\", [0, 0, 800, 400])\n    .attr(\"style\", \"max-width: 100%; height: auto;\");\n    \n  const x = d3.scaleLinear()\n    .domain([0, results.months])\n    .range([50, 750]);\n    \n  const y = d3.scaleLinear()\n    .domain([0, Math.max(target, results.finalAmount)])\n    .range([350, 50]);\n    \n  // Improved axis formatting for large numbers\n  const formatAmount = (value) =&gt; {\n    if (value &gt;= 1e6) return `$${(value/1e6).toFixed(1)}M`;\n    if (value &gt;= 1e3) return `$${(value/1e3).toFixed(1)}K`;\n    return `$${value}`;\n  };\n    \n  svg.append(\"g\")\n    .attr(\"transform\", `translate(0,350)`)\n    .call(d3.axisBottom(x)\n      .ticks(10)\n      .tickFormat(d =&gt; d + \" months\"));\n      \n  svg.append(\"g\")\n    .attr(\"transform\", \"translate(50,0)\")\n    .call(d3.axisLeft(y)\n      .ticks(10)\n      .tickFormat(formatAmount));\n      \n  // Grid lines\n  svg.append(\"g\")\n    .attr(\"class\", \"grid\")\n    .attr(\"transform\", `translate(0,350)`)\n    .call(d3.axisBottom(x)\n      .ticks(10)\n      .tickSize(-300)\n      .tickFormat(\"\"))\n    .style(\"stroke-opacity\", 0.1);\n    \n  const line = d3.line()\n    .x(d =&gt; x(d.month))\n    .y(d =&gt; y(d.amount));\n    \n  svg.append(\"path\")\n    .datum(results.growthData)\n    .attr(\"fill\", \"none\")\n    .attr(\"stroke\", \"steelblue\")\n    .attr(\"stroke-width\", 2)\n    .attr(\"d\", line);\n    \n  svg.append(\"line\")\n    .attr(\"x1\", 50)\n    .attr(\"x2\", 750)\n    .attr(\"y1\", y(target))\n    .attr(\"y2\", y(target))\n    .attr(\"stroke\", \"red\")\n    .attr(\"stroke-dasharray\", \"5,5\");\n    \n  svg.append(\"text\")\n    .attr(\"x\", 400)\n    .attr(\"y\", 390)\n    .attr(\"text-anchor\", \"middle\")\n    .text(\"Time (months)\");\n    \n  svg.append(\"text\")\n    .attr(\"transform\", \"rotate(-90)\")\n    .attr(\"x\", -200)\n    .attr(\"y\", 15)\n    .attr(\"text-anchor\", \"middle\")\n    .text(\"Amount ($)\");\n    \n  return svg.node();\n}\n\n\n\n\n\n\n\n\n\nImportant to note that holding BTC for 8 years:\n\nStarting 2013 (to 2021): ~4,000% return\nStarting 2014 (to 2022): ~2,900% return\nStarting 2015 (to 2023): ~8,500% return\nStarting 2016 (to 2024): ~17,500% return\n\nThis clearly means holding BTC is the only logical thing you should do. Everything else is bullshit unless you’re mid brain.\nThe Future Value of Money though assumes that the periodical payments are in a fixed currency like the US Dollar. This is not true though for our approach. We’ll revise this in future to take into account the different costs of purchasing BTC throughout the 8 years to make the figures more realistic.",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Make some money</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/starter.html#your-first-degen-strategies",
-    "href": "content/independence/starter.html#your-first-degen-strategies",
-    "title": "Make some money",
-    "section": "Your first Degen Strategies",
-    "text": "Your first Degen Strategies\nWe’ll now learn the following strategies:\n\nDCA\nHODL\n\n\nDCA\nAn important point in the above section was that we have to have a monthly contribution. This means that every month you’ll need to find $10 in Fiat and convert it into BTC. This is what is meant by DCA, or Dollar Cost Averaging. You are averaging the price of the BTC you purchase over 8 years. The beauty of this strategy is that sometimes you’ll buy high and sometimes you’ll buy low, but by consistently buying every month you’ll average it out.\n\n\nHODL\nThe ultimate HODL Coin is BTC. Considering we’re planning for 8 years, we have a perfect timeline for HODLing.",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Make some money</span>"
-    ]
-  },
-  {
-    "objectID": "content/degen/mid.html",
-    "href": "content/degen/mid.html",
-    "title": "Mid Brain",
+    "objectID": "content/independence/stables.html#the-great-unstablecoin-understanding-usts-collapse",
+    "href": "content/independence/stables.html#the-great-unstablecoin-understanding-usts-collapse",
+    "title": "The Evolution of Stablecoins",
     "section": "",
-    "text": "Shit Coins\nDeFi truly started on Ethereum in DeFi Summer 2020.\nSome pedants will argue it started in 2016, with the launch of EtherDelta and the 2017 ICO boom where it handled about 10% of all Ethereum token trading volume. But degen DeFi started in 2020 with the most degen of crazes. Food tokens and farming.\nMeme coins had started in 2013 with Doge. However in the early days even the worst shit coins had to have a network. So even the scammers needed to have enough technical proficiency to create a network to issue a token to scam you. That changed with the advent of the ERC20 token standard on Ethereum in late 2015. Now scammers and purveyors of shit coins could just copy and paste some code and voila, shit coin!\nScammers everywhere rejoiced.\nIn 2020 when DeFi Summer started kicking off, we got a flood of that special brand of shit coin, the Governance token. We can probably blame MakerDAO for this atrocity, with the introduction of “Liquidity Mining” or “Yield Farming”. You see, shit coin creators crave liquidity above all else. Without liquidity, they cannot dump on the market. Without liquidity, you cannot manipulate the market to think your shit coin is worth billions. Traditionally shit coin creators had to go to CEX’s to get liquidity. The problem is CEX’s are just as, if not more, crooked than shit coin creators. CEX’s charge astronomical prices to list. And then they dump on the market before the shit coin creator can. For a great case study see how $GALA shat the bed after getting listed on that dodgiest of the dodge, FTX.\nSo Yield Farming allowed shit coin creators a new way to gain liquidity and if anything better PsyOps for dumping on mid brains. What you do is, you create your shit coin, with a massive supply, think billions. Then you allocate 10% of this token supply for Yield Farming. Now liquidity on CEX’s are provided by mature market makers. Retail is excluded as they’re not mature enough or have the resources to provide market making services. So since Uniswap provided an easy way for retail (read marks) to provide liquidity, you could offer these gullible people rewards for providing liquidity. So let’s say you put in $10 of liquidity, you’d offer these users $10 a month in Yield Farming rewards for that liquidity. Easy money for the mark. Except that $10 a month is in the shit coin. Shit coin creator gets liquidity so they can dump their allocation into Stables or a blue chip Coin. Farming Yields go to shit. YOU get rekt. Unlucky.\nSo now we have all the ingredients for a Yield Farming.\nWelcome to DeFi Summer 2020.\nThere were also some cool examples of Vampire Attacks. Or more broadly, a protocol ripping off the source code of a naive project, wrapping a token around their stolen work and trying to unfairly profit. How very James Taggart of them.\nSo first lesson, we don’t deal with shit coins. Or if we’re forced to, it’s because there’s enough zealots around it that the market is being stupendously foolish and we can profit from their idiocy.\nI really should try categorize shit coins. This is tough to do.\nJust like old mate Potter, I don’t think I can define a shit coin, but I know it when I see it. The only way you’ll be able to get that level of maturity is time in the market. Your battle scars will be your wisdom in years to come.",
+    "text": "How UST Worked\nTerra’s UST attempted to maintain its dollar peg through an algorithmic relationship with LUNA, its sister token. The system worked like this:\n\nUsers could always burn 1 UST to mint $1 worth of LUNA\nUsers could always burn $1 worth of LUNA to mint 1 UST\nThis mechanism was supposed to keep UST at $1 through arbitrage\n\nThe fatal flaw lay in its circular dependency: UST’s stability relied entirely on LUNA’s value, which in turn derived much of its value from UST’s utility. This created a potential death spiral if confidence wavered.\n\n\nThe Death Spiral Unfolds\nOn May 7, 2022, large UST withdrawals from Anchor Protocol (which was offering unsustainable 20% yields) triggered the beginning of the collapse:\n\nInitial selling pressure pushed UST slightly below its peg\nTraders began redeeming UST for LUNA, increasing LUNA’s supply\nLUNA’s price started falling due to increased supply\nThis caused more UST holders to redeem, fearing loss of the peg\nThe cycle accelerated, leading to hyperinflation of LUNA and complete collapse of UST\n\nWithin a week, over $40 billion in value was destroyed, affecting millions of users and triggering contagion throughout the crypto ecosystem.",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mid Brain</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>The Evolution of Stablecoins</span>"
     ]
   },
   {
-    "objectID": "content/degen/mid.html#shit-coins",
-    "href": "content/degen/mid.html#shit-coins",
-    "title": "Mid Brain",
+    "objectID": "content/independence/stables.html#understanding-different-stablecoin-models",
+    "href": "content/independence/stables.html#understanding-different-stablecoin-models",
+    "title": "The Evolution of Stablecoins",
+    "section": "Understanding Different Stablecoin Models",
+    "text": "Understanding Different Stablecoin Models\nThe UST collapse highlighted the importance of understanding different stablecoin designs and their risk profiles.\n\n1. Fiat-Backed Stablecoins (e.g., USDC, USDT)\n\nBacked 1:1 by traditional currency in bank accounts\nRequires trust in the issuer and banking system\nMost straightforward but most centralized\nExamples: USDC by Circle, USDT by Tether\n\n\n\n2. Crypto-Collateralized Stablecoins (e.g., DAI)\n\nBacked by cryptocurrency held in smart contracts\nRequires overcollateralization to handle volatility\nMore decentralized but less capital efficient\nExamples: DAI by MakerDAO, sUSD by Synthetix\n\n\n\n3. Algorithmic Stablecoins (e.g., failed UST)\n\nAttempts to maintain peg through algorithmic incentives\nNo direct collateral backing\nHighest risk of catastrophic failure\nHistorical examples: UST, IRON, BASIS\n\n\n\n4. Hybrid Models (e.g., FRAX)\n\nCombines multiple stability mechanisms\nPartially collateralized, partially algorithmic\nAttempts to balance efficiency and stability\nExamples: FRAX, USDP",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>The Evolution of Stablecoins</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/stables.html#the-new-wave-understanding-delta-neutral-stablecoins",
+    "href": "content/independence/stables.html#the-new-wave-understanding-delta-neutral-stablecoins",
+    "title": "The Evolution of Stablecoins",
+    "section": "The New Wave: Understanding Delta-Neutral Stablecoins",
+    "text": "The New Wave: Understanding Delta-Neutral Stablecoins\nA new class of stablecoins, exemplified by Ethena’s USDe, has emerged that uses sophisticated financial engineering to maintain stability. Let’s examine how they work and what makes them different.\n\nHow Delta-Neutral Stablecoins Work\nThese stablecoins maintain their peg through a combination of:\n\nSpot holdings of the underlying asset (like ETH)\nShort positions in perpetual futures markets\nSophisticated risk management systems\n\nTaking USDe as an example:\n\nWhen users deposit ETH, the protocol:\n\nHolds the ETH as collateral\nOpens a corresponding short position\nMints USDe tokens\n\nThe opposing positions cancel out price exposure\nYield comes from funding rates on perpetual futures\n\n\n\nAdvantages of Delta-Neutral Design\n\nNot dependent on faith in the system (unlike UST)\nMore capital efficient than overcollateralized models\nGenerates sustainable yield from market neutral activities\nLess vulnerable to bank runs or confidence crises\n\n\n\nRisks and Considerations\n\nReliance on functioning derivatives markets\nPotential for basis risk between spot and futures\nSmart contract risks\nMarket capacity limitations",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>The Evolution of Stablecoins</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/stables.html#evaluating-stablecoin-safety",
+    "href": "content/independence/stables.html#evaluating-stablecoin-safety",
+    "title": "The Evolution of Stablecoins",
+    "section": "Evaluating Stablecoin Safety",
+    "text": "Evaluating Stablecoin Safety\nWhen assessing any stablecoin, consider these key factors:\n\nCollateralization Method\n\n\nIs it fully backed by real assets?\nHow can backing be verified?\nWhat’s the liquidation mechanism?\n\n\nTrack Record\n\n\nHow long has it maintained its peg?\nHas it weathered market stress?\nWhat’s its daily trading volume?\n\n\nTransparency\n\n\nAre reserves regularly audited?\nIs the mechanism fully documented?\nHow decentralized is control?\n\n\nMarket Depth\n\n\nHow much liquidity exists?\nWhat’s the redemption process?\nHow efficient is price discovery?",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>The Evolution of Stablecoins</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/stables.html#building-a-stablecoin-strategy",
+    "href": "content/independence/stables.html#building-a-stablecoin-strategy",
+    "title": "The Evolution of Stablecoins",
+    "section": "Building a Stablecoin Strategy",
+    "text": "Building a Stablecoin Strategy\nGiven these considerations, here’s a framework for using stablecoins safely:\n\nCore Holdings\n\n\nUse proven, fully-backed stablecoins (USDC, USDT) for main positions\nVerify reserves and audits regularly\nMaintain multiple options for exit\n\n\nYield Generation\n\n\nConsider newer models like USDe for portion of holdings\nStart small with new protocols\nMonitor peg stability and market depth\n\n\nRisk Management\n\n\nNever rely on a single stablecoin\nKeep majority in conservative options\nHave exit plans for each position\n\nRemember that in the world of stablecoins, boring is often better. The goal is stability, not maximizing yield at any cost.",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>The Evolution of Stablecoins</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/mid.html",
+    "href": "content/independence/mid.html",
+    "title": "Moving Beyond Basic DeFi",
     "section": "",
-    "text": "Governance Tokens Tokenomics\n\n\n\n\nA plethora of shit coins, masquerading as Governance tokens\nA mature trading environment facilitated by Uniswap’s innovation in the AMM space\nAn unsuspecting market of victims easily lured by promises of huge profits\n\n\n\n\n\nBe fearful when others are greedy, and greedy when others are fearful - Warren Buffet\n\n\n\n“I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description [of pornography]; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.” - Supreme Court Justice Potter Steward’s ruling on Porn",
+    "text": "Understanding Liquid Staking\nStaking is one of the most reliable ways to earn yield in crypto, but traditionally it came with a significant drawback: your assets were locked and unusable. Liquid staking tokens solve this problem by giving you a tradeable token that represents your staked assets.",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mid Brain</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Moving Beyond Basic DeFi</span>"
     ]
   },
   {
-    "objectID": "content/degen/mid.html#notification-system",
-    "href": "content/degen/mid.html#notification-system",
-    "title": "Mid Brain",
-    "section": "Notification System",
-    "text": "Notification System\nSince we’re going to be playing with the sharks, we’re going to need protection. This is where alerts come into it.\nBeing good at DeFi is being able to remain emotionless. Being online 24/7 during bull markets is going to make you stupid, strung out and will ensure your strategies are riddled with mistakes. Being a balanced person will make you way more money than some sleep deprived, Twitter obsessed doos. Let the machines work for you.\nSo we need a good notification system. We can use:\n\nTenderly Web3 Actions, or\nOpenZeppelin Defender Sentinels\n\nWe’ll use Tenderly’s Web3 actions as they’re more flexible and powerful. Since we’ll be using Ethena’s USDe quite alot through this strategies it’s important that if it shits the bed, we can get out quickly before losing everything. As an example UST on May 10th 2022 from holding it’s dollar peg to losing half it’s value in about 38 hours. So if USDe loses more than 10%, we must assume a death spiral and get our money out.\n!UST depeg\nSo what we want to do is to go to CoinGecko and find the biggest amount of on chain liquidity for USDe. So find USDe and then go to Markets to find the on DEX with the biggest depth. Currently that’s Uniswap V3 with a USDE/USDT pool on Ethereum. https://app.uniswap.org/explore/pools/ethereum/0x435664008F38B0650fBC1C9fc971D0A3Bc2f1e47\nSo we can set a notification for event emitted in Tenderly through the UI. However this doesn’t give us the exchange rate. So it’s good enough for now, but we’ll eventually revise this to have common notifications that will apply across all our strategies.",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mid Brain</span>"
-    ]
-  },
-  {
-    "objectID": "content/degen/mid.html#getting-in-early",
-    "href": "content/degen/mid.html#getting-in-early",
-    "title": "Mid Brain",
-    "section": "Getting in early",
-    "text": "Getting in early\nIn crypto, if you’re not a VC, one of the ways to get the highest multiples on shit coins is by getting in early. Currently the easiest way to see where the most meme coin activity is occuring is by looking at DEX Screener’s new pairs. At the time of writing, you can clearly see this is Solana.\nLet’s analyse the criteria to determine what they all mean\n\nPrice - How much in USD to get 1 of the tokens\nAge - Determines how long the token has been trading. However we actually care about contract deployment date too\nBuys & Sells - Large amount of numbers doesn’t necessarily mean much due to the prevalence of bots.\nVolume - Important to see if there is wash trading here. $1 million volume with $100k liquidity may indicate manipulation\nMakers - Some DEX’s can act as CLOB’s where Makers as a term originate. Makers are trades with a limit order waiting to be filled\nLiquidity - How much liquidity there exists for the token. We can also check to see if the liquidity was burnt\nMarketCap\nHolders - How many wallets hold this token.",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Mid Brain</span>"
-    ]
-  },
-  {
-    "objectID": "content/degen/big.html",
-    "href": "content/degen/big.html",
-    "title": "Big brain",
+    "objectID": "content/independence/mid.html#understanding-liquid-staking",
+    "href": "content/independence/mid.html#understanding-liquid-staking",
+    "title": "Moving Beyond Basic DeFi",
     "section": "",
-    "text": "Converting FIAT into a Cryptocurrency anonymously\nThis may be the hardest part of being a Degen. A Degen values privacy. Important to distinguish there is a difference between privacy and secrecy. I’d like my cryptocurrency to display the same characteristics as cash. A means of exchange that has been working just fine for centuries. Cash is private by default and people have seemed pretty happy with that arrangement for over 3 centuries.\nThe hardest part of ensuring privacy is making sure that when you create a new wallet there is no trace back to your off chain identity.\nThe two biggest footprints you can leave are:\nWhen funding your on chain wallet from a CEX, it becomes very easy to trace your identity. Almost all CEX’s require you to KYC. So when you transfer $10 of ETH into your Metamask wallet, anyone will be able to find out that the funding of the wallet came from a CEX and via the CEX will be able to link your identity to your wallet.\nSo currently the best way to do this is:\nWe can also try Railgun. I’ll run through both Tornado and Railgun and eventually Payy wallet and then based upon the results of all those experiments I’ll make a recommendation about the best approach to obtain a private by default wallet.",
+    "text": "How Liquid Staking Works\nWhen you stake ETH through a liquid staking protocol like Lido, you receive stETH in return. This stETH token:\n\nAutomatically accrues staking rewards\nCan be used as collateral in lending protocols\nTrades freely on DEXs\nCan be sold back to ETH when needed\n\nThe current staking yield for ETH is around 3-4% annually, but by using your liquid staking tokens strategically, you can potentially earn additional yield.\n\n\nSmart Liquid Staking Strategies\nInstead of just holding stETH, consider this yield-stacking approach:\n\nStake ETH to receive stETH\nUse stETH as collateral on Aave\nBorrow stable coins at a lower interest rate than your staking return\nUse the borrowed stable coins for limit order opportunities",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Big brain</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Moving Beyond Basic DeFi</span>"
     ]
   },
   {
-    "objectID": "content/degen/big.html#converting-fiat-into-a-cryptocurrency-anonymously",
-    "href": "content/degen/big.html#converting-fiat-into-a-cryptocurrency-anonymously",
-    "title": "Big brain",
-    "section": "",
-    "text": "Funding your wallet to pay for Gas\nReceiving funds in your wallet from a compromised account\n\n\n\n\nCreate two wallets. Compromised and Clean\nSave the Private Keys\nConnect to your VPN\nTOR doesn’t support add ons, so we can’t install a wallet, but rather need to run a script in order to shield our funds\n\n\n\nPurchase USDC or USDT from a CEX\nTransfer the stable coins to the throwaway account\nDownload Railgun Client\nCreate a Shielded Address\nTransfer it in common increments similar to how Tornado Cash to the clean wallet at random intervals",
+    "objectID": "content/independence/mid.html#setting-smart-limit-orders",
+    "href": "content/independence/mid.html#setting-smart-limit-orders",
+    "title": "Moving Beyond Basic DeFi",
+    "section": "Setting Smart Limit Orders",
+    "text": "Setting Smart Limit Orders\nRather than trying to time the market perfectly, we can use data-driven approaches to set limit orders. Here’s a strategy that uses moving averages to find potentially profitable entry points.\n\nThe 20/50 Moving Average Strategy\nThe strategy involves:\n\nObserving the 20-day and 50-day moving averages (MA)\nSetting limit orders 2-3% below the 20-day MA when it’s above the 50-day MA\nSetting limit orders 4-5% below the 20-day MA when it’s below the 50-day MA\n\nHere’s how to implement this:\n\nUse a charting tool like TradingView to view the moving averages\nCalculate your limit order prices:\n\nNormal market: Current 20MA price × 0.97\nWeak market: Current 20MA price × 0.95\n\n\n\n\nExample with ETH\nLet’s say ETH has:\n\nCurrent price: $3,000\n20-day MA: $2,900\n50-day MA: $2,800\n\nSince the 20-day MA is above the 50-day MA, we’d set our limit orders at: $2,900 × 0.97 = $2,813\nThis gives us a reasonable entry point below the moving average while still maintaining a strong technical position.",
     "crumbs": [
       "Path to Independence",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Big brain</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Moving Beyond Basic DeFi</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/mid.html#combining-strategies-for-maximum-efficiency",
+    "href": "content/independence/mid.html#combining-strategies-for-maximum-efficiency",
+    "title": "Moving Beyond Basic DeFi",
+    "section": "Combining Strategies for Maximum Efficiency",
+    "text": "Combining Strategies for Maximum Efficiency\nThe real power comes from combining these approaches. Here’s a comprehensive strategy:\n\nKeep 50% of your ETH in liquid staking tokens earning base yield\nUse 25% of your liquid staking tokens as collateral\nBorrow stablecoins worth 15% of your collateral\nSet limit orders with the borrowed stablecoins using the MA strategy\n\nThis approach provides:\n\nBaseline yield from staking\nAdditional yield from lending\nPotential buying opportunities through limit orders\nLimited risk due to conservative borrowing\n\n\nRisk Management\nWhile these strategies can enhance your returns, they come with risks:\n\nSmart contract risk from multiple protocols\nPrice impact risk if stETH depegs\nLiquidation risk from borrowed positions\nOpportunity cost if limit orders don’t fill\n\nTo manage these risks:\n\nNever borrow more than 30% against your collateral\nSet stop-loss orders above your liquidation price\nDiversify across multiple liquid staking protocols\nMonitor the stETH/ETH peg regularly",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Moving Beyond Basic DeFi</span>"
+    ]
+  },
+  {
+    "objectID": "content/independence/mid.html#looking-ahead",
+    "href": "content/independence/mid.html#looking-ahead",
+    "title": "Moving Beyond Basic DeFi",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nAs you become comfortable with these strategies, you can explore more advanced approaches:\n\nMultiple timeframe moving averages\nYield farming with liquid staking tokens\nCross-protocol arbitrage opportunities\nMEV-protected limit orders\n\nRemember that in DeFi, simpler strategies often outperform complex ones over the long term. Start conservatively, monitor your positions regularly, and scale up only as you gain confidence in your understanding of the mechanics and risks involved.\nThe key to success with these strategies is patience and consistent execution rather than trying to maximize every possible yield opportunity. Focus on sustainable yields and high-probability setups rather than chasing the highest possible returns.",
+    "crumbs": [
+      "Path to Independence",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Moving Beyond Basic DeFi</span>"
     ]
   },
   {
@@ -1030,7 +986,7 @@
     "text": "Introduction\nMemes serve as a unique form of cultural communication in the Web3 space, combining humor with important lessons and shared experiences. They often capture complex ideas in accessible formats and help create a sense of community among participants. This guide explores the most significant memes in Web3, their origins, and their deeper meanings.",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1041,7 +997,7 @@
     "text": "Foundational Memes\n\n“Not Your Keys, Not Your Coins”\nThis fundamental meme emerged from the early Bitcoin community and gained renewed significance after several high-profile exchange collapses. It encapsulates one of the core principles of cryptocurrency: self-custody.\nOrigin: The phrase likely originated on Bitcoin forums around 2011-2012 but gained prominence after the Mt. Gox collapse in 2014.\nCultural Impact: - Serves as a constant reminder of cryptocurrency’s original purpose: financial self-sovereignty - Often shared after exchange hacks or failures - Has evolved into a teaching tool for newcomers - Frequently referenced in discussions about centralized exchanges and custody solutions\nReal-world examples that reinforced this meme: - Mt. Gox (2014): 850,000 BTC lost - QuadrigaCX (2019): $190 million lost - FTX (2022): Billions in customer funds lost\n\n\nHODL\nPerhaps the most famous cryptocurrency meme, “HODL” originated from a typo that became a battle cry for long-term investors.\nOrigin: December 18, 2013, when GameKyuubi posted “I AM HODLING” on the BitcoinTalk forum during a market crash. The poster, admittedly drunk, wrote a passionate defense of holding Bitcoin despite price volatility.\nEvolution: 1. Initial phase: Simple misspelling joke 2. Secondary meaning: “Hold On for Dear Life” 3. Modern usage: Philosophical approach to cryptocurrency investment\nCultural significance: - Represents conviction in long-term value over short-term trading - Creates solidarity among investors during market downturns - Differentiates investment approaches (HODLers vs. traders) - Has spawned related terms like “diamond hands”",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1052,7 +1008,7 @@
     "text": "Character-Based Memes\n\nWojak Variations\nWojak (also known as “feels guy”) has become the protagonist of countless crypto trading stories, with several important variations:\n\nThe Crypto Wojak Timeline:\n\nBasic Wojak: Represents the average retail trader\nNPC Wojak: Symbolizes those who follow the crowd without thinking\nBrainlet: Depicts poor trading decisions\nCozy Wojak: Represents comfortable HODLers during market turbulence\n\n\n\n\nThe Bogdanoff Twins\nA complex meme centered around the late Bogdanoff twins, imagining them as all-powerful market manipulators.\nKey elements: - “Dump it”: Order given after someone buys - “Pump it”: Command issued after someone sells - “He sold?”: The setup for market manipulation\nCultural impact: - Reflects the feeling of powerlessness many traders experience - Personifies the seemingly manipulated nature of crypto markets - Creates humor from shared experiences of poor timing",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1063,7 +1019,7 @@
     "text": "Educational Memes\n\nThe Bell Curve (Midwit) Meme\nThis meme format illustrates the concept of sophisticated simplicity in cryptocurrency:\nLeft (Low IQ): Simple but effective approach Middle (Average IQ): Overcomplicated strategies Right (High IQ): Return to simplicity with deep understanding\nExamples: - Bitcoin storage: Hardware wallet → Complex multi-sig setup → Hardware wallet with proper backup - Trading: HODL → Complex trading strategies → HODL with occasional rebalancing - Security: Write down seed phrase → Use elaborate encryption → Write down seed phrase and store in safe",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1074,7 +1030,7 @@
     "text": "Market Condition Memes\n\n“This is Fine” Dog\nA cartoon dog sitting in a burning room, often used during market crashes. The meme represents: - Forced calm during market turbulence - Coping with significant losses - The crypto community’s resilience\n\n\n“When Lambo?”\nOrigin: 2017 bull run Meaning: Represents the dream of crypto wealth Evolution: 1. Sincere question from newcomers 2. Ironic joke about unrealistic expectations 3. Critique of get-rich-quick mentality",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1085,7 +1041,7 @@
     "text": "Community-Specific Memes\n\nEthereum Memes\n\n“Vitalik clapping”: Celebrating network achievements\n“Ultra sound money”: ETH’s post-merger monetary policy\n“Merge delayed”: Historical references to Ethereum’s upgrade timeline\n\n\n\nBitcoin Memes\n\n“Number go up”: Bitcoin’s long-term price appreciation\n“Stack sats”: Encouraging regular small purchases\n“PayPal of crypto”: Mocking misunderstandings of Bitcoin’s purpose",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1096,7 +1052,7 @@
     "text": "Best Practices for Meme Literacy\nUnderstanding crypto memes helps participants: 1. Navigate community sentiment 2. Identify market cycles 3. Learn from shared experiences 4. Connect with the broader culture",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1107,7 +1063,7 @@
     "text": "Modern Usage Guidelines\nWhen engaging with crypto memes: - Understand their historical context - Recognize their educational value - Use them appropriately in discussions - Appreciate their role in community building",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
@@ -1118,84 +1074,172 @@
     "text": "Conclusion\nMemes in Web3 are more than just humor - they’re a sophisticated form of cultural communication that encodes important lessons, shared experiences, and community values. Understanding these memes helps participants better navigate both the technical and social aspects of the cryptocurrency ecosystem.\nAs the space evolves, new memes emerge while old ones gain additional layers of meaning. This living document will be updated to reflect these changes and maintain its relevance as a cultural guide to Web3.",
     "crumbs": [
       "Web3 Essentials",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Meme Culture</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Meme Culture</span>"
     ]
   },
   {
     "objectID": "content/technical/overview.html",
     "href": "content/technical/overview.html",
-    "title": "Overview",
+    "title": "The Technologist’s Path",
     "section": "",
-    "text": "Deep technical fundamentals (cryptography, consensus, networking)\nProtocol design patterns and tradeoffs\nDevelopment frameworks and tools\nSecurity considerations for builders\nAdvanced privacy techniques",
+    "text": "The Foundation: Cryptographic Primitives\nAt its core, Web3 relies on cryptographic tools that provide mathematical guarantees rather than promises. Public key cryptography lets us create digital signatures that can’t be forged. Hash functions generate unique digital fingerprints that can’t be reversed. Zero-knowledge proofs allow us to verify facts without revealing underlying information. These building blocks make it possible to create systems with unprecedented security properties.\nConsider how these tools work together: When you make a blockchain transaction, you use a private key to create a signature (public key cryptography), which is then combined with transaction data to create a unique identifier (hash functions), which might be verified privately (zero-knowledge proofs). Understanding these primitives helps you see not just how current systems work, but how future ones might be designed.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Overview</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/overview.html#building-blocks-protocol-design",
+    "href": "content/technical/overview.html#building-blocks-protocol-design",
+    "title": "The Technologist’s Path",
+    "section": "Building Blocks: Protocol Design",
+    "text": "Building Blocks: Protocol Design\nMoving up from cryptographic primitives, we encounter protocol design – the rules and mechanisms that govern how network participants interact. This is where we face fascinating engineering tradeoffs:\n\nHow do we ensure network security without excessive energy consumption?\nWhat’s the right balance between transaction throughput and decentralization?\nHow can we make protocols upgradeable without creating centralization risks?\n\nThese questions have led to a proliferation of approaches. Some networks prioritize absolute security, others emphasize performance. Some opt for simplicity, others for flexibility. Each choice creates distinct characteristics that ripple through the entire technology stack.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/overview.html#the-execution-layer-smart-contracts",
+    "href": "content/technical/overview.html#the-execution-layer-smart-contracts",
+    "title": "The Technologist’s Path",
+    "section": "The Execution Layer: Smart Contracts",
+    "text": "The Execution Layer: Smart Contracts\nSmart contracts represent a revolutionary advancement: programmable money. But writing them requires thinking differently about software development. Traditional programs can be updated when bugs are found. Smart contracts are often immutable – once deployed, they can’t be changed. This permanence demands new approaches to:\n\nSecurity and formal verification\nTesting and deployment strategies\nUpgradeability patterns\nInter-contract communication\n\nUnderstanding smart contract development means learning not just new programming languages like Solidity, but new ways of thinking about program correctness and risk management.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/overview.html#the-data-layer-state-and-storage",
+    "href": "content/technical/overview.html#the-data-layer-state-and-storage",
+    "title": "The Technologist’s Path",
+    "section": "The Data Layer: State and Storage",
+    "text": "The Data Layer: State and Storage\nBlockchains introduce novel challenges around data management. Every node must process every transaction, making efficiency crucial. Different networks take varied approaches to state management:\n\nAccount-based models like Ethereum\nUTXO models like Bitcoin\nNewer approaches like the Move language’s resource model\n\nEach model creates different tradeoffs in terms of parallelization, privacy, and programmability. Understanding these models helps developers choose the right platform for their specific needs.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/overview.html#the-network-layer-communication-and-consensus",
+    "href": "content/technical/overview.html#the-network-layer-communication-and-consensus",
+    "title": "The Technologist’s Path",
+    "section": "The Network Layer: Communication and Consensus",
+    "text": "The Network Layer: Communication and Consensus\nDistributed networks must solve complex coordination problems. How do nodes discover each other? How do they agree on the current state? How do they handle network partitions? These questions have spawned various consensus mechanisms:\n\nProof of Work’s energy-intensive but highly secure approach\nProof of Stake’s economic-based security model\nHybrid systems that attempt to combine advantages of multiple approaches\n\nEach consensus mechanism influences the entire network’s characteristics, from transaction finality to decentralization potential.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/overview.html#the-economic-layer-incentive-design",
+    "href": "content/technical/overview.html#the-economic-layer-incentive-design",
+    "title": "The Technologist’s Path",
+    "section": "The Economic Layer: Incentive Design",
+    "text": "The Economic Layer: Incentive Design\nPerhaps the most innovative aspect of blockchain systems is their use of economic incentives to maintain security and drive desired behaviors. This requires understanding:\n\nGame theory and mechanism design\nToken economics and monetary policy\nMarket design and price discovery\nMEV (Miner/Maximal Extractable Value)\n\nGood protocol design aligns incentives so that participants’ self-interest promotes network health.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/overview.html#the-path-forward",
+    "href": "content/technical/overview.html#the-path-forward",
+    "title": "The Technologist’s Path",
+    "section": "The Path Forward",
+    "text": "The Path Forward\nAs you explore these topics in depth, you’ll discover how they interconnect. A change in consensus mechanism affects smart contract design. New cryptographic tools enable novel state management approaches. Economic incentives influence network behavior.\nThis interconnectedness means that while you might specialize in one area, understanding the broader context makes you a more effective developer or architect. The following sections will dive deep into each component, but always with an eye toward how it fits into the larger system.\nRemember: The goal isn’t just to learn how current systems work, but to understand the principles well enough to help design future ones. The field is still young, and many fundamental problems remain unsolved. Your journey through these topics isn’t just about using existing tools – it’s about helping to create what comes next.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>The Technologist's Path</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html",
     "href": "content/technical/cryptography.html",
-    "title": "Cryptography",
+    "title": "Cryptography: Building Blocks of Digital Trust",
     "section": "",
-    "text": "Symmetric Cryptography\nShared Keys. AES. But vulnerability is in sharing the Key between parties.",
+    "text": "The Evolution of Digital Privacy\nThe history of cryptography is a journey from simple code substitutions to sophisticated mathematical systems. While ancient Romans used the Caesar cipher to shift letters in the alphabet, modern cryptography uses advanced mathematics to achieve what might seem impossible: proving things without revealing secrets.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
     ]
   },
   {
-    "objectID": "content/technical/cryptography.html#asymetric-cryptography",
-    "href": "content/technical/cryptography.html#asymetric-cryptography",
-    "title": "Cryptography",
-    "section": "Asymetric Cryptography",
-    "text": "Asymetric Cryptography\nPublic Key Cryptography\nRSA and elliptic curve cryptography. Slow than symetric cryptography. Enables secure communication over insecure channels\n\nPasskeys\nThink of passkeys as a modern, more secure replacement for passwords. Instead of remembering complex strings of characters, your device creates and stores a pair of mathematically linked keys - one public and one private. This system is built on public key cryptography, which has been proven secure over decades of use. Here’s how the process works, step by step: When you first set up a passkey with a website or app:\n\nYour device generates two mathematical keys: a private key that stays securely stored on your device, and a public key that gets sent to the service you’re signing up with. The private key never leaves your device - this is crucial for security.\nThe service stores your public key along with your account information. Think of the public key as a special lock that can only be opened by your private key.\n\nWhen you later want to sign in:\n\nThe service sends your device a random mathematical challenge - imagine it as a complex puzzle.\nYour device uses your private key to solve this puzzle in a way that proves you have the correct private key, without actually revealing the key itself.\nThe service verifies the solution using your stored public key. If it matches, you’re granted access.\n\nWhat makes this particularly clever is the biometric integration. Your device typically requires your fingerprint, face scan, or PIN before it will use the private key. This adds an extra layer of security - even if someone stole your device, they couldn’t use your passkeys without your biometric data. The system also handles synchronization elegantly. If you’re using an ecosystem like Apple or Google, your encrypted passkeys can sync across your devices. When you want to log in on a new device, your phone can help authenticate you by displaying a QR code that creates a secure connection between devices. To make this more concrete, imagine you’re signing into a banking app:\nYou open the app and enter your username Instead of asking for a password, the app sends a challenge to your phone Your phone asks you to verify with your fingerprint Once verified, your phone uses your private key to respond to the challenge The bank verifies this response and logs you in\nAll of this happens in seconds, and it’s much more secure than traditional passwords because:\nThe private key never travels across the internet Each login uses a different challenge, so responses can’t be reused by attackers Biometric verification adds an extra security layer The cryptographic math behind it is extremely difficult to break",
+    "objectID": "content/technical/cryptography.html#symmetric-cryptography-shared-secrets",
+    "href": "content/technical/cryptography.html#symmetric-cryptography-shared-secrets",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "Symmetric Cryptography: Shared Secrets",
+    "text": "Symmetric Cryptography: Shared Secrets\nLet’s start with the simplest form of modern cryptography. Symmetric cryptography is like having a special key that both locks and unlocks a message. If Alice wants to send Bob a secret message, they need to share this key beforehand.\nThe most widely used symmetric algorithm is AES (Advanced Encryption Standard). It’s incredibly fast and secure when used properly. However, it has one major challenge: how do Alice and Bob safely share the key in the first place? This is known as the key distribution problem.\nThis limitation led to one of the most important breakthroughs in cryptographic history.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
     ]
   },
   {
-    "objectID": "content/technical/cryptography.html#hash-functions",
-    "href": "content/technical/cryptography.html#hash-functions",
-    "title": "Cryptography",
-    "section": "Hash functions",
-    "text": "Hash functions\nThese are like digital fingerprints",
+    "objectID": "content/technical/cryptography.html#asymmetric-cryptography-the-public-key-revolution",
+    "href": "content/technical/cryptography.html#asymmetric-cryptography-the-public-key-revolution",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "Asymmetric Cryptography: The Public Key Revolution",
+    "text": "Asymmetric Cryptography: The Public Key Revolution\nIn 1976, Whitfield Diffie and Martin Hellman proposed something revolutionary: what if you could have two different but mathematically related keys? One to lock (encrypt) and another to unlock (decrypt)? This became known as public key cryptography.\nHere’s how it works:\n\nEvery person has two keys: public and private\nThe public key can be freely shared with anyone\nThe private key must be kept secret\nMessages encrypted with the public key can only be decrypted with the private key\nDigital signatures created with the private key can be verified by anyone with the public key\n\nThis elegant system solves multiple problems:\n\nSecure communication without pre-sharing keys\nDigital signatures that can’t be forged\nIdentity verification without revealing secrets\n\n\nThe Math Behind Public Keys\nWhile the mathematical details can be complex, the core idea relies on something called “trapdoor functions” - calculations that are easy to perform in one direction but extremely difficult to reverse. A common example is multiplication versus factoring: it’s easy to multiply two large prime numbers, but very difficult to factor their product back into the original primes.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
     ]
   },
   {
-    "objectID": "content/technical/cryptography.html#zero-knowledge-proofs",
-    "href": "content/technical/cryptography.html#zero-knowledge-proofs",
-    "title": "Cryptography",
-    "section": "Zero-Knowledge Proofs",
-    "text": "Zero-Knowledge Proofs\nThey solve a unique problem: how can you prove you know something without revealing what you know? Imagine proving you’re over 21 without showing your actual birthdate.",
+    "objectID": "content/technical/cryptography.html#hash-functions-digital-fingerprints",
+    "href": "content/technical/cryptography.html#hash-functions-digital-fingerprints",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "Hash Functions: Digital Fingerprints",
+    "text": "Hash Functions: Digital Fingerprints\nHash functions are perhaps the most widely used cryptographic tools in Web3. A hash function takes any input (a file, a message, or even an entire blockchain) and produces a fixed-size output that’s like a unique digital fingerprint.\nGood cryptographic hash functions have several crucial properties:\n\nDeterministic: The same input always produces the same output\nFast to compute: You can quickly calculate the hash of any input\nPre-image resistant: Given a hash, it’s infeasible to find the original input\nCollision resistant: It’s extremely unlikely to find two different inputs that produce the same hash\n\nIn blockchain systems, hash functions serve many purposes:\n\nCreating unique block identifiers\nLinking blocks together in a chain\nGenerating addresses from public keys\nSecuring the mining/validation process",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
     ]
   },
   {
-    "objectID": "content/technical/cryptography.html#homomorphic-encryption",
-    "href": "content/technical/cryptography.html#homomorphic-encryption",
-    "title": "Cryptography",
-    "section": "Homomorphic Encryption",
-    "text": "Homomorphic Encryption\nIt allows computations to be performed on encrypted data without decrypting it first. Think of it like being able to ask someone to bake a cake following your secret recipe, but without ever revealing the recipe to them. While still computationally intensive, this technology could revolutionize cloud computing and data privacy.",
+    "objectID": "content/technical/cryptography.html#zero-knowledge-proofs-proving-without-revealing",
+    "href": "content/technical/cryptography.html#zero-knowledge-proofs-proving-without-revealing",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "Zero-Knowledge Proofs: Proving Without Revealing",
+    "text": "Zero-Knowledge Proofs: Proving Without Revealing\nOne of the most powerful and counterintuitive concepts in modern cryptography is the zero-knowledge proof. Imagine proving you know your password without actually typing it, or proving you’re over 21 without revealing your birthday.\nZero-knowledge proofs come in two main varieties:\n\nInteractive Zero-Knowledge Proofs\nThese involve back-and-forth communication between the prover and verifier. Think of it like proving you know the solution to a Sudoku puzzle by answering specific questions about individual cells without showing the entire solution.\n\n\nNon-Interactive Zero-Knowledge Proofs (ZK-SNARKs and ZK-STARKs)\nThese more advanced systems can create proofs that anyone can verify without interaction. They’re crucial for privacy-preserving blockchain applications but require significant computational resources.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
     ]
   },
   {
-    "objectID": "content/technical/cryptography.html#post-quantum-cryptography",
-    "href": "content/technical/cryptography.html#post-quantum-cryptography",
-    "title": "Cryptography",
-    "section": "Post-Quantum Cryptography",
-    "text": "Post-Quantum Cryptography\ncryptographic systems that can resist attacks from quantum computers. This forward-looking field is essential because many current cryptographic systems (especially asymmetric ones) could be broken by powerful quantum computers.",
+    "objectID": "content/technical/cryptography.html#homomorphic-encryption-computing-on-encrypted-data",
+    "href": "content/technical/cryptography.html#homomorphic-encryption-computing-on-encrypted-data",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "Homomorphic Encryption: Computing on Encrypted Data",
+    "text": "Homomorphic Encryption: Computing on Encrypted Data\nHomomorphic encryption represents the cutting edge of cryptographic research. It allows computations to be performed on encrypted data without decrypting it first. While currently too computationally expensive for many applications, it holds promise for future privacy-preserving blockchain systems.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Cryptography</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/cryptography.html#the-future-post-quantum-cryptography",
+    "href": "content/technical/cryptography.html#the-future-post-quantum-cryptography",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "The Future: Post-Quantum Cryptography",
+    "text": "The Future: Post-Quantum Cryptography\nLooking ahead, the development of quantum computers poses potential threats to current cryptographic systems, particularly public key cryptography. The field of post-quantum cryptography aims to develop new algorithms that remain secure even against quantum computers.\nKey areas of research include:\n\nLattice-based cryptography\nHash-based signatures\nMultivariate cryptography\nSupersingular isogeny cryptography",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/cryptography.html#practical-applications-in-web3",
+    "href": "content/technical/cryptography.html#practical-applications-in-web3",
+    "title": "Cryptography: Building Blocks of Digital Trust",
+    "section": "Practical Applications in Web3",
+    "text": "Practical Applications in Web3\nUnderstanding these cryptographic primitives helps explain how Web3 systems achieve their key properties:\n\nDigital Signatures enable non-custodial wallets and transaction authorization\nHash functions create tamper-evident records and link blocks together\nZero-knowledge proofs power privacy-preserving transactions\nPublic key cryptography enables secure communication and identity verification\n\nEach new Web3 innovation typically combines these basic tools in novel ways to solve specific problems. Understanding the tools helps you evaluate new protocols and anticipate their strengths and limitations.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
     ]
   },
   {
@@ -1206,7 +1250,7 @@
     "text": "Sovereign Networks\nPure Value Networks Pure value networks stick to the fundamental purpose of moving and storing value, avoiding the additional complexity that comes with being a platform for applications or other services.\nWhat makes these networks “pure value” is what they don’t include: They don’t support complex smart contracts They don’t host decentralized applications They don’t provide programmable functionality beyond basic value transfer They don’t serve as platforms for other tokens or applications\nApplication Chains Application Chains represent networks that go beyond pure value transfer to support various types of applications. They’re divided into three main categories: Hubs, Specialized, and Generalized chains.\nHub Application Chains serve as central connection points in the blockchain ecosystem.\nSpecialized Application Chains focus on specific use cases or industries.\nGeneralized Application Chains aim to support a wide range of applications but differ from hubs in that they’re not necessarily trying to be central connection points.\nThe key distinction between these categories lies in their approach to applications:",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1217,7 +1261,7 @@
     "text": "Hubs prioritize becoming central platforms that other networks depend on\nSpecialized chains optimize everything for specific use cases\nGeneralized chains provide broad functionality but focus on being self-contained ecosystems",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1228,7 +1272,7 @@
     "text": "Layer 2’s\nWe break these down into:\n\nRollups\n\nOptimistic\nZK\n\nValidiums\nPlasma\nSidechains\n\nSo Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling.\nSo we need to talk about the theory of Layers in Blockchain\nThat’s why L2’s became a major part of the roadmap. How does the scalability limitation affect the network. Congestion and high gas fee’s. So people don’t interact on the chain and it hits a ceiling. So logically we should start any discussion with transaction fee’s, as that’s the direct result of the scalability failure and the main reason users use L2’s. Besides yield opportunities.\nSo we should first consider the Fee Markets on Ethereum and Bitcoin which are the two major chains looking to scale with L2’s. There is a lot of debate and a lot of misinformation around this topic.\nDependent networks can really be divided into chains: External DIN required to validate state transitions External DIN required to guarantee state transitions\nWe’ll define a framework for how we define a Dependent Network. There are few things we look at, in terms of priority:\n\ncensorship resistance. Polygon zkEVM sequencer can censure, but you can go through the contract directly on Ethereum theoretically if censorship occurs. Same thing for Arbitrum. Although this is a very weak guarantee due to the complexity for regular users. For Stacks, it’s more censorship resistant that the other two. Also if I were to interact directly with the smart contract on Ethereum, that makes the L2’s pointless. Why do I need them if not to deal with congestion and high gas. dispute resolution. I believe all chains need to hard fork. Potentially not Movement due to Move’s resource model. None of the chains will automatically hard fork if a dispute is found.\nsettlement. So the base chain must validate and guarantee state transitions on the dependent chain. This is kinda stupid. It’s guaranteeing the state transitions but makes no attempt to resolve things like censorship resistance.\nfinality of settlement. Optimistic 7 days, zk 30 minutes, Stacks 16 hours\neconomic security model inheritance - this is actually pointless as it just means the state transitions match the rules. Nothing about censorship resistance.\n\nSo my qualification of dependent networks means that they must inherit the censorship resistance of the base chain, settlement must be validated and guaranteed by the base chain, dispute resolution must be automatic and/or decentralized. else the chain can just fork.\nSettlement Types In order of strength\n\nCryptographically enforced settlement\nValidity proofs\nFraud proof systems\nCheckpoint systems",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1239,7 +1283,7 @@
     "text": "Consensus Mechanisms\nConsensus Mechanisms All DIN’s have a consensus mechanism we have the consensus mechanisms. These can be divided into the following broad categories:\n\nProof based mechanisms. Mainly Proof of Work and Proof of Stake\nByzantine Fault Tolerance (BFT) Mechanisms. Tendermint\nVoting Based Mechanisms, Ripple and Stellar\nDirected Acrylic Graph based mechanisms\nHybrid. PoS + BFT is used by Polkadot and Cosmos\nNovel Mechanisms\n\nNeed to talk about finality here about probabilistic vs deterministic. Also focus on Single Slot Finality",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1250,7 +1294,7 @@
     "text": "Application Models\nEach application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.\nWe classify Application Models as:\n\nUTXO also includes Cardano’s extened UTXO, Kaspa also falls into this\nAccount\n\nPure EVM Ethereum, Polygon, Avalanche, TRON et al\nSpecialized XRP and Stellar\n\nSharded account model Near falls into this.\nObject Sui\nResource model Aptos and Movement\nCapability Solana\nCell model TON\nActor Based (ICP and CosmWasm\n\n\nUTXO\nThe UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.\nKey Characteristics:\n\nState Management: Stateless, transaction-oriented\nParallelization: Natural parallel validation\nAsset Representation: Native representation of tokens\nComposability: Limited without extensions\nSafety Guarantees: High through explicit ownership\n\n\n\nAccount Model\nAccounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA’s, they only maintain state of the network token and not ERC20’s.\nKey Characteristics:\n\nState Management: Stateful, account-oriented\nParallelization: Challenging due to state dependencies\nAsset Representation: Contract-based tokens\nComposability: High through contract interactions\nSafety Guarantees: Varies by implementation\n\n\n\nObject Model\nObjects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.\nKey Characteristics:\n\nState Management: Object-oriented\nParallelization: Natural through object independence\nAsset Representation: Native objects\nComposability: Through object references\nSafety Guarantees: Object-level ownership\n\n\n\nResource Model\nResources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.\nKey Characteristics:\n\nState Management: Resource-oriented\nParallelization: Possible through resource independence\nAsset Representation: Native resources\nComposability: Through resource combination\nSafety Guarantees: Very high through linear types\n\n\n\nCapability Model\nCapability Model Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.\nKey Characteristics:\n\nState Management: Capability-based\nParallelization: High through capability isolation\nAsset Representation: Capability-protected resources\nComposability: Through capability delegation\nSafety Guarantees: High through access control\n\n\n\nCell Model\nState is organized into cells that can be independently accessed and modified, enabling high parallelization.\nKey Characteristics:\n\nState Management: Cell-based\nParallelization: High through cell independence\nAsset Representation: Cell-based\nComposability: Through cell references\nSafety Guarantees: Cell-level isolation\n\n\n\nActor Model\nComputation is organized around actors that can independently process messages, enabling natural parallelization.\nKey Characteristics:\n\nState Management: Actor-local state\nParallelization: Natural through actor independence\nAsset Representation: Actor-managed\nComposability: Through message passing\nSafety Guarantees: Actor isolation\n\n\n\n\n\n\n\n\n\nApplication Model\nBlockchains\nKey Features\n\n\n\n\nUTXO\nBitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM\n- Natural parallelism- Simple state model- High security\n\n\nAccount (Pure EVM)\nEthereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare\n- Rich programmability- High composability- Standard tooling\n\n\nAccount (Specialized)\nXRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent\n- Custom account models- Specific use-case optimization- Modified state management\n\n\nSharded Account\nNEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony\n- Parallel execution- Cross-shard composition- Scalable state\n\n\nObject\nSui\n- Object-centric- Natural parallelism- Rich ownership model\n\n\nResource\nAptos, Movement, Flow, Virtual Protocol\n- Linear types- Strong safety- Asset-oriented\n\n\nCapability\nSolana, Injective, SEI, Theta Network\n- Fine-grained access- High parallelism- Explicit permissions\n\n\nCell\nTON, Everscale\n- Cell-based storage- High parallelism- Flexible structure\n\n\nActor\nInternet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA\n- Message-passing- Natural isolation- Independent processing\n\n\nUnknown\nFilecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin\nStill researching these",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1261,7 +1305,7 @@
     "text": "Communication Protocols\nWe have\n\nIBC (Inter-Blockchain Communication) - Cosmos\nXCMP (Cross-Chain Message Passing) - Polkadot\nCCTP (Cross-Chain Transfer Protocol) by Circl\nCCIP (Cross-Chain Interoperability) by Chainlink\nWarp Messaging for Avalanche\nIMP (Interchain Messaging Protocol)\n\nWe can then further classify these standard by the following properties: * Security Model * Centralized vs Decentralized * Message Scope (General (IBC,CCIP, Hyperlane) vs Specialized (Circle’s CCTP and Warp)) * Open vs Close networks * Message Verification Method",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1272,7 +1316,7 @@
     "text": "Fee Markets\nWe break down fee markets into:\n\nBlock Space Markets\nResources Markets\n\n\nBlock Space Markets\nThese are the most fundamental type. Users are paying for space in the next block, regardless of what they’re doing with that space. It only considers the price of inclusion while respecting the limits of the network.\n\n\nResource Markets\nThese evolved with the advent of Ethereum as blockchains became more complex. We break these down into:\n\nCompute\nData Availability\nStorage\nHybrid\n\n\nCompute Markets\nTransaction fee’s sometimes called Gas is what you pay to execute a smart contract on a blockchain. On some networks, like Ethereum, there is an execution limit on how much computational work can be done in a block. This parameter directly impacts the computational resources required to run a node.\nNodes can propose a gas limit\nSo the attributes for Transactions Fee’s are: Tips/Bribes How Transactoin fees are distributed. Burnt or redirected to Miners How fee’s are calculated Base Fee Dynamic Fee (based on something like network congestion)\n\n\n\nData Availability\nWe will compare the mechanisms of the following major DA layers:\n\nEthereum\nCelestia\nEignlayer DA\nAvail\n\nEthereum uses dynamic blob fees based upon a target amount of blob space per block.\nCelestia charges by size. Celestia is designed to scale to handle increase demand with adding more validators\nAvail also charges by size but also the type.\nEigenDA creates a marketplace for data availability providers\n\nStorage\n\n\nHybrid\n\n\nCongestion Measurement Mechanisms\nEthereum\n\nMeasures block gas utilization vs 15M target\n12.5% base fee adjustment per block\nBlock size can flex up to 30M gas\n\nStellar\n\nUses surge pricing mechanism\nTriggers when ledger capacity exceeds 50%\nFee increases proportionally to network load\n\nPolkadot\n\nUses weight-based system\nMeasures block weight against target\nAdjusts fees based on block fullness\n\nTezos\n\nMonitors block saturation\nAdjusts fees based on recent block usage\nUses gas limits per operation type\n\n\n\n\nData Availability market\nEthereum uses blobs, which are special containers for Layer 2 rollups to post their transaction data. They also disappear after a time.\nBlob fee is calculated based on the target blob gas per block.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1283,7 +1327,7 @@
     "text": "Network Change Management\n\nOverview\nNetwork change management in DINs encompasses the processes, mechanisms, and stakeholders involved in proposing, discussing, approving, and implementing network modifications. This framework covers everything from minor parameter adjustments to major protocol upgrades.\nTODO Design something that can simulate",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1294,7 +1338,7 @@
     "text": "Clients",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
     ]
   },
   {
@@ -1305,7 +1349,18 @@
     "text": "Bridges\nClassification of Bridges. Need to include Lazy Bridges here https://blog.celestia.org/lazybridging/\n\nTrusted\n\nCustodial\nMulti Signature\nFederated\n\nTrustless Bridges\n\nLight Client\nZK\n\nLazy Bridge\n\nRelay",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html",
+    "href": "content/technical/languages.html",
+    "title": "Languages",
+    "section": "",
+    "text": "Solidity\nIs a compiled language",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Languages</span>"
     ]
   },
   {
@@ -1463,17 +1518,6 @@
     ]
   },
   {
-    "objectID": "content/technical/languages.html",
-    "href": "content/technical/languages.html",
-    "title": "Languages",
-    "section": "",
-    "text": "Solidity\nIs a compiled language",
-    "crumbs": [
-      "Technologist's Path",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Languages</span>"
-    ]
-  },
-  {
     "objectID": "content/financial/tokens.html",
     "href": "content/financial/tokens.html",
     "title": "Digital Assets",
@@ -1481,7 +1525,7 @@
     "text": "Coins\nThis section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the Blockchain documentation.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1492,7 +1536,7 @@
     "text": "Network Economics\nToken Models Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards Incentive Structures Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding Economic Security Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support\n\n\nBase Networks\nThis Almanack distinguishes between the financial properties of Coins versus the technical properties of a Blockchain. As such we don’t refer to networks here by Layer 1 or Layer 2. That’s a classification and distinction you can explore here.\nWe define a Base Network that maintains it’s own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network.\n\n\nSecondary Networks\nThese are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the Blockchain chapter. We’ll encompass the full breadth of L2’s including, but not limited to Plasma, Sidechains, Rollups etc.\nWe then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value.\nPlease see Ozempic Effect to see how we determine if a network in a net ozempic or sugar network.\n\n\nDerivatives\n\nOn chain\n\nWrapped\n\nPure\nBridged\n\n\nOff Chain\n\nSpot ETF’s\n\n\n\nOn Chain Derivatives\n\n\nOff Chain Derivatives",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1503,7 +1547,7 @@
     "text": "Tokens\n\nFungible\nFungible is a pretty terrible name, but it roughly means divisable. It’s easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It’s divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It’s Non fungible, or non divisable. There’s more nuances which we can deal with in the vocabulary section. But that’s the general idea of it.\nWe have the following types: * Stable Coins * Fiat backed * Crypto backed * Delta Neutral backed * Shit Coins * Governance * Meme * Utility\nThen we have numerous standards. We’ll add only the most popular and relevant ones here.\nNamely: * ERC20 * ERC777 * ERC1363 * BRC20 * Runes * Solana’s SPL Token Standard * ICS20\n\nICS20\nThe Inter-Chain Standard 20 is a Cosmos based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)\n\n\n\nNon Fungible\nHas the following attributes:\n\nArt & Collectibles\nProfile Picture (PFP)\nGaming\nDomain Names and Identity\nReal World Assets (RWA)\n\nThe NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection’s market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1514,7 +1558,7 @@
     "text": "Markets\nWhere can I buy these Digital Assets? The major markets are regulated and unregulated.\nThese are then divided into spot vs derivatives.\nFor regulated it’s interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It’s probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1525,7 +1569,7 @@
     "text": "Hodling\nWallets\n\nCustodial\n\n\nNon-Custodial\n\nPure\n\nCold\nHot\n\nSmart\n\nMPC\nSmart Contract Based (Includes Account Abstraction)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1536,7 +1580,7 @@
     "text": "Yield Properties\nMajor categories are:\n\nNetwork Yield\nTrading Yield\nProtocol Yield\n\n\nTrading Yield\n\nPricing appreciation\nArbitrage Yield\n\nSpot Arbitrage\nPeg Arbitrage - These are unique to stable coins\n\nOptions and Derivatives Premiums\nFutures funding rates\n\n\n\nNetwork Yield\n\nMining Yield\n\nSolo Mining\nPool Mining\nCloud Mining\n\nValidating Yield\n\nStaking\n\nNetwork Fee Yield\n\nGas\n\nMEV\n\nToxic\nNon Toxic\n\nDerivatives\n\nLiquid Staking\n\n\n\n\ndApp Yield\n\nStaking\nLiquidity Provision\nGovernance Participation\nNFT Rental Income\n\n\nLiquidity Provision\nWe break this down into the following Categories\n\nAMM Pool fees\nConcentrated liquidity positions\nOrder book market making\nLending and Borrowing markets\n\n\nConcentrated Liquidity Provision\nHere we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046\n\n\n\n\nMonegro, Joel. 2016. “Fat Protocols.” Union Square Ventures. https://www.usv.com/writing/2016/08/fat-protocols/.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1547,7 +1591,7 @@
     "text": "Understanding Market Structure Basics\nAt its core, a market is where buyers and sellers come together to trade. But the way this meeting happens has profound effects on how prices are discovered, how fairly participants are treated, and how efficiently trades are executed. Let’s examine the key concepts that underpin all market structures.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1558,7 +1602,7 @@
     "text": "Price Discovery\nPrice discovery is the process by which markets determine the true price of an asset. Think of it as the market’s way of collectively agreeing on what something is worth. This process is influenced by:\n\nThe flow of new information\nThe number of market participants\nThe transparency of trading activity\nThe rules and mechanisms of the trading venue\n\nFor example, when a company announces unexpected positive earnings, traders rushing to buy the stock help discover its new, higher price. In crypto markets, this process happens 24/7, with global participation leading to near-instant price adjustments as new information emerges.\n\n\nLiquidity\nLiquidity is the ease with which an asset can be bought or sold without causing a significant price movement. It’s like the depth of a swimming pool - the deeper it is, the less splash you make when jumping in. High liquidity is characterized by:\n\nTight bid-ask spreads\nLarge order book depth\nHigh trading volumes\nMinimal price impact from trades",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1569,7 +1613,7 @@
     "text": "Central Limit Order Books (CLOBs)\nThe Central Limit Order Book (CLOB) is perhaps the most important innovation in market structure history. It’s essentially a sorted list of all the prices at which market participants are willing to buy (bids) and sell (asks) an asset.\n\nHow CLOBs Work\nA CLOB operates on simple but powerful principles:\n\nOrder Types\n\nLimit Orders: Instructions to buy or sell at a specific price or better\nMarket Orders: Instructions to buy or sell immediately at the best available price\n\nPrice-Time Priority\n\nOrders are matched based on price priority (best prices first)\nWhen prices are equal, earlier orders get priority\nThis creates a fair “first come, first served” system\n\n\nHere’s a simplified visualization of an order book:\n     ASKS\nPrice | Size\n105   | 10\n104   | 15\n103   | 20\n-----------------\n102   | 25\n101   | 30\n100   | 35\n     BIDS\n\n\nOrder Matching Logic\nWhen new orders arrive, they’re matched against existing orders following strict rules:\n\nMarket orders match immediately with the best available price\nLimit orders join the book if they can’t match immediately\nPartial fills are possible when order sizes don’t match exactly\n\nFor example, if someone submits a market buy order for 30 units in the above book, they would: - Buy 20 units at 103 - Buy 10 units at 104 - Pay an average price of 103.33",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1580,7 +1624,7 @@
     "text": "Evolution to Electronic Markets\nThe transition from physical trading floors to electronic markets marked a revolutionary change in market structure. Electronic markets brought:\n\nFaster execution speeds\nLower transaction costs\nBroader market access\nMore sophisticated trading strategies\nBetter price transparency\n\nHowever, they also introduced new challenges like: - Need for robust technology infrastructure - Complex failure modes - High-frequency trading arms race - New forms of market manipulation",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1591,7 +1635,7 @@
     "text": "Crypto Market Adaptations\nCryptocurrency markets have taken traditional market structures and adapted them for a decentralized world. This has led to several innovations:\n\nCentralized Exchange Order Books\nCrypto exchanges like Binance and Coinbase operate traditional CLOBs but with some key differences: - 24/7 trading - Global access - Multiple quote currencies - Faster settlement - Novel order types\n\n\nOn-Chain Order Books\nAttempting to put order books entirely on-chain has revealed interesting challenges: - High gas costs for order placement - Front-running vulnerability - Block time limitations - Settlement finality considerations\n\n\nHybrid Solutions\nModern crypto trading often uses hybrid approaches that combine the best of both worlds: - Off-chain order books with on-chain settlement - Layer 2 scaling solutions - State channels for high-frequency trading - Automated Market Makers (AMMs) as complementary liquidity sources",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1602,7 +1646,7 @@
     "text": "Market Structure Implications\nThe choice of market structure has far-reaching implications for:\n\nTrading Strategy\nDifferent market structures favor different trading approaches. CLOBs are ideal for market making and arbitrage, while AMMs excel at providing passive liquidity.\n\n\nMarket Quality\nMarket structure affects: - Price efficiency - Transaction costs - Market stability - Fair access\n\n\nRegulatory Compliance\nMarket structure choices impact: - Regulatory oversight capability - Market manipulation risk - Customer protection measures - Systemic risk management",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1613,7 +1657,7 @@
     "text": "Looking Ahead\nMarket structures continue to evolve as technology advances and new requirements emerge. Future developments may include: - Greater integration between TradFi and DeFi markets - Novel hybrid market structures - Improved privacy solutions - More efficient cross-chain trading mechanisms",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1624,7 +1668,7 @@
     "text": "Types of Market Cap\nIn DeFi, we need to understand several variations:\n\nCirculating Market Cap = Current Price × Circulating Supply The value of tokens currently trading in the market\nFully Diluted Valuation (FDV) = Current Price × Total Supply The theoretical value if all tokens were in circulation\nRealized Market Cap = Sum of (Price × Amount) for each token last moved A measure that helps identify actual economic activity",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1635,7 +1679,7 @@
     "text": "The Liquidity Ratio\nOne of the most important metrics rarely discussed is the liquidity ratio: Liquidity Ratio = Total DEX Liquidity / Market Cap\nGenerally: - Ratio &gt; 0.1: Healthy liquidity - Ratio 0.01-0.1: Exercise caution - Ratio &lt; 0.01: High manipulation risk",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1646,7 +1690,7 @@
     "text": "Market Cap Manipulation\nUnderstanding how market cap can be manipulated helps avoid common traps:\n\nSupply Manipulation\n\nBurning tokens to artificially reduce supply\nHidden minting capabilities\nLock-up periods that temporarily restrict supply\n\nPrice Manipulation\n\nWash trading to create fake volume\nThin liquidity pools easily moved by small trades\nStrategic buying to push price before token launches\n\nLiquidity Games\n\nTemporary liquidity adds before major announcements\nCross-chain liquidity that’s hard to track\nFlashloan attacks that distort price momentarily",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1657,7 +1701,7 @@
     "text": "Real Value vs. Market Cap\nMarket cap becomes more meaningful when viewed alongside other metrics:\n\nDaily Active Users (DAU)\nRevenue or fees generated\nTreasury holdings\nProtocol-owned liquidity\nCross-chain presence and activity\n\nThink of market cap as just one instrument in an orchestra - it only makes sense when played in harmony with other metrics.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1668,7 +1712,7 @@
     "text": "Red Flags in Market Cap Analysis\nWatch for these warning signs: - Market cap growing faster than user adoption - Large gaps between circulating and total supply - Sudden changes in supply without clear reason - Market cap much higher than total value locked (TVL)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1679,7 +1723,7 @@
     "text": "Using Market Cap in Trading Decisions\nMarket cap can be valuable when used correctly:\n\nFor relative valuation between similar protocols\nIdentifying potential manipulation\nAssessing room for growth\nUnderstanding total risk exposure\n\nRemember: Market cap is a trailing indicator showing where a token has been, not necessarily where it’s going.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1690,7 +1734,7 @@
     "text": "Conclusion\nMarket capitalization in DeFi requires a more sophisticated understanding than in traditional finance. While it shouldn’t be ignored, it should never be the only metric you consider. The most successful traders and investors learn to look beyond market cap to understand true value and risk.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1701,7 +1745,7 @@
     "text": "Core Rating Categories (60% of Total Rating)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1712,7 +1756,7 @@
     "text": "1. Protocol Value Capture (30%)\nA. Network Effect Metrics\n\nDaily Active Users (DAUs)\nTotal Value Locked (TVL)\nTransaction volume\nFee revenue generated\nProtocol revenue retained\n\nB. Value Accrual Mechanisms\n\nToken economics design\nFee distribution model\nStaking mechanisms\nBurns and supply dynamics\n\nC. Ozempic Network Effects\n\nValue extraction efficiency from L1\nTransaction fee capture rate\nUser migration metrics from L1\nTVL migration patterns\nGas savings versus L1\nL1-L2 Value Dynamics\nSequencer revenue distribution\nMEV capture and distribution\nBridge volume and efficiency\nSettlement layer costs\nSustainable Value Creation\nNet new users versus L1 migration\nEcosystem-specific applications\nNovel transaction types impossible on L1\nCross-L2 interoperability metrics\n\n\n\n2. Protocol Security & Risk Assessment (30%)\nA. Smart Contract Security\n\nAudit history and quality\nBug bounty program effectiveness\nHistorical vulnerability incidents\nCode complexity metrics\nUpgrade mechanism security\nTesting coverage\n\nB. Network Security\n\nConsensus mechanism robustness\nMEV exposure and protection measures\nNode distribution\nNetwork attack resistance\nCross-chain bridge security\nOracle dependency and security\n\nC. L1 Dependency Risks\n\nSettlement layer congestion exposure\nBridge security and liquidity depth\nL1 fee market correlation\nSequencer centralization risk\nValue extraction sustainability",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1723,7 +1767,7 @@
     "text": "Risk Categories (40% of Total Rating)\n\n1. Technical Risk Assessment (15%)\nA. Smart Contract Vulnerabilities - Code audit findings severity - Time-tested deployment - Complexity of interactions - Dependencies on external protocols - Historical incident analysis\nB. Network Level Risks\n\nMEV exposure metrics\nNetwork partition resistance\nNode centralization factors\nInfrastructure dependencies\nCross-chain vulnerability exposure\n\nC. Key Management & Wallet Security\n\nMulti-sig implementation\nKey generation processes\nHardware security modules usage\nSocial recovery mechanisms\nAccess control systems\n\n\n\n2. Economic Risk Assessment (10%)\nA. Market Dynamics\n\nLiquidity concentration\nPrice impact resistance\nCollateral quality\nMarket manipulation resistance\n\nB. Economic Model Vulnerabilities\n\nGame theory attack vectors\nIncentive alignment analysis\nEconomic exploit resistance\nStress test scenarios\nFlash loan attack surface\n\n\n\n3. Operational Risk Assessment (10%)\nA. CeFi/CeDeFi Risks\n\nCentralization points\nCustody arrangements\nThird-party dependencies\nOperational redundancy\nEmergency procedures\n\nB. Oracle Dependencies\n\nOracle manipulation resistance\nPrice feed reliability\nBackup oracle systems\nHistorical oracle incidents\nData quality metrics\n\n\n\n4. External Risk Assessment (5%)\nA. Regulatory Risk\n\nJurisdictional exposure\nCompliance frameworks\nRegulatory clarity\nLegal structure\nHistorical regulatory interactions\n\nB. Social Engineering Risk\n\nTeam security practices\nAccess control policies\nSocial attack history\nSecurity awareness training\nIncident response readiness",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1734,7 +1778,7 @@
     "text": "Risk-Adjusted Rating Scale\nAAA: Exceptional protocol with comprehensive risk mitigation\n\nMultiple independent security audits with no critical findings\nProven resistance to all major attack vectors\nStrong regulatory compliance framework\nDecentralized operations with minimal points of failure\nMultiple layers of economic security\n\nAA: Strong protocol with robust risk management\n\nRegular security audits with minor findings\nDocumented resistance to common attack vectors\nClear regulatory strategy\nLimited centralization risks\nStrong economic security measures",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1745,7 +1789,7 @@
     "text": "Risk Multipliers\nEach risk category can apply a multiplier to the base rating:\n\nCritical Risk: -3 rating notches\nHigh Risk: -2 rating notches\nMedium Risk: -1 rating notch\nLow Risk: No adjustment\nMinimal Risk: +1 rating notch",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1756,7 +1800,7 @@
     "text": "Continuous Monitoring Triggers\n\nSmart contract vulnerability disclosure\nNetwork attack detection\nRegulatory action\nEconomic model stress\nOracle deviation events\nCross-chain bridge incidents\nSocial engineering attempts\nMEV activity spikes",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1767,7 +1811,7 @@
     "text": "Review Framework\n\nMonthly security metric review\nQuarterly risk assessment update\nAnnual comprehensive review\nReal-time monitoring of critical indicators\nIncident-triggered reassessment",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1778,7 +1822,7 @@
     "text": "Ozempic Effect\nWe’ll base this upon value flows. Defillama doesn’t actually display this. So we’ll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon.\nLet’s build a comprehensive framework for tracking the true “Ozempic effect” of L2s on Ethereum. We’ll need several interconnected metrics to understand the complete value flow dynamics.\n\nWallet Migration Analysis\n\n\nTrack addresses that first appeared on Ethereum before a certain date (let’s call them “Ethereum Native Wallets”)\nMonitor their activity transition to L2s over time\nAnalyze their ETH holdings distribution between L1 and L2s\nCalculate the ratio of their transaction activity on L2s versus L1\n\n\nL2 Native User Analysis\n\n\nIdentify wallets that first appeared on L2s\nTrack what percentage never bridge to Ethereum\nMeasure their total value held\nCalculate their transaction activity\n\n\nFee Flow Dynamics\n\n\nTrack L2 sequencer fees paid back to Ethereum\nCalculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)\nMonitor the ratio of fees paid back to Ethereum versus fees retained by the L2\n\nWe could create a composite “Value Migration Score” that looks like:\ndef calculate_migration_score(l2_data):\n    # Value Migration\n    eth_native_migration = (\n        eth_native_wallets_on_l2 / total_eth_native_wallets *\n        eth_value_moved_to_l2 / original_eth_holdings\n    )\n    \n    # Activity Migration\n    activity_migration = (\n        l2_transactions_by_eth_wallets / \n        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)\n    )\n    \n    # L2 Native Growth\n    l2_native_strength = (\n        l2_only_wallets / total_l2_wallets *\n        l2_native_value / total_l2_value\n    )\n    \n    # Fee Economics\n    fee_efficiency = (\n        sequencer_fees_to_ethereum / \n        theoretical_l1_fees_for_same_transactions\n    )\n    \n    return (\n        eth_native_migration * 0.3 +\n        activity_migration * 0.3 +\n        l2_native_strength * 0.2 +\n        fee_efficiency * 0.2\n    )\nThis would give us a quantitative measure of how effectively an L2 is:\n\nAttracting value from Ethereum\nGenerating new value through native users\nMaintaining a sustainable fee relationship with Ethereum\n\nA true Ozempic L2 should show:\n\nHigh migration of ETH native wallets\nStrong L2 native user growth\nEfficient fee generation that still provides meaningful revenue to Ethereum\nSustained or growing activity ratios over time\n\nWould you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?\n\nNet Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1789,7 +1833,7 @@
     "text": "Risk Factors\n\n1. Technical Risks\n\nImplementation bugs\nSecurity vulnerabilities\nUpgrade coordination failures\nNetwork splits\n\n\n\n2. Governance Risks\n\nCapture by special interests\nLow participation\nContentious decisions\nUnclear processes\n\n\n\n3. Social Risks\n\nCommunity fragmentation\nLoss of developer support\nReputation damage\nMarket impacts",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1800,7 +1844,7 @@
     "text": "Future Considerations\n\n1. Emerging Trends\n\nAutomated governance systems\nAI-assisted proposal analysis\nCross-chain governance\nDynamic parameter adjustment\n\n\n\n2. Challenges\n\nScaling governance participation\nBalancing security and innovation\nManaging increasing complexity\nMaintaining decentralization\n\n\n\n3. Opportunities\n\nImproved governance tools\nBetter simulation capabilities\nEnhanced coordination mechanisms\nMore sophisticated voting systems",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1811,7 +1855,7 @@
     "text": "Dependent Network Ratings\nPolygon zkEVM Settlement Guarantees (10/10 weight): Score: 9/10 The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum’s consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.\nDispute Resolution (9/10 weight): Score: 10/10 Ethereum serves as the absolute source of truth for the zkEVM. If there’s ever a dispute about the state, the zero-knowledge proofs verified by Ethereum’s consensus provide mathematical certainty about what is correct. There’s no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can’t confirm invalid state transitions, and its assets are secured by Ethereum’s consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.\nState Finality (7/10 weight): Score: 9/10 Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there’s no waiting period for finality beyond Ethereum’s own finality period. This is as strong as state finality can get for a settlement-dependent network.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum’s consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.\nState Progression Dependency (5/10 weight): Score: 7/10 While the zkEVM can process transactions independently, it can’t finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there’s some independence in transaction processing.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they’re locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.\nTotal Score: 62/70 (approximately 89%)\nThis analysis places Polygon zkEVM firmly in the “Fully Non-Sovereign” category. Arbitrum Let me analyze Arbitrum’s relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.\nSettlement Guarantees (10/10 weight): Score: 7/10 Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it’s not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum’s consensus layer still makes this a robust settlement mechanism.\nDispute Resolution (9/10 weight): Score: 8/10 Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum’s consensus automatically enforces the correct resolution once fraud is proven.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum’s state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.\nState Finality (7/10 weight): Score: 6/10 While Arbitrum’s state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets to Ethereum, guaranteed by Ethereum’s consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum’s operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.\nState Progression Dependency (5/10 weight): Score: 7/10 Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum’s consensus. When assets move to Arbitrum, they’re locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.\nTotal Score: 55/70 (approximately 79%)\nThis analysis places Arbitrum in the “Fully Non-Sovereign” category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs.\nStacks Settlement Guarantees (10/10 weight): Score: 4/10 Stacks uses Bitcoin for checkpointing and security anchoring However, it lacks cryptographic enforcement of settlement by Bitcoin’s consensus Bitcoin doesn’t automatically enforce or validate Stacks’ state transitions Falls into the “checkpoint systems” category rather than stronger settlement guarantees Dispute Resolution (9/10 weight): Score: 3/10 While Stacks records its state on Bitcoin, Bitcoin’s consensus doesn’t serve as the ultimate arbiter Disputes are primarily resolved within Stacks’ own consensus mechanism Bitcoin can’t automatically correct or resolve issues in Stacks’ state Economic Security Inheritance (8/10 weight): Score: 6/10 Miners must commit actual Bitcoin through PoX mechanism This creates some economic security dependency on Bitcoin However, Stacks maintains its own economic incentives through STX State Finality (7/10 weight): Score: 5/10 Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces Provides stronger finality than fully independent chains but weaker than true L2s Exit Rights Guarantees (6/10 weight): Score: 4/10 With sBTC, users can move Bitcoin between chains However, this relies on Stacks’ mechanisms rather than being guaranteed by Bitcoin’s consensus Exit rights depend on threshold signatures rather than cryptographic guarantees State Progression Dependency (5/10 weight): Score: 7/10 Stacks blocks are linked to Bitcoin blocks through PoX State progression is tied to Bitcoin’s block progression However, Stacks can still process transactions independently within this framework Asset Movement (4/10 weight): Score: 5/10 sBTC enables Bitcoin movement between chains But this movement isn’t directly enforced by Bitcoin’s consensus Relies on threshold signatures and Stacks’ mechanisms Total Score: 34/59 (approximately 58%)\nThis places Stacks in the “Moderately Dependent” category on our spectrum.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1822,7 +1866,7 @@
     "text": "Risks\nSub categories of risks include smart contract vulns regulatory risks centralization risks for CeDeFi and CEX’s MEV network level key and wallet compromise cross chain exploits oracle manipulation Social engineering exploitation of economic models",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1833,7 +1877,7 @@
     "text": "BTC\nBitcoin has emerged as the world’s first successful digital store of value, creating a new paradigm for wealth preservation in the digital age. Much like gold served ancient civilizations through to modern times as a reliable store of wealth, Bitcoin provides similar characteristics but with distinct advantages native to the digital realm.\nAt its foundation, Bitcoin’s value proposition rests on its absolute scarcity - there will never be more than 21 million bitcoins. This hard cap, combined with a transparent and immutable issuance schedule through mining “halvings” every four years, creates a predictability that even gold, with its uncertain mining output, cannot match. When new gold deposits are discovered or mining technology improves, supply can increase unexpectedly. Bitcoin’s supply schedule, in contrast, is mathematically certain.\nBitcoin’s digital nature offers significant advantages over traditional stores of value. Unlike gold, it can be transferred instantly across borders, divided into microscopic units, stored without physical vault costs, and verified for authenticity without specialized equipment. Its self-custody properties allow individuals to maintain direct control over their wealth without relying on third-party custodians or financial institutions.\nThe network’s security model, backed by massive computational power through proof-of-work mining, has proven remarkably resilient over more than a decade. This track record has gradually built confidence among institutional investors, who increasingly view Bitcoin as a legitimate asset class for portfolio diversification and inflation hedging. Major financial institutions now offer Bitcoin investment products, while some corporations have adopted it as a treasury reserve asset.\nWhile Bitcoin began as a peer-to-peer electronic cash system, its evolution into a store of value mirrors how gold transformed from a medium of exchange into a wealth preservation tool. The emergence of Layer 2 solutions like the Lightning Network now handles Bitcoin’s payments functionality, allowing the base layer to focus on its primary role as digital gold - the foundational layer of monetary security in the cryptocurrency ecosystem.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -1844,7 +1888,7 @@
     "text": "Derivatives\n\ncbBTC\nCoinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase’s custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase’s reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.\nThe technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase’s layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase’s custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base’s growing DeFi ecosystem while maintaining exposure to Bitcoin’s value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC’s key differentiator is its direct integration with Coinbase’s established infrastructure and its focus on institutional-grade security and compliance measures.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -1855,7 +1899,7 @@
     "text": "ETH\nEthereum represents a revolutionary leap in computing - it’s humanity’s first attempt at creating a global, decentralized computer that’s always running and accessible to everyone. Like how the internet connected computers worldwide for information sharing, Ethereum connects computers globally to create a single, unified computational platform that no one controls but everyone can use.\nThink of Ethereum as a massive, worldwide computer with some unique properties: it never shuts down, can’t be censored, and maintains perfect records of everything it processes. Instead of storing photos or documents like a regular computer, this world computer specializes in running smart contracts - pieces of code that automatically execute agreements and handle digital assets without needing intermediaries.\nETH, the network’s native asset, serves as the essential “fuel” that powers this world computer. Every computation, whether it’s processing a DeFi trade or minting an NFT, requires ETH to run. After Ethereum’s transition to Proof of Stake through The Merge, ETH also gained a new role - network validators must stake ETH to participate in securing the network, similar to how a computer needs electricity to function and stay secure.\nWhat makes Ethereum truly revolutionary is its programmability. Just as early personal computers transformed from specialized calculators into general-purpose machines that could run any software, Ethereum evolved blockchain technology from a simple transaction ledger into a platform that can run any programmable application. This has spawned entire new industries: decentralized finance (DeFi) protocols that operate 24/7 without human intervention, NFT marketplaces that enable digital ownership and royalties, and DAOs that coordinate human activity through code rather than hierarchies.\nThe platform continues to evolve through ambitious technical upgrades. Layer 2 scaling solutions like rollups act as specialized processors that handle heavy computations off the main chain, while the planned implementation of sharding will divide the network into parallel processing units - similar to how modern computers use multiple cores to increase performance. These improvements aim to make the world computer more efficient and accessible while maintaining its core properties of decentralization and security.\nAs this world computer grows in capability and adoption, ETH’s value proposition strengthens - it’s not just a digital asset, but the essential resource needed to access and use what might become the foundation of our digital future.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -1866,27 +1910,27 @@
     "text": "This section will compare how Blockchains implement the three tiers of traditional governance. Namely:\n\nLegistlative - Who makes the rules and how they created\nExecutive - Who executes the rules\nJudicial - Referee between them\n\nSo in Bitcoin BIP’s cover the Legislative aspect, Executive is Node operators for Networks then for dapps it gets more complex. Judicial is where it gets challenging. This is pretty much the entire community. People interpret rules by economic activity and nodes. Look at Bitcoin Cash. No money. So everyone agreed with the block size of Bitcoin.\nThere is also the concept of Canvassing or Lobbying can also occur. Let’s look at Ethereum. If I wanted to increase the gas limit from 30 million to 31 million. I’d need to canvas all the nodes to come along with me. Currently there is 5,333 nodes. So I’d need to convince ~3k node operators to increase the gas limit.\n\n1. Hard Forks\n\nDefinition: Protocol changes that make previously invalid blocks/transactions valid (or vice-versa), requiring all nodes to upgrade\nCharacteristics:\n\nNon-backwards compatible\nRequires coordinated network upgrade\nCreates potential for chain splits if not unanimously adopted\n\nUse Cases: Major protocol upgrades, fundamental rule changes, bug fixes\nExamples: Ethereum’s merge to PoS, Bitcoin’s SegWit upgrade\n\n\n\n2. Soft Forks\n\nDefinition: Backwards-compatible protocol changes that tighten rules without invalidating existing blocks\nCharacteristics:\n\nBackwards compatible\nOld nodes can still participate (with limitations)\nLower coordination requirements\n\nUse Cases: Adding new features, incremental improvements\nExamples: Bitcoin’s P2SH implementation, taproot upgrade\n\n\n\n3. Parameter Updates\n\nDefinition: Changes to network variables within predefined bounds\nCharacteristics:\n\nNo code changes required\nOften automated through on-chain governance\nLower risk than protocol changes\n\nUse Cases: Fee adjustments, block size modifications, staking parameters\nExamples: Tezos’ regular parameter updates, Cosmos’ governance parameters\n\n\n\nGovernance Mechanisms\n\n1. Off-Chain Governance\n\nCharacteristics:\n\nSocial consensus through discussion forums, social media, conferences\nInformal decision-making processes\nRelies on node operator coordination\n\nAdvantages:\n\nFlexible and adaptable\nAllows for nuanced discussion\nNatural resistance to capture\n\nDisadvantages:\n\nCan be slow and messy\nMay lack clear resolution mechanisms\nPotential for contentious outcomes\n\n\n\n\n2. On-Chain Governance\n\nCharacteristics:\n\nFormal voting mechanisms\nSmart contract-based execution\nToken-weighted or identity-based participation\n\nAdvantages:\n\nClear process and outcomes\nAutomated execution\nTransparent participation\n\nDisadvantages:\n\nPotential plutocratic capture\nReduced flexibility\nVoter apathy risks\n\n\n\n\n3. Hybrid Systems\n\nCharacteristics:\n\nCombines off-chain discussion with on-chain execution\nMultiple stages of proposal refinement\nMixed participation models\n\nAdvantages:\n\nBalances flexibility with formality\nCombines benefits of both approaches\nCan adapt to different types of changes\n\nExamples: Polkadot’s governance system, Cosmos Hub’s proposal process\n\n\n\n\nImprovement Proposal Systems\n\n1. Structure\n\nStages:\n\nDraft: Initial proposal development\nReview: Community feedback and refinement\nLast Call: Final period for major objections\nAccepted/Final: Ready for implementation\nRejected: Proposal declined\n\nComponents:\n\nTechnical specification\nMotivation and rationale\nBackwards compatibility analysis\nReference implementation (if applicable)\nSecurity considerations\n\n\n\n\n2. Common Frameworks\n\nBIP (Bitcoin Improvement Proposals):\n\nFocus on consensus changes\nConservative approach\nHigh emphasis on security\n\nEIP (Ethereum Improvement Proposals):\n\nMultiple tracks (Core, ERC, Interface)\nRegular cadence of updates\nStrong emphasis on standardization\n\nNetwork-Specific Systems:\n\nCustomized to network needs\nVarying levels of formality\nDifferent voting thresholds\n\n\n\n\n\nCentralization Factors\n\n1. Development Centralization\n\nCore Development Teams:\n\nControl over codebase\nTechnical expertise concentration\nFunding dependencies\n\nClient Implementation:\n\nDiversity of node software\nImplementation independence\nBug discovery and fixes\n\n\n\n\n2. Governance Centralization\n\nVoting Power Distribution:\n\nToken concentration\nDelegate systems\nVoter participation rates\n\nProposal Control:\n\nWho can propose changes\nFiltering mechanisms\nDiscussion venue control\n\n\n\n\n3. Infrastructure Centralization\n\nNode Operation:\n\nGeographic distribution\nHardware requirements\nOperating costs\n\nService Providers:\n\nAPI services\nBlock explorers\nDevelopment tools\n\n\n\n\n\nBest Practices\n\n1. Change Management\n\nClear documentation of changes\nAdequate testing periods\nCoordinated upgrade schedules\nEmergency response procedures\n\n\n\n2. Community Engagement\n\nRegular communication channels\nMultiple feedback mechanisms\nTransparent decision-making\nEducational resources\n\n\n\n3. Technical Implementation\n\nComprehensive testing frameworks\nClear upgrade paths\nFallback mechanisms\nSecurity audits",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Governance</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Governance</span>"
     ]
   },
   {
     "objectID": "contributing.html",
     "href": "contributing.html",
-    "title": "29  Contributing",
+    "title": "28  Contributing",
     "section": "",
-    "text": "29.1 Current requirements",
+    "text": "28.1 Current requirements",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Contributing</span>"
     ]
   },
   {
     "objectID": "contributing.html#current-requirements",
     "href": "contributing.html#current-requirements",
-    "title": "29  Contributing",
+    "title": "28  Contributing",
     "section": "",
-    "text": "29.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n29.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
+    "text": "28.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n28.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
     "crumbs": [
-      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Contributing</span>"
     ]
   },
   {
