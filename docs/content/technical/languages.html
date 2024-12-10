@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-12-09">
 
-<title>Trollip’s Degen Almanack - Languages</title>
+<title>Trollip’s Degen Almanack - Smart Contract Languages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../content/technical/gas.html" rel="next">
-<link href="../../content/technical/blockchains.html" rel="prev">
+<link href="../../content/technical/modular.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -83,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/languages.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Languages</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/languages.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -316,37 +350,43 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/cryptography.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Cryptography: Building Blocks of Digital Trust</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Cryptography</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/blockchains.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Blockchains</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Blockchain Technology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/modular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/languages.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Languages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/gas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Gas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Gas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/dapps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">dApps</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Decentralized Applications (dApps)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/mev.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">MEV</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></span></a>
   </div>
 </li>
       </ul>
@@ -363,25 +403,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/tokens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Digital Assets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Digital Assets</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/market_structure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Market Structures</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Market Structures</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/ratings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Ratings</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Ratings</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/trollip_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Trollip’s Index</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Trollip’s Index</span></span></a>
   </div>
 </li>
       </ul>
@@ -398,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/social/governance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Governance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Governance</span></span></a>
   </div>
 </li>
       </ul>
@@ -406,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../contributing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -425,16 +465,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#solidity" id="toc-solidity" class="nav-link active" data-scroll-target="#solidity">Solidity</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#solidity" id="toc-solidity" class="nav-link" data-scroll-target="#solidity">Solidity</a></li>
+  <li><a href="#move" id="toc-move" class="nav-link" data-scroll-target="#move">Move</a>
+  <ul class="collapse">
+  <li><a href="#core-move-concepts" id="toc-core-move-concepts" class="nav-link" data-scroll-target="#core-move-concepts">Core Move Concepts</a></li>
+  <li><a href="#aptos-vs-sui-move" id="toc-aptos-vs-sui-move" class="nav-link" data-scroll-target="#aptos-vs-sui-move">Aptos vs Sui Move</a></li>
+  </ul></li>
+  <li><a href="#cosmwasm" id="toc-cosmwasm" class="nav-link" data-scroll-target="#cosmwasm">CosmWasm</a></li>
+  <li><a href="#solana-programs" id="toc-solana-programs" class="nav-link" data-scroll-target="#solana-programs">Solana Programs</a></li>
+  <li><a href="#bitcoin-script" id="toc-bitcoin-script" class="nav-link" data-scroll-target="#bitcoin-script">Bitcoin Script</a></li>
+  <li><a href="#security-considerations" id="toc-security-considerations" class="nav-link" data-scroll-target="#security-considerations">Security Considerations</a></li>
+  <li><a href="#future-trends" id="toc-future-trends" class="nav-link" data-scroll-target="#future-trends">Future Trends</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/languages.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Languages</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/languages.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Languages</h1>
+<h1 class="title">Smart Contract Languages</h1>
 </div>
 
 
@@ -457,9 +508,235 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Smart contract languages face unique challenges in blockchain development. They must provide robust safety guarantees while enabling developers to write immutable code that often handles millions of dollars in value. Each language makes different tradeoffs between expressiveness, safety, and performance.</p>
+</section>
 <section id="solidity" class="level2">
 <h2 class="anchored" data-anchor-id="solidity">Solidity</h2>
-<p>Is a compiled language</p>
+<p>As the pioneer of smart contract development, Solidity has shaped how we think about blockchain programming. Its design combines familiar object-oriented concepts with blockchain-specific safety features.</p>
+<p>Key characteristics:</p>
+<ul>
+<li>Static typing system</li>
+<li>Contract-oriented programming</li>
+<li>Rich ecosystem of tools</li>
+<li>Extensive security features</li>
+</ul>
+<p>Example of modern Solidity patterns:</p>
+<pre class="solidity"><code>// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+contract ModernContract {
+    // Events for off-chain tracking
+    event ValueUpdated(address indexed updater, uint256 newValue);
+    
+    // Immutable variables for gas optimization
+    address immutable owner;
+    
+    // Custom errors instead of strings
+    error UnauthorizedAccess(address caller);
+    error InvalidValue(uint256 value);
+    
+    constructor() {
+        owner = msg.sender;
+    }
+    
+    // Use custom errors and checks
+    function updateValue(uint256 newValue) external {
+        if (msg.sender != owner) {
+            revert UnauthorizedAccess(msg.sender);
+        }
+        if (newValue == 0) {
+            revert InvalidValue(newValue);
+        }
+        
+        emit ValueUpdated(msg.sender, newValue);
+    }
+}</code></pre>
+</section>
+<section id="move" class="level2">
+<h2 class="anchored" data-anchor-id="move">Move</h2>
+<p>Originally developed for Facebook’s Libra (now Diem) project, Move is a Rust-based language that introduces powerful new concepts for digital asset management. Its adoption by Aptos and Sui has led to distinct dialects of the language.</p>
+<section id="core-move-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="core-move-concepts">Core Move Concepts</h3>
+<p>Move’s fundamental innovation is its resource types, which ensure digital assets can’t be copied or accidentally destroyed:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>module <span class="pp">example::</span>basic_token <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> Token has key <span class="op">{</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        value<span class="op">:</span> <span class="dt">u64</span><span class="op">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    public fun transfer(token<span class="op">:</span> Token<span class="op">,</span> recipient<span class="op">:</span> address) <span class="op">{</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Resources must be moved explicitly</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        move_to<span class="op">&lt;</span>Token<span class="op">&gt;</span>(recipient<span class="op">,</span> token)<span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="aptos-vs-sui-move" class="level3">
+<h3 class="anchored" data-anchor-id="aptos-vs-sui-move">Aptos vs Sui Move</h3>
+<p>While both platforms use Move, they implement it differently:</p>
+<p>Aptos Move:</p>
+<ul>
+<li>Global storage model</li>
+<li>Sequential transaction execution</li>
+<li>Account-based resources</li>
+<li>More traditional blockchain model</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Aptos Move example</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>module <span class="pp">example::</span>counter <span class="op">{</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> Counter has key <span class="op">{</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        value<span class="op">:</span> <span class="dt">u64</span><span class="op">,</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    public fun increment(account<span class="op">:</span> <span class="op">&amp;</span>signer) acquires Counter <span class="op">{</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">let</span> counter <span class="op">=</span> borrow_global_mut<span class="op">&lt;</span>Counter<span class="op">&gt;</span>(<span class="pp">signer::</span>address_of(account))<span class="op">;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        counter<span class="op">.</span>value <span class="op">=</span> counter<span class="op">.</span>value <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Sui Move:</p>
+<ul>
+<li>Object-centric model</li>
+<li>Parallel transaction execution</li>
+<li>Object-based ownership</li>
+<li>Novel consensus approach</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Sui Move example</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>module <span class="pp">example::</span>counter <span class="op">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> Counter has key <span class="op">{</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        id<span class="op">:</span> UID<span class="op">,</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        value<span class="op">:</span> <span class="dt">u64</span><span class="op">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    public fun increment(counter<span class="op">:</span> <span class="op">&amp;</span><span class="kw">mut</span> Counter) <span class="op">{</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        counter<span class="op">.</span>value <span class="op">=</span> counter<span class="op">.</span>value <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="cosmwasm" class="level2">
+<h2 class="anchored" data-anchor-id="cosmwasm">CosmWasm</h2>
+<p>CosmWasm brings WebAssembly-based smart contracts to Cosmos-based blockchains. Written in Rust, it provides a robust environment for cross-chain contract development.</p>
+<p>Key features:</p>
+<ul>
+<li>Rust-based development</li>
+<li>Cross-chain compatibility</li>
+<li>Strong typing system</li>
+<li>IBC integration</li>
+</ul>
+<p>Example CosmWasm contract:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="at">#[</span>derive<span class="at">(</span>Serialize<span class="op">,</span> Deserialize<span class="op">,</span> <span class="bu">Clone</span><span class="op">,</span> <span class="bu">Debug</span><span class="op">,</span> <span class="bu">PartialEq</span><span class="at">)]</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">pub</span> <span class="kw">struct</span> InstantiateMsg <span class="op">{</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">pub</span> count<span class="op">:</span> <span class="dt">i32</span><span class="op">,</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">#[</span>entry_point<span class="at">]</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="kw">pub</span> <span class="kw">fn</span> instantiate(</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    deps<span class="op">:</span> DepsMut<span class="op">,</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    _env<span class="op">:</span> Env<span class="op">,</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    info<span class="op">:</span> MessageInfo<span class="op">,</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    msg<span class="op">:</span> InstantiateMsg<span class="op">,</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>) <span class="op">-&gt;</span> <span class="dt">Result</span><span class="op">&lt;</span>Response<span class="op">,</span> ContractError<span class="op">&gt;</span> <span class="op">{</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> state <span class="op">=</span> State <span class="op">{</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        count<span class="op">:</span> msg<span class="op">.</span>count<span class="op">,</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        owner<span class="op">:</span> info<span class="op">.</span>sender<span class="op">.</span>clone()<span class="op">,</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">};</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    set_contract_version(deps<span class="op">.</span>storage<span class="op">,</span> CONTRACT_NAME<span class="op">,</span> CONTRACT_VERSION)<span class="op">?;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    STATE<span class="op">.</span>save(deps<span class="op">.</span>storage<span class="op">,</span> <span class="op">&amp;</span>state)<span class="op">?;</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="cn">Ok</span>(<span class="pp">Response::</span>new()</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span>add_attribute(<span class="st">"method"</span><span class="op">,</span> <span class="st">"instantiate"</span>)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span>add_attribute(<span class="st">"owner"</span><span class="op">,</span> info<span class="op">.</span>sender)</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span>add_attribute(<span class="st">"count"</span><span class="op">,</span> msg<span class="op">.</span>count<span class="op">.</span>to_string()))</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="solana-programs" class="level2">
+<h2 class="anchored" data-anchor-id="solana-programs">Solana Programs</h2>
+<p>Solana’s smart contracts (called “programs”) are typically written in Rust, offering high performance but requiring careful management of accounts and data.</p>
+<p>Key characteristics:</p>
+<ul>
+<li>Account-based model</li>
+<li>Explicit data ownership</li>
+<li>High performance</li>
+<li>Complex account management</li>
+</ul>
+<p>Example Solana program:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="pp">solana_program::</span><span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="pp">account_info::</span>AccountInfo<span class="op">,</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    entrypoint<span class="op">,</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="pp">entrypoint::</span>ProgramResult<span class="op">,</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="pp">pubkey::</span>Pubkey<span class="op">,</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="pp">entrypoint!</span>(process_instruction)<span class="op">;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="kw">pub</span> <span class="kw">fn</span> process_instruction(</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    program_id<span class="op">:</span> <span class="op">&amp;</span>Pubkey<span class="op">,</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    accounts<span class="op">:</span> <span class="op">&amp;</span>[AccountInfo]<span class="op">,</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    instruction_data<span class="op">:</span> <span class="op">&amp;</span>[<span class="dt">u8</span>]<span class="op">,</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>) <span class="op">-&gt;</span> ProgramResult <span class="op">{</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Solana programs explicitly manage accounts</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> accounts_iter <span class="op">=</span> <span class="op">&amp;</span><span class="kw">mut</span> accounts<span class="op">.</span>iter()<span class="op">;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> account <span class="op">=</span> next_account_info(accounts_iter)<span class="op">?;</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Program logic here</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="cn">Ok</span>(())</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="bitcoin-script" class="level2">
+<h2 class="anchored" data-anchor-id="bitcoin-script">Bitcoin Script</h2>
+<p>While limited compared to modern smart contract platforms, Bitcoin Script was the first blockchain programming language. It uses a stack-based approach for transaction validation.</p>
+<p>Key features:</p>
+<ul>
+<li>Stack-based execution</li>
+<li>Limited instruction set</li>
+<li>No loops or complex control flow</li>
+<li>Focus on transaction validation</li>
+</ul>
+<p>Example Bitcoin Script:</p>
+<pre><code>OP_DUP OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG</code></pre>
+</section>
+<section id="security-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="security-considerations">Security Considerations</h2>
+<p>Each language presents unique security challenges:</p>
+<p>Solidity:</p>
+<ul>
+<li>Reentrancy attacks</li>
+<li>Access control issues</li>
+<li>Integer overflow (pre-0.8.0)</li>
+<li>Gas optimization risks</li>
+</ul>
+<p>Move:</p>
+<ul>
+<li>Resource handling complexity</li>
+<li>Formal verification needs</li>
+<li>Platform-specific quirks</li>
+<li>Module linking security</li>
+</ul>
+<p>CosmWasm:</p>
+<ul>
+<li>Cross-chain vulnerabilities</li>
+<li>State management complexity</li>
+<li>Message handling security</li>
+<li>Contract upgradeability</li>
+</ul>
+<p>Solana:</p>
+<ul>
+<li>Account validation</li>
+<li>Data race conditions</li>
+<li>Cross-program invasion</li>
+<li>Resource exhaustion</li>
+</ul>
+</section>
+<section id="future-trends" class="level2">
+<h2 class="anchored" data-anchor-id="future-trends">Future Trends</h2>
+<p>Smart contract languages continue to evolve:</p>
+<ul>
+<li>Zero-knowledge support</li>
+<li>Formal verification tools</li>
+<li>Cross-chain compatibility</li>
+<li>Advanced type systems</li>
+</ul>
+<p>The field remains dynamic, with new languages and features emerging as blockchain technology matures and new use cases develop.</p>
 
 
 </section>
@@ -854,13 +1131,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/technical/blockchains.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Blockchains</span></span>
+      <a href="../../content/technical/modular.html" class="pagination-link  aria-label=" &lt;span="" blockchain="" architecture&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/technical/gas.html" class="pagination-link" aria-label="<span class='chapter-number'>20</span>&nbsp; <span class='chapter-title'>Gas</span>">
-        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Gas</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/technical/gas.html" class="pagination-link" aria-label="<span class='chapter-number'>21</span>&nbsp; <span class='chapter-title'>Gas</span>">
+        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Gas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

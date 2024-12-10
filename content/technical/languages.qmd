@@ -1,4 +1,252 @@
-# Languages
+# Smart Contract Languages
+
+## Introduction
+
+Smart contract languages face unique challenges in blockchain development. They must provide robust safety guarantees while enabling developers to write immutable code that often handles millions of dollars in value. Each language makes different tradeoffs between expressiveness, safety, and performance.
 
 ## Solidity
-Is a compiled language
+
+As the pioneer of smart contract development, Solidity has shaped how we think about blockchain programming. Its design combines familiar object-oriented concepts with blockchain-specific safety features.
+
+Key characteristics:
+
+- Static typing system
+- Contract-oriented programming
+- Rich ecosystem of tools
+- Extensive security features
+
+Example of modern Solidity patterns:
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+contract ModernContract {
+    // Events for off-chain tracking
+    event ValueUpdated(address indexed updater, uint256 newValue);
+    
+    // Immutable variables for gas optimization
+    address immutable owner;
+    
+    // Custom errors instead of strings
+    error UnauthorizedAccess(address caller);
+    error InvalidValue(uint256 value);
+    
+    constructor() {
+        owner = msg.sender;
+    }
+    
+    // Use custom errors and checks
+    function updateValue(uint256 newValue) external {
+        if (msg.sender != owner) {
+            revert UnauthorizedAccess(msg.sender);
+        }
+        if (newValue == 0) {
+            revert InvalidValue(newValue);
+        }
+        
+        emit ValueUpdated(msg.sender, newValue);
+    }
+}
+```
+
+## Move
+
+Originally developed for Facebook's Libra (now Diem) project, Move is a Rust-based language that introduces powerful new concepts for digital asset management. Its adoption by Aptos and Sui has led to distinct dialects of the language.
+
+### Core Move Concepts
+
+Move's fundamental innovation is its resource types, which ensure digital assets can't be copied or accidentally destroyed:
+
+```rust
+module example::basic_token {
+    struct Token has key {
+        value: u64,
+    }
+
+    public fun transfer(token: Token, recipient: address) {
+        // Resources must be moved explicitly
+        move_to<Token>(recipient, token);
+    }
+}
+```
+
+### Aptos vs Sui Move
+
+While both platforms use Move, they implement it differently:
+
+Aptos Move:
+
+- Global storage model
+- Sequential transaction execution
+- Account-based resources
+- More traditional blockchain model
+
+```rust
+// Aptos Move example
+module example::counter {
+    struct Counter has key {
+        value: u64,
+    }
+
+    public fun increment(account: &signer) acquires Counter {
+        let counter = borrow_global_mut<Counter>(signer::address_of(account));
+        counter.value = counter.value + 1;
+    }
+}
+```
+
+Sui Move:
+
+- Object-centric model
+- Parallel transaction execution
+- Object-based ownership
+- Novel consensus approach
+
+```rust
+// Sui Move example
+module example::counter {
+    struct Counter has key {
+        id: UID,
+        value: u64,
+    }
+
+    public fun increment(counter: &mut Counter) {
+        counter.value = counter.value + 1;
+    }
+}
+```
+
+## CosmWasm
+
+CosmWasm brings WebAssembly-based smart contracts to Cosmos-based blockchains. Written in Rust, it provides a robust environment for cross-chain contract development.
+
+Key features:
+
+- Rust-based development
+- Cross-chain compatibility
+- Strong typing system
+- IBC integration
+
+Example CosmWasm contract:
+```rust
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
+pub struct InstantiateMsg {
+    pub count: i32,
+}
+
+#[entry_point]
+pub fn instantiate(
+    deps: DepsMut,
+    _env: Env,
+    info: MessageInfo,
+    msg: InstantiateMsg,
+) -> Result<Response, ContractError> {
+    let state = State {
+        count: msg.count,
+        owner: info.sender.clone(),
+    };
+    set_contract_version(deps.storage, CONTRACT_NAME, CONTRACT_VERSION)?;
+    STATE.save(deps.storage, &state)?;
+
+    Ok(Response::new()
+        .add_attribute("method", "instantiate")
+        .add_attribute("owner", info.sender)
+        .add_attribute("count", msg.count.to_string()))
+}
+```
+
+## Solana Programs
+
+Solana's smart contracts (called "programs") are typically written in Rust, offering high performance but requiring careful management of accounts and data.
+
+Key characteristics:
+
+- Account-based model
+- Explicit data ownership
+- High performance
+- Complex account management
+
+Example Solana program:
+```rust
+use solana_program::{
+    account_info::AccountInfo,
+    entrypoint,
+    entrypoint::ProgramResult,
+    pubkey::Pubkey,
+};
+
+entrypoint!(process_instruction);
+
+pub fn process_instruction(
+    program_id: &Pubkey,
+    accounts: &[AccountInfo],
+    instruction_data: &[u8],
+) -> ProgramResult {
+    // Solana programs explicitly manage accounts
+    let accounts_iter = &mut accounts.iter();
+    let account = next_account_info(accounts_iter)?;
+    
+    // Program logic here
+    
+    Ok(())
+}
+```
+
+## Bitcoin Script
+
+While limited compared to modern smart contract platforms, Bitcoin Script was the first blockchain programming language. It uses a stack-based approach for transaction validation.
+
+Key features:
+
+- Stack-based execution
+- Limited instruction set
+- No loops or complex control flow
+- Focus on transaction validation
+
+Example Bitcoin Script:
+```
+OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+```
+
+## Security Considerations
+
+Each language presents unique security challenges:
+
+Solidity:
+
+- Reentrancy attacks
+- Access control issues
+- Integer overflow (pre-0.8.0)
+- Gas optimization risks
+
+Move:
+
+- Resource handling complexity
+- Formal verification needs
+- Platform-specific quirks
+- Module linking security
+
+CosmWasm:
+
+- Cross-chain vulnerabilities
+- State management complexity
+- Message handling security
+- Contract upgradeability
+
+Solana:
+
+- Account validation
+- Data race conditions
+- Cross-program invasion
+- Resource exhaustion
+
+## Future Trends
+
+Smart contract languages continue to evolve:
+
+- Zero-knowledge support
+- Formal verification tools
+- Cross-chain compatibility
+- Advanced type systems
+
+The field remains dynamic, with new languages and features emerging as blockchain technology matures and new use cases develop.

@@ -1,6 +1,223 @@
-# MEV
+# Maximal Extractable Value (MEV)
+
+## Introduction
+
+Maximal Extractable Value (MEV) represents one of the most fascinating and complex phenomena in blockchain systems. Originally called "Miner Extractable Value," the term has evolved to "Maximal" as extraction techniques have expanded beyond just miners. At its core, MEV emerges from the ability to reorder, insert, or censor transactions within a block for profit.
+
+Think of a blockchain as a series of auctions where the auctioneer (block producer) can not only decide which bids to accept but also their order. This power creates opportunities for profit that don't exist in traditional markets.
+
+## Understanding MEV
+
+### The Mechanics of MEV
+
+When users submit transactions to a blockchain network, they enter a temporary holding area called the mempool. Block producers can then:
+
+- Choose which transactions to include
+- Determine the order of transactions
+- Insert their own transactions
+- Create custom transactions in response to user activity
+
+This control creates several profit opportunities:
+
+1. Arbitrage
+
+   - Spotting price differences across DEXs
+   - Exploiting temporary market inefficiencies
+   - Capturing price movements from large trades
+
+2. Liquidations
+
+   - Competing to liquidate undercollateralized positions
+   - Racing to claim liquidation rewards
+   - Front-running other liquidators
+
+3. Sandwich Attacks
+
+   - Placing trades before and after a large swap
+   - Exploiting price impacts for profit
+   - Extracting value from user slippage tolerance
+
+## MEV Extract Methods
+
+### Searchers and Builders
+
+The MEV ecosystem has evolved into specialized roles:
+
+Searchers:
+
+- Develop algorithms to identify MEV opportunities
+- Create optimal transaction bundles
+- Bid for block space through builders
+
+Builders:
+
+- Aggregate transaction bundles from searchers
+- Construct optimal blocks
+- Compete to have their blocks chosen by validators
+
+### MEV-Boost
+
+MEV-Boost represents a crucial development in MEV extraction, separating block building from block validation:
+
+```plaintext
+User Transactions → Searchers → Builders → Relays → Validators
+```
+
+This separation aims to:
+
+- Increase competition among builders
+- Improve block construction efficiency
+- Distribute MEV more evenly
 
 ## Proposer Builder Separation (PBS)
 
-## Multiple Concurrent Leaders
-https://x.com/aeyakovenko/status/1810222589991583922
+PBS represents the next evolution in MEV management, aiming to institutionalize the separation of block building and proposal.
+
+### Core Concepts
+
+PBS divides block production into three distinct roles:
+
+1. Proposers (Validators)
+
+   - Select the most valuable block
+   - Earn fees from block proposals
+   - Don't need powerful hardware
+
+2. Builders
+
+   - Construct optimal blocks
+   - Compete through bid prices
+   - Require specialized infrastructure
+
+3. Relays
+
+   - Connect builders and proposers
+   - Verify block validity
+   - Ensure fair competition
+
+### Technical Implementation
+
+PBS requires several key components:
+
+1. Builder API
+```solidity
+interface IBuilder {
+    function submitBundle(
+        bytes[] calldata transactions,
+        uint256 bid
+    ) external returns (bytes32 bundleHash);
+}
+```
+
+2. Relay Protocol
+```solidity
+interface IRelay {
+    function submitBlock(
+        bytes[] calldata transactions,
+        bytes32 parentHash,
+        uint256 bid
+    ) external returns (bool success);
+}
+```
+
+## Multiple Concurrent Leaders (MCL)
+
+MCL represents a novel approach to MEV that allows multiple validators to propose blocks simultaneously.
+
+### Design Goals
+
+MCL aims to:
+
+- Reduce MEV extraction opportunities
+- Increase network throughput
+- Improve censorship resistance
+
+### Technical Challenges
+
+Implementing MCL requires solving several complex problems:
+
+1. Leader Selection
+   - Determining concurrent proposers
+   - Managing overlapping proposals
+   - Resolving conflicts
+
+2. Block Merging
+   - Combining parallel proposals
+   - Handling transaction conflicts
+   - Ensuring deterministic outcomes
+
+## MEV Protection Strategies
+
+### For Users
+
+Users can protect themselves from MEV through several strategies:
+
+1. Commitment Schemes
+```solidity
+// Example of a commit-reveal scheme
+contract CommitReveal {
+    mapping(bytes32 => bool) public commits;
+    
+    function commit(bytes32 commitHash) external {
+        commits[commitHash] = true;
+    }
+    
+    function reveal(bytes32 secret, uint256 value) external {
+        require(commits[keccak256(abi.encodePacked(secret, value))]);
+        // Execute trade with committed value
+    }
+}
+```
+
+2. Intent-Based Trading
+   - Expressing desired outcomes rather than specific paths
+   - Using specialized intent protocols
+   - Allowing builders to optimize execution
+
+### For Protocols
+
+Protocols can implement MEV-resistant designs:
+
+1. Batch Auctions
+   - Aggregating trades into discrete batches
+   - Using uniform clearing prices
+   - Preventing front-running
+
+2. Time-Weighted Average Prices (TWAP)
+   - Spreading execution over time
+   - Reducing manipulation opportunities
+   - Improving price stability
+
+## Future of MEV
+
+### Emerging Solutions
+
+Several promising approaches are being developed:
+
+1. Zero-Knowledge MEV
+   - Privacy-preserving order flow
+   - Encrypted mempool designs
+   - Confidential transaction ordering
+
+2. Fair Ordering Services
+   - Decentralized sequencing
+   - Verifiable delay functions
+   - Random beacon systems
+
+### Regulatory Considerations
+
+The MEV landscape faces increasing scrutiny:
+
+1. Market Manipulation
+   - Sandwich attack legality
+   - Front-running regulations
+   - Fair market requirements
+
+2. User Protection
+   - Disclosure requirements
+   - Best execution standards
+   - Consumer protection rules
+
+## Conclusion
+
+MEV represents a fundamental challenge in blockchain design, sitting at the intersection of mechanism design, game theory, and market structure. While it cannot be eliminated entirely, continued innovation in areas like PBS and MCL promises to make MEV extraction more efficient and equitable. Understanding MEV is crucial for anyone building or participating in blockchain systems, as it affects everything from protocol design to trading strategies.

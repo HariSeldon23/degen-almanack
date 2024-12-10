@@ -1,4 +1,5 @@
-# Cryptography: Building Blocks of Digital Trust
+# Cryptography
+**Building Blocks of Digital Trust**
 
 Imagine trying to have a private conversation in a crowded room where everyone can hear you. Or proving you own something without showing your ID. These real-world challenges mirror the problems cryptography solves in the digital world. Before we can understand how cryptocurrencies work, we need to understand the cryptographic tools that make them possible.
 

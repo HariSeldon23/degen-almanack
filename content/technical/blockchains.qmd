@@ -1,370 +1,278 @@
-# Blockchains
-We would prefer to use the term Decentralized Incentive Network instead of blockchain. But we also want to align on common nomenclature within the industry, so we'll stick with Blockchain for now.
+# Blockchain Technology
 
-The point of blockchains:
+## Introduction
 
-* Censorship resistance
-* Deterministic State Transition (Mempool creates interesting nuances and complexity here)
-* Credible neutrality
-* Trustless coordination at scale
-* Asset digitization and ownership
+Blockchain technology represents one of the most significant innovations in computer science since the internet itself. At its core, it solves a fundamental problem in digital systems: how to create absolute certainty about events and ownership without requiring trust in any central authority. This achievement opens up entirely new possibilities for human coordination and value exchange.
 
-Censorship resistance is indeed crucial - it enables truly permissionless systems where no entity can prevent valid transactions. However, there are several other compelling candidates for blockchain's primary purpose:
+## Fundamental Concepts
 
-One strong contender is deterministic state transition. Think about how traditional databases or financial systems might have ambiguity about the exact sequence or timing of transactions, especially across different locations or institutions. Blockchain provides absolute clarity about state changes - there's no ambiguity about which transaction came first or what the exact state was at any given moment. This property enables complex financial systems and smart contracts to operate with complete predictability.
+### The Digital Trust Problem
 
-Another fundamental purpose could be creating credible neutrality in computational systems. This goes beyond just censorship resistance - it's about creating systems where the rules are explicit, unchangeable without consensus, and apply equally to all participants. Traditional systems often have hidden biases or special privileges for certain users, while blockchain systems enforce their rules uniformly through code.
+Before blockchain, digital systems relied entirely on trusted intermediaries to maintain authoritative records. Your bank confirms your account balance, social media companies maintain your posts, and email providers manage your messages. This centralization creates vulnerabilities, requires faith in institutions, and imposes artificial limitations on digital interactions.
 
-We could also argue that the primary purpose is enabling trustless coordination at scale. Before blockchain, coordinating economic activity among untrusting parties required trusted intermediaries like banks or governments. Blockchain enables direct peer-to-peer coordination without these intermediaries, potentially reducing costs and increasing efficiency.
+### The Blockchain Solution
 
-Asset digitization and ownership might be another contender. Blockchain enables digital scarcity and verifiable ownership in ways that weren't possible before. This property enables everything from cryptocurrencies to NFTs to tokenized real-world assets.
+Blockchain technology introduces a radical alternative: a system where records are maintained simultaneously by thousands of computers worldwide, with sophisticated cryptographic mechanisms ensuring these records remain consistent, immutable, and accessible. When someone wants to add new information - whether it's a cryptocurrency transaction, smart contract execution, or any other digital event - this network of computers works together to verify, record, and protect that information.
 
-We won't be taking any ideological approach to the point of blockchains but rather applying scores to DIN's and then comparing that to how the market values them.
+## Core Properties
 
-A decentralized incentive network with state consensus 
+### 1. Immutability
 
-I've tried to simplify our definition as much as possible and even still it's verbose. Read that sentence to 99% of the world and I'll they'll give you a quizzical look and move onto the section about meme coins. There's a lesson there. A lesson the technical luminaries in this space ignore at their peril. Accessibility matters. 
+Once information is recorded on a blockchain, it becomes practically impossible to change. This isn't just a rule - it's a mathematical certainty based on cryptographic principles. Each block contains a hash of the previous block, creating a chain where altering any historical record would require simultaneously changing all subsequent blocks on thousands of computers.
 
-Let's break down each component of our definition.
+### 2. Transparency
 
-Decentralized. 
-This is how many Nodes participate. Centralized means 1. Therefore anything more than 1 is decentralized. 
+Every transaction and state change is visible to all participants. While the actors involved might be pseudonymous, their actions are public and verifiable. This creates unprecedented accountability in digital systems and enables new forms of coordination and trust.
 
-Network. 
-This loosely means the participants computers/machines communicate via a communication method. 
+### 3. Decentralization
 
-State Consensus.
-The network will record state and all nodes will agree about the state via consensus.
-
-We don't need to worry too much about consensus yet, but you just need to know that the nodes must agree on the state. For example if Bob sends Alice 10 BTC. Everyone on the network must come to an agreement that Bob did indeed send Alice 10 BTC. Another important characteristic is that even if everyone agrees today, in the future that can't be disputed or changed. This is another important category called censorship resistance. We'll get to it. 
-
-Dependent Networks
-
-A sovereign chain can be defined as a network that maintains complete independence in its settlement process, requiring no external chain to validate or guarantee its state transitions. This independence is fundamental to the concept of sovereignty in blockchain networks. 
-
-This section should start discussing why the need arose for dependent networks. Specifically Ethereum struggling with scale. Due to the trilemna:
-decentralization
-security
-scalability
-
-Let's talk about scaling strategies
-monolithic
-Bigger blocks
-Faster blocks
-Higher minimum requirements for nodes
-Consensus optimizations
-modular
-Execution - The current crop of L2's
-Data availability - Storing and accessing blockchain data Celestia
-Consensus - Agreeing on the state of the network 
-Settlement - Finalizing transactions and providing security guarantees. Ethereum and Bitcoin in the current Layer craze
-
-## Sovereign Networks
-Pure Value Networks
-Pure value networks stick to the fundamental purpose of moving and storing value, avoiding the additional complexity that comes with being a platform for applications or other services.
-
-What makes these networks "pure value" is what they don't include:
-They don't support complex smart contracts
-They don't host decentralized applications
-They don't provide programmable functionality beyond basic value transfer
-They don't serve as platforms for other tokens or applications
-
-Application Chains
-Application Chains represent networks that go beyond pure value transfer to support various types of applications. They're divided into three main categories: Hubs, Specialized, and Generalized chains.
-
-Hub Application Chains serve as central connection points in the blockchain ecosystem. 
-
-Specialized Application Chains focus on specific use cases or industries. 
-
-Generalized Application Chains aim to support a wide range of applications but differ from hubs in that they're not necessarily trying to be central connection points. 
-
-The key distinction between these categories lies in their approach to applications:
-
-- Hubs prioritize becoming central platforms that other networks depend on
-- Specialized chains optimize everything for specific use cases
-- Generalized chains provide broad functionality but focus on being self-contained ecosystems
-
-## Layer 2's
-We break these down into:
-
-* Rollups
-    * Optimistic
-    * ZK 
-* Validiums
-* Plasma
-* Sidechains
-
-So Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling. 
-
-So we need to talk about the theory of Layers in Blockchain
-
-That's why L2's became a major part of the roadmap. How does the scalability limitation affect the network. Congestion and high gas fee's. So people don't interact on the chain and it hits a ceiling. So logically we should start any discussion with transaction fee's, as that's the direct result of the scalability failure and the main reason users use L2's. Besides yield opportunities.
-
-So we should first consider the Fee Markets on Ethereum and Bitcoin which are the two major chains looking to scale with L2's. 
-There is a lot of debate and a lot of misinformation around this topic. 
-
-Dependent networks can really be divided into chains:
-External DIN required to validate state transitions
-External DIN required to guarantee state transitions
-
-We'll define a framework for how we define a Dependent Network. 
-There are few things we look at, in terms of priority:
-
-* censorship resistance. Polygon zkEVM sequencer can censure, but you can go through the contract directly on Ethereum theoretically if censorship occurs. Same thing for Arbitrum. Although this is a very weak guarantee due to the complexity for regular users. For Stacks, it's more censorship resistant that the other two. Also if I were to interact directly with the smart contract on Ethereum, that makes the L2's pointless. Why do I need them if not to deal with congestion and high gas. 
-dispute resolution. I believe all chains need to hard fork. Potentially not Movement due to Move's resource model. None of the chains will automatically hard fork if a dispute is found. 
-* settlement. So the base chain must validate and guarantee state transitions on the dependent chain. This is kinda stupid. It's guaranteeing the state transitions but makes no attempt to resolve things like censorship resistance. 
-* finality of settlement. Optimistic 7 days, zk 30 minutes, Stacks 16 hours
-* economic security model inheritance - this is actually pointless as it just means the state transitions match the rules. Nothing about censorship resistance. 
-
-So my qualification of dependent networks means that they must inherit the censorship resistance of the base chain, settlement must be validated and guaranteed by the base chain, dispute resolution must be automatic and/or decentralized. else the chain can just fork. 
-
-Settlement Types
-In order of strength
-
-* Cryptographically enforced settlement
-* Validity proofs
-* Fraud proof systems
-* Checkpoint systems
-
-## Consensus Mechanisms
-Consensus Mechanisms
-All DIN's have a consensus mechanism
-we have the consensus mechanisms. These can be divided into the following broad categories:
-
-* Proof based mechanisms. Mainly Proof of Work and Proof of Stake
-* Byzantine Fault Tolerance (BFT) Mechanisms. Tendermint
-* Voting Based Mechanisms, Ripple and Stellar
-* Directed Acrylic Graph based mechanisms
-* Hybrid. PoS + BFT is used by Polkadot and Cosmos
-* Novel Mechanisms
-
-Need to talk about finality here about probabilistic vs deterministic. Also focus on Single Slot Finality
+No single entity controls the system. This distribution of power means that:
+- The network continues operating even if some participants fail
+- No single entity can unilaterally change the rules
+- Censorship becomes extremely difficult
+- Trust requirements are minimized
 
 ## Application Models
-Each application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.
 
-We classify Application Models as:
+The way blockchains handle state and computation fundamentally defines their capabilities and limitations. Different application models represent distinct approaches to managing blockchain data and computation.
 
-* UTXO also includes Cardano's extened UTXO, Kaspa also falls into this
-* Account 
-    * Pure EVM Ethereum, Polygon, Avalanche, TRON et al
-    * Specialized XRP and Stellar 
-* Sharded account model Near falls into this. 
-* Object Sui
-* Resource model Aptos and Movement
-* Capability Solana
-* Cell model TON
-* Actor Based (ICP and CosmWasm
+### UTXO Model (Unspent Transaction Output)
 
+Bitcoin pioneered the UTXO model, which treats the blockchain like a ledger of unspent coins. Similar to physical cash, when you spend a Bitcoin UTXO, you consume it entirely and create new UTXOs as change.
 
-### UTXO
-The UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.
+Key characteristics:
+- Natural parallelization since each UTXO can only be spent once
+- Simple verification process
+- Limited programmability
+- Strong privacy properties
+- Excellent scalability potential
 
-**Key Characteristics:**
-
-* State Management: Stateless, transaction-oriented
-* Parallelization: Natural parallel validation
-* Asset Representation: Native representation of tokens
-* Composability: Limited without extensions
-* Safety Guarantees: High through explicit ownership
+Implementation considerations:
+- Complex for smart contracts
+- Requires specialized development approaches
+- Better suited for simple value transfer
+- Enables efficient light clients
 
 ### Account Model
-Accounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA's, they only maintain state of the network token and not ERC20's. 
 
-**Key Characteristics:**
+Ethereum popularized the account model, which works more like a traditional bank account with persistent state. Each address maintains its own state, including:
+- Balance
+- Transaction nonce
+- Smart contract code (if applicable)
+- Contract storage
 
-* State Management: Stateful, account-oriented
-* Parallelization: Challenging due to state dependencies
-* Asset Representation: Contract-based tokens
-* Composability: High through contract interactions
-* Safety Guarantees: Varies by implementation
+Advantages:
+- Intuitive for users and developers
+- Enables complex smart contracts
+- Simplifies application development
+- Natural fit for tokens and digital assets
 
-### Object Model
-Objects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.
-
-**Key Characteristics:**
-
-* State Management: Object-oriented
-* Parallelization: Natural through object independence
-* Asset Representation: Native objects
-* Composability: Through object references
-* Safety Guarantees: Object-level ownership
+Challenges:
+- More difficult to parallelize
+- Higher state growth
+- Potential privacy concerns
+- More complex to scale
 
 ### Resource Model
 
-Resources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.
+The resource model, introduced by systems like Move, treats digital assets as unique resources that can only exist in one place at a time. This combines UTXO's safety with account model programmability.
 
-**Key Characteristics:**
+Key features:
+- Linear types ensure resources can't be copied or destroyed
+- Natural representation of digital assets
+- Built-in protection against common vulnerabilities
+- Efficient parallel execution
 
-* State Management: Resource-oriented
-* Parallelization: Possible through resource independence
-* Asset Representation: Native resources
-* Composability: Through resource combination
-* Safety Guarantees: Very high through linear types
+Implementation details:
+- Requires specialized programming language support
+- Different development paradigm
+- Strong safety guarantees
+- Complex tooling requirements
 
-### Capability Model
-Capability Model
-Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.
+### Object Model
 
-**Key Characteristics:**
+Object-oriented blockchain models treat each piece of state as a distinct object that can be owned and modified independently.
 
-* State Management: Capability-based
-* Parallelization: High through capability isolation
-* Asset Representation: Capability-protected resources
-* Composability: Through capability delegation
-* Safety Guarantees: High through access control
+Benefits:
+- Natural modeling of complex assets
+- Clear ownership semantics
+- Efficient parallel processing
+- Flexible programming model
 
-### Cell Model
-State is organized into cells that can be independently accessed and modified, enabling high parallelization.
+Considerations:
+- More complex state management
+- Different security considerations
+- Specialized development tools
+- Novel scaling approaches
 
-**Key Characteristics:**
+## Consensus Mechanisms
 
-* State Management: Cell-based
-* Parallelization: High through cell independence
-* Asset Representation: Cell-based
-* Composability: Through cell references
-* Safety Guarantees: Cell-level isolation
+Consensus mechanisms determine how blockchain networks agree on the current state and validate new transactions. Different approaches make varying tradeoffs between speed, security, and decentralization.
 
-### Actor Model
-Computation is organized around actors that can independently process messages, enabling natural parallelization.
+### Proof of Work (PoW)
 
-**Key Characteristics:**
+Bitcoin's revolutionary consensus mechanism requires participants (miners) to solve complex mathematical puzzles to add new blocks.
 
-* State Management: Actor-local state
-* Parallelization: Natural through actor independence
-* Asset Representation: Actor-managed
-* Composability: Through message passing
-* Safety Guarantees: Actor isolation
+Technical characteristics:
+- Based on SHA-256 or similar hash functions
+- Difficulty adjusts automatically
+- Natural fork resolution
+- High energy consumption
 
-| Application Model | Blockchains | Key Features |
-|------------------|-------------|--------------|
-| UTXO | Bitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM | - Natural parallelism<br>- Simple state model<br>- High security |
-| Account (Pure EVM) | Ethereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare | - Rich programmability<br>- High composability<br>- Standard tooling |
-| Account (Specialized) | XRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent | - Custom account models<br>- Specific use-case optimization<br>- Modified state management |
-| Sharded Account | NEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony | - Parallel execution<br>- Cross-shard composition<br>- Scalable state |
-| Object | Sui | - Object-centric<br>- Natural parallelism<br>- Rich ownership model |
-| Resource | Aptos, Movement, Flow, Virtual Protocol | - Linear types<br>- Strong safety<br>- Asset-oriented |
-| Capability | Solana, Injective, SEI, Theta Network | - Fine-grained access<br>- High parallelism<br>- Explicit permissions |
-| Cell | TON, Everscale | - Cell-based storage<br>- High parallelism<br>- Flexible structure |
-| Actor | Internet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA | - Message-passing<br>- Natural isolation<br>- Independent processing |
-| Unknown | Filecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin | Still researching these |
+Security properties:
+- Sybil resistance through real-world resource commitment
+- Historical security track record
+- Clear incentive alignment
+- Objective leader selection
 
-## Communication Protocols
-We have
+### Proof of Stake (PoS)
 
-* IBC (Inter-Blockchain Communication) - Cosmos
-* XCMP (Cross-Chain Message Passing) - Polkadot
-* CCTP (Cross-Chain Transfer Protocol) by Circl
-* CCIP (Cross-Chain Interoperability) by Chainlink
-* Warp Messaging for Avalanche
-* IMP (Interchain Messaging Protocol)
+Modern networks like Ethereum use proof of stake, where validators must lock up (stake) tokens to participate in consensus.
 
-We can then further classify these standard by the following properties:
-* Security Model
-* Centralized vs Decentralized
-* Message Scope (General (IBC,CCIP, Hyperlane) vs Specialized (Circle's CCTP and Warp))
-* Open vs Close networks 
-* Message Verification Method
+Key features:
+- Energy efficient
+- Economic security model
+- Complex slashing conditions
+- Validator selection algorithms
 
+Implementation challenges:
+- Nothing-at-stake problem
+- Long-range attack considerations
+- Complex incentive design
+- Stake concentration risks
 
-## Fee Markets
-We break down fee markets into:
+### Practical Byzantine Fault Tolerance (PBFT)
 
-* Block Space Markets
-* Resources Markets
+Some networks use PBFT-style consensus where a known set of validators cooperate to agree on transaction ordering.
 
-### Block Space Markets
-These are the most fundamental type. Users are paying for space in the next block, regardless of what they're doing with that space. It only considers the price of inclusion while respecting the limits of the network.
+Advantages:
+- High performance
+- Quick finality
+- Low resource requirements
+- Suitable for permissioned networks
 
-### Resource Markets
-These evolved with the advent of Ethereum as blockchains became more complex. We break these down into:
+Limitations:
+- Less decentralized
+- Higher communication overhead
+- Validator set management
+- Scale limitations
 
-* Compute
-* Data Availability
-* Storage
-* Hybrid
+### Hybrid Mechanisms
 
-#### Compute Markets
-Transaction fee's sometimes called Gas is what you pay to execute a smart contract on a blockchain. On some networks, like Ethereum, there is an execution limit on how much computational work can be done in a block. This parameter directly impacts the computational resources required to run a node. 
+Many modern networks combine different consensus approaches:
 
-Nodes can propose a gas limit
+Variations include:
+- PoS with PBFT finality
+- PoW for validator selection
+- Layered consensus protocols
+- Federation-based systems
 
-So the attributes for Transactions Fee's are:
-Tips/Bribes
-How Transactoin fees are distributed. Burnt or redirected to Miners
-How fee's are calculated
-Base Fee
-Dynamic Fee (based on something like network congestion)
+### Advanced Consensus Innovations
 
-### Data Availability
-We will compare the mechanisms of the following major DA layers:
+The field continues to evolve with new approaches:
 
-* Ethereum
-* Celestia
-* Eignlayer DA
-* Avail
+Recent developments:
+- Proof of History for better ordering
+- Avalanche consensus protocols
+- Zero-knowledge consensus
+- Federated consensus models
 
-Ethereum uses dynamic blob fees based upon a target amount of blob space per block. 
+## Network Architecture
 
-Celestia charges by size. Celestia is designed to scale to handle increase demand with adding more validators
+### Sovereign Networks
 
-Avail also charges by size but also the type. 
+Independent blockchain networks that maintain their own security and consensus. Examples include Bitcoin and Ethereum.
 
-EigenDA creates a marketplace for data availability providers
+Characteristics:
+- Complete control over protocol
+- Independent security model
+- Native asset issuance
+- Full sovereignty over rules
 
-#### Storage
+### Settlement-Dependent Networks
 
-#### Hybrid
+Networks that rely on other blockchains (usually Ethereum) for ultimate security and settlement.
 
-#### Congestion Measurement Mechanisms
-**Ethereum**
+Types:
+- Optimistic rollups
+- Zero-knowledge rollups
+- State channels
+- Plasma chains
 
-* Measures block gas utilization vs 15M target
-* 12.5% base fee adjustment per block
-* Block size can flex up to 30M gas
+### Application-Specific Networks
 
-**Stellar**
+Blockchains designed for particular use cases:
+- High-speed trading
+- Privacy-focused transactions
+- Specialized applications
+- Industry-specific solutions
 
-* Uses surge pricing mechanism
-* Triggers when ledger capacity exceeds 50%
-* Fee increases proportionally to network load
+## Technical Innovations
 
-**Polkadot**
+### Scaling Solutions
 
-* Uses weight-based system
-* Measures block weight against target
-* Adjusts fees based on block fullness
+As networks grow, various scaling solutions have emerged:
 
-**Tezos**
+Layer 2:
+- State channels
+- Rollups
+- Sidechains
+- Plasma
 
-* Monitors block saturation
-* Adjusts fees based on recent block usage
-* Uses gas limits per operation type
+Sharding:
+- Data sharding
+- State sharding
+- Transaction sharding
+- Network sharding
 
-### Data Availability market
-Ethereum uses blobs, which are special containers for Layer 2 rollups to post their transaction data. They also disappear after a time. 
+### Privacy Enhancements
 
-Blob fee is calculated based on the target blob gas per block.
+Modern blockchains incorporate various privacy technologies:
 
-## Network Change Management
+Cryptographic tools:
+- Zero-knowledge proofs
+- Ring signatures
+- Confidential transactions
+- Homomorphic encryption
 
-### Overview
-Network change management in DINs encompasses the processes, mechanisms, and stakeholders involved in proposing, discussing, approving, and implementing network modifications. This framework covers everything from minor parameter adjustments to major protocol upgrades.
+Protocol-level privacy:
+- Network-level privacy
+- Transaction privacy
+- State privacy
+- Computational privacy
 
-**TODO** Design something that can simulate 
+### Cross-Chain Integration
 
-## Clients
+Technologies enabling different blockchains to interact:
 
-## Bridges
-Classification of Bridges. Need to include Lazy Bridges here
-https://blog.celestia.org/lazybridging/ 
+Bridge types:
+- Trusted bridges
+- Trustless bridges
+- Optimistic bridges
+- Zero-knowledge bridges
 
-* Trusted
-  * Custodial
-  * Multi Signature
-  * Federated
-* Trustless Bridges
-  * Light Client
-  * ZK
-    * Lazy Bridge
-  * Relay 
+Interoperability protocols:
+- Atomic swaps
+- Cross-chain messaging
+- Asset wrapping
+- State verification
+
+## Future Directions
+
+The blockchain field continues to evolve rapidly:
+
+Research areas:
+- Post-quantum cryptography
+- Formal verification
+- Zero-knowledge scaling
+- Privacy-preserving computation
+
+Emerging applications:
+- Decentralized AI
+- Real-world asset tokenization
+- Identity systems
+- Institutional adoption
+
+## Conclusion
+
+Blockchain technology represents a fundamental shift in how we can coordinate and verify digital activity. Its continued evolution enables new forms of human coordination and value exchange that were previously impossible. Understanding the technical foundations, from application models to consensus mechanisms, is crucial for building and working with these systems effectively.

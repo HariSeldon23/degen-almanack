@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2024-12-09">
 
-<title>Trollip’s Degen Almanack - Gas</title>
+<title>Trollip’s Degen Almanack - Modular Blockchain Architecture</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/technical/dapps.html" rel="next">
-<link href="../../content/technical/languages.html" rel="prev">
+<link href="../../content/technical/languages.html" rel="next">
+<link href="../../content/technical/blockchains.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/gas.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Gas</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/modular.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -327,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/technical/modular.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/technical/modular.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></span></a>
   </div>
 </li>
@@ -339,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/technical/gas.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/technical/gas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Gas</span></span></a>
   </div>
 </li>
@@ -432,43 +432,48 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#understanding-gas-first-principles" id="toc-understanding-gas-first-principles" class="nav-link" data-scroll-target="#understanding-gas-first-principles">Understanding Gas: First Principles</a>
+  <li><a href="#understanding-blockchain-functions" id="toc-understanding-blockchain-functions" class="nav-link" data-scroll-target="#understanding-blockchain-functions">Understanding Blockchain Functions</a>
   <ul class="collapse">
-  <li><a href="#what-is-gas" id="toc-what-is-gas" class="nav-link" data-scroll-target="#what-is-gas">What is Gas?</a></li>
-  <li><a href="#why-gas-exists" id="toc-why-gas-exists" class="nav-link" data-scroll-target="#why-gas-exists">Why Gas Exists</a></li>
+  <li><a href="#execution" id="toc-execution" class="nav-link" data-scroll-target="#execution">Execution</a></li>
+  <li><a href="#data-availability-da" id="toc-data-availability-da" class="nav-link" data-scroll-target="#data-availability-da">Data Availability (DA)</a></li>
+  <li><a href="#settlement" id="toc-settlement" class="nav-link" data-scroll-target="#settlement">Settlement</a></li>
+  <li><a href="#consensus" id="toc-consensus" class="nav-link" data-scroll-target="#consensus">Consensus</a></li>
   </ul></li>
-  <li><a href="#gas-mechanics" id="toc-gas-mechanics" class="nav-link" data-scroll-target="#gas-mechanics">Gas Mechanics</a>
+  <li><a href="#the-data-availability-layer" id="toc-the-data-availability-layer" class="nav-link" data-scroll-target="#the-data-availability-layer">The Data Availability Layer</a>
   <ul class="collapse">
-  <li><a href="#basic-components" id="toc-basic-components" class="nav-link" data-scroll-target="#basic-components">Basic Components</a></li>
-  <li><a href="#network-specific-implementations" id="toc-network-specific-implementations" class="nav-link" data-scroll-target="#network-specific-implementations">Network-Specific Implementations</a></li>
+  <li><a href="#celestias-approach" id="toc-celestias-approach" class="nav-link" data-scroll-target="#celestias-approach">Celestia’s Approach</a></li>
+  <li><a href="#ethereum-data-availability" id="toc-ethereum-data-availability" class="nav-link" data-scroll-target="#ethereum-data-availability">Ethereum Data Availability</a></li>
   </ul></li>
-  <li><a href="#users-guide-to-gas" id="toc-users-guide-to-gas" class="nav-link" data-scroll-target="#users-guide-to-gas">User’s Guide to Gas</a>
+  <li><a href="#the-execution-layer" id="toc-the-execution-layer" class="nav-link" data-scroll-target="#the-execution-layer">The Execution Layer</a>
   <ul class="collapse">
-  <li><a href="#practical-gas-management" id="toc-practical-gas-management" class="nav-link" data-scroll-target="#practical-gas-management">Practical Gas Management</a></li>
-  <li><a href="#advanced-gas-strategies" id="toc-advanced-gas-strategies" class="nav-link" data-scroll-target="#advanced-gas-strategies">Advanced Gas Strategies</a></li>
+  <li><a href="#optimistic-rollups" id="toc-optimistic-rollups" class="nav-link" data-scroll-target="#optimistic-rollups">Optimistic Rollups</a></li>
+  <li><a href="#zk-rollups" id="toc-zk-rollups" class="nav-link" data-scroll-target="#zk-rollups">ZK Rollups</a></li>
   </ul></li>
-  <li><a href="#economic-implications" id="toc-economic-implications" class="nav-link" data-scroll-target="#economic-implications">Economic Implications</a>
+  <li><a href="#the-settlement-layer" id="toc-the-settlement-layer" class="nav-link" data-scroll-target="#the-settlement-layer">The Settlement Layer</a>
   <ul class="collapse">
-  <li><a href="#fee-markets" id="toc-fee-markets" class="nav-link" data-scroll-target="#fee-markets">Fee Markets</a></li>
-  <li><a href="#market-impact" id="toc-market-impact" class="nav-link" data-scroll-target="#market-impact">Market Impact</a></li>
+  <li><a href="#ethereum-as-settlement" id="toc-ethereum-as-settlement" class="nav-link" data-scroll-target="#ethereum-as-settlement">Ethereum as Settlement</a></li>
+  <li><a href="#cross-layer-communication" id="toc-cross-layer-communication" class="nav-link" data-scroll-target="#cross-layer-communication">Cross-Layer Communication</a></li>
   </ul></li>
-  <li><a href="#future-of-gas" id="toc-future-of-gas" class="nav-link" data-scroll-target="#future-of-gas">Future of Gas</a>
+  <li><a href="#practical-implementations" id="toc-practical-implementations" class="nav-link" data-scroll-target="#practical-implementations">Practical Implementations</a>
   <ul class="collapse">
-  <li><a href="#evolving-models" id="toc-evolving-models" class="nav-link" data-scroll-target="#evolving-models">Evolving Models</a></li>
-  <li><a href="#implications-for-users" id="toc-implications-for-users" class="nav-link" data-scroll-target="#implications-for-users">Implications for Users</a></li>
+  <li><a href="#layer-2-scaling-solutions" id="toc-layer-2-scaling-solutions" class="nav-link" data-scroll-target="#layer-2-scaling-solutions">Layer 2 Scaling Solutions</a></li>
+  <li><a href="#data-availability-solutions" id="toc-data-availability-solutions" class="nav-link" data-scroll-target="#data-availability-solutions">Data Availability Solutions</a></li>
   </ul></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
-  <li><a href="#practical-exercises" id="toc-practical-exercises" class="nav-link" data-scroll-target="#practical-exercises">Practical Exercises</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#future-developments" id="toc-future-developments" class="nav-link" data-scroll-target="#future-developments">Future Developments</a>
+  <ul class="collapse">
+  <li><a href="#cross-domain-mev" id="toc-cross-domain-mev" class="nav-link" data-scroll-target="#cross-domain-mev">Cross-Domain MEV</a></li>
+  <li><a href="#interoperability" id="toc-interoperability" class="nav-link" data-scroll-target="#interoperability">Interoperability</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/gas.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Gas</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/modular.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Gas</h1>
+<h1 class="title">Modular Blockchain Architecture</h1>
 </div>
 
 
@@ -491,274 +496,218 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>The Fuel of Web3</strong></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Imagine trying to mail a package without paying for postage, or running a car without fuel. In Web3, gas serves a similar fundamental purpose - it’s the essential resource that powers all blockchain operations. But unlike postage or gasoline, blockchain gas represents something more complex: it’s a dynamic pricing mechanism that manages network resources, incentivizes operators, and helps secure the entire system.</p>
-<p>This chapter explores gas from multiple perspectives: as a practical tool users must understand, as a technical mechanism that enables network operation, and as an economic system that shapes Web3’s evolution.</p>
+<p>Traditional “monolithic” blockchains attempt to handle all functions - execution, settlement, consensus, and data availability - within a single system. While this approach works, it creates inherent scalability limitations as each node must process everything. Modular blockchain architecture takes a different approach by separating these functions into specialized layers, allowing each to scale independently.</p>
 </section>
-<section id="understanding-gas-first-principles" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-gas-first-principles">Understanding Gas: First Principles</h2>
-<section id="what-is-gas" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-gas">What is Gas?</h3>
-<p>At its most basic level, gas represents computational effort. Every operation on a blockchain - from simple token transfers to complex smart contract interactions - requires computational resources from the network. Gas measures these resources and assigns them a cost.</p>
-<p>Key characteristics of gas include:</p>
+<section id="understanding-blockchain-functions" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-blockchain-functions">Understanding Blockchain Functions</h2>
+<p>Before diving into modular designs, let’s understand the core functions that any blockchain system must provide:</p>
+<section id="execution" class="level3">
+<h3 class="anchored" data-anchor-id="execution">Execution</h3>
+<p>The computation of state transitions - processing transactions, running smart contracts, and updating account balances. This requires significant computational resources and historically has been the main bottleneck for scaling.</p>
+</section>
+<section id="data-availability-da" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability-da">Data Availability (DA)</h3>
+<p>The guarantee that the data needed to verify state transitions is publicly available. Without this guarantee, users can’t validate the chain’s state or detect fraud. This function requires significant storage resources and network bandwidth.</p>
+</section>
+<section id="settlement" class="level3">
+<h3 class="anchored" data-anchor-id="settlement">Settlement</h3>
+<p>The final determination of state transitions, including dispute resolution and finality guarantees. This layer provides the ultimate security and must be highly decentralized and resistant to manipulation.</p>
+</section>
+<section id="consensus" class="level3">
+<h3 class="anchored" data-anchor-id="consensus">Consensus</h3>
+<p>The mechanism by which nodes agree on the ordering of transactions and the current state. This must be both secure and efficient while maintaining decentralization.</p>
+</section>
+</section>
+<section id="the-data-availability-layer" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-availability-layer">The Data Availability Layer</h2>
+<section id="celestias-approach" class="level3">
+<h3 class="anchored" data-anchor-id="celestias-approach">Celestia’s Approach</h3>
+<p>Celestia introduced a groundbreaking approach by creating a blockchain focused solely on data availability. Its innovation lies in how it enables secure sampling of block data.</p>
+<p>Key features:</p>
 <ul>
-<li>It measures computational complexity</li>
-<li>It’s priced dynamically based on network demand</li>
-<li>It’s paid in the network’s native token</li>
-<li>Failed transactions still consume gas</li>
+<li>Data availability sampling (DAS)</li>
+<li>2D Reed-Solomon encoding</li>
+<li>Light client optimizations</li>
+<li>Namespace-based organization</li>
 </ul>
+<p>The core innovation is that clients can verify data availability without downloading entire blocks:</p>
+<pre class="plaintext"><code>Traditional verification: Download entire block (O(n) data)
+Celestia verification: Sample few random bytes (O(log n) data)</code></pre>
 </section>
-<section id="why-gas-exists" class="level3">
-<h3 class="anchored" data-anchor-id="why-gas-exists">Why Gas Exists</h3>
-<p>Gas serves three essential functions:</p>
-<ol type="1">
-<li><p>Resource Management</p>
+<section id="ethereum-data-availability" class="level3">
+<h3 class="anchored" data-anchor-id="ethereum-data-availability">Ethereum Data Availability</h3>
+<p>Ethereum’s approach to data availability has evolved with the introduction of Proto-Danksharding and blob transactions:</p>
+<p>Key characteristics:</p>
 <ul>
-<li>Prevents infinite loops and spam attacks</li>
-<li>Allocates network capacity fairly</li>
-<li>Creates predictable operational costs</li>
-</ul></li>
-<li><p>Economic Security</p>
-<ul>
-<li>Compensates network operators</li>
-<li>Makes attacks economically expensive</li>
-<li>Aligns incentives across participants</li>
-</ul></li>
-<li><p>Priority Mechanism</p>
-<ul>
-<li>Determines transaction ordering</li>
-<li>Manages network congestion</li>
-<li>Enables price discovery for blockspace</li>
-</ul></li>
-</ol>
-</section>
-</section>
-<section id="gas-mechanics" class="level2">
-<h2 class="anchored" data-anchor-id="gas-mechanics">Gas Mechanics</h2>
-<section id="basic-components" class="level3">
-<h3 class="anchored" data-anchor-id="basic-components">Basic Components</h3>
-<p>Every gas transaction involves several components:</p>
-<ol type="1">
-<li><p>Gas Limit</p>
-<ul>
-<li>Maximum computational units allowed</li>
-<li>Set by the user</li>
-<li>Must be sufficient for operation</li>
-<li>Excess is refunded</li>
-</ul></li>
-<li><p>Gas Price</p>
-<ul>
-<li>Cost per unit of gas</li>
-<li>Determined by network demand</li>
-<li>Usually measured in small denominations (e.g., Gwei)</li>
-<li>Can change rapidly</li>
-</ul></li>
-<li><p>Total Cost</p>
-<ul>
-<li>Gas Limit × Gas Price</li>
-<li>Paid upfront</li>
-<li>Maximum possible cost</li>
-<li>Actual cost may be lower</li>
-</ul></li>
-</ol>
-</section>
-<section id="network-specific-implementations" class="level3">
-<h3 class="anchored" data-anchor-id="network-specific-implementations">Network-Specific Implementations</h3>
-<p>Different networks handle gas in distinct ways:</p>
-<ol type="1">
-<li><p>Ethereum</p>
-<ul>
-<li>Base fee + priority fee model</li>
-<li>EIP-1559 burning mechanism</li>
-<li>Complex gas calculations for different operations</li>
-<li>Block gas limits</li>
-</ul></li>
-<li><p>Layer 2 Networks</p>
-<ul>
-<li>Usually cheaper than Layer 1</li>
-<li>May have different gas tokens</li>
-<li>Often bundle L1 and L2 costs</li>
-<li>Can have unique gas mechanics</li>
-</ul></li>
-<li><p>Alternative Networks</p>
-<ul>
-<li>May use different resource metrics</li>
-<li>Often optimize for specific use cases</li>
-<li>Can have fixed or variable costs</li>
-<li>Might separate different resource types</li>
-</ul></li>
-</ol>
+<li>Dedicated blob space in blocks</li>
+<li>Separate fee market for blob data</li>
+<li>KZG commitments for efficient verification</li>
+<li>Time-limited data availability</li>
+</ul>
+<p>The blob transaction format:</p>
+<pre class="solidity"><code>struct BlobTransaction {
+    // Regular transaction fields
+    address from;
+    address to;
+    uint256 value;
+    
+    // Blob-specific fields
+    bytes32[] commitments;    // KZG commitments
+    bytes[] blobs;            // The actual data
+    uint256 blobGasPrice;     // Separate fee for blob space
+}</code></pre>
 </section>
 </section>
-<section id="users-guide-to-gas" class="level2">
-<h2 class="anchored" data-anchor-id="users-guide-to-gas">User’s Guide to Gas</h2>
-<section id="practical-gas-management" class="level3">
-<h3 class="anchored" data-anchor-id="practical-gas-management">Practical Gas Management</h3>
-<ol type="1">
-<li><p>Setting Gas Limits</p>
+<section id="the-execution-layer" class="level2">
+<h2 class="anchored" data-anchor-id="the-execution-layer">The Execution Layer</h2>
+<section id="optimistic-rollups" class="level3">
+<h3 class="anchored" data-anchor-id="optimistic-rollups">Optimistic Rollups</h3>
+<p>Optimistic rollups execute transactions off-chain but post transaction data and state commitments to the settlement layer. They rely on fraud proofs to ensure correctness.</p>
+<p>Key components:</p>
 <ul>
-<li>Understanding operation costs</li>
-<li>Adding safety margins</li>
-<li>Avoiding out-of-gas errors</li>
-<li>Estimating complex transactions</li>
-</ul></li>
-<li><p>Choosing Gas Prices</p>
-<ul>
-<li>Reading gas price oracles</li>
-<li>Understanding urgency tradeoffs</li>
-<li>Timing transactions</li>
-<li>Using gas price alerts</li>
-</ul></li>
-<li><p>Common Pitfalls</p>
-<ul>
-<li>Insufficient gas limits</li>
-<li>Overpaying during congestion</li>
-<li>Failed transaction costs</li>
-<li>Network-specific quirks</li>
-</ul></li>
-</ol>
+<li>Sequencer for transaction ordering</li>
+<li>State commitment scheme</li>
+<li>Fraud proof system</li>
+<li>Challenge period</li>
+</ul>
+<p>Example of an optimistic transaction submission:</p>
+<pre class="solidity"><code>contract OptimisticRollup {
+    struct StateUpdate {
+        bytes32 stateRoot;
+        bytes32 parentStateRoot;
+        bytes transactions;
+        uint256 timestamp;
+    }
+    
+    function submitStateUpdate(StateUpdate calldata update) external {
+        require(verifyStateTransition(update), "Invalid state transition");
+        startChallengeWindow(update);
+    }
+}</code></pre>
 </section>
-<section id="advanced-gas-strategies" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-gas-strategies">Advanced Gas Strategies</h3>
-<ol type="1">
-<li><p>Gas Optimization</p>
+<section id="zk-rollups" class="level3">
+<h3 class="anchored" data-anchor-id="zk-rollups">ZK Rollups</h3>
+<p>ZK rollups use zero-knowledge proofs to validate state transitions, providing faster finality and stronger security guarantees than optimistic solutions.</p>
+<p>Core elements:</p>
 <ul>
-<li>Batching transactions</li>
-<li>Using gas tokens</li>
-<li>Timing non-urgent transactions</li>
-<li>Contract interaction efficiency</li>
-</ul></li>
-<li><p>Cross-Network Considerations</p>
-<ul>
-<li>Bridge gas costs</li>
-<li>Network selection</li>
-<li>Cost comparison tools</li>
-<li>Gas token economics</li>
-</ul></li>
-</ol>
-</section>
-</section>
-<section id="economic-implications" class="level2">
-<h2 class="anchored" data-anchor-id="economic-implications">Economic Implications</h2>
-<section id="fee-markets" class="level3">
-<h3 class="anchored" data-anchor-id="fee-markets">Fee Markets</h3>
-<p>Gas creates a market for blockspace with unique characteristics:</p>
-<ol type="1">
-<li><p>Supply Mechanics</p>
-<ul>
-<li>Fixed block space</li>
-<li>Regular block intervals</li>
-<li>Network-specific limits</li>
-<li>Upgrade considerations</li>
-</ul></li>
-<li><p>Demand Factors</p>
-<ul>
-<li>User activity levels</li>
-<li>Market conditions</li>
-<li>Bot competition</li>
-<li>MEV opportunities</li>
-</ul></li>
-</ol>
-</section>
-<section id="market-impact" class="level3">
-<h3 class="anchored" data-anchor-id="market-impact">Market Impact</h3>
-<p>Gas mechanics influence broader market behavior:</p>
-<ol type="1">
-<li><p>Layer 2 Adoption</p>
-<ul>
-<li>Cost comparison driving usage</li>
-<li>Network effects</li>
-<li>Migration patterns</li>
-<li>Protocol competition</li>
-</ul></li>
-<li><p>Protocol Design</p>
-<ul>
-<li>Gas optimization requirements</li>
-<li>Economic model constraints</li>
-<li>User experience trade-offs</li>
-<li>Scaling solutions</li>
-</ul></li>
-</ol>
-</section>
-</section>
-<section id="future-of-gas" class="level2">
-<h2 class="anchored" data-anchor-id="future-of-gas">Future of Gas</h2>
-<section id="evolving-models" class="level3">
-<h3 class="anchored" data-anchor-id="evolving-models">Evolving Models</h3>
-<p>Gas systems continue to develop:</p>
-<ol type="1">
-<li><p>Technical Innovations</p>
-<ul>
-<li>Account abstraction</li>
-<li>Meta-transactions</li>
-<li>Gas-less transactions</li>
-<li>Resource-specific pricing</li>
-</ul></li>
-<li><p>Economic Experiments</p>
-<ul>
-<li>Alternative fee mechanisms</li>
-<li>Novel burning models</li>
-<li>Hybrid systems</li>
-<li>Cross-chain standardization</li>
-</ul></li>
-</ol>
-</section>
-<section id="implications-for-users" class="level3">
-<h3 class="anchored" data-anchor-id="implications-for-users">Implications for Users</h3>
-<p>As gas systems evolve, users should:</p>
-<ul>
-<li>Stay informed about changes</li>
-<li>Adapt strategies accordingly</li>
-<li>Understand new opportunities</li>
-<li>Manage changing risks</li>
+<li>SNARK/STARK proof generation</li>
+<li>Efficient state encoding</li>
+<li>Proof verification circuit</li>
+<li>On-chain verification</li>
 </ul>
 </section>
 </section>
-<section id="key-takeaways" class="level2">
-<h2 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h2>
-<ol type="1">
-<li><p>Gas is fundamental to Web3:</p>
+<section id="the-settlement-layer" class="level2">
+<h2 class="anchored" data-anchor-id="the-settlement-layer">The Settlement Layer</h2>
+<section id="ethereum-as-settlement" class="level3">
+<h3 class="anchored" data-anchor-id="ethereum-as-settlement">Ethereum as Settlement</h3>
+<p>Ethereum has emerged as the primary settlement layer for most scaling solutions. Its role includes:</p>
 <ul>
-<li>Essential for network operation</li>
-<li>Drives economic security</li>
-<li>Shapes user behavior</li>
-</ul></li>
-<li><p>Understanding gas is crucial for:</p>
-<ul>
-<li>Effective network usage</li>
-<li>Cost management</li>
-<li>Strategy development</li>
-<li>Risk assessment</li>
-</ul></li>
-<li><p>Gas systems are evolving:</p>
-<ul>
-<li>New models emerging</li>
-<li>Greater efficiency possible</li>
-<li>More complexity likely</li>
-<li>Continued innovation certain</li>
-</ul></li>
-</ol>
-</section>
-<section id="practical-exercises" class="level2">
-<h2 class="anchored" data-anchor-id="practical-exercises">Practical Exercises</h2>
-<p>To reinforce your understanding:</p>
-<ol type="1">
-<li>Calculate total gas costs for different operations</li>
-<li>Compare gas prices across networks</li>
-<li>Optimize a multi-step transaction</li>
-<li>Analyze historical gas patterns</li>
-</ol>
-</section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
-<ul>
-<li>Gas optimization guides</li>
-<li>Network-specific documentation</li>
-<li>Economic analysis papers</li>
-<li>Technical proposals</li>
+<li>Storing state commitments</li>
+<li>Verifying proofs</li>
+<li>Resolving disputes</li>
+<li>Managing asset bridges</li>
 </ul>
+<p>Key settlement functions:</p>
+<pre class="solidity"><code>interface ISettlement {
+    // For optimistic rollups
+    function challengeStateTransition(
+        bytes32 stateRoot,
+        bytes proof
+    ) external;
+    
+    // For ZK rollups
+    function verifyStateTransition(
+        bytes32 newState,
+        bytes proof
+    ) external returns (bool);
+}</code></pre>
+</section>
+<section id="cross-layer-communication" class="level3">
+<h3 class="anchored" data-anchor-id="cross-layer-communication">Cross-Layer Communication</h3>
+<p>Communication between layers requires careful design:</p>
+<ul>
+<li>Message passing protocols</li>
+<li>State verification schemes</li>
+<li>Asset transfer bridges</li>
+<li>Finality guarantees</li>
+</ul>
+</section>
+</section>
+<section id="practical-implementations" class="level2">
+<h2 class="anchored" data-anchor-id="practical-implementations">Practical Implementations</h2>
+<section id="layer-2-scaling-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="layer-2-scaling-solutions">Layer 2 Scaling Solutions</h3>
+<p>Current production systems demonstrate different approaches to modular architecture:</p>
+<p>Optimistic solutions:</p>
+<ul>
+<li>Arbitrum: Advanced sequencing</li>
+<li>Optimism: EVM equivalence</li>
+<li>Base: Modified Optimism stack</li>
+</ul>
+<p>ZK solutions:</p>
+<ul>
+<li>zkSync: Custom VM</li>
+<li>StarkNet: Cairo VM</li>
+<li>Polygon zkEVM: EVM compatibility</li>
+</ul>
+</section>
+<section id="data-availability-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability-solutions">Data Availability Solutions</h3>
+<p>Multiple approaches to DA are emerging:</p>
+<ol type="1">
+<li>Celestia</li>
+</ol>
+<ul>
+<li>Dedicated DA chain</li>
+<li>Namespaced data organization</li>
+<li>Efficient sampling</li>
+</ul>
+<ol start="2" type="1">
+<li>EigenDA</li>
+</ol>
+<ul>
+<li>Distributed DA network</li>
+<li>Economic security model</li>
+<li>Restaking mechanics</li>
+</ul>
+<ol start="3" type="1">
+<li>Ethereum blobs</li>
+</ol>
+<ul>
+<li>Native DA solution</li>
+<li>Time-bounded availability</li>
+<li>Separate fee market</li>
+</ul>
+</section>
+</section>
+<section id="future-developments" class="level2">
+<h2 class="anchored" data-anchor-id="future-developments">Future Developments</h2>
+<section id="cross-domain-mev" class="level3">
+<h3 class="anchored" data-anchor-id="cross-domain-mev">Cross-Domain MEV</h3>
+<p>Modular architectures create new considerations for MEV:</p>
+<ul>
+<li>Cross-layer arbitrage</li>
+<li>Sequencer extractable value</li>
+<li>DA fee markets</li>
+</ul>
+</section>
+<section id="interoperability" class="level3">
+<h3 class="anchored" data-anchor-id="interoperability">Interoperability</h3>
+<p>Standardization efforts are emerging:</p>
+<ul>
+<li>Cross-layer messaging protocols</li>
+<li>Unified bridge standards</li>
+<li>Shared security models</li>
+</ul>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Modular blockchain architecture represents a fundamental shift in how we scale blockchain systems. By separating key functions into specialized layers, we can achieve greater scalability while maintaining security. The field continues to evolve rapidly, with new solutions and optimizations emerging regularly.</p>
+<p>The success of modular designs will likely determine the future of blockchain scalability, as they enable each layer to evolve and optimize independently while maintaining interoperability through standardized interfaces.</p>
 
 
 </section>
@@ -1153,13 +1102,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/technical/languages.html" class="pagination-link  aria-label=" &lt;span="" contract="" languages&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></span>
+      <a href="../../content/technical/blockchains.html" class="pagination-link  aria-label=" &lt;span="" technology&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Blockchain Technology</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/technical/dapps.html" class="pagination-link" aria-label="<span class='chapter-number'>22</span>&nbsp; <span class='chapter-title'>Decentralized Applications (dApps)</span>">
-        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Decentralized Applications (dApps)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/technical/languages.html" class="pagination-link" aria-label="<span class='chapter-number'>20</span>&nbsp; <span class='chapter-title'>Smart Contract Languages</span>">
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

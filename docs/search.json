@@ -1157,210 +1157,364 @@
   {
     "objectID": "content/technical/cryptography.html",
     "href": "content/technical/cryptography.html",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "",
     "text": "The Evolution of Digital Privacy\nThe history of cryptography is a journey from simple code substitutions to sophisticated mathematical systems. While ancient Romans used the Caesar cipher to shift letters in the alphabet, modern cryptography uses advanced mathematics to achieve what might seem impossible: proving things without revealing secrets.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#symmetric-cryptography-shared-secrets",
     "href": "content/technical/cryptography.html#symmetric-cryptography-shared-secrets",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "Symmetric Cryptography: Shared Secrets",
     "text": "Symmetric Cryptography: Shared Secrets\nLet’s start with the simplest form of modern cryptography. Symmetric cryptography is like having a special key that both locks and unlocks a message. If Alice wants to send Bob a secret message, they need to share this key beforehand.\nThe most widely used symmetric algorithm is AES (Advanced Encryption Standard). It’s incredibly fast and secure when used properly. However, it has one major challenge: how do Alice and Bob safely share the key in the first place? This is known as the key distribution problem.\nThis limitation led to one of the most important breakthroughs in cryptographic history.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#asymmetric-cryptography-the-public-key-revolution",
     "href": "content/technical/cryptography.html#asymmetric-cryptography-the-public-key-revolution",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "Asymmetric Cryptography: The Public Key Revolution",
     "text": "Asymmetric Cryptography: The Public Key Revolution\nIn 1976, Whitfield Diffie and Martin Hellman proposed something revolutionary: what if you could have two different but mathematically related keys? One to lock (encrypt) and another to unlock (decrypt)? This became known as public key cryptography.\nHere’s how it works:\n\nEvery person has two keys: public and private\nThe public key can be freely shared with anyone\nThe private key must be kept secret\nMessages encrypted with the public key can only be decrypted with the private key\nDigital signatures created with the private key can be verified by anyone with the public key\n\nThis elegant system solves multiple problems:\n\nSecure communication without pre-sharing keys\nDigital signatures that can’t be forged\nIdentity verification without revealing secrets\n\n\nThe Math Behind Public Keys\nWhile the mathematical details can be complex, the core idea relies on something called “trapdoor functions” - calculations that are easy to perform in one direction but extremely difficult to reverse. A common example is multiplication versus factoring: it’s easy to multiply two large prime numbers, but very difficult to factor their product back into the original primes.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#hash-functions-digital-fingerprints",
     "href": "content/technical/cryptography.html#hash-functions-digital-fingerprints",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "Hash Functions: Digital Fingerprints",
     "text": "Hash Functions: Digital Fingerprints\nHash functions are perhaps the most widely used cryptographic tools in Web3. A hash function takes any input (a file, a message, or even an entire blockchain) and produces a fixed-size output that’s like a unique digital fingerprint.\nGood cryptographic hash functions have several crucial properties:\n\nDeterministic: The same input always produces the same output\nFast to compute: You can quickly calculate the hash of any input\nPre-image resistant: Given a hash, it’s infeasible to find the original input\nCollision resistant: It’s extremely unlikely to find two different inputs that produce the same hash\n\nIn blockchain systems, hash functions serve many purposes:\n\nCreating unique block identifiers\nLinking blocks together in a chain\nGenerating addresses from public keys\nSecuring the mining/validation process",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#zero-knowledge-proofs-proving-without-revealing",
     "href": "content/technical/cryptography.html#zero-knowledge-proofs-proving-without-revealing",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "Zero-Knowledge Proofs: Proving Without Revealing",
     "text": "Zero-Knowledge Proofs: Proving Without Revealing\nOne of the most powerful and counterintuitive concepts in modern cryptography is the zero-knowledge proof. Imagine proving you know your password without actually typing it, or proving you’re over 21 without revealing your birthday.\nZero-knowledge proofs come in two main varieties:\n\nInteractive Zero-Knowledge Proofs\nThese involve back-and-forth communication between the prover and verifier. Think of it like proving you know the solution to a Sudoku puzzle by answering specific questions about individual cells without showing the entire solution.\n\n\nNon-Interactive Zero-Knowledge Proofs (ZK-SNARKs and ZK-STARKs)\nThese more advanced systems can create proofs that anyone can verify without interaction. They’re crucial for privacy-preserving blockchain applications but require significant computational resources.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#homomorphic-encryption-computing-on-encrypted-data",
     "href": "content/technical/cryptography.html#homomorphic-encryption-computing-on-encrypted-data",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "Homomorphic Encryption: Computing on Encrypted Data",
     "text": "Homomorphic Encryption: Computing on Encrypted Data\nHomomorphic encryption represents the cutting edge of cryptographic research. It allows computations to be performed on encrypted data without decrypting it first. While currently too computationally expensive for many applications, it holds promise for future privacy-preserving blockchain systems.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#the-future-post-quantum-cryptography",
     "href": "content/technical/cryptography.html#the-future-post-quantum-cryptography",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "The Future: Post-Quantum Cryptography",
     "text": "The Future: Post-Quantum Cryptography\nLooking ahead, the development of quantum computers poses potential threats to current cryptographic systems, particularly public key cryptography. The field of post-quantum cryptography aims to develop new algorithms that remain secure even against quantum computers.\nKey areas of research include:\n\nLattice-based cryptography\nHash-based signatures\nMultivariate cryptography\nSupersingular isogeny cryptography",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/cryptography.html#practical-applications-in-web3",
     "href": "content/technical/cryptography.html#practical-applications-in-web3",
-    "title": "Cryptography: Building Blocks of Digital Trust",
+    "title": "Cryptography",
     "section": "Practical Applications in Web3",
     "text": "Practical Applications in Web3\nUnderstanding these cryptographic primitives helps explain how Web3 systems achieve their key properties:\n\nDigital Signatures enable non-custodial wallets and transaction authorization\nHash functions create tamper-evident records and link blocks together\nZero-knowledge proofs power privacy-preserving transactions\nPublic key cryptography enables secure communication and identity verification\n\nEach new Web3 innovation typically combines these basic tools in novel ways to solve specific problems. Understanding the tools helps you evaluate new protocols and anticipate their strengths and limitations.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography: Building Blocks of Digital Trust</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Cryptography</span>"
     ]
   },
   {
     "objectID": "content/technical/blockchains.html",
     "href": "content/technical/blockchains.html",
-    "title": "Blockchains",
+    "title": "Blockchain Technology",
     "section": "",
-    "text": "Sovereign Networks\nPure Value Networks Pure value networks stick to the fundamental purpose of moving and storing value, avoiding the additional complexity that comes with being a platform for applications or other services.\nWhat makes these networks “pure value” is what they don’t include: They don’t support complex smart contracts They don’t host decentralized applications They don’t provide programmable functionality beyond basic value transfer They don’t serve as platforms for other tokens or applications\nApplication Chains Application Chains represent networks that go beyond pure value transfer to support various types of applications. They’re divided into three main categories: Hubs, Specialized, and Generalized chains.\nHub Application Chains serve as central connection points in the blockchain ecosystem.\nSpecialized Application Chains focus on specific use cases or industries.\nGeneralized Application Chains aim to support a wide range of applications but differ from hubs in that they’re not necessarily trying to be central connection points.\nThe key distinction between these categories lies in their approach to applications:",
+    "text": "Introduction\nBlockchain technology represents one of the most significant innovations in computer science since the internet itself. At its core, it solves a fundamental problem in digital systems: how to create absolute certainty about events and ownership without requiring trust in any central authority. This achievement opens up entirely new possibilities for human coordination and value exchange.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#sovereign-networks",
-    "href": "content/technical/blockchains.html#sovereign-networks",
-    "title": "Blockchains",
-    "section": "",
-    "text": "Hubs prioritize becoming central platforms that other networks depend on\nSpecialized chains optimize everything for specific use cases\nGeneralized chains provide broad functionality but focus on being self-contained ecosystems",
+    "objectID": "content/technical/blockchains.html#fundamental-concepts",
+    "href": "content/technical/blockchains.html#fundamental-concepts",
+    "title": "Blockchain Technology",
+    "section": "Fundamental Concepts",
+    "text": "Fundamental Concepts\n\nThe Digital Trust Problem\nBefore blockchain, digital systems relied entirely on trusted intermediaries to maintain authoritative records. Your bank confirms your account balance, social media companies maintain your posts, and email providers manage your messages. This centralization creates vulnerabilities, requires faith in institutions, and imposes artificial limitations on digital interactions.\n\n\nThe Blockchain Solution\nBlockchain technology introduces a radical alternative: a system where records are maintained simultaneously by thousands of computers worldwide, with sophisticated cryptographic mechanisms ensuring these records remain consistent, immutable, and accessible. When someone wants to add new information - whether it’s a cryptocurrency transaction, smart contract execution, or any other digital event - this network of computers works together to verify, record, and protect that information.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#layer-2s",
-    "href": "content/technical/blockchains.html#layer-2s",
-    "title": "Blockchains",
-    "section": "Layer 2’s",
-    "text": "Layer 2’s\nWe break these down into:\n\nRollups\n\nOptimistic\nZK\n\nValidiums\nPlasma\nSidechains\n\nSo Ethereum has chosen decentralization and security. This means Ethereum is shit at scaling.\nSo we need to talk about the theory of Layers in Blockchain\nThat’s why L2’s became a major part of the roadmap. How does the scalability limitation affect the network. Congestion and high gas fee’s. So people don’t interact on the chain and it hits a ceiling. So logically we should start any discussion with transaction fee’s, as that’s the direct result of the scalability failure and the main reason users use L2’s. Besides yield opportunities.\nSo we should first consider the Fee Markets on Ethereum and Bitcoin which are the two major chains looking to scale with L2’s. There is a lot of debate and a lot of misinformation around this topic.\nDependent networks can really be divided into chains: External DIN required to validate state transitions External DIN required to guarantee state transitions\nWe’ll define a framework for how we define a Dependent Network. There are few things we look at, in terms of priority:\n\ncensorship resistance. Polygon zkEVM sequencer can censure, but you can go through the contract directly on Ethereum theoretically if censorship occurs. Same thing for Arbitrum. Although this is a very weak guarantee due to the complexity for regular users. For Stacks, it’s more censorship resistant that the other two. Also if I were to interact directly with the smart contract on Ethereum, that makes the L2’s pointless. Why do I need them if not to deal with congestion and high gas. dispute resolution. I believe all chains need to hard fork. Potentially not Movement due to Move’s resource model. None of the chains will automatically hard fork if a dispute is found.\nsettlement. So the base chain must validate and guarantee state transitions on the dependent chain. This is kinda stupid. It’s guaranteeing the state transitions but makes no attempt to resolve things like censorship resistance.\nfinality of settlement. Optimistic 7 days, zk 30 minutes, Stacks 16 hours\neconomic security model inheritance - this is actually pointless as it just means the state transitions match the rules. Nothing about censorship resistance.\n\nSo my qualification of dependent networks means that they must inherit the censorship resistance of the base chain, settlement must be validated and guaranteed by the base chain, dispute resolution must be automatic and/or decentralized. else the chain can just fork.\nSettlement Types In order of strength\n\nCryptographically enforced settlement\nValidity proofs\nFraud proof systems\nCheckpoint systems",
+    "objectID": "content/technical/blockchains.html#core-properties",
+    "href": "content/technical/blockchains.html#core-properties",
+    "title": "Blockchain Technology",
+    "section": "Core Properties",
+    "text": "Core Properties\n\n1. Immutability\nOnce information is recorded on a blockchain, it becomes practically impossible to change. This isn’t just a rule - it’s a mathematical certainty based on cryptographic principles. Each block contains a hash of the previous block, creating a chain where altering any historical record would require simultaneously changing all subsequent blocks on thousands of computers.\n\n\n2. Transparency\nEvery transaction and state change is visible to all participants. While the actors involved might be pseudonymous, their actions are public and verifiable. This creates unprecedented accountability in digital systems and enables new forms of coordination and trust.\n\n\n3. Decentralization\nNo single entity controls the system. This distribution of power means that: - The network continues operating even if some participants fail - No single entity can unilaterally change the rules - Censorship becomes extremely difficult - Trust requirements are minimized",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
-    ]
-  },
-  {
-    "objectID": "content/technical/blockchains.html#consensus-mechanisms",
-    "href": "content/technical/blockchains.html#consensus-mechanisms",
-    "title": "Blockchains",
-    "section": "Consensus Mechanisms",
-    "text": "Consensus Mechanisms\nConsensus Mechanisms All DIN’s have a consensus mechanism we have the consensus mechanisms. These can be divided into the following broad categories:\n\nProof based mechanisms. Mainly Proof of Work and Proof of Stake\nByzantine Fault Tolerance (BFT) Mechanisms. Tendermint\nVoting Based Mechanisms, Ripple and Stellar\nDirected Acrylic Graph based mechanisms\nHybrid. PoS + BFT is used by Polkadot and Cosmos\nNovel Mechanisms\n\nNeed to talk about finality here about probabilistic vs deterministic. Also focus on Single Slot Finality",
-    "crumbs": [
-      "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
     "objectID": "content/technical/blockchains.html#application-models",
     "href": "content/technical/blockchains.html#application-models",
-    "title": "Blockchains",
+    "title": "Blockchain Technology",
     "section": "Application Models",
-    "text": "Application Models\nEach application model represents a fundamental approach to how blockchains manage state, handle parallel execution, represent assets, enable composability, and provide safety guarantees.\nWe classify Application Models as:\n\nUTXO also includes Cardano’s extened UTXO, Kaspa also falls into this\nAccount\n\nPure EVM Ethereum, Polygon, Avalanche, TRON et al\nSpecialized XRP and Stellar\n\nSharded account model Near falls into this.\nObject Sui\nResource model Aptos and Movement\nCapability Solana\nCell model TON\nActor Based (ICP and CosmWasm\n\n\nUTXO\nThe UTXO model treats the ledger as a set of unspent outputs that can be consumed as inputs to create new outputs. This model inherently supports parallel transaction validation since each UTXO can only be spent once.\nKey Characteristics:\n\nState Management: Stateless, transaction-oriented\nParallelization: Natural parallel validation\nAsset Representation: Native representation of tokens\nComposability: Limited without extensions\nSafety Guarantees: High through explicit ownership\n\n\n\nAccount Model\nAccounts maintain state directly, with each account having properties like balance and nonce. This model enables rich programmability but can face challenges with parallelization. However if we look at EOA’s, they only maintain state of the network token and not ERC20’s.\nKey Characteristics:\n\nState Management: Stateful, account-oriented\nParallelization: Challenging due to state dependencies\nAsset Representation: Contract-based tokens\nComposability: High through contract interactions\nSafety Guarantees: Varies by implementation\n\n\n\nObject Model\nObjects are owned, independent state elements that can be transferred and modified. This enables parallel execution while maintaining rich programmability.\nKey Characteristics:\n\nState Management: Object-oriented\nParallelization: Natural through object independence\nAsset Representation: Native objects\nComposability: Through object references\nSafety Guarantees: Object-level ownership\n\n\n\nResource Model\nResources are linear types that cannot be copied or discarded, only moved between accounts. This provides strong safety guarantees for digital assets.\nKey Characteristics:\n\nState Management: Resource-oriented\nParallelization: Possible through resource independence\nAsset Representation: Native resources\nComposability: Through resource combination\nSafety Guarantees: Very high through linear types\n\n\n\nCapability Model\nCapability Model Access to resources is controlled through explicit capabilities, enabling fine-grained access control and parallel execution.\nKey Characteristics:\n\nState Management: Capability-based\nParallelization: High through capability isolation\nAsset Representation: Capability-protected resources\nComposability: Through capability delegation\nSafety Guarantees: High through access control\n\n\n\nCell Model\nState is organized into cells that can be independently accessed and modified, enabling high parallelization.\nKey Characteristics:\n\nState Management: Cell-based\nParallelization: High through cell independence\nAsset Representation: Cell-based\nComposability: Through cell references\nSafety Guarantees: Cell-level isolation\n\n\n\nActor Model\nComputation is organized around actors that can independently process messages, enabling natural parallelization.\nKey Characteristics:\n\nState Management: Actor-local state\nParallelization: Natural through actor independence\nAsset Representation: Actor-managed\nComposability: Through message passing\nSafety Guarantees: Actor isolation\n\n\n\n\n\n\n\n\n\nApplication Model\nBlockchains\nKey Features\n\n\n\n\nUTXO\nBitcoin, Cardano (eUTXO), Kaspa, Ergo, Bitcoin Cash, Litecoin, Zcash, Dogecoin, Monero, BEAM\n- Natural parallelism- Simple state model- High security\n\n\nAccount (Pure EVM)\nEthereum, Polygon, Avalanche C-Chain, BSC, TRON, Fantom, Arbitrum, Optimism, Mantle, WorldCoin, Gala, Flare\n- Rich programmability- High composability- Standard tooling\n\n\nAccount (Specialized)\nXRP, Stellar, Algorand, Stacks, Tezos, Hedera, VeChain, Quant, the Sandbox, StarkNet, Neo, BitTorrent\n- Custom account models- Specific use-case optimization- Modified state management\n\n\nSharded Account\nNEAR, Polkadot, Kusama, Elrond (MultiversX), Harmony\n- Parallel execution- Cross-shard composition- Scalable state\n\n\nObject\nSui\n- Object-centric- Natural parallelism- Rich ownership model\n\n\nResource\nAptos, Movement, Flow, Virtual Protocol\n- Linear types- Strong safety- Asset-oriented\n\n\nCapability\nSolana, Injective, SEI, Theta Network\n- Fine-grained access- High parallelism- Explicit permissions\n\n\nCell\nTON, Everscale\n- Cell-based storage- High parallelism- Flexible structure\n\n\nActor\nInternet Computer (ICP), CosmWasm chains (Osmosis, Celestia, Cosmos Hub), Fetch.ai, IOTA\n- Message-passing- Natural isolation- Independent processing\n\n\nUnknown\nFilecoin, Arweave, Bittensor, Mantra, Ondo, Kaia, Brett, Jasmycoin\nStill researching these",
+    "text": "Application Models\nThe way blockchains handle state and computation fundamentally defines their capabilities and limitations. Different application models represent distinct approaches to managing blockchain data and computation.\n\nUTXO Model (Unspent Transaction Output)\nBitcoin pioneered the UTXO model, which treats the blockchain like a ledger of unspent coins. Similar to physical cash, when you spend a Bitcoin UTXO, you consume it entirely and create new UTXOs as change.\nKey characteristics: - Natural parallelization since each UTXO can only be spent once - Simple verification process - Limited programmability - Strong privacy properties - Excellent scalability potential\nImplementation considerations: - Complex for smart contracts - Requires specialized development approaches - Better suited for simple value transfer - Enables efficient light clients\n\n\nAccount Model\nEthereum popularized the account model, which works more like a traditional bank account with persistent state. Each address maintains its own state, including: - Balance - Transaction nonce - Smart contract code (if applicable) - Contract storage\nAdvantages: - Intuitive for users and developers - Enables complex smart contracts - Simplifies application development - Natural fit for tokens and digital assets\nChallenges: - More difficult to parallelize - Higher state growth - Potential privacy concerns - More complex to scale\n\n\nResource Model\nThe resource model, introduced by systems like Move, treats digital assets as unique resources that can only exist in one place at a time. This combines UTXO’s safety with account model programmability.\nKey features: - Linear types ensure resources can’t be copied or destroyed - Natural representation of digital assets - Built-in protection against common vulnerabilities - Efficient parallel execution\nImplementation details: - Requires specialized programming language support - Different development paradigm - Strong safety guarantees - Complex tooling requirements\n\n\nObject Model\nObject-oriented blockchain models treat each piece of state as a distinct object that can be owned and modified independently.\nBenefits: - Natural modeling of complex assets - Clear ownership semantics - Efficient parallel processing - Flexible programming model\nConsiderations: - More complex state management - Different security considerations - Specialized development tools - Novel scaling approaches",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#communication-protocols",
-    "href": "content/technical/blockchains.html#communication-protocols",
-    "title": "Blockchains",
-    "section": "Communication Protocols",
-    "text": "Communication Protocols\nWe have\n\nIBC (Inter-Blockchain Communication) - Cosmos\nXCMP (Cross-Chain Message Passing) - Polkadot\nCCTP (Cross-Chain Transfer Protocol) by Circl\nCCIP (Cross-Chain Interoperability) by Chainlink\nWarp Messaging for Avalanche\nIMP (Interchain Messaging Protocol)\n\nWe can then further classify these standard by the following properties: * Security Model * Centralized vs Decentralized * Message Scope (General (IBC,CCIP, Hyperlane) vs Specialized (Circle’s CCTP and Warp)) * Open vs Close networks * Message Verification Method",
+    "objectID": "content/technical/blockchains.html#consensus-mechanisms",
+    "href": "content/technical/blockchains.html#consensus-mechanisms",
+    "title": "Blockchain Technology",
+    "section": "Consensus Mechanisms",
+    "text": "Consensus Mechanisms\nConsensus mechanisms determine how blockchain networks agree on the current state and validate new transactions. Different approaches make varying tradeoffs between speed, security, and decentralization.\n\nProof of Work (PoW)\nBitcoin’s revolutionary consensus mechanism requires participants (miners) to solve complex mathematical puzzles to add new blocks.\nTechnical characteristics: - Based on SHA-256 or similar hash functions - Difficulty adjusts automatically - Natural fork resolution - High energy consumption\nSecurity properties: - Sybil resistance through real-world resource commitment - Historical security track record - Clear incentive alignment - Objective leader selection\n\n\nProof of Stake (PoS)\nModern networks like Ethereum use proof of stake, where validators must lock up (stake) tokens to participate in consensus.\nKey features: - Energy efficient - Economic security model - Complex slashing conditions - Validator selection algorithms\nImplementation challenges: - Nothing-at-stake problem - Long-range attack considerations - Complex incentive design - Stake concentration risks\n\n\nPractical Byzantine Fault Tolerance (PBFT)\nSome networks use PBFT-style consensus where a known set of validators cooperate to agree on transaction ordering.\nAdvantages: - High performance - Quick finality - Low resource requirements - Suitable for permissioned networks\nLimitations: - Less decentralized - Higher communication overhead - Validator set management - Scale limitations\n\n\nHybrid Mechanisms\nMany modern networks combine different consensus approaches:\nVariations include: - PoS with PBFT finality - PoW for validator selection - Layered consensus protocols - Federation-based systems\n\n\nAdvanced Consensus Innovations\nThe field continues to evolve with new approaches:\nRecent developments: - Proof of History for better ordering - Avalanche consensus protocols - Zero-knowledge consensus - Federated consensus models",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#fee-markets",
-    "href": "content/technical/blockchains.html#fee-markets",
-    "title": "Blockchains",
-    "section": "Fee Markets",
-    "text": "Fee Markets\nWe break down fee markets into:\n\nBlock Space Markets\nResources Markets\n\n\nBlock Space Markets\nThese are the most fundamental type. Users are paying for space in the next block, regardless of what they’re doing with that space. It only considers the price of inclusion while respecting the limits of the network.\n\n\nResource Markets\nThese evolved with the advent of Ethereum as blockchains became more complex. We break these down into:\n\nCompute\nData Availability\nStorage\nHybrid\n\n\nCompute Markets\nTransaction fee’s sometimes called Gas is what you pay to execute a smart contract on a blockchain. On some networks, like Ethereum, there is an execution limit on how much computational work can be done in a block. This parameter directly impacts the computational resources required to run a node.\nNodes can propose a gas limit\nSo the attributes for Transactions Fee’s are: Tips/Bribes How Transactoin fees are distributed. Burnt or redirected to Miners How fee’s are calculated Base Fee Dynamic Fee (based on something like network congestion)\n\n\n\nData Availability\nWe will compare the mechanisms of the following major DA layers:\n\nEthereum\nCelestia\nEignlayer DA\nAvail\n\nEthereum uses dynamic blob fees based upon a target amount of blob space per block.\nCelestia charges by size. Celestia is designed to scale to handle increase demand with adding more validators\nAvail also charges by size but also the type.\nEigenDA creates a marketplace for data availability providers\n\nStorage\n\n\nHybrid\n\n\nCongestion Measurement Mechanisms\nEthereum\n\nMeasures block gas utilization vs 15M target\n12.5% base fee adjustment per block\nBlock size can flex up to 30M gas\n\nStellar\n\nUses surge pricing mechanism\nTriggers when ledger capacity exceeds 50%\nFee increases proportionally to network load\n\nPolkadot\n\nUses weight-based system\nMeasures block weight against target\nAdjusts fees based on block fullness\n\nTezos\n\nMonitors block saturation\nAdjusts fees based on recent block usage\nUses gas limits per operation type\n\n\n\n\nData Availability market\nEthereum uses blobs, which are special containers for Layer 2 rollups to post their transaction data. They also disappear after a time.\nBlob fee is calculated based on the target blob gas per block.",
+    "objectID": "content/technical/blockchains.html#network-architecture",
+    "href": "content/technical/blockchains.html#network-architecture",
+    "title": "Blockchain Technology",
+    "section": "Network Architecture",
+    "text": "Network Architecture\n\nSovereign Networks\nIndependent blockchain networks that maintain their own security and consensus. Examples include Bitcoin and Ethereum.\nCharacteristics: - Complete control over protocol - Independent security model - Native asset issuance - Full sovereignty over rules\n\n\nSettlement-Dependent Networks\nNetworks that rely on other blockchains (usually Ethereum) for ultimate security and settlement.\nTypes: - Optimistic rollups - Zero-knowledge rollups - State channels - Plasma chains\n\n\nApplication-Specific Networks\nBlockchains designed for particular use cases: - High-speed trading - Privacy-focused transactions - Specialized applications - Industry-specific solutions",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#network-change-management",
-    "href": "content/technical/blockchains.html#network-change-management",
-    "title": "Blockchains",
-    "section": "Network Change Management",
-    "text": "Network Change Management\n\nOverview\nNetwork change management in DINs encompasses the processes, mechanisms, and stakeholders involved in proposing, discussing, approving, and implementing network modifications. This framework covers everything from minor parameter adjustments to major protocol upgrades.\nTODO Design something that can simulate",
+    "objectID": "content/technical/blockchains.html#technical-innovations",
+    "href": "content/technical/blockchains.html#technical-innovations",
+    "title": "Blockchain Technology",
+    "section": "Technical Innovations",
+    "text": "Technical Innovations\n\nScaling Solutions\nAs networks grow, various scaling solutions have emerged:\nLayer 2: - State channels - Rollups - Sidechains - Plasma\nSharding: - Data sharding - State sharding - Transaction sharding - Network sharding\n\n\nPrivacy Enhancements\nModern blockchains incorporate various privacy technologies:\nCryptographic tools: - Zero-knowledge proofs - Ring signatures - Confidential transactions - Homomorphic encryption\nProtocol-level privacy: - Network-level privacy - Transaction privacy - State privacy - Computational privacy\n\n\nCross-Chain Integration\nTechnologies enabling different blockchains to interact:\nBridge types: - Trusted bridges - Trustless bridges - Optimistic bridges - Zero-knowledge bridges\nInteroperability protocols: - Atomic swaps - Cross-chain messaging - Asset wrapping - State verification",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#clients",
-    "href": "content/technical/blockchains.html#clients",
-    "title": "Blockchains",
-    "section": "Clients",
-    "text": "Clients",
+    "objectID": "content/technical/blockchains.html#future-directions",
+    "href": "content/technical/blockchains.html#future-directions",
+    "title": "Blockchain Technology",
+    "section": "Future Directions",
+    "text": "Future Directions\nThe blockchain field continues to evolve rapidly:\nResearch areas: - Post-quantum cryptography - Formal verification - Zero-knowledge scaling - Privacy-preserving computation\nEmerging applications: - Decentralized AI - Real-world asset tokenization - Identity systems - Institutional adoption",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
     ]
   },
   {
-    "objectID": "content/technical/blockchains.html#bridges",
-    "href": "content/technical/blockchains.html#bridges",
-    "title": "Blockchains",
-    "section": "Bridges",
-    "text": "Bridges\nClassification of Bridges. Need to include Lazy Bridges here https://blog.celestia.org/lazybridging/\n\nTrusted\n\nCustodial\nMulti Signature\nFederated\n\nTrustless Bridges\n\nLight Client\nZK\n\nLazy Bridge\n\nRelay",
+    "objectID": "content/technical/blockchains.html#conclusion",
+    "href": "content/technical/blockchains.html#conclusion",
+    "title": "Blockchain Technology",
+    "section": "Conclusion",
+    "text": "Conclusion\nBlockchain technology represents a fundamental shift in how we can coordinate and verify digital activity. Its continued evolution enables new forms of human coordination and value exchange that were previously impossible. Understanding the technical foundations, from application models to consensus mechanisms, is crucial for building and working with these systems effectively.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchains</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Blockchain Technology</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html",
+    "href": "content/technical/modular.html",
+    "title": "Modular Blockchain Architecture",
+    "section": "",
+    "text": "Introduction\nTraditional “monolithic” blockchains attempt to handle all functions - execution, settlement, consensus, and data availability - within a single system. While this approach works, it creates inherent scalability limitations as each node must process everything. Modular blockchain architecture takes a different approach by separating these functions into specialized layers, allowing each to scale independently.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#understanding-blockchain-functions",
+    "href": "content/technical/modular.html#understanding-blockchain-functions",
+    "title": "Modular Blockchain Architecture",
+    "section": "Understanding Blockchain Functions",
+    "text": "Understanding Blockchain Functions\nBefore diving into modular designs, let’s understand the core functions that any blockchain system must provide:\n\nExecution\nThe computation of state transitions - processing transactions, running smart contracts, and updating account balances. This requires significant computational resources and historically has been the main bottleneck for scaling.\n\n\nData Availability (DA)\nThe guarantee that the data needed to verify state transitions is publicly available. Without this guarantee, users can’t validate the chain’s state or detect fraud. This function requires significant storage resources and network bandwidth.\n\n\nSettlement\nThe final determination of state transitions, including dispute resolution and finality guarantees. This layer provides the ultimate security and must be highly decentralized and resistant to manipulation.\n\n\nConsensus\nThe mechanism by which nodes agree on the ordering of transactions and the current state. This must be both secure and efficient while maintaining decentralization.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#the-data-availability-layer",
+    "href": "content/technical/modular.html#the-data-availability-layer",
+    "title": "Modular Blockchain Architecture",
+    "section": "The Data Availability Layer",
+    "text": "The Data Availability Layer\n\nCelestia’s Approach\nCelestia introduced a groundbreaking approach by creating a blockchain focused solely on data availability. Its innovation lies in how it enables secure sampling of block data.\nKey features:\n\nData availability sampling (DAS)\n2D Reed-Solomon encoding\nLight client optimizations\nNamespace-based organization\n\nThe core innovation is that clients can verify data availability without downloading entire blocks:\nTraditional verification: Download entire block (O(n) data)\nCelestia verification: Sample few random bytes (O(log n) data)\n\n\nEthereum Data Availability\nEthereum’s approach to data availability has evolved with the introduction of Proto-Danksharding and blob transactions:\nKey characteristics:\n\nDedicated blob space in blocks\nSeparate fee market for blob data\nKZG commitments for efficient verification\nTime-limited data availability\n\nThe blob transaction format:\nstruct BlobTransaction {\n    // Regular transaction fields\n    address from;\n    address to;\n    uint256 value;\n    \n    // Blob-specific fields\n    bytes32[] commitments;    // KZG commitments\n    bytes[] blobs;            // The actual data\n    uint256 blobGasPrice;     // Separate fee for blob space\n}",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#the-execution-layer",
+    "href": "content/technical/modular.html#the-execution-layer",
+    "title": "Modular Blockchain Architecture",
+    "section": "The Execution Layer",
+    "text": "The Execution Layer\n\nOptimistic Rollups\nOptimistic rollups execute transactions off-chain but post transaction data and state commitments to the settlement layer. They rely on fraud proofs to ensure correctness.\nKey components:\n\nSequencer for transaction ordering\nState commitment scheme\nFraud proof system\nChallenge period\n\nExample of an optimistic transaction submission:\ncontract OptimisticRollup {\n    struct StateUpdate {\n        bytes32 stateRoot;\n        bytes32 parentStateRoot;\n        bytes transactions;\n        uint256 timestamp;\n    }\n    \n    function submitStateUpdate(StateUpdate calldata update) external {\n        require(verifyStateTransition(update), \"Invalid state transition\");\n        startChallengeWindow(update);\n    }\n}\n\n\nZK Rollups\nZK rollups use zero-knowledge proofs to validate state transitions, providing faster finality and stronger security guarantees than optimistic solutions.\nCore elements:\n\nSNARK/STARK proof generation\nEfficient state encoding\nProof verification circuit\nOn-chain verification",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#the-settlement-layer",
+    "href": "content/technical/modular.html#the-settlement-layer",
+    "title": "Modular Blockchain Architecture",
+    "section": "The Settlement Layer",
+    "text": "The Settlement Layer\n\nEthereum as Settlement\nEthereum has emerged as the primary settlement layer for most scaling solutions. Its role includes:\n\nStoring state commitments\nVerifying proofs\nResolving disputes\nManaging asset bridges\n\nKey settlement functions:\ninterface ISettlement {\n    // For optimistic rollups\n    function challengeStateTransition(\n        bytes32 stateRoot,\n        bytes proof\n    ) external;\n    \n    // For ZK rollups\n    function verifyStateTransition(\n        bytes32 newState,\n        bytes proof\n    ) external returns (bool);\n}\n\n\nCross-Layer Communication\nCommunication between layers requires careful design:\n\nMessage passing protocols\nState verification schemes\nAsset transfer bridges\nFinality guarantees",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#practical-implementations",
+    "href": "content/technical/modular.html#practical-implementations",
+    "title": "Modular Blockchain Architecture",
+    "section": "Practical Implementations",
+    "text": "Practical Implementations\n\nLayer 2 Scaling Solutions\nCurrent production systems demonstrate different approaches to modular architecture:\nOptimistic solutions:\n\nArbitrum: Advanced sequencing\nOptimism: EVM equivalence\nBase: Modified Optimism stack\n\nZK solutions:\n\nzkSync: Custom VM\nStarkNet: Cairo VM\nPolygon zkEVM: EVM compatibility\n\n\n\nData Availability Solutions\nMultiple approaches to DA are emerging:\n\nCelestia\n\n\nDedicated DA chain\nNamespaced data organization\nEfficient sampling\n\n\nEigenDA\n\n\nDistributed DA network\nEconomic security model\nRestaking mechanics\n\n\nEthereum blobs\n\n\nNative DA solution\nTime-bounded availability\nSeparate fee market",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#future-developments",
+    "href": "content/technical/modular.html#future-developments",
+    "title": "Modular Blockchain Architecture",
+    "section": "Future Developments",
+    "text": "Future Developments\n\nCross-Domain MEV\nModular architectures create new considerations for MEV:\n\nCross-layer arbitrage\nSequencer extractable value\nDA fee markets\n\n\n\nInteroperability\nStandardization efforts are emerging:\n\nCross-layer messaging protocols\nUnified bridge standards\nShared security models",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/modular.html#conclusion",
+    "href": "content/technical/modular.html#conclusion",
+    "title": "Modular Blockchain Architecture",
+    "section": "Conclusion",
+    "text": "Conclusion\nModular blockchain architecture represents a fundamental shift in how we scale blockchain systems. By separating key functions into specialized layers, we can achieve greater scalability while maintaining security. The field continues to evolve rapidly, with new solutions and optimizations emerging regularly.\nThe success of modular designs will likely determine the future of blockchain scalability, as they enable each layer to evolve and optimize independently while maintaining interoperability through standardized interfaces.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Modular Blockchain Architecture</span>"
     ]
   },
   {
     "objectID": "content/technical/languages.html",
     "href": "content/technical/languages.html",
-    "title": "Languages",
+    "title": "Smart Contract Languages",
     "section": "",
-    "text": "Solidity\nIs a compiled language",
+    "text": "Introduction\nSmart contract languages face unique challenges in blockchain development. They must provide robust safety guarantees while enabling developers to write immutable code that often handles millions of dollars in value. Each language makes different tradeoffs between expressiveness, safety, and performance.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Languages</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#solidity",
+    "href": "content/technical/languages.html#solidity",
+    "title": "Smart Contract Languages",
+    "section": "Solidity",
+    "text": "Solidity\nAs the pioneer of smart contract development, Solidity has shaped how we think about blockchain programming. Its design combines familiar object-oriented concepts with blockchain-specific safety features.\nKey characteristics:\n\nStatic typing system\nContract-oriented programming\nRich ecosystem of tools\nExtensive security features\n\nExample of modern Solidity patterns:\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.19;\n\ncontract ModernContract {\n    // Events for off-chain tracking\n    event ValueUpdated(address indexed updater, uint256 newValue);\n    \n    // Immutable variables for gas optimization\n    address immutable owner;\n    \n    // Custom errors instead of strings\n    error UnauthorizedAccess(address caller);\n    error InvalidValue(uint256 value);\n    \n    constructor() {\n        owner = msg.sender;\n    }\n    \n    // Use custom errors and checks\n    function updateValue(uint256 newValue) external {\n        if (msg.sender != owner) {\n            revert UnauthorizedAccess(msg.sender);\n        }\n        if (newValue == 0) {\n            revert InvalidValue(newValue);\n        }\n        \n        emit ValueUpdated(msg.sender, newValue);\n    }\n}",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#move",
+    "href": "content/technical/languages.html#move",
+    "title": "Smart Contract Languages",
+    "section": "Move",
+    "text": "Move\nOriginally developed for Facebook’s Libra (now Diem) project, Move is a Rust-based language that introduces powerful new concepts for digital asset management. Its adoption by Aptos and Sui has led to distinct dialects of the language.\n\nCore Move Concepts\nMove’s fundamental innovation is its resource types, which ensure digital assets can’t be copied or accidentally destroyed:\nmodule example::basic_token {\n    struct Token has key {\n        value: u64,\n    }\n\n    public fun transfer(token: Token, recipient: address) {\n        // Resources must be moved explicitly\n        move_to&lt;Token&gt;(recipient, token);\n    }\n}\n\n\nAptos vs Sui Move\nWhile both platforms use Move, they implement it differently:\nAptos Move:\n\nGlobal storage model\nSequential transaction execution\nAccount-based resources\nMore traditional blockchain model\n\n// Aptos Move example\nmodule example::counter {\n    struct Counter has key {\n        value: u64,\n    }\n\n    public fun increment(account: &signer) acquires Counter {\n        let counter = borrow_global_mut&lt;Counter&gt;(signer::address_of(account));\n        counter.value = counter.value + 1;\n    }\n}\nSui Move:\n\nObject-centric model\nParallel transaction execution\nObject-based ownership\nNovel consensus approach\n\n// Sui Move example\nmodule example::counter {\n    struct Counter has key {\n        id: UID,\n        value: u64,\n    }\n\n    public fun increment(counter: &mut Counter) {\n        counter.value = counter.value + 1;\n    }\n}",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#cosmwasm",
+    "href": "content/technical/languages.html#cosmwasm",
+    "title": "Smart Contract Languages",
+    "section": "CosmWasm",
+    "text": "CosmWasm\nCosmWasm brings WebAssembly-based smart contracts to Cosmos-based blockchains. Written in Rust, it provides a robust environment for cross-chain contract development.\nKey features:\n\nRust-based development\nCross-chain compatibility\nStrong typing system\nIBC integration\n\nExample CosmWasm contract:\n#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]\npub struct InstantiateMsg {\n    pub count: i32,\n}\n\n#[entry_point]\npub fn instantiate(\n    deps: DepsMut,\n    _env: Env,\n    info: MessageInfo,\n    msg: InstantiateMsg,\n) -&gt; Result&lt;Response, ContractError&gt; {\n    let state = State {\n        count: msg.count,\n        owner: info.sender.clone(),\n    };\n    set_contract_version(deps.storage, CONTRACT_NAME, CONTRACT_VERSION)?;\n    STATE.save(deps.storage, &state)?;\n\n    Ok(Response::new()\n        .add_attribute(\"method\", \"instantiate\")\n        .add_attribute(\"owner\", info.sender)\n        .add_attribute(\"count\", msg.count.to_string()))\n}",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#solana-programs",
+    "href": "content/technical/languages.html#solana-programs",
+    "title": "Smart Contract Languages",
+    "section": "Solana Programs",
+    "text": "Solana Programs\nSolana’s smart contracts (called “programs”) are typically written in Rust, offering high performance but requiring careful management of accounts and data.\nKey characteristics:\n\nAccount-based model\nExplicit data ownership\nHigh performance\nComplex account management\n\nExample Solana program:\nuse solana_program::{\n    account_info::AccountInfo,\n    entrypoint,\n    entrypoint::ProgramResult,\n    pubkey::Pubkey,\n};\n\nentrypoint!(process_instruction);\n\npub fn process_instruction(\n    program_id: &Pubkey,\n    accounts: &[AccountInfo],\n    instruction_data: &[u8],\n) -&gt; ProgramResult {\n    // Solana programs explicitly manage accounts\n    let accounts_iter = &mut accounts.iter();\n    let account = next_account_info(accounts_iter)?;\n    \n    // Program logic here\n    \n    Ok(())\n}",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#bitcoin-script",
+    "href": "content/technical/languages.html#bitcoin-script",
+    "title": "Smart Contract Languages",
+    "section": "Bitcoin Script",
+    "text": "Bitcoin Script\nWhile limited compared to modern smart contract platforms, Bitcoin Script was the first blockchain programming language. It uses a stack-based approach for transaction validation.\nKey features:\n\nStack-based execution\nLimited instruction set\nNo loops or complex control flow\nFocus on transaction validation\n\nExample Bitcoin Script:\nOP_DUP OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#security-considerations",
+    "href": "content/technical/languages.html#security-considerations",
+    "title": "Smart Contract Languages",
+    "section": "Security Considerations",
+    "text": "Security Considerations\nEach language presents unique security challenges:\nSolidity:\n\nReentrancy attacks\nAccess control issues\nInteger overflow (pre-0.8.0)\nGas optimization risks\n\nMove:\n\nResource handling complexity\nFormal verification needs\nPlatform-specific quirks\nModule linking security\n\nCosmWasm:\n\nCross-chain vulnerabilities\nState management complexity\nMessage handling security\nContract upgradeability\n\nSolana:\n\nAccount validation\nData race conditions\nCross-program invasion\nResource exhaustion",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/languages.html#future-trends",
+    "href": "content/technical/languages.html#future-trends",
+    "title": "Smart Contract Languages",
+    "section": "Future Trends",
+    "text": "Future Trends\nSmart contract languages continue to evolve:\n\nZero-knowledge support\nFormal verification tools\nCross-chain compatibility\nAdvanced type systems\n\nThe field remains dynamic, with new languages and features emerging as blockchain technology matures and new use cases develop.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Smart Contract Languages</span>"
     ]
   },
   {
@@ -1371,7 +1525,7 @@
     "text": "Introduction\nImagine trying to mail a package without paying for postage, or running a car without fuel. In Web3, gas serves a similar fundamental purpose - it’s the essential resource that powers all blockchain operations. But unlike postage or gasoline, blockchain gas represents something more complex: it’s a dynamic pricing mechanism that manages network resources, incentivizes operators, and helps secure the entire system.\nThis chapter explores gas from multiple perspectives: as a practical tool users must understand, as a technical mechanism that enables network operation, and as an economic system that shapes Web3’s evolution.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1382,7 +1536,7 @@
     "text": "Understanding Gas: First Principles\n\nWhat is Gas?\nAt its most basic level, gas represents computational effort. Every operation on a blockchain - from simple token transfers to complex smart contract interactions - requires computational resources from the network. Gas measures these resources and assigns them a cost.\nKey characteristics of gas include:\n\nIt measures computational complexity\nIt’s priced dynamically based on network demand\nIt’s paid in the network’s native token\nFailed transactions still consume gas\n\n\n\nWhy Gas Exists\nGas serves three essential functions:\n\nResource Management\n\nPrevents infinite loops and spam attacks\nAllocates network capacity fairly\nCreates predictable operational costs\n\nEconomic Security\n\nCompensates network operators\nMakes attacks economically expensive\nAligns incentives across participants\n\nPriority Mechanism\n\nDetermines transaction ordering\nManages network congestion\nEnables price discovery for blockspace",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1393,7 +1547,7 @@
     "text": "Gas Mechanics\n\nBasic Components\nEvery gas transaction involves several components:\n\nGas Limit\n\nMaximum computational units allowed\nSet by the user\nMust be sufficient for operation\nExcess is refunded\n\nGas Price\n\nCost per unit of gas\nDetermined by network demand\nUsually measured in small denominations (e.g., Gwei)\nCan change rapidly\n\nTotal Cost\n\nGas Limit × Gas Price\nPaid upfront\nMaximum possible cost\nActual cost may be lower\n\n\n\n\nNetwork-Specific Implementations\nDifferent networks handle gas in distinct ways:\n\nEthereum\n\nBase fee + priority fee model\nEIP-1559 burning mechanism\nComplex gas calculations for different operations\nBlock gas limits\n\nLayer 2 Networks\n\nUsually cheaper than Layer 1\nMay have different gas tokens\nOften bundle L1 and L2 costs\nCan have unique gas mechanics\n\nAlternative Networks\n\nMay use different resource metrics\nOften optimize for specific use cases\nCan have fixed or variable costs\nMight separate different resource types",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1404,7 +1558,7 @@
     "text": "User’s Guide to Gas\n\nPractical Gas Management\n\nSetting Gas Limits\n\nUnderstanding operation costs\nAdding safety margins\nAvoiding out-of-gas errors\nEstimating complex transactions\n\nChoosing Gas Prices\n\nReading gas price oracles\nUnderstanding urgency tradeoffs\nTiming transactions\nUsing gas price alerts\n\nCommon Pitfalls\n\nInsufficient gas limits\nOverpaying during congestion\nFailed transaction costs\nNetwork-specific quirks\n\n\n\n\nAdvanced Gas Strategies\n\nGas Optimization\n\nBatching transactions\nUsing gas tokens\nTiming non-urgent transactions\nContract interaction efficiency\n\nCross-Network Considerations\n\nBridge gas costs\nNetwork selection\nCost comparison tools\nGas token economics",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1415,7 +1569,7 @@
     "text": "Economic Implications\n\nFee Markets\nGas creates a market for blockspace with unique characteristics:\n\nSupply Mechanics\n\nFixed block space\nRegular block intervals\nNetwork-specific limits\nUpgrade considerations\n\nDemand Factors\n\nUser activity levels\nMarket conditions\nBot competition\nMEV opportunities\n\n\n\n\nMarket Impact\nGas mechanics influence broader market behavior:\n\nLayer 2 Adoption\n\nCost comparison driving usage\nNetwork effects\nMigration patterns\nProtocol competition\n\nProtocol Design\n\nGas optimization requirements\nEconomic model constraints\nUser experience trade-offs\nScaling solutions",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1426,7 +1580,7 @@
     "text": "Future of Gas\n\nEvolving Models\nGas systems continue to develop:\n\nTechnical Innovations\n\nAccount abstraction\nMeta-transactions\nGas-less transactions\nResource-specific pricing\n\nEconomic Experiments\n\nAlternative fee mechanisms\nNovel burning models\nHybrid systems\nCross-chain standardization\n\n\n\n\nImplications for Users\nAs gas systems evolve, users should:\n\nStay informed about changes\nAdapt strategies accordingly\nUnderstand new opportunities\nManage changing risks",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1437,7 +1591,7 @@
     "text": "Key Takeaways\n\nGas is fundamental to Web3:\n\nEssential for network operation\nDrives economic security\nShapes user behavior\n\nUnderstanding gas is crucial for:\n\nEffective network usage\nCost management\nStrategy development\nRisk assessment\n\nGas systems are evolving:\n\nNew models emerging\nGreater efficiency possible\nMore complexity likely\nContinued innovation certain",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1448,7 +1602,7 @@
     "text": "Practical Exercises\nTo reinforce your understanding:\n\nCalculate total gas costs for different operations\nCompare gas prices across networks\nOptimize a multi-step transaction\nAnalyze historical gas patterns",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
@@ -1459,62 +1613,183 @@
     "text": "Further Reading\n\nGas optimization guides\nNetwork-specific documentation\nEconomic analysis papers\nTechnical proposals",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Gas</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Gas</span>"
     ]
   },
   {
     "objectID": "content/technical/dapps.html",
     "href": "content/technical/dapps.html",
-    "title": "dApps",
+    "title": "Decentralized Applications (dApps)",
     "section": "",
-    "text": "DEX’s",
+    "text": "Introduction\nDecentralized applications (dApps) represent the practical application of blockchain technology beyond simple value transfer. Unlike traditional applications where logic and data reside on centralized servers, dApps execute their core logic through smart contracts while interfacing with users through traditional web technologies.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>dApps</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
     ]
   },
   {
-    "objectID": "content/technical/dapps.html#name-services",
-    "href": "content/technical/dapps.html#name-services",
-    "title": "dApps",
-    "section": "Name Services",
-    "text": "Name Services",
+    "objectID": "content/technical/dapps.html#core-categories",
+    "href": "content/technical/dapps.html#core-categories",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Core Categories",
+    "text": "Core Categories\n\nDecentralized Finance (DeFi)\nDeFi applications form the largest and most sophisticated category of dApps, handling billions of dollars in value through various financial primitives.\n\nDecentralized Exchanges (DEXs)\nDEXs enable trustless trading of digital assets through different market-making mechanisms:\nAutomated Market Makers (AMMs):\n\nUniswap: Pioneered the constant product formula\nCurve: Optimized for stable asset swaps\nBalancer: Enables multiple asset pools\nTraderJoe: Adapted AMM model for Avalanche\n\nOrder Book DEXs:\n\nSerum: On-chain order book on Solana\ndYdX: Layer 2 perpetual trading\nIDEX: Hybrid order book model\n\n\n\nLending Protocols\nLending platforms enable collateralized borrowing and lending of digital assets:\n\nAave: Multi-token lending with variable/stable rates\nCompound: Pioneered the c-token model\nEuler: Risk-based lending markets\nMorpho: Peer-to-pool-to-peer lending\n\n\n\nDerivatives\nDerivative protocols create synthetic assets and complex financial instruments:\n\nSynthetix: Synthetic asset platform\nGMX: Decentralized perpetual exchange\ndYdX: Perpetual futures trading\nOpyn: Options protocols\n\n\n\n\nNFT Ecosystems\nNFT platforms have evolved from simple marketplaces to complex ecosystems:\n\nMarketplaces\n\nOpenSea: General NFT marketplace\nBlur: Pro trading platform\nMagic Eden: Solana NFT marketplace\n\n\n\nNFT Finance\n\nJPEG’d: NFT-collateralized lending\nBendDAO: NFT liquidity protocol\nNFTfi: Peer-to-peer NFT loans\n\n\n\n\nGaming\nBlockchain gaming applications attempt to create sustainable play-to-earn economies:\n\nAxie Infinity: Pioneer of play-to-earn\nStepN: Move-to-earn application\nIlluvium: AAA quality blockchain game\nGods Unchained: Trading card game\n\n\n\nSocial Platforms\nDecentralized social applications aim to create censorship-resistant communication platforms:\n\nLens Protocol: Social graph protocol\nFarcaster: Decentralized social network\nMirror: Web3 publishing platform",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>dApps</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
     ]
   },
   {
-    "objectID": "content/technical/dapps.html#privacy",
-    "href": "content/technical/dapps.html#privacy",
-    "title": "dApps",
-    "section": "Privacy",
-    "text": "Privacy\n{{&lt; lipsum 1 &gt;}}\n\nRailgun\n{{&lt; lipsum 1 &gt;}}\n\n\nTornado Cash\n{{&lt; lipsum 1 &gt;}}",
+    "objectID": "content/technical/dapps.html#infrastructure-dapps",
+    "href": "content/technical/dapps.html#infrastructure-dapps",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Infrastructure dApps",
+    "text": "Infrastructure dApps\n\nIdentity Solutions\nDecentralized identity systems provide the foundation for Web3 interaction:\n\nName Services\n\nENS (Ethereum Name Service)\nLens Handles\nSolana Name Service\nStacks Name Service\n\n\n\nAuthentication\n\nSign-in with Ethereum\nWorldcoin\nCivic\n\n\n\n\nOracle Networks\nOracles provide external data to smart contracts:\n\nChainlink: Market leader in oracle services\nPyth: High-performance oracle network\nUMA: Optimistic oracle system\n\n\n\nPrivacy Solutions\nPrivacy-preserving protocols enable confidential transactions:\n\nMixing Services\n\nTornado Cash: Fixed-denomination mixer\nPrivacy Pools: Compliant privacy solution\n\n\n\nZero-Knowledge Protocols\n\nRailgun: Private DeFi interactions\nAztec: Private smart contract platform",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>dApps</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/dapps.html#architecture-patterns",
+    "href": "content/technical/dapps.html#architecture-patterns",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Architecture Patterns",
+    "text": "Architecture Patterns\nModern dApps typically implement several key architectural patterns:\n\nAccount Abstraction\nSocial recovery wallets and gasless transactions:\n\nSafe (formerly Gnosis Safe)\nBiconomy\nStackup\n\n\n\nComposability\nBuilding on existing protocols:\n\nYearn Finance: Yield aggregation\nConvex: Curve gauge optimization\nFrax: Algorithmic-collateral model\n\n\n\nCross-Chain Integration\nEnabling multi-chain functionality:\n\nLayerZero\nStargate\nAxelar\nWormhole",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/dapps.html#development-frameworks",
+    "href": "content/technical/dapps.html#development-frameworks",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Development Frameworks",
+    "text": "Development Frameworks\nPopular frameworks for dApp development:\n\nFrontend\n\nWeb3.js\nEthers.js\nwagmi\nRainbowKit\n\n\n\nSmart Contract Development\n\nHardhat\nFoundry\nTruffle\nAnchor (Solana)",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/dapps.html#security-considerations",
+    "href": "content/technical/dapps.html#security-considerations",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Security Considerations",
+    "text": "Security Considerations\nCommon security patterns and vulnerabilities:\n\nAccess Control\n\nMulti-signature requirements\nTime locks\nRole-based permissions\n\n\n\nEconomic Security\n\nOracle manipulation\nFlash loan attacks\nInfinite mint exploits\n\n\n\nTechnical Security\n\nReentrancy guards\nInteger overflow protection\nproper state management",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/dapps.html#future-trends",
+    "href": "content/technical/dapps.html#future-trends",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Future Trends",
+    "text": "Future Trends\nEmerging patterns in dApp development:\n\nModular Design\n\nSeparating execution, settlement, and data availability\nProtocol-level specialization\nCross-chain optimization\n\n\n\nPrivacy Integration\n\nZero-knowledge proofs\nHomomorphic encryption\nPrivate state management\n\n\n\nReal-World Assets\n\nTokenized securities\nReal estate platforms\nCarbon credit markets",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/dapps.html#conclusion",
+    "href": "content/technical/dapps.html#conclusion",
+    "title": "Decentralized Applications (dApps)",
+    "section": "Conclusion",
+    "text": "Conclusion\nDecentralized applications represent the frontier of blockchain innovation, constantly evolving with new patterns and capabilities. Success in this space requires understanding both traditional application development and the unique constraints and opportunities of blockchain platforms.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Decentralized Applications (dApps)</span>"
     ]
   },
   {
     "objectID": "content/technical/mev.html",
     "href": "content/technical/mev.html",
-    "title": "MEV",
+    "title": "Maximal Extractable Value (MEV)",
     "section": "",
-    "text": "Proposer Builder Separation (PBS)",
+    "text": "Introduction\nMaximal Extractable Value (MEV) represents one of the most fascinating and complex phenomena in blockchain systems. Originally called “Miner Extractable Value,” the term has evolved to “Maximal” as extraction techniques have expanded beyond just miners. At its core, MEV emerges from the ability to reorder, insert, or censor transactions within a block for profit.\nThink of a blockchain as a series of auctions where the auctioneer (block producer) can not only decide which bids to accept but also their order. This power creates opportunities for profit that don’t exist in traditional markets.",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>MEV</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
     ]
   },
   {
-    "objectID": "content/technical/mev.html#multiple-concurrent-leaders",
-    "href": "content/technical/mev.html#multiple-concurrent-leaders",
-    "title": "MEV",
-    "section": "Multiple Concurrent Leaders",
-    "text": "Multiple Concurrent Leaders\nhttps://x.com/aeyakovenko/status/1810222589991583922",
+    "objectID": "content/technical/mev.html#understanding-mev",
+    "href": "content/technical/mev.html#understanding-mev",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "Understanding MEV",
+    "text": "Understanding MEV\n\nThe Mechanics of MEV\nWhen users submit transactions to a blockchain network, they enter a temporary holding area called the mempool. Block producers can then:\n\nChoose which transactions to include\nDetermine the order of transactions\nInsert their own transactions\nCreate custom transactions in response to user activity\n\nThis control creates several profit opportunities:\n\nArbitrage\n\nSpotting price differences across DEXs\nExploiting temporary market inefficiencies\nCapturing price movements from large trades\n\nLiquidations\n\nCompeting to liquidate undercollateralized positions\nRacing to claim liquidation rewards\nFront-running other liquidators\n\nSandwich Attacks\n\nPlacing trades before and after a large swap\nExploiting price impacts for profit\nExtracting value from user slippage tolerance",
     "crumbs": [
       "Technologist's Path",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>MEV</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/mev.html#mev-extract-methods",
+    "href": "content/technical/mev.html#mev-extract-methods",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "MEV Extract Methods",
+    "text": "MEV Extract Methods\n\nSearchers and Builders\nThe MEV ecosystem has evolved into specialized roles:\nSearchers:\n\nDevelop algorithms to identify MEV opportunities\nCreate optimal transaction bundles\nBid for block space through builders\n\nBuilders:\n\nAggregate transaction bundles from searchers\nConstruct optimal blocks\nCompete to have their blocks chosen by validators\n\n\n\nMEV-Boost\nMEV-Boost represents a crucial development in MEV extraction, separating block building from block validation:\nUser Transactions → Searchers → Builders → Relays → Validators\nThis separation aims to:\n\nIncrease competition among builders\nImprove block construction efficiency\nDistribute MEV more evenly",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/mev.html#proposer-builder-separation-pbs",
+    "href": "content/technical/mev.html#proposer-builder-separation-pbs",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "Proposer Builder Separation (PBS)",
+    "text": "Proposer Builder Separation (PBS)\nPBS represents the next evolution in MEV management, aiming to institutionalize the separation of block building and proposal.\n\nCore Concepts\nPBS divides block production into three distinct roles:\n\nProposers (Validators)\n\nSelect the most valuable block\nEarn fees from block proposals\nDon’t need powerful hardware\n\nBuilders\n\nConstruct optimal blocks\nCompete through bid prices\nRequire specialized infrastructure\n\nRelays\n\nConnect builders and proposers\nVerify block validity\nEnsure fair competition\n\n\n\n\nTechnical Implementation\nPBS requires several key components:\n\nBuilder API\n\ninterface IBuilder {\n    function submitBundle(\n        bytes[] calldata transactions,\n        uint256 bid\n    ) external returns (bytes32 bundleHash);\n}\n\nRelay Protocol\n\ninterface IRelay {\n    function submitBlock(\n        bytes[] calldata transactions,\n        bytes32 parentHash,\n        uint256 bid\n    ) external returns (bool success);\n}",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/mev.html#multiple-concurrent-leaders-mcl",
+    "href": "content/technical/mev.html#multiple-concurrent-leaders-mcl",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "Multiple Concurrent Leaders (MCL)",
+    "text": "Multiple Concurrent Leaders (MCL)\nMCL represents a novel approach to MEV that allows multiple validators to propose blocks simultaneously.\n\nDesign Goals\nMCL aims to:\n\nReduce MEV extraction opportunities\nIncrease network throughput\nImprove censorship resistance\n\n\n\nTechnical Challenges\nImplementing MCL requires solving several complex problems:\n\nLeader Selection\n\nDetermining concurrent proposers\nManaging overlapping proposals\nResolving conflicts\n\nBlock Merging\n\nCombining parallel proposals\nHandling transaction conflicts\nEnsuring deterministic outcomes",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/mev.html#mev-protection-strategies",
+    "href": "content/technical/mev.html#mev-protection-strategies",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "MEV Protection Strategies",
+    "text": "MEV Protection Strategies\n\nFor Users\nUsers can protect themselves from MEV through several strategies:\n\nCommitment Schemes\n\n// Example of a commit-reveal scheme\ncontract CommitReveal {\n    mapping(bytes32 =&gt; bool) public commits;\n    \n    function commit(bytes32 commitHash) external {\n        commits[commitHash] = true;\n    }\n    \n    function reveal(bytes32 secret, uint256 value) external {\n        require(commits[keccak256(abi.encodePacked(secret, value))]);\n        // Execute trade with committed value\n    }\n}\n\nIntent-Based Trading\n\nExpressing desired outcomes rather than specific paths\nUsing specialized intent protocols\nAllowing builders to optimize execution\n\n\n\n\nFor Protocols\nProtocols can implement MEV-resistant designs:\n\nBatch Auctions\n\nAggregating trades into discrete batches\nUsing uniform clearing prices\nPreventing front-running\n\nTime-Weighted Average Prices (TWAP)\n\nSpreading execution over time\nReducing manipulation opportunities\nImproving price stability",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/mev.html#future-of-mev",
+    "href": "content/technical/mev.html#future-of-mev",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "Future of MEV",
+    "text": "Future of MEV\n\nEmerging Solutions\nSeveral promising approaches are being developed:\n\nZero-Knowledge MEV\n\nPrivacy-preserving order flow\nEncrypted mempool designs\nConfidential transaction ordering\n\nFair Ordering Services\n\nDecentralized sequencing\nVerifiable delay functions\nRandom beacon systems\n\n\n\n\nRegulatory Considerations\nThe MEV landscape faces increasing scrutiny:\n\nMarket Manipulation\n\nSandwich attack legality\nFront-running regulations\nFair market requirements\n\nUser Protection\n\nDisclosure requirements\nBest execution standards\nConsumer protection rules",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
+    ]
+  },
+  {
+    "objectID": "content/technical/mev.html#conclusion",
+    "href": "content/technical/mev.html#conclusion",
+    "title": "Maximal Extractable Value (MEV)",
+    "section": "Conclusion",
+    "text": "Conclusion\nMEV represents a fundamental challenge in blockchain design, sitting at the intersection of mechanism design, game theory, and market structure. While it cannot be eliminated entirely, continued innovation in areas like PBS and MCL promises to make MEV extraction more efficient and equitable. Understanding MEV is crucial for anyone building or participating in blockchain systems, as it affects everything from protocol design to trading strategies.",
+    "crumbs": [
+      "Technologist's Path",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Maximal Extractable Value (MEV)</span>"
     ]
   },
   {
@@ -1525,7 +1800,7 @@
     "text": "Coins\nThis section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the Blockchain documentation.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1536,7 +1811,7 @@
     "text": "Network Economics\nToken Models Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards Incentive Structures Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding Economic Security Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support\n\n\nBase Networks\nThis Almanack distinguishes between the financial properties of Coins versus the technical properties of a Blockchain. As such we don’t refer to networks here by Layer 1 or Layer 2. That’s a classification and distinction you can explore here.\nWe define a Base Network that maintains it’s own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network.\n\n\nSecondary Networks\nThese are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the Blockchain chapter. We’ll encompass the full breadth of L2’s including, but not limited to Plasma, Sidechains, Rollups etc.\nWe then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value.\nPlease see Ozempic Effect to see how we determine if a network in a net ozempic or sugar network.\n\n\nDerivatives\n\nOn chain\n\nWrapped\n\nPure\nBridged\n\n\nOff Chain\n\nSpot ETF’s\n\n\n\nOn Chain Derivatives\n\n\nOff Chain Derivatives",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1547,7 +1822,7 @@
     "text": "Tokens\n\nFungible\nFungible is a pretty terrible name, but it roughly means divisable. It’s easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It’s divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It’s Non fungible, or non divisable. There’s more nuances which we can deal with in the vocabulary section. But that’s the general idea of it.\nWe have the following types: * Stable Coins * Fiat backed * Crypto backed * Delta Neutral backed * Shit Coins * Governance * Meme * Utility\nThen we have numerous standards. We’ll add only the most popular and relevant ones here.\nNamely: * ERC20 * ERC777 * ERC1363 * BRC20 * Runes * Solana’s SPL Token Standard * ICS20\n\nICS20\nThe Inter-Chain Standard 20 is a Cosmos based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)\n\n\n\nNon Fungible\nHas the following attributes:\n\nArt & Collectibles\nProfile Picture (PFP)\nGaming\nDomain Names and Identity\nReal World Assets (RWA)\n\nThe NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection’s market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1558,7 +1833,7 @@
     "text": "Markets\nWhere can I buy these Digital Assets? The major markets are regulated and unregulated.\nThese are then divided into spot vs derivatives.\nFor regulated it’s interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It’s probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1569,7 +1844,7 @@
     "text": "Hodling\nWallets\n\nCustodial\n\n\nNon-Custodial\n\nPure\n\nCold\nHot\n\nSmart\n\nMPC\nSmart Contract Based (Includes Account Abstraction)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1580,7 +1855,7 @@
     "text": "Yield Properties\nMajor categories are:\n\nNetwork Yield\nTrading Yield\nProtocol Yield\n\n\nTrading Yield\n\nPricing appreciation\nArbitrage Yield\n\nSpot Arbitrage\nPeg Arbitrage - These are unique to stable coins\n\nOptions and Derivatives Premiums\nFutures funding rates\n\n\n\nNetwork Yield\n\nMining Yield\n\nSolo Mining\nPool Mining\nCloud Mining\n\nValidating Yield\n\nStaking\n\nNetwork Fee Yield\n\nGas\n\nMEV\n\nToxic\nNon Toxic\n\nDerivatives\n\nLiquid Staking\n\n\n\n\ndApp Yield\n\nStaking\nLiquidity Provision\nGovernance Participation\nNFT Rental Income\n\n\nLiquidity Provision\nWe break this down into the following Categories\n\nAMM Pool fees\nConcentrated liquidity positions\nOrder book market making\nLending and Borrowing markets\n\n\nConcentrated Liquidity Provision\nHere we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046\n\n\n\n\nMonegro, Joel. 2016. “Fat Protocols.” Union Square Ventures. https://www.usv.com/writing/2016/08/fat-protocols/.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Digital Assets</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
@@ -1591,7 +1866,7 @@
     "text": "Understanding Market Structure Basics\nAt its core, a market is where buyers and sellers come together to trade. But the way this meeting happens has profound effects on how prices are discovered, how fairly participants are treated, and how efficiently trades are executed. Let’s examine the key concepts that underpin all market structures.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1602,7 +1877,7 @@
     "text": "Price Discovery\nPrice discovery is the process by which markets determine the true price of an asset. Think of it as the market’s way of collectively agreeing on what something is worth. This process is influenced by:\n\nThe flow of new information\nThe number of market participants\nThe transparency of trading activity\nThe rules and mechanisms of the trading venue\n\nFor example, when a company announces unexpected positive earnings, traders rushing to buy the stock help discover its new, higher price. In crypto markets, this process happens 24/7, with global participation leading to near-instant price adjustments as new information emerges.\n\n\nLiquidity\nLiquidity is the ease with which an asset can be bought or sold without causing a significant price movement. It’s like the depth of a swimming pool - the deeper it is, the less splash you make when jumping in. High liquidity is characterized by:\n\nTight bid-ask spreads\nLarge order book depth\nHigh trading volumes\nMinimal price impact from trades",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1613,7 +1888,7 @@
     "text": "Central Limit Order Books (CLOBs)\nThe Central Limit Order Book (CLOB) is perhaps the most important innovation in market structure history. It’s essentially a sorted list of all the prices at which market participants are willing to buy (bids) and sell (asks) an asset.\n\nHow CLOBs Work\nA CLOB operates on simple but powerful principles:\n\nOrder Types\n\nLimit Orders: Instructions to buy or sell at a specific price or better\nMarket Orders: Instructions to buy or sell immediately at the best available price\n\nPrice-Time Priority\n\nOrders are matched based on price priority (best prices first)\nWhen prices are equal, earlier orders get priority\nThis creates a fair “first come, first served” system\n\n\nHere’s a simplified visualization of an order book:\n     ASKS\nPrice | Size\n105   | 10\n104   | 15\n103   | 20\n-----------------\n102   | 25\n101   | 30\n100   | 35\n     BIDS\n\n\nOrder Matching Logic\nWhen new orders arrive, they’re matched against existing orders following strict rules:\n\nMarket orders match immediately with the best available price\nLimit orders join the book if they can’t match immediately\nPartial fills are possible when order sizes don’t match exactly\n\nFor example, if someone submits a market buy order for 30 units in the above book, they would: - Buy 20 units at 103 - Buy 10 units at 104 - Pay an average price of 103.33",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1624,7 +1899,7 @@
     "text": "Evolution to Electronic Markets\nThe transition from physical trading floors to electronic markets marked a revolutionary change in market structure. Electronic markets brought:\n\nFaster execution speeds\nLower transaction costs\nBroader market access\nMore sophisticated trading strategies\nBetter price transparency\n\nHowever, they also introduced new challenges like: - Need for robust technology infrastructure - Complex failure modes - High-frequency trading arms race - New forms of market manipulation",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1635,7 +1910,7 @@
     "text": "Crypto Market Adaptations\nCryptocurrency markets have taken traditional market structures and adapted them for a decentralized world. This has led to several innovations:\n\nCentralized Exchange Order Books\nCrypto exchanges like Binance and Coinbase operate traditional CLOBs but with some key differences: - 24/7 trading - Global access - Multiple quote currencies - Faster settlement - Novel order types\n\n\nOn-Chain Order Books\nAttempting to put order books entirely on-chain has revealed interesting challenges: - High gas costs for order placement - Front-running vulnerability - Block time limitations - Settlement finality considerations\n\n\nHybrid Solutions\nModern crypto trading often uses hybrid approaches that combine the best of both worlds: - Off-chain order books with on-chain settlement - Layer 2 scaling solutions - State channels for high-frequency trading - Automated Market Makers (AMMs) as complementary liquidity sources",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1646,7 +1921,7 @@
     "text": "Market Structure Implications\nThe choice of market structure has far-reaching implications for:\n\nTrading Strategy\nDifferent market structures favor different trading approaches. CLOBs are ideal for market making and arbitrage, while AMMs excel at providing passive liquidity.\n\n\nMarket Quality\nMarket structure affects: - Price efficiency - Transaction costs - Market stability - Fair access\n\n\nRegulatory Compliance\nMarket structure choices impact: - Regulatory oversight capability - Market manipulation risk - Customer protection measures - Systemic risk management",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1657,7 +1932,7 @@
     "text": "Looking Ahead\nMarket structures continue to evolve as technology advances and new requirements emerge. Future developments may include: - Greater integration between TradFi and DeFi markets - Novel hybrid market structures - Improved privacy solutions - More efficient cross-chain trading mechanisms",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1668,7 +1943,7 @@
     "text": "Types of Market Cap\nIn DeFi, we need to understand several variations:\n\nCirculating Market Cap = Current Price × Circulating Supply The value of tokens currently trading in the market\nFully Diluted Valuation (FDV) = Current Price × Total Supply The theoretical value if all tokens were in circulation\nRealized Market Cap = Sum of (Price × Amount) for each token last moved A measure that helps identify actual economic activity",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1679,7 +1954,7 @@
     "text": "The Liquidity Ratio\nOne of the most important metrics rarely discussed is the liquidity ratio: Liquidity Ratio = Total DEX Liquidity / Market Cap\nGenerally: - Ratio &gt; 0.1: Healthy liquidity - Ratio 0.01-0.1: Exercise caution - Ratio &lt; 0.01: High manipulation risk",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1690,7 +1965,7 @@
     "text": "Market Cap Manipulation\nUnderstanding how market cap can be manipulated helps avoid common traps:\n\nSupply Manipulation\n\nBurning tokens to artificially reduce supply\nHidden minting capabilities\nLock-up periods that temporarily restrict supply\n\nPrice Manipulation\n\nWash trading to create fake volume\nThin liquidity pools easily moved by small trades\nStrategic buying to push price before token launches\n\nLiquidity Games\n\nTemporary liquidity adds before major announcements\nCross-chain liquidity that’s hard to track\nFlashloan attacks that distort price momentarily",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1701,7 +1976,7 @@
     "text": "Real Value vs. Market Cap\nMarket cap becomes more meaningful when viewed alongside other metrics:\n\nDaily Active Users (DAU)\nRevenue or fees generated\nTreasury holdings\nProtocol-owned liquidity\nCross-chain presence and activity\n\nThink of market cap as just one instrument in an orchestra - it only makes sense when played in harmony with other metrics.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1712,7 +1987,7 @@
     "text": "Red Flags in Market Cap Analysis\nWatch for these warning signs: - Market cap growing faster than user adoption - Large gaps between circulating and total supply - Sudden changes in supply without clear reason - Market cap much higher than total value locked (TVL)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1723,7 +1998,7 @@
     "text": "Using Market Cap in Trading Decisions\nMarket cap can be valuable when used correctly:\n\nFor relative valuation between similar protocols\nIdentifying potential manipulation\nAssessing room for growth\nUnderstanding total risk exposure\n\nRemember: Market cap is a trailing indicator showing where a token has been, not necessarily where it’s going.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1734,7 +2009,7 @@
     "text": "Conclusion\nMarket capitalization in DeFi requires a more sophisticated understanding than in traditional finance. While it shouldn’t be ignored, it should never be the only metric you consider. The most successful traders and investors learn to look beyond market cap to understand true value and risk.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Market Structures</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Market Structures</span>"
     ]
   },
   {
@@ -1745,7 +2020,7 @@
     "text": "Core Rating Categories (60% of Total Rating)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1756,7 +2031,7 @@
     "text": "1. Protocol Value Capture (30%)\nA. Network Effect Metrics\n\nDaily Active Users (DAUs)\nTotal Value Locked (TVL)\nTransaction volume\nFee revenue generated\nProtocol revenue retained\n\nB. Value Accrual Mechanisms\n\nToken economics design\nFee distribution model\nStaking mechanisms\nBurns and supply dynamics\n\nC. Ozempic Network Effects\n\nValue extraction efficiency from L1\nTransaction fee capture rate\nUser migration metrics from L1\nTVL migration patterns\nGas savings versus L1\nL1-L2 Value Dynamics\nSequencer revenue distribution\nMEV capture and distribution\nBridge volume and efficiency\nSettlement layer costs\nSustainable Value Creation\nNet new users versus L1 migration\nEcosystem-specific applications\nNovel transaction types impossible on L1\nCross-L2 interoperability metrics\n\n\n\n2. Protocol Security & Risk Assessment (30%)\nA. Smart Contract Security\n\nAudit history and quality\nBug bounty program effectiveness\nHistorical vulnerability incidents\nCode complexity metrics\nUpgrade mechanism security\nTesting coverage\n\nB. Network Security\n\nConsensus mechanism robustness\nMEV exposure and protection measures\nNode distribution\nNetwork attack resistance\nCross-chain bridge security\nOracle dependency and security\n\nC. L1 Dependency Risks\n\nSettlement layer congestion exposure\nBridge security and liquidity depth\nL1 fee market correlation\nSequencer centralization risk\nValue extraction sustainability",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1767,7 +2042,7 @@
     "text": "Risk Categories (40% of Total Rating)\n\n1. Technical Risk Assessment (15%)\nA. Smart Contract Vulnerabilities - Code audit findings severity - Time-tested deployment - Complexity of interactions - Dependencies on external protocols - Historical incident analysis\nB. Network Level Risks\n\nMEV exposure metrics\nNetwork partition resistance\nNode centralization factors\nInfrastructure dependencies\nCross-chain vulnerability exposure\n\nC. Key Management & Wallet Security\n\nMulti-sig implementation\nKey generation processes\nHardware security modules usage\nSocial recovery mechanisms\nAccess control systems\n\n\n\n2. Economic Risk Assessment (10%)\nA. Market Dynamics\n\nLiquidity concentration\nPrice impact resistance\nCollateral quality\nMarket manipulation resistance\n\nB. Economic Model Vulnerabilities\n\nGame theory attack vectors\nIncentive alignment analysis\nEconomic exploit resistance\nStress test scenarios\nFlash loan attack surface\n\n\n\n3. Operational Risk Assessment (10%)\nA. CeFi/CeDeFi Risks\n\nCentralization points\nCustody arrangements\nThird-party dependencies\nOperational redundancy\nEmergency procedures\n\nB. Oracle Dependencies\n\nOracle manipulation resistance\nPrice feed reliability\nBackup oracle systems\nHistorical oracle incidents\nData quality metrics\n\n\n\n4. External Risk Assessment (5%)\nA. Regulatory Risk\n\nJurisdictional exposure\nCompliance frameworks\nRegulatory clarity\nLegal structure\nHistorical regulatory interactions\n\nB. Social Engineering Risk\n\nTeam security practices\nAccess control policies\nSocial attack history\nSecurity awareness training\nIncident response readiness",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1778,7 +2053,7 @@
     "text": "Risk-Adjusted Rating Scale\nAAA: Exceptional protocol with comprehensive risk mitigation\n\nMultiple independent security audits with no critical findings\nProven resistance to all major attack vectors\nStrong regulatory compliance framework\nDecentralized operations with minimal points of failure\nMultiple layers of economic security\n\nAA: Strong protocol with robust risk management\n\nRegular security audits with minor findings\nDocumented resistance to common attack vectors\nClear regulatory strategy\nLimited centralization risks\nStrong economic security measures",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1789,7 +2064,7 @@
     "text": "Risk Multipliers\nEach risk category can apply a multiplier to the base rating:\n\nCritical Risk: -3 rating notches\nHigh Risk: -2 rating notches\nMedium Risk: -1 rating notch\nLow Risk: No adjustment\nMinimal Risk: +1 rating notch",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1800,7 +2075,7 @@
     "text": "Continuous Monitoring Triggers\n\nSmart contract vulnerability disclosure\nNetwork attack detection\nRegulatory action\nEconomic model stress\nOracle deviation events\nCross-chain bridge incidents\nSocial engineering attempts\nMEV activity spikes",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1811,7 +2086,7 @@
     "text": "Review Framework\n\nMonthly security metric review\nQuarterly risk assessment update\nAnnual comprehensive review\nReal-time monitoring of critical indicators\nIncident-triggered reassessment",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1822,7 +2097,7 @@
     "text": "Ozempic Effect\nWe’ll base this upon value flows. Defillama doesn’t actually display this. So we’ll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon.\nLet’s build a comprehensive framework for tracking the true “Ozempic effect” of L2s on Ethereum. We’ll need several interconnected metrics to understand the complete value flow dynamics.\n\nWallet Migration Analysis\n\n\nTrack addresses that first appeared on Ethereum before a certain date (let’s call them “Ethereum Native Wallets”)\nMonitor their activity transition to L2s over time\nAnalyze their ETH holdings distribution between L1 and L2s\nCalculate the ratio of their transaction activity on L2s versus L1\n\n\nL2 Native User Analysis\n\n\nIdentify wallets that first appeared on L2s\nTrack what percentage never bridge to Ethereum\nMeasure their total value held\nCalculate their transaction activity\n\n\nFee Flow Dynamics\n\n\nTrack L2 sequencer fees paid back to Ethereum\nCalculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)\nMonitor the ratio of fees paid back to Ethereum versus fees retained by the L2\n\nWe could create a composite “Value Migration Score” that looks like:\ndef calculate_migration_score(l2_data):\n    # Value Migration\n    eth_native_migration = (\n        eth_native_wallets_on_l2 / total_eth_native_wallets *\n        eth_value_moved_to_l2 / original_eth_holdings\n    )\n    \n    # Activity Migration\n    activity_migration = (\n        l2_transactions_by_eth_wallets / \n        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)\n    )\n    \n    # L2 Native Growth\n    l2_native_strength = (\n        l2_only_wallets / total_l2_wallets *\n        l2_native_value / total_l2_value\n    )\n    \n    # Fee Economics\n    fee_efficiency = (\n        sequencer_fees_to_ethereum / \n        theoretical_l1_fees_for_same_transactions\n    )\n    \n    return (\n        eth_native_migration * 0.3 +\n        activity_migration * 0.3 +\n        l2_native_strength * 0.2 +\n        fee_efficiency * 0.2\n    )\nThis would give us a quantitative measure of how effectively an L2 is:\n\nAttracting value from Ethereum\nGenerating new value through native users\nMaintaining a sustainable fee relationship with Ethereum\n\nA true Ozempic L2 should show:\n\nHigh migration of ETH native wallets\nStrong L2 native user growth\nEfficient fee generation that still provides meaningful revenue to Ethereum\nSustained or growing activity ratios over time\n\nWould you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?\n\nNet Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1833,7 +2108,7 @@
     "text": "Risk Factors\n\n1. Technical Risks\n\nImplementation bugs\nSecurity vulnerabilities\nUpgrade coordination failures\nNetwork splits\n\n\n\n2. Governance Risks\n\nCapture by special interests\nLow participation\nContentious decisions\nUnclear processes\n\n\n\n3. Social Risks\n\nCommunity fragmentation\nLoss of developer support\nReputation damage\nMarket impacts",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1844,7 +2119,7 @@
     "text": "Future Considerations\n\n1. Emerging Trends\n\nAutomated governance systems\nAI-assisted proposal analysis\nCross-chain governance\nDynamic parameter adjustment\n\n\n\n2. Challenges\n\nScaling governance participation\nBalancing security and innovation\nManaging increasing complexity\nMaintaining decentralization\n\n\n\n3. Opportunities\n\nImproved governance tools\nBetter simulation capabilities\nEnhanced coordination mechanisms\nMore sophisticated voting systems",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1855,7 +2130,7 @@
     "text": "Dependent Network Ratings\nPolygon zkEVM Settlement Guarantees (10/10 weight): Score: 9/10 The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum’s consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.\nDispute Resolution (9/10 weight): Score: 10/10 Ethereum serves as the absolute source of truth for the zkEVM. If there’s ever a dispute about the state, the zero-knowledge proofs verified by Ethereum’s consensus provide mathematical certainty about what is correct. There’s no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can’t confirm invalid state transitions, and its assets are secured by Ethereum’s consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.\nState Finality (7/10 weight): Score: 9/10 Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there’s no waiting period for finality beyond Ethereum’s own finality period. This is as strong as state finality can get for a settlement-dependent network.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum’s consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.\nState Progression Dependency (5/10 weight): Score: 7/10 While the zkEVM can process transactions independently, it can’t finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there’s some independence in transaction processing.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they’re locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.\nTotal Score: 62/70 (approximately 89%)\nThis analysis places Polygon zkEVM firmly in the “Fully Non-Sovereign” category. Arbitrum Let me analyze Arbitrum’s relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.\nSettlement Guarantees (10/10 weight): Score: 7/10 Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it’s not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum’s consensus layer still makes this a robust settlement mechanism.\nDispute Resolution (9/10 weight): Score: 8/10 Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum’s consensus automatically enforces the correct resolution once fraud is proven.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum’s state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.\nState Finality (7/10 weight): Score: 6/10 While Arbitrum’s state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets to Ethereum, guaranteed by Ethereum’s consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum’s operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.\nState Progression Dependency (5/10 weight): Score: 7/10 Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum’s consensus. When assets move to Arbitrum, they’re locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.\nTotal Score: 55/70 (approximately 79%)\nThis analysis places Arbitrum in the “Fully Non-Sovereign” category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs.\nStacks Settlement Guarantees (10/10 weight): Score: 4/10 Stacks uses Bitcoin for checkpointing and security anchoring However, it lacks cryptographic enforcement of settlement by Bitcoin’s consensus Bitcoin doesn’t automatically enforce or validate Stacks’ state transitions Falls into the “checkpoint systems” category rather than stronger settlement guarantees Dispute Resolution (9/10 weight): Score: 3/10 While Stacks records its state on Bitcoin, Bitcoin’s consensus doesn’t serve as the ultimate arbiter Disputes are primarily resolved within Stacks’ own consensus mechanism Bitcoin can’t automatically correct or resolve issues in Stacks’ state Economic Security Inheritance (8/10 weight): Score: 6/10 Miners must commit actual Bitcoin through PoX mechanism This creates some economic security dependency on Bitcoin However, Stacks maintains its own economic incentives through STX State Finality (7/10 weight): Score: 5/10 Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces Provides stronger finality than fully independent chains but weaker than true L2s Exit Rights Guarantees (6/10 weight): Score: 4/10 With sBTC, users can move Bitcoin between chains However, this relies on Stacks’ mechanisms rather than being guaranteed by Bitcoin’s consensus Exit rights depend on threshold signatures rather than cryptographic guarantees State Progression Dependency (5/10 weight): Score: 7/10 Stacks blocks are linked to Bitcoin blocks through PoX State progression is tied to Bitcoin’s block progression However, Stacks can still process transactions independently within this framework Asset Movement (4/10 weight): Score: 5/10 sBTC enables Bitcoin movement between chains But this movement isn’t directly enforced by Bitcoin’s consensus Relies on threshold signatures and Stacks’ mechanisms Total Score: 34/59 (approximately 58%)\nThis places Stacks in the “Moderately Dependent” category on our spectrum.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1866,7 +2141,7 @@
     "text": "Risks\nSub categories of risks include smart contract vulns regulatory risks centralization risks for CeDeFi and CEX’s MEV network level key and wallet compromise cross chain exploits oracle manipulation Social engineering exploitation of economic models",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
     ]
   },
   {
@@ -1877,7 +2152,7 @@
     "text": "BTC\nBitcoin has emerged as the world’s first successful digital store of value, creating a new paradigm for wealth preservation in the digital age. Much like gold served ancient civilizations through to modern times as a reliable store of wealth, Bitcoin provides similar characteristics but with distinct advantages native to the digital realm.\nAt its foundation, Bitcoin’s value proposition rests on its absolute scarcity - there will never be more than 21 million bitcoins. This hard cap, combined with a transparent and immutable issuance schedule through mining “halvings” every four years, creates a predictability that even gold, with its uncertain mining output, cannot match. When new gold deposits are discovered or mining technology improves, supply can increase unexpectedly. Bitcoin’s supply schedule, in contrast, is mathematically certain.\nBitcoin’s digital nature offers significant advantages over traditional stores of value. Unlike gold, it can be transferred instantly across borders, divided into microscopic units, stored without physical vault costs, and verified for authenticity without specialized equipment. Its self-custody properties allow individuals to maintain direct control over their wealth without relying on third-party custodians or financial institutions.\nThe network’s security model, backed by massive computational power through proof-of-work mining, has proven remarkably resilient over more than a decade. This track record has gradually built confidence among institutional investors, who increasingly view Bitcoin as a legitimate asset class for portfolio diversification and inflation hedging. Major financial institutions now offer Bitcoin investment products, while some corporations have adopted it as a treasury reserve asset.\nWhile Bitcoin began as a peer-to-peer electronic cash system, its evolution into a store of value mirrors how gold transformed from a medium of exchange into a wealth preservation tool. The emergence of Layer 2 solutions like the Lightning Network now handles Bitcoin’s payments functionality, allowing the base layer to focus on its primary role as digital gold - the foundational layer of monetary security in the cryptocurrency ecosystem.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -1888,7 +2163,7 @@
     "text": "Derivatives\n\ncbBTC\nCoinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase’s custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase’s reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.\nThe technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase’s layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase’s custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base’s growing DeFi ecosystem while maintaining exposure to Bitcoin’s value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC’s key differentiator is its direct integration with Coinbase’s established infrastructure and its focus on institutional-grade security and compliance measures.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -1899,7 +2174,7 @@
     "text": "ETH\nEthereum represents a revolutionary leap in computing - it’s humanity’s first attempt at creating a global, decentralized computer that’s always running and accessible to everyone. Like how the internet connected computers worldwide for information sharing, Ethereum connects computers globally to create a single, unified computational platform that no one controls but everyone can use.\nThink of Ethereum as a massive, worldwide computer with some unique properties: it never shuts down, can’t be censored, and maintains perfect records of everything it processes. Instead of storing photos or documents like a regular computer, this world computer specializes in running smart contracts - pieces of code that automatically execute agreements and handle digital assets without needing intermediaries.\nETH, the network’s native asset, serves as the essential “fuel” that powers this world computer. Every computation, whether it’s processing a DeFi trade or minting an NFT, requires ETH to run. After Ethereum’s transition to Proof of Stake through The Merge, ETH also gained a new role - network validators must stake ETH to participate in securing the network, similar to how a computer needs electricity to function and stay secure.\nWhat makes Ethereum truly revolutionary is its programmability. Just as early personal computers transformed from specialized calculators into general-purpose machines that could run any software, Ethereum evolved blockchain technology from a simple transaction ledger into a platform that can run any programmable application. This has spawned entire new industries: decentralized finance (DeFi) protocols that operate 24/7 without human intervention, NFT marketplaces that enable digital ownership and royalties, and DAOs that coordinate human activity through code rather than hierarchies.\nThe platform continues to evolve through ambitious technical upgrades. Layer 2 scaling solutions like rollups act as specialized processors that handle heavy computations off the main chain, while the planned implementation of sharding will divide the network into parallel processing units - similar to how modern computers use multiple cores to increase performance. These improvements aim to make the world computer more efficient and accessible while maintaining its core properties of decentralization and security.\nAs this world computer grows in capability and adoption, ETH’s value proposition strengthens - it’s not just a digital asset, but the essential resource needed to access and use what might become the foundation of our digital future.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -1910,27 +2185,27 @@
     "text": "This section will compare how Blockchains implement the three tiers of traditional governance. Namely:\n\nLegistlative - Who makes the rules and how they created\nExecutive - Who executes the rules\nJudicial - Referee between them\n\nSo in Bitcoin BIP’s cover the Legislative aspect, Executive is Node operators for Networks then for dapps it gets more complex. Judicial is where it gets challenging. This is pretty much the entire community. People interpret rules by economic activity and nodes. Look at Bitcoin Cash. No money. So everyone agreed with the block size of Bitcoin.\nThere is also the concept of Canvassing or Lobbying can also occur. Let’s look at Ethereum. If I wanted to increase the gas limit from 30 million to 31 million. I’d need to canvas all the nodes to come along with me. Currently there is 5,333 nodes. So I’d need to convince ~3k node operators to increase the gas limit.\n\n1. Hard Forks\n\nDefinition: Protocol changes that make previously invalid blocks/transactions valid (or vice-versa), requiring all nodes to upgrade\nCharacteristics:\n\nNon-backwards compatible\nRequires coordinated network upgrade\nCreates potential for chain splits if not unanimously adopted\n\nUse Cases: Major protocol upgrades, fundamental rule changes, bug fixes\nExamples: Ethereum’s merge to PoS, Bitcoin’s SegWit upgrade\n\n\n\n2. Soft Forks\n\nDefinition: Backwards-compatible protocol changes that tighten rules without invalidating existing blocks\nCharacteristics:\n\nBackwards compatible\nOld nodes can still participate (with limitations)\nLower coordination requirements\n\nUse Cases: Adding new features, incremental improvements\nExamples: Bitcoin’s P2SH implementation, taproot upgrade\n\n\n\n3. Parameter Updates\n\nDefinition: Changes to network variables within predefined bounds\nCharacteristics:\n\nNo code changes required\nOften automated through on-chain governance\nLower risk than protocol changes\n\nUse Cases: Fee adjustments, block size modifications, staking parameters\nExamples: Tezos’ regular parameter updates, Cosmos’ governance parameters\n\n\n\nGovernance Mechanisms\n\n1. Off-Chain Governance\n\nCharacteristics:\n\nSocial consensus through discussion forums, social media, conferences\nInformal decision-making processes\nRelies on node operator coordination\n\nAdvantages:\n\nFlexible and adaptable\nAllows for nuanced discussion\nNatural resistance to capture\n\nDisadvantages:\n\nCan be slow and messy\nMay lack clear resolution mechanisms\nPotential for contentious outcomes\n\n\n\n\n2. On-Chain Governance\n\nCharacteristics:\n\nFormal voting mechanisms\nSmart contract-based execution\nToken-weighted or identity-based participation\n\nAdvantages:\n\nClear process and outcomes\nAutomated execution\nTransparent participation\n\nDisadvantages:\n\nPotential plutocratic capture\nReduced flexibility\nVoter apathy risks\n\n\n\n\n3. Hybrid Systems\n\nCharacteristics:\n\nCombines off-chain discussion with on-chain execution\nMultiple stages of proposal refinement\nMixed participation models\n\nAdvantages:\n\nBalances flexibility with formality\nCombines benefits of both approaches\nCan adapt to different types of changes\n\nExamples: Polkadot’s governance system, Cosmos Hub’s proposal process\n\n\n\n\nImprovement Proposal Systems\n\n1. Structure\n\nStages:\n\nDraft: Initial proposal development\nReview: Community feedback and refinement\nLast Call: Final period for major objections\nAccepted/Final: Ready for implementation\nRejected: Proposal declined\n\nComponents:\n\nTechnical specification\nMotivation and rationale\nBackwards compatibility analysis\nReference implementation (if applicable)\nSecurity considerations\n\n\n\n\n2. Common Frameworks\n\nBIP (Bitcoin Improvement Proposals):\n\nFocus on consensus changes\nConservative approach\nHigh emphasis on security\n\nEIP (Ethereum Improvement Proposals):\n\nMultiple tracks (Core, ERC, Interface)\nRegular cadence of updates\nStrong emphasis on standardization\n\nNetwork-Specific Systems:\n\nCustomized to network needs\nVarying levels of formality\nDifferent voting thresholds\n\n\n\n\n\nCentralization Factors\n\n1. Development Centralization\n\nCore Development Teams:\n\nControl over codebase\nTechnical expertise concentration\nFunding dependencies\n\nClient Implementation:\n\nDiversity of node software\nImplementation independence\nBug discovery and fixes\n\n\n\n\n2. Governance Centralization\n\nVoting Power Distribution:\n\nToken concentration\nDelegate systems\nVoter participation rates\n\nProposal Control:\n\nWho can propose changes\nFiltering mechanisms\nDiscussion venue control\n\n\n\n\n3. Infrastructure Centralization\n\nNode Operation:\n\nGeographic distribution\nHardware requirements\nOperating costs\n\nService Providers:\n\nAPI services\nBlock explorers\nDevelopment tools\n\n\n\n\n\nBest Practices\n\n1. Change Management\n\nClear documentation of changes\nAdequate testing periods\nCoordinated upgrade schedules\nEmergency response procedures\n\n\n\n2. Community Engagement\n\nRegular communication channels\nMultiple feedback mechanisms\nTransparent decision-making\nEducational resources\n\n\n\n3. Technical Implementation\n\nComprehensive testing frameworks\nClear upgrade paths\nFallback mechanisms\nSecurity audits",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Governance</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Governance</span>"
     ]
   },
   {
     "objectID": "contributing.html",
     "href": "contributing.html",
-    "title": "28  Contributing",
+    "title": "29  Contributing",
     "section": "",
-    "text": "28.1 Current requirements",
+    "text": "29.1 Current requirements",
     "crumbs": [
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Contributing</span>"
     ]
   },
   {
     "objectID": "contributing.html#current-requirements",
     "href": "contributing.html#current-requirements",
-    "title": "28  Contributing",
+    "title": "29  Contributing",
     "section": "",
-    "text": "28.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n28.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
+    "text": "29.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n29.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
     "crumbs": [
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Contributing</span>"
     ]
   },
   {
