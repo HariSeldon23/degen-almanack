@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#2d3748">
+        Impermanent Loss in Uniswap V2
+    </text>
+
+    <!-- Price Change Axis -->
+    <line x1="100" y1="400" x2="700" y2="400" stroke="#4a5568" stroke-width="2"/>
+    <text x="400" y="440" text-anchor="middle" font-size="14" fill="#4a5568">Token Price Change (X)</text>
+    
+    <!-- Value Change Axis -->
+    <line x1="100" y1="400" x2="100" y2="100" stroke="#4a5568" stroke-width="2"/>
+    <text x="60" y="250" text-anchor="middle" font-size="14" fill="#4a5568" transform="rotate(-90, 60, 250)">
+        Portfolio Value ($)
+    </text>
+
+    <!-- HODLing Line (Linear) -->
+    <path d="M 100 350 L 700 150" stroke="#3182ce" stroke-width="2" fill="none"/>
+    <text x="650" y="130" fill="#3182ce" font-size="14">HODL Value</text>
+
+    <!-- LP Position Line (Square Root) -->
+    <path d="M 100 350 Q 400 300 700 200" stroke="#e53e3e" stroke-width="2" fill="none"/>
+    <text x="650" y="220" fill="#e53e3e" font-size="14">LP Position Value</text>
+
+    <!-- Impermanent Loss Area -->
+    <path d="M 400 280 L 400 260" stroke="#718096" stroke-width="2" stroke-dasharray="4"/>
+    <text x="420" y="270" fill="#718096" font-size="14">Impermanent Loss</text>
+
+    <!-- Price Points -->
+    <text x="100" y="420" text-anchor="middle" font-size="12" fill="#4a5568">0.5x</text>
+    <text x="400" y="420" text-anchor="middle" font-size="12" fill="#4a5568">1x</text>
+    <text x="700" y="420" text-anchor="middle" font-size="12" fill="#4a5568">2x</text>
+
+    <!-- Legend -->
+    <rect x="100" y="50" width="200" height="80" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="120" y="70" r="5" fill="#3182ce"/>
+    <text x="140" y="75" fill="#4a5568" font-size="12">HODL Strategy</text>
+    <circle cx="120" y="95" r="5" fill="#e53e3e"/>
+    <text x="140" y="100" fill="#4a5568" font-size="12">LP Position</text>
+</svg>

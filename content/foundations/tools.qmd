@@ -147,6 +147,7 @@ Block explorers provide detailed information about transactions, addresses, and 
 #### Portfolio Trackers
 
 ##### DeBank
+
 - Comprehensive DeFi position tracking
 - Cross-chain support
 - Real-time updates
@@ -154,6 +155,7 @@ Block explorers provide detailed information about transactions, addresses, and 
 - Risk monitoring
 
 Best for:
+
 - Active DeFi users
 - Multi-chain portfolios
 - Yield farming tracking
@@ -218,6 +220,7 @@ Privacy tools help protect user identity and transaction privacy while interacti
 ### VPN Services
 
 When selecting a VPN for Web3:
+
 - Look for no-log policies
 - Check jurisdiction
 - Verify cryptocurrency payment support

@@ -6,6 +6,8 @@ Understanding Web3 requires familiarity with a unique vocabulary that spans mult
 
 ## Evolution of the Web
 
+![Evolution of the Web](../../images/web3.svg)
+
 ### Web 1.0 (1990-2004)
 The first iteration of the worldwide web consisted primarily of static websites that users could only read. Information flowed in one direction - from website owners to visitors. Think of early news websites or company homepages that rarely changed and offered no interaction.
 
@@ -18,6 +20,9 @@ The ownership web represents a fundamental shift where users can read, write, an
 ## Core Concepts
 
 ### Decentralization
+
+![Decentralization](../../images/decentralization.svg)
+
 Decentralization refers to the distribution of power, control, and decision-making across a network rather than concentration in a single entity. It exists on a spectrum:
 
 1. **Architectural Decentralization**: How many physical computers comprise the system?
@@ -109,6 +114,8 @@ The practice of providing liquidity or assets to DeFi protocols in exchange for 
 #### Impermanent Loss
 A unique risk in liquidity provision where the value of assets deposited in an AMM pool can decrease relative to simply holding those assets, due to price movements and the AMM's constant product formula.
 
+![Impermanent Loss](../../images/defi/il.svg)
+
 ## Cultural Terms
 
 ### HODL
@@ -122,7 +129,7 @@ Short for "degenerate," this term began as criticism of high-risk trading behavi
 - Stay ahead of market trends
 - Actively participate in new protocols
 
-### Gas
+### [Gas](../technical/gas.qmd)
 Transaction fees paid to network validators, typically priced in the network's native token. Gas prices fluctuate based on network demand, with higher prices during periods of congestion.
 
 ### Gwei

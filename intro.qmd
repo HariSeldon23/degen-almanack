@@ -13,6 +13,7 @@ The name "Trollip's Degen Almanack" might seem unusual. Initially, I considered 
 What sets this Almanack apart is its commitment to intellectual honesty and practical utility. We're building it as an open-source, community-reviewed resource that will evolve alongside the technology it describes. The documentation uses version control through Git, allowing readers to track how understanding changes over time. As the industry matures, we plan to integrate real-time data sources, transforming this from a static document into a dynamic tool for decision-making.
 
 The Almanack is organized into distinct paths catering to different needs:
+
 - The Path to Independence guides those seeking financial sovereignty
 - The Technologist's Path provides deep technical understanding
 - The Financial sections offer frameworks for analysis and investment

@@ -173,7 +173,7 @@ Security in crypto requires developing consistent habits:
 1. Regular Security Reviews
 
    - Check wallet connections
-   - Review token approvals
+   - [Review token approvals](https://revoke.cash/)
    - Update security software
    - Test backup procedures
 

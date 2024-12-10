@@ -21,6 +21,9 @@ book:
     part: Foundations
   - chapters: 
     - ./content/independence/independence.qmd
+    - ./content/independence/first_steps.qmd
+    - ./content/independence/fundamentals.qmd
+    - ./content/independence/basic_defi.qmd
     - ./content/independence/starter.qmd
     - ./content/degen/mid.qmd
     - ./content/degen/big.qmd
@@ -32,6 +35,7 @@ book:
     - ./content/technical/overview.qmd
     - ./content/technical/cryptography.qmd
     - ./content/technical/blockchains.qmd
+    - ./content/technical/gas.qmd
     - ./content/technical/dapps.qmd
     - ./content/technical/mev.qmd
     - ./content/technical/languages.qmd

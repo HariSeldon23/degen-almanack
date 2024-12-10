@@ -5,7 +5,7 @@
 Before touching any money or creating accounts, let's build your foundation of knowledge. Think of this like learning to recognize road signs before driving a car.
 
 ### Essential Terms
-Start by familiarizing yourself with the fundamental vocabulary in Chapter 6: ["Terms"](../essentials/terms.qmd). Key concepts you need to understand first include:
+Start by familiarizing yourself with the fundamental vocabulary in Chapter ["Terms"](../intro/terms.qmd). Key concepts you need to understand first include:
 
 - Web3 and decentralization
 - Blockchain basics
@@ -14,7 +14,7 @@ Start by familiarizing yourself with the fundamental vocabulary in Chapter 6: ["
 - Smart contracts
 
 ### Cultural Context
-The Web3 community has its own culture, largely expressed through memes. Review Chapter 8: ["Memes"](../essentials/memes.qmd) to understand:
+The Web3 community has its own culture, largely expressed through memes. Review Chapter ["Memes"](../essentials/memes.qmd) to understand:
 
 - "Not your keys, not your coins" - why self-custody matters
 - "HODL" - the philosophy of long-term holding
@@ -22,7 +22,7 @@ The Web3 community has its own culture, largely expressed through memes. Review 
 - Common scam warnings and red flags
 
 ### Required Tools
-You'll need specific tools to interact with Web3. Reference Chapter 7: ["Tools"](../foundations/tools.qmd) for details on:
+You'll need specific tools to interact with Web3. Reference Chapter ["Tools"](../foundations/tools.qmd) for details on:
 
 - Wallets (MetaMask, hardware wallets)
 - Block explorers
@@ -34,7 +34,7 @@ You'll need specific tools to interact with Web3. Reference Chapter 7: ["Tools"]
 Before handling any real money, we need to establish secure practices. Security isn't optional - it's the foundation everything else builds upon.
 
 ### Protecting Your Assets
-From Chapter 9: "Don't Lose Your Money":
+From the Chapter "Don't Lose Your Money":
 
 1. Private Key Management
 
@@ -62,7 +62,7 @@ From Chapter 9: "Don't Lose Your Money":
 Now that you understand the basics and security fundamentals, it's time to enter the ecosystem.
 
 ### Your First Crypto Purchase
-Following Chapter 10: "Make Some Money":
+Following the Chapter "First Steps":
 
 1. Start Small
 

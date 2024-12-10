@@ -30,7 +30,7 @@ Economic Security
 Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support
 
 ### Base Networks
-This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](../technical/blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](../essentials/terms.qmd#layer-1). 
+This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](../technical/blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](../essentials/terms.qmd). 
 
 We define a Base Network that maintains it's own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network. 
 

@@ -10,7 +10,7 @@ The almanack is organized into progressive sections that build upon each other w
 
 If your primary goal is achieving financial sovereignty through cryptocurrency, begin with:
 
-1. Start with the "Getting Started" section to understand basic tools and security
+1. Start with the ["Foundations"](../foundations/foundations.qmd) section to understand basic tools and security
 2. Move to "Path to Independence" which provides step-by-step guidance
 3. Reference the "Financial Systems" section as you advance
 4. Explore other sections based on your growing interests and needs
