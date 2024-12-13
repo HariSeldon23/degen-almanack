@@ -1,2 +1,4 @@
 /.quarto/
 .env
+images/manim/media/
+images/manim/__pycache__/
