@@ -10,7 +10,7 @@ Start by familiarizing yourself with the fundamental vocabulary in Chapter ["Ter
 - Web3 and decentralization
 - Blockchain basics
 - Public and private keys
-- Gas fees and transaction costs
+- [Gas fees and transaction costs](../technical/gas.qmd)
 - Smart contracts
 
 ### Cultural Context
@@ -34,35 +34,25 @@ You'll need specific tools to interact with Web3. Reference Chapter ["Tools"](..
 Before handling any real money, we need to establish secure practices. Security isn't optional - it's the foundation everything else builds upon.
 
 ### Protecting Your Assets
-From the Chapter "Don't Lose Your Money":
 
 1. Private Key Management
-
    - Never share your seed phrase
    - Secure storage methods
    - Backup procedures
    - Emergency access plans
 
 2. Creating Safe Wallets
-
    - Setting up MetaMask securely
    - Creating a "burner" wallet for testing
    - Understanding hardware wallet benefits
    - Using multiple wallets for different purposes
-
-3. Privacy Considerations
-
-   - The Tornado Cash situation
-   - Legal implications of privacy tools
-   - Alternative privacy methods
-   - Balance between privacy and compliance
 
 ## Phase 3: Getting Started
 
 Now that you understand the basics and security fundamentals, it's time to enter the ecosystem.
 
 ### Your First Crypto Purchase
-Following the Chapter "First Steps":
+Following the Chapter ["First Steps"](./first_steps.qmd):
 
 1. Start Small
 
@@ -73,7 +63,7 @@ Following the Chapter "First Steps":
 
 2. Understanding Fees
 
-   - Different fee markets (overview with links to Technical section)
+   - Different fee markets 
    - How gas prices work
    - Choosing the right time to transact
    - Estimating transaction costs
@@ -93,7 +83,7 @@ Following the Chapter "First Steps":
    - Legal considerations
    - Operational security
 
-## Phase 4: Basic Operations
+## Phase 4: DeFi Fundamentals
 
 Now you're ready to start using Web3 services while maintaining security.
 

@@ -73,6 +73,8 @@ format:
     theme: cosmo
     toc: true
     toc-depth: 3
+  epub: 
+    default: true
 project:
   output-dir: docs
   preview:

@@ -13,9 +13,9 @@ The 1980s saw the birth of the Cypherpunk movement. These technologists and priv
 
 David Chaum, a pioneer in cryptographic privacy, proposed the first digital cash system in 1983. His DigiCash company later implemented these ideas, but ultimately failed – partly because it remained centralized, requiring trust in a single company.
 
-The 1990s brought both advances and setbacks. Phil Zimmermann released PGP (Pretty Good Privacy), bringing strong encryption to everyday users. The U.S. government, viewing strong cryptography as a national security threat, tried to mandate backdoors through the Clipper Chip. The resulting "Crypto Wars" ended with cryptography being classified as protected speech.
+The 1990s brought both advances and setbacks. Phil Zimmermann released PGP (Pretty Good Privacy), bringing strong encryption to everyday users. The U.S. government, viewing strong cryptography as a national security threat, tried to mandate backdoors through the Clipper Chip. The resulting "Crypto Wars" ended with [cryptography being classified as protected speech](https://en.wikipedia.org/wiki/Bernstein_v._United_States).
 
-Through these battles, the Cypherpunks refined their vision. In 1993, Eric Hughes published "A Cypherpunk's Manifesto," declaring that "privacy is necessary for an open society in the electronic age." The movement explored various approaches to digital money: Nick Szabo's bit gold, Wei Dai's b-money, and Adam Back's Hashcash all contributed crucial ideas.
+Through these battles, the Cypherpunks refined their vision. In 1993, Eric Hughes published "A Cypherpunk's Manifesto," declaring that "privacy is necessary for an open society in the electronic age." The movement explored various approaches to digital money: Nick Szabo's bit gold, [Wei Dai's b-money](https://en.bitcoin.it/wiki/B-money), and Adam Back's Hashcash all contributed crucial ideas.
 
 Then came 2008. As the global financial system teetered on the brink of collapse, an anonymous figure calling themselves Satoshi Nakamoto published a paper titled "Bitcoin: A Peer-to-Peer Electronic Cash System." Bitcoin solved a problem that had stymied previous attempts at digital money: how to achieve consensus about ownership without trusting any central authority.
 

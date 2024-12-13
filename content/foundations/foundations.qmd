@@ -19,7 +19,6 @@ Bitcoin emerged from this foundation, but it would be a mistake to see it as jus
 The path to digital independence isn't about rejecting modern convenience - it's about reclaiming control while preserving it. We'll learn to:
 
 - Hold assets that can't be frozen or seized
-- Communicate without surveillance
 - Trade without gatekeepers
 - Build systems that resist control
 
