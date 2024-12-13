@@ -462,6 +462,17 @@
     ]
   },
   {
+    "objectID": "content/foundations/basic_security.html#creating-your-web3-identity",
+    "href": "content/foundations/basic_security.html#creating-your-web3-identity",
+    "title": "Protecting Your Assets",
+    "section": "Creating Your Web3 Identity",
+    "text": "Creating Your Web3 Identity\n\nThe Importance of Self-Custody\nImagine your digital assets as a personal vault, where you hold the only key. Traditional exchanges are like safety deposit boxes managed by banks, where you’re dependent on their security and policies. Self-custody transforms this model, giving you complete control and responsibility over your digital assets. The journey begins with selecting a wallet—not just a digital storage tool, but your gateway to the decentralized web. While numerous options exist, we’ll explore Phantom as a versatile starting point, understanding both its strengths and limitations.\nPhantom stands out by supporting multiple blockchain networks, covering approximately 70% of current DeFi activity:\n\nEthereum: The pioneering smart contract platform\nSolana: Known for high-speed, low-cost transactions\nBitcoin: The original cryptocurrency\nBase: Coinbase’s layer-2 blockchain\nPolygon: Ethereum’s scalability solution\nSui: An innovative move-based blockchain\n\n\n\nPhantom Setup Guide\n\nInstallation\n\nUse official sources only\nChrome/Firefox/Brave supported\nMobile options available both Android and IPhone\nVerify extension authenticity\n\nInitial Configuration\n\nCreate new wallet\nRecord seed phrase properly\nSet strong password\nUnderstand recovery options\n\nSecurity Best Practices\n\nNever share seed phrase\nUse hardware wallet for large amounts\nRegularly check connected sites\nUpdate extension promptly\n\nNetwork Configuration\n\nUnderstanding Bitcoin Mainnet\nRecognizing test networks\nManaging network switching\n\n\n\n\nCreating Clean Wallets\nAs you progress in Web3, wallet separation becomes crucial. Think of wallets like different bank accounts—each serving a specific purpose.\n\nWallet Types\n\nMain Wallet: Your primary identity\nTrading Wallet: For DeFi interactions\nGaming Wallet: For Web3 games\nTest Wallet: For trying new protocols\n\nPrivacy Considerations\n\nTransaction history is public\nAddress clustering risks\nBlock explorer visibility\nNetwork analysis implications\n\nOperational Security\n\nDifferent devices for different wallets\nClean transaction patterns\nCross-chain considerations\nInteraction compartmentalization\n\nLegal and Privacy Tools\n\nVPN usage pros and cons\nMixer considerations\nJurisdiction awareness\nCompliance documentation",
+    "crumbs": [
+      "Foundations",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Protecting Your Assets</span>"
+    ]
+  },
+  {
     "objectID": "content/foundations/basic_security.html#understanding-technical-risks",
     "href": "content/foundations/basic_security.html#understanding-technical-risks",
     "title": "Protecting Your Assets",
@@ -588,17 +599,6 @@
     "title": "Your First Steps",
     "section": "Your First Cryptocurrency Purchase",
     "text": "Your First Cryptocurrency Purchase\n\nChoosing Your Entry Point\nYour first cryptocurrency purchase represents more than just buying digital assets—it’s about learning to navigate a new financial system. We’ll start small, with just $10 worth of BTC (Bitcoin). This amount is chosen carefully: it’s enough to learn the mechanics but small enough that mistakes won’t be devastating.\n\n\nSelecting an Exchange\nFor your first purchase, we’ll use a regulated cryptocurrency exchange. While decentralized options exist, centralized exchanges offer important advantages for beginners:\n\nFamiliar payment methods (bank transfers, credit cards)\nCustomer support for common issues\nRegulated entities with clear legal obligations\nSimple user interfaces\n\nPopular options include:\n\nCoinbase: Known for ease of use (recommended for this guide)\nKraken: Strong security history\nGemini: Regulatory compliance focus\n\n\n\nStep-by-Step Purchase Process\n\nRegistration\n\nUse a strong, unique password\nEnable two-factor authentication immediately\nComplete identity verification (KYC)\nSecure your recovery options\n\nFunding Your Account\n\nStart with a small test deposit\nDocument all transaction details\nUnderstand processing timeframes\nVerify fees before proceeding\n\nMaking Your First Purchase\n\nNavigate to the Bitcoin trading page\nSelect “Buy” or “Market Buy”\nEnter $10 USD (or local equivalent)\nReview the quoted price and fees\nConfirm the transaction\n\nUnderstanding Order Types\n\nMarket Orders: Instant execution at current price\nLimit Orders: Set your desired price\nStop Orders: Automated triggers for buying/selling\nPros and cons of each approach\n\n\n\n\nAfter Your Purchase\nImmediately after buying, familiarize yourself with:\n\nTransaction history viewing\nPrice alerts setting\nAccount statements\nTax reporting requirements",
-    "crumbs": [
-      "Path to Independence",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Your First Steps</span>"
-    ]
-  },
-  {
-    "objectID": "content/independence/first_steps.html#creating-your-web3-identity",
-    "href": "content/independence/first_steps.html#creating-your-web3-identity",
-    "title": "Your First Steps",
-    "section": "Creating Your Web3 Identity",
-    "text": "Creating Your Web3 Identity\n\nThe Importance of Self-Custody\nWhile keeping your first Bitcoin purchase on the exchange is acceptable temporarily, true participation in Web3 requires self-custody through wallets you control. This begins with setting up Phantom.\n\n\nPhantom Setup Guide\n\nInstallation\n\nUse official sources only\nChrome/Firefox/Brave supported\nMobile options available\nVerify extension authenticity\n\nInitial Configuration\n\nCreate new wallet\nRecord seed phrase properly\nSet strong password\nUnderstand recovery options\n\nSecurity Best Practices\n\nNever share seed phrase\nUse hardware wallet for large amounts\nRegularly check connected sites\nUpdate extension promptly\n\nNetwork Configuration\n\nUnderstanding Bitcoin Mainnet\nRecognizing test networks\nManaging network switching\n\n\n\n\nCreating Clean Wallets\nAs you progress in Web3, wallet separation becomes crucial. Think of wallets like different bank accounts—each serving a specific purpose.\n\nWallet Types\n\nMain Wallet: Your primary identity\nTrading Wallet: For DeFi interactions\nGaming Wallet: For Web3 games\nTest Wallet: For trying new protocols\n\nPrivacy Considerations\n\nTransaction history is public\nAddress clustering risks\nBlock explorer visibility\nNetwork analysis implications\n\nOperational Security\n\nDifferent devices for different wallets\nClean transaction patterns\nCross-chain considerations\nInteraction compartmentalization\n\nLegal and Privacy Tools\n\nVPN usage pros and cons\nMixer considerations\nJurisdiction awareness\nCompliance documentation",
     "crumbs": [
       "Path to Independence",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Your First Steps</span>"
