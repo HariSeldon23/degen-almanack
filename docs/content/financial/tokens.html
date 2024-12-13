@@ -21,27 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -401,7 +381,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/ratings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Ratings</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Digital Asset Rating Framework</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -424,7 +404,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/social/governance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Governance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Web3 Governance</span></span></a>
   </div>
 </li>
       </ul>
@@ -451,30 +431,26 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#coins" id="toc-coins" class="nav-link active" data-scroll-target="#coins">Coins</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#i.-coins-vs-tokens-a-fundamental-distinction" id="toc-i.-coins-vs-tokens-a-fundamental-distinction" class="nav-link" data-scroll-target="#i.-coins-vs-tokens-a-fundamental-distinction">I. Coins vs Tokens: A Fundamental Distinction</a>
   <ul class="collapse">
-  <li><a href="#network-economics" id="toc-network-economics" class="nav-link" data-scroll-target="#network-economics">Network Economics</a></li>
-  <li><a href="#base-networks" id="toc-base-networks" class="nav-link" data-scroll-target="#base-networks">Base Networks</a></li>
-  <li><a href="#secondary-networks" id="toc-secondary-networks" class="nav-link" data-scroll-target="#secondary-networks">Secondary Networks</a></li>
-  <li><a href="#derivatives" id="toc-derivatives" class="nav-link" data-scroll-target="#derivatives">Derivatives</a></li>
+  <li><a href="#native-coins-layer-1" id="toc-native-coins-layer-1" class="nav-link" data-scroll-target="#native-coins-layer-1">Native Coins (Layer 1)</a></li>
+  <li><a href="#secondary-network-coins" id="toc-secondary-network-coins" class="nav-link" data-scroll-target="#secondary-network-coins">Secondary Network Coins</a></li>
+  <li><a href="#coin-derivatives" id="toc-coin-derivatives" class="nav-link" data-scroll-target="#coin-derivatives">Coin Derivatives</a></li>
   </ul></li>
-  <li><a href="#tokens" id="toc-tokens" class="nav-link" data-scroll-target="#tokens">Tokens</a>
+  <li><a href="#ii.-tokens-the-application-layer-of-value" id="toc-ii.-tokens-the-application-layer-of-value" class="nav-link" data-scroll-target="#ii.-tokens-the-application-layer-of-value">II. Tokens: The Application Layer of Value</a>
   <ul class="collapse">
-  <li><a href="#fungible" id="toc-fungible" class="nav-link" data-scroll-target="#fungible">Fungible</a></li>
-  <li><a href="#non-fungible" id="toc-non-fungible" class="nav-link" data-scroll-target="#non-fungible">Non Fungible</a></li>
+  <li><a href="#fungible-tokens" id="toc-fungible-tokens" class="nav-link" data-scroll-target="#fungible-tokens">Fungible Tokens</a></li>
+  <li><a href="#non-fungible-tokens-nfts" id="toc-non-fungible-tokens-nfts" class="nav-link" data-scroll-target="#non-fungible-tokens-nfts">Non-Fungible Tokens (NFTs)</a></li>
   </ul></li>
-  <li><a href="#markets" id="toc-markets" class="nav-link" data-scroll-target="#markets">Markets</a></li>
-  <li><a href="#hodling" id="toc-hodling" class="nav-link" data-scroll-target="#hodling">Hodling</a>
+  <li><a href="#iii.-market-infrastructure" id="toc-iii.-market-infrastructure" class="nav-link" data-scroll-target="#iii.-market-infrastructure">III. Market Infrastructure</a>
   <ul class="collapse">
-  <li><a href="#custodial" id="toc-custodial" class="nav-link" data-scroll-target="#custodial">Custodial</a></li>
-  <li><a href="#non-custodial" id="toc-non-custodial" class="nav-link" data-scroll-target="#non-custodial">Non-Custodial</a></li>
+  <li><a href="#trading-venues" id="toc-trading-venues" class="nav-link" data-scroll-target="#trading-venues">Trading Venues</a></li>
+  <li><a href="#custody-solutions" id="toc-custody-solutions" class="nav-link" data-scroll-target="#custody-solutions">Custody Solutions</a></li>
   </ul></li>
-  <li><a href="#yield-properties" id="toc-yield-properties" class="nav-link" data-scroll-target="#yield-properties">Yield Properties</a>
-  <ul class="collapse">
-  <li><a href="#trading-yield" id="toc-trading-yield" class="nav-link" data-scroll-target="#trading-yield">Trading Yield</a></li>
-  <li><a href="#network-yield" id="toc-network-yield" class="nav-link" data-scroll-target="#network-yield">Network Yield</a></li>
-  <li><a href="#dapp-yield" id="toc-dapp-yield" class="nav-link" data-scroll-target="#dapp-yield">dApp Yield</a></li>
-  </ul></li>
+  <li><a href="#iv.-yield-generation" id="toc-iv.-yield-generation" class="nav-link" data-scroll-target="#iv.-yield-generation">IV. Yield Generation</a></li>
+  <li><a href="#v.-risk-assessment-framework" id="toc-v.-risk-assessment-framework" class="nav-link" data-scroll-target="#v.-risk-assessment-framework">V. Risk Assessment Framework</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -506,202 +482,269 @@ div.csl-indent {
 </header>
 
 
-<p>The logical place to start this Almanack is Digital Assets. These include all the financial instruments that exist within the Web3 sphere. For us to represent all Digital Assets within this space, it means we need to include all Web3 financial instruments, both on chain and off chain.</p>
-<p>We take inspiration from the <a href="https://www.usv.com/writing/2016/08/fat-protocols/">Fat Protocol Thesis</a><span class="citation" data-cites="monegro2016fat">(<a href="../../references.html#ref-monegro2016fat" role="doc-biblioref">Monegro 2016</a>)</span> to define the major categories of Digital Assets within the Web3 realm. We also adhere to the naming convention that stipulates Coins are digital assets relating to the running and operation of a Blockchain, whereas Tokens are digital assets that are issued on a Blockchain.</p>
-<p>We thus break down Digital Assets into the following Categories:</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Digital assets in Web3 represent a fundamental shift in how we conceptualize and transfer value. Unlike traditional financial instruments, these assets exist natively in digital form, secured by cryptographic protocols and managed through distributed networks. This guide provides a comprehensive framework for understanding the entire landscape of digital assets.</p>
+</section>
+<section id="i.-coins-vs-tokens-a-fundamental-distinction" class="level2">
+<h2 class="anchored" data-anchor-id="i.-coins-vs-tokens-a-fundamental-distinction">I. Coins vs Tokens: A Fundamental Distinction</h2>
+<p>The distinction between coins and tokens represents more than mere terminology - it reflects fundamental differences in purpose, implementation, and economic models.</p>
+<section id="native-coins-layer-1" class="level3">
+<h3 class="anchored" data-anchor-id="native-coins-layer-1">Native Coins (Layer 1)</h3>
+<p>Native coins serve as the foundational assets of sovereign blockchain networks. They exhibit several key characteristics:</p>
+<ol type="1">
+<li>Network Security
 <ul>
-<li>Coins
-<ul>
-<li>Primary Networks</li>
-<li>Secondary Networks
-<ul>
-<li>Ozempic</li>
-<li>Sugar</li>
+<li>Provide economic incentives for validators/miners</li>
+<li>Enable Sybil resistance through staking or mining</li>
+<li>Create alignment between network security and asset value</li>
 </ul></li>
-<li>Derivatives</li>
+<li>Transaction Settlement
+<ul>
+<li>Pay for network resources (gas)</li>
+<li>Denominate transaction fees</li>
+<li>Enable priority mechanisms for block inclusion</li>
 </ul></li>
-<li>Tokens
+<li>Monetary Policy
 <ul>
-<li>Fungibles</li>
-<li>Non Fungible</li>
+<li>Fixed or predictable issuance schedules</li>
+<li>Independently maintained value</li>
+<li>Network-specific economic models</li>
 </ul></li>
-</ul>
-<p>After describing the various categories and classes of Digital Assets we’ll then delve into the Markets existing for these Digital Assets, as well as how an entity <a href="../foundations/terms.qmd#hodl">hodls</a> the Digital Asset and the yield properties of the various types of Digital Assets.</p>
-<section id="coins" class="level2">
-<h2 class="anchored" data-anchor-id="coins">Coins</h2>
-<p>This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the <a href="../../content/technical/blockchains.html">Blockchain</a> documentation.</p>
-<section id="network-economics" class="level3">
-<h3 class="anchored" data-anchor-id="network-economics">Network Economics</h3>
-<p>Token Models Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards Incentive Structures Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding Economic Security Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support</p>
+</ol>
 </section>
-<section id="base-networks" class="level3">
-<h3 class="anchored" data-anchor-id="base-networks">Base Networks</h3>
-<p>This Almanack distinguishes between the financial properties of Coins versus the technical properties of a <a href="../../content/technical/blockchains.html">Blockchain</a>. As such we don’t refer to networks here by Layer 1 or Layer 2. That’s a classification and distinction you can explore <a href="../essentials/terms.qmd">here</a>.</p>
-<p>We define a Base Network that maintains it’s own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network.</p>
-</section>
-<section id="secondary-networks" class="level3">
-<h3 class="anchored" data-anchor-id="secondary-networks">Secondary Networks</h3>
-<p>These are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the <a href="../../content/technical/blockchains.html">Blockchain chapter</a>. We’ll encompass the full breadth of L2’s including, but not limited to Plasma, Sidechains, Rollups etc.</p>
-<p>We then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value.</p>
-<p>Please see <a href="../../content/financial/ratings.html#ozempic-effect">Ozempic Effect</a> to see how we determine if a network in a net ozempic or sugar network.</p>
-</section>
-<section id="derivatives" class="level3">
-<h3 class="anchored" data-anchor-id="derivatives">Derivatives</h3>
+<section id="secondary-network-coins" class="level3">
+<h3 class="anchored" data-anchor-id="secondary-network-coins">Secondary Network Coins</h3>
+<p>Secondary network coins introduce a novel dynamic in the blockchain ecosystem, particularly through their relationship with their settlement layers. We can classify these into two categories based on their value dynamics:</p>
+<ol type="1">
+<li>Ozempic Networks
 <ul>
-<li>On chain
-<ul>
-<li>Wrapped
-<ul>
-<li>Pure</li>
-<li>Bridged</li>
+<li>Extract value from the settlement layer</li>
+<li>Reduce activity on the parent chain</li>
+<li>May decrease parent chain’s fee revenue</li>
+<li>Examples: Many Layer 2 solutions that primarily focus on cost reduction</li>
 </ul></li>
+<li>Sugar Networks
+<ul>
+<li>Drive additional value to the settlement layer</li>
+<li>Increase demand for block space on parent chain</li>
+<li>Generate additional fee revenue for validators</li>
+<li>Examples: Specialized L2s that enable new use cases</li>
 </ul></li>
-<li>Off Chain
+</ol>
+</section>
+<section id="coin-derivatives" class="level3">
+<h3 class="anchored" data-anchor-id="coin-derivatives">Coin Derivatives</h3>
+<p>The ecosystem has developed various derivative forms of native coins:</p>
+<ol type="1">
+<li>Wrapped Versions
 <ul>
-<li>Spot ETF’s</li>
+<li>Pure wraps (1:1 backing with native coin)</li>
+<li>Bridge-based wraps (cross-chain representations)</li>
+<li>Synthetic versions (price exposure without direct backing)</li>
 </ul></li>
-</ul>
-<section id="on-chain-derivatives" class="level4">
-<h4 class="anchored" data-anchor-id="on-chain-derivatives">On Chain Derivatives</h4>
-</section>
-<section id="off-chain-derivatives" class="level4">
-<h4 class="anchored" data-anchor-id="off-chain-derivatives">Off Chain Derivatives</h4>
-</section>
-</section>
-</section>
-<section id="tokens" class="level2">
-<h2 class="anchored" data-anchor-id="tokens">Tokens</h2>
-<section id="fungible" class="level3">
-<h3 class="anchored" data-anchor-id="fungible">Fungible</h3>
-<p>Fungible is a pretty terrible name, but it roughly means divisable. It’s easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It’s divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It’s Non fungible, or non divisable. There’s more nuances which we can deal with in the vocabulary section. But that’s the general idea of it.</p>
-<p>We have the following types: * Stable Coins * Fiat backed * Crypto backed * Delta Neutral backed * Shit Coins * Governance * Meme * Utility</p>
-<p>Then we have numerous standards. We’ll add only the most popular and relevant ones here.</p>
-<p>Namely: * ERC20 * ERC777 * ERC1363 * BRC20 * Runes * Solana’s SPL Token Standard * ICS20</p>
-<section id="ics20" class="level4">
-<h4 class="anchored" data-anchor-id="ics20">ICS20</h4>
-<p>The Inter-Chain Standard 20 is a <a href="../../content/financial/trollip_index.html#cosmos-hub">Cosmos</a> based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)</p>
-</section>
-</section>
-<section id="non-fungible" class="level3">
-<h3 class="anchored" data-anchor-id="non-fungible">Non Fungible</h3>
-<p>Has the following attributes:</p>
+<li>Institutional Products
 <ul>
-<li>Art &amp; Collectibles</li>
-<li>Profile Picture (PFP)</li>
-<li>Gaming</li>
-<li>Domain Names and Identity</li>
-<li>Real World Assets (RWA)</li>
-</ul>
-<p>The NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection’s market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.</p>
-</section>
-</section>
-<section id="markets" class="level2">
-<h2 class="anchored" data-anchor-id="markets">Markets</h2>
-<p>Where can I buy these Digital Assets? The major markets are regulated and unregulated.</p>
-<p>These are then divided into spot vs derivatives.</p>
-<p>For regulated it’s interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It’s probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant.</p>
-</section>
-<section id="hodling" class="level2">
-<h2 class="anchored" data-anchor-id="hodling">Hodling</h2>
-<p>Wallets</p>
-<section id="custodial" class="level3">
-<h3 class="anchored" data-anchor-id="custodial">Custodial</h3>
-</section>
-<section id="non-custodial" class="level3">
-<h3 class="anchored" data-anchor-id="non-custodial">Non-Custodial</h3>
-<ul>
-<li>Pure
-<ul>
-<li>Cold</li>
-<li>Hot</li>
+<li>Exchange-traded funds (ETFs)</li>
+<li>Futures contracts</li>
+<li>Options and other derivatives</li>
+<li>Structured products</li>
 </ul></li>
-<li>Smart
-<ul>
-<li>MPC</li>
-<li>Smart Contract Based (Includes Account Abstraction)</li>
-</ul></li>
-</ul>
+</ol>
 </section>
 </section>
-<section id="yield-properties" class="level2">
-<h2 class="anchored" data-anchor-id="yield-properties">Yield Properties</h2>
-<p>Major categories are:</p>
+<section id="ii.-tokens-the-application-layer-of-value" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-tokens-the-application-layer-of-value">II. Tokens: The Application Layer of Value</h2>
+<p>Tokens represent the most diverse category of digital assets, serving various functions across different blockchain applications.</p>
+<section id="fungible-tokens" class="level3">
+<h3 class="anchored" data-anchor-id="fungible-tokens">Fungible Tokens</h3>
+<ol type="1">
+<li>Stablecoins
+<ol type="a">
+<li>Fiat-Backed
 <ul>
-<li>Network Yield</li>
-<li>Trading Yield</li>
-<li>Protocol Yield</li>
-</ul>
-<section id="trading-yield" class="level3">
-<h3 class="anchored" data-anchor-id="trading-yield">Trading Yield</h3>
-<ul>
-<li>Pricing appreciation</li>
-<li>Arbitrage Yield
-<ul>
-<li>Spot Arbitrage</li>
-<li>Peg Arbitrage - These are unique to stable coins</li>
+<li>Direct custody of traditional currency (USDC)</li>
+<li>Banking relationship requirements</li>
+<li>Regular auditing processes</li>
 </ul></li>
-<li>Options and Derivatives Premiums</li>
+<li>Crypto-Collateralized
+<ul>
+<li>Over-collateralization requirements</li>
+<li>Liquidation mechanisms</li>
+<li>Price stability mechanisms</li>
+</ul></li>
+<li>Delta-Neutral
+<ul>
+<li>Hedged exposure through perpetual futures</li>
+<li>Market-neutral yield generation</li>
+<li>Advanced risk management systems</li>
+</ul></li>
+</ol></li>
+<li>Governance Tokens
+<ul>
+<li>Voting rights in protocols</li>
+<li>Fee sharing mechanisms</li>
+<li>Protocol ownership representation</li>
+<li>Treasury management control</li>
+</ul></li>
+<li>Utility Tokens
+<ul>
+<li>Protocol-specific functions</li>
+<li>Access rights</li>
+<li>Service payments</li>
+<li>Network resources</li>
+</ul></li>
+<li>Security Tokens
+<ul>
+<li>Regulatory compliance requirements</li>
+<li>Traditional asset representation</li>
+<li>Dividend/revenue rights</li>
+<li>Investment contracts</li>
+</ul></li>
+</ol>
+</section>
+<section id="non-fungible-tokens-nfts" class="level3">
+<h3 class="anchored" data-anchor-id="non-fungible-tokens-nfts">Non-Fungible Tokens (NFTs)</h3>
+<ol type="1">
+<li>Digital Art &amp; Collectibles
+<ul>
+<li>Unique digital artworks</li>
+<li>Limited edition series</li>
+<li>Historical significance items</li>
+<li>Cultural artifacts</li>
+</ul></li>
+<li>Gaming Assets
+<ul>
+<li>In-game items</li>
+<li>Character attributes</li>
+<li>Land parcels</li>
+<li>Achievement badges</li>
+</ul></li>
+<li>Identity &amp; Access
+<ul>
+<li>Domain names</li>
+<li>Membership passes</li>
+<li>Credentials</li>
+<li>Access rights</li>
+</ul></li>
+<li>Real World Asset (RWA) Representation
+<ul>
+<li>Property titles</li>
+<li>Legal documents</li>
+<li>Physical artwork certificates</li>
+<li>Commodity ownership</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="iii.-market-infrastructure" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-market-infrastructure">III. Market Infrastructure</h2>
+<section id="trading-venues" class="level3">
+<h3 class="anchored" data-anchor-id="trading-venues">Trading Venues</h3>
+<ol type="1">
+<li>Centralized Exchanges (CEX)
+<ul>
+<li>Order book markets</li>
+<li>Fiat on/off ramps</li>
+<li>Custody solutions</li>
+<li>Regulatory compliance</li>
+</ul></li>
+<li>Decentralized Exchanges (DEX)
+<ul>
+<li>Automated Market Makers (AMM)</li>
+<li>Order book DEXs</li>
+<li>Hybrid models</li>
+<li>MEV protection mechanisms</li>
+</ul></li>
+</ol>
+</section>
+<section id="custody-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="custody-solutions">Custody Solutions</h3>
+<ol type="1">
+<li>Non-Custodial
+<ol type="a">
+<li>Pure Wallets
+<ul>
+<li>Cold storage (hardware wallets)</li>
+<li>Hot wallets (software)</li>
+<li>Paper wallets</li>
+</ul></li>
+<li>Smart Wallets
+<ul>
+<li>Multi-signature arrangements</li>
+<li>Social recovery systems</li>
+<li>Account abstraction implementations</li>
+<li>Programmable security rules</li>
+</ul></li>
+</ol></li>
+<li>Custodial
+<ul>
+<li>Institutional custody</li>
+<li>Exchange wallets</li>
+<li>Banking integration</li>
+<li>Insurance coverage</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="iv.-yield-generation" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-yield-generation">IV. Yield Generation</h2>
+<p>Understanding yield sources helps evaluate the sustainability and risks of different digital assets:</p>
+<ol type="1">
+<li>Network Yield
+<ul>
+<li>Mining rewards</li>
+<li>Staking returns</li>
+<li>Transaction fees</li>
+<li>MEV extraction</li>
+</ul></li>
+<li>Trading Yield
+<ul>
+<li>Market making spreads</li>
+<li>Arbitrage opportunities</li>
+<li>Options premiums</li>
 <li>Futures funding rates</li>
-</ul>
+</ul></li>
+<li>Protocol Yield
+<ul>
+<li>Lending interest</li>
+<li>Liquidity provision fees</li>
+<li>Governance rewards</li>
+<li>Protocol revenue sharing</li>
+</ul></li>
+</ol>
 </section>
-<section id="network-yield" class="level3">
-<h3 class="anchored" data-anchor-id="network-yield">Network Yield</h3>
+<section id="v.-risk-assessment-framework" class="level2">
+<h2 class="anchored" data-anchor-id="v.-risk-assessment-framework">V. Risk Assessment Framework</h2>
+<ol type="1">
+<li>Technical Risks
 <ul>
-<li>Mining Yield
-<ul>
-<li>Solo Mining</li>
-<li>Pool Mining</li>
-<li>Cloud Mining</li>
+<li>Smart contract vulnerabilities</li>
+<li>Network security concerns</li>
+<li>Bridge weaknesses</li>
+<li>Oracle failures</li>
 </ul></li>
-<li>Validating Yield
+<li>Economic Risks
 <ul>
-<li>Staking</li>
+<li>Market manipulation</li>
+<li>Liquidity crises</li>
+<li>Collateral deterioration</li>
+<li>Yield sustainability</li>
 </ul></li>
-<li>Network Fee Yield
+<li>Regulatory Risks
 <ul>
-<li>Gas</li>
+<li>Compliance requirements</li>
+<li>Jurisdictional exposure</li>
+<li>Legal classification uncertainty</li>
+<li>Regulatory enforcement actions</li>
 </ul></li>
-<li>MEV
-<ul>
-<li>Toxic</li>
-<li>Non Toxic</li>
-</ul></li>
-<li>Derivatives
-<ul>
-<li>Liquid Staking</li>
-</ul></li>
-</ul>
+</ol>
 </section>
-<section id="dapp-yield" class="level3">
-<h3 class="anchored" data-anchor-id="dapp-yield">dApp Yield</h3>
-<ul>
-<li>Staking</li>
-<li>Liquidity Provision</li>
-<li>Governance Participation</li>
-<li>NFT Rental Income</li>
-</ul>
-<section id="liquidity-provision" class="level4">
-<h4 class="anchored" data-anchor-id="liquidity-provision">Liquidity Provision</h4>
-<p>We break this down into the following Categories</p>
-<ul>
-<li>AMM Pool fees</li>
-<li>Concentrated liquidity positions</li>
-<li>Order book market making</li>
-<li>Lending and Borrowing markets</li>
-</ul>
-<section id="concentrated-liquidity-provision" class="level5">
-<h5 class="anchored" data-anchor-id="concentrated-liquidity-provision">Concentrated Liquidity Provision</h5>
-<p>Here we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The digital asset ecosystem continues to evolve, with new forms of value creation and exchange emerging regularly. Understanding these assets requires considering their technical implementation, economic models, market structures, and risk factors. This framework provides a foundation for analyzing both current and future digital assets in the Web3 space.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-monegro2016fat" class="csl-entry" role="listitem">
-Monegro, Joel. 2016. <span>“Fat Protocols.”</span> Union Square Ventures. <a href="https://www.usv.com/writing/2016/08/fat-protocols/">https://www.usv.com/writing/2016/08/fat-protocols/</a>.
-</div>
-</div>
-</section>
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -2,7 +2,7 @@
 
 The cryptocurrency revolution has created unprecedented opportunities for financial independence, but it has also spawned an industry rife with exploitation. As someone deeply embedded in this world, I face a moral dilemma: I can either participate in a system that profits from obscuring knowledge, or I can work to make that knowledge freely accessible to all.
 
-This Almanack represents my choice of the latter path. Just as the cypherpunks believed privacy and freedom of information could coexist, I believe we can build a more equitable crypto ecosystem without compromising its innovative potential. The fundamental act of friendship among cryptocurrency enthusiasts – what I call "degens" – should be the sharing of knowledge, not the hoarding of it.
+This Almanack represents my choice of the latter path. Just as the cypherpunks believed privacy and freedom of information could coexist, I believe we can build a more equitable crypto ecosystem without compromising its innovative potential. The fundamental act of community among cryptocurrency enthusiasts – what I call "degens" – should be the sharing of knowledge, not the hoarding of it.
 
 The technical complexity of cryptocurrency has created a particularly insidious form of gatekeeping. Essential market data and analysis hide behind expensive paywalls. Crucial insights remain locked in exclusive chat groups and private networks. This artificial scarcity of knowledge directly contradicts the core ethos of Web3: permissionless access and decentralized power.
 

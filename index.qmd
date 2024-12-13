@@ -1,6 +1,6 @@
 # Welcome {.unnumbered}
 
-This Almanack represents an attempt to document cryptocurrency and Web3 knowledge without the conflicts of interest that plague our industry. Just as Henry Varnum Poor created his Manual of Railroads to bring transparency to America's railroad boom, this Almanack aims to bring clarity to the cryptocurrency revolution.
+This Almanack represents an attempt to document cryptocurrency and Web3 knowledge without the conflicts of interest that plague our industry. Just as Henry Varnum Poor created his Manual of Railroads to bring transparency to America's railroad boom, this Almanack aims to bring clarity to the cryptocurrency industry.
 
 ## Why This Almanack Exists
 
@@ -21,10 +21,10 @@ Whether you're seeking financial sovereignty or building the future, this Almana
 Start with ["Regular Person's Path to Independence"](./content/independence/independence.qmd) to understand how to safely participate in the cryptocurrency ecosystem without falling prey to scams or losing your funds.
 
 **For Technical Minds**  
-The "Technical" section provides deep dives into cryptography, blockchain architecture, and protocol design patterns. Consider starting with "Web3 Essentials" to establish a common vocabulary.
+The ["Technologist's Path"](./content/technical/overview.qmd) provides deep dives into cryptography, blockchain architecture, and protocol design patterns. Consider starting with ["Web3 Terminology"](./content/intro/terms.qmd) to establish a common vocabulary.
 
 **For Market Participants**  
-The "Financial" section offers frameworks for analyzing digital assets, understanding market structures, and evaluating protocols.
+The ["Digital Assets"](./content/financial/tokens.qmd) section offers frameworks for analyzing digital assets, understanding market structures, and evaluating protocols.
 
 ## Living Document
 
@@ -32,7 +32,7 @@ This Almanack is version controlled through Git and continuously updated by comm
 
 ## Contributing
 
-Knowledge critical to digital independence should be freely accessible. This work is licensed under Creative Commons Attribution-ShareAlike 4.0, ensuring it remains open while preventing commercial exploitation. Learn more in our "Contributing" section.
+Knowledge critical to digital independence should be freely accessible. This work is licensed under Creative Commons Attribution-ShareAlike 4.0, ensuring it remains open while preventing commercial exploitation. Learn more in our ["Contributing"](./contributing.qmd) section.
 
 ---
 

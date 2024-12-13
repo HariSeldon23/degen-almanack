@@ -73,14 +73,6 @@ format:
     theme: cosmo
     toc: true
     toc-depth: 3
-  pdf:
-    colorlinks: true
-    documentclass: scrreprt
-    keep-tex: false
-    lof: false
-    lot: false
-    number-sections: true
-    toc: true
 project:
   output-dir: docs
   preview:

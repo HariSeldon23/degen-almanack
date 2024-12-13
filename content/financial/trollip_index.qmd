@@ -1,34 +1,287 @@
 # Trollip's Index
-Trollip's index, taking a cue from the S&P 500, will aim to classify 500 [Digital Assets](../financial/tokens.qmd).
 
-The general approach would be to classify the top 500 via marketcap. However, a good characteristic of a degen is to not follow conventional wisdom and groupthink. So as the Almanack grows and more strategies are added to the the Degen Chapters, we'll add the assets as we discuss strategies around them. This means that it will contain some absolute shit coins. This will also help us to refine our [Risk models](./ratings.qmd#risks)
+## Bitcoin (BTC)
+Rating: AA+ (92/100)
 
-## BTC
-Bitcoin has emerged as the world's first successful digital store of value, creating a new paradigm for wealth preservation in the digital age. Much like gold served ancient civilizations through to modern times as a reliable store of wealth, Bitcoin provides similar characteristics but with distinct advantages native to the digital realm.
+Value Capture & REV Analysis (38/40)
+- Exceptional monetary premium capture through absolute scarcity
+- Minimal REV exposure due to simple UTXO model
+- Strong fee market development
+- Mining reward distribution well-established
+- Limited attack surface for value extraction
 
-At its foundation, Bitcoin's value proposition rests on its absolute scarcity - there will never be more than 21 million bitcoins. This hard cap, combined with a transparent and immutable issuance schedule through mining "halvings" every four years, creates a predictability that even gold, with its uncertain mining output, cannot match. When new gold deposits are discovered or mining technology improves, supply can increase unexpectedly. Bitcoin's supply schedule, in contrast, is mathematically certain.
+Technical Architecture (28/30)
+- Battle-tested security over 14+ years
+- Conservative upgrade process
+- Distributed node network
+- Simple but robust scripting system
+- High resistance to centralization
 
-Bitcoin's digital nature offers significant advantages over traditional stores of value. Unlike gold, it can be transferred instantly across borders, divided into microscopic units, stored without physical vault costs, and verified for authenticity without specialized equipment. Its self-custody properties allow individuals to maintain direct control over their wealth without relying on third-party custodians or financial institutions.
+Market & Liquidity Risk (17/20)
+- Deepest liquidity across all venues
+- Global market presence
+- Strong market maker participation
+- Some concentration in mining pools
+- Proven stress test resilience
 
-The network's security model, backed by massive computational power through proof-of-work mining, has proven remarkably resilient over more than a decade. This track record has gradually built confidence among institutional investors, who increasingly view Bitcoin as a legitimate asset class for portfolio diversification and inflation hedging. Major financial institutions now offer Bitcoin investment products, while some corporations have adopted it as a treasury reserve asset.
+Governance & Operational Risk (9/10)
+- Well-established BIP process
+- Multiple independent development teams
+- Strong resistance to capture
+- Clear upgrade paths
 
-While Bitcoin began as a peer-to-peer electronic cash system, its evolution into a store of value mirrors how gold transformed from a medium of exchange into a wealth preservation tool. The emergence of Layer 2 solutions like the Lightning Network now handles Bitcoin's payments functionality, allowing the base layer to focus on its primary role as digital gold - the foundational layer of monetary security in the cryptocurrency ecosystem.
+## Ethereum (ETH)
+Rating: AA (89/100)
 
-### Derivatives
-#### cbBTC
-Coinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase's custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase's reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.
+Value Capture & REV Analysis (35/40)
+- Strong base layer fee capture
+- Complex MEV landscape
+- Layer 2 fee dynamics
+- Staking yield generation
+- PBS implementation improving MEV distribution
 
-The technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase's layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase's custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base's growing DeFi ecosystem while maintaining exposure to Bitcoin's value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC's key differentiator is its direct integration with Coinbase's established infrastructure and its focus on institutional-grade security and compliance measures.
+Technical Architecture (27/30)
+- Successful transition to PoS
+- Active development ecosystem
+- Multiple client implementations
+- Some centralization in staking pools
+- Complex attack surface
 
-## ETH
-Ethereum represents a revolutionary leap in computing - it's humanity's first attempt at creating a global, decentralized computer that's always running and accessible to everyone. Like how the internet connected computers worldwide for information sharing, Ethereum connects computers globally to create a single, unified computational platform that no one controls but everyone can use.
+Market & Liquidity Risk (18/20)
+- Second highest global liquidity
+- Deep derivatives markets
+- Strong institutional adoption
+- Diverse trading venues
 
-Think of Ethereum as a massive, worldwide computer with some unique properties: it never shuts down, can't be censored, and maintains perfect records of everything it processes. Instead of storing photos or documents like a regular computer, this world computer specializes in running smart contracts - pieces of code that automatically execute agreements and handle digital assets without needing intermediaries.
+Governance & Operational Risk (9/10)
+- Active EIP process
+- Multiple core development teams
+- Clear roadmap execution
+- Strong community participation
 
-ETH, the network's native asset, serves as the essential "fuel" that powers this world computer. Every computation, whether it's processing a DeFi trade or minting an NFT, requires ETH to run. After Ethereum's transition to Proof of Stake through The Merge, ETH also gained a new role - network validators must stake ETH to participate in securing the network, similar to how a computer needs electricity to function and stay secure.
+## USDT (Tether)
+Rating: BBB+ (76/100)
 
-What makes Ethereum truly revolutionary is its programmability. Just as early personal computers transformed from specialized calculators into general-purpose machines that could run any software, Ethereum evolved blockchain technology from a simple transaction ledger into a platform that can run any programmable application. This has spawned entire new industries: decentralized finance (DeFi) protocols that operate 24/7 without human intervention, NFT marketplaces that enable digital ownership and royalties, and DAOs that coordinate human activity through code rather than hierarchies.
+Value Capture & REV Analysis (28/40)
+- Limited direct value capture
+- Significant market power through liquidity
+- No native MEV exposure
+- Reliance on external chains for execution
 
-The platform continues to evolve through ambitious technical upgrades. Layer 2 scaling solutions like rollups act as specialized processors that handle heavy computations off the main chain, while the planned implementation of sharding will divide the network into parallel processing units - similar to how modern computers use multiple cores to increase performance. These improvements aim to make the world computer more efficient and accessible while maintaining its core properties of decentralization and security.
+Technical Architecture (22/30)
+- Multiple chain implementations
+- Centralized issuance model
+- Dependent on external security
+- Limited technical complexity
 
-As this world computer grows in capability and adoption, ETH's value proposition strengthens - it's not just a digital asset, but the essential resource needed to access and use what might become the foundation of our digital future.
+Market & Liquidity Risk (18/20)
+- Highest stablecoin liquidity
+- Critical trading pair status
+- Some concentration risk
+- Historical stress test resilience
+
+Governance & Operational Risk (8/10)
+- Centralized governance
+- Improving transparency
+- Regular attestations
+- Regulatory uncertainty
+
+## XRP
+Rating: A- (80/100)
+
+Value Capture & REV Analysis (30/40)
+- Established cross-border payment utility
+- Limited MEV exposure
+- Fee structure favors utility over speculation
+- Network value accrual through XRPL services
+
+Technical Architecture (25/30)
+- Unique consensus mechanism
+- Proven scalability
+- Some centralization concerns
+- Strong network reliability
+
+Market & Liquidity Risk (16/20)
+- Strong global presence
+- Regulatory overhangs
+- Institutional adoption in payments
+- Geographic liquidity variations
+
+Governance & Operational Risk (9/10)
+- Clear development roadmap
+- Active ecosystem growth
+- Strong corporate backing
+- Some centralization concerns
+
+## Solana (SOL)
+Rating: A (82/100)
+
+Value Capture & REV Analysis (32/40)
+- Strong fee capture mechanism
+- Growing MEV marketplace
+- High transaction throughput
+- Competitive fee structure
+
+Technical Architecture (24/30)
+- High performance architecture
+- Some stability challenges
+- Active development
+- Innovative technical solutions
+
+Market & Liquidity Risk (17/20)
+- Growing liquidity depth
+- Strong institutional support
+- Active derivatives market
+- Some concentration risks
+
+Governance & Operational Risk (9/10)
+- Active governance participation
+- Strong developer ecosystem
+- Clear technical roadmap
+- Regular network upgrades
+
+## BNB (Binance Coin)
+Rating: A- (81/100)
+
+Value Capture & REV Analysis (31/40)
+- Strong exchange utility value
+- Controlled MEV environment
+- Fee burning mechanism
+- Centralized value capture
+
+Technical Architecture (23/30)
+- EVM compatibility
+- Centralized validation
+- Proven scalability
+- Limited innovation
+
+Market & Liquidity Risk (18/20)
+- Strong exchange backing
+- Deep liquidity pools
+- Significant trading volumes
+- Some centralization risk
+
+Governance & Operational Risk (9/10)
+- Centralized decision making
+- Clear development path
+- Strong corporate resources
+- Limited community governance
+
+## Dogecoin (DOGE)
+Rating: BB+ (65/100)
+
+Value Capture & REV Analysis (22/40)
+- Limited value capture mechanism
+- Minimal MEV considerations
+- Inflationary supply
+- Meme-driven value
+
+Technical Architecture (20/30)
+- Bitcoin-derived codebase
+- Limited development activity
+- Proven network security
+- Basic functionality
+
+Market & Liquidity Risk (15/20)
+- Volatile liquidity conditions
+- Strong retail participation
+- Some market manipulation risk
+- Limited institutional presence
+
+Governance & Operational Risk (8/10)
+- Active community
+- Limited formal governance
+- Sporadic development
+- Meme-influenced decisions
+
+## USDC
+Rating: A+ (87/100)
+
+Value Capture & REV Analysis (32/40)
+- Regulated value capture model
+- No native MEV exposure
+- Strong institutional adoption
+- Clear revenue model
+
+Technical Architecture (26/30)
+- Multiple chain implementations
+- Strong security measures
+- Regular audits
+- Controlled upgrade process
+
+Market & Liquidity Risk (19/20)
+- Deep liquidity across venues
+- Strong institutional backing
+- Critical DeFi component
+- Proven stability
+
+Governance & Operational Risk (10/10)
+- Regulated governance model
+- Clear compliance framework
+- Strong corporate backing
+- Regular attestations
+
+## Cardano (ADA)
+Rating: A- (80/100)
+
+Value Capture & REV Analysis (29/40)
+- Academic approach to value capture
+- Limited MEV exposure
+- Staking-focused economy
+- Developing DeFi ecosystem
+
+Technical Architecture (26/30)
+- Formal verification emphasis
+- Strong security model
+- Methodical development
+- Some scalability limitations
+
+Market & Liquidity Risk (15/20)
+- Moderate liquidity depth
+- Growing ecosystem
+- Some geographic concentration
+- Limited institutional presence
+
+Governance & Operational Risk (10/10)
+- Strong governance framework
+- Active community participation
+- Clear development roadmap
+- Academic partnerships
+
+## Lido Staked ETH (stETH)
+Rating: A (83/100)
+
+Value Capture & REV Analysis (31/40)
+- Direct ETH staking yield capture
+- MEV-boost integration
+- Clear value proposition
+- Growing institutional adoption
+
+Technical Architecture (25/30)
+- Complex staking mechanism
+- Strong security measures
+- Some centralization risk
+- Regular protocol upgrades
+
+Market & Liquidity Risk (17/20)
+- Deep liquidity in DeFi
+- Strong peg maintenance
+- Critical ETH ecosystem component
+- Some withdrawal queue risk
+
+Governance & Operational Risk (10/10)
+- Active DAO governance
+- Clear upgrade process
+- Strong node operator set
+- Regular security reviews
+
+## Index Methodology Notes
+
+1. Ratings consider both quantitative metrics and qualitative factors
+2. Heavy emphasis on sustainable value capture mechanisms
+3. MEV exposure evaluated as both risk and opportunity
+4. Security track record significantly impacts technical scores
+5. Liquidity assessed across both CEX and DEX venues
+6. Governance evaluation considers both formal and informal processes
+
+Regular updates to these ratings will be published quarterly or upon significant protocol changes.

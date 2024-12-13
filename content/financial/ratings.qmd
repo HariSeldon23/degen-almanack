@@ -1,429 +1,183 @@
-# Ratings
-This section will describe our ratings model for Digital Assets. 
+# Digital Asset Rating Framework
 
-## Core Rating Categories (60% of Total Rating)
+## Core Components (100% Total)
 
-### 1. Protocol Value Capture (30%)
-A. Network Effect Metrics
+### 1. Value Capture & REV Analysis (40%)
 
-- Daily Active Users (DAUs)
-- Total Value Locked (TVL)
-- Transaction volume
-- Fee revenue generated
-- Protocol revenue retained
-
-B. Value Accrual Mechanisms
-
+#### Protocol Value Capture (25%)
+- Network revenue generation
+- Fee distribution mechanisms
 - Token economics design
-- Fee distribution model
-- Staking mechanisms
-- Burns and supply dynamics
+- Treasury growth and management
+- Market share and competitive position
+- User growth and retention metrics
 
-C. Ozempic Network Effects 
+#### Realized Extractable Value (REV) Impact (15%)
 
-- Value extraction efficiency from L1
-- Transaction fee capture rate
-- User migration metrics from L1
-- TVL migration patterns
-- Gas savings versus L1
-- L1-L2 Value Dynamics
-- Sequencer revenue distribution
-- MEV capture and distribution
-- Bridge volume and efficiency
-- Settlement layer costs
-- Sustainable Value Creation
-- Net new users versus L1 migration
-- Ecosystem-specific applications
-- Novel transaction types impossible on L1
-- Cross-L2 interoperability metrics
+##### Positive REV Factors (7.5%)
+- Protocol-owned MEV capture
+- User-aligned MEV distribution
+- MEV minimization mechanisms
+- Efficient price discovery through MEV
+- Validator revenue enhancement
+- Cross-chain MEV opportunities
 
-### 2. Protocol Security & Risk Assessment (30%)
-A. Smart Contract Security
+##### Negative REV Factors (7.5%)
+- Toxic MEV exposure
+- Sandwich attack vulnerability
+- Front-running susceptibility
+- Arbitrage impact on liquidity
+- MEV-driven centralization risks
+- Cross-protocol MEV leakage
 
+### 2. Technical Architecture & Security (30%)
+
+#### Smart Contract Security (10%)
 - Audit history and quality
-- Bug bounty program effectiveness
-- Historical vulnerability incidents
-- Code complexity metrics
+- Bug bounty effectiveness
+- Historical vulnerability analysis
+- Code complexity assessment
 - Upgrade mechanism security
-- Testing coverage
 
-B. Network Security
-
+#### Network Security (10%)
 - Consensus mechanism robustness
-- MEV exposure and protection measures
-- Node distribution
+- Validator/node distribution
 - Network attack resistance
-- Cross-chain bridge security
-- Oracle dependency and security
+- Bridge security (if applicable)
+- Oracle dependency risks
 
-C. L1 Dependency Risks
+#### MEV Protection Architecture (10%)
+- MEV-resistant design patterns
+- Timing attack protection
+- Frontrunning protection
+- Order flow fairness
+- Block builder separation
+- Transaction privacy features
 
-- Settlement layer congestion exposure
-- Bridge security and liquidity depth
-- L1 fee market correlation
-- Sequencer centralization risk
-- Value extraction sustainability
+### 3. Market & Liquidity Risk (20%)
 
-## Risk Categories (40% of Total Rating)
-
-### 1. Technical Risk Assessment (15%)
-
-A. Smart Contract Vulnerabilities
-- Code audit findings severity
-- Time-tested deployment
-- Complexity of interactions
-- Dependencies on external protocols
-- Historical incident analysis
-
-B. Network Level Risks
-
-- MEV exposure metrics
-- Network partition resistance
-- Node centralization factors
-- Infrastructure dependencies
-- Cross-chain vulnerability exposure
-
-C. Key Management & Wallet Security
-
-- Multi-sig implementation
-- Key generation processes
-- Hardware security modules usage
-- Social recovery mechanisms
-- Access control systems
-
-### 2. Economic Risk Assessment (10%)
-A. Market Dynamics
-
-- Liquidity concentration
+#### Market Structure (10%)
+- Trading volume distribution
+- Market maker participation
+- Order book depth
 - Price impact resistance
-- Collateral quality
-- Market manipulation resistance
+- Cross-exchange arbitrage efficiency
+- DEX vs CEX volume ratio
 
-B. Economic Model Vulnerabilities
+#### Liquidity Profile (10%)
+- Liquidity depth across venues
+- Concentration risk
+- Withdrawal/deposit patterns
+- Slippage analysis
+- Market stress behavior
+- Flash crash resistance
 
-- Game theory attack vectors
-- Incentive alignment analysis
-- Economic exploit resistance
-- Stress test scenarios
-- Flash loan attack surface
+### 4. Governance & Operational Risk (10%)
 
-### 3. Operational Risk Assessment (10%)
-A. CeFi/CeDeFi Risks
+#### Governance Framework (5%)
+- Decision-making process
+- Stakeholder representation
+- Upgrade mechanisms
+- Emergency response capabilities
+- Treasury management
+- Community engagement
 
-- Centralization points
-- Custody arrangements
+#### Operational Risk (5%)
+- Team track record
+- Development activity
+- Documentation quality
+- Infrastructure reliability
 - Third-party dependencies
-- Operational redundancy
-- Emergency procedures
-
-B. Oracle Dependencies
-
-- Oracle manipulation resistance
-- Price feed reliability
-- Backup oracle systems
-- Historical oracle incidents
-- Data quality metrics
-
-### 4. External Risk Assessment (5%)
-A. Regulatory Risk
-
-- Jurisdictional exposure
-- Compliance frameworks
-- Regulatory clarity
-- Legal structure
-- Historical regulatory interactions
-
-B. Social Engineering Risk
-
-- Team security practices
-- Access control policies
-- Social attack history
-- Security awareness training
-- Incident response readiness
-
-## Risk-Adjusted Rating Scale
-
-AAA: Exceptional protocol with comprehensive risk mitigation
-
-- Multiple independent security audits with no critical findings
-- Proven resistance to all major attack vectors
-- Strong regulatory compliance framework
-- Decentralized operations with minimal points of failure
-- Multiple layers of economic security
-
-AA: Strong protocol with robust risk management
-
-- Regular security audits with minor findings
-- Documented resistance to common attack vectors
-- Clear regulatory strategy
-- Limited centralization risks
-- Strong economic security measures
-
-## Risk Multipliers
-Each risk category can apply a multiplier to the base rating:
-
-- Critical Risk: -3 rating notches
-- High Risk: -2 rating notches
-- Medium Risk: -1 rating notch
-- Low Risk: No adjustment
-- Minimal Risk: +1 rating notch
-
-## Continuous Monitoring Triggers
-
-- Smart contract vulnerability disclosure
-- Network attack detection
-- Regulatory action
-- Economic model stress
-- Oracle deviation events
-- Cross-chain bridge incidents
-- Social engineering attempts
-- MEV activity spikes
-
-## Review Framework
-
-- Monthly security metric review
-- Quarterly risk assessment update
-- Annual comprehensive review
-- Real-time monitoring of critical indicators
-- Incident-triggered reassessment
-
-## Ozempic Effect
-We'll base this upon value flows. Defillama doesn't actually display this. So we'll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon. 
-
-Let's build a comprehensive framework for tracking the true "Ozempic effect" of L2s on Ethereum. We'll need several interconnected metrics to understand the complete value flow dynamics.
-
-1. Wallet Migration Analysis
-
-- Track addresses that first appeared on Ethereum before a certain date (let's call them "Ethereum Native Wallets")
-- Monitor their activity transition to L2s over time
-- Analyze their ETH holdings distribution between L1 and L2s
-- Calculate the ratio of their transaction activity on L2s versus L1
-
-2. L2 Native User Analysis
-
-- Identify wallets that first appeared on L2s
-- Track what percentage never bridge to Ethereum
-- Measure their total value held
-- Calculate their transaction activity
-
-3. Fee Flow Dynamics
-
-- Track L2 sequencer fees paid back to Ethereum
-- Calculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)
-- Monitor the ratio of fees paid back to Ethereum versus fees retained by the L2
-
-We could create a composite "Value Migration Score" that looks like:
-
-```python
-def calculate_migration_score(l2_data):
-    # Value Migration
-    eth_native_migration = (
-        eth_native_wallets_on_l2 / total_eth_native_wallets *
-        eth_value_moved_to_l2 / original_eth_holdings
-    )
-    
-    # Activity Migration
-    activity_migration = (
-        l2_transactions_by_eth_wallets / 
-        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)
-    )
-    
-    # L2 Native Growth
-    l2_native_strength = (
-        l2_only_wallets / total_l2_wallets *
-        l2_native_value / total_l2_value
-    )
-    
-    # Fee Economics
-    fee_efficiency = (
-        sequencer_fees_to_ethereum / 
-        theoretical_l1_fees_for_same_transactions
-    )
-    
-    return (
-        eth_native_migration * 0.3 +
-        activity_migration * 0.3 +
-        l2_native_strength * 0.2 +
-        fee_efficiency * 0.2
-    )
-```
-
-This would give us a quantitative measure of how effectively an L2 is:
-
-1. Attracting value from Ethereum
-2. Generating new value through native users
-3. Maintaining a sustainable fee relationship with Ethereum
-
-A true Ozempic L2 should show:
-
-- High migration of ETH native wallets
-- Strong L2 native user growth
-- Efficient fee generation that still provides meaningful revenue to Ethereum
-- Sustained or growing activity ratios over time
-
-Would you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?
-
-* Net Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period
-
-## Risk Factors
-
-### 1. Technical Risks
-
-- Implementation bugs
-- Security vulnerabilities
-- Upgrade coordination failures
-- Network splits
-
-### 2. Governance Risks
-
-- Capture by special interests
-- Low participation
-- Contentious decisions
-- Unclear processes
-
-### 3. Social Risks
-
-- Community fragmentation
-- Loss of developer support
-- Reputation damage
-- Market impacts
-
-## Future Considerations
-
-### 1. Emerging Trends
-
-- Automated governance systems
-- AI-assisted proposal analysis
-- Cross-chain governance
-- Dynamic parameter adjustment
-
-### 2. Challenges
-
-- Scaling governance participation
-- Balancing security and innovation
-- Managing increasing complexity
-- Maintaining decentralization
-
-### 3. Opportunities
-
-- Improved governance tools
-- Better simulation capabilities
-- Enhanced coordination mechanisms
-- More sophisticated voting systems
-
-
-## Dependent Network Ratings
-
-Polygon zkEVM
-Settlement Guarantees (10/10 weight): 
-Score: 9/10
-The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum's consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.
-
-Dispute Resolution (9/10 weight):
-Score: 10/10
-Ethereum serves as the absolute source of truth for the zkEVM. If there's ever a dispute about the state, the zero-knowledge proofs verified by Ethereum's consensus provide mathematical certainty about what is correct. There's no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.
-
-Economic Security Inheritance (8/10 weight):
-Score: 9/10
-The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can't confirm invalid state transitions, and its assets are secured by Ethereum's consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.
-
-State Finality (7/10 weight):
-Score: 9/10
-Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there's no waiting period for finality beyond Ethereum's own finality period. This is as strong as state finality can get for a settlement-dependent network.
-
-Exit Rights Guarantees (6/10 weight):
-Score: 8/10
-Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum's consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.
-
-State Progression Dependency (5/10 weight):
-Score: 7/10
-While the zkEVM can process transactions independently, it can't finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there's some independence in transaction processing.
-
-Asset Movement (4/10 weight):
-Score: 10/10
-Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they're locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.
-
-Total Score: 62/70 (approximately 89%)
-
-This analysis places Polygon zkEVM firmly in the "Fully Non-Sovereign" category. 
-Arbitrum
-Let me analyze Arbitrum's relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.
-
-Settlement Guarantees (10/10 weight):
-Score: 7/10
-Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it's not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum's consensus layer still makes this a robust settlement mechanism.
-
-Dispute Resolution (9/10 weight):
-Score: 8/10
-Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum's consensus automatically enforces the correct resolution once fraud is proven.
-
-Economic Security Inheritance (8/10 weight):
-Score: 9/10
-Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum's state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.
-
-State Finality (7/10 weight):
-Score: 6/10
-While Arbitrum's state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.
-
-Exit Rights Guarantees (6/10 weight):
-Score: 8/10
-Users can always withdraw their assets to Ethereum, guaranteed by Ethereum's consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum's operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.
-
-State Progression Dependency (5/10 weight):
-Score: 7/10
-Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.
-
-Asset Movement (4/10 weight):
-Score: 10/10
-Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum's consensus. When assets move to Arbitrum, they're locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.
-
-Total Score: 55/70 (approximately 79%)
-
-This analysis places Arbitrum in the "Fully Non-Sovereign" category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs. 
-
-Stacks
-Settlement Guarantees (10/10 weight): Score: 4/10
-Stacks uses Bitcoin for checkpointing and security anchoring
-However, it lacks cryptographic enforcement of settlement by Bitcoin's consensus
-Bitcoin doesn't automatically enforce or validate Stacks' state transitions
-Falls into the "checkpoint systems" category rather than stronger settlement guarantees
-Dispute Resolution (9/10 weight): Score: 3/10
-While Stacks records its state on Bitcoin, Bitcoin's consensus doesn't serve as the ultimate arbiter
-Disputes are primarily resolved within Stacks' own consensus mechanism
-Bitcoin can't automatically correct or resolve issues in Stacks' state
-Economic Security Inheritance (8/10 weight): Score: 6/10
-Miners must commit actual Bitcoin through PoX mechanism
-This creates some economic security dependency on Bitcoin
-However, Stacks maintains its own economic incentives through STX
-State Finality (7/10 weight): Score: 5/10
-Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring
-State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces
-Provides stronger finality than fully independent chains but weaker than true L2s
-Exit Rights Guarantees (6/10 weight): Score: 4/10
-With sBTC, users can move Bitcoin between chains
-However, this relies on Stacks' mechanisms rather than being guaranteed by Bitcoin's consensus
-Exit rights depend on threshold signatures rather than cryptographic guarantees
-State Progression Dependency (5/10 weight): Score: 7/10
-Stacks blocks are linked to Bitcoin blocks through PoX
-State progression is tied to Bitcoin's block progression
-However, Stacks can still process transactions independently within this framework
-Asset Movement (4/10 weight): Score: 5/10
-sBTC enables Bitcoin movement between chains
-But this movement isn't directly enforced by Bitcoin's consensus
-Relies on threshold signatures and Stacks' mechanisms
-Total Score: 34/59 (approximately 58%)
-
-This places Stacks in the "Moderately Dependent" category on our spectrum.
-
-## Risks 
-Sub categories of risks include
-smart contract vulns
-regulatory risks
-centralization risks for CeDeFi and CEX's 
-MEV
-network level
-key and wallet compromise
-cross chain exploits
-oracle manipulation 
-Social engineering 
-exploitation of economic models 
+- Regulatory exposure
+
+Let me revise the ratings section to clearly delineate legitimate projects from shit coins while maintaining the rigorous analytical framework. I'll adjust the ratings and add more descriptive characteristics for lower-rated assets.
+
+The key change will be to make anything below B rating an explicit designation of a shit coin, with clear warning signs and red flags. Here's the revised ratings structure:
+
+### Rating Categories
+
+#### AAA (95-100)
+Assets in this category demonstrate exceptional characteristics across all evaluation metrics:
+- Proven value capture mechanisms generating sustainable protocol revenue
+- Industry-leading security practices with multiple audits and bug bounties
+- Deep, distributed liquidity across multiple venues
+- Active governance with high community participation
+- Minimal toxic MEV exposure with sophisticated protection mechanisms
+
+#### AA (85-94)
+Strong performers with proven track records:
+- Consistent value capture through fees and treasury growth
+- Robust security with regular audits and minimal vulnerabilities
+- Healthy liquidity distribution and market maker participation
+- Well-established governance frameworks
+- Effectively managed MEV exposure
+
+#### A (75-84)
+Solid protocols with good fundamentals:
+- Demonstrable value capture, though perhaps not maximized
+- Sound security practices with no major incidents
+- Adequate liquidity across major venues
+- Functional governance with active participation
+- Controlled MEV exposure with basic protections
+
+#### BBB (65-74)
+Moderate performers showing some concerns:
+- Value capture mechanisms exist but may need optimization
+- Security meets basic standards but could be improved
+- Liquidity concentrated in fewer venues
+- Governance participation may be limited
+- Notable MEV exposure requiring attention
+
+#### BB (55-64)
+Projects showing significant warning signs:
+- Limited or declining value capture
+- Security concerns requiring immediate attention
+- Thin liquidity with high concentration risk
+- Governance challenges or low participation
+- High MEV exposure with inadequate protection
+
+#### B (50-54)
+The minimum threshold for legitimate projects:
+- Struggling but legitimate value capture attempts
+- Basic security measures in place
+- Limited but genuine liquidity
+- Simple but functional governance
+- Significant MEV vulnerability but with some mitigation attempts
+
+#### C and Below (<50) - Shit Coin Territory
+Any asset rated below B exhibits characteristics of a shit coin:
+
+##### C (40-49) - Highly Speculative
+- Minimal genuine value capture
+- Copied or unaudited code
+- Artificial or manipulated liquidity
+- Centralized control masked as governance
+- Severe MEV exploitation risks
+
+##### D (30-39) - Likely Exploitative
+- No legitimate value capture mechanism
+- Security vulnerabilities or backdoors
+- Wash trading and fake volume
+- Governance controlled by insiders
+- Designed for MEV extraction
+
+##### F (<30) - Confirmed Shit Coin
+- Purely extractive tokenomics
+- Copied code with hidden minting functions
+- Concentrated ownership masked through multiple wallets
+- Non-existent or fake governance
+- Built specifically for price manipulation
+
+#### Warning Signs of Shit Coins:
+
+- Token distribution heavily concentrated among creators
+- Code copied directly from other projects without meaningful improvements
+- Liquidity that appears deep but is controlled by a few addresses
+- Governance tokens with hidden privileges for insiders
+- Marketing focused entirely on price appreciation
+- No genuine protocol revenue beyond token inflation
+- Team anonymity combined with privileged access to contract functions
+
+The critical distinction between a B-rated project and a shit coin lies not just in technical metrics but in genuine intent and community alignment. While B-rated projects may struggle with execution, they represent legitimate attempts to create value. Anything rated C or below represents projects designed primarily for extraction rather than value creation.
+
+This framework helps identify shit coins not just through technical analysis but by examining the alignment between stated goals and actual implementation. A project's placement in shit coin territory isn't just about current performance but about fundamental design choices that prioritize extraction over value creation.

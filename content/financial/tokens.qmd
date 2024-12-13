@@ -1,164 +1,207 @@
 # Digital Assets
 
-The logical place to start this Almanack is Digital Assets. These include all the financial instruments that exist within the Web3 sphere. For us to represent all Digital Assets within this space, it means we need to include all Web3 financial instruments, both on chain and off chain. 
+## Introduction
 
-We take inspiration from the [Fat Protocol Thesis](https://www.usv.com/writing/2016/08/fat-protocols/)[@monegro2016fat] to define the major categories of Digital Assets within the Web3 realm. We also adhere to the naming convention that stipulates Coins are digital assets relating to the running and operation of a Blockchain, whereas Tokens are digital assets that are issued on a Blockchain. 
+Digital assets in Web3 represent a fundamental shift in how we conceptualize and transfer value. Unlike traditional financial instruments, these assets exist natively in digital form, secured by cryptographic protocols and managed through distributed networks. This guide provides a comprehensive framework for understanding the entire landscape of digital assets.
 
-We thus break down Digital Assets into the following Categories:
+## I. Coins vs Tokens: A Fundamental Distinction
 
-* Coins 
-    * Primary Networks
-    * Secondary Networks
-        * Ozempic
-        * Sugar
-    * Derivatives
-* Tokens 
-    * Fungibles
-    * Non Fungible
+The distinction between coins and tokens represents more than mere terminology - it reflects fundamental differences in purpose, implementation, and economic models.
 
-After describing the various categories and classes of Digital Assets we'll then delve into the Markets existing for these Digital Assets, as well as how an entity [hodls](../foundations/terms.qmd#hodl) the Digital Asset and the yield properties of the various types of Digital Assets. 
+### Native Coins (Layer 1)
 
-## Coins
-This section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the [Blockchain](../technical/blockchains.qmd) documentation. 
+Native coins serve as the foundational assets of sovereign blockchain networks. They exhibit several key characteristics:
 
-### Network Economics
-Token Models
-Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards
-Incentive Structures
-Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding
-Economic Security
-Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support
+1. Network Security
+   - Provide economic incentives for validators/miners
+   - Enable Sybil resistance through staking or mining
+   - Create alignment between network security and asset value
 
-### Base Networks
-This Almanack distinguishes between the financial properties of Coins versus the technical properties of a [Blockchain](../technical/blockchains.qmd). As such we don't refer to networks here by Layer 1 or Layer 2. That's a classification and distinction you can explore [here](../essentials/terms.qmd). 
+2. Transaction Settlement
+   - Pay for network resources (gas)
+   - Denominate transaction fees
+   - Enable priority mechanisms for block inclusion
 
-We define a Base Network that maintains it's own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network. 
+3. Monetary Policy
+   - Fixed or predictable issuance schedules
+   - Independently maintained value
+   - Network-specific economic models
 
-### Secondary Networks
-These are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the [Blockchain chapter](../technical/blockchains.qmd). We'll encompass the full breadth of L2's including, but not limited to Plasma, Sidechains, Rollups etc. 
+### Secondary Network Coins
 
-We then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value. 
+Secondary network coins introduce a novel dynamic in the blockchain ecosystem, particularly through their relationship with their settlement layers. We can classify these into two categories based on their value dynamics:
 
-Please see [Ozempic Effect](./ratings.qmd#ozempic-effect) to see how we determine if a network in a net ozempic or sugar network. 
+1. Ozempic Networks
+   - Extract value from the settlement layer
+   - Reduce activity on the parent chain
+   - May decrease parent chain's fee revenue
+   - Examples: Many Layer 2 solutions that primarily focus on cost reduction
 
-### Derivatives
+2. Sugar Networks
+   - Drive additional value to the settlement layer
+   - Increase demand for block space on parent chain
+   - Generate additional fee revenue for validators
+   - Examples: Specialized L2s that enable new use cases
 
-* On chain
-    * Wrapped
-        * Pure
-        * Bridged
-* Off Chain
-    * Spot ETF's
+### Coin Derivatives
 
-#### On Chain Derivatives
+The ecosystem has developed various derivative forms of native coins:
 
-#### Off Chain Derivatives
+1. Wrapped Versions
+   - Pure wraps (1:1 backing with native coin)
+   - Bridge-based wraps (cross-chain representations)
+   - Synthetic versions (price exposure without direct backing)
 
-## Tokens
+2. Institutional Products
+   - Exchange-traded funds (ETFs)
+   - Futures contracts
+   - Options and other derivatives
+   - Structured products
 
-### Fungible
-Fungible is a pretty terrible name, but it roughly means divisable. It's easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It's divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It's Non fungible, or non divisable. There's more nuances which we can deal with in the vocabulary section. But that's the general idea of it. 
+## II. Tokens: The Application Layer of Value
 
-We have the following types:
-* Stable Coins
-    * Fiat backed
-    * Crypto backed
-    * Delta Neutral backed
-* Shit Coins
-    * Governance 
-    * Meme
-* Utility
+Tokens represent the most diverse category of digital assets, serving various functions across different blockchain applications.
 
-Then we have numerous standards. We'll add only the most popular and relevant ones here.
+### Fungible Tokens
 
-Namely:
-* ERC20
-* ERC777
-* ERC1363
-* BRC20
-* Runes
-* Solana's SPL Token Standard
-* ICS20
+1. Stablecoins
+   a. Fiat-Backed
+      - Direct custody of traditional currency (USDC)
+      - Banking relationship requirements
+      - Regular auditing processes
+      
+   b. Crypto-Collateralized
+      - Over-collateralization requirements
+      - Liquidation mechanisms
+      - Price stability mechanisms
+      
+   c. Delta-Neutral
+      - Hedged exposure through perpetual futures
+      - Market-neutral yield generation
+      - Advanced risk management systems
 
-#### ICS20
-The Inter-Chain Standard 20 is a [Cosmos](../financial/trollip_index.qmd#cosmos-hub) based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)
+2. Governance Tokens
+   - Voting rights in protocols
+   - Fee sharing mechanisms
+   - Protocol ownership representation
+   - Treasury management control
 
-### Non Fungible
-Has the following attributes:
+3. Utility Tokens
+   - Protocol-specific functions
+   - Access rights
+   - Service payments
+   - Network resources
 
-* Art & Collectibles
-* Profile Picture (PFP)
-* Gaming
-* Domain Names and Identity
-* Real World Assets (RWA)
+4. Security Tokens
+   - Regulatory compliance requirements
+   - Traditional asset representation
+   - Dividend/revenue rights
+   - Investment contracts
 
+### Non-Fungible Tokens (NFTs)
 
-The NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection's market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.
+1. Digital Art & Collectibles
+   - Unique digital artworks
+   - Limited edition series
+   - Historical significance items
+   - Cultural artifacts
 
-## Markets
-Where can I buy these Digital Assets? The major markets are regulated and unregulated.
+2. Gaming Assets
+   - In-game items
+   - Character attributes
+   - Land parcels
+   - Achievement badges
 
-These are then divided into spot vs derivatives.
+3. Identity & Access
+   - Domain names
+   - Membership passes
+   - Credentials
+   - Access rights
 
-For regulated it's interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It's probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant. 
+4. Real World Asset (RWA) Representation
+   - Property titles
+   - Legal documents
+   - Physical artwork certificates
+   - Commodity ownership
 
-## Hodling
-Wallets
+## III. Market Infrastructure
 
-### Custodial
+### Trading Venues
 
-### Non-Custodial
-* Pure
-    * Cold
-    * Hot
-* Smart
-    * MPC 
-    * Smart Contract Based (Includes Account Abstraction)
+1. Centralized Exchanges (CEX)
+   - Order book markets
+   - Fiat on/off ramps
+   - Custody solutions
+   - Regulatory compliance
 
-## Yield Properties
-Major categories are:
+2. Decentralized Exchanges (DEX)
+   - Automated Market Makers (AMM)
+   - Order book DEXs
+   - Hybrid models
+   - MEV protection mechanisms
 
-* Network Yield
-* Trading Yield
-* Protocol Yield
+### Custody Solutions
 
+1. Non-Custodial
+   a. Pure Wallets
+      - Cold storage (hardware wallets)
+      - Hot wallets (software)
+      - Paper wallets
+      
+   b. Smart Wallets
+      - Multi-signature arrangements
+      - Social recovery systems
+      - Account abstraction implementations
+      - Programmable security rules
 
-### Trading Yield
-* Pricing appreciation
-* Arbitrage Yield
-    * Spot Arbitrage
-    * Peg Arbitrage - These are unique to stable coins
-* Options and Derivatives Premiums
-* Futures funding rates
+2. Custodial
+   - Institutional custody
+   - Exchange wallets
+   - Banking integration
+   - Insurance coverage
 
-### Network Yield
-* Mining Yield
-    * Solo Mining
-    * Pool Mining
-    * Cloud Mining
-* Validating Yield
-    * Staking
-* Network Fee Yield
-    * Gas
-* MEV
-    * Toxic
-    * Non Toxic
-* Derivatives
-    * Liquid Staking
+## IV. Yield Generation
 
-### dApp Yield
-* Staking
-* Liquidity Provision
-* Governance Participation
-* NFT Rental Income
+Understanding yield sources helps evaluate the sustainability and risks of different digital assets:
 
-#### Liquidity Provision
-We break this down into the following Categories
+1. Network Yield
+   - Mining rewards
+   - Staking returns
+   - Transaction fees
+   - MEV extraction
 
-* AMM Pool fees
-* Concentrated liquidity positions
-* Order book market making
-* Lending and Borrowing markets
+2. Trading Yield
+   - Market making spreads
+   - Arbitrage opportunities
+   - Options premiums
+   - Futures funding rates
 
-##### Concentrated Liquidity Provision
-Here we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046
+3. Protocol Yield
+   - Lending interest
+   - Liquidity provision fees
+   - Governance rewards
+   - Protocol revenue sharing
+
+## V. Risk Assessment Framework
+
+1. Technical Risks
+   - Smart contract vulnerabilities
+   - Network security concerns
+   - Bridge weaknesses
+   - Oracle failures
+
+2. Economic Risks
+   - Market manipulation
+   - Liquidity crises
+   - Collateral deterioration
+   - Yield sustainability
+
+3. Regulatory Risks
+   - Compliance requirements
+   - Jurisdictional exposure
+   - Legal classification uncertainty
+   - Regulatory enforcement actions
+
+## Conclusion
+
+The digital asset ecosystem continues to evolve, with new forms of value creation and exchange emerging regularly. Understanding these assets requires considering their technical implementation, economic models, market structures, and risk factors. This framework provides a foundation for analyzing both current and future digital assets in the Web3 space.

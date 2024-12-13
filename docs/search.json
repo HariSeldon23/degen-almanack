@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Trollip’s Degen Almanack",
     "section": "",
-    "text": "Welcome\nThis Almanack represents an attempt to document cryptocurrency and Web3 knowledge without the conflicts of interest that plague our industry. Just as Henry Varnum Poor created his Manual of Railroads to bring transparency to America’s railroad boom, this Almanack aims to bring clarity to the cryptocurrency revolution.",
+    "text": "Welcome\nThis Almanack represents an attempt to document cryptocurrency and Web3 knowledge without the conflicts of interest that plague our industry. Just as Henry Varnum Poor created his Manual of Railroads to bring transparency to America’s railroad boom, this Almanack aims to bring clarity to the cryptocurrency industry.",
     "crumbs": [
       "Introduction",
       "Welcome"
@@ -26,7 +26,7 @@
     "href": "index.html#how-to-use-this-almanack",
     "title": "Trollip’s Degen Almanack",
     "section": "How to Use This Almanack",
-    "text": "How to Use This Almanack\nWhether you’re seeking financial sovereignty or building the future, this Almanack offers multiple paths:\nFor Those Seeking Independence\nStart with “Regular Person’s Path to Independence” to understand how to safely participate in the cryptocurrency ecosystem without falling prey to scams or losing your funds.\nFor Technical Minds\nThe “Technical” section provides deep dives into cryptography, blockchain architecture, and protocol design patterns. Consider starting with “Web3 Essentials” to establish a common vocabulary.\nFor Market Participants\nThe “Financial” section offers frameworks for analyzing digital assets, understanding market structures, and evaluating protocols.",
+    "text": "How to Use This Almanack\nWhether you’re seeking financial sovereignty or building the future, this Almanack offers multiple paths:\nFor Those Seeking Independence\nStart with “Regular Person’s Path to Independence” to understand how to safely participate in the cryptocurrency ecosystem without falling prey to scams or losing your funds.\nFor Technical Minds\nThe “Technologist’s Path” provides deep dives into cryptography, blockchain architecture, and protocol design patterns. Consider starting with “Web3 Terminology” to establish a common vocabulary.\nFor Market Participants\nThe “Digital Assets” section offers frameworks for analyzing digital assets, understanding market structures, and evaluating protocols.",
     "crumbs": [
       "Introduction",
       "Welcome"
@@ -125,7 +125,7 @@
     "href": "dedication.html",
     "title": "Dedication",
     "section": "",
-    "text": "For my two skebangas. Huxley & Morrissey",
+    "text": "For my two skebangas, Huxley & Morrissey",
     "crumbs": [
       "Introduction",
       "Dedication"
@@ -147,7 +147,7 @@
     "href": "preface.html",
     "title": "Preface",
     "section": "",
-    "text": "The cryptocurrency revolution has created unprecedented opportunities for financial independence, but it has also spawned an industry rife with exploitation. As someone deeply embedded in this world, I face a moral dilemma: I can either participate in a system that profits from obscuring knowledge, or I can work to make that knowledge freely accessible to all.\nThis Almanack represents my choice of the latter path. Just as the cypherpunks believed privacy and freedom of information could coexist, I believe we can build a more equitable crypto ecosystem without compromising its innovative potential. The fundamental act of friendship among cryptocurrency enthusiasts – what I call “degens” – should be the sharing of knowledge, not the hoarding of it.\nThe technical complexity of cryptocurrency has created a particularly insidious form of gatekeeping. Essential market data and analysis hide behind expensive paywalls. Crucial insights remain locked in exclusive chat groups and private networks. This artificial scarcity of knowledge directly contradicts the core ethos of Web3: permissionless access and decentralized power.\nThis Almanack aims to break down these barriers. It will serve as a comprehensive, freely accessible resource covering everything from basic concepts to advanced trading strategies. More importantly, it will evolve through community contributions, ensuring it stays relevant and accurate as the industry develops.\nSome might question why I would freely share knowledge that others sell at a premium. My answer is simple: the long-term health of our ecosystem depends on educated participants making informed decisions. When knowledge is concentrated in the hands of a few, it creates the very centralization of power that cryptocurrency was meant to disrupt.\nLooking ahead, I envision this Almanack becoming a living document that adapts to the rapid changes in our industry. I’m exploring sustainable open-source funding models, potentially through platforms like Mirror that allow for anonymous contributions. This would ensure the Almanack can continue growing while maintaining its independence from traditional financial incentives.\nThis is just the beginning. The path to truly democratized crypto knowledge will require continuous effort and collaboration. If you share this vision, I invite you to contribute your expertise, suggest improvements, or simply help spread the word. Together, we can build something that honors the original promise of cryptocurrency: financial sovereignty for all.\nThe work begins now.",
+    "text": "The cryptocurrency revolution has created unprecedented opportunities for financial independence, but it has also spawned an industry rife with exploitation. As someone deeply embedded in this world, I face a moral dilemma: I can either participate in a system that profits from obscuring knowledge, or I can work to make that knowledge freely accessible to all.\nThis Almanack represents my choice of the latter path. Just as the cypherpunks believed privacy and freedom of information could coexist, I believe we can build a more equitable crypto ecosystem without compromising its innovative potential. The fundamental act of community among cryptocurrency enthusiasts – what I call “degens” – should be the sharing of knowledge, not the hoarding of it.\nThe technical complexity of cryptocurrency has created a particularly insidious form of gatekeeping. Essential market data and analysis hide behind expensive paywalls. Crucial insights remain locked in exclusive chat groups and private networks. This artificial scarcity of knowledge directly contradicts the core ethos of Web3: permissionless access and decentralized power.\nThis Almanack aims to break down these barriers. It will serve as a comprehensive, freely accessible resource covering everything from basic concepts to advanced trading strategies. More importantly, it will evolve through community contributions, ensuring it stays relevant and accurate as the industry develops.\nSome might question why I would freely share knowledge that others sell at a premium. My answer is simple: the long-term health of our ecosystem depends on educated participants making informed decisions. When knowledge is concentrated in the hands of a few, it creates the very centralization of power that cryptocurrency was meant to disrupt.\nLooking ahead, I envision this Almanack becoming a living document that adapts to the rapid changes in our industry. I’m exploring sustainable open-source funding models, potentially through platforms like Mirror that allow for anonymous contributions. This would ensure the Almanack can continue growing while maintaining its independence from traditional financial incentives.\nThis is just the beginning. The path to truly democratized crypto knowledge will require continuous effort and collaboration. If you share this vision, I invite you to contribute your expertise, suggest improvements, or simply help spread the word. Together, we can build something that honors the original promise of cryptocurrency: financial sovereignty for all.\nThe work begins now.",
     "crumbs": [
       "Introduction",
       "Preface"
@@ -158,7 +158,7 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "The crypto industry suffers from a unique paradox: those with the deepest knowledge often have the strongest incentives to obscure rather than illuminate. This troubling reality became clear to me during a technical debate I witnessed on Twitter. Both participants made valid points, yet instead of building understanding, they resorted to personal attacks. What struck me wasn’t just the hostility, but the absence of a shared framework for discussion – a common language that could bridge their perspectives.\nThis observation rekindled an idea I’d been considering for years: creating a comprehensive blockchain taxonomy. But as I began mapping out the technical architecture of various networks, I realized the scope needed to be much broader. The same knowledge gaps that hindered technical discussions were even more pronounced in everyday conversations about cryptocurrency investment and usage.\nI thought about the countless conversations I’ve had with friends and family seeking crypto advice. These weren’t developers or traders – they were curious individuals trying to understand a complex new technology. Despite years of experience in the industry, I struggled to give them guidance that was both accessible and comprehensive. The existing resources either oversimplified to the point of uselessness or drowned readers in technical jargon.\nThis Almanack aims to bridge that gap. Drawing inspiration from Henry Varnum Poor’s Manual of Railroads, which brought transparency to America’s railway boom, we’re creating a resource that serves both technical and non-technical audiences. Just as Poor’s manual helped investors understand the revolutionary technology of his time, this Almanack aims to demystify the crypto revolution for everyone.\nThe name “Trollip’s Degen Almanack” might seem unusual. Initially, I considered calling it a blockchain taxonomy or a Web3 guide. But these terms felt too limiting. The word “degen” – short for degenerate – carries special meaning in crypto culture. While often used ironically to describe risk-taking traders, being a degen also implies deep engagement with the technology and markets. It’s through this engaged experimentation that true understanding emerges.\nWhat sets this Almanack apart is its commitment to intellectual honesty and practical utility. We’re building it as an open-source, community-reviewed resource that will evolve alongside the technology it describes. The documentation uses version control through Git, allowing readers to track how understanding changes over time. As the industry matures, we plan to integrate real-time data sources, transforming this from a static document into a dynamic tool for decision-making.\nThe Almanack is organized into distinct paths catering to different needs:\n\nThe Path to Independence guides those seeking financial sovereignty\nThe Technologist’s Path provides deep technical understanding\nThe Financial sections offer frameworks for analysis and investment\n\nEach section builds upon the others, creating a comprehensive resource that grows with your understanding. Whether you’re a developer looking to understand economic implications, an investor studying technical fundamentals, or someone simply seeking financial independence, you’ll find your path forward here.\nThis is an ambitious undertaking, and like any first edition, it will contain errors and omissions. But by maintaining rigorous standards for evidence, encouraging community contributions, and staying true to the open-source ethos, we aim to create something valuable: a trusted guide through the often confusing world of cryptocurrency and Web3.\nThe journey begins here. Welcome to your guide to digital independence.",
+    "text": "The crypto industry suffers from a unique paradox: those with the deepest knowledge often have the strongest incentives to obscure rather than illuminate. This troubling reality became clear to me during a technical debate I witnessed on Twitter. Both participants made valid points, yet instead of building understanding, they resorted to personal attacks. What struck me wasn’t just the hostility, but the absence of a shared framework for discussion – a common language that could bridge their perspectives.\nThis observation rekindled an idea I’d been considering for years: creating a comprehensive blockchain taxonomy. But as I began mapping out the technical architecture of various networks, I realized the scope needed to be much broader. The same knowledge gaps that hindered technical discussions were even more pronounced in everyday conversations about cryptocurrency investment and usage.\nI thought about the countless conversations I’ve had with friends and family seeking crypto advice. These weren’t developers or traders – they were curious individuals trying to understand a complex new technology. Despite years of experience in the industry, I struggled to give them guidance that was both accessible and comprehensive. The existing resources seemed to fall into three troubling categories: those that oversimplified to the point of uselessness, those that drowned readers in technical jargon, and most concerningly, those designed to exploit newcomers’ curiosity to pump the authors’ own cryptocurrency holdings or use unsuspecting readers as exit liquidity.\nThis last category was particularly insidious – educational content that masqueraded as objective guidance while subtly steering readers toward specific tokens or platforms that benefited the content creator. What appeared to be helpful tutorials often turned out to be sophisticated marketing funnels, designed not to educate but to convert readers into buyers of whatever cryptocurrency the author needed to sell.\nThis Almanack aims to solve these issues. Drawing inspiration from Henry Varnum Poor’s Manual of Railroads, which brought transparency to America’s railway boom, we’re creating a resource that serves both technical and non-technical audiences. Just as Poor’s manual helped investors understand the revolutionary technology of his time, this Almanack aims to demystify the crypto industry for everyone.\nThe name “Trollip’s Degen Almanack” might seem unusual. Initially, I considered calling it a blockchain taxonomy or a Web3 guide. But these terms felt too limiting. The word “degen” – short for degenerate – carries special meaning in crypto culture. While often used ironically to describe risk-taking traders, being a degen also implies deep engagement with the technology and markets. It’s through this engaged experimentation that true understanding emerges.\nWhat sets this Almanack apart is its commitment to intellectual honesty and practical utility. We’re building it as an open-source, community-reviewed resource that will evolve alongside the technology it describes. The documentation uses version control through Git, allowing readers to track how understanding changes over time. As the industry matures, we plan to integrate real-time data sources, transforming this from a static document into a dynamic tool for decision-making.\nThe Almanack is organized into distinct paths catering to different needs:\n\nThe Path to Independence guides those seeking financial sovereignty\nThe Technologist’s Path provides deep technical understanding\nThe Financial sections offer frameworks for analysis and investment\n\nEach section builds upon the others, creating a comprehensive resource that grows with your understanding. Whether you’re a developer looking to understand economic implications, an investor studying technical fundamentals, or someone simply seeking financial independence, you’ll find your path forward here.\nThis is an ambitious undertaking, and like any first edition, it will contain errors and omissions. But by maintaining rigorous standards for evidence, encouraging community contributions, and staying true to the open-source ethos, we aim to create something valuable: a trusted guide through the often confusing world of cryptocurrency and Web3.\nThe journey begins here. Welcome to your guide to digital independence.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
@@ -169,7 +169,7 @@
     "href": "content/intro/use.html",
     "title": "How to Use This Almanack",
     "section": "",
-    "text": "Understanding the Structure\nThe almanack is organized into progressive sections that build upon each other while remaining independently accessible. Think of it like a city with different districts - you can start in any area that interests you, but the main roads connect everything in a logical way.",
+    "text": "Understanding the Structure\nThe almanack is organized like a city with distinct districts, each serving different needs while remaining interconnected. You can begin your journey in any district that interests you most, but carefully laid paths connect all areas, allowing you to build comprehensive understanding over time.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
@@ -180,18 +180,7 @@
     "href": "content/intro/use.html#understanding-the-structure",
     "title": "How to Use This Almanack",
     "section": "",
-    "text": "For Those Seeking Financial Independence\nIf your primary goal is achieving financial sovereignty through cryptocurrency, begin with:\n\nStart with the “Foundations” section to understand basic tools and security\nMove to “Path to Independence” which provides step-by-step guidance\nReference the “Financial Systems” section as you advance\nExplore other sections based on your growing interests and needs\n\n\n\nFor Technical Minds\nIf you’re approaching from a technical perspective, particularly as a builder or developer:\n\nBegin with “Technical Architecture” to understand fundamental concepts\nExplore “Applications & Use Cases” for implementation patterns\nStudy “Financial Systems” to understand the economic aspects\nReference “Governance & Social Coordination” for broader ecosystem context\n\n\n\nFor Market Participants\nIf you’re focused on trading, investing, or market analysis:\n\nStart with “Financial Systems” for core concepts\nExplore “Technical Architecture” to understand underlying technology\nStudy “Governance & Social Coordination” for market-moving factors\nReference other sections as needed for comprehensive understanding",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
-    ]
-  },
-  {
-    "objectID": "content/intro/use.html#using-the-rating-systems",
-    "href": "content/intro/use.html#using-the-rating-systems",
-    "title": "How to Use This Almanack",
-    "section": "Using the Rating Systems",
-    "text": "Using the Rating Systems\nThis almanack includes several rating frameworks to help you evaluate:\n\nDigital assets and protocols\nSecurity considerations\nMarket opportunities\nTechnical architectures\n\nWhen using these ratings:\n\nConsider them starting points rather than absolute truth\nLook at the underlying metrics and methodology\nUnderstand how different factors are weighted\nApply the frameworks to your own analysis",
+    "text": "For Those Seeking Financial Independence\nIf your primary goal is achieving financial sovereignty through cryptocurrency, follow this path:\n\nBegin with “Foundations” to understand the tools and security practices essential for protecting your assets. This section covers:\n\nBasic concepts and terminology\nWallet setup and security\nSafe transaction practices\nThreat assessment and mitigation\n\nProgress to “Path to Independence” which provides step-by-step guidance:\n\nMaking your first cryptocurrency purchase\nUnderstanding different types of wallets\nNavigating exchanges safely\nBasic DeFi interactions\nBuilding sustainable practices\n\nReference the “Financial” section as you advance to understand:\n\nMarket structures and dynamics\nDifferent types of digital assets\nTrading fundamentals\nRisk management strategies\n\nExplore other sections based on your growing interests:\n\nTechnical architecture for deeper protocol understanding\nSocial aspects for community participation\nGovernance for long-term involvement\n\n\n\n\nFor Technical Minds\nDevelopers and system architects should approach the content through the “Technologist’s Path”:\n\nStart with core cryptographic principles:\n\nPublic key cryptography\nHash functions\nZero-knowledge proofs\nDigital signatures\n\nProgress through blockchain architecture:\n\nConsensus mechanisms\nNetwork models\nScaling solutions\nState management\n\nAdvance to protocol design:\n\nSmart contract frameworks\nSecurity patterns\nEconomic models\nGas optimization\n\nStudy implementation patterns across:\n\nDeFi protocols\nNFT systems\nLayer 2 solutions\nCross-chain bridges\n\n\n\n\nFor Market Participants\nThose focused on trading and investment should begin with:\n\nFinancial Fundamentals:\n\nMarket structure analysis\nLiquidity assessment\nPrice discovery mechanisms\nOrder book dynamics\n\nDigital Asset Analysis:\n\nToken classification\nValuation frameworks\nRisk assessment models\nYield mechanics\n\nTrading Infrastructure:\n\nExchange architecture\nSettlement systems\nTrading pair dynamics\nMarket making mechanics\n\nAdvanced Topics:\n\nMEV (Maximal Extractable Value)\nCross-chain arbitrage\nProtocol revenue analysis\nGovernance token dynamics",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
@@ -202,62 +191,7 @@
     "href": "content/intro/use.html#working-with-technical-content",
     "title": "How to Use This Almanack",
     "section": "Working with Technical Content",
-    "text": "Working with Technical Content\nTechnical sections include:\n\nCode examples\nArchitecture diagrams\nMathematical formulas\nProtocol specifications\n\nThese are designed to be both rigorous and accessible:\n\nBegin with conceptual overviews\nStudy detailed explanations\nExperiment with provided examples\nReference external resources when needed",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
-    ]
-  },
-  {
-    "objectID": "content/intro/use.html#understanding-risk",
-    "href": "content/intro/use.html#understanding-risk",
-    "title": "How to Use This Almanack",
-    "section": "Understanding Risk",
-    "text": "Understanding Risk\nThroughout the almanack, risk is treated as a fundamental concept:\n\nSecurity risks are covered in technical sections\nMarket risks are detailed in financial sections\nSocial risks are explored in governance sections\nOperational risks are discussed in implementation guides\n\nAlways consider risk factors before implementing any strategy or system described here.",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
-    ]
-  },
-  {
-    "objectID": "content/intro/use.html#contributing-and-staying-updated",
-    "href": "content/intro/use.html#contributing-and-staying-updated",
-    "title": "How to Use This Almanack",
-    "section": "Contributing and Staying Updated",
-    "text": "Contributing and Staying Updated\nThis is a living document that improves through community contribution:\n\nCheck version numbers and update dates\nReview the contribution guidelines\nSubmit improvements or corrections\nJoin related discussions",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
-    ]
-  },
-  {
-    "objectID": "content/intro/use.html#making-the-most-of-examples",
-    "href": "content/intro/use.html#making-the-most-of-examples",
-    "title": "How to Use This Almanack",
-    "section": "Making the Most of Examples",
-    "text": "Making the Most of Examples\nThe almanack includes numerous examples:\n\nCase studies of successful and failed projects\nCode implementations\nMarket analyses\nGovernance scenarios\n\nUse these to:\n\nUnderstand theoretical concepts in practice\nLearn from others’ experiences\nIdentify patterns and anti-patterns\nDevelop your own analytical frameworks",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
-    ]
-  },
-  {
-    "objectID": "content/intro/use.html#following-the-learning-paths",
-    "href": "content/intro/use.html#following-the-learning-paths",
-    "title": "How to Use This Almanack",
-    "section": "Following the Learning Paths",
-    "text": "Following the Learning Paths\nWhile sections can be read independently, certain learning paths are recommended:\n\nBeginner Path\n\nBasic terminology and concepts\nSetting up essential tools\nSecurity fundamentals\nFirst interactions with crypto\n\n\n\nIntermediate Path\n\nUnderstanding market dynamics\nTechnical architecture basics\nRisk management principles\nAdvanced tools and strategies\n\n\n\nAdvanced Path\n\nComplex technical concepts\nAdvanced market analysis\nProtocol design patterns\nGovernance mechanisms",
-    "crumbs": [
-      "Introduction",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
-    ]
-  },
-  {
-    "objectID": "content/intro/use.html#getting-help",
-    "href": "content/intro/use.html#getting-help",
-    "title": "How to Use This Almanack",
-    "section": "Getting Help",
-    "text": "Getting Help\nIf you encounter difficulties:\n\nReview prerequisite sections\nCheck the glossary for unfamiliar terms\nReference external resources\nEngage with the community\nSubmit questions through appropriate channels\n\nRemember that this almanack is designed to grow with you. As your understanding deepens, previously complex sections will become more accessible, and new layers of insight will emerge from familiar content.",
+    "text": "Working with Technical Content\nThe almanack provides rigorous technical content while maintaining accessibility:\n\nConceptual Foundation:\n\nClear explanations of core principles\nReal-world analogies\nProgressive complexity\nVisual aids and diagrams\n\nImplementation Details:\n\nCode examples with thorough documentation\nArchitecture diagrams\nSecurity considerations\nPerformance implications\n\nPractical Application:\n\nStep-by-step guides\nCommon pitfalls\nBest practices\nTesting strategies\n\n\nRemember that this almanack is designed to grow with you. As your understanding deepens, previously complex sections will become more accessible, revealing new layers of insight in familiar content. Take your time with each section, ensure you understand the fundamentals before advancing, and don’t hesitate to revisit earlier material as your perspective evolves.\nThe most important thing to remember is that true digital independence comes not just from using these tools, but from understanding them deeply enough to make informed decisions about your digital future. Use this almanack as your guide, but always think critically about how each concept applies to your specific situation and goals.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>How to Use This Almanack</span>"
@@ -290,7 +224,7 @@
     "href": "content/intro/terms.html#core-concepts",
     "title": "Web3 Terminology",
     "section": "Core Concepts",
-    "text": "Core Concepts\n\nDecentralization\n\n\n\nDecentralization\n\n\nDecentralization refers to the distribution of power, control, and decision-making across a network rather than concentration in a single entity. It exists on a spectrum:\n\nArchitectural Decentralization: How many physical computers comprise the system?\nPolitical Decentralization: How many individuals or organizations control those computers?\nLogical Decentralization: Does the interface and data structures appear more like a single monolithic object, or an amorphous swarm?\n\nExamples help illustrate these distinctions:\n\nBitcoin is architecturally and politically decentralized but logically centralized (one shared ledger)\nEmail is architecturally decentralized but politically centralized (few major providers) and logically centralized (standardized protocol)\nLanguage is decentralized across all three dimensions\n\n\n\nBlockchain\nA blockchain is a distributed database that maintains a continuously growing list of records (blocks) that are cryptographically linked to previous records. Key characteristics include:\n\nImmutability: Once data is recorded, it cannot be altered without changing all subsequent blocks\nTransparency: All transactions are public and verifiable\nConsensus: Network participants agree on the state of the system without trusting each other\n\nThe term “blockchain” has become somewhat limiting - many modern systems use different data structures while maintaining similar properties. This is why some prefer broader terms like “distributed ledger technology” or “decentralized incentive networks.”",
+    "text": "Core Concepts\n\nDecentralization\n\n\n\nDecentralization\n\n\nDecentralization refers to the distribution of power, control, and decision-making across a network rather than concentration in a single entity. It exists on a spectrum across three key dimensions:\n\nArchitectural Decentralization: How many physical computers comprise the system? This measures the raw distribution of infrastructure - how many servers, nodes, or machines work together to maintain the network. A system running on thousands of independent computers is more architecturally decentralized than one running on a few data centers.\nPolitical Decentralization: This dimension has two crucial aspects:\nFirst, who controls the infrastructure? This looks at how many independent individuals or organizations operate the computers that run the network.\nSecond, and equally important, how are protocol changes decided and implemented? This governance aspect examines questions like: Who can propose changes? How are decisions made? What mechanisms exist for reaching consensus on updates? A truly politically decentralized system distributes both operational control and governance authority across a broad community.\nLogical Decentralization: Does the interface and data structures appear more like a single monolithic object, or an amorphous swarm? This examines whether the system works as one coherent whole or as a collection of independent parts.\n\nExamples help illustrate these distinctions:\n\nBitcoin is architecturally decentralized (thousands of nodes) and politically decentralized in both operation (many independent miners and node operators) and governance (changes require broad community consensus through BIP process). However, it remains logically centralized (one shared ledger that everyone must agree on).\nEmail is architecturally decentralized (many servers) but politically centralized both operationally (dominated by a few major providers) and in protocol governance (IETF and major providers control SMTP standards). It’s also logically centralized (standardized protocol).\nLanguage is decentralized across all three dimensions: it runs on millions of human brains (architectural), no one controls how people speak or how language evolves (political), and it can fragment into dialects and variations while remaining functional (logical).\nEthereum demonstrates how political decentralization can vary between operation and governance: while it has many independent node operators (operational decentralization), protocol changes often emerge from a relatively small group of core developers and researchers, though they still require community acceptance to implement (partial governance centralization).\n\nUnderstanding these nuances in political decentralization is crucial because governance mechanisms often become centralization points even in otherwise decentralized systems. A network might have thousands of independent operators but still be effectively controlled by a small group who can push through protocol changes.\n\n\nBlockchain\nA blockchain is a distributed database that maintains a continuously growing list of records (blocks) that are cryptographically linked to previous records. Key characteristics include:\n\nImmutability: Once data is recorded, it cannot be altered without changing all subsequent blocks\nTransparency: All transactions are public and verifiable\nConsensus: Network participants agree on the state of the system without trusting each other\n\nThe term “blockchain” has become somewhat limiting - many modern systems use different data structures while maintaining similar properties. This is why some prefer broader terms like “distributed ledger technology” or “decentralized incentive networks.”",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Web3 Terminology</span>"
@@ -312,7 +246,7 @@
     "href": "content/intro/terms.html#digital-assets",
     "title": "Web3 Terminology",
     "section": "Digital Assets",
-    "text": "Digital Assets\n\nNative Coins\nNative coins (sometimes called protocol tokens) are the primary digital assets of blockchain networks. They serve several purposes:\n\nPay for transaction fees (gas)\nSecure the network through staking or mining\nParticipate in governance\nTransfer value\n\nExamples include:\n\nBitcoin (BTC) on the Bitcoin network\nEther (ETH) on Ethereum\nSOL on Solana\n\n\n\nTokens\nTokens are digital assets created on top of blockchain platforms. They differ from native coins because they don’t secure the underlying network. Major categories include:\n\nFungible Tokens\nInterchangeable tokens where each unit is identical to every other unit. Think of them like traditional currency - any dollar bill can be exchanged for any other dollar bill. Categories include:\n\nStablecoins (USDC, DAI)\nGovernance tokens (UNI, AAVE)\nSecurity tokens\nUtility tokens\n\n\n\nNon-Fungible Tokens (NFTs)\nUnique digital assets where each token has distinct properties. Common uses include:\n\nDigital art and collectibles\nGaming items\nDomain names\nMembership passes\nReal estate titles",
+    "text": "Digital Assets\n\nNative Coins\nNative coins (sometimes called protocol tokens) are the primary digital assets of blockchain networks. They serve several purposes:\n\nPay for transaction fees (gas)\nSecure the network through staking or mining\nParticipate in governance\nTransfer value\n\nExamples include:\n\nBitcoin (BTC) on the Bitcoin network\nEther (ETH) on Ethereum\nSOL on Solana\n\n\n\nTokens\nTokens are digital assets created on top of blockchain platforms. They differ from native coins because they don’t secure the underlying network. Major categories include:\n\nFungible Tokens\nInterchangeable tokens where each unit is identical to every other unit. Think of them like traditional currency - any dollar bill can be exchanged for any other dollar bill. Categories include:\n\nStablecoins (USDC, DAI)\nGovernance tokens (UNI, AAVE)\nSecurity tokens\nUtility tokens\n\n\n\nNon-Fungible Tokens (NFTs)\nUnique digital assets where each token has distinct properties. Common uses include:\n\nDigital art and collectibles\nGaming items\nDomain names\nMembership passes\nReal estate titles\n\nLet me explain the nuanced distinction between meme coins and shit coins, exploring how initial intent and community dynamics can lead to very different outcomes despite similar technical foundations.\n\n\n\nMeme Coins\nMeme coins emerge from internet culture and community jokes rather than serious technological ambitions. Unlike traditional cryptocurrencies that begin with technical whitepapers and development roadmaps, meme coins often start as explicit jokes or social experiments.\nDogecoin serves as the archetypal example. Created in 2013 as a literal joke about cryptocurrency speculation, it took the Shiba Inu “doge” meme and turned it into a functioning cryptocurrency. What makes Dogecoin fascinating is how it demonstrates both the power and limitations of community-driven cryptocurrencies.\nThe Dogecoin paradox lies in its success metrics. While it has generated enormous returns for long-term holders and maintains significant market value, the network itself sees relatively little genuine economic activity. For instance, in 2023, Dogecoin processed fewer daily active addresses than many chains with fraction of its market capitalization. This creates an interesting tension - financial success without corresponding utility.\nWhat separates successful meme coins from failures is their ability to build genuine communities that transcend the initial joke. Dogecoin’s community, for example, became known for charitable initiatives and maintaining a lighthearted approach to cryptocurrency that made the space more accessible to newcomers.\n\n\nShit Coins\nShit coins, in contrast, are cryptocurrencies designed specifically to enrich their creators through sophisticated forms of financial exploitation. While they may adopt the language and aesthetics of meme coins to appear harmless or fun, their fundamental architecture is built for extraction rather than community.\nKey characteristics that distinguish shit coins include:\n\nA predatory distribution model where tokens are heavily concentrated among creators and early investors, often hidden through multiple wallets to create the illusion of decentralization.\nMarketing that focuses exclusively on price appreciation rather than utility or community building. You’ll see constant references to “going to the moon” but little discussion of actual use cases.\nCode that’s usually copied from legitimate projects but modified to include hidden mechanisms for extracting value, like privileged functions that allow creators to mint new tokens or access locked liquidity.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Web3 Terminology</span>"
@@ -345,7 +279,7 @@
     "href": "content/intro/terms.html#security-concepts",
     "title": "Web3 Terminology",
     "section": "Security Concepts",
-    "text": "Security Concepts\n\nSeed Phrase\nA sequence of 12-24 words that serves as a backup for private keys. Also called a mnemonic phrase or recovery phrase. The words are selected from a standardized list of 2048 words and must be stored securely, as anyone with access to the seed phrase can control the associated accounts.\n\n\nSmart Contract\nSelf-executing programs stored on a blockchain that automatically enforce and execute agreements between parties. Key characteristics:\n\nImmutable once deployed\nTransparent and verifiable\nExecute exactly as programmed\nNo downtime or censorship",
+    "text": "Security Concepts\n\nSeed Phrase\nA sequence of 12-24 words that serves as a backup for private keys. Also called a mnemonic phrase or recovery phrase. The words are selected from a standardized list of 2048 words and must be stored securely, as anyone with access to the seed phrase can control the associated accounts.\n\n\nSmart Contract\nA smart contract refers to code deployed and executed directly on a blockchain network, following the specific rules and constraints of that network’s virtual machine. While conceptually described as “self-executing agreements,” modern smart contracts are better understood through the capabilities and limitations of the major blockchain virtual machines that run them.\nThe Ethereum Virtual Machine (EVM) pioneered practical smart contracts, enabling developers to write programs that manage digital assets and execute complex logic. An EVM smart contract is essentially a program with persistent storage that responds to user interactions through transactions. While contracts are typically immutable after deployment, developers have created patterns like proxy contracts to enable upgradability - though this introduces additional complexity and security considerations.\nSolana’s runtime provides a different approach through its Sealevel parallel execution engine. Solana programs (their term for smart contracts) are compiled to Berkeley Packet Filter (BPF) bytecode and can process multiple transactions simultaneously when they don’t conflict. This enables higher throughput but requires developers to carefully consider account management and data access patterns.\nThe Move Virtual Machine, used by networks like Aptos and Sui, introduces a resource-oriented programming model. Move treats digital assets as first-class resources that can’t be copied or discarded, only moved between storage locations. This provides stronger safety guarantees for asset management but requires learning new programming patterns.\nIt’s important to distinguish these modern smart contract platforms from Bitcoin’s scripting system. While Bitcoin Script enables basic programmability for transaction validation, it intentionally limits complexity to prioritize security. It lacks features fundamental to smart contracts like persistent storage, complex control flow, and the ability to maintain state between executions. This makes it excellent for securing Bitcoin transactions but unsuitable for general-purpose computation.\nCommon misconceptions about smart contracts include:\nTheir “automatic” nature - they only execute when triggered by transactions and depend on external participants to initiate interactions.\nPerfect determinism - while execution is deterministic within a single network, subtle differences between virtual machine implementations can cause unexpected behaviors across different chains or network upgrades.\nComplete transparency - while bytecode is publicly visible on the blockchain, understanding a contract’s behavior often requires access to the original source code and careful analysis. Not all developers verify their source code through block explorers, making security audits challenging.\nThe term “smart contract” continues to evolve as new virtual machines and programming models emerge. Rather than thinking of them as magical self-executing agreements, it’s more accurate to view them as programs constrained by their underlying virtual machines, each making different tradeoffs between functionality, security, and performance.",
     "crumbs": [
       "Introduction",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Web3 Terminology</span>"
@@ -1797,62 +1731,73 @@
     "href": "content/financial/tokens.html",
     "title": "Digital Assets",
     "section": "",
-    "text": "Coins\nThis section deals primarily with Digital Assets as a Financial Instrument and as such any information relating to the technical makeup can be found in the Blockchain documentation.",
+    "text": "Introduction\nDigital assets in Web3 represent a fundamental shift in how we conceptualize and transfer value. Unlike traditional financial instruments, these assets exist natively in digital form, secured by cryptographic protocols and managed through distributed networks. This guide provides a comprehensive framework for understanding the entire landscape of digital assets.",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
-    "objectID": "content/financial/tokens.html#coins",
-    "href": "content/financial/tokens.html#coins",
+    "objectID": "content/financial/tokens.html#i.-coins-vs-tokens-a-fundamental-distinction",
+    "href": "content/financial/tokens.html#i.-coins-vs-tokens-a-fundamental-distinction",
     "title": "Digital Assets",
-    "section": "",
-    "text": "Network Economics\nToken Models Utility Tokens: Gas fees, staking, governance Security Tokens: Validator requirements, slashing deposits Network Tokens: Transaction fees, block rewards Incentive Structures Validator Rewards: Block rewards, transaction fees, staking yields User Incentives: Fee markets, priority mechanisms, rebate systems Developer Incentives: Grant programs, protocol fees, treasury funding Economic Security Minimum Stakes: Validator requirements, delegation minimums Slashing Conditions: Downtime penalties, malicious behavior penalties Market Making: Liquidity incentives, trading pair support\n\n\nBase Networks\nThis Almanack distinguishes between the financial properties of Coins versus the technical properties of a Blockchain. As such we don’t refer to networks here by Layer 1 or Layer 2. That’s a classification and distinction you can explore here.\nWe define a Base Network that maintains it’s own Sovereignity. This means that the Coin on the network is used to economically secure the chain as well as final settlement to occur on this network.\n\n\nSecondary Networks\nThese are networks that market themselves as settling the transactions on another network. The nuances of how they settle is covered under the Blockchain chapter. We’ll encompass the full breadth of L2’s including, but not limited to Plasma, Sidechains, Rollups etc.\nWe then break these networks into Ozempic or Sugar networks. This reflects a hat tip to the Fat protocol metaphor. Ozempic networks are net extractors of value from their host chain, while Sugar networks cause the host chain to become fatter and therefore hold more value.\nPlease see Ozempic Effect to see how we determine if a network in a net ozempic or sugar network.\n\n\nDerivatives\n\nOn chain\n\nWrapped\n\nPure\nBridged\n\n\nOff Chain\n\nSpot ETF’s\n\n\n\nOn Chain Derivatives\n\n\nOff Chain Derivatives",
+    "section": "I. Coins vs Tokens: A Fundamental Distinction",
+    "text": "I. Coins vs Tokens: A Fundamental Distinction\nThe distinction between coins and tokens represents more than mere terminology - it reflects fundamental differences in purpose, implementation, and economic models.\n\nNative Coins (Layer 1)\nNative coins serve as the foundational assets of sovereign blockchain networks. They exhibit several key characteristics:\n\nNetwork Security\n\nProvide economic incentives for validators/miners\nEnable Sybil resistance through staking or mining\nCreate alignment between network security and asset value\n\nTransaction Settlement\n\nPay for network resources (gas)\nDenominate transaction fees\nEnable priority mechanisms for block inclusion\n\nMonetary Policy\n\nFixed or predictable issuance schedules\nIndependently maintained value\nNetwork-specific economic models\n\n\n\n\nSecondary Network Coins\nSecondary network coins introduce a novel dynamic in the blockchain ecosystem, particularly through their relationship with their settlement layers. We can classify these into two categories based on their value dynamics:\n\nOzempic Networks\n\nExtract value from the settlement layer\nReduce activity on the parent chain\nMay decrease parent chain’s fee revenue\nExamples: Many Layer 2 solutions that primarily focus on cost reduction\n\nSugar Networks\n\nDrive additional value to the settlement layer\nIncrease demand for block space on parent chain\nGenerate additional fee revenue for validators\nExamples: Specialized L2s that enable new use cases\n\n\n\n\nCoin Derivatives\nThe ecosystem has developed various derivative forms of native coins:\n\nWrapped Versions\n\nPure wraps (1:1 backing with native coin)\nBridge-based wraps (cross-chain representations)\nSynthetic versions (price exposure without direct backing)\n\nInstitutional Products\n\nExchange-traded funds (ETFs)\nFutures contracts\nOptions and other derivatives\nStructured products",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
-    "objectID": "content/financial/tokens.html#tokens",
-    "href": "content/financial/tokens.html#tokens",
+    "objectID": "content/financial/tokens.html#ii.-tokens-the-application-layer-of-value",
+    "href": "content/financial/tokens.html#ii.-tokens-the-application-layer-of-value",
     "title": "Digital Assets",
-    "section": "Tokens",
-    "text": "Tokens\n\nFungible\nFungible is a pretty terrible name, but it roughly means divisable. It’s easier to explain via an example. If I have 10 dollars and I give you 3. I still have 7. It’s divisable. If I have a car and I want to give you 30% of it, I cannot cut it up and give you a portion of it. It’s Non fungible, or non divisable. There’s more nuances which we can deal with in the vocabulary section. But that’s the general idea of it.\nWe have the following types: * Stable Coins * Fiat backed * Crypto backed * Delta Neutral backed * Shit Coins * Governance * Meme * Utility\nThen we have numerous standards. We’ll add only the most popular and relevant ones here.\nNamely: * ERC20 * ERC777 * ERC1363 * BRC20 * Runes * Solana’s SPL Token Standard * ICS20\n\nICS20\nThe Inter-Chain Standard 20 is a Cosmos based standard for fungible token transfers between blockchains using the Inter-Blockchain Communication Protocol (IBC)\n\n\n\nNon Fungible\nHas the following attributes:\n\nArt & Collectibles\nProfile Picture (PFP)\nGaming\nDomain Names and Identity\nReal World Assets (RWA)\n\nThe NFT floor price is the lowest price at which an NFT from a particular collection is listed for sale on a marketplace. It serves as a benchmark for the collection’s market value and is widely used to assess the entry point for potential buyers and to gauge the collection’s popularity and liquidity.",
+    "section": "II. Tokens: The Application Layer of Value",
+    "text": "II. Tokens: The Application Layer of Value\nTokens represent the most diverse category of digital assets, serving various functions across different blockchain applications.\n\nFungible Tokens\n\nStablecoins\n\nFiat-Backed\n\nDirect custody of traditional currency (USDC)\nBanking relationship requirements\nRegular auditing processes\n\nCrypto-Collateralized\n\nOver-collateralization requirements\nLiquidation mechanisms\nPrice stability mechanisms\n\nDelta-Neutral\n\nHedged exposure through perpetual futures\nMarket-neutral yield generation\nAdvanced risk management systems\n\n\nGovernance Tokens\n\nVoting rights in protocols\nFee sharing mechanisms\nProtocol ownership representation\nTreasury management control\n\nUtility Tokens\n\nProtocol-specific functions\nAccess rights\nService payments\nNetwork resources\n\nSecurity Tokens\n\nRegulatory compliance requirements\nTraditional asset representation\nDividend/revenue rights\nInvestment contracts\n\n\n\n\nNon-Fungible Tokens (NFTs)\n\nDigital Art & Collectibles\n\nUnique digital artworks\nLimited edition series\nHistorical significance items\nCultural artifacts\n\nGaming Assets\n\nIn-game items\nCharacter attributes\nLand parcels\nAchievement badges\n\nIdentity & Access\n\nDomain names\nMembership passes\nCredentials\nAccess rights\n\nReal World Asset (RWA) Representation\n\nProperty titles\nLegal documents\nPhysical artwork certificates\nCommodity ownership",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
-    "objectID": "content/financial/tokens.html#markets",
-    "href": "content/financial/tokens.html#markets",
+    "objectID": "content/financial/tokens.html#iii.-market-infrastructure",
+    "href": "content/financial/tokens.html#iii.-market-infrastructure",
     "title": "Digital Assets",
-    "section": "Markets",
-    "text": "Markets\nWhere can I buy these Digital Assets? The major markets are regulated and unregulated.\nThese are then divided into spot vs derivatives.\nFor regulated it’s interesting as RedBelly in a blockchain, but it has KYC/AML. So is that regularly compliant. It’s probably more truthful to break it down not by regulatory compliance, but anonymity. For if your on chain activity can be tracked then most mature jurisdictions will be able to force an individual to be compliant.",
+    "section": "III. Market Infrastructure",
+    "text": "III. Market Infrastructure\n\nTrading Venues\n\nCentralized Exchanges (CEX)\n\nOrder book markets\nFiat on/off ramps\nCustody solutions\nRegulatory compliance\n\nDecentralized Exchanges (DEX)\n\nAutomated Market Makers (AMM)\nOrder book DEXs\nHybrid models\nMEV protection mechanisms\n\n\n\n\nCustody Solutions\n\nNon-Custodial\n\nPure Wallets\n\nCold storage (hardware wallets)\nHot wallets (software)\nPaper wallets\n\nSmart Wallets\n\nMulti-signature arrangements\nSocial recovery systems\nAccount abstraction implementations\nProgrammable security rules\n\n\nCustodial\n\nInstitutional custody\nExchange wallets\nBanking integration\nInsurance coverage",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
-    "objectID": "content/financial/tokens.html#hodling",
-    "href": "content/financial/tokens.html#hodling",
+    "objectID": "content/financial/tokens.html#iv.-yield-generation",
+    "href": "content/financial/tokens.html#iv.-yield-generation",
     "title": "Digital Assets",
-    "section": "Hodling",
-    "text": "Hodling\nWallets\n\nCustodial\n\n\nNon-Custodial\n\nPure\n\nCold\nHot\n\nSmart\n\nMPC\nSmart Contract Based (Includes Account Abstraction)",
+    "section": "IV. Yield Generation",
+    "text": "IV. Yield Generation\nUnderstanding yield sources helps evaluate the sustainability and risks of different digital assets:\n\nNetwork Yield\n\nMining rewards\nStaking returns\nTransaction fees\nMEV extraction\n\nTrading Yield\n\nMarket making spreads\nArbitrage opportunities\nOptions premiums\nFutures funding rates\n\nProtocol Yield\n\nLending interest\nLiquidity provision fees\nGovernance rewards\nProtocol revenue sharing",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
     ]
   },
   {
-    "objectID": "content/financial/tokens.html#yield-properties",
-    "href": "content/financial/tokens.html#yield-properties",
+    "objectID": "content/financial/tokens.html#v.-risk-assessment-framework",
+    "href": "content/financial/tokens.html#v.-risk-assessment-framework",
     "title": "Digital Assets",
-    "section": "Yield Properties",
-    "text": "Yield Properties\nMajor categories are:\n\nNetwork Yield\nTrading Yield\nProtocol Yield\n\n\nTrading Yield\n\nPricing appreciation\nArbitrage Yield\n\nSpot Arbitrage\nPeg Arbitrage - These are unique to stable coins\n\nOptions and Derivatives Premiums\nFutures funding rates\n\n\n\nNetwork Yield\n\nMining Yield\n\nSolo Mining\nPool Mining\nCloud Mining\n\nValidating Yield\n\nStaking\n\nNetwork Fee Yield\n\nGas\n\nMEV\n\nToxic\nNon Toxic\n\nDerivatives\n\nLiquid Staking\n\n\n\n\ndApp Yield\n\nStaking\nLiquidity Provision\nGovernance Participation\nNFT Rental Income\n\n\nLiquidity Provision\nWe break this down into the following Categories\n\nAMM Pool fees\nConcentrated liquidity positions\nOrder book market making\nLending and Borrowing markets\n\n\nConcentrated Liquidity Provision\nHere we will break down rebalancing and focus on Loss Versus Rebalancing as per this paper https://arxiv.org/pdf/2208.06046\n\n\n\n\nMonegro, Joel. 2016. “Fat Protocols.” Union Square Ventures. https://www.usv.com/writing/2016/08/fat-protocols/.",
+    "section": "V. Risk Assessment Framework",
+    "text": "V. Risk Assessment Framework\n\nTechnical Risks\n\nSmart contract vulnerabilities\nNetwork security concerns\nBridge weaknesses\nOracle failures\n\nEconomic Risks\n\nMarket manipulation\nLiquidity crises\nCollateral deterioration\nYield sustainability\n\nRegulatory Risks\n\nCompliance requirements\nJurisdictional exposure\nLegal classification uncertainty\nRegulatory enforcement actions",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/tokens.html#conclusion",
+    "href": "content/financial/tokens.html#conclusion",
+    "title": "Digital Assets",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe digital asset ecosystem continues to evolve, with new forms of value creation and exchange emerging regularly. Understanding these assets requires considering their technical implementation, economic models, market structures, and risk factors. This framework provides a foundation for analyzing both current and future digital assets in the Web3 space.",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>Digital Assets</span>"
@@ -2015,133 +1960,23 @@
   {
     "objectID": "content/financial/ratings.html",
     "href": "content/financial/ratings.html",
-    "title": "Ratings",
+    "title": "Digital Asset Rating Framework",
     "section": "",
-    "text": "Core Rating Categories (60% of Total Rating)",
+    "text": "Core Components (100% Total)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Digital Asset Rating Framework</span>"
     ]
   },
   {
-    "objectID": "content/financial/ratings.html#core-rating-categories-60-of-total-rating",
-    "href": "content/financial/ratings.html#core-rating-categories-60-of-total-rating",
-    "title": "Ratings",
+    "objectID": "content/financial/ratings.html#core-components-100-total",
+    "href": "content/financial/ratings.html#core-components-100-total",
+    "title": "Digital Asset Rating Framework",
     "section": "",
-    "text": "1. Protocol Value Capture (30%)\nA. Network Effect Metrics\n\nDaily Active Users (DAUs)\nTotal Value Locked (TVL)\nTransaction volume\nFee revenue generated\nProtocol revenue retained\n\nB. Value Accrual Mechanisms\n\nToken economics design\nFee distribution model\nStaking mechanisms\nBurns and supply dynamics\n\nC. Ozempic Network Effects\n\nValue extraction efficiency from L1\nTransaction fee capture rate\nUser migration metrics from L1\nTVL migration patterns\nGas savings versus L1\nL1-L2 Value Dynamics\nSequencer revenue distribution\nMEV capture and distribution\nBridge volume and efficiency\nSettlement layer costs\nSustainable Value Creation\nNet new users versus L1 migration\nEcosystem-specific applications\nNovel transaction types impossible on L1\nCross-L2 interoperability metrics\n\n\n\n2. Protocol Security & Risk Assessment (30%)\nA. Smart Contract Security\n\nAudit history and quality\nBug bounty program effectiveness\nHistorical vulnerability incidents\nCode complexity metrics\nUpgrade mechanism security\nTesting coverage\n\nB. Network Security\n\nConsensus mechanism robustness\nMEV exposure and protection measures\nNode distribution\nNetwork attack resistance\nCross-chain bridge security\nOracle dependency and security\n\nC. L1 Dependency Risks\n\nSettlement layer congestion exposure\nBridge security and liquidity depth\nL1 fee market correlation\nSequencer centralization risk\nValue extraction sustainability",
+    "text": "1. Value Capture & REV Analysis (40%)\n\nProtocol Value Capture (25%)\n\nNetwork revenue generation\nFee distribution mechanisms\nToken economics design\nTreasury growth and management\nMarket share and competitive position\nUser growth and retention metrics\n\n\n\nRealized Extractable Value (REV) Impact (15%)\n\nPositive REV Factors (7.5%)\n\nProtocol-owned MEV capture\nUser-aligned MEV distribution\nMEV minimization mechanisms\nEfficient price discovery through MEV\nValidator revenue enhancement\nCross-chain MEV opportunities\n\n\n\nNegative REV Factors (7.5%)\n\nToxic MEV exposure\nSandwich attack vulnerability\nFront-running susceptibility\nArbitrage impact on liquidity\nMEV-driven centralization risks\nCross-protocol MEV leakage\n\n\n\n\n\n2. Technical Architecture & Security (30%)\n\nSmart Contract Security (10%)\n\nAudit history and quality\nBug bounty effectiveness\nHistorical vulnerability analysis\nCode complexity assessment\nUpgrade mechanism security\n\n\n\nNetwork Security (10%)\n\nConsensus mechanism robustness\nValidator/node distribution\nNetwork attack resistance\nBridge security (if applicable)\nOracle dependency risks\n\n\n\nMEV Protection Architecture (10%)\n\nMEV-resistant design patterns\nTiming attack protection\nFrontrunning protection\nOrder flow fairness\nBlock builder separation\nTransaction privacy features\n\n\n\n\n3. Market & Liquidity Risk (20%)\n\nMarket Structure (10%)\n\nTrading volume distribution\nMarket maker participation\nOrder book depth\nPrice impact resistance\nCross-exchange arbitrage efficiency\nDEX vs CEX volume ratio\n\n\n\nLiquidity Profile (10%)\n\nLiquidity depth across venues\nConcentration risk\nWithdrawal/deposit patterns\nSlippage analysis\nMarket stress behavior\nFlash crash resistance\n\n\n\n\n4. Governance & Operational Risk (10%)\n\nGovernance Framework (5%)\n\nDecision-making process\nStakeholder representation\nUpgrade mechanisms\nEmergency response capabilities\nTreasury management\nCommunity engagement\n\n\n\nOperational Risk (5%)\n\nTeam track record\nDevelopment activity\nDocumentation quality\nInfrastructure reliability\nThird-party dependencies\nRegulatory exposure\n\nLet me revise the ratings section to clearly delineate legitimate projects from shit coins while maintaining the rigorous analytical framework. I’ll adjust the ratings and add more descriptive characteristics for lower-rated assets.\nThe key change will be to make anything below B rating an explicit designation of a shit coin, with clear warning signs and red flags. Here’s the revised ratings structure:\n\n\n\nRating Categories\n\nAAA (95-100)\nAssets in this category demonstrate exceptional characteristics across all evaluation metrics: - Proven value capture mechanisms generating sustainable protocol revenue - Industry-leading security practices with multiple audits and bug bounties - Deep, distributed liquidity across multiple venues - Active governance with high community participation - Minimal toxic MEV exposure with sophisticated protection mechanisms\n\n\nAA (85-94)\nStrong performers with proven track records: - Consistent value capture through fees and treasury growth - Robust security with regular audits and minimal vulnerabilities - Healthy liquidity distribution and market maker participation - Well-established governance frameworks - Effectively managed MEV exposure\n\n\nA (75-84)\nSolid protocols with good fundamentals: - Demonstrable value capture, though perhaps not maximized - Sound security practices with no major incidents - Adequate liquidity across major venues - Functional governance with active participation - Controlled MEV exposure with basic protections\n\n\nBBB (65-74)\nModerate performers showing some concerns: - Value capture mechanisms exist but may need optimization - Security meets basic standards but could be improved - Liquidity concentrated in fewer venues - Governance participation may be limited - Notable MEV exposure requiring attention\n\n\nBB (55-64)\nProjects showing significant warning signs: - Limited or declining value capture - Security concerns requiring immediate attention - Thin liquidity with high concentration risk - Governance challenges or low participation - High MEV exposure with inadequate protection\n\n\nB (50-54)\nThe minimum threshold for legitimate projects: - Struggling but legitimate value capture attempts - Basic security measures in place - Limited but genuine liquidity - Simple but functional governance - Significant MEV vulnerability but with some mitigation attempts\n\n\nC and Below (&lt;50) - Shit Coin Territory\nAny asset rated below B exhibits characteristics of a shit coin:\n\nC (40-49) - Highly Speculative\n\nMinimal genuine value capture\nCopied or unaudited code\nArtificial or manipulated liquidity\nCentralized control masked as governance\nSevere MEV exploitation risks\n\n\n\nD (30-39) - Likely Exploitative\n\nNo legitimate value capture mechanism\nSecurity vulnerabilities or backdoors\nWash trading and fake volume\nGovernance controlled by insiders\nDesigned for MEV extraction\n\n\n\nF (&lt;30) - Confirmed Shit Coin\n\nPurely extractive tokenomics\nCopied code with hidden minting functions\nConcentrated ownership masked through multiple wallets\nNon-existent or fake governance\nBuilt specifically for price manipulation\n\n\n\n\nWarning Signs of Shit Coins:\n\nToken distribution heavily concentrated among creators\nCode copied directly from other projects without meaningful improvements\nLiquidity that appears deep but is controlled by a few addresses\nGovernance tokens with hidden privileges for insiders\nMarketing focused entirely on price appreciation\nNo genuine protocol revenue beyond token inflation\nTeam anonymity combined with privileged access to contract functions\n\nThe critical distinction between a B-rated project and a shit coin lies not just in technical metrics but in genuine intent and community alignment. While B-rated projects may struggle with execution, they represent legitimate attempts to create value. Anything rated C or below represents projects designed primarily for extraction rather than value creation.\nThis framework helps identify shit coins not just through technical analysis but by examining the alignment between stated goals and actual implementation. A project’s placement in shit coin territory isn’t just about current performance but about fundamental design choices that prioritize extraction over value creation.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#risk-categories-40-of-total-rating",
-    "href": "content/financial/ratings.html#risk-categories-40-of-total-rating",
-    "title": "Ratings",
-    "section": "Risk Categories (40% of Total Rating)",
-    "text": "Risk Categories (40% of Total Rating)\n\n1. Technical Risk Assessment (15%)\nA. Smart Contract Vulnerabilities - Code audit findings severity - Time-tested deployment - Complexity of interactions - Dependencies on external protocols - Historical incident analysis\nB. Network Level Risks\n\nMEV exposure metrics\nNetwork partition resistance\nNode centralization factors\nInfrastructure dependencies\nCross-chain vulnerability exposure\n\nC. Key Management & Wallet Security\n\nMulti-sig implementation\nKey generation processes\nHardware security modules usage\nSocial recovery mechanisms\nAccess control systems\n\n\n\n2. Economic Risk Assessment (10%)\nA. Market Dynamics\n\nLiquidity concentration\nPrice impact resistance\nCollateral quality\nMarket manipulation resistance\n\nB. Economic Model Vulnerabilities\n\nGame theory attack vectors\nIncentive alignment analysis\nEconomic exploit resistance\nStress test scenarios\nFlash loan attack surface\n\n\n\n3. Operational Risk Assessment (10%)\nA. CeFi/CeDeFi Risks\n\nCentralization points\nCustody arrangements\nThird-party dependencies\nOperational redundancy\nEmergency procedures\n\nB. Oracle Dependencies\n\nOracle manipulation resistance\nPrice feed reliability\nBackup oracle systems\nHistorical oracle incidents\nData quality metrics\n\n\n\n4. External Risk Assessment (5%)\nA. Regulatory Risk\n\nJurisdictional exposure\nCompliance frameworks\nRegulatory clarity\nLegal structure\nHistorical regulatory interactions\n\nB. Social Engineering Risk\n\nTeam security practices\nAccess control policies\nSocial attack history\nSecurity awareness training\nIncident response readiness",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#risk-adjusted-rating-scale",
-    "href": "content/financial/ratings.html#risk-adjusted-rating-scale",
-    "title": "Ratings",
-    "section": "Risk-Adjusted Rating Scale",
-    "text": "Risk-Adjusted Rating Scale\nAAA: Exceptional protocol with comprehensive risk mitigation\n\nMultiple independent security audits with no critical findings\nProven resistance to all major attack vectors\nStrong regulatory compliance framework\nDecentralized operations with minimal points of failure\nMultiple layers of economic security\n\nAA: Strong protocol with robust risk management\n\nRegular security audits with minor findings\nDocumented resistance to common attack vectors\nClear regulatory strategy\nLimited centralization risks\nStrong economic security measures",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#risk-multipliers",
-    "href": "content/financial/ratings.html#risk-multipliers",
-    "title": "Ratings",
-    "section": "Risk Multipliers",
-    "text": "Risk Multipliers\nEach risk category can apply a multiplier to the base rating:\n\nCritical Risk: -3 rating notches\nHigh Risk: -2 rating notches\nMedium Risk: -1 rating notch\nLow Risk: No adjustment\nMinimal Risk: +1 rating notch",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#continuous-monitoring-triggers",
-    "href": "content/financial/ratings.html#continuous-monitoring-triggers",
-    "title": "Ratings",
-    "section": "Continuous Monitoring Triggers",
-    "text": "Continuous Monitoring Triggers\n\nSmart contract vulnerability disclosure\nNetwork attack detection\nRegulatory action\nEconomic model stress\nOracle deviation events\nCross-chain bridge incidents\nSocial engineering attempts\nMEV activity spikes",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#review-framework",
-    "href": "content/financial/ratings.html#review-framework",
-    "title": "Ratings",
-    "section": "Review Framework",
-    "text": "Review Framework\n\nMonthly security metric review\nQuarterly risk assessment update\nAnnual comprehensive review\nReal-time monitoring of critical indicators\nIncident-triggered reassessment",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#ozempic-effect",
-    "href": "content/financial/ratings.html#ozempic-effect",
-    "title": "Ratings",
-    "section": "Ozempic Effect",
-    "text": "Ozempic Effect\nWe’ll base this upon value flows. Defillama doesn’t actually display this. So we’ll need to get this data directly from the smart contracts. We can start with Base, Arbitrum, BSC, Optimism and Polygon.\nLet’s build a comprehensive framework for tracking the true “Ozempic effect” of L2s on Ethereum. We’ll need several interconnected metrics to understand the complete value flow dynamics.\n\nWallet Migration Analysis\n\n\nTrack addresses that first appeared on Ethereum before a certain date (let’s call them “Ethereum Native Wallets”)\nMonitor their activity transition to L2s over time\nAnalyze their ETH holdings distribution between L1 and L2s\nCalculate the ratio of their transaction activity on L2s versus L1\n\n\nL2 Native User Analysis\n\n\nIdentify wallets that first appeared on L2s\nTrack what percentage never bridge to Ethereum\nMeasure their total value held\nCalculate their transaction activity\n\n\nFee Flow Dynamics\n\n\nTrack L2 sequencer fees paid back to Ethereum\nCalculate the net fee difference (what these transactions would have cost on L1 versus actual L2 + L1 calldata costs)\nMonitor the ratio of fees paid back to Ethereum versus fees retained by the L2\n\nWe could create a composite “Value Migration Score” that looks like:\ndef calculate_migration_score(l2_data):\n    # Value Migration\n    eth_native_migration = (\n        eth_native_wallets_on_l2 / total_eth_native_wallets *\n        eth_value_moved_to_l2 / original_eth_holdings\n    )\n    \n    # Activity Migration\n    activity_migration = (\n        l2_transactions_by_eth_wallets / \n        (l1_transactions_by_eth_wallets + l2_transactions_by_eth_wallets)\n    )\n    \n    # L2 Native Growth\n    l2_native_strength = (\n        l2_only_wallets / total_l2_wallets *\n        l2_native_value / total_l2_value\n    )\n    \n    # Fee Economics\n    fee_efficiency = (\n        sequencer_fees_to_ethereum / \n        theoretical_l1_fees_for_same_transactions\n    )\n    \n    return (\n        eth_native_migration * 0.3 +\n        activity_migration * 0.3 +\n        l2_native_strength * 0.2 +\n        fee_efficiency * 0.2\n    )\nThis would give us a quantitative measure of how effectively an L2 is:\n\nAttracting value from Ethereum\nGenerating new value through native users\nMaintaining a sustainable fee relationship with Ethereum\n\nA true Ozempic L2 should show:\n\nHigh migration of ETH native wallets\nStrong L2 native user growth\nEfficient fee generation that still provides meaningful revenue to Ethereum\nSustained or growing activity ratios over time\n\nWould you like me to elaborate on how we could implement the data collection for any of these metrics, or should we explore additional factors to consider in the scoring?\n\nNet Value Extraction Rate = (Value Bridged In - Value Bridged Out) / Total Time Period",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#risk-factors",
-    "href": "content/financial/ratings.html#risk-factors",
-    "title": "Ratings",
-    "section": "Risk Factors",
-    "text": "Risk Factors\n\n1. Technical Risks\n\nImplementation bugs\nSecurity vulnerabilities\nUpgrade coordination failures\nNetwork splits\n\n\n\n2. Governance Risks\n\nCapture by special interests\nLow participation\nContentious decisions\nUnclear processes\n\n\n\n3. Social Risks\n\nCommunity fragmentation\nLoss of developer support\nReputation damage\nMarket impacts",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#future-considerations",
-    "href": "content/financial/ratings.html#future-considerations",
-    "title": "Ratings",
-    "section": "Future Considerations",
-    "text": "Future Considerations\n\n1. Emerging Trends\n\nAutomated governance systems\nAI-assisted proposal analysis\nCross-chain governance\nDynamic parameter adjustment\n\n\n\n2. Challenges\n\nScaling governance participation\nBalancing security and innovation\nManaging increasing complexity\nMaintaining decentralization\n\n\n\n3. Opportunities\n\nImproved governance tools\nBetter simulation capabilities\nEnhanced coordination mechanisms\nMore sophisticated voting systems",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#dependent-network-ratings",
-    "href": "content/financial/ratings.html#dependent-network-ratings",
-    "title": "Ratings",
-    "section": "Dependent Network Ratings",
-    "text": "Dependent Network Ratings\nPolygon zkEVM Settlement Guarantees (10/10 weight): Score: 9/10 The zkEVM uses zero-knowledge proofs to validate all state transitions. Every transaction batch includes a proof that mathematically demonstrates the correctness of all computations and state changes. These proofs are verified by Ethereum’s consensus mechanism, providing cryptographic certainty that state transitions are valid. This is nearly the highest level of settlement guarantee possible, just slightly below fully integrated L2s because of some optimizations in the proving system.\nDispute Resolution (9/10 weight): Score: 10/10 Ethereum serves as the absolute source of truth for the zkEVM. If there’s ever a dispute about the state, the zero-knowledge proofs verified by Ethereum’s consensus provide mathematical certainty about what is correct. There’s no dependency on fraud proofs or challenge periods - the cryptographic proofs mean disputes are resolved immediately and with absolute certainty by Ethereum.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 The zkEVM inherits its fundamental security from Ethereum. The validity proofs mean it can’t confirm invalid state transitions, and its assets are secured by Ethereum’s consensus mechanism. While it has its own token (MATIC) for gas fees and other purposes, the core economic security - particularly for assets like ETH and tokens - comes directly from Ethereum.\nState Finality (7/10 weight): Score: 9/10 Once Ethereum confirms a zkEVM batch and its validity proof, that state is final with the same guarantees as Ethereum itself. The mathematical nature of the zero-knowledge proofs means there’s no waiting period for finality beyond Ethereum’s own finality period. This is as strong as state finality can get for a settlement-dependent network.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets back to Ethereum by submitting a withdrawal request. These withdrawals are guaranteed by Ethereum’s consensus - once a withdrawal is proven valid through a ZK proof, no one can prevent the user from claiming their assets on Ethereum. The only limitation is the normal proving and processing time.\nState Progression Dependency (5/10 weight): Score: 7/10 While the zkEVM can process transactions independently, it can’t finalize new states without submitting proofs to Ethereum and having them verified. This creates a strong dependency on Ethereum for state progression, though there’s some independence in transaction processing.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens can move seamlessly between Ethereum and the zkEVM. When assets move to the zkEVM, they’re locked on Ethereum and can only be unlocked through valid proofs. This provides the strongest possible guarantees for asset movement between the networks.\nTotal Score: 62/70 (approximately 89%)\nThis analysis places Polygon zkEVM firmly in the “Fully Non-Sovereign” category. Arbitrum Let me analyze Arbitrum’s relationship with Ethereum as a Settlement-Dependent Network by carefully examining each criterion. This will help us understand how optimistic rollups differ from ZK rollups in their settlement dependency.\nSettlement Guarantees (10/10 weight): Score: 7/10 Arbitrum uses an optimistic rollup design where transactions are assumed valid but can be challenged during a dispute period (currently 7 days). While this provides strong settlement guarantees, it’s not as immediate or mathematically certain as ZK rollups. The challenge period introduces a time-based element to settlement finality. However, the ability to prove fraud on Ethereum’s consensus layer still makes this a robust settlement mechanism.\nDispute Resolution (9/10 weight): Score: 8/10 Ethereum serves as the ultimate arbiter for Arbitrum through its fraud proof system. If someone identifies an invalid state transition, they can submit a fraud proof to Ethereum, which will automatically resolve the dispute and revert invalid transactions. This is strong dispute resolution, though not as immediate as ZK proofs since it requires active challengers and a challenge period. The key strength is that Ethereum’s consensus automatically enforces the correct resolution once fraud is proven.\nEconomic Security Inheritance (8/10 weight): Score: 9/10 Arbitrum inherits its fundamental security from Ethereum. The ability to prove fraud on Ethereum means that any attempt to corrupt Arbitrum’s state would require corrupting Ethereum itself. The sequencer role adds some centralization risk, but the fundamental economic security - particularly for assets - comes directly from Ethereum. Users can always force transactions through Ethereum if the sequencer fails.\nState Finality (7/10 weight): Score: 6/10 While Arbitrum’s state updates are recorded on Ethereum, true finality requires waiting through the challenge period. This creates a tradeoff between practical finality (which can be quite fast) and absolute finality (which requires waiting for the challenge period). This is lower than ZK rollups where finality is immediate once proofs are verified.\nExit Rights Guarantees (6/10 weight): Score: 8/10 Users can always withdraw their assets to Ethereum, guaranteed by Ethereum’s consensus. While withdrawals require waiting through the challenge period, they cannot be prevented by Arbitrum’s operators. The delay is longer than with ZK rollups, but the guarantee is just as strong once the period passes.\nState Progression Dependency (5/10 weight): Score: 7/10 Arbitrum can process transactions independently but must submit state roots to Ethereum for potential verification. While it has more processing independence than some systems, it ultimately depends on Ethereum for final state confirmation, especially during disputes.\nAsset Movement (4/10 weight): Score: 10/10 Native ETH and ERC-20 tokens move seamlessly between Ethereum and Arbitrum through a strong bridge mechanism backed by Ethereum’s consensus. When assets move to Arbitrum, they’re locked on Ethereum and can only be unlocked through valid withdrawals after the challenge period.\nTotal Score: 55/70 (approximately 79%)\nThis analysis places Arbitrum in the “Fully Non-Sovereign” category, though with a lower score than Polygon zkEVM. The main differences come from the challenge period required for absolute finality and the reliance on fraud proofs rather than validity proofs.\nStacks Settlement Guarantees (10/10 weight): Score: 4/10 Stacks uses Bitcoin for checkpointing and security anchoring However, it lacks cryptographic enforcement of settlement by Bitcoin’s consensus Bitcoin doesn’t automatically enforce or validate Stacks’ state transitions Falls into the “checkpoint systems” category rather than stronger settlement guarantees Dispute Resolution (9/10 weight): Score: 3/10 While Stacks records its state on Bitcoin, Bitcoin’s consensus doesn’t serve as the ultimate arbiter Disputes are primarily resolved within Stacks’ own consensus mechanism Bitcoin can’t automatically correct or resolve issues in Stacks’ state Economic Security Inheritance (8/10 weight): Score: 6/10 Miners must commit actual Bitcoin through PoX mechanism This creates some economic security dependency on Bitcoin However, Stacks maintains its own economic incentives through STX State Finality (7/10 weight): Score: 5/10 Stacks achieves finality through a combination of its own consensus and Bitcoin anchoring State is recorded on Bitcoin but not in a way that Bitcoin consensus enforces Provides stronger finality than fully independent chains but weaker than true L2s Exit Rights Guarantees (6/10 weight): Score: 4/10 With sBTC, users can move Bitcoin between chains However, this relies on Stacks’ mechanisms rather than being guaranteed by Bitcoin’s consensus Exit rights depend on threshold signatures rather than cryptographic guarantees State Progression Dependency (5/10 weight): Score: 7/10 Stacks blocks are linked to Bitcoin blocks through PoX State progression is tied to Bitcoin’s block progression However, Stacks can still process transactions independently within this framework Asset Movement (4/10 weight): Score: 5/10 sBTC enables Bitcoin movement between chains But this movement isn’t directly enforced by Bitcoin’s consensus Relies on threshold signatures and Stacks’ mechanisms Total Score: 34/59 (approximately 58%)\nThis places Stacks in the “Moderately Dependent” category on our spectrum.",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
-    ]
-  },
-  {
-    "objectID": "content/financial/ratings.html#risks",
-    "href": "content/financial/ratings.html#risks",
-    "title": "Ratings",
-    "section": "Risks",
-    "text": "Risks\nSub categories of risks include smart contract vulns regulatory risks centralization risks for CeDeFi and CEX’s MEV network level key and wallet compromise cross chain exploits oracle manipulation Social engineering exploitation of economic models",
-    "crumbs": [
-      "Financial",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Ratings</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Digital Asset Rating Framework</span>"
     ]
   },
   {
@@ -2149,29 +1984,117 @@
     "href": "content/financial/trollip_index.html",
     "title": "Trollip’s Index",
     "section": "",
-    "text": "BTC\nBitcoin has emerged as the world’s first successful digital store of value, creating a new paradigm for wealth preservation in the digital age. Much like gold served ancient civilizations through to modern times as a reliable store of wealth, Bitcoin provides similar characteristics but with distinct advantages native to the digital realm.\nAt its foundation, Bitcoin’s value proposition rests on its absolute scarcity - there will never be more than 21 million bitcoins. This hard cap, combined with a transparent and immutable issuance schedule through mining “halvings” every four years, creates a predictability that even gold, with its uncertain mining output, cannot match. When new gold deposits are discovered or mining technology improves, supply can increase unexpectedly. Bitcoin’s supply schedule, in contrast, is mathematically certain.\nBitcoin’s digital nature offers significant advantages over traditional stores of value. Unlike gold, it can be transferred instantly across borders, divided into microscopic units, stored without physical vault costs, and verified for authenticity without specialized equipment. Its self-custody properties allow individuals to maintain direct control over their wealth without relying on third-party custodians or financial institutions.\nThe network’s security model, backed by massive computational power through proof-of-work mining, has proven remarkably resilient over more than a decade. This track record has gradually built confidence among institutional investors, who increasingly view Bitcoin as a legitimate asset class for portfolio diversification and inflation hedging. Major financial institutions now offer Bitcoin investment products, while some corporations have adopted it as a treasury reserve asset.\nWhile Bitcoin began as a peer-to-peer electronic cash system, its evolution into a store of value mirrors how gold transformed from a medium of exchange into a wealth preservation tool. The emergence of Layer 2 solutions like the Lightning Network now handles Bitcoin’s payments functionality, allowing the base layer to focus on its primary role as digital gold - the foundational layer of monetary security in the cryptocurrency ecosystem.",
+    "text": "Bitcoin (BTC)\nRating: AA+ (92/100)\nValue Capture & REV Analysis (38/40) - Exceptional monetary premium capture through absolute scarcity - Minimal REV exposure due to simple UTXO model - Strong fee market development - Mining reward distribution well-established - Limited attack surface for value extraction\nTechnical Architecture (28/30) - Battle-tested security over 14+ years - Conservative upgrade process - Distributed node network - Simple but robust scripting system - High resistance to centralization\nMarket & Liquidity Risk (17/20) - Deepest liquidity across all venues - Global market presence - Strong market maker participation - Some concentration in mining pools - Proven stress test resilience\nGovernance & Operational Risk (9/10) - Well-established BIP process - Multiple independent development teams - Strong resistance to capture - Clear upgrade paths",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
-    "objectID": "content/financial/trollip_index.html#btc",
-    "href": "content/financial/trollip_index.html#btc",
+    "objectID": "content/financial/trollip_index.html#ethereum-eth",
+    "href": "content/financial/trollip_index.html#ethereum-eth",
     "title": "Trollip’s Index",
-    "section": "",
-    "text": "Derivatives\n\ncbBTC\nCoinbase Base Bitcoin (cbBTC) represents a novel approach to Bitcoin tokenization, launched by Coinbase to bridge the gap between Bitcoin and Ethereum-based DeFi applications. It functions as an institutional-grade wrapped version of Bitcoin, backed 1:1 by actual Bitcoin held in Coinbase’s custody. What makes cbBTC particularly noteworthy is its institutional focus, leveraging Coinbase’s reputation as a publicly traded company and its robust custody infrastructure to provide a secure and regulated way to use Bitcoin across different blockchain ecosystems.\nThe technical architecture of cbBTC operates through a burn-and-mint mechanism on the Base network, Coinbase’s layer-2 blockchain built on top of Ethereum. When users deposit Bitcoin into Coinbase’s custody, an equivalent amount of cbBTC is minted on Base. This process allows Bitcoin holders to participate in Base’s growing DeFi ecosystem while maintaining exposure to Bitcoin’s value. The token implements additional security measures, including proof of reserves and regular audits, making it particularly appealing to institutional investors who require high levels of security and regulatory compliance. Unlike some other wrapped Bitcoin tokens, cbBTC’s key differentiator is its direct integration with Coinbase’s established infrastructure and its focus on institutional-grade security and compliance measures.",
+    "section": "Ethereum (ETH)",
+    "text": "Ethereum (ETH)\nRating: AA (89/100)\nValue Capture & REV Analysis (35/40) - Strong base layer fee capture - Complex MEV landscape - Layer 2 fee dynamics - Staking yield generation - PBS implementation improving MEV distribution\nTechnical Architecture (27/30) - Successful transition to PoS - Active development ecosystem - Multiple client implementations - Some centralization in staking pools - Complex attack surface\nMarket & Liquidity Risk (18/20) - Second highest global liquidity - Deep derivatives markets - Strong institutional adoption - Diverse trading venues\nGovernance & Operational Risk (9/10) - Active EIP process - Multiple core development teams - Clear roadmap execution - Strong community participation",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
-    "objectID": "content/financial/trollip_index.html#eth",
-    "href": "content/financial/trollip_index.html#eth",
+    "objectID": "content/financial/trollip_index.html#usdt-tether",
+    "href": "content/financial/trollip_index.html#usdt-tether",
     "title": "Trollip’s Index",
-    "section": "ETH",
-    "text": "ETH\nEthereum represents a revolutionary leap in computing - it’s humanity’s first attempt at creating a global, decentralized computer that’s always running and accessible to everyone. Like how the internet connected computers worldwide for information sharing, Ethereum connects computers globally to create a single, unified computational platform that no one controls but everyone can use.\nThink of Ethereum as a massive, worldwide computer with some unique properties: it never shuts down, can’t be censored, and maintains perfect records of everything it processes. Instead of storing photos or documents like a regular computer, this world computer specializes in running smart contracts - pieces of code that automatically execute agreements and handle digital assets without needing intermediaries.\nETH, the network’s native asset, serves as the essential “fuel” that powers this world computer. Every computation, whether it’s processing a DeFi trade or minting an NFT, requires ETH to run. After Ethereum’s transition to Proof of Stake through The Merge, ETH also gained a new role - network validators must stake ETH to participate in securing the network, similar to how a computer needs electricity to function and stay secure.\nWhat makes Ethereum truly revolutionary is its programmability. Just as early personal computers transformed from specialized calculators into general-purpose machines that could run any software, Ethereum evolved blockchain technology from a simple transaction ledger into a platform that can run any programmable application. This has spawned entire new industries: decentralized finance (DeFi) protocols that operate 24/7 without human intervention, NFT marketplaces that enable digital ownership and royalties, and DAOs that coordinate human activity through code rather than hierarchies.\nThe platform continues to evolve through ambitious technical upgrades. Layer 2 scaling solutions like rollups act as specialized processors that handle heavy computations off the main chain, while the planned implementation of sharding will divide the network into parallel processing units - similar to how modern computers use multiple cores to increase performance. These improvements aim to make the world computer more efficient and accessible while maintaining its core properties of decentralization and security.\nAs this world computer grows in capability and adoption, ETH’s value proposition strengthens - it’s not just a digital asset, but the essential resource needed to access and use what might become the foundation of our digital future.",
+    "section": "USDT (Tether)",
+    "text": "USDT (Tether)\nRating: BBB+ (76/100)\nValue Capture & REV Analysis (28/40) - Limited direct value capture - Significant market power through liquidity - No native MEV exposure - Reliance on external chains for execution\nTechnical Architecture (22/30) - Multiple chain implementations - Centralized issuance model - Dependent on external security - Limited technical complexity\nMarket & Liquidity Risk (18/20) - Highest stablecoin liquidity - Critical trading pair status - Some concentration risk - Historical stress test resilience\nGovernance & Operational Risk (8/10) - Centralized governance - Improving transparency - Regular attestations - Regulatory uncertainty",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#xrp",
+    "href": "content/financial/trollip_index.html#xrp",
+    "title": "Trollip’s Index",
+    "section": "XRP",
+    "text": "XRP\nRating: A- (80/100)\nValue Capture & REV Analysis (30/40) - Established cross-border payment utility - Limited MEV exposure - Fee structure favors utility over speculation - Network value accrual through XRPL services\nTechnical Architecture (25/30) - Unique consensus mechanism - Proven scalability - Some centralization concerns - Strong network reliability\nMarket & Liquidity Risk (16/20) - Strong global presence - Regulatory overhangs - Institutional adoption in payments - Geographic liquidity variations\nGovernance & Operational Risk (9/10) - Clear development roadmap - Active ecosystem growth - Strong corporate backing - Some centralization concerns",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#solana-sol",
+    "href": "content/financial/trollip_index.html#solana-sol",
+    "title": "Trollip’s Index",
+    "section": "Solana (SOL)",
+    "text": "Solana (SOL)\nRating: A (82/100)\nValue Capture & REV Analysis (32/40) - Strong fee capture mechanism - Growing MEV marketplace - High transaction throughput - Competitive fee structure\nTechnical Architecture (24/30) - High performance architecture - Some stability challenges - Active development - Innovative technical solutions\nMarket & Liquidity Risk (17/20) - Growing liquidity depth - Strong institutional support - Active derivatives market - Some concentration risks\nGovernance & Operational Risk (9/10) - Active governance participation - Strong developer ecosystem - Clear technical roadmap - Regular network upgrades",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#bnb-binance-coin",
+    "href": "content/financial/trollip_index.html#bnb-binance-coin",
+    "title": "Trollip’s Index",
+    "section": "BNB (Binance Coin)",
+    "text": "BNB (Binance Coin)\nRating: A- (81/100)\nValue Capture & REV Analysis (31/40) - Strong exchange utility value - Controlled MEV environment - Fee burning mechanism - Centralized value capture\nTechnical Architecture (23/30) - EVM compatibility - Centralized validation - Proven scalability - Limited innovation\nMarket & Liquidity Risk (18/20) - Strong exchange backing - Deep liquidity pools - Significant trading volumes - Some centralization risk\nGovernance & Operational Risk (9/10) - Centralized decision making - Clear development path - Strong corporate resources - Limited community governance",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#dogecoin-doge",
+    "href": "content/financial/trollip_index.html#dogecoin-doge",
+    "title": "Trollip’s Index",
+    "section": "Dogecoin (DOGE)",
+    "text": "Dogecoin (DOGE)\nRating: BB+ (65/100)\nValue Capture & REV Analysis (22/40) - Limited value capture mechanism - Minimal MEV considerations - Inflationary supply - Meme-driven value\nTechnical Architecture (20/30) - Bitcoin-derived codebase - Limited development activity - Proven network security - Basic functionality\nMarket & Liquidity Risk (15/20) - Volatile liquidity conditions - Strong retail participation - Some market manipulation risk - Limited institutional presence\nGovernance & Operational Risk (8/10) - Active community - Limited formal governance - Sporadic development - Meme-influenced decisions",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#usdc",
+    "href": "content/financial/trollip_index.html#usdc",
+    "title": "Trollip’s Index",
+    "section": "USDC",
+    "text": "USDC\nRating: A+ (87/100)\nValue Capture & REV Analysis (32/40) - Regulated value capture model - No native MEV exposure - Strong institutional adoption - Clear revenue model\nTechnical Architecture (26/30) - Multiple chain implementations - Strong security measures - Regular audits - Controlled upgrade process\nMarket & Liquidity Risk (19/20) - Deep liquidity across venues - Strong institutional backing - Critical DeFi component - Proven stability\nGovernance & Operational Risk (10/10) - Regulated governance model - Clear compliance framework - Strong corporate backing - Regular attestations",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#cardano-ada",
+    "href": "content/financial/trollip_index.html#cardano-ada",
+    "title": "Trollip’s Index",
+    "section": "Cardano (ADA)",
+    "text": "Cardano (ADA)\nRating: A- (80/100)\nValue Capture & REV Analysis (29/40) - Academic approach to value capture - Limited MEV exposure - Staking-focused economy - Developing DeFi ecosystem\nTechnical Architecture (26/30) - Formal verification emphasis - Strong security model - Methodical development - Some scalability limitations\nMarket & Liquidity Risk (15/20) - Moderate liquidity depth - Growing ecosystem - Some geographic concentration - Limited institutional presence\nGovernance & Operational Risk (10/10) - Strong governance framework - Active community participation - Clear development roadmap - Academic partnerships",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#lido-staked-eth-steth",
+    "href": "content/financial/trollip_index.html#lido-staked-eth-steth",
+    "title": "Trollip’s Index",
+    "section": "Lido Staked ETH (stETH)",
+    "text": "Lido Staked ETH (stETH)\nRating: A (83/100)\nValue Capture & REV Analysis (31/40) - Direct ETH staking yield capture - MEV-boost integration - Clear value proposition - Growing institutional adoption\nTechnical Architecture (25/30) - Complex staking mechanism - Strong security measures - Some centralization risk - Regular protocol upgrades\nMarket & Liquidity Risk (17/20) - Deep liquidity in DeFi - Strong peg maintenance - Critical ETH ecosystem component - Some withdrawal queue risk\nGovernance & Operational Risk (10/10) - Active DAO governance - Clear upgrade process - Strong node operator set - Regular security reviews",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/trollip_index.html#index-methodology-notes",
+    "href": "content/financial/trollip_index.html#index-methodology-notes",
+    "title": "Trollip’s Index",
+    "section": "Index Methodology Notes",
+    "text": "Index Methodology Notes\n\nRatings consider both quantitative metrics and qualitative factors\nHeavy emphasis on sustainable value capture mechanisms\nMEV exposure evaluated as both risk and opportunity\nSecurity track record significantly impacts technical scores\nLiquidity assessed across both CEX and DEX venues\nGovernance evaluation considers both formal and informal processes\n\nRegular updates to these ratings will be published quarterly or upon significant protocol changes.",
     "crumbs": [
       "Financial",
       "<span class='chapter-number'>27</span>  <span class='chapter-title'>Trollip's Index</span>"
@@ -2180,12 +2103,78 @@
   {
     "objectID": "content/social/governance.html",
     "href": "content/social/governance.html",
-    "title": "Governance",
+    "title": "Web3 Governance",
     "section": "",
-    "text": "This section will compare how Blockchains implement the three tiers of traditional governance. Namely:\n\nLegistlative - Who makes the rules and how they created\nExecutive - Who executes the rules\nJudicial - Referee between them\n\nSo in Bitcoin BIP’s cover the Legislative aspect, Executive is Node operators for Networks then for dapps it gets more complex. Judicial is where it gets challenging. This is pretty much the entire community. People interpret rules by economic activity and nodes. Look at Bitcoin Cash. No money. So everyone agreed with the block size of Bitcoin.\nThere is also the concept of Canvassing or Lobbying can also occur. Let’s look at Ethereum. If I wanted to increase the gas limit from 30 million to 31 million. I’d need to canvas all the nodes to come along with me. Currently there is 5,333 nodes. So I’d need to convince ~3k node operators to increase the gas limit.\n\n1. Hard Forks\n\nDefinition: Protocol changes that make previously invalid blocks/transactions valid (or vice-versa), requiring all nodes to upgrade\nCharacteristics:\n\nNon-backwards compatible\nRequires coordinated network upgrade\nCreates potential for chain splits if not unanimously adopted\n\nUse Cases: Major protocol upgrades, fundamental rule changes, bug fixes\nExamples: Ethereum’s merge to PoS, Bitcoin’s SegWit upgrade\n\n\n\n2. Soft Forks\n\nDefinition: Backwards-compatible protocol changes that tighten rules without invalidating existing blocks\nCharacteristics:\n\nBackwards compatible\nOld nodes can still participate (with limitations)\nLower coordination requirements\n\nUse Cases: Adding new features, incremental improvements\nExamples: Bitcoin’s P2SH implementation, taproot upgrade\n\n\n\n3. Parameter Updates\n\nDefinition: Changes to network variables within predefined bounds\nCharacteristics:\n\nNo code changes required\nOften automated through on-chain governance\nLower risk than protocol changes\n\nUse Cases: Fee adjustments, block size modifications, staking parameters\nExamples: Tezos’ regular parameter updates, Cosmos’ governance parameters\n\n\n\nGovernance Mechanisms\n\n1. Off-Chain Governance\n\nCharacteristics:\n\nSocial consensus through discussion forums, social media, conferences\nInformal decision-making processes\nRelies on node operator coordination\n\nAdvantages:\n\nFlexible and adaptable\nAllows for nuanced discussion\nNatural resistance to capture\n\nDisadvantages:\n\nCan be slow and messy\nMay lack clear resolution mechanisms\nPotential for contentious outcomes\n\n\n\n\n2. On-Chain Governance\n\nCharacteristics:\n\nFormal voting mechanisms\nSmart contract-based execution\nToken-weighted or identity-based participation\n\nAdvantages:\n\nClear process and outcomes\nAutomated execution\nTransparent participation\n\nDisadvantages:\n\nPotential plutocratic capture\nReduced flexibility\nVoter apathy risks\n\n\n\n\n3. Hybrid Systems\n\nCharacteristics:\n\nCombines off-chain discussion with on-chain execution\nMultiple stages of proposal refinement\nMixed participation models\n\nAdvantages:\n\nBalances flexibility with formality\nCombines benefits of both approaches\nCan adapt to different types of changes\n\nExamples: Polkadot’s governance system, Cosmos Hub’s proposal process\n\n\n\n\nImprovement Proposal Systems\n\n1. Structure\n\nStages:\n\nDraft: Initial proposal development\nReview: Community feedback and refinement\nLast Call: Final period for major objections\nAccepted/Final: Ready for implementation\nRejected: Proposal declined\n\nComponents:\n\nTechnical specification\nMotivation and rationale\nBackwards compatibility analysis\nReference implementation (if applicable)\nSecurity considerations\n\n\n\n\n2. Common Frameworks\n\nBIP (Bitcoin Improvement Proposals):\n\nFocus on consensus changes\nConservative approach\nHigh emphasis on security\n\nEIP (Ethereum Improvement Proposals):\n\nMultiple tracks (Core, ERC, Interface)\nRegular cadence of updates\nStrong emphasis on standardization\n\nNetwork-Specific Systems:\n\nCustomized to network needs\nVarying levels of formality\nDifferent voting thresholds\n\n\n\n\n\nCentralization Factors\n\n1. Development Centralization\n\nCore Development Teams:\n\nControl over codebase\nTechnical expertise concentration\nFunding dependencies\n\nClient Implementation:\n\nDiversity of node software\nImplementation independence\nBug discovery and fixes\n\n\n\n\n2. Governance Centralization\n\nVoting Power Distribution:\n\nToken concentration\nDelegate systems\nVoter participation rates\n\nProposal Control:\n\nWho can propose changes\nFiltering mechanisms\nDiscussion venue control\n\n\n\n\n3. Infrastructure Centralization\n\nNode Operation:\n\nGeographic distribution\nHardware requirements\nOperating costs\n\nService Providers:\n\nAPI services\nBlock explorers\nDevelopment tools\n\n\n\n\n\nBest Practices\n\n1. Change Management\n\nClear documentation of changes\nAdequate testing periods\nCoordinated upgrade schedules\nEmergency response procedures\n\n\n\n2. Community Engagement\n\nRegular communication channels\nMultiple feedback mechanisms\nTransparent decision-making\nEducational resources\n\n\n\n3. Technical Implementation\n\nComprehensive testing frameworks\nClear upgrade paths\nFallback mechanisms\nSecurity audits",
+    "text": "Introduction\nImagine trying to run a city where all the residents are anonymous, can arrive or leave at any time, and must coordinate entirely through written rules that, once agreed upon, execute automatically. This is the fundamental challenge of Web3 governance. While blockchains provide the technical foundation for decentralized systems, governance represents the crucial social layer that determines how these systems evolve and adapt.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Governance</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
+    ]
+  },
+  {
+    "objectID": "content/social/governance.html#the-three-branches-of-blockchain-governance",
+    "href": "content/social/governance.html#the-three-branches-of-blockchain-governance",
+    "title": "Web3 Governance",
+    "section": "The Three Branches of Blockchain Governance",
+    "text": "The Three Branches of Blockchain Governance\nJust as traditional governments often separate power into executive, legislative, and judicial branches, blockchain systems have developed their own versions of these divisions, though they manifest in unique ways.\n\nLegislative Function: Rule Creation\nThe legislative function in blockchain systems determines how rules are created and modified. This happens through several mechanisms:\n\nImprovement Proposals\n\nBitcoin’s BIP (Bitcoin Improvement Proposal) process\nEthereum’s EIP (Ethereum Improvement Proposal) system\nVarious DAO governance frameworks\n\n\nThese processes share common elements but differ in crucial ways. Bitcoin’s process emphasizes conservative change and broad consensus, reflecting its role as a monetary system. Ethereum’s process moves faster and accommodates more types of changes, matching its position as a computational platform.\n\nDiscussion Forums\n\nTechnical debates\nEconomic proposals\nSocial coordination\n\n\nThese spaces serve as the “town halls” of blockchain governance, where ideas are debated before formal proposals.\n\n\nExecutive Function: Rule Implementation\nThe executive function in blockchain systems determines how agreed-upon changes are actually implemented. This involves:\n\nNode Operators\n\nRunning specific software versions\nEnforcing consensus rules\nMaintaining network security\n\nDevelopers\n\nWriting and reviewing code\nImplementing approved changes\nMaintaining client software\n\nMiners/Validators\n\nProcessing transactions\nProducing blocks\nSecuring the network\n\n\nThe relationship between these groups creates interesting dynamics. For example, while developers can write code for a change, node operators must choose to run it, creating a check on developer power.\n\n\nJudicial Function: Rule Interpretation\nThe judicial function in blockchain systems is perhaps the most different from traditional governance. Instead of courts interpreting laws, we see:\n\nEconomic Consensus\n\nMarkets pricing in decisions\nUsers choosing which chains to use\nCapital flowing between projects\n\nSocial Consensus\n\nCommunity interpretation of rules\nPrecedent in dispute resolution\nNorm establishment\n\nTechnical Arbitration\n\nProtocol-level dispute resolution\nOracle systems\nSmart contract execution",
+    "crumbs": [
+      "Social",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
+    ]
+  },
+  {
+    "objectID": "content/social/governance.html#the-politics-of-decentralization",
+    "href": "content/social/governance.html#the-politics-of-decentralization",
+    "title": "Web3 Governance",
+    "section": "The Politics of Decentralization",
+    "text": "The Politics of Decentralization\nBlockchain governance must constantly navigate several fundamental tensions:\n\n1. Decentralization vs. Efficiency\nMore decentralized decision-making typically means slower, more costly coordination. This creates pressure to centralize for efficiency, which must be balanced against the core value of decentralization.\n\n\n2. Innovation vs. Stability\nFaster technical innovation often requires more centralized decision-making, while maintaining stability typically requires broader consensus. Different projects position themselves along this spectrum based on their priorities.\n\n\n3. On-Chain vs. Off-Chain Governance\nOn-chain governance provides clarity and automation but can be rigid and plutocratic. Off-chain governance offers more flexibility but can lack clarity and finality. Most successful projects use a hybrid approach.",
+    "crumbs": [
+      "Social",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
+    ]
+  },
+  {
+    "objectID": "content/social/governance.html#social-coordination-mechanisms",
+    "href": "content/social/governance.html#social-coordination-mechanisms",
+    "title": "Web3 Governance",
+    "section": "Social Coordination Mechanisms",
+    "text": "Social Coordination Mechanisms\nSeveral key mechanisms enable coordination in decentralized systems:\n\n1. Signaling Systems\n\nToken-weighted voting\nPrediction markets\nStake-weighted signals\nSocial media discourse\n\nThese mechanisms help communities understand collective preferences without requiring formal votes for every decision.\n\n\n2. Incentive Alignment\n\nToken distributions\nFee sharing models\nStaking requirements\nReputation systems\n\nWell-designed incentives help ensure participants act in ways that benefit the system as a whole.\n\n\n3. Exit Rights\n\nThe ability to fork\nAsset withdrawal rights\nAlternative platforms\nMarket competition\n\nThe credible threat of exit helps keep systems accountable to their communities.",
+    "crumbs": [
+      "Social",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
+    ]
+  },
+  {
+    "objectID": "content/social/governance.html#best-practices-in-web3-governance",
+    "href": "content/social/governance.html#best-practices-in-web3-governance",
+    "title": "Web3 Governance",
+    "section": "Best Practices in Web3 Governance",
+    "text": "Best Practices in Web3 Governance\nThrough years of experimentation, several governance best practices have emerged:\n\n1. Progressive Decentralization\nStarting with more centralized control and gradually decentralizing as systems mature has proven more successful than attempting complete decentralization from day one.\n\n\n2. Layered Decision Making\nDifferent types of decisions require different processes: - Technical parameters: Automated adjustment - Protocol upgrades: Formal governance - Emergency responses: Rapid response mechanisms\n\n\n3. Transparent Communication\n\nClear documentation\nRegular updates\nOpen discussion forums\nRecorded decision-making\n\n\n\n4. Governance Minimization\nThe most successful systems tend to minimize what requires active governance, automating what they can and leaving other decisions to market forces.",
+    "crumbs": [
+      "Social",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
+    ]
+  },
+  {
+    "objectID": "content/social/governance.html#future-challenges-and-opportunities",
+    "href": "content/social/governance.html#future-challenges-and-opportunities",
+    "title": "Web3 Governance",
+    "section": "Future Challenges and Opportunities",
+    "text": "Future Challenges and Opportunities\nAs Web3 governance continues to evolve, several key challenges and opportunities emerge:\n\n1. Scalable Participation\nFinding ways to maintain broad participation as systems grow without sacrificing decision-making efficiency.\n\n\n2. Cross-Chain Governance\nDeveloping frameworks for governance across multiple interconnected systems.\n\n\n3. Regulatory Integration\nBalancing regulatory compliance with decentralized governance principles.\n\n\n4. Identity and Reputation\nIncorporating better systems for identity and reputation while preserving privacy and pseudonymity.",
+    "crumbs": [
+      "Social",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
+    ]
+  },
+  {
+    "objectID": "content/social/governance.html#conclusion",
+    "href": "content/social/governance.html#conclusion",
+    "title": "Web3 Governance",
+    "section": "Conclusion",
+    "text": "Conclusion\nWeb3 governance represents one of the most fascinating experiments in human coordination. By combining technical systems, economic incentives, and social structures, it creates new possibilities for organizing human activity. Understanding these governance systems is crucial for anyone looking to participate in or build Web3 projects.\nThe field continues to evolve rapidly, with new models and mechanisms emerging regularly. Success in this space requires staying informed about both technical developments and the social dynamics that shape how these systems actually function.",
+    "crumbs": [
+      "Social",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2206,16 +2195,6 @@
     "text": "29.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n29.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
     "crumbs": [
       "<span class='chapter-number'>29</span>  <span class='chapter-title'>Contributing</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Monegro, Joel. 2016. “Fat Protocols.” Union Square\nVentures. https://www.usv.com/writing/2016/08/fat-protocols/.",
-    "crumbs": [
-      "References"
     ]
   }
 ]
