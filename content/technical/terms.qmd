@@ -1,0 +1,33 @@
+## Technical Terms
+
+### Transaction Processing
+
+**Mempool (Memory Pool)**: Think of the mempool as a blockchain's waiting room - a temporary storage area where transactions reside before being included in a block. Each network node maintains its own version of the mempool, leading to slightly different views of pending transactions across the network. When you broadcast a transaction, it first enters this liminal space where it waits to be selected by block producers. The mempool's design has profound implications for transaction privacy and MEV opportunities.
+
+**Nonces**: Every account on account-based blockchains maintains a sequence number called a nonce, which increments with each transaction. This simple counter serves multiple crucial purposes: it prevents transaction replay attacks, ensures transactions execute in the sender's intended order, and helps nodes identify which transactions can be processed immediately versus those that must wait for previous transactions.
+
+### Maximal Extractable Value (MEV)
+
+**MEV Searchers**: Specialized participants who analyze blockchain state and pending transactions to identify profitable trading opportunities. Searchers develop sophisticated algorithms to detect arbitrage possibilities, liquidation opportunities, and other ways to extract value through transaction ordering. They then create optimized transaction bundles and bid for block space through builders.
+
+**MEV Builders**: Entities that aggregate transaction bundles from multiple searchers and construct candidate blocks optimized for MEV extraction. Builders serve as intermediaries between searchers and validators, creating a more efficient market for MEV extraction while potentially reducing network congestion from competitive trading.
+
+**MEV-Boost**: A protocol that separates block building from block validation, allowing validators to receive block proposals from multiple builders. This separation aims to create more efficient MEV extraction while distributing the extracted value more evenly across the network. MEV-Boost represents an important evolution in blockchain architecture toward more specialized and efficient block production.
+
+**Cross-Domain MEV**: Extractable value that exists between different blockchain "domains" - whether different layers (like Layer 1 to Layer 2), different chains, or different execution environments. This form of MEV is becoming increasingly important as blockchain ecosystems become more interconnected, creating opportunities for value extraction across domain boundaries.
+
+### Chain Architecture
+
+**Directed Acyclic Graph (DAG) Based Chains**: Unlike traditional blockchains where blocks form a single linear chain, DAG-based systems allow for a more complex structure where multiple blocks can exist simultaneously. Think of it as a tree that branches out but never loops back on itself. This architecture enables higher throughput by allowing parallel block creation and validation, though it introduces new challenges in achieving consensus and determining transaction ordering.
+
+**Parallel Transaction Processing**: Some blockchain architectures, like Solana, allow multiple transactions to execute simultaneously if they don't interact with the same state. This design can dramatically increase throughput compared to sequential processing, but it requires sophisticated mechanisms to detect and manage transaction dependencies.
+
+**Account Models vs UTXO**: Account-based models (like Ethereum) maintain explicit account balances, while UTXO (Unspent Transaction Output) models (like Bitcoin) track unspent transaction outputs. This fundamental difference in state management affects everything from transaction validation to MEV opportunities. Account models make complex state interactions easier but can create more MEV surface area, while UTXO models offer different security properties but make some types of MEV more difficult to extract.
+
+### Network Layer
+
+**Transaction Gossip Protocol**: The mechanism by which nodes share information about new transactions with their peers. This protocol must balance speed (to ensure quick transaction propagation) with efficiency (to avoid network congestion). The design of the gossip protocol significantly impacts MEV opportunities by affecting how quickly and widely transaction information spreads.
+
+**Consensus Mechanisms**: The rules and processes by which nodes agree on the state of the blockchain. Different consensus mechanisms create different MEV opportunities - for instance, proof-of-stake systems with known block proposers create different MEV dynamics than proof-of-work systems where block producers are only known after block creation.
+
+This technical foundation helps explain why different blockchain architectures create different MEV opportunities and challenges. The interaction between these various components determines what types of MEV are possible and how they can be extracted or mitigated.

@@ -32,12 +32,16 @@ book:
     part: Web3 Essentials
   - chapters: 
     - ./content/technical/overview.qmd
+    - ./content/technical/terms.qmd
     - ./content/technical/cryptography.qmd
     - ./content/technical/blockchains.qmd
     - ./content/technical/modular.qmd
     - ./content/technical/languages.qmd
     - ./content/technical/gas.qmd
     - ./content/technical/dapps.qmd
+    - ./content/technical/ethereum.qmd
+    - ./content/technical/slashing.qmd
+    - ./content/technical/networking.qmd
     - ./content/technical/mev.qmd
     part: Technologist's Path
   - chapters:

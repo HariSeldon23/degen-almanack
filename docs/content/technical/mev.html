@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../content/financial/tokens.html" rel="next">
-<link href="../../content/technical/dapps.html" rel="prev">
+<link href="../../content/technical/networking.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script async="" src="https://platform.twitter.com/widgets.js"></script>
 
 
@@ -83,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/mev.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/mev.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -315,44 +318,68 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../content/technical/terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Technical Terms</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../content/technical/cryptography.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Cryptography</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cryptography</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/blockchains.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Blockchain Technology</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Blockchain Technology</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/modular.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/languages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/gas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Gas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Gas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/dapps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Decentralized Applications (dApps)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Decentralized Applications (dApps)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/ethereum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Ethereum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/slashing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">slashing.html</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/networking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Networking Protocols</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/technical/mev.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></span></a>
   </div>
 </li>
       </ul>
@@ -369,25 +396,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/tokens.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Digital Assets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Digital Assets</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/market_structure.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Market Structures</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Market Structures</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/ratings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Digital Asset Rating Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Digital Asset Rating Framework</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/financial/trollip_index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Trollip’s Index</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Trollip’s Index</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,7 +431,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/social/governance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Web3 Governance</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Web3 Governance</span></span></a>
   </div>
 </li>
       </ul>
@@ -412,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../contributing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -431,7 +458,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#transaction-submission" id="toc-transaction-submission" class="nav-link" data-scroll-target="#transaction-submission">Transaction submission</a></li>
+  <li><a href="#transaction-propagation" id="toc-transaction-propagation" class="nav-link" data-scroll-target="#transaction-propagation">Transaction Propagation</a></li>
+  <li><a href="#transaction-ordering" id="toc-transaction-ordering" class="nav-link" data-scroll-target="#transaction-ordering">Transaction Ordering</a></li>
+  <li><a href="#evm-networks" id="toc-evm-networks" class="nav-link" data-scroll-target="#evm-networks">EVM Networks</a></li>
+  </ul></li>
   <li><a href="#understanding-mev" id="toc-understanding-mev" class="nav-link" data-scroll-target="#understanding-mev">Understanding MEV</a>
   <ul class="collapse">
   <li><a href="#the-mechanics-of-mev" id="toc-the-mechanics-of-mev" class="nav-link" data-scroll-target="#the-mechanics-of-mev">The Mechanics of MEV</a></li>
@@ -468,7 +501,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/mev.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/technical/overview.html">Technologist’s Path</a></li><li class="breadcrumb-item"><a href="../../content/technical/mev.html"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Maximal Extractable Value (MEV)</h1>
 </div>
@@ -497,6 +530,169 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Maximal Extractable Value (MEV) represents one of the most fascinating and complex phenomena in blockchain systems. Originally called “Miner Extractable Value,” the term has evolved to “Maximal” as extraction techniques have expanded beyond just miners. At its core, MEV emerges from the ability to reorder, insert, or censor transactions within a block for profit.</p>
 <p>Think of a blockchain as a series of auctions where the auctioneer (block producer) can not only decide which bids to accept but also their order. This power creates opportunities for profit that don’t exist in traditional markets.</p>
+<p>We’ll explore MEV attack vectors from a first principles approach at the route of transactions. So MEV risks in order of priority are:</p>
+<ul>
+<li>Transaction submission</li>
+<li>Transaction Propagation</li>
+<li>Transaction Ordering</li>
+<li>Block Submission</li>
+</ul>
+<section id="transaction-submission" class="level3">
+<h3 class="anchored" data-anchor-id="transaction-submission">Transaction submission</h3>
+<p>This is the biggest weakness. More than 90% of transactions are submitted through Wallets. Those wallets use their own RPC providers and while some wallets allow you to specify your own RPC node, that is the exception. This means that any wallet can collude with an RPC provider and they’ll have exclusive MEV flow. https://writings.flashbots.net/state-of-wallets-2024</p>
+<p>It makes sense to run a honeypot on all major wallets and then see which ones are the worst offenders here. Name and Shame. Wallets have no incentive for RPC rotation and I don’t see it being adopted unless they’re forced to.</p>
+</section>
+<section id="transaction-propagation" class="level3">
+<h3 class="anchored" data-anchor-id="transaction-propagation">Transaction Propagation</h3>
+<p>How the P2P protocol propagates is a major weakness. Let’s look at EThereum, it uses a Probabilistic Relay it looks at the following</p>
+<ul>
+<li>Previous communication reliability</li>
+<li>Network latency</li>
+<li>Geographic distribution</li>
+<li>Historical performance</li>
+</ul>
+<p>This means if I’m rich, I can just set up Validators in Geographically important areas and juice my servers and then always get messages before everyone else</p>
+</section>
+<section id="transaction-ordering" class="level3">
+<h3 class="anchored" data-anchor-id="transaction-ordering">Transaction Ordering</h3>
+<p>This is super interesting as sequential blockchains vs DAG based networks will have significantly different MEV characteristics. So there’s actually the following types of networks:</p>
+<ul>
+<li>Sequential</li>
+<li>DAG</li>
+<li>Sharded</li>
+<li>Layered</li>
+<li>Heterogeneous</li>
+<li>Fractal Networks</li>
+</ul>
+<p>We’ll explore MEV on the following Network Topologies:</p>
+<ul>
+<li>Bitcoin</li>
+<li>Ethereum, BNB, Avalanche, TRON</li>
+<li>XRP, Stellar</li>
+<li>Solana</li>
+<li>Sui</li>
+<li>Cardano</li>
+<li>TON</li>
+<li>DOT</li>
+</ul>
+<p>So for each network we need to understand the following:</p>
+<ul>
+<li>The transaction lifecycle</li>
+<li>Transaction Propagation. These are all available via the <a href="../../content/technical/networking.html">Networking</a> Chapter.</li>
+<li>Validator/Miner Selection</li>
+<li>How Blocks are built by Validators/Miners</li>
+</ul>
+</section>
+<section id="evm-networks" class="level3">
+<h3 class="anchored" data-anchor-id="evm-networks">EVM Networks</h3>
+<p>There will be nuances between them that we’ll include as we progress with this Chapter.</p>
+<section id="transaction-lifecycle" class="level4">
+<h4 class="anchored" data-anchor-id="transaction-lifecycle">Transaction Lifecycle</h4>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    participant User as User Wallet
+    participant RPC as RPC Node
+    participant Validator as Block Validator
+    participant Blockchain as Ethereum Blockchain
+
+    User-&gt;&gt;RPC: Broadcast Signed Transaction
+    activate RPC
+    
+    RPC--&gt;&gt;RPC: Validate Transaction
+    RPC--&gt;&gt;RPC: Check Sender Balance
+    RPC--&gt;&gt;RPC: Verify Signature
+    
+    RPC-&gt;&gt;RPC: Prioritize by Gas Price
+    RPC-&gt;&gt;Validator: Propagate Valid Transactions
+    
+    activate Validator
+    Validator--&gt;&gt;Validator: Select Transactions
+    Validator--&gt;&gt;Validator: Create Block Candidate
+    
+    Validator-&gt;&gt;Blockchain: Propose Block
+    activate Blockchain
+    
+    Blockchain--&gt;&gt;Blockchain: Validate Block
+    Blockchain--&gt;&gt;Blockchain: Execute Transactions
+    Blockchain-&gt;&gt;Validator: Block Confirmation
+    
+    Validator-&gt;&gt;User: Transaction Confirmed
+    
+    deactivate Blockchain
+    deactivate Validator
+    deactivate RPC
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="validator-selection" class="level4">
+<h4 class="anchored" data-anchor-id="validator-selection">Validator Selection</h4>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    participant Beacon as Beacon Chain
+    participant Epoch as Epoch Management
+    participant Registry as Validator Registry
+    participant Selection as Random Selection Mechanism
+    participant Slot as Slot Manager
+    participant Validator as Selected Validator
+
+    Note over Beacon: Proof of Stake Consensus Mechanism
+    
+    Beacon-&gt;&gt;Epoch: Initiate New Epoch
+    activate Epoch
+    
+    Epoch-&gt;&gt;Registry: Request Active Validator Set
+    activate Registry
+    
+    Registry--&gt;&gt;Registry: Filter Active Validators
+    Note right of Registry: Criteria Include:
+    Note right of Registry: - Minimum 32 ETH Staked
+    Note right of Registry: - No Slashing History
+    Note right of Registry: - Online and Responsive
+    
+    Registry-&gt;&gt;Selection: Provide Validator Pool
+    activate Selection
+    
+    Selection--&gt;&gt;Selection: Apply Randomness Beacon
+    Note right of Selection: Uses Verifiable Delay Function (VDF)
+    Note right of Selection: Ensures Unpredictable, Unmanipulatable Selection
+    
+    Selection-&gt;&gt;Slot: Propose Block Proposer
+    activate Slot
+    
+    Slot--&gt;&gt;Slot: Assign Slot Number
+    Slot-&gt;&gt;Validator: Block Proposal Responsibility
+    activate Validator
+    
+    Note over Validator: Validator Prepares Block
+    Validator--&gt;&gt;Validator: Collect Transactions
+    Validator--&gt;&gt;Validator: Execute State Transitions
+    Validator-&gt;&gt;Beacon: Propose Block
+    
+    deactivate Validator
+    deactivate Slot
+    deactivate Selection
+    deactivate Registry
+    deactivate Epoch
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+</section>
 </section>
 <section id="understanding-mev" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-mev">Understanding MEV</h2>
@@ -530,6 +726,31 @@ ul.task-list li input[type="checkbox"] {
 <li>Extracting value from user slippage tolerance</li>
 </ul></li>
 </ol>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">sequenceDiagram
+    participant U as User
+    participant N as Node
+    participant M as Mempool
+    participant V as Validator
+    participant B as Blockchain
+    
+    U-&gt;&gt;N: Submit Transaction
+    N-&gt;&gt;M: Add to Mempool
+    M-&gt;&gt;V: Transaction Available
+    V-&gt;&gt;V: Create Block
+    V-&gt;&gt;B: Append Block
+    B-&gt;&gt;N: Confirm Transaction
+    N-&gt;&gt;U: Transaction Complete
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="mev-extract-methods" class="level2">
@@ -1159,13 +1380,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/technical/dapps.html" class="pagination-link" aria-label="Decentralized Applications (dApps)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Decentralized Applications (dApps)</span></span>
+      <a href="../../content/technical/networking.html" class="pagination-link" aria-label="Networking Protocols">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Networking Protocols</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../content/financial/tokens.html" class="pagination-link" aria-label="Digital Assets">
-        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Digital Assets</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Digital Assets</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

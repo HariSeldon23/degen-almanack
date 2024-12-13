@@ -41,7 +41,7 @@ Before handling any real money, we need to establish secure practices. Security 
    - Backup procedures
    - Emergency access plans
 
-2. Creating Safe Wallets
+2. [Creating Safe Wallets](../foundations/basic_security.qmd#creating-your-web3-identity)
    - Setting up MetaMask securely
    - Creating a "burner" wallet for testing
    - Understanding hardware wallet benefits

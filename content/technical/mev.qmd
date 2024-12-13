@@ -6,6 +6,147 @@ Maximal Extractable Value (MEV) represents one of the most fascinating and compl
 
 Think of a blockchain as a series of auctions where the auctioneer (block producer) can not only decide which bids to accept but also their order. This power creates opportunities for profit that don't exist in traditional markets.
 
+We'll explore MEV attack vectors from a first principles approach at the route of transactions. So MEV risks in order of priority are:
+
+* Transaction submission
+* Transaction Propagation
+* Transaction Ordering
+* Block Submission
+
+### Transaction submission
+This is the biggest weakness. More than 90% of transactions are submitted through Wallets. Those wallets use their own RPC providers and while some wallets allow you to specify your own RPC node, that is the exception. This means that any wallet can collude with an RPC provider and they'll have exclusive MEV flow. https://writings.flashbots.net/state-of-wallets-2024
+
+It makes sense to run a honeypot on all major wallets and then see which ones are the worst offenders here. Name and Shame. Wallets have no incentive for RPC rotation and I don't see it being adopted unless they're forced to. 
+
+### Transaction Propagation
+How the P2P protocol propagates is a major weakness. Let's look at EThereum, it uses a Probabilistic Relay it looks at the following
+
+* Previous communication reliability
+* Network latency
+* Geographic distribution
+* Historical performance
+
+This means if I'm rich, I can just set up Validators in Geographically important areas and juice my servers and then always get messages before everyone else
+
+### Transaction Ordering
+This is super interesting as sequential blockchains vs DAG based networks will have significantly different MEV characteristics. So there's actually the following types of networks:
+
+* Sequential 
+* DAG
+* Sharded
+* Layered
+* Heterogeneous 
+* Fractal Networks
+
+
+
+We'll explore MEV on the following Network Topologies:
+
+* Bitcoin
+* Ethereum, BNB, Avalanche, TRON 
+* XRP, Stellar
+* Solana
+* Sui
+* Cardano
+* TON
+* DOT
+
+So for each network we need to understand the following:
+
+* The transaction lifecycle
+* Transaction Propagation. These are all available via the [Networking](./networking.qmd) Chapter.
+* Validator/Miner Selection
+* How Blocks are built by Validators/Miners
+
+### EVM Networks 
+There will be nuances between them that we'll include as we progress with this Chapter.
+
+#### Transaction Lifecycle
+```{mermaid}
+sequenceDiagram
+    participant User as User Wallet
+    participant RPC as RPC Node
+    participant Validator as Block Validator
+    participant Blockchain as Ethereum Blockchain
+
+    User->>RPC: Broadcast Signed Transaction
+    activate RPC
+    
+    RPC-->>RPC: Validate Transaction
+    RPC-->>RPC: Check Sender Balance
+    RPC-->>RPC: Verify Signature
+    
+    RPC->>RPC: Prioritize by Gas Price
+    RPC->>Validator: Propagate Valid Transactions
+    
+    activate Validator
+    Validator-->>Validator: Select Transactions
+    Validator-->>Validator: Create Block Candidate
+    
+    Validator->>Blockchain: Propose Block
+    activate Blockchain
+    
+    Blockchain-->>Blockchain: Validate Block
+    Blockchain-->>Blockchain: Execute Transactions
+    Blockchain->>Validator: Block Confirmation
+    
+    Validator->>User: Transaction Confirmed
+    
+    deactivate Blockchain
+    deactivate Validator
+    deactivate RPC
+```
+
+#### Validator Selection
+```{mermaid}
+sequenceDiagram
+    participant Beacon as Beacon Chain
+    participant Epoch as Epoch Management
+    participant Registry as Validator Registry
+    participant Selection as Random Selection Mechanism
+    participant Slot as Slot Manager
+    participant Validator as Selected Validator
+
+    Note over Beacon: Proof of Stake Consensus Mechanism
+    
+    Beacon->>Epoch: Initiate New Epoch
+    activate Epoch
+    
+    Epoch->>Registry: Request Active Validator Set
+    activate Registry
+    
+    Registry-->>Registry: Filter Active Validators
+    Note right of Registry: Criteria Include:
+    Note right of Registry: - Minimum 32 ETH Staked
+    Note right of Registry: - No Slashing History
+    Note right of Registry: - Online and Responsive
+    
+    Registry->>Selection: Provide Validator Pool
+    activate Selection
+    
+    Selection-->>Selection: Apply Randomness Beacon
+    Note right of Selection: Uses Verifiable Delay Function (VDF)
+    Note right of Selection: Ensures Unpredictable, Unmanipulatable Selection
+    
+    Selection->>Slot: Propose Block Proposer
+    activate Slot
+    
+    Slot-->>Slot: Assign Slot Number
+    Slot->>Validator: Block Proposal Responsibility
+    activate Validator
+    
+    Note over Validator: Validator Prepares Block
+    Validator-->>Validator: Collect Transactions
+    Validator-->>Validator: Execute State Transitions
+    Validator->>Beacon: Propose Block
+    
+    deactivate Validator
+    deactivate Slot
+    deactivate Selection
+    deactivate Registry
+    deactivate Epoch
+```
+
 ## Understanding MEV
 
 ### The Mechanics of MEV
@@ -36,6 +177,23 @@ This control creates several profit opportunities:
    - Placing trades before and after a large swap
    - Exploiting price impacts for profit
    - Extracting value from user slippage tolerance
+
+```{mermaid}
+sequenceDiagram
+    participant U as User
+    participant N as Node
+    participant M as Mempool
+    participant V as Validator
+    participant B as Blockchain
+    
+    U->>N: Submit Transaction
+    N->>M: Add to Mempool
+    M->>V: Transaction Available
+    V->>V: Create Block
+    V->>B: Append Block
+    B->>N: Confirm Transaction
+    N->>U: Transaction Complete
+```
 
 ## MEV Extract Methods
 
