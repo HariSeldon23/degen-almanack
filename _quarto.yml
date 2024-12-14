@@ -47,6 +47,7 @@ book:
   - chapters:
     - ./content/financial/tokens.qmd
     - ./content/financial/market_structure.qmd
+    - ./content/financial/dexes.qmd
     - ./content/financial/ratings.qmd
     - ./content/financial/trollip_index.qmd
     part: Financial

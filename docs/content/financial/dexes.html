@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.2">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-12-09">
+
+<title>The Evolution of Decentralized Exchange Design – Trollip’s Degen Almanack</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../content/financial/ratings.html" rel="next">
+<link href="../../content/financial/market_structure.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-823ada2c64a85bd70d66c02353c14ab3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d0d28e68b2311299fec6095e89651c71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://platform.twitter.com/widgets.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/financial/tokens.html">Financial</a></li><li class="breadcrumb-item"><a href="../../content/financial/dexes.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">The Evolution of Decentralized Exchange Design</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Trollip’s Degen Almanack</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/HariSeldon23/degen-almanack" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright Notice</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../dedication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dedication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epigraph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epigraph</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/intro/use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How to Use This Almanack</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/intro/terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Web3 Terminology</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/foundations/foundations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Digital Independence</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/foundations/path.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Path to Digital Money</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/foundations/alternatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Search for Alternatives</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/foundations/tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/foundations/basic_security.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Protecting Your Assets</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Path to Independence</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/independence/independence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Starting Your Web3 Journey</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/independence/first_steps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Your First Steps</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/independence/fundamentals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">DeFi Fundamentals</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/independence/invest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">What Should I Invest In?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/independence/stables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Evolution of Stablecoins</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/independence/mid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Moving Beyond Basic DeFi</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Web3 Essentials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/essentials/memes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Meme Culture</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Technologist’s Path</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Technologist’s Path</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/terms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Technical Terms</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/cryptography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Cryptography</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/blockchains.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Blockchain Technology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/modular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modular Blockchain Architecture</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/languages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Smart Contract Languages</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/gas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Gas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/dapps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Decentralized Applications (dApps)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/ethereum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Ethereum</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/slashing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">slashing.html</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/networking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Networking Protocols</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/technical/mev.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Maximal Extractable Value (MEV)</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Financial</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/tokens.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Digital Assets</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/market_structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Market Structures</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/dexes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">The Evolution of Decentralized Exchange Design</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/ratings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Digital Asset Rating Framework</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/financial/trollip_index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Trollip’s Index</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Social</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/social/governance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">Web3 Governance</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../contributing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-pioneer-era-order-books-on-chain" id="toc-the-pioneer-era-order-books-on-chain" class="nav-link" data-scroll-target="#the-pioneer-era-order-books-on-chain">The Pioneer Era: Order Books On-Chain</a>
+  <ul class="collapse">
+  <li><a href="#etherdelta-2016" id="toc-etherdelta-2016" class="nav-link" data-scroll-target="#etherdelta-2016">EtherDelta (2016)</a></li>
+  <li><a href="#x-protocol-2017" id="toc-x-protocol-2017" class="nav-link" data-scroll-target="#x-protocol-2017">0x Protocol (2017)</a></li>
+  </ul></li>
+  <li><a href="#the-amm-revolution-constant-product-market-making" id="toc-the-amm-revolution-constant-product-market-making" class="nav-link" data-scroll-target="#the-amm-revolution-constant-product-market-making">The AMM Revolution: Constant Product Market Making</a>
+  <ul class="collapse">
+  <li><a href="#bancor-2017" id="toc-bancor-2017" class="nav-link" data-scroll-target="#bancor-2017">Bancor (2017)</a></li>
+  <li><a href="#the-token-emissions-revolution" id="toc-the-token-emissions-revolution" class="nav-link" data-scroll-target="#the-token-emissions-revolution">The Token Emissions Revolution</a></li>
+  <li><a href="#uniswap-v1-2018" id="toc-uniswap-v1-2018" class="nav-link" data-scroll-target="#uniswap-v1-2018">Uniswap v1 (2018)</a></li>
+  <li><a href="#uniswap-v2-2020" id="toc-uniswap-v2-2020" class="nav-link" data-scroll-target="#uniswap-v2-2020">Uniswap v2 (2020)</a></li>
+  </ul></li>
+  <li><a href="#the-efficiency-era-specialized-solutions" id="toc-the-efficiency-era-specialized-solutions" class="nav-link" data-scroll-target="#the-efficiency-era-specialized-solutions">The Efficiency Era: Specialized Solutions</a>
+  <ul class="collapse">
+  <li><a href="#curve-finance-2020" id="toc-curve-finance-2020" class="nav-link" data-scroll-target="#curve-finance-2020">Curve Finance (2020)</a></li>
+  <li><a href="#balancer-2020" id="toc-balancer-2020" class="nav-link" data-scroll-target="#balancer-2020">Balancer (2020)</a></li>
+  </ul></li>
+  <li><a href="#the-capital-efficiency-revolution" id="toc-the-capital-efficiency-revolution" class="nav-link" data-scroll-target="#the-capital-efficiency-revolution">The Capital Efficiency Revolution</a>
+  <ul class="collapse">
+  <li><a href="#uniswap-v3-2021" id="toc-uniswap-v3-2021" class="nav-link" data-scroll-target="#uniswap-v3-2021">Uniswap v3 (2021)</a></li>
+  <li><a href="#trader-joes-liquidity-book-2022" id="toc-trader-joes-liquidity-book-2022" class="nav-link" data-scroll-target="#trader-joes-liquidity-book-2022">Trader Joe’s Liquidity Book (2022)</a></li>
+  </ul></li>
+  <li><a href="#the-solana-ecosystem-high-performance-dex-innovation" id="toc-the-solana-ecosystem-high-performance-dex-innovation" class="nav-link" data-scroll-target="#the-solana-ecosystem-high-performance-dex-innovation">The Solana Ecosystem: High-Performance DEX Innovation</a>
+  <ul class="collapse">
+  <li><a href="#raydiums-hybrid-model" id="toc-raydiums-hybrid-model" class="nav-link" data-scroll-target="#raydiums-hybrid-model">Raydium’s Hybrid Model</a></li>
+  <li><a href="#orcas-whirlpools" id="toc-orcas-whirlpools" class="nav-link" data-scroll-target="#orcas-whirlpools">Orca’s Whirlpools</a></li>
+  <li><a href="#meteoras-dynamic-position-amm" id="toc-meteoras-dynamic-position-amm" class="nav-link" data-scroll-target="#meteoras-dynamic-position-amm">Meteora’s Dynamic Position AMM</a></li>
+  </ul></li>
+  <li><a href="#modern-innovations" id="toc-modern-innovations" class="nav-link" data-scroll-target="#modern-innovations">Modern Innovations</a>
+  <ul class="collapse">
+  <li><a href="#carbons-logarithmic-market-making-2023" id="toc-carbons-logarithmic-market-making-2023" class="nav-link" data-scroll-target="#carbons-logarithmic-market-making-2023">Carbon’s Logarithmic Market Making (2023)</a></li>
+  <li><a href="#velodromes-slipstream" id="toc-velodromes-slipstream" class="nav-link" data-scroll-target="#velodromes-slipstream">Velodrome’s Slipstream</a></li>
+  </ul></li>
+  <li><a href="#cross-chain-innovation-and-convergence" id="toc-cross-chain-innovation-and-convergence" class="nav-link" data-scroll-target="#cross-chain-innovation-and-convergence">Cross-Chain Innovation and Convergence</a>
+  <ul class="collapse">
+  <li><a href="#technical-convergence" id="toc-technical-convergence" class="nav-link" data-scroll-target="#technical-convergence">Technical Convergence</a></li>
+  <li><a href="#ecosystem-specific-innovation" id="toc-ecosystem-specific-innovation" class="nav-link" data-scroll-target="#ecosystem-specific-innovation">Ecosystem-Specific Innovation</a></li>
+  </ul></li>
+  <li><a href="#the-future-multi-chain-multi-model" id="toc-the-future-multi-chain-multi-model" class="nav-link" data-scroll-target="#the-future-multi-chain-multi-model">The Future: Multi-Chain, Multi-Model</a>
+  <ul class="collapse">
+  <li><a href="#technical-evolution" id="toc-technical-evolution" class="nav-link" data-scroll-target="#technical-evolution">Technical Evolution</a></li>
+  <li><a href="#emerging-trends" id="toc-emerging-trends" class="nav-link" data-scroll-target="#emerging-trends">Emerging Trends</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/financial/tokens.html">Financial</a></li><li class="breadcrumb-item"><a href="../../content/financial/dexes.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">The Evolution of Decentralized Exchange Design</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">The Evolution of Decentralized Exchange Design</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 9, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The history of decentralized exchanges (DEXs) represents one of the most fascinating evolutionary paths in cryptocurrency. What began as simple on-chain order books has developed into a rich ecosystem of sophisticated market-making mechanisms spread across multiple blockchains. Each innovation has built upon previous concepts while solving new challenges, creating an increasingly efficient and user-friendly trading landscape. This document traces that evolution, examining how different approaches emerged to address specific problems and how various blockchain ecosystems have contributed to DEX innovation.</p>
+</section>
+<section id="the-pioneer-era-order-books-on-chain" class="level2">
+<h2 class="anchored" data-anchor-id="the-pioneer-era-order-books-on-chain">The Pioneer Era: Order Books On-Chain</h2>
+<section id="etherdelta-2016" class="level3">
+<h3 class="anchored" data-anchor-id="etherdelta-2016">EtherDelta (2016)</h3>
+<p>The story of modern DEXs begins with EtherDelta, which introduced the first widely-used on-chain order book. EtherDelta’s approach was straightforward: it maintained a list of orders directly on the Ethereum blockchain, with each order specifying an amount to trade and a price. While revolutionary for its time, this system had significant limitations:</p>
+<ul>
+<li>Every order required an on-chain transaction</li>
+<li>Order cancellations also required transactions</li>
+<li>Gas costs were prohibitive for market makers</li>
+<li>Limited liquidity due to high friction</li>
+</ul>
+<p>Despite these limitations, EtherDelta proved that decentralized trading was possible and set the stage for future innovations. Its core innovation - trustless trading through smart contracts - remains fundamental to all DEXs that followed.</p>
+</section>
+<section id="x-protocol-2017" class="level3">
+<h3 class="anchored" data-anchor-id="x-protocol-2017">0x Protocol (2017)</h3>
+<p>Building on EtherDelta’s foundation, 0x introduced a crucial innovation: off-chain order relay with on-chain settlement. This hybrid approach meant that:</p>
+<ul>
+<li>Orders could be shared and matched off-chain</li>
+<li>Only successful trades needed on-chain transactions</li>
+<li>Market makers could cancel orders without gas costs</li>
+<li>Liquidity could be shared across multiple front-ends</li>
+</ul>
+<p>This was the first step toward solving the efficiency problems of pure on-chain systems while maintaining decentralization.</p>
+</section>
+</section>
+<section id="the-amm-revolution-constant-product-market-making" class="level2">
+<h2 class="anchored" data-anchor-id="the-amm-revolution-constant-product-market-making">The AMM Revolution: Constant Product Market Making</h2>
+<section id="bancor-2017" class="level3">
+<h3 class="anchored" data-anchor-id="bancor-2017">Bancor (2017)</h3>
+<p>Bancor introduced the first automated market maker (AMM) model, using a “constant reserve ratio” mechanism. Key innovations included:</p>
+<ul>
+<li>Continuous liquidity for any token pair</li>
+<li>No need for order matching</li>
+<li>Automatic price adjustment based on supply and demand</li>
+<li>Introduction of protocol-owned liquidity</li>
+</ul>
+<p>While different from later AMM designs, Bancor established the concept of algorithmic market making that would become crucial to DeFi.</p>
+<video width="100%" height="auto" controls="">
+<source src="../../animations/manim/dex/bancor.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
+</video></section>
+<section id="the-token-emissions-revolution" class="level3">
+<h3 class="anchored" data-anchor-id="the-token-emissions-revolution">The Token Emissions Revolution</h3>
+<p>The introduction of governance tokens and liquidity mining fundamentally changed how DEXs attracted and maintained liquidity. This evolution can be broken down into several phases:</p>
+<section id="phase-1-simple-emissions-2020" class="level4">
+<h4 class="anchored" data-anchor-id="phase-1-simple-emissions-2020">Phase 1: Simple Emissions (2020)</h4>
+<p>The first wave of token emissions, pioneered by protocols like Compound and then adapted by DEXs, used straightforward distribution models:</p>
+<ul>
+<li>Fixed daily token emissions</li>
+<li>Distribution based on liquidity provided</li>
+<li>Basic governance rights</li>
+<li>No lock-up requirements</li>
+</ul>
+<p>These early models proved effective at bootstrapping liquidity but often led to “mercenary capital” that would quickly move to newer protocols with higher yields.</p>
+</section>
+<section id="phase-2-vote-escrowed-tokens-2020-2021" class="level4">
+<h4 class="anchored" data-anchor-id="phase-2-vote-escrowed-tokens-2020-2021">Phase 2: Vote-Escrowed Tokens (2020-2021)</h4>
+<p>Curve Finance revolutionized emissions with the vote-escrow model:</p>
+<ul>
+<li>Long-term token locking (up to 4 years)</li>
+<li>Voting power and rewards boost based on lock duration</li>
+<li>Fee sharing for governance token holders</li>
+<li>Ability to direct emissions to specific pools</li>
+</ul>
+<p>This model became the standard for many DEXs, encouraging long-term alignment between liquidity providers and protocols.</p>
+</section>
+<section id="phase-3-advanced-tokenomics-2021-present" class="level4">
+<h4 class="anchored" data-anchor-id="phase-3-advanced-tokenomics-2021-present">Phase 3: Advanced Tokenomics (2021-Present)</h4>
+<p>Modern DEX emissions incorporate sophisticated mechanics:</p>
+<ul>
+<li>Dynamic emission rates based on protocol metrics</li>
+<li>Multiple utility features for governance tokens</li>
+<li>Cross-protocol incentive systems</li>
+<li>Sustainable long-term distribution models</li>
+</ul>
+</section>
+</section>
+<section id="uniswap-v1-2018" class="level3">
+<h3 class="anchored" data-anchor-id="uniswap-v1-2018">Uniswap v1 (2018)</h3>
+<p>Uniswap v1 revolutionized DEX design with the constant product market maker formula (x * y = k). This elegant solution provided:</p>
+<ul>
+<li>Always-available liquidity at every price point</li>
+<li>Simple and gas-efficient trades</li>
+<li>Permissionless liquidity provision</li>
+<li>Automatic price discovery</li>
+</ul>
+<p>The constant product formula became the foundation for most subsequent AMM designs, proving that simplicity could be more effective than complexity.</p>
+</section>
+<section id="uniswap-v2-2020" class="level3">
+<h3 class="anchored" data-anchor-id="uniswap-v2-2020">Uniswap v2 (2020)</h3>
+<p>Building on v1’s success, Uniswap v2 added crucial features:</p>
+<ul>
+<li>Price oracles for other protocols to use</li>
+<li>Flash swap functionality</li>
+<li>More efficient gas handling</li>
+<li>Better handling of tokens with different decimals</li>
+<li>Introduction of protocol fee mechanism</li>
+</ul>
+<p>These improvements made AMMs more practical for complex DeFi applications and established them as core infrastructure.</p>
+</section>
+</section>
+<section id="the-efficiency-era-specialized-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="the-efficiency-era-specialized-solutions">The Efficiency Era: Specialized Solutions</h2>
+<section id="curve-finance-2020" class="level3">
+<h3 class="anchored" data-anchor-id="curve-finance-2020">Curve Finance (2020)</h3>
+<p>Curve introduced the StableSwap formula, optimizing for tokens with similar values. This brought:</p>
+<ul>
+<li>Extremely efficient stablecoin trading</li>
+<li>Lower slippage for similar-priced assets</li>
+<li>Higher capital efficiency through specialized curves</li>
+<li>Hybrid between constant sum and constant product</li>
+</ul>
+<p>The protocol also pioneered the vote-escrow tokenomics model with veCRV, which would become a standard across DeFi.</p>
+</section>
+<section id="balancer-2020" class="level3">
+<h3 class="anchored" data-anchor-id="balancer-2020">Balancer (2020)</h3>
+<p>Balancer expanded AMM capabilities with:</p>
+<ul>
+<li>Multiple tokens in a single pool</li>
+<li>Customizable token weights</li>
+<li>Dynamic fee adjustment</li>
+<li>Portfolio rebalancing functionality</li>
+<li>Weighted constant product formula</li>
+</ul>
+<p>This demonstrated that AMMs could handle more complex trading strategies and serve as building blocks for index funds.</p>
+</section>
+</section>
+<section id="the-capital-efficiency-revolution" class="level2">
+<h2 class="anchored" data-anchor-id="the-capital-efficiency-revolution">The Capital Efficiency Revolution</h2>
+<section id="uniswap-v3-2021" class="level3">
+<h3 class="anchored" data-anchor-id="uniswap-v3-2021">Uniswap v3 (2021)</h3>
+<p>Uniswap v3 transformed concentrated liquidity with:</p>
+<ul>
+<li>Custom price ranges for liquidity provision</li>
+<li>Much higher capital efficiency</li>
+<li>Multiple fee tiers</li>
+<li>Advanced oracle functionality</li>
+<li>Non-fungible liquidity positions</li>
+</ul>
+<p>This innovation allowed liquidity providers to focus their capital where it would be most useful, though at the cost of increased complexity.</p>
+</section>
+<section id="trader-joes-liquidity-book-2022" class="level3">
+<h3 class="anchored" data-anchor-id="trader-joes-liquidity-book-2022">Trader Joe’s Liquidity Book (2022)</h3>
+<p>Trader Joe simplified concentrated liquidity with:</p>
+<ul>
+<li>Discrete bins for liquidity provision</li>
+<li>More predictable fee generation</li>
+<li>Simplified position management</li>
+<li>Better gas efficiency</li>
+<li>Unified liquidity ranges</li>
+</ul>
+<p>This showed how complex concepts could be made more accessible through careful design choices.</p>
+</section>
+</section>
+<section id="the-solana-ecosystem-high-performance-dex-innovation" class="level2">
+<h2 class="anchored" data-anchor-id="the-solana-ecosystem-high-performance-dex-innovation">The Solana Ecosystem: High-Performance DEX Innovation</h2>
+<section id="raydiums-hybrid-model" class="level3">
+<h3 class="anchored" data-anchor-id="raydiums-hybrid-model">Raydium’s Hybrid Model</h3>
+<p>Raydium introduced a unique hybrid liquidity model combining AMM pools with order book functionality:</p>
+<ol type="1">
+<li>Technical Innovation:
+<ul>
+<li>Integration with Serum’s central limit order book</li>
+<li>Hybrid liquidity routing</li>
+<li>Protocol-controlled market making</li>
+<li>Cross-platform liquidity aggregation</li>
+</ul></li>
+<li>Trading Benefits:
+<ul>
+<li>Better price execution</li>
+<li>Lower slippage for large trades</li>
+<li>Multiple liquidity sources</li>
+<li>Efficient capital utilization</li>
+</ul></li>
+<li>Market Making Features:
+<ul>
+<li>Automated market making strategies</li>
+<li>Dynamic fee adjustment</li>
+<li>Risk management tools</li>
+<li>Liquidity provider incentives</li>
+</ul></li>
+</ol>
+</section>
+<section id="orcas-whirlpools" class="level3">
+<h3 class="anchored" data-anchor-id="orcas-whirlpools">Orca’s Whirlpools</h3>
+<p>Orca brought concentrated liquidity to Solana with several innovations:</p>
+<ol type="1">
+<li>Technical Optimization:
+<ul>
+<li>Solana-native architecture</li>
+<li>Efficient position management</li>
+<li>Optimized computation</li>
+<li>Better composability</li>
+</ul></li>
+<li>Liquidity Provider Features:
+<ul>
+<li>Simplified range selection</li>
+<li>Automated position management</li>
+<li>Enhanced reward mechanisms</li>
+<li>Lower operational overhead</li>
+</ul></li>
+<li>Trading Improvements:
+<ul>
+<li>Better price execution</li>
+<li>Reduced slippage</li>
+<li>More efficient routing</li>
+<li>Enhanced MEV protection</li>
+</ul></li>
+</ol>
+</section>
+<section id="meteoras-dynamic-position-amm" class="level3">
+<h3 class="anchored" data-anchor-id="meteoras-dynamic-position-amm">Meteora’s Dynamic Position AMM</h3>
+<p>Meteora introduced automated position management through their DyP system:</p>
+<ol type="1">
+<li>Core Features:
+<ul>
+<li>Automatic range adjustment</li>
+<li>Smart rebalancing</li>
+<li>Dynamic fee optimization</li>
+<li>Risk-adjusted position sizing</li>
+</ul></li>
+<li>Technical Advantages:
+<ul>
+<li>Reduced impermanent loss</li>
+<li>Better capital efficiency</li>
+<li>Automated risk management</li>
+<li>Enhanced yield generation</li>
+</ul></li>
+<li>Integration Capabilities:
+<ul>
+<li>Cross-protocol composability</li>
+<li>Efficient position aggregation</li>
+<li>Advanced MEV protection</li>
+<li>Optimized for Solana’s performance</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="modern-innovations" class="level2">
+<h2 class="anchored" data-anchor-id="modern-innovations">Modern Innovations</h2>
+<section id="carbons-logarithmic-market-making-2023" class="level3">
+<h3 class="anchored" data-anchor-id="carbons-logarithmic-market-making-2023">Carbon’s Logarithmic Market Making (2023)</h3>
+<p>Carbon introduced a different approach to market making with:</p>
+<ul>
+<li>Logarithmic pricing curves</li>
+<li>Asset-specific optimization</li>
+<li>Better handling of different volatility profiles</li>
+<li>More efficient capital usage</li>
+<li>Dynamic curve adjustment</li>
+</ul>
+</section>
+<section id="velodromes-slipstream" class="level3">
+<h3 class="anchored" data-anchor-id="velodromes-slipstream">Velodrome’s Slipstream</h3>
+<p>Velodrome tackled pool efficiency with:</p>
+<ul>
+<li>Multiple coordinated pools</li>
+<li>Better trade routing</li>
+<li>Reduced price impact</li>
+<li>More efficient capital usage</li>
+<li>Enhanced liquidity management</li>
+</ul>
+</section>
+</section>
+<section id="cross-chain-innovation-and-convergence" class="level2">
+<h2 class="anchored" data-anchor-id="cross-chain-innovation-and-convergence">Cross-Chain Innovation and Convergence</h2>
+<p>The DEX space has evolved beyond single-chain solutions:</p>
+<section id="technical-convergence" class="level3">
+<h3 class="anchored" data-anchor-id="technical-convergence">Technical Convergence</h3>
+<ol type="1">
+<li>Performance Optimization:
+<ul>
+<li>Gas efficiency improvements</li>
+<li>Computational optimization</li>
+<li>Storage efficiency</li>
+<li>Transaction batching</li>
+</ul></li>
+<li>Liquidity Management:
+<ul>
+<li>Cross-chain liquidity bridges</li>
+<li>Unified liquidity pools</li>
+<li>Chain-specific adaptations</li>
+<li>Hybrid liquidity models</li>
+</ul></li>
+<li>Protocol Integration:
+<ul>
+<li>Cross-protocol composability</li>
+<li>Standardized interfaces</li>
+<li>Shared liquidity networks</li>
+<li>Multi-chain governance</li>
+</ul></li>
+</ol>
+</section>
+<section id="ecosystem-specific-innovation" class="level3">
+<h3 class="anchored" data-anchor-id="ecosystem-specific-innovation">Ecosystem-Specific Innovation</h3>
+<p>Different blockchain ecosystems have contributed unique innovations:</p>
+<ol type="1">
+<li>Ethereum:
+<ul>
+<li>Advanced smart contract patterns</li>
+<li>Complex tokenomics models</li>
+<li>Governance innovations</li>
+<li>Protocol composability</li>
+</ul></li>
+<li>Solana:
+<ul>
+<li>High-performance architecture</li>
+<li>Hybrid liquidity models</li>
+<li>Efficient computation</li>
+<li>Advanced order matching</li>
+</ul></li>
+<li>Other Chains:
+<ul>
+<li>Specialized AMM designs</li>
+<li>Novel incentive structures</li>
+<li>Chain-specific optimizations</li>
+<li>Unique trading features</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="the-future-multi-chain-multi-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-future-multi-chain-multi-model">The Future: Multi-Chain, Multi-Model</h2>
+<p>Current trends point to several key areas of development:</p>
+<section id="technical-evolution" class="level3">
+<h3 class="anchored" data-anchor-id="technical-evolution">Technical Evolution</h3>
+<ol type="1">
+<li>Advanced Capital Efficiency:
+<ul>
+<li>Multi-purpose liquidity utilization</li>
+<li>Cross-protocol yield optimization</li>
+<li>Dynamic position management</li>
+<li>Risk-adjusted returns</li>
+</ul></li>
+<li>Enhanced User Experience:
+<ul>
+<li>Simplified interface layers</li>
+<li>Automated optimization</li>
+<li>Reduced complexity</li>
+<li>Better risk management tools</li>
+</ul></li>
+<li>Sustainable Tokenomics:
+<ul>
+<li>Long-term emissions models</li>
+<li>Value accrual mechanisms</li>
+<li>Governance innovation</li>
+<li>Ecosystem integration</li>
+</ul></li>
+</ol>
+</section>
+<section id="emerging-trends" class="level3">
+<h3 class="anchored" data-anchor-id="emerging-trends">Emerging Trends</h3>
+<ol type="1">
+<li>Chain-Specific Optimization:
+<ul>
+<li>Customized implementations</li>
+<li>Native feature utilization</li>
+<li>Performance optimization</li>
+<li>Local ecosystem integration</li>
+</ul></li>
+<li>Cross-Chain Integration:
+<ul>
+<li>Unified liquidity management</li>
+<li>Multi-chain governance</li>
+<li>Standardized protocols</li>
+<li>Shared security models</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The evolution of DEX design represents a fascinating journey from simple order books to sophisticated, multi-chain market-making systems. This evolution hasn’t been linear - different approaches have emerged to solve different problems, and older models haven’t been entirely replaced. Instead, we’ve seen a diversification of solutions, each optimized for specific use cases and requirements.</p>
+<p>Key lessons from this evolution include:</p>
+<ul>
+<li>The importance of adapting to specific blockchain characteristics</li>
+<li>The balance between complexity and usability</li>
+<li>The role of tokenomics in protocol sustainability</li>
+<li>The value of specialized solutions for specific use cases</li>
+</ul>
+<p>The future of DEX design will likely continue to see specialized solutions emerge alongside improvements to existing models, with a growing emphasis on cross-chain interoperability and ecosystem-specific optimization. As the space matures, we can expect to see continued innovation in capital efficiency, user experience, and sustainable tokenomics models.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../content/financial/market_structure.html" class="pagination-link" aria-label="Market Structures">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Market Structures</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../content/financial/ratings.html" class="pagination-link" aria-label="Digital Asset Rating Framework">
+        <span class="nav-page-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Digital Asset Rating Framework</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

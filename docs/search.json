@@ -2057,6 +2057,116 @@
     ]
   },
   {
+    "objectID": "content/financial/dexes.html",
+    "href": "content/financial/dexes.html",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "",
+    "text": "Introduction\nThe history of decentralized exchanges (DEXs) represents one of the most fascinating evolutionary paths in cryptocurrency. What began as simple on-chain order books has developed into a rich ecosystem of sophisticated market-making mechanisms spread across multiple blockchains. Each innovation has built upon previous concepts while solving new challenges, creating an increasingly efficient and user-friendly trading landscape. This document traces that evolution, examining how different approaches emerged to address specific problems and how various blockchain ecosystems have contributed to DEX innovation.",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#the-pioneer-era-order-books-on-chain",
+    "href": "content/financial/dexes.html#the-pioneer-era-order-books-on-chain",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "The Pioneer Era: Order Books On-Chain",
+    "text": "The Pioneer Era: Order Books On-Chain\n\nEtherDelta (2016)\nThe story of modern DEXs begins with EtherDelta, which introduced the first widely-used on-chain order book. EtherDelta’s approach was straightforward: it maintained a list of orders directly on the Ethereum blockchain, with each order specifying an amount to trade and a price. While revolutionary for its time, this system had significant limitations:\n\nEvery order required an on-chain transaction\nOrder cancellations also required transactions\nGas costs were prohibitive for market makers\nLimited liquidity due to high friction\n\nDespite these limitations, EtherDelta proved that decentralized trading was possible and set the stage for future innovations. Its core innovation - trustless trading through smart contracts - remains fundamental to all DEXs that followed.\n\n\n0x Protocol (2017)\nBuilding on EtherDelta’s foundation, 0x introduced a crucial innovation: off-chain order relay with on-chain settlement. This hybrid approach meant that:\n\nOrders could be shared and matched off-chain\nOnly successful trades needed on-chain transactions\nMarket makers could cancel orders without gas costs\nLiquidity could be shared across multiple front-ends\n\nThis was the first step toward solving the efficiency problems of pure on-chain systems while maintaining decentralization.",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#the-amm-revolution-constant-product-market-making",
+    "href": "content/financial/dexes.html#the-amm-revolution-constant-product-market-making",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "The AMM Revolution: Constant Product Market Making",
+    "text": "The AMM Revolution: Constant Product Market Making\n\nBancor (2017)\nBancor introduced the first automated market maker (AMM) model, using a “constant reserve ratio” mechanism. Key innovations included:\n\nContinuous liquidity for any token pair\nNo need for order matching\nAutomatic price adjustment based on supply and demand\nIntroduction of protocol-owned liquidity\n\nWhile different from later AMM designs, Bancor established the concept of algorithmic market making that would become crucial to DeFi.\n\n\nYour browser does not support the video tag. \n\n\nThe Token Emissions Revolution\nThe introduction of governance tokens and liquidity mining fundamentally changed how DEXs attracted and maintained liquidity. This evolution can be broken down into several phases:\n\nPhase 1: Simple Emissions (2020)\nThe first wave of token emissions, pioneered by protocols like Compound and then adapted by DEXs, used straightforward distribution models:\n\nFixed daily token emissions\nDistribution based on liquidity provided\nBasic governance rights\nNo lock-up requirements\n\nThese early models proved effective at bootstrapping liquidity but often led to “mercenary capital” that would quickly move to newer protocols with higher yields.\n\n\nPhase 2: Vote-Escrowed Tokens (2020-2021)\nCurve Finance revolutionized emissions with the vote-escrow model:\n\nLong-term token locking (up to 4 years)\nVoting power and rewards boost based on lock duration\nFee sharing for governance token holders\nAbility to direct emissions to specific pools\n\nThis model became the standard for many DEXs, encouraging long-term alignment between liquidity providers and protocols.\n\n\nPhase 3: Advanced Tokenomics (2021-Present)\nModern DEX emissions incorporate sophisticated mechanics:\n\nDynamic emission rates based on protocol metrics\nMultiple utility features for governance tokens\nCross-protocol incentive systems\nSustainable long-term distribution models\n\n\n\n\nUniswap v1 (2018)\nUniswap v1 revolutionized DEX design with the constant product market maker formula (x * y = k). This elegant solution provided:\n\nAlways-available liquidity at every price point\nSimple and gas-efficient trades\nPermissionless liquidity provision\nAutomatic price discovery\n\nThe constant product formula became the foundation for most subsequent AMM designs, proving that simplicity could be more effective than complexity.\n\n\nUniswap v2 (2020)\nBuilding on v1’s success, Uniswap v2 added crucial features:\n\nPrice oracles for other protocols to use\nFlash swap functionality\nMore efficient gas handling\nBetter handling of tokens with different decimals\nIntroduction of protocol fee mechanism\n\nThese improvements made AMMs more practical for complex DeFi applications and established them as core infrastructure.",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#the-efficiency-era-specialized-solutions",
+    "href": "content/financial/dexes.html#the-efficiency-era-specialized-solutions",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "The Efficiency Era: Specialized Solutions",
+    "text": "The Efficiency Era: Specialized Solutions\n\nCurve Finance (2020)\nCurve introduced the StableSwap formula, optimizing for tokens with similar values. This brought:\n\nExtremely efficient stablecoin trading\nLower slippage for similar-priced assets\nHigher capital efficiency through specialized curves\nHybrid between constant sum and constant product\n\nThe protocol also pioneered the vote-escrow tokenomics model with veCRV, which would become a standard across DeFi.\n\n\nBalancer (2020)\nBalancer expanded AMM capabilities with:\n\nMultiple tokens in a single pool\nCustomizable token weights\nDynamic fee adjustment\nPortfolio rebalancing functionality\nWeighted constant product formula\n\nThis demonstrated that AMMs could handle more complex trading strategies and serve as building blocks for index funds.",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#the-capital-efficiency-revolution",
+    "href": "content/financial/dexes.html#the-capital-efficiency-revolution",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "The Capital Efficiency Revolution",
+    "text": "The Capital Efficiency Revolution\n\nUniswap v3 (2021)\nUniswap v3 transformed concentrated liquidity with:\n\nCustom price ranges for liquidity provision\nMuch higher capital efficiency\nMultiple fee tiers\nAdvanced oracle functionality\nNon-fungible liquidity positions\n\nThis innovation allowed liquidity providers to focus their capital where it would be most useful, though at the cost of increased complexity.\n\n\nTrader Joe’s Liquidity Book (2022)\nTrader Joe simplified concentrated liquidity with:\n\nDiscrete bins for liquidity provision\nMore predictable fee generation\nSimplified position management\nBetter gas efficiency\nUnified liquidity ranges\n\nThis showed how complex concepts could be made more accessible through careful design choices.",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#the-solana-ecosystem-high-performance-dex-innovation",
+    "href": "content/financial/dexes.html#the-solana-ecosystem-high-performance-dex-innovation",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "The Solana Ecosystem: High-Performance DEX Innovation",
+    "text": "The Solana Ecosystem: High-Performance DEX Innovation\n\nRaydium’s Hybrid Model\nRaydium introduced a unique hybrid liquidity model combining AMM pools with order book functionality:\n\nTechnical Innovation:\n\nIntegration with Serum’s central limit order book\nHybrid liquidity routing\nProtocol-controlled market making\nCross-platform liquidity aggregation\n\nTrading Benefits:\n\nBetter price execution\nLower slippage for large trades\nMultiple liquidity sources\nEfficient capital utilization\n\nMarket Making Features:\n\nAutomated market making strategies\nDynamic fee adjustment\nRisk management tools\nLiquidity provider incentives\n\n\n\n\nOrca’s Whirlpools\nOrca brought concentrated liquidity to Solana with several innovations:\n\nTechnical Optimization:\n\nSolana-native architecture\nEfficient position management\nOptimized computation\nBetter composability\n\nLiquidity Provider Features:\n\nSimplified range selection\nAutomated position management\nEnhanced reward mechanisms\nLower operational overhead\n\nTrading Improvements:\n\nBetter price execution\nReduced slippage\nMore efficient routing\nEnhanced MEV protection\n\n\n\n\nMeteora’s Dynamic Position AMM\nMeteora introduced automated position management through their DyP system:\n\nCore Features:\n\nAutomatic range adjustment\nSmart rebalancing\nDynamic fee optimization\nRisk-adjusted position sizing\n\nTechnical Advantages:\n\nReduced impermanent loss\nBetter capital efficiency\nAutomated risk management\nEnhanced yield generation\n\nIntegration Capabilities:\n\nCross-protocol composability\nEfficient position aggregation\nAdvanced MEV protection\nOptimized for Solana’s performance",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#modern-innovations",
+    "href": "content/financial/dexes.html#modern-innovations",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "Modern Innovations",
+    "text": "Modern Innovations\n\nCarbon’s Logarithmic Market Making (2023)\nCarbon introduced a different approach to market making with:\n\nLogarithmic pricing curves\nAsset-specific optimization\nBetter handling of different volatility profiles\nMore efficient capital usage\nDynamic curve adjustment\n\n\n\nVelodrome’s Slipstream\nVelodrome tackled pool efficiency with:\n\nMultiple coordinated pools\nBetter trade routing\nReduced price impact\nMore efficient capital usage\nEnhanced liquidity management",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#cross-chain-innovation-and-convergence",
+    "href": "content/financial/dexes.html#cross-chain-innovation-and-convergence",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "Cross-Chain Innovation and Convergence",
+    "text": "Cross-Chain Innovation and Convergence\nThe DEX space has evolved beyond single-chain solutions:\n\nTechnical Convergence\n\nPerformance Optimization:\n\nGas efficiency improvements\nComputational optimization\nStorage efficiency\nTransaction batching\n\nLiquidity Management:\n\nCross-chain liquidity bridges\nUnified liquidity pools\nChain-specific adaptations\nHybrid liquidity models\n\nProtocol Integration:\n\nCross-protocol composability\nStandardized interfaces\nShared liquidity networks\nMulti-chain governance\n\n\n\n\nEcosystem-Specific Innovation\nDifferent blockchain ecosystems have contributed unique innovations:\n\nEthereum:\n\nAdvanced smart contract patterns\nComplex tokenomics models\nGovernance innovations\nProtocol composability\n\nSolana:\n\nHigh-performance architecture\nHybrid liquidity models\nEfficient computation\nAdvanced order matching\n\nOther Chains:\n\nSpecialized AMM designs\nNovel incentive structures\nChain-specific optimizations\nUnique trading features",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#the-future-multi-chain-multi-model",
+    "href": "content/financial/dexes.html#the-future-multi-chain-multi-model",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "The Future: Multi-Chain, Multi-Model",
+    "text": "The Future: Multi-Chain, Multi-Model\nCurrent trends point to several key areas of development:\n\nTechnical Evolution\n\nAdvanced Capital Efficiency:\n\nMulti-purpose liquidity utilization\nCross-protocol yield optimization\nDynamic position management\nRisk-adjusted returns\n\nEnhanced User Experience:\n\nSimplified interface layers\nAutomated optimization\nReduced complexity\nBetter risk management tools\n\nSustainable Tokenomics:\n\nLong-term emissions models\nValue accrual mechanisms\nGovernance innovation\nEcosystem integration\n\n\n\n\nEmerging Trends\n\nChain-Specific Optimization:\n\nCustomized implementations\nNative feature utilization\nPerformance optimization\nLocal ecosystem integration\n\nCross-Chain Integration:\n\nUnified liquidity management\nMulti-chain governance\nStandardized protocols\nShared security models",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
+    "objectID": "content/financial/dexes.html#conclusion",
+    "href": "content/financial/dexes.html#conclusion",
+    "title": "The Evolution of Decentralized Exchange Design",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe evolution of DEX design represents a fascinating journey from simple order books to sophisticated, multi-chain market-making systems. This evolution hasn’t been linear - different approaches have emerged to solve different problems, and older models haven’t been entirely replaced. Instead, we’ve seen a diversification of solutions, each optimized for specific use cases and requirements.\nKey lessons from this evolution include:\n\nThe importance of adapting to specific blockchain characteristics\nThe balance between complexity and usability\nThe role of tokenomics in protocol sustainability\nThe value of specialized solutions for specific use cases\n\nThe future of DEX design will likely continue to see specialized solutions emerge alongside improvements to existing models, with a growing emphasis on cross-chain interoperability and ecosystem-specific optimization. As the space matures, we can expect to see continued innovation in capital efficiency, user experience, and sustainable tokenomics models.",
+    "crumbs": [
+      "Financial",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>The Evolution of Decentralized Exchange Design</span>"
+    ]
+  },
+  {
     "objectID": "content/financial/ratings.html",
     "href": "content/financial/ratings.html",
     "title": "Digital Asset Rating Framework",
@@ -2064,7 +2174,7 @@
     "text": "Core Components (100% Total)",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Digital Asset Rating Framework</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Digital Asset Rating Framework</span>"
     ]
   },
   {
@@ -2075,7 +2185,7 @@
     "text": "1. Value Capture & REV Analysis (40%)\n\nProtocol Value Capture (25%)\n\nNetwork revenue generation\nFee distribution mechanisms\nToken economics design\nTreasury growth and management\nMarket share and competitive position\nUser growth and retention metrics\n\n\n\nRealized Extractable Value (REV) Impact (15%)\n\nPositive REV Factors (7.5%)\n\nProtocol-owned MEV capture\nUser-aligned MEV distribution\nMEV minimization mechanisms\nEfficient price discovery through MEV\nValidator revenue enhancement\nCross-chain MEV opportunities\n\n\n\nNegative REV Factors (7.5%)\n\nToxic MEV exposure\nSandwich attack vulnerability\nFront-running susceptibility\nArbitrage impact on liquidity\nMEV-driven centralization risks\nCross-protocol MEV leakage\n\n\n\n\n\n2. Technical Architecture & Security (30%)\n\nSmart Contract Security (10%)\n\nAudit history and quality\nBug bounty effectiveness\nHistorical vulnerability analysis\nCode complexity assessment\nUpgrade mechanism security\n\n\n\nNetwork Security (10%)\n\nConsensus mechanism robustness\nValidator/node distribution\nNetwork attack resistance\nBridge security (if applicable)\nOracle dependency risks\n\n\n\nMEV Protection Architecture (10%)\n\nMEV-resistant design patterns\nTiming attack protection\nFrontrunning protection\nOrder flow fairness\nBlock builder separation\nTransaction privacy features\n\n\n\n\n3. Market & Liquidity Risk (20%)\n\nMarket Structure (10%)\n\nTrading volume distribution\nMarket maker participation\nOrder book depth\nPrice impact resistance\nCross-exchange arbitrage efficiency\nDEX vs CEX volume ratio\n\n\n\nLiquidity Profile (10%)\n\nLiquidity depth across venues\nConcentration risk\nWithdrawal/deposit patterns\nSlippage analysis\nMarket stress behavior\nFlash crash resistance\n\n\n\n\n4. Governance & Operational Risk (10%)\n\nGovernance Framework (5%)\n\nDecision-making process\nStakeholder representation\nUpgrade mechanisms\nEmergency response capabilities\nTreasury management\nCommunity engagement\n\n\n\nOperational Risk (5%)\n\nTeam track record\nDevelopment activity\nDocumentation quality\nInfrastructure reliability\nThird-party dependencies\nRegulatory exposure\n\nLet me revise the ratings section to clearly delineate legitimate projects from shit coins while maintaining the rigorous analytical framework. I’ll adjust the ratings and add more descriptive characteristics for lower-rated assets.\nThe key change will be to make anything below B rating an explicit designation of a shit coin, with clear warning signs and red flags. Here’s the revised ratings structure:\n\n\n\nRating Categories\n\nAAA (95-100)\nAssets in this category demonstrate exceptional characteristics across all evaluation metrics: - Proven value capture mechanisms generating sustainable protocol revenue - Industry-leading security practices with multiple audits and bug bounties - Deep, distributed liquidity across multiple venues - Active governance with high community participation - Minimal toxic MEV exposure with sophisticated protection mechanisms\n\n\nAA (85-94)\nStrong performers with proven track records: - Consistent value capture through fees and treasury growth - Robust security with regular audits and minimal vulnerabilities - Healthy liquidity distribution and market maker participation - Well-established governance frameworks - Effectively managed MEV exposure\n\n\nA (75-84)\nSolid protocols with good fundamentals: - Demonstrable value capture, though perhaps not maximized - Sound security practices with no major incidents - Adequate liquidity across major venues - Functional governance with active participation - Controlled MEV exposure with basic protections\n\n\nBBB (65-74)\nModerate performers showing some concerns: - Value capture mechanisms exist but may need optimization - Security meets basic standards but could be improved - Liquidity concentrated in fewer venues - Governance participation may be limited - Notable MEV exposure requiring attention\n\n\nBB (55-64)\nProjects showing significant warning signs: - Limited or declining value capture - Security concerns requiring immediate attention - Thin liquidity with high concentration risk - Governance challenges or low participation - High MEV exposure with inadequate protection\n\n\nB (50-54)\nThe minimum threshold for legitimate projects: - Struggling but legitimate value capture attempts - Basic security measures in place - Limited but genuine liquidity - Simple but functional governance - Significant MEV vulnerability but with some mitigation attempts\n\n\nC and Below (&lt;50) - Shit Coin Territory\nAny asset rated below B exhibits characteristics of a shit coin:\n\nC (40-49) - Highly Speculative\n\nMinimal genuine value capture\nCopied or unaudited code\nArtificial or manipulated liquidity\nCentralized control masked as governance\nSevere MEV exploitation risks\n\n\n\nD (30-39) - Likely Exploitative\n\nNo legitimate value capture mechanism\nSecurity vulnerabilities or backdoors\nWash trading and fake volume\nGovernance controlled by insiders\nDesigned for MEV extraction\n\n\n\nF (&lt;30) - Confirmed Shit Coin\n\nPurely extractive tokenomics\nCopied code with hidden minting functions\nConcentrated ownership masked through multiple wallets\nNon-existent or fake governance\nBuilt specifically for price manipulation\n\n\n\n\nWarning Signs of Shit Coins:\n\nToken distribution heavily concentrated among creators\nCode copied directly from other projects without meaningful improvements\nLiquidity that appears deep but is controlled by a few addresses\nGovernance tokens with hidden privileges for insiders\nMarketing focused entirely on price appreciation\nNo genuine protocol revenue beyond token inflation\nTeam anonymity combined with privileged access to contract functions\n\nThe critical distinction between a B-rated project and a shit coin lies not just in technical metrics but in genuine intent and community alignment. While B-rated projects may struggle with execution, they represent legitimate attempts to create value. Anything rated C or below represents projects designed primarily for extraction rather than value creation.\nThis framework helps identify shit coins not just through technical analysis but by examining the alignment between stated goals and actual implementation. A project’s placement in shit coin territory isn’t just about current performance but about fundamental design choices that prioritize extraction over value creation.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Digital Asset Rating Framework</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Digital Asset Rating Framework</span>"
     ]
   },
   {
@@ -2086,7 +2196,7 @@
     "text": "Bitcoin (BTC)\nRating: AA+ (92/100)\nValue Capture & REV Analysis (38/40) - Exceptional monetary premium capture through absolute scarcity - Minimal REV exposure due to simple UTXO model - Strong fee market development - Mining reward distribution well-established - Limited attack surface for value extraction\nTechnical Architecture (28/30) - Battle-tested security over 14+ years - Conservative upgrade process - Distributed node network - Simple but robust scripting system - High resistance to centralization\nMarket & Liquidity Risk (17/20) - Deepest liquidity across all venues - Global market presence - Strong market maker participation - Some concentration in mining pools - Proven stress test resilience\nGovernance & Operational Risk (9/10) - Well-established BIP process - Multiple independent development teams - Strong resistance to capture - Clear upgrade paths",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2097,7 +2207,7 @@
     "text": "Ethereum (ETH)\nRating: AA (89/100)\nValue Capture & REV Analysis (35/40) - Strong base layer fee capture - Complex MEV landscape - Layer 2 fee dynamics - Staking yield generation - PBS implementation improving MEV distribution\nTechnical Architecture (27/30) - Successful transition to PoS - Active development ecosystem - Multiple client implementations - Some centralization in staking pools - Complex attack surface\nMarket & Liquidity Risk (18/20) - Second highest global liquidity - Deep derivatives markets - Strong institutional adoption - Diverse trading venues\nGovernance & Operational Risk (9/10) - Active EIP process - Multiple core development teams - Clear roadmap execution - Strong community participation",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2108,7 +2218,7 @@
     "text": "USDT (Tether)\nRating: BBB+ (76/100)\nValue Capture & REV Analysis (28/40) - Limited direct value capture - Significant market power through liquidity - No native MEV exposure - Reliance on external chains for execution\nTechnical Architecture (22/30) - Multiple chain implementations - Centralized issuance model - Dependent on external security - Limited technical complexity\nMarket & Liquidity Risk (18/20) - Highest stablecoin liquidity - Critical trading pair status - Some concentration risk - Historical stress test resilience\nGovernance & Operational Risk (8/10) - Centralized governance - Improving transparency - Regular attestations - Regulatory uncertainty",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2119,7 +2229,7 @@
     "text": "XRP\nRating: A- (80/100)\nValue Capture & REV Analysis (30/40) - Established cross-border payment utility - Limited MEV exposure - Fee structure favors utility over speculation - Network value accrual through XRPL services\nTechnical Architecture (25/30) - Unique consensus mechanism - Proven scalability - Some centralization concerns - Strong network reliability\nMarket & Liquidity Risk (16/20) - Strong global presence - Regulatory overhangs - Institutional adoption in payments - Geographic liquidity variations\nGovernance & Operational Risk (9/10) - Clear development roadmap - Active ecosystem growth - Strong corporate backing - Some centralization concerns",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2130,7 +2240,7 @@
     "text": "Solana (SOL)\nRating: A (82/100)\nValue Capture & REV Analysis (32/40) - Strong fee capture mechanism - Growing MEV marketplace - High transaction throughput - Competitive fee structure\nTechnical Architecture (24/30) - High performance architecture - Some stability challenges - Active development - Innovative technical solutions\nMarket & Liquidity Risk (17/20) - Growing liquidity depth - Strong institutional support - Active derivatives market - Some concentration risks\nGovernance & Operational Risk (9/10) - Active governance participation - Strong developer ecosystem - Clear technical roadmap - Regular network upgrades",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2141,7 +2251,7 @@
     "text": "BNB (Binance Coin)\nRating: A- (81/100)\nValue Capture & REV Analysis (31/40) - Strong exchange utility value - Controlled MEV environment - Fee burning mechanism - Centralized value capture\nTechnical Architecture (23/30) - EVM compatibility - Centralized validation - Proven scalability - Limited innovation\nMarket & Liquidity Risk (18/20) - Strong exchange backing - Deep liquidity pools - Significant trading volumes - Some centralization risk\nGovernance & Operational Risk (9/10) - Centralized decision making - Clear development path - Strong corporate resources - Limited community governance",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2152,7 +2262,7 @@
     "text": "Dogecoin (DOGE)\nRating: BB+ (65/100)\nValue Capture & REV Analysis (22/40) - Limited value capture mechanism - Minimal MEV considerations - Inflationary supply - Meme-driven value\nTechnical Architecture (20/30) - Bitcoin-derived codebase - Limited development activity - Proven network security - Basic functionality\nMarket & Liquidity Risk (15/20) - Volatile liquidity conditions - Strong retail participation - Some market manipulation risk - Limited institutional presence\nGovernance & Operational Risk (8/10) - Active community - Limited formal governance - Sporadic development - Meme-influenced decisions",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2163,7 +2273,7 @@
     "text": "USDC\nRating: A+ (87/100)\nValue Capture & REV Analysis (32/40) - Regulated value capture model - No native MEV exposure - Strong institutional adoption - Clear revenue model\nTechnical Architecture (26/30) - Multiple chain implementations - Strong security measures - Regular audits - Controlled upgrade process\nMarket & Liquidity Risk (19/20) - Deep liquidity across venues - Strong institutional backing - Critical DeFi component - Proven stability\nGovernance & Operational Risk (10/10) - Regulated governance model - Clear compliance framework - Strong corporate backing - Regular attestations",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2174,7 +2284,7 @@
     "text": "Cardano (ADA)\nRating: A- (80/100)\nValue Capture & REV Analysis (29/40) - Academic approach to value capture - Limited MEV exposure - Staking-focused economy - Developing DeFi ecosystem\nTechnical Architecture (26/30) - Formal verification emphasis - Strong security model - Methodical development - Some scalability limitations\nMarket & Liquidity Risk (15/20) - Moderate liquidity depth - Growing ecosystem - Some geographic concentration - Limited institutional presence\nGovernance & Operational Risk (10/10) - Strong governance framework - Active community participation - Clear development roadmap - Academic partnerships",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2185,7 +2295,7 @@
     "text": "Lido Staked ETH (stETH)\nRating: A (83/100)\nValue Capture & REV Analysis (31/40) - Direct ETH staking yield capture - MEV-boost integration - Clear value proposition - Growing institutional adoption\nTechnical Architecture (25/30) - Complex staking mechanism - Strong security measures - Some centralization risk - Regular protocol upgrades\nMarket & Liquidity Risk (17/20) - Deep liquidity in DeFi - Strong peg maintenance - Critical ETH ecosystem component - Some withdrawal queue risk\nGovernance & Operational Risk (10/10) - Active DAO governance - Clear upgrade process - Strong node operator set - Regular security reviews",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2196,7 +2306,7 @@
     "text": "Index Methodology Notes\n\nRatings consider both quantitative metrics and qualitative factors\nHeavy emphasis on sustainable value capture mechanisms\nMEV exposure evaluated as both risk and opportunity\nSecurity track record significantly impacts technical scores\nLiquidity assessed across both CEX and DEX venues\nGovernance evaluation considers both formal and informal processes\n\nRegular updates to these ratings will be published quarterly or upon significant protocol changes.",
     "crumbs": [
       "Financial",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Trollip's Index</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Trollip's Index</span>"
     ]
   },
   {
@@ -2207,7 +2317,7 @@
     "text": "Introduction\nThe Social Layer of Blockchain Systems\nImagine trying to run a city where all the residents are anonymous, can arrive or leave at any time, and must coordinate entirely through written rules that, once agreed upon, execute automatically. This is the fundamental challenge of Web3 governance. While blockchains provide the technical foundation for decentralized systems, governance represents the crucial social layer that determines how these systems evolve and adapt.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2218,7 +2328,7 @@
     "text": "The Three Branches of Blockchain Governance\nJust as traditional governments often separate power into executive, legislative, and judicial branches, blockchain systems have developed their own versions of these divisions, though they manifest in unique ways.\n\nLegislative Function: Rule Creation\nThe legislative function in blockchain systems determines how rules are created and modified. This happens through several mechanisms:\n\nImprovement Proposals\n\nBitcoin’s BIP (Bitcoin Improvement Proposal) process\nEthereum’s EIP (Ethereum Improvement Proposal) system\nVarious DAO governance frameworks\n\n\nThese processes share common elements but differ in crucial ways. Bitcoin’s process emphasizes conservative change and broad consensus, reflecting its role as a monetary system. Ethereum’s process moves faster and accommodates more types of changes, matching its position as a computational platform.\n\nDiscussion Forums\n\nTechnical debates\nEconomic proposals\nSocial coordination\n\n\nThese spaces serve as the “town halls” of blockchain governance, where ideas are debated before formal proposals.\n\n\nExecutive Function: Rule Implementation\nThe executive function in blockchain systems determines how agreed-upon changes are actually implemented. This involves:\n\nNode Operators\n\nRunning specific software versions\nEnforcing consensus rules\nMaintaining network security\n\nDevelopers\n\nWriting and reviewing code\nImplementing approved changes\nMaintaining client software\n\nMiners/Validators\n\nProcessing transactions\nProducing blocks\nSecuring the network\n\n\nThe relationship between these groups creates interesting dynamics. For example, while developers can write code for a change, node operators must choose to run it, creating a check on developer power.\n\n\nJudicial Function: Rule Interpretation\nThe judicial function in blockchain systems is perhaps the most different from traditional governance. Instead of courts interpreting laws, we see:\n\nEconomic Consensus\n\nMarkets pricing in decisions\nUsers choosing which chains to use\nCapital flowing between projects\n\nSocial Consensus\n\nCommunity interpretation of rules\nPrecedent in dispute resolution\nNorm establishment\n\nTechnical Arbitration\n\nProtocol-level dispute resolution\nOracle systems\nSmart contract execution",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2229,7 +2339,7 @@
     "text": "The Politics of Decentralization\nBlockchain governance must constantly navigate several fundamental tensions:\n\n1. Decentralization vs. Efficiency\nMore decentralized decision-making typically means slower, more costly coordination. This creates pressure to centralize for efficiency, which must be balanced against the core value of decentralization.\n\n\n2. Innovation vs. Stability\nFaster technical innovation often requires more centralized decision-making, while maintaining stability typically requires broader consensus. Different projects position themselves along this spectrum based on their priorities.\n\n\n3. On-Chain vs. Off-Chain Governance\nOn-chain governance provides clarity and automation but can be rigid and plutocratic. Off-chain governance offers more flexibility but can lack clarity and finality. Most successful projects use a hybrid approach.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2240,7 +2350,7 @@
     "text": "Social Coordination Mechanisms\nSeveral key mechanisms enable coordination in decentralized systems:\n\n1. Signaling Systems\n\nToken-weighted voting\nPrediction markets\nStake-weighted signals\nSocial media discourse\n\nThese mechanisms help communities understand collective preferences without requiring formal votes for every decision.\n\n\n2. Incentive Alignment\n\nToken distributions\nFee sharing models\nStaking requirements\nReputation systems\n\nWell-designed incentives help ensure participants act in ways that benefit the system as a whole.\n\n\n3. Exit Rights\n\nThe ability to fork\nAsset withdrawal rights\nAlternative platforms\nMarket competition\n\nThe credible threat of exit helps keep systems accountable to their communities.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2251,7 +2361,7 @@
     "text": "Best Practices in Web3 Governance\nThrough years of experimentation, several governance best practices have emerged:\n\n1. Progressive Decentralization\nStarting with more centralized control and gradually decentralizing as systems mature has proven more successful than attempting complete decentralization from day one.\n\n\n2. Layered Decision Making\nDifferent types of decisions require different processes: - Technical parameters: Automated adjustment - Protocol upgrades: Formal governance - Emergency responses: Rapid response mechanisms\n\n\n3. Transparent Communication\n\nClear documentation\nRegular updates\nOpen discussion forums\nRecorded decision-making\n\n\n\n4. Governance Minimization\nThe most successful systems tend to minimize what requires active governance, automating what they can and leaving other decisions to market forces.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2262,7 +2372,7 @@
     "text": "Future Challenges and Opportunities\nAs Web3 governance continues to evolve, several key challenges and opportunities emerge:\n\n1. Scalable Participation\nFinding ways to maintain broad participation as systems grow without sacrificing decision-making efficiency.\n\n\n2. Cross-Chain Governance\nDeveloping frameworks for governance across multiple interconnected systems.\n\n\n3. Regulatory Integration\nBalancing regulatory compliance with decentralized governance principles.\n\n\n4. Identity and Reputation\nIncorporating better systems for identity and reputation while preserving privacy and pseudonymity.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
@@ -2273,27 +2383,27 @@
     "text": "Conclusion\nWeb3 governance represents one of the most fascinating experiments in human coordination. By combining technical systems, economic incentives, and social structures, it creates new possibilities for organizing human activity. Understanding these governance systems is crucial for anyone looking to participate in or build Web3 projects.\nThe field continues to evolve rapidly, with new models and mechanisms emerging regularly. Success in this space requires staying informed about both technical developments and the social dynamics that shape how these systems actually function.",
     "crumbs": [
       "Social",
-      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Web3 Governance</span>"
+      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Web3 Governance</span>"
     ]
   },
   {
     "objectID": "contributing.html",
     "href": "contributing.html",
-    "title": "33  Contributing",
+    "title": "34  Contributing",
     "section": "",
-    "text": "33.1 Current requirements\nThis Almanack will change often and get things wrong. It’s only by being intellectually honest that it can ever hope to be the canonical guide to crypto and Web3. We follow Sophocles as our North Star\nI’ll also use it as a dumping ground where I can keep track of things I need to read to include:",
+    "text": "34.1 Current requirements\nThis Almanack will change often and get things wrong. It’s only by being intellectually honest that it can ever hope to be the canonical guide to crypto and Web3. We follow Sophocles as our North Star\nI’ll also use it as a dumping ground where I can keep track of things I need to read to include:",
     "crumbs": [
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Contributing</span>"
     ]
   },
   {
     "objectID": "contributing.html#current-requirements",
     "href": "contributing.html#current-requirements",
-    "title": "33  Contributing",
+    "title": "34  Contributing",
     "section": "",
-    "text": "33.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n33.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
+    "text": "34.1.1 Translations\nBe good to focus on the most widely spoken languages first. So\n\nMandarin\nHindi\nSpanish\nFrench\nArabic\nBengali\nRussian\nPortuguese\nIndonesian\n\n\n\n34.1.2 Data Dynamism\nI’d like an easy way to embed live data in every version publish. So for example if I want to reference the current ETH price, I should be able to do something like {{eth.current_price}} and it will embed the current price during the Quarto render with the latest price.",
     "crumbs": [
-      "<span class='chapter-number'>33</span>  <span class='chapter-title'>Contributing</span>"
+      "<span class='chapter-number'>34</span>  <span class='chapter-title'>Contributing</span>"
     ]
   }
 ]
