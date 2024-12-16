@@ -1,6 +1,6 @@
 /.quarto/
 .env
-animations/manim/media/
-animations/manim/dex/media/
-animations/manim/__pycache__/
-animations/manim/dex/__pycache__/
+animations/media/
+__pycache__/
+
+

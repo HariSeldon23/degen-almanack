@@ -12,7 +12,7 @@ class ConstantProductExplainer(Scene):
         k = initial_eth * initial_usdc
 
         # Create title with Text instead of Tex
-        title = Text("The AMM Constant Product Formula (Uniswap V2)", font_size=36)
+        title = Text("The AMM Constant Product Formula (Uniswap V1)", font_size=36)
         formula = Text("x × y = k", font_size=32, color=BLUE)
         
         title.to_edge(UP)
